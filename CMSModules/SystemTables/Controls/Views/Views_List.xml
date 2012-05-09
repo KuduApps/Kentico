@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="TABLE_NAME">
+    <action name="edit" commandargument="TABLE_NAME" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" commandargument="TABLE_NAME" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+    <action name="refresh" commandargument="TABLE_NAME" caption="$General.Refresh$" icon="Rebuild.png" />
+	</actions>
+	<columns>
+    <column source="TABLE_SCHEMA" caption="$systbl.view.schema$" wrap="false">
+    </column>
+	<column source="TABLE_NAME" caption="$general.name$" wrap="false" width="100%">      
+	</column>
+    <column source="IsCustom" externalsourcename="iscustom" caption="$systbl.view.iscustom$" wrap="false">
+    </column>
+	</columns>
+	<options>
+		<key name="DisplayFilter" value="false" />
+	</options>
+</grid>

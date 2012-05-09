@@ -1,0 +1,41 @@
+﻿<forumpost_communityfaq version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>432</PostId>
+      <PostForumID>108</PostForumID>
+      <PostIDPath>/00000432</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Frequently asked questions</PostSubject>
+      <PostUserID>350</PostUserID>
+      <PostUserName>Jenny</PostUserName>
+      <PostUserMail>jane.oakley@localhost.local</PostUserMail>
+      <PostText>Hello again,
+even though our site has been launched only a few days ago, my mailbox has become full of your questions, for that I'd like to thank you. As most of them are asked again and again, I decided to write this short FAQ for you.
+
+Q: Who are the people standing behind the site?
+A: Well, it's basically me and Josh. While I am the one who got the idea of creating and launching a site like this, Josh is the guy with the knowledge, taking care of the technical part of the whole thing. And last but not least, it's you, our users, who create most of the content and help our site live and grow.
+
+Q: How has such a complex site been created? It must have taken lots of time and effort...
+A: Yeah, you're right. The site is pretty complex and you may think that the development must have taken ages. I'll tell you one secret, right? Kentico CMS 4.0 is the power behind. The guys in Czech Republic have done a great deal of good work, so now, using their marvelous content management system, everybody is able to create such a site just as easily as we did. If you are interested, be sure to check their web at www.kentico.com.</PostText>
+      <PostTime>2008-10-25T14:01:55.967+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Jenny</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T14:01:55.967+02:00</PostThreadLastPostTime>
+      <PostUserSignature>+ + J3nny + +</PostUserSignature>
+      <PostGUID>bb772661-f8c0-4234-9948-3f68453a1d54</PostGUID>
+      <PostLastModified>2008-12-01T13:01:05.487+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>67</PostViews>
+      <PostLastEdit>2008-10-26T12:18:12.583+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jenny</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T14:01:55.967+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_communityfaq>

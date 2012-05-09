@@ -1,0 +1,24 @@
+CREATE TABLE [CMS_ClassSite] (
+		[ClassID]     [int] NOT NULL,
+		[SiteID]      [int] NOT NULL
+) 
+ALTER TABLE [CMS_ClassSite]
+	ADD
+	CONSTRAINT [PK_CMS_ClassSite]
+	PRIMARY KEY
+	CLUSTERED
+	([ClassID], [SiteID])
+	
+	
+ALTER TABLE [CMS_ClassSite]
+	WITH CHECK
+	ADD CONSTRAINT [FK_CMS_Class_ClassID_CMS_Class]
+	FOREIGN KEY ([ClassID]) REFERENCES [CMS_Class] ([ClassID])
+ALTER TABLE [CMS_ClassSite]
+	CHECK CONSTRAINT [FK_CMS_Class_ClassID_CMS_Class]
+ALTER TABLE [CMS_ClassSite]
+	WITH CHECK
+	ADD CONSTRAINT [FK_CMS_Class_SiteID_CMS_Site]
+	FOREIGN KEY ([SiteID]) REFERENCES [CMS_Site] ([SiteID])
+ALTER TABLE [CMS_ClassSite]
+	CHECK CONSTRAINT [FK_CMS_Class_SiteID_CMS_Site]

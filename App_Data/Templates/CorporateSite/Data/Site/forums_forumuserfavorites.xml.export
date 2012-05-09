@@ -1,0 +1,13 @@
+﻿<forums_forumuserfavorites version="6.0">
+  <NewDataSet>
+    <forums_userfavorites>
+      <FavoriteID>155</FavoriteID>
+      <UserID>53</UserID>
+      <PostID>1491</PostID>
+      <FavoriteName>Services feedback</FavoriteName>
+      <SiteID>110</SiteID>
+      <FavoriteGUID>33d5c247-629a-4d02-8a72-98cba579b6af</FavoriteGUID>
+      <FavoriteLastModified>2011-09-09T14:37:12.77+02:00</FavoriteLastModified>
+    </forums_userfavorites>
+  </NewDataSet>
+</forums_forumuserfavorites>

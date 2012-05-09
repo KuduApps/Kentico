@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="AttachmentGUID;AttachmentID">
+    <action name="select" externalsourcename="select" caption="$dialogs.list.actions.select$" icon="next.png" />
+    <action name="view" externalsourcename="view" caption="$dialogs.list.actions.view$" icon="View.png" />
+    <separator />
+    <action name="edit" externalsourcename="attachmentedit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="attachmentdelete" caption="$dialogs.list.actions.delete$" icon="Delete.png" />
+    <separator />
+    <action name="moveup" externalsourcename="attachmentmoveup" caption="$general.moveup$" icon="Up.png" />
+    <action name="movedown" externalsourcename="attachmentmovedown" caption="$general.movedown$" icon="Down.png" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="attachmentupdate" caption="$general.update$" wrap="false" cssclass="UniGridActions" />
+    <column source="##ALL##" externalsourcename="name" caption="$general.name$" width="100%" wrap="false" sort="AttachmentName" />
+    <column source="##ALL##" externalsourcename="type" caption="$general.type$" wrap="false" sort="AttachmentExtension" />
+    <column source="##ALL##" externalsourcename="size" caption="$general.size$" wrap="false" sort="AttachmentSize" />
+    <column source="##ALL##" externalsourcename="attachmentmodified" caption="$general.modified$" wrap="false" sort="AttachmentLastModified">
+      <tooltip source="##ALL##" externalsourcename="attachmentmodifiedtooltip" />
+    </column>
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+    <key name="ShowDirectPageControl" value="false" />
+    <key name="DefaultPageSize" value="10" />
+    <key name="PageSizeOptions" value="10,25,50,100,##ALL##" />
+  </pager>
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

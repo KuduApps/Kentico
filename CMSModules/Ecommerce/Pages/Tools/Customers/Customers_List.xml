@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="hassitebinding" externalsourcename="hassitebinding" caption="$com.customernotboundtosite$" icon="Warning.png" />
+  </actions>
+  <columns>
+    <column source="CustomerCompany" caption="$Unigrid.Customers.Columns.CustomerCompanyName$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="CustomerLastName" caption="$Unigrid.Customers.Columns.CustomerLastName$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="CustomerFirstName" caption="$Unigrid.Customers.Columns.CustomerFirstName$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="CountryDisplayName" externalsourcename="CountryDisplayName"  caption="$Unigrid.Customers.Columns.CustomerCountry$" wrap="false">
+    </column>
+    <column source="StateDisplayName" externalsourcename="StateDisplayName"  caption="$Unigrid.Customers.Columns.CustomerState$" wrap="false">
+    </column>
+    <column source="CustomerEmail" caption="$general.email$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="CustomerCreated" caption="$Unigrid.Customers.Columns.CustomerUserCreated$" wrap="false">
+    </column>
+    <column source="CustomerEnabled" externalsourcename="CustEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+    <column source="CustomerUserID" externalsourcename="CustomerUserID" columnname="CustomerUserID"  caption="$com.isregistered$" wrap="false">
+      <filter type="custom" path="~/CMSModules/Ecommerce/Controls/Filters/CustomerTypeFilter.ascx" />
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.customerlist" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,179 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml;
+
+using CMS.UIControls;
+using CMS.GlobalHelper;
+using CMS.PortalEngine;
+using CMS.IO;
+using CMS.FormEngine;
+using CMS.URLRewritingEngine;
+
+public partial class CMSModules_PortalEngine_UI_WebParts_Development_WebPart_Edit_SystemProperties : SiteManagerPage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        int webPartId = QueryHelper.GetInteger("webpartid", 0);
+
+        // Default values XML load
+        XmlDocument xmlBefore = new XmlDocument();
+        XmlDocument xmlAfter = new XmlDocument();
+        ucDefaultValueEditor.XMLCreated += new EventHandler(ucDefaultValueEditor_XMLCreated);
+
+        // If saved is found in query string
+        if ((!RequestHelper.IsPostBack()) && (QueryHelper.GetInteger("saved", 0) == 1))
+        {
+            lblInfo.Visible = true;
+            lblInfo.Text = GetString("General.ChangesSaved");
+        }
+
+        // Load default values XML files
+        xmlBefore.Load(Server.MapPath("~/CMSModules/PortalEngine/UI/WebParts/Properties/WebPart_PropertiesBefore.xml"));
+        xmlAfter.Load(Server.MapPath("~/CMSModules/PortalEngine/UI/WebParts/Properties/WebPart_PropertiesAfter.xml"));
+        string formDef = FormHelper.CombineFormDefinitions(xmlBefore.DocumentElement.OuterXml, xmlAfter.DocumentElement.OuterXml);
+
+        WebPartInfo wi = WebPartInfoProvider.GetWebPartInfo(webPartId);
+
+        if (wi != null)
+        {
+            // Load default values for current web part
+            XmlDocument xmlDefault = LoadDefaultValuesXML(wi, formDef);
+
+            // Set field editor        
+            if (String.IsNullOrEmpty(wi.WebPartDefaultValues))
+            {
+                ucDefaultValueEditor.DefaultValueXMLDefinition = "<form></form>";
+            }
+            else
+            {
+                // WebPartDefaultValues contains changed fields versus default XML settings (stored in files)
+                ucDefaultValueEditor.DefaultValueXMLDefinition = wi.WebPartDefaultValues;
+            }
+
+            ucDefaultValueEditor.SourceXMLDefinition = xmlDefault.DocumentElement.OuterXml;
+        }
+    }
+
+
+    /// <summary>
+    /// Load XML with default values (remove keys already overriden in properties tab).
+    /// </summary>
+    /// <param name="wi">Web part info</param>
+    /// <param name="formDef">String XML definition of default values of webpart</param>
+    private XmlDocument LoadDefaultValuesXML(WebPartInfo wi, string formDef)
+    {
+        // Test if there is any default properties set
+        string properties = "<form></form>";
+        XmlDocument xmlProperties = new XmlDocument();
+
+        // If inherited web part load parent properties
+        if (wi.WebPartParentID > 0)
+        {
+            WebPartInfo parentInfo = WebPartInfoProvider.GetWebPartInfo(wi.WebPartParentID);
+            if (parentInfo != null)
+            {
+                properties = parentInfo.WebPartProperties;
+            }
+        }
+        else
+        {
+            properties = wi.WebPartProperties;
+        }
+        xmlProperties.LoadXml(properties);
+
+        // Load default system xml 
+        XmlDocument xmlDefault = new XmlDocument();
+        xmlDefault.LoadXml(formDef);
+
+        // Filter overriden properties - remove properties with same name as in system XML
+        XmlNodeList defaultList = xmlDefault.SelectNodes(@"//field");
+        foreach (XmlNode node in defaultList)
+        {
+            string columnName = node.Attributes["column"].Value.ToString();
+
+            XmlNodeList propertiesList = xmlProperties.SelectNodes("//field[@column=\"" + columnName + "\"]");
+            //This property already set in properties tab
+            if (propertiesList.Count > 0)
+            {
+                node.ParentNode.RemoveChild(node);
+            }
+        }
+
+        // Filter empty categories            
+        XmlNodeList nodes = xmlDefault.DocumentElement.ChildNodes;
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            XmlNode node = nodes[i];
+            if (node.Name.ToLower() == "category")
+            {
+                // Find next category
+                if (i < nodes.Count - 1)
+                {
+                    XmlNode nextNode = nodes[i + 1];
+                    if (nextNode.Name.ToLower() == "category")
+                    {
+                        // Delete actual category
+                        node.ParentNode.RemoveChild(node);
+                        i--;
+                    }
+                }
+            }
+        }
+
+        // Test if last category is not empty           
+        nodes = xmlDefault.DocumentElement.ChildNodes;
+        if (nodes.Count > 0)
+        {
+            XmlNode lastNode = nodes[nodes.Count - 1];
+            if (lastNode.Name.ToLower() == "category")
+            {
+                lastNode.ParentNode.RemoveChild(lastNode);
+            }
+        }
+        return xmlDefault;
+    }
+
+
+    /// <summary>
+    /// Event loaded after ok button clicked.
+    /// </summary>
+    /// <param name="sender">Sender</param>
+    /// <param name="e">Event args</param>
+    void ucDefaultValueEditor_XMLCreated(object sender, EventArgs e)
+    {
+        int webPartId = QueryHelper.GetInteger("webpartid", 0);
+        WebPartInfo wpi = WebPartInfoProvider.GetWebPartInfo(webPartId);
+        if (wpi != null)
+        {
+            if (wpi.WebPartParentID > 0)
+            {
+                //Remove overloaded default values and replace them with new ones
+                string filteredDef = String.Empty;
+                //Load parent 
+                WebPartInfo parentInfo = WebPartInfoProvider.GetWebPartInfo(wpi.WebPartParentID);
+                if (parentInfo != null)
+                {
+                    // Remove properties from collection with same name as in default system xml
+                    filteredDef = ucDefaultValueEditor.FitlerDefaultValuesDefinition(wpi.WebPartDefaultValues, parentInfo.WebPartProperties, false);
+                }
+                // FilteredDef now contains only properties inherited from parent web part
+                // Combine with changed default system values
+                wpi.WebPartDefaultValues = FormHelper.CombineFormDefinitions(filteredDef, ucDefaultValueEditor.DefaultValueXMLDefinition);
+            }
+            else
+            {
+                wpi.WebPartDefaultValues = ucDefaultValueEditor.DefaultValueXMLDefinition;
+            }
+            WebPartInfoProvider.SetWebPartInfo(wpi);
+        }
+
+        string url = URLHelper.RemoveParameterFromUrl(URLRewriter.CurrentURL, "saved");
+        url = URLHelper.AddParameterToUrl(url, "saved", "1");
+        URLHelper.Redirect(url);
+    }
+}
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="CurrencyDisplayName" caption="$Unigrid.Currency.Columns.CurrencyDisplayName$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="CurrencyCode" caption="$Unigrid.Currency.Columns.CurrencyCode$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="CurrencyIsMain" externalsourcename="CurrIsMain"  caption="$Unigrid.Currency.Columns.CurrencyIsMain$" wrap="false">
+    </column>
+    <column source="CurrencyEnabled" externalsourcename="CurrEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.currency" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

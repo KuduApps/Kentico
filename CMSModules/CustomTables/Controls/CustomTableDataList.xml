@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" commandargument="itemid" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" commandargument="itemid" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+    <action name="view" commandargument="itemid" externalsourcename="view" caption="$General.View$" icon="View.png" />
+    <action name="moveup" commandargument="itemid" externalsourcename="moveup" caption="$General.Up$" icon="Up.png" />
+    <action name="movedown" commandargument="itemid" externalsourcename="movedown" caption="$General.Down$" icon="Down.png" />
+  </actions>
+  <columns>
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

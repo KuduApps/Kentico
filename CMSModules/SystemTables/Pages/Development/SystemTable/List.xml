@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+  </actions>
+  <columns>
+    <column source="ClassDisplayName" caption="$Unigrid.SysTables.Columns.ClassDisplayName$" wrap="false" />
+    <column source="ClassName" caption="$Unigrid.SysTables.Columns.ClassName$" wrap="false" />
+    <column source="ClassTableName" caption="$Unigrid.SysTables.Columns.ClassTableName$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.systemtable" Columns="ClassID, ClassDisplayName, ClassName, ClassTableName" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

@@ -1,0 +1,293 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head> 
+   <title>Security</title> 
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta name="generator" content="Help &amp; Manual" /> 
+   <meta name="keywords" content="" />
+   <meta name="description" content="Security" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" /> 
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+   
+   	.breadhead {
+	margin: 0;
+	padding-right: 5px;
+	}
+   
+   
+</style>
+<![endif]-->
+   
+<script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 6.0 Context Help - Security".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Desk &gt; Content &gt; Edit &gt; Properties &gt; Security /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20Security2%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-105987-4']);
+  _gaq.push(['_setDomainName', '.kentico.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>        
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?security2.htm"; }
+  else { parent.quicksync('a1.1.2.6.12'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 6.0 Context Help</span><br />
+<p class="p_Heading1"><span class="f_Heading1">Security</span></p>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Desk &gt; Content &gt; Edit &gt; Properties:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <p class="p_Heading1"><span class="f_Heading1">Security</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="linked_docs.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="doc_attachments.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <p class="p_Heading1"><span class="f_Heading1">Security</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="linked_docs.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="doc_attachments.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:support@kentico.com?subject=Documentation%20feedback&body=Ref%20ID:%20Security2%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+<div id="autoTocWrapper"></div>
+</div> 
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p>This dialog is divided into two independent sections - <span style="font-weight: bold;">Permissions</span> and <span style="font-weight: bold;">Access</span>.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Permissions</span></p>
+<p>&nbsp;</p>
+<p>Here you can specify the document-level permissions for the given document. Please see <a href="http://devnet.kentico.com/docs/6_0/devguide/permissions_for_modules_and_documents.htm" target="_blank" class="weblink">Developer's Guide -&gt; Development -&gt; Membership, permissions and security -&gt; Permissions</a> for more details.</p>
+<p>&nbsp;</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="10" border="1" style="border: solid 1px #000000; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="57" style="width:57px; border: none"><p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img src="embim3.gif" width="51" height="54" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="511" style="width:511px; border: none"><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Document-level and global permissions</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>Please remember that the document level permissions defined on this tab are combined with global permissions defined for roles in the <span style="font-weight: bold;">CMS Desk -&gt; Administration -&gt; Permissions </span>dialog<span style="font-weight: bold;"> </span>as described in the <a href="http://devnet.kentico.com/docs/6_0/devguide/permissions_for_modules_and_documents.htm" target="_blank" class="weblink">Developer's Guide -&gt; Development -&gt; Membership, permissions and security -&gt; Permissions</a> chapter.</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Breaking and restoring permission inheritance</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>In case you need to break the permission inheritance and configure different permissions for some site section, you need to click <span style="font-weight: bold;">Change permission inheritance...</span> link in the <span style="font-weight: bold;">Security</span> dialog and choose one of the following options:<br>
+&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Break inheritance and copy parent permissions </span>- breaks inheritance and adds parent permissions to the document, while original permissions configured for the document are preserved.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Break inheritance and remove parent permissions </span>- breaks inheritance and removes all permissions inherited from the parent, while additional permissions configured for the document are preserved.</td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p>If you decide to inherit the permissions from the parent again, click the <span style="font-weight: bold;">Change permission inheritance... </span>link on the <span style="font-weight: bold;">Security</span> tab. Two options will be offered:</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Restore inheritance to parent document permissions (current document only)</span> - makes the current document inherit permissions of the parent document.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Recursively restore inheritance to parent document permissions (current and all child documents)</span> - makes the current document and all its child documents inherit permissions of the parent document, while only documents which do not inherit parent permissions are affected by this action.</td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Access</span></p>
+<p>&nbsp;</p>
+<p>In this section, the following two options are available:</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Requires authentication</span>:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Yes </span>- authentication is required to access the page.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">No</span> - authentication is not required to access the page.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Inherits </span>- value of the setting is required from the parent page.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">Requires SSL</span>:</p>
+<p>&nbsp;</p>
+<p>This setting indicates if users who access the page should automatically be redirected to the version of the page that is secured through the SSL protocol (i.e. the target URL will use the <span style="font-weight: bold;">https</span> scheme). You can choose one of the following options:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Yes </span>- users attempting to access the page will always be redirected to the HTTPS version of the page's URL.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">No</span> - users will not be explicitly redirected to a secured URL when they access the page, but the protocol used in the current URL will remain unchanged (i.e. if a user navigates to the page from another page that is secured, this page will also use SSL).</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Inherits </span>- the settings defined for the parent document will be used.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Never</span> - users trying to access the page through a secured URL will be explicitly redirected to the unsecured version of the page.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">Please note: </span>Kentico CMS does not configure your website for SSL/HTTPS. It may only be used to automatically redirect users to the appropriate URL. You need to perform the configuration itself manually using the standard IIS settings, as described in IIS documentation or in this article: <a href="http://msdn.microsoft.com/cs-cz/magazine/cc301946(en-us).aspx" target="_blank" class="weblink">http://msdn.microsoft.com/cs-cz/magazine/cc301946(en-us).aspx</a></p>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?security2.htm" target="_top" title="Right-click to copy the URL of this help topic">
+<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?security2.htm</a>
+</p>
+</noscript>
+<script type="text/javascript">
+var autoURL = true;
+if (autoURL) {
+      document.write(getHref("index.html","Help URL:","Right-click to copy the URL of this help topic"));
+      } else {
+             document.write('<p class="help-url"><b>Help URL:&nbsp;</b>');
+             document.write('<a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?security2.htm" target="_top" title="Right-click to copy the URL of this help topic"><%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?security2.htm</a>');
+             document.write('</p>');
+      }
+</script>
+
+</div></div> 
+</body>
+</html>
+
+
+
+
+

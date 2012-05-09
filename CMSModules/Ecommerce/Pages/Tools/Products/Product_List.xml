@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+
+  <actions>
+    <action name="edit" caption="$Product_List.Actions.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$Product_List.Actions.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+
+  <columns>
+    <column source="SKUName" caption="$Product_List.ProductName$" wrap="false" localize="true">
+    </column>
+    <column source="SKUNumber" caption="$Product_List.ProductNumber$" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="SKUPrice" caption="$Product_List.ProductPrice$" wrap="false" sort="SKUPrice">
+    </column>
+    <column source="SKUAvailableItems" caption="$Product_List.ProductAvailableItems$" wrap="false">
+    </column>
+    <column source="PublicStatusDisplayName" externalsourcename="PublicStatusDisplayName" caption="$Product_List.Grid.StoreStatus$" wrap="false">
+    </column>
+    <column source="InternalStatusDisplayName" caption="$Product_List.Grid.InternalStatus$" wrap="false">
+    </column>
+    <column source="SKUEnabled" externalsourcename="SKUEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+    <column source="SKUSiteID" externalsourcename="SKUSiteID" columnname="SKUSiteID"  caption="$com.isglobal$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.skulist" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

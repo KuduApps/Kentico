@@ -1,0 +1,26 @@
+﻿<forums_forumgroup version="6.0">
+  <NewDataSet>
+    <forums_forumgroup>
+      <GroupID>4</GroupID>
+      <GroupSiteID>6</GroupSiteID>
+      <GroupName>MyForums</GroupName>
+      <GroupDisplayName>My Forums</GroupDisplayName>
+      <GroupOrder>1</GroupOrder>
+      <GroupDescription></GroupDescription>
+      <GroupGUID>31f43e4d-4c3c-493b-b611-b3498fd854ad</GroupGUID>
+      <GroupLastModified>2009-01-12T09:11:20.82+01:00</GroupLastModified>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+  </NewDataSet>
+</forums_forumgroup>

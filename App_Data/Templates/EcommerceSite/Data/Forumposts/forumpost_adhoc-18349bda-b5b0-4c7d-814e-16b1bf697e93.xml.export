@@ -1,0 +1,55 @@
+﻿<forumpost_adhoc-18349bda-b5b0-4c7d-814e-16b1bf697e93 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>36</PostId>
+      <PostForumID>13</PostForumID>
+      <PostIDPath>/00000036</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>GPRS</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Bobby</PostUserName>
+      <PostUserMail>bobby@localhost.local</PostUserMail>
+      <PostText>What class is GPRS on Nokia 6300? Thanks</PostText>
+      <PostTime>2008-03-05T19:26:33.183+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:27:13.943+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>d72eea0a-383e-48a5-ac27-a78da932cc78</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.013+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:27:13.943+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>37</PostId>
+      <PostForumID>13</PostForumID>
+      <PostParentID>36</PostParentID>
+      <PostIDPath>/00000036/00000037</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:GPRS</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>It's class 10 (4/2).</PostText>
+      <PostTime>2008-03-05T19:27:13.943+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>baeac947-718a-4df7-a5b1-4e8b3823b879</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.03+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-18349bda-b5b0-4c7d-814e-16b1bf697e93>

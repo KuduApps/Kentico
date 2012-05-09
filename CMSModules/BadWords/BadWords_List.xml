@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="WordExpression" caption="$Unigrid.BadWords.Columns.WordExpression$" wrap="false" width="100%" maxlength="100" >
+      <tooltip source="WordExpression" width="0" />
+    </column>
+    <column source="WordAction" externalsourcename="WordAction" caption="$Unigrid.BadWords.Columns.WordAction$" wrap="false" width="200px" />
+    <column source="##ALL##" externalsourcename="WordReplacement" caption="$Unigrid.BadWords.Columns.WordReplacement$" sort="WordReplacement" wrap="false" width="200px" />
+    <column source="WordIsGlobal" externalsourcename="Global" caption="$Unigrid.BadWords.Columns.IsGlobal$" wrap="false" />
+  </columns>
+  <objecttype name="badwords.word" columns = "WordID,WordExpression,WordReplacement,WordAction,WordIsGlobal" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

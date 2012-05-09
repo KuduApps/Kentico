@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" commandargument="ClassID" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" commandargument="ClassID" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+  </actions>
+  <columns>
+    <column source="ClassDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="ClassName" caption="$general.codename$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="ClassTableName" caption="$sysdev.classes.tablename$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.customtable" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

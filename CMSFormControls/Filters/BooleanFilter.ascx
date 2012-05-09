@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="BooleanFilter.ascx.cs" Inherits="CMSFormControls_Filters_BooleanFilter" %>
+<asp:DropDownList ID="drpConditionValue" runat="server" CssClass="ExtraSmallDropDown" />

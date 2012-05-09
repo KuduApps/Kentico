@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="RoleID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="RoleDisplayName" caption="$Unigrid.RoleList.Columns.RoleName$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.role" columns="RoleID, RoleDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

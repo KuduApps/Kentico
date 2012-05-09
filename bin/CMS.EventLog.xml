@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.EventLog</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.EventLog.EventLogCleaner">
+            <summary>
+            Thread for deleting old event logs.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogCleaner.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="siteId">Site ID</param>
+            <param name="logSize">Log size</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogCleaner.Run">
+            <summary>
+            Delete older event logs.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogCleaner.RunAsync">
+            <summary>
+            Run async thread to delete old logs.
+            </summary>
+        </member>
+        <member name="T:CMS.EventLog.EventLogHelper">
+            <summary>
+             Class for event helper methods
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogHelper.mLogEventsToFile">
+            <summary>
+            Indicates if events are logged to the file.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogHelper.mLogFile">
+            <summary>
+            Logs file path.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.LogEventToFile(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="eventType">Type of the event. I = information, E = error, W = warning</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="userId">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeId">ID value of the document</param>
+            <param name="documentName">NamePath value of the document</param>
+            <param name="ipAddress">IP Address of the user, who caused logged event</param>
+            <param name="eventDescription">Detailed description of the event</param>
+            <param name="siteId">ID of the site</param>
+            <param name="eventUrl">Event url address</param>
+            <param name="machineName">Name of machine</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.LogEventToFile(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="eventType">Type of the event. I = information, E = error, W = warning</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="userId">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeId">ID value of the document</param>
+            <param name="documentName">NamePath value of the document</param>
+            <param name="ipAddress">IP Address of the user, who caused logged event</param>
+            <param name="eventDescription">Detailed description of the event</param>
+            <param name="siteId">ID of the site</param>
+            <param name="eventUrl">Event url address</param>
+            <param name="machineName">Name of machine</param>
+            <param name="eventUrlReferrer">URL referrer</param>
+            <param name="eventUserAgent">User agent</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.SendEmailNotification(CMS.SettingsProvider.IDataContainer,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="eventObj">Object with event data</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.SendEmailNotification(CMS.EventLog.EventLogInfo,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="eventObj">Event info object</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.SendEmailNotificationInternal(System.String,System.String,CMS.SettingsProvider.IDataContainer,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="emailTo">E-mail address to which the email should be sent to</param>
+            <param name="emailFrom">E-mail address from which the email is sent</param>
+            <param name="eventObj">Object with event data</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.SendEmailNotificationInternal(System.String,System.String,CMS.EventLog.EventLogInfo,System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="emailTo">E-mail address to which the email should be sent to</param>
+            <param name="emailFrom">E-mail address from which the email is sent</param>
+            <param name="eventObj">Event log info object</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.GetEventText(CMS.SettingsProvider.IDataContainer)">
+            <summary>
+             Gets log event text from DataRow
+            </summary>
+            <param name="eventObj">Object containing log event data</param>
+            <returns>Text of log event</returns>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.GetEventText(CMS.EventLog.EventLogInfo)">
+            <summary>
+             Gets log event text from DataRow
+            </summary>
+            <param name="eventObj">Object containing log event data</param>
+            <returns>Text of log event</returns>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.GetChangedFields(CMS.SettingsProvider.IAdvancedDataContainer)">
+            <summary>
+            Gets the list of changed fields in the given object.
+            </summary>
+            <param name="dc">DataClass object</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.GetFields(CMS.SettingsProvider.IAdvancedDataContainer)">
+            <summary>
+            Gets the list of fields in the given object.
+            </summary>
+            <param name="dc">DataClass object</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogHelper.GetEventTypeText(System.String)">
+            <summary>
+            Returns user-friendly string for the given event type.
+            </summary>
+            <param name="eventType">Event type string</param>
+        </member>
+        <member name="P:CMS.EventLog.EventLogHelper.LogFile">
+            <summary>
+            Physical path to the log file.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogHelper.LogEventsToFile">
+            <summary>
+            Indicates if events are logged to the file.
+            </summary>
+        </member>
+        <member name="T:CMS.EventLog.EventLogInfo">
+            <summary>
+            EventLogInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.CheckPermissions(CMS.SettingsProvider.PermissionsEnum,System.String,CMS.SettingsProvider.IUserInfo)">
+            <summary>
+            Checks the permissions of the object.
+            </summary>
+            <param name="permission">Permission type</param>
+            <param name="siteName">Name of the site</param>
+            <param name="userInfo">UserInfo object</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty EventLogInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new EventLogInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogInfo.#ctor(CMS.DataEngine.IDataClass)">
+            <summary>
+            Constructor - Creates a new EventLogInfo object from the given Data class.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventMachineName">
+            <summary>
+            Name of machine on which event is being logged.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventType">
+            <summary>
+            Type of event, use predefined constants from EventLogProvider (or "I" for Info, "W" for Warning, "E" for Error).
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.IPAddress">
+            <summary>
+            IP address.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventTime">
+            <summary>
+            Time of event.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.SiteID">
+            <summary>
+            Site identifier.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventUrl">
+            <summary>
+            URL of event.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventDescription">
+            <summary>
+            Description of event.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.UserName">
+            <summary>
+            User name.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.DocumentName">
+            <summary>
+            Name of document.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventUrlReferrer">
+            <summary>
+            Referrer URL.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.NodeID">
+            <summary>
+            ID of node.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventCode">
+            <summary>
+            Code of event.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventUserAgent">
+            <summary>
+            Browser identification.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.Source">
+            <summary>
+            Source of event.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.UserID">
+            <summary>
+            User identifier.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogInfo.EventID">
+            <summary>
+            Event identifier.
+            </summary>
+        </member>
+        <member name="T:CMS.EventLog.EventLogModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets info object of specified type.
+            </summary>
+            <param name="objectRow">Row containing data</param>
+            <param name="objectType">Predefined type of object</param>
+            <returns>Info object of specified type</returns>
+        </member>
+        <member name="M:CMS.EventLog.EventLogModule.ClearHashtables(System.Boolean)">
+            <summary>
+            Clears the module hashtables.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="T:CMS.EventLog.EventLogObjectType">
+            <summary>
+            Eventlog object type constants.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogObjectType.EVENT">
+            <summary>
+            Code name for general group.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.EventLog.EventLogProvider">
+            <summary>
+            Provides basic operations with the event log.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.EVENT_TYPE_INFORMATION">
+            <summary>
+            Info event type.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.EVENT_TYPE_WARNING">
+            <summary>
+            Warning event type.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.EVENT_TYPE_ERROR">
+            <summary>
+            Error event type.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.tableLock">
+            <summary>
+            Table lock for loading.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLoggingEnabled">
+            <summary>
+            Indicates if the logging is enabled.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLogFieldChanges">
+            <summary>
+            Indicates if the log should contain the changes for particular fields.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLogDocumentFieldChanges">
+            <summary>
+            Indicates if the log should contain the changes for particular document fields.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLogDeleteCoeficient">
+            <summary>
+            Coeficient for log deletion, keeps the specified number of log items percent alive and deletes the log by batch when the percents are exceeded.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLogItems">
+            <summary>
+            Cached log items count [siteId] -> [count]
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mLogSizes">
+            <summary>
+            Cached log items count [siteId] -> [logSize]
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mConnection">
+            <summary>
+            General database connection.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mDeleteOlderLogs">
+            <summary>
+            Delete older log items?
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.deleteLock">
+            <summary>
+            Lock for deleting  older logs.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mWarnings">
+            <summary>
+            Counter of warnings.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mErrors">
+            <summary>
+            Counter of errors.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.#cctor">
+            <summary>
+            Initializes the <see cref="T:CMS.EventLog.EventLogProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CMS.EventLog.EventLogProvider"/> class.
+            </summary>
+        </member>
+        <member name="F:CMS.EventLog.EventLogProvider.mProviderObject">
+            <summary>
+            Provider object.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LoadProvider(CMS.EventLog.EventLogProvider)">
+            <summary>
+            Loads the provider based on the given parameters.
+            </summary>
+            <param name="defaultProvider">Default Provider</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.ClearEventLog(System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            Clears entire event log and writes new event record with information about this action and the user who performed it.
+            </summary>
+            <param name="userId">User ID for logging purposes</param>
+            <param name="userName">User name for logging purposes</param>
+            <param name="ipAddress">IP address for logging purposes</param>
+            <param name="siteId">Site ID for logging purposes</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetEventLogInfo(System.Int32)">
+            <summary>
+            Returns specified event info object from the event log.
+            </summary>
+            <param name="eventId">Event ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetAllEvents(System.String,System.String)">
+            <summary>
+            Returns all records from the event log which meet specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">OrderBy SQL expression</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetAllEvents(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns all records from the event log which meet specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">OrderBy SQL expression</param>
+            <param name="topN">Specifies number of returned columns</param>
+            <param name="columns">Columns to return</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetAllEvents(System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns all records from the event log which meet specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by columns</param>
+            <param name="topN">Top N records</param>
+            <param name="columns">Columns to get</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetPreviousNext(System.Int32,System.String,System.String)">
+            <summary>
+            Returns the previous and next events of the given event in the order specified by ORDER BY parameter matching the WHERE criteria.
+            </summary>
+            <param name="eventId">ID of the event relative to which the previous and next events are returned</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by columns</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. I = information, E = error, W = warning</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.String,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. I = information, E = error, W = warning</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="eventUrl">URL of the event</param>
+            <param name="eventDescription">Detailed description of the event</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.String,System.Exception)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.String,System.Exception,System.Int32)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+            <param name="siteId">Current site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.String,System.Exception,System.Int32,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+            <param name="siteId">Current site ID</param>
+            <param name="additionalMessage">Additional information to the exception message</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetExceptionLogMessage(System.Exception)">
+            <summary>
+            Gets complete log for exception with message and deep stack trace.
+            </summary>
+            <param name="ex">Exception to log</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="siteID">Site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="eventUrl">URL of the event</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="userID">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="userID">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeID">ID value of the document</param>
+            <param name="documentName">Document name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="userID">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeID">ID value of the document</param>
+            <param name="documentName">Document name</param>
+            <param name="ipAddress">IP Address of the user, who caused logged event</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(CMS.EventLog.EventLogInfo)">
+             <summary>
+             Writes a new record to the event log.
+             </summary>
+            <param name="eventLogInfo">Eventlog info object</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="userId">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeId">ID value of the document</param>
+            <param name="documentName">NamePath value of the document</param>
+            <param name="ipAddress">IP Address of the user, who caused logged event</param>
+            <param name="eventDescription">Detailed description of the event</param>
+            <param name="siteId">ID of the site</param>
+            <param name="eventUrl">Event URL address</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogEvent(System.String,System.DateTime,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Writes a new record to the event log.
+            </summary>
+            <param name="eventType">Type of the event. Please use predefined constants from EventLogProvider</param>
+            <param name="eventTime">Date and time when the event occurs</param>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (UPDATEDOC, SENDEMAIL, DELETE, etc.)</param>
+            <param name="userId">ID of the user, who caused logged event</param>
+            <param name="userName">Name of the user, who caused logged event</param>
+            <param name="nodeId">ID value of the document</param>
+            <param name="documentName">NamePath value of the document</param>
+            <param name="ipAddress">IP Address of the user, who caused logged event</param>
+            <param name="eventDescription">Detailed description of the event</param>
+            <param name="siteId">ID of the site</param>
+            <param name="eventUrl">Event URL address</param>
+            <param name="machineName">Name of machine</param>
+            <param name="urlReferrer">Referrer URL</param>
+            <param name="userAgent">User agent</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetLastEventTypeId(System.String)">
+            <summary>
+            Gets last event with given event code.
+            </summary>
+            <param name="eventCode">Event code</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.AddLogItems(System.Int32,System.Int32)">
+            <summary>
+            Adds specific amount of log items.
+            </summary>
+            <param name="siteId">Site ID</param>
+            <param name="count">Items count to add</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetLogItems(System.Int32)">
+            <summary>
+            Gets the log items count for specified site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetLogSize(System.Int32)">
+            <summary>
+            Gets the log size for specified site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.DeleteOlderItems(System.Int32)">
+            <summary>
+            Deletes older log items if necessary.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogMetadata(System.String)">
+            <summary>
+            Returns true if the metadata should be logged.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogException(System.String,System.String,System.Exception)">
+            <summary>
+            Writes the exception to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogException(System.String,System.String,System.Exception,System.String)">
+            <summary>
+            Writes the exception to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+            <param name="additionalMessage">Additional information to the exception message</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogException(System.String,System.String,System.Exception,System.Int32,System.String)">
+            <summary>
+            Writes the exception to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="ex">Exception to be logged</param>
+            <param name="siteId">Site ID</param>
+            <param name="additionalMessage">Additional information to the exception message</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogInformation(System.String,System.String)">
+            <summary>
+            Writes the information to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.LogInformation(System.String,System.String,System.String)">
+            <summary>
+            Writes the information to the event log.
+            </summary>
+            <param name="source">Source of the event (Content, Administration, etc.)</param>
+            <param name="eventCode">Event code (Security, Update, Delete, etc.)</param>
+            <param name="eventDescription">Additional event information</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.Clear">
+            <summary>
+            Clears the hashtable.
+            </summary>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.ClearHashtables(System.Boolean)">
+            <summary>
+            Clears up hashtables of EventLogProvider.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.SetEventLogInfo(CMS.EventLog.EventLogInfo)">
+            <summary>
+            Sets event log.
+            </summary>
+            <param name="eventLog">Event log object</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetEventInfoInternal(System.Int32)">
+            <summary>
+            Returns specified event info object from the event log.
+            </summary>
+            <param name="eventId">Event identifier</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetAllEventsInternal(System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns all records from the event log which meet specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by columns</param>
+            <param name="topN">Top N records</param>
+            <param name="columns">Columns to get</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetPreviousNextInternal(System.Int32,System.String,System.String)">
+            <summary>
+            Returns the previous and next events of the given event in the order specified by ORDER BY parameter matching the WHERE criteria.
+            </summary>
+            <param name="eventId">ID of the event relative to which the previous and next events are returned</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by columns</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.ClearEventLogInternal(System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            Clears entire event log and writes new event record with information about this action and the user who performed it.
+            </summary>
+            <param name="userId">User ID for logging purposes</param>
+            <param name="userName">User name for logging purposes</param>
+            <param name="ipAddress">IP address for logging purposes</param>
+            <param name="siteId">Site ID for logging purposes</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetLastEventTypeIdInternal(System.String)">
+            <summary>
+            Gets last event with given event code.
+            </summary>
+            <param name="eventCode">Event code</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.GetLogItemsInternal(System.Int32)">
+            <summary>
+            Gets the log items count for specified site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.EventLog.EventLogProvider.SetEventLogInfoInternal(CMS.EventLog.EventLogInfo)">
+            <summary>
+            Sets event log.
+            </summary>
+            <param name="eventLog">Event log object</param>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LogDeleteCoeficient">
+            <summary>
+            Coeficient for log deletion, keeps the specified number of log items percent alive and deletes the log by batch when the percents are exceeded.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LoggingEnabled">
+            <summary>
+            Indicates if logging is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LogFieldChanges">
+            <summary>
+            Indicates if log should contain the changes to particular fields.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LogDocumentFieldChanges">
+            <summary>
+            Indicates if log should contain the changes to particular document document fields.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.DeleteOlderLogs">
+            <summary>
+            Delete older log items.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.GeneralConnection">
+            <summary>
+            General connection.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LogItems">
+            <summary>
+            Cached log items count [siteId] -> [count]
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.LogSizes">
+            <summary>
+            Cached log items count [siteId] -> [logSize]
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.RegExExcludeLogSource">
+            <summary>
+            Regular expression for the excluded log sources - If there is a match, the event is excluded from the log.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.RegExExcludeLogCode">
+            <summary>
+            Regular expression for the excluded log codes - If there is a match, the event is excluded from the log.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.RegExExcludeLogDescription">
+            <summary>
+            Get the regular expression for the excluded log descriptions.
+            If there is a match, the event is excluded from the log.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.DeleteOlderThreadRunning">
+            <summary>
+            Indicates if delete old logs thread is running.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.Warnings">
+            <summary>
+            Counter of warnings.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.Errors">
+            <summary>
+            Counter of warnings.
+            </summary>
+        </member>
+        <member name="P:CMS.EventLog.EventLogProvider.ProviderObject">
+            <summary>
+            Provider object.
+            </summary>
+        </member>
+    </members>
+</doc>

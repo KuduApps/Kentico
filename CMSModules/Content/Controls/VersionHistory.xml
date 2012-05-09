@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="VersionHistoryID">
+    <action name="view" externalsourcename="view" caption="$Unigrid.VersionHistory.Actions.View$" icon="View.png" onclick="ViewVersion({0}); return false;" />
+    <action name="rollback" externalsourcename="rollback" caption="$Unigrid.VersionHistory.Actions.Rollback$" icon="undo.png" confirmation="$Unigrid.VersionHistory.Actions.Rollback.Confirmation$" />
+    <action name="destroy" externalsourcename="allowdestroy" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="ModifiedWhenBy"  caption="$Unigrid.VersionHistory.Columns.ModifiedWhenBy$" wrap="false" width="100%">
+      <tooltip source="##ALL##" externalsourcename="ModifiedWhenBytooltip" />
+    </column>
+    <column source="VersionNumber" caption="$Unigrid.VersionHistory.Columns.VersionNumber$" wrap="false" />
+    <column source="VersionComment" caption="$Unigrid.VersionHistory.Columns.VersionComment$" wrap="false" istext="true"/>
+    <column source="PublishFrom" externalsourcename="publishfrom" caption="$Unigrid.VersionHistory.Columns.PublishFrom$" wrap="false">
+      <tooltip source="publishfrom" externalsourcename="publishfromtooltip" />
+    </column>
+    <column source="PublishTo" externalsourcename="publishto" caption="$Unigrid.VersionHistory.Columns.PublishTo$" wrap="false">
+      <tooltip source="PublishTo" externalsourcename="publishtotooltip" />
+    </column>
+    <column source="ToBePublished" externalsourcename="ToBePublished"  caption="$Unigrid.VersionHistory.Columns.ToBePublished$" wrap="false">
+      <tooltip source="ToBePublished" externalsourcename="ToBePublishedtooltip" />
+    </column>
+    <column source="WasPublishedFrom" externalsourcename="waspublishedfrom" caption="$Unigrid.VersionHistory.Columns.WasPublishedFrom$" wrap="false">
+      <tooltip source="WasPublishedFrom" externalsourcename="waspublishedfromtooltip" />
+    </column>
+    <column source="WasPublishedTo" externalsourcename="waspublishedto" caption="$Unigrid.VersionHistory.Columns.WasPublishedTo$" wrap="false">
+      <tooltip source="WasPublishedTo" externalsourcename="waspublishedtotooltip" />
+    </column>
+  </columns>
+  <objecttype name="cms.versionhistorylist" columns="VersionHistoryID, VersionNumber, VersionComment, PublishFrom, PublishTo, ToBePublished, WasPublishedFrom, WasPublishedTo, ModifiedWhen, UserName, FullName" />
+</grid>
+

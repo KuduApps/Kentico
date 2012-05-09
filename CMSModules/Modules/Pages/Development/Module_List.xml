@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="ResourceDisplayName" caption="$Unigrid.ModuleList.Columns.ResourceDisplayName$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.resource" columns="ResourceID, ResourceDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

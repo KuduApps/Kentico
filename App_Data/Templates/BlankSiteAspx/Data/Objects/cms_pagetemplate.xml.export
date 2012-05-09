@@ -1,0 +1,425 @@
+﻿<cms_pagetemplate version="6.0">
+  <NewDataSet>
+    <cms_pagetemplate>
+      <PageTemplateID>15586</PageTemplateID>
+      <PageTemplateDisplayName>Administrator dashboard</PageTemplateDisplayName>
+      <PageTemplateCodeName>Administratordashboard</PageTemplateCodeName>
+      <PageTemplateDescription>Dashboard template used by the site manager dashboard page.</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>78</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="zoneTop"&gt;&lt;properties /&gt;&lt;webpart controlid="WidgetActions" type="WidgetActions" guid="73d57efa-2c6e-4494-9a8b-9dd301c4870b"&gt;&lt;property name="controlid"&gt;WidgetActions&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;73d57efa-2c6e-4494-9a8b-9dd301c4870b&lt;/property&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##
+&lt;/property&gt;&lt;property name="resetconfirmationrequired"&gt;True&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="widgetzonetype"&gt;Dashboard&lt;/property&gt;&lt;property name="displayresetbutton"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;WidgetActions&lt;/property&gt;&lt;property name="displayaddbutton"&gt;True&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions PageTitleHeader"&amp;gt;&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashboardTop" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="EventLog" type="EventLog" guid="0ad8c7b0-40a0-4cfe-9427-7da998ff77d0" iswidget="true"&gt;&lt;property name="controlid"&gt;EventLog&lt;/property&gt;&lt;property name="instanceguid"&gt;0ad8c7b0-40a0-4cfe-9427-7da998ff77d0&lt;/property&gt;&lt;property name="itemsperpage"&gt;10&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="sitename"&gt;##ALL##&lt;/property&gt;&lt;property name="widgettitle"&gt;EventLog&lt;/property&gt;&lt;property name="webparttype"&gt;EventLog&lt;/property&gt;&lt;property name="showglobaleventsonly"&gt;False&lt;/property&gt;&lt;property name="orderby"&gt;EventTime&lt;/property&gt;&lt;property name="sorting"&gt;desc&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="EmailQueue" type="EmailQueue" guid="adb94a56-e91f-4f0a-a4ba-c6561bfe0967" iswidget="true"&gt;&lt;property name="controlid"&gt;EmailQueue&lt;/property&gt;&lt;property name="instanceguid"&gt;adb94a56-e91f-4f0a-a4ba-c6561bfe0967&lt;/property&gt;&lt;property name="sorting"&gt;desc&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="sitename"&gt;##ALL##&lt;/property&gt;&lt;property name="widgettitle"&gt;E-mail queue&lt;/property&gt;&lt;property name="webparttype"&gt;EmailQueue&lt;/property&gt;&lt;property name="itemsperpage"&gt;10&lt;/property&gt;&lt;property name="orderby"&gt;EmailLastSendAttempt&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="System" type="System" guid="6b7e1b23-b806-4a79-83af-898bc6b3bea1" iswidget="true"&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="refreshinterval"&gt;5&lt;/property&gt;&lt;property name="webparttype"&gt;System&lt;/property&gt;&lt;property name="controlid"&gt;System&lt;/property&gt;&lt;property name="instanceguid"&gt;6b7e1b23-b806-4a79-83af-898bc6b3bea1&lt;/property&gt;&lt;property name="widgettitle"&gt;System&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneLeft" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneCenter" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneRight" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashBoardBottom" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;table border="0" width="100%" cellspacing="0" cellpadding="0"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashboardTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashBoardBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</PageTemplateLayout>
+      <PageTemplateVersionGUID>7e1f5db6-aa0b-4334-8233-3c4f525d379c</PageTemplateVersionGUID>
+      <PageTemplateGUID>0c4ac783-07dd-4cbc-b0a0-896c8d51f236</PageTemplateGUID>
+      <PageTemplateLastModified>2011-02-16T08:08:11.127+01:00</PageTemplateLastModified>
+      <PageTemplateType>dashboard</PageTemplateType>
+      <PageTemplateLayoutType>ascx</PageTemplateLayoutType>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>1264</PageTemplateID>
+      <PageTemplateDisplayName>Forums advance search</PageTemplateDisplayName>
+      <PageTemplateCodeName>cms.forumsadvanceserach</PageTemplateCodeName>
+      <PageTemplateDescription>Display forum advance search page</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>true</PageTemplateIsPortal>
+      <PageTemplateCategoryID>19</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="zoneLeft"&gt;&lt;properties /&gt;&lt;webpart controlid="breadcrumbs" type="breadcrumbs" guid="6d64bb0a-9cb8-4dd8-8464-e1f3d0b9be64"&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##
+&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="showcurrentitemaslink"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="applymenudesign"&gt;True&lt;/property&gt;&lt;property name="checkpermissions"&gt;False&lt;/property&gt;&lt;property name="showcurrentitem"&gt;True&lt;/property&gt;&lt;property name="zerorowstext"&gt;No data found&lt;/property&gt;&lt;property name="controlid"&gt;breadcrumbs&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;breadcrumbs&lt;/property&gt;&lt;property name="renderlinktitle"&gt;False&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="cachedependencies"&gt;##DEFAULT##
+&lt;/property&gt;&lt;property name="instanceguid"&gt;6d64bb0a-9cb8-4dd8-8464-e1f3d0b9be64&lt;/property&gt;&lt;property name="ignoreshowinnavigation"&gt;False&lt;/property&gt;&lt;property name="breadcrumbseparatorrtl"&gt;&amp;amp;lt;&lt;/property&gt;&lt;property name="hidecontrolforzerorows"&gt;True&lt;/property&gt;&lt;property name="selectonlypublished"&gt;True&lt;/property&gt;&lt;property name="container"&gt;Box.Gray&lt;/property&gt;&lt;property name="encodename"&gt;False&lt;/property&gt;&lt;property name="breadcrumbseparator"&gt;&amp;amp;gt;&lt;/property&gt;&lt;property name="selectnodesstartpath"&gt;/&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="usertlbehaviour"&gt;True&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="editabletext" type="editabletext" guid="445ee355-8b1b-4dd9-a728-8a0410af63db"&gt;&lt;property name="controlid"&gt;editabletext&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;445ee355-8b1b-4dd9-a728-8a0410af63db&lt;/property&gt;&lt;property name="htmlareatoolbarlocation"&gt;Out:FCKToolbar&lt;/property&gt;&lt;property name="wordwrap"&gt;True&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="selectonlypublished"&gt;False&lt;/property&gt;&lt;property name="webparttype"&gt;editabletext&lt;/property&gt;&lt;property name="checkpermissions"&gt;False&lt;/property&gt;&lt;property name="regiontitle"&gt;Header&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/h1&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="regiontype"&gt;TextBox&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;h1&amp;gt;&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="ExtendedForumSearchDialog" type="ExtendedForumSearchDialog" guid="739cd3be-c179-464c-a2a4-2c4c13894b30"&gt;&lt;property name="controlid"&gt;ExtendedForumSearchDialog&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;739cd3be-c179-464c-a2a4-2c4c13894b30&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;ExtendedForumSearchDialog&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;br /&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideforresult"&gt;False&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="ForumSearchResults" type="ForumSearchResults" guid="cea3768a-eaea-4f03-b4c6-60579f635045"&gt;&lt;property name="controlid"&gt;ForumSearchResults&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;cea3768a-eaea-4f03-b4c6-60579f635045&lt;/property&gt;&lt;property name="enableavatars"&gt;True&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;ForumSearchResults&lt;/property&gt;&lt;property name="noresultstext"&gt;There are no posts matching search criteria.&lt;/property&gt;&lt;property name="displaybadgeinfo"&gt;True&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="redirecttouserprofile"&gt;True&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="avatarmaxsidesize"&gt;80&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels>/{0}</PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;!-- Container --&gt;
+&lt;div class="forumSearch"&gt;
+	&lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;
+&lt;/div&gt;</PageTemplateLayout>
+      <PageTemplateLayoutCheckedOutFileName></PageTemplateLayoutCheckedOutFileName>
+      <PageTemplateLayoutCheckedOutMachineName></PageTemplateLayoutCheckedOutMachineName>
+      <PageTemplateVersionGUID>b036e886-befa-4a2d-9a0f-862d1e89db7a</PageTemplateVersionGUID>
+      <PageTemplateHeader></PageTemplateHeader>
+      <PageTemplateGUID>c72bea04-f4a3-41c7-b742-9d55e9299dfa</PageTemplateGUID>
+      <PageTemplateLastModified>2011-01-25T17:12:33.457+01:00</PageTemplateLastModified>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>71</PageTemplateID>
+      <PageTemplateDisplayName>Master page template</PageTemplateDisplayName>
+      <PageTemplateCodeName>blankaspx.masterpage</PageTemplateCodeName>
+      <PageTemplateDescription>Master page for the Blank site.</PageTemplateDescription>
+      <PageTemplateFile>~/CMSTemplates/BlankASPX/root.aspx</PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>22</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout></PageTemplateLayout>
+      <PageTemplateLayoutCheckedOutFileName></PageTemplateLayoutCheckedOutFileName>
+      <PageTemplateLayoutCheckedOutMachineName></PageTemplateLayoutCheckedOutMachineName>
+      <PageTemplateVersionGUID>bd9b2e0e-d864-49b8-9981-600540617a47</PageTemplateVersionGUID>
+      <PageTemplateHeader></PageTemplateHeader>
+      <PageTemplateGUID>5c1c3012-c07c-49ff-b0ff-346f3155bf8c</PageTemplateGUID>
+      <PageTemplateLastModified>2010-12-10T10:20:39.58+01:00</PageTemplateLastModified>
+      <PageTemplateForAllPages>true</PageTemplateForAllPages>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>17536</PageTemplateID>
+      <PageTemplateDisplayName>My desk dashboard</PageTemplateDisplayName>
+      <PageTemplateCodeName>MyDeskDashboard</PageTemplateCodeName>
+      <PageTemplateDescription>Dashboard template used by the My desk dashboard page.</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>78</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="MyHomePageTop"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneTop"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions PageTitleHeader"&amp;gt;&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="WidgetActions" type="WidgetActions" guid="167a25d5-7897-46a7-9745-1187916f26d0"&gt;&lt;property name="widgetzonetype"&gt;Dashboard&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;167a25d5-7897-46a7-9745-1187916f26d0&lt;/property&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##&lt;/property&gt;&lt;property name="resetconfirmationrequired"&gt;True&lt;/property&gt;&lt;property name="controlid"&gt;WidgetActions&lt;/property&gt;&lt;property name="displayresetbutton"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;WidgetActions&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="displayaddbutton"&gt;True&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions"&amp;gt;&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneRight" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="ForumPostsWaitingForApproval" type="ForumPostsWaitingForApproval" guid="d2c3420a-6935-4457-846e-7d72a57eafff" iswidget="true"&gt;&lt;property name="controlid"&gt;ForumPostsWaitingForApproval&lt;/property&gt;&lt;property name="instanceguid"&gt;d2c3420a-6935-4457-846e-7d72a57eafff&lt;/property&gt;&lt;property name="itemsperpage"&gt;10&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="sitename"&gt;##currentsite##&lt;/property&gt;&lt;property name="widgettitle"&gt;Forum posts waiting for approval&lt;/property&gt;&lt;property name="webparttype"&gt;ForumPostsWaitingForApproval&lt;/property&gt;&lt;property name="zerorowstext"&gt;No data found&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneLeft" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AbuseReportList" type="AbuseReportList" guid="a223c139-8872-45b8-8473-f3b467f758d0" iswidget="true"&gt;&lt;property name="controlid"&gt;AbuseReportList&lt;/property&gt;&lt;property name="instanceguid"&gt;a223c139-8872-45b8-8473-f3b467f758d0&lt;/property&gt;&lt;property name="itemsperpage"&gt;10&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="sitename"&gt;##currentsite##&lt;/property&gt;&lt;property name="widgettitle"&gt;Abuse report list&lt;/property&gt;&lt;property name="webparttype"&gt;AbuseReportList&lt;/property&gt;&lt;property name="status"&gt;-1&lt;/property&gt;&lt;property name="orderby"&gt;ReportWhen&lt;/property&gt;&lt;property name="sorting"&gt;asc&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashboardTop" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="MyMessages_1" type="MyMessages_1" guid="c4688872-beec-4db0-bfcd-f3b9b6d36c5d" iswidget="true"&gt;&lt;property name="displayignorelist"&gt;True&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="instanceguid"&gt;c4688872-beec-4db0-bfcd-f3b9b6d36c5d&lt;/property&gt;&lt;property name="widgettitle"&gt;My messages&lt;/property&gt;&lt;property name="cssclass"&gt;WidgetMyMessages&lt;/property&gt;&lt;property name="displayinbox"&gt;True&lt;/property&gt;&lt;property name="controlid"&gt;MyMessages_1&lt;/property&gt;&lt;property name="webparttype"&gt;MyMessages_1&lt;/property&gt;&lt;property name="displaycontactlist"&gt;True&lt;/property&gt;&lt;property name="notauthenticatedmessage"&gt;My messages are available only for authenticated users.&lt;/property&gt;&lt;property name="displayoutbox"&gt;True&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneCenter" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashBoardBottom" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="Documents" type="Documents" guid="33ae7480-86c9-490e-a0fb-7aee82889997" iswidget="true"&gt;&lt;property name="controlid"&gt;Documents&lt;/property&gt;&lt;property name="instanceguid"&gt;33ae7480-86c9-490e-a0fb-7aee82889997&lt;/property&gt;&lt;property name="listingtype"&gt;recent&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="sitename"&gt;##currentsite##&lt;/property&gt;&lt;property name="widgettitle"&gt;My recent documents&lt;/property&gt;&lt;property name="webparttype"&gt;Documents&lt;/property&gt;&lt;property name="itemsperpage"&gt;10&lt;/property&gt;&lt;property name="path"&gt;/%&lt;/property&gt;&lt;property name="orderby"&gt;DocumentModifiedWhen&lt;/property&gt;&lt;property name="sorting"&gt;desc&lt;/property&gt;&lt;property name="documentage"&gt;;&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneBottom"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneTopRight"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;webpartzone id="ColumnLayout_l1" layoutzone="true"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;webpartzone id="ColumnLayout_center" layoutzone="true"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;webpartzone id="ColumnLayout_r1" layoutzone="true"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;table border="0" width="100%" cellspacing="0" cellpadding="0"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+    	&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashboardTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width:50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashBoardBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</PageTemplateLayout>
+      <PageTemplateVersionGUID>a8d371d9-2bb3-4b2e-8cdd-d0013f4b4f15</PageTemplateVersionGUID>
+      <PageTemplateGUID>c8fe98f0-50c0-496f-a071-6ad5c040c9f2</PageTemplateGUID>
+      <PageTemplateLastModified>2011-10-17T17:01:22.867+02:00</PageTemplateLastModified>
+      <PageTemplateType>dashboard</PageTemplateType>
+      <PageTemplateLayoutType>ascx</PageTemplateLayoutType>
+      <PageTemplateCSS></PageTemplateCSS>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>16748</PageTemplateID>
+      <PageTemplateDisplayName>On-line marketing dashboard</PageTemplateDisplayName>
+      <PageTemplateCodeName>OMDashboard</PageTemplateCodeName>
+      <PageTemplateDescription>Dashboard template used by the On-line marketing dashboard page.</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>78</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="zoneTop"&gt;&lt;properties /&gt;&lt;webpart controlid="WidgetActions" type="WidgetActions" guid="a77ae235-1028-4cb3-a086-6764d59a8b35"&gt;&lt;property name="resetconfirmationrequired"&gt;True&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##&lt;/property&gt;&lt;property name="containerhideonsubpages"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;a77ae235-1028-4cb3-a086-6764d59a8b35&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;WidgetActions&lt;/property&gt;&lt;property name="displayaddbutton"&gt;True&lt;/property&gt;&lt;property name="controlid"&gt;WidgetActions&lt;/property&gt;&lt;property name="displayresetbutton"&gt;True&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions PageTitleHeader"&amp;gt;&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="widgetzonetype"&gt;Dashboard&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashboardTop" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsChartViewer" type="AnalyticsChartViewer" guid="ae9c3787-d096-4b68-b5bd-d9fc85353705" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="instanceguid"&gt;ae9c3787-d096-4b68-b5bd-d9fc85353705&lt;/property&gt;&lt;property name="height"&gt;300&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Number of visits  - last 30 days&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="width"&gt;100%&lt;/property&gt;&lt;property name="rangevalue"&gt;30&lt;/property&gt;&lt;property name="reportchart"&gt;visitors.dayreport;GraphDayVisitors&lt;/property&gt;&lt;property name="range"&gt;day&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneRight" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsChartViewer2" type="AnalyticsChartViewer" guid="dfa46f7f-2049-4b80-9039-21257f57dcb1" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsChartViewer2&lt;/property&gt;&lt;property name="instanceguid"&gt;dfa46f7f-2049-4b80-9039-21257f57dcb1&lt;/property&gt;&lt;property name="height"&gt;300&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Conversions value - last 30 days&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="width"&gt;600&lt;/property&gt;&lt;property name="rangevalue"&gt;30&lt;/property&gt;&lt;property name="reportchart"&gt;conversion.dayreport;GraphDayConversion&lt;/property&gt;&lt;property name="range"&gt;day&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="AnalyticsTableViewer1" type="AnalyticsTableViewer" guid="2717eee9-14ac-4cde-870f-582303af54ba" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsTableViewer1&lt;/property&gt;&lt;property name="enablepaging"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;2717eee9-14ac-4cde-870f-582303af54ba&lt;/property&gt;&lt;property name="parametersxmldata"&gt;&amp;lt;NewDataSet&amp;gt;
+  &amp;lt;Table1&amp;gt;
+    &amp;lt;CodeName&amp;gt;exitpage&amp;lt;/CodeName&amp;gt;
+    &amp;lt;FromDate&amp;gt;2010-01-01T00:00:00+01:00&amp;lt;/FromDate&amp;gt;
+    &amp;lt;ToDate&amp;gt;2011-09-20T12:33:44+02:00&amp;lt;/ToDate&amp;gt;
+  &amp;lt;/Table1&amp;gt;
+&amp;lt;/NewDataSet&amp;gt;&lt;/property&gt;&lt;property name="widgettitle"&gt;Top 10 exit pages - last 30 days&lt;/property&gt;&lt;property name="parametersxmlschema"&gt;&amp;lt;?xml version="1.0" encoding="utf-16"?&amp;gt;
+&amp;lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&amp;gt;
+  &amp;lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&amp;gt;
+    &amp;lt;xs:complexType&amp;gt;
+      &amp;lt;xs:choice minOccurs="0" maxOccurs="unbounded"&amp;gt;
+        &amp;lt;xs:element name="Table1"&amp;gt;
+          &amp;lt;xs:complexType&amp;gt;
+            &amp;lt;xs:sequence&amp;gt;
+              &amp;lt;xs:element name="CodeName" type="xs:string" minOccurs="0" /&amp;gt;
+              &amp;lt;xs:element name="FromDate" type="xs:dateTime" minOccurs="0" /&amp;gt;
+              &amp;lt;xs:element name="ToDate" type="xs:dateTime" minOccurs="0" /&amp;gt;
+            &amp;lt;/xs:sequence&amp;gt;
+          &amp;lt;/xs:complexType&amp;gt;
+        &amp;lt;/xs:element&amp;gt;
+      &amp;lt;/xs:choice&amp;gt;
+    &amp;lt;/xs:complexType&amp;gt;
+  &amp;lt;/xs:element&amp;gt;
+&amp;lt;/xs:schema&amp;gt;&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsTableViewer&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="reporttable"&gt;TOP10Pages;table&lt;/property&gt;&lt;property name="rangevalue"&gt;30&lt;/property&gt;&lt;property name="range"&gt;day&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneLeft" widgetzonetype="dashboard" layoutzone="true"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsChartViewer1" type="AnalyticsChartViewer" guid="5700dc1b-fa9a-4f0b-9f0e-b87ca35a8fef" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsChartViewer1&lt;/property&gt;&lt;property name="instanceguid"&gt;5700dc1b-fa9a-4f0b-9f0e-b87ca35a8fef&lt;/property&gt;&lt;property name="widgettitle"&gt;Campaign hits - last 30 days&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="width"&gt;600&lt;/property&gt;&lt;property name="rangevalue"&gt;30&lt;/property&gt;&lt;property name="reportchart"&gt;campaign.dayreport;graph&lt;/property&gt;&lt;property name="range"&gt;day&lt;/property&gt;&lt;property name="height"&gt;300&lt;/property&gt;&lt;/webpart&gt;&lt;webpart controlid="AnalyticsTableViewer" type="AnalyticsTableViewer" guid="e17686c4-3db0-45ea-b0d6-f268dd46d2fb" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsTableViewer&lt;/property&gt;&lt;property name="enablepaging"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;e17686c4-3db0-45ea-b0d6-f268dd46d2fb&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Top 10 landing pages - last 30 days&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsTableViewer&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="reporttable"&gt;TOP10Pages;table&lt;/property&gt;&lt;property name="rangevalue"&gt;30&lt;/property&gt;&lt;property name="range"&gt;day&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashBoardBottom" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;table border="0" width="100%" cellspacing="0" cellpadding="0"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+           &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashboardTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width:50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashBoardBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</PageTemplateLayout>
+      <PageTemplateVersionGUID>5baada31-db96-4ced-baef-9667283aacd3</PageTemplateVersionGUID>
+      <PageTemplateGUID>660b93fa-9cf3-489a-8bdc-7348bf48b0a5</PageTemplateGUID>
+      <PageTemplateLastModified>2011-09-21T17:59:01.753+02:00</PageTemplateLastModified>
+      <PageTemplateType>dashboard</PageTemplateType>
+      <PageTemplateLayoutType>ascx</PageTemplateLayoutType>
+      <PageTemplateCSS xml:space="preserve">
+</PageTemplateCSS>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>15394</PageTemplateID>
+      <PageTemplateDisplayName>Three columns, top, bottom (Dashboard)</PageTemplateDisplayName>
+      <PageTemplateCodeName>DashboardThreeColumnsTopBottom</PageTemplateCodeName>
+      <PageTemplateDescription>Header, three columns and a footer with dashboard widget zones.</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>78</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="MyHomePageTop"&gt;&lt;properties /&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneTop"&gt;&lt;properties /&gt;&lt;webpart controlid="WidgetActions" type="WidgetActions" guid="167a25d5-7897-46a7-9745-1187916f26d0"&gt;&lt;property name="controlid"&gt;WidgetActions&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;167a25d5-7897-46a7-9745-1187916f26d0&lt;/property&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##
+&lt;/property&gt;&lt;property name="resetconfirmationrequired"&gt;True&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="widgetzonetype"&gt;Dashboard&lt;/property&gt;&lt;property name="displayresetbutton"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;WidgetActions&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="displayaddbutton"&gt;True&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions"&amp;gt;&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneRight" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="YouTubeVideo" type="YouTubeVideo" guid="907eea98-ba1f-4170-9193-0962af6950ad" iswidget="true"&gt;&lt;property name="controlid"&gt;YouTubeVideo&lt;/property&gt;&lt;property name="instanceguid"&gt;907eea98-ba1f-4170-9193-0962af6950ad&lt;/property&gt;&lt;property name="height"&gt;355&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;YouTube video&lt;/property&gt;&lt;property name="autoactivation"&gt;False&lt;/property&gt;&lt;property name="webparttype"&gt;YouTubeVideo&lt;/property&gt;&lt;property name="videourl"&gt;http://www.youtube.com/watch?v=4pbou_r7ODs&lt;/property&gt;&lt;property name="width"&gt;425&lt;/property&gt;&lt;property name="autoplay"&gt;False&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneLeft" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="GoogleMaps" type="GoogleMaps" guid="23f9117c-d07c-4dc6-86fd-7e3d5f03b430" iswidget="true"&gt;&lt;property name="showscalecontrol"&gt;True&lt;/property&gt;&lt;property name="instanceguid"&gt;23f9117c-d07c-4dc6-86fd-7e3d5f03b430&lt;/property&gt;&lt;property name="enablekeyboardshortcuts"&gt;False&lt;/property&gt;&lt;property name="enablemapdragging"&gt;True&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="latitude"&gt;38&lt;/property&gt;&lt;property name="longitude"&gt;-95&lt;/property&gt;&lt;property name="maptype"&gt;ROADMAP&lt;/property&gt;&lt;property name="controlid"&gt;GoogleMaps&lt;/property&gt;&lt;property name="widgettitle"&gt;Google maps&lt;/property&gt;&lt;property name="webparttype"&gt;GoogleMaps&lt;/property&gt;&lt;property name="selectonlypublished"&gt;True&lt;/property&gt;&lt;property name="zoomscale"&gt;10&lt;/property&gt;&lt;property name="scale"&gt;3&lt;/property&gt;&lt;property name="width"&gt;400&lt;/property&gt;&lt;property name="showmaptypecontrol"&gt;True&lt;/property&gt;&lt;property name="shownavigationcontrol"&gt;True&lt;/property&gt;&lt;property name="filteroutduplicates"&gt;False&lt;/property&gt;&lt;property name="navigationcontroltype"&gt;0&lt;/property&gt;&lt;property name="maxrelativelevel"&gt;-1&lt;/property&gt;&lt;property name="height"&gt;400&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashboardTop" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="MyMessages_1" type="MyMessages_1" guid="fe6cddb0-31d4-448e-a9fc-09f6899aa3eb" iswidget="true"&gt;&lt;property name="displayignorelist"&gt;True&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="instanceguid"&gt;fe6cddb0-31d4-448e-a9fc-09f6899aa3eb&lt;/property&gt;&lt;property name="cssclass"&gt;WidgetMyMessages&lt;/property&gt;&lt;property name="displayinbox"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;My messages&lt;/property&gt;&lt;property name="notauthenticatedmessage"&gt;My messages are available only for authenticated users.&lt;/property&gt;&lt;property name="webparttype"&gt;MyMessages_1&lt;/property&gt;&lt;property name="displaycontactlist"&gt;True&lt;/property&gt;&lt;property name="controlid"&gt;MyMessages_1&lt;/property&gt;&lt;property name="displayoutbox"&gt;True&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneCenter" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="dilbert" type="dilbert" guid="35f70556-2878-4d2b-8e43-eacc8dc6a914" iswidget="true"&gt;&lt;property name="controlid"&gt;dilbert&lt;/property&gt;&lt;property name="instanceguid"&gt;35f70556-2878-4d2b-8e43-eacc8dc6a914&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Daily Dilbert&lt;/property&gt;&lt;property name="webparttype"&gt;dilbert&lt;/property&gt;&lt;property name="resolvedynamiccontrols"&gt;False&lt;/property&gt;&lt;property name="text"&gt;&amp;lt;script type="text/javascript" language="javascript" src="http://1-open-opensocial.googleusercontent.com/gadgets/js/rpc.js?c=1&amp;amp;amp;container=open"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="http://www.gmodules.com/ig/ifr?url=http://widgets.dilbert.com/cscallback/urlexchange/4782b1ae641c3eb6/googleig.xml%3Fx%3D9DjLdMdxnXKeJsl3ziDMJp110nfIIc53znGbdcd0myGdcZ1uy3Sdcstzz3PGd88gy3qbcQ&amp;amp;amp;up_wpid=0&amp;amp;amp;up_urlp=0&amp;amp;amp;synd=open&amp;amp;amp;w=280&amp;amp;amp;h=230&amp;amp;amp;title=&amp;amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;amp;output=js"&amp;gt;&amp;lt;/script&amp;gt;&lt;/property&gt;&lt;property name="encodetext"&gt;False&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashBoardBottom" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneBottom"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;div style="width: 100%" class="DashBoard"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashboardTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashBoardBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</PageTemplateLayout>
+      <PageTemplateVersionGUID>a648913d-b5f6-4c61-8eae-36b505d3fedf</PageTemplateVersionGUID>
+      <PageTemplateGUID>420a3535-1ab2-47d0-ab45-47733281650f</PageTemplateGUID>
+      <PageTemplateLastModified>2011-08-11T10:03:35.483+02:00</PageTemplateLastModified>
+      <PageTemplateForAllPages>false</PageTemplateForAllPages>
+      <PageTemplateType>dashboard</PageTemplateType>
+      <PageTemplateLayoutType>ascx</PageTemplateLayoutType>
+    </cms_pagetemplate>
+    <cms_pagetemplate>
+      <PageTemplateID>15720</PageTemplateID>
+      <PageTemplateDisplayName>Web Analytics dashboard</PageTemplateDisplayName>
+      <PageTemplateCodeName>WebAnalyticsDashboard</PageTemplateCodeName>
+      <PageTemplateDescription>Dashboard template used by the web analytics dashboard page.</PageTemplateDescription>
+      <PageTemplateFile></PageTemplateFile>
+      <PageTemplateIsPortal>false</PageTemplateIsPortal>
+      <PageTemplateCategoryID>78</PageTemplateCategoryID>
+      <PageTemplateWebParts>&lt;page&gt;&lt;webpartzone id="zoneTop"&gt;&lt;properties /&gt;&lt;webpart controlid="WidgetActions" type="WidgetActions" guid="e2706e5d-8032-4721-8a9e-b04933f7a84b"&gt;&lt;property name="widgetzonetype"&gt;Dashboard&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="instanceguid"&gt;e2706e5d-8032-4721-8a9e-b04933f7a84b&lt;/property&gt;&lt;property name="partialcachedependencies"&gt;##DEFAULT##
+&lt;/property&gt;&lt;property name="resetconfirmationrequired"&gt;True&lt;/property&gt;&lt;property name="controlid"&gt;WidgetActions&lt;/property&gt;&lt;property name="displayresetbutton"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;WidgetActions&lt;/property&gt;&lt;property name="hideonsubpages"&gt;False&lt;/property&gt;&lt;property name="disablemacros"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;property name="contentafter"&gt;&amp;lt;/div&amp;gt;&lt;/property&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="displayaddbutton"&gt;True&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="contentbefore"&gt;&amp;lt;div class="DashboardActions PageTitleHeader"&amp;gt;&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashboardTop" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsChartViewer1" type="AnalyticsChartViewer" guid="108706ef-e7c8-462d-bdba-51cea85a9afa" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsChartViewer1&lt;/property&gt;&lt;property name="instanceguid"&gt;108706ef-e7c8-462d-bdba-51cea85a9afa&lt;/property&gt;&lt;property name="height"&gt;300&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Page views - last 12 weeks&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="allowexport"&gt;False&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="width"&gt;100%&lt;/property&gt;&lt;property name="rangevalue"&gt;12&lt;/property&gt;&lt;property name="reportchart"&gt;pageviews.weekreport;graph&lt;/property&gt;&lt;property name="range"&gt;week&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneLeft" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsChartViewer" type="AnalyticsChartViewer" guid="487741d4-26b9-4b37-8e76-b6c44b2ed51f" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="instanceguid"&gt;487741d4-26b9-4b37-8e76-b6c44b2ed51f&lt;/property&gt;&lt;property name="widgettitle"&gt;Traffic sources - last 3 months&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsChartViewer&lt;/property&gt;&lt;property name="allowexport"&gt;False&lt;/property&gt;&lt;property name="enableexport"&gt;True&lt;/property&gt;&lt;property name="width"&gt;500&lt;/property&gt;&lt;property name="rangevalue"&gt;3&lt;/property&gt;&lt;property name="reportchart"&gt;alltrafficsources.monthreport;graph_pie&lt;/property&gt;&lt;property name="range"&gt;month&lt;/property&gt;&lt;property name="height"&gt;300&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneCenter" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;webpartzone id="zoneRight" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;webpart controlid="AnalyticsTableViewer" type="AnalyticsTableViewer" guid="3e5d92a2-c68a-41cc-815b-30669804b2c9" iswidget="true"&gt;&lt;property name="controlid"&gt;AnalyticsTableViewer&lt;/property&gt;&lt;property name="enablepaging"&gt;True&lt;/property&gt;&lt;property name="instanceguid"&gt;3e5d92a2-c68a-41cc-815b-30669804b2c9&lt;/property&gt;&lt;property name="iswidget"&gt;True&lt;/property&gt;&lt;property name="widgettitle"&gt;Page views - last 12 weeks&lt;/property&gt;&lt;property name="webparttype"&gt;AnalyticsTableViewer&lt;/property&gt;&lt;property name="pagesize"&gt;25&lt;/property&gt;&lt;property name="allowexport"&gt;False&lt;/property&gt;&lt;property name="enableexport"&gt;False&lt;/property&gt;&lt;property name="reporttable"&gt;pageviews.weekreport;table&lt;/property&gt;&lt;property name="rangevalue"&gt;12&lt;/property&gt;&lt;property name="range"&gt;week&lt;/property&gt;&lt;/webpart&gt;&lt;/webpartzone&gt;&lt;webpartzone id="DashBoardBottom" widgetzonetype="dashboard"&gt;&lt;properties&gt;&lt;property name="timezonetype"&gt;inherit&lt;/property&gt;&lt;property name="useupdatepanel"&gt;False&lt;/property&gt;&lt;property name="disableviewstate"&gt;False&lt;/property&gt;&lt;property name="visible"&gt;True&lt;/property&gt;&lt;/properties&gt;&lt;/webpartzone&gt;&lt;/page&gt;</PageTemplateWebParts>
+      <PageTemplateIsReusable>true</PageTemplateIsReusable>
+      <PageTemplateShowAsMasterTemplate>false</PageTemplateShowAsMasterTemplate>
+      <PageTemplateInheritPageLevels></PageTemplateInheritPageLevels>
+      <PageTemplateLayout>&lt;table border="0" width="100%" cellspacing="0" cellpadding="0"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashboardTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width:33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td style="width:66%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;cc1:CMSWebPartZone ID="DashBoardBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</PageTemplateLayout>
+      <PageTemplateVersionGUID>9bfa913b-53b9-45af-85e2-f74bc28acde6</PageTemplateVersionGUID>
+      <PageTemplateGUID>dd7b361b-1488-4e97-8d9b-b991bbfa104c</PageTemplateGUID>
+      <PageTemplateLastModified>2011-08-18T21:12:48.053+02:00</PageTemplateLastModified>
+      <PageTemplateType>dashboard</PageTemplateType>
+      <PageTemplateLayoutType>ascx</PageTemplateLayoutType>
+    </cms_pagetemplate>
+    <cms_pagetemplatesite>
+      <PageTemplateID>71</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>1264</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>15394</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>15586</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>15720</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>16748</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatesite>
+      <PageTemplateID>17536</PageTemplateID>
+      <SiteID>2</SiteID>
+    </cms_pagetemplatesite>
+    <cms_pagetemplatecategory>
+      <CategoryID>43</CategoryID>
+      <CategoryDisplayName>All page templates</CategoryDisplayName>
+      <CategoryName>/</CategoryName>
+      <CategoryGUID>532264bf-95e9-4035-b4ce-fe403c81781a</CategoryGUID>
+      <CategoryLastModified>2012-01-19T15:59:53.38+01:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryChildCount>43</CategoryChildCount>
+      <CategoryTemplateChildCount>0</CategoryTemplateChildCount>
+      <CategoryPath>/</CategoryPath>
+      <CategoryOrder>1</CategoryOrder>
+      <CategoryLevel>0</CategoryLevel>
+    </cms_pagetemplatecategory>
+    <cms_pagetemplatecategory>
+      <CategoryID>19</CategoryID>
+      <CategoryDisplayName>Forums</CategoryDisplayName>
+      <CategoryParentID>43</CategoryParentID>
+      <CategoryName>Forums</CategoryName>
+      <CategoryGUID>4c63472e-52d5-48dc-b962-730c8ca6bf8c</CategoryGUID>
+      <CategoryLastModified>2008-04-09T07:48:36.36+02:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryTemplateChildCount>2</CategoryTemplateChildCount>
+      <CategoryPath>/Forums</CategoryPath>
+      <CategoryOrder>15</CategoryOrder>
+      <CategoryLevel>1</CategoryLevel>
+    </cms_pagetemplatecategory>
+    <cms_pagetemplatecategory>
+      <CategoryID>22</CategoryID>
+      <CategoryDisplayName>Blank ASPX</CategoryDisplayName>
+      <CategoryParentID>43</CategoryParentID>
+      <CategoryName>BlankASPX</CategoryName>
+      <CategoryGUID>3fc5dd53-d4d3-439a-8196-29dbb2a94fdc</CategoryGUID>
+      <CategoryLastModified>2009-11-03T11:46:00.157+01:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryChildCount>1</CategoryChildCount>
+      <CategoryTemplateChildCount>1</CategoryTemplateChildCount>
+      <CategoryPath>/BlankASPX</CategoryPath>
+      <CategoryOrder>4</CategoryOrder>
+      <CategoryLevel>1</CategoryLevel>
+    </cms_pagetemplatecategory>
+    <cms_pagetemplatecategory>
+      <CategoryID>78</CategoryID>
+      <CategoryDisplayName>Dashboard pages</CategoryDisplayName>
+      <CategoryParentID>43</CategoryParentID>
+      <CategoryName>DashboardPages</CategoryName>
+      <CategoryGUID>753a26e7-677b-46d5-b912-9390f80c1524</CategoryGUID>
+      <CategoryLastModified>2010-07-23T06:47:22.167+02:00</CategoryLastModified>
+      <CategoryImagePath></CategoryImagePath>
+      <CategoryChildCount>0</CategoryChildCount>
+      <CategoryTemplateChildCount>5</CategoryTemplateChildCount>
+      <CategoryPath>/DashboardPages</CategoryPath>
+      <CategoryOrder>10</CategoryOrder>
+      <CategoryLevel>1</CategoryLevel>
+    </cms_pagetemplatecategory>
+    <cms_metafile>
+      <MetaFileID>1761</MetaFileID>
+      <MetaFileObjectID>1264</MetaFileObjectID>
+      <MetaFileObjectType>cms.pagetemplate</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>forumsAdvanceSearch.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1390</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>d13652a3-873f-47d2-bf76-5ab96d1a18b9</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:49:08.42+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>3522</MetaFileID>
+      <MetaFileObjectID>15394</MetaFileObjectID>
+      <MetaFileObjectType>cms.pagetemplate</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3c_top_bottom.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1361</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>7bf9c36f-0eb5-4d93-acb0-a5ed049885d6</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:49:47.74+02:00</MetaFileLastModified>
+    </cms_metafile>
+  </NewDataSet>
+</cms_pagetemplate>

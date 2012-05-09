@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="CMSMasterPages_LiveSite_Dialogs_ModalDialogPage"
+    CodeFile="ModalDialogPage.master.cs" %>
+
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/HeaderActions.ascx" TagName="HeaderActions"
+    TagPrefix="cms" %>
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/PageTitle.ascx" TagName="PageTitle"
+    TagPrefix="cms" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" enableviewstate="false">
+    <title>SimpleMasterPage</title>
+    <asp:Literal ID="ltlHeadElements" runat="server" Visible="false"></asp:Literal>
+    <style type="text/css">
+        html, body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body id="bodyElem" runat="server">
+    <form id="form1" runat="server">
+    <div class="LiveSiteDialog">
+        <asp:PlaceHolder runat="server" ID="plcManager" />
+        <asp:PlaceHolder runat="server" ID="plcStatus" EnableViewState="false" />
+        <asp:ContentPlaceHolder ID="plcBeforeBody" runat="server" />
+        <asp:Panel ID="pnlBody" runat="server" CssClass="DialogPageBody">
+            <div id="divHeader" style="height: auto; min-height: 0px">
+                <asp:Panel ID="pnlHeader" runat="server" CssClass="PageHeader" EnableViewState="false">
+                    <cms:PageTitle ID="titleElem" runat="server" ShortID="pt" />
+                </asp:Panel>
+                <asp:Panel ID="pnlTitleActions" runat="server" Visible="false" CssClass="PageHeaderLine"
+                    EnableViewState="false">
+                    <asp:ContentPlaceHolder runat="server" ID="plcTitleActions" />
+                </asp:Panel>
+            </div>
+            <div id="divContent" style="overflow: auto; height: 1200px">
+                <asp:Panel ID="pnlAdditionalControls" runat="server" CssClass="PageHeaderLine" Visible="false">
+                    <asp:ContentPlaceHolder runat="server" ID="plcControls" />
+                </asp:Panel>
+                <asp:Panel ID="pnlActions" runat="server" CssClass="PageHeaderLine" EnableViewState="false">
+                    <cms:HeaderActions ID="actionsElem" ShortID="a" runat="server" />
+                    <asp:ContentPlaceHolder runat="server" ID="plcActions" />
+                </asp:Panel>
+                <asp:ContentPlaceHolder ID="plcBeforeContent" runat="server" />
+                <asp:Panel ID="pnlContent" runat="server">
+                    <asp:ContentPlaceHolder ID="plcContent" runat="server" />
+                </asp:Panel>
+            </div>
+            <asp:Panel runat="server" ID="pnlFooterContainer">
+                <div id="divFooter" class="PageFooterLine" style="min-height: 0px;">
+                    <asp:Panel runat="server" ID="pnlFooter">
+                        <asp:ContentPlaceHolder ID="plcFooter" runat="server" />
+                    </asp:Panel>
+                    <div class="ClearBoth">
+                        &nbsp;</div>
+                </div>
+            </asp:Panel>
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

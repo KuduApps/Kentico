@@ -1,0 +1,33 @@
+﻿<forums_forum version="6.0">
+  <NewDataSet>
+    <forums_forum>
+      <ForumID>496</ForumID>
+      <ForumGroupID>623</ForumGroupID>
+      <ForumName>WebsiteForums</ForumName>
+      <ForumDisplayName>Website forums</ForumDisplayName>
+      <ForumDescription>This is a forum group for sample forums on the sample Corporate Site.</ForumDescription>
+      <ForumOrder>1</ForumOrder>
+      <ForumOpen>true</ForumOpen>
+      <ForumModerated>false</ForumModerated>
+      <ForumDisplayEmails>false</ForumDisplayEmails>
+      <ForumRequireEmail>false</ForumRequireEmail>
+      <ForumAccess>40000</ForumAccess>
+      <ForumThreads>2</ForumThreads>
+      <ForumPosts>11</ForumPosts>
+      <ForumLastPostTime>2011-06-21T20:18:39.55+02:00</ForumLastPostTime>
+      <ForumLastPostUserName>Susanne Paige</ForumLastPostUserName>
+      <ForumHTMLEditor>false</ForumHTMLEditor>
+      <ForumUseCAPTCHA>false</ForumUseCAPTCHA>
+      <ForumGUID>ea57b53b-625f-4efd-81a8-49a08d540a92</ForumGUID>
+      <ForumLastModified>2011-09-20T12:11:26.49+02:00</ForumLastModified>
+      <ForumIsLocked>false</ForumIsLocked>
+      <ForumSettings></ForumSettings>
+      <ForumLastPostTimeAbsolute>2011-06-21T20:18:39.55+02:00</ForumLastPostTimeAbsolute>
+      <ForumLastPostUserNameAbsolute>Susanne Paige</ForumLastPostUserNameAbsolute>
+      <ForumPostsAbsolute>11</ForumPostsAbsolute>
+      <ForumThreadsAbsolute>2</ForumThreadsAbsolute>
+      <ForumSiteID>110</ForumSiteID>
+      <ForumLogActivity>true</ForumLogActivity>
+    </forums_forum>
+  </NewDataSet>
+</forums_forum>

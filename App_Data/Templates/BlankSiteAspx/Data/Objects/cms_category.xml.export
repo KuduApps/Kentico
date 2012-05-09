@@ -1,0 +1,60 @@
+﻿<cms_category version="6.0">
+  <NewDataSet>
+    <cms_category>
+      <CategoryID>1083</CategoryID>
+      <CategoryDisplayName>Development</CategoryDisplayName>
+      <CategoryName>Development</CategoryName>
+      <CategoryDescription>Category contains development related articles</CategoryDescription>
+      <CategoryCount>1</CategoryCount>
+      <CategoryEnabled>true</CategoryEnabled>
+      <CategoryGUID>ad7616c9-0d83-417f-9af8-84beb7be19f2</CategoryGUID>
+      <CategoryLastModified>2010-02-20T20:56:14.497+01:00</CategoryLastModified>
+      <CategoryIDPath>/00001083</CategoryIDPath>
+      <CategoryNamePath>/Development</CategoryNamePath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryOrder>11</CategoryOrder>
+    </cms_category>
+    <cms_category>
+      <CategoryID>1084</CategoryID>
+      <CategoryDisplayName>Network administration</CategoryDisplayName>
+      <CategoryName>NetworkAdministration</CategoryName>
+      <CategoryDescription>Category contains articles related to the network technologies</CategoryDescription>
+      <CategoryCount>1</CategoryCount>
+      <CategoryEnabled>true</CategoryEnabled>
+      <CategoryGUID>0d125a5c-9b42-433c-8272-247ab1bbb53e</CategoryGUID>
+      <CategoryLastModified>2010-02-20T20:37:31.273+01:00</CategoryLastModified>
+      <CategoryIDPath>/00001084</CategoryIDPath>
+      <CategoryNamePath>/Network administration</CategoryNamePath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryOrder>12</CategoryOrder>
+    </cms_category>
+    <cms_category>
+      <CategoryID>1085</CategoryID>
+      <CategoryDisplayName>Programming</CategoryDisplayName>
+      <CategoryName>Programming</CategoryName>
+      <CategoryDescription>Category contains articles related to the programming</CategoryDescription>
+      <CategoryCount>0</CategoryCount>
+      <CategoryEnabled>true</CategoryEnabled>
+      <CategoryGUID>728710ef-0f57-4f7b-81a2-0ca4c5a9e986</CategoryGUID>
+      <CategoryLastModified>2010-02-20T20:56:15.013+01:00</CategoryLastModified>
+      <CategoryIDPath>/00001085</CategoryIDPath>
+      <CategoryNamePath>/Programming</CategoryNamePath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryOrder>13</CategoryOrder>
+    </cms_category>
+    <cms_category>
+      <CategoryID>1086</CategoryID>
+      <CategoryDisplayName>Technologies</CategoryDisplayName>
+      <CategoryName>Technologies</CategoryName>
+      <CategoryDescription>Category contains technologies related articles</CategoryDescription>
+      <CategoryCount>0</CategoryCount>
+      <CategoryEnabled>true</CategoryEnabled>
+      <CategoryGUID>4a3afd53-ec34-4abe-ae52-c9d1704118da</CategoryGUID>
+      <CategoryLastModified>2011-12-01T07:31:29.337+01:00</CategoryLastModified>
+      <CategoryIDPath>/00001086</CategoryIDPath>
+      <CategoryNamePath>/Technologies</CategoryNamePath>
+      <CategoryLevel>0</CategoryLevel>
+      <CategoryOrder>14</CategoryOrder>
+    </cms_category>
+  </NewDataSet>
+</cms_category>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+    <action name="up" caption="$Unigrid.Groups.Actions.up$" icon="Up.png" />
+    <action name="down" caption="$Unigrid.Groups.Actions.down$" icon="Down.png" />
+  </actions>
+  <columns>
+    <column source="GroupDisplayName" caption="$Unigrid.Forums.Columns.GroupName$" wrap="false" localize="true">
+      <filter type="text" size="200" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="Forums.ForumGroup" columns="GroupID, GroupDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,425 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head> 
+   <title>Object versioning</title> 
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta name="generator" content="Help &amp; Manual" /> 
+   <meta name="keywords" content="" />
+   <meta name="description" content="Object versioning" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" /> 
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+   
+   	.breadhead {
+	margin: 0;
+	padding-right: 5px;
+	}
+   
+   
+</style>
+<![endif]-->
+   
+<script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 6.0 Context Help - Object versioning".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Site Manager &gt; Settings &gt; Versioning &amp; synchronization &gt; Object versioning /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20settings_synchronizationversioning%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-105987-4']);
+  _gaq.push(['_setDomainName', '.kentico.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>        
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?settings_synchronizationversioning.htm"; }
+  else { parent.quicksync('a2.3.9.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 6.0 Context Help</span><br />
+<p class="p_Heading1"><span class="f_Heading1">Object versioning</span></p>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Site Manager &gt; <a href="settings_settings.htm">Settings</a> &gt; <a href="settings_synchronization.htm">Versioning &amp; synchronization</a>:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <p class="p_Heading1"><span class="f_Heading1">Object versioning</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_synchronizationstaging.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_integration.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <p class="p_Heading1"><span class="f_Heading1">Object versioning</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_synchronizationstaging.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_integration.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:support@kentico.com?subject=Documentation%20feedback&body=Ref%20ID:%20settings_synchronizationversioning%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+<div id="autoTocWrapper"></div>
+</div> 
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="5" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p><span style="font-weight: bold;">General</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Enable object versioning</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Globally enables or disables object versioning. This option is enabled by default. If disabled, no versions are created when objects are modified.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Delete objects to recycle bin</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Determines which objects should be moved to recycle bin when deleted:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">No</span> - no objects are moved to recycle bin when deleted, i.e. they are deleted permanently.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Versioned objects only</span> - only objects that support versioning and whose versioning is enabled &nbsp;by the settings below are moved to recycle bin when deleted.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">All objects</span> - all <a href="http://devnet.kentico.com/docs/6_0/devguide/content_staging_what_can_be_synchronized.htm" target="_blank" class="weblink">objects that support staging synchronization</a> are moved to recycle bin when deleted.</td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="middle" width="568" style="width:568px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Version history</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Version history length (major versions)</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates how many major versions of a single object will be stored in its version history. If the number of major versions exceeds this value, the oldest versions are deleted. If set to 0, major versions history length is not limited.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Version history length (minor versions)</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates how many minor versions of a single object will be stored in its version history. If the number of versions exceeds this value, the oldest version is deleted. If set to 0, minor versions history length is not limited.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Save to last version if younger than (minutes)</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>If an object is edited and saved within this number of minutes since it was last saved, changes made to it are saved to the last version. If it is saved after more minutes since it was last saved, a new version is created. If set to 0, a new version is created whenever you save an edited object.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Promote to major version if older than (hours)</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>If an object is edited and saved after this number of hours since it was last saved, a new major version is created. If it is saved earlier, a new minor version is created or the changes are saved to the latest version (depending on the setting above). If set to 0, major versions are never created automatically.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="middle" width="568" style="width:568px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Use object versioning for</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Alternative forms</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of document type, on-line forms and custom table alternative forms is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>CSS stylesheets</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of CSS stylesheets is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Custom table definitions</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of custom table definitions is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Document type definitions</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of document type definitions is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>E-mail templates</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of e-mail templates is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Form definitions</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of on-line form definitions (the Forms module) is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Media files</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of media files (the Media module) is allowed. This options is disabled by default because versioning of large media files may consume an extensive amount of database space.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Media files versioned extensions</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Extensions of versioned media files. Only media files with extensions enumerated here will be versioned.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Newsletter issues</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of newsletter issues is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Newsletter templates</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of newsletter templates is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Page layouts</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of page layouts is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Page templates</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of page templates is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Queries</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of document type and custom table queries is allowed. Only custom queries are versioned — system queries are not versioned because they are re-generated by the system automatically when their parent object is modified.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Report graphs</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of report graphs is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Report tables</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of report tables is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Report values</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of report values is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Report definitions</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of report definitions is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Transformations</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of document type and custom table transformations is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Web part containers</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of web part containers is allowed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="228" style="width:228px; border: solid 1px #000000;"><p>Web part layouts</p>
+</td>
+<td valign="top" width="568" style="width:568px; border: solid 1px #000000;"><p>Indicates if versioning of web part layouts is allowed. </p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>More information about object versioning can be found in <a href="http://devnet.kentico.com/docs/6_0/devguide/object_versioning_overview.htm" target="_blank" class="weblink">Developer's Guide -&gt; Development -&gt; Object versioning</a>.</p>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_synchronizationversioning.htm" target="_top" title="Right-click to copy the URL of this help topic">
+<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_synchronizationversioning.htm</a>
+</p>
+</noscript>
+<script type="text/javascript">
+var autoURL = true;
+if (autoURL) {
+      document.write(getHref("index.html","Help URL:","Right-click to copy the URL of this help topic"));
+      } else {
+             document.write('<p class="help-url"><b>Help URL:&nbsp;</b>');
+             document.write('<a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_synchronizationversioning.htm" target="_top" title="Right-click to copy the URL of this help topic"><%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_synchronizationversioning.htm</a>');
+             document.write('</p>');
+      }
+</script>
+
+</div></div> 
+</body>
+</html>
+
+
+
+
+

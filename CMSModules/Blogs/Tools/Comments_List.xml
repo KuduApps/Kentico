@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="CommentID">
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png"/>
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="approve" externalsourcename="approve" caption="$mydesk.myblogs.unigrid.action.approvecomment$" icon="Approve.png" />
+  </actions>
+  <columns>
+    <column source="CommentUserName" externalsourcename="CommentUserName" caption="$general.username$" wrap="false">
+    </column>
+    <column source="CommentText" externalsourcename="CommentText" caption="$mydesk.myblogs.unigrid.columns.commenttext$" wrap="false">
+      <tooltip source="CommentText" encode="true" />
+    </column>
+    <column source="CommentApproved" externalsourcename="CommentApproved" caption="$mydesk.myblogs.unigrid.columns.commentapproved$" wrap="false">
+    </column>
+    <column source="CommentIsSpam" externalsourcename="CommentIsSpam" caption="$mydesk.myblogs.unigrid.columns.commentisspam$" wrap="false">
+    </column>
+    <column source="CommentDate" caption="$mydesk.myblogs.unigrid.columns.commentdate$" wrap="false">
+    </column>
+    <column width="100%" />
+  </columns>
+  <options>
+    <key name="ShowSelection" value="true" />
+  </options>
+</grid>

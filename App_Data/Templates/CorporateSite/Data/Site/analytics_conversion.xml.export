@@ -1,0 +1,13 @@
+﻿<analytics_conversion version="6.0">
+  <NewDataSet>
+    <analytics_conversion>
+      <ConversionID>440</ConversionID>
+      <ConversionName>SampleConversion</ConversionName>
+      <ConversionDisplayName>Sample conversion</ConversionDisplayName>
+      <ConversionDescription>This is a sample conversion used by conversion page in the examples section.</ConversionDescription>
+      <ConversionGUID>1b46482d-3fdb-424e-93e6-3fa211e132f7</ConversionGUID>
+      <ConversionLastModified>2011-08-31T14:42:10.933+02:00</ConversionLastModified>
+      <ConversionSiteID>110</ConversionSiteID>
+    </analytics_conversion>
+  </NewDataSet>
+</analytics_conversion>

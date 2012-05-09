@@ -1,0 +1,1150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.MembershipProvider</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.MembershipProvider.CMSADMembershipProvider">
+            <summary>
+            Active directory membership provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the membership provider.
+            </summary>
+            <param name="name">Provider name</param>
+            <param name="config">Configuration</param>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSADRoleProvider">
+            <summary>
+            Active directory role provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the provider.
+            </summary>
+            <param name="name">Name</param>
+            <param name="config">Configuration</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.IsUserInRole(System.String,System.String)">
+            <summary>
+            Returns true if the user is in specific role.
+            </summary>
+            <param name="username">User name</param>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.GetRolesForUser(System.String)">
+            <summary>
+            Gets the roles for specified user.
+            </summary>
+            <param name="username">User name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+            <summary>
+            Adds user to role.
+            </summary>
+            <param name="usernames">User names</param>
+            <param name="roleNames">Role names</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.CreateRole(System.String)">
+            <summary>
+            Creates role.
+            </summary>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.DeleteRole(System.String,System.Boolean)">
+            <summary>
+            Deletes specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+            <param name="throwOnPopulatedRole">Throw exception on role which is populated</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.FindUsersInRole(System.String,System.String)">
+            <summary>
+            Find all user in specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+            <param name="usernameToMatch">User name to match</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.GetAllRoles">
+            <summary>
+            Returns all roles.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.GetUsersInRole(System.String)">
+            <summary>
+            Returns all user in specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+            <summary>
+            Removes user from role.
+            </summary>
+            <param name="usernames">User name</param>
+            <param name="roleNames">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.RoleExists(System.String)">
+            <summary>
+            Determines whether specified role exists.
+            </summary>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSADRoleProvider.ThrowNotSupported(System.String)">
+            <summary>
+            Throws not supported exception.
+            </summary>
+            <param name="method">Method name</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.ConnectionStringName">
+            <summary>
+            ConnectionString name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.ConnectionUsername">
+            <summary>
+            Connection user name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.ConnectionPassword">
+            <summary>
+            Connection password.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.AttributeMapUsername">
+            <summary>
+            Attribute to map username.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.ApplicationName">
+            <summary>
+            Application name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSADRoleProvider.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.FacebookConnectHelper">
+            <summary>
+            Helper class providing methods for correct Facebook Connect initialization.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookEnabled(System.String)">
+            <summary>
+            Indicates if Facebook Connect is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookApiKey(System.String)">
+            <summary>
+            Returns api key.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookAppSecretKey(System.String)">
+            <summary>
+            Returns application secret.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.FacebookIsAvailable(System.String)">
+            <summary>
+            Indicates if Facebook Connect is availabe/enabled on specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookInitScriptForSite(System.String)">
+            <summary>
+            Returns script for Facebook Connect initialization.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookXmlNamespace">
+            <summary>
+            Returns Facebook Connect XML namespace.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookLogoutScript(System.String)">
+            <summary>
+            Returns Facebook Connect logout script (FB.Connect.logoutAndRedirect()).
+            </summary>
+            <param name="url">Url</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookLogoutScriptForSignOut(System.String,System.String,System.String)">
+            <summary>
+            Returns Facebook Connect logout script including check whether Facebook cookies
+            are present (if no cookies found FB.Connect.logoutAndRedirect() is not used).
+            </summary>
+            <param name="url">Url</param>
+            <param name="apiKey">API key</param>
+            <param name="additionalScriptForLogout">Additional script (used when Facebook Connect cookie is not found)</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.FacebookConnectInitForSignOut(System.String,System.Web.UI.WebControls.Literal)">
+            <summary>
+            Sets Facebook Connect initialization script (considerind current context) to specified
+            literal and returns logout script for sign out button. Method returns null if Facebook
+            Connect is disabled or current user is not logged in using Facebook Connect.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="ltlScript">Literal for init script</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.GetFacebookSessionInfo(System.String,System.String@)">
+            <summary>
+            Checks Facebook Connect session (based on cookies) and returns its parameters.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="facebookUserId">Facebook user identificator</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookConnectHelper.RemoveFacebookCookies(System.String)">
+            <summary>
+            Removes Facebook Connect cookies.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="T:CMS.MembershipProvider.FacebookSession">
+            <summary>
+            Class providing methods for Facebook Connect session management.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookSession.#ctor(System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="apiKey">Key of Facebook application</param>
+            <param name="appSecret">Application secret key</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookSession.Validate(System.Web.HttpCookieCollection)">
+            <summary>
+            Determines whether the request belongs to validated Facebook user.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookSession.GetSessionInfo(System.String@,System.String@,System.String@)">
+            <summary>
+            Gets a Facebook session info based on cookies from current request.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.FacebookSession.RemoveFacebookCookies(System.String)">
+            <summary>
+            Removes Facebook Connect cookies.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.FacebookValidationEnum">
+            <summary>
+            Validation states for Facebook Connect class.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.FacebookValidationEnum.UnknownState">
+            <summary>
+            Unknow error.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.FacebookValidationEnum.NoSignatureFound">
+            <summary>
+            No Facebook Connect cookies found.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.FacebookValidationEnum.InvalidSignature">
+            <summary>
+            Validation failed.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.FacebookValidationEnum.ValidSignature">
+            <summary>
+            Validation succeeded.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSMembershipHelper">
+            <summary>
+            Membership helper.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipHelper.IsMixedAuthentication">
+            <summary>
+            If true, mixed authentication is used.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipHelper.ADDefaultMapUserName">
+            <summary>
+            Default AD field to map the user name.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSMembershipProvider">
+            <summary>
+            Class providing membership management.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+            <summary>
+            Changes Password of user specified by username.
+            </summary>
+            <param name="username">User name</param>
+            <param name="oldPassword">Old password</param>
+            <param name="newPassword">New password</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+            <summary>
+            As password questions and answers are not implemented in UserInfo, this metod returns true.
+            </summary>
+            <param name="username">Not used</param>
+            <param name="password">Not used</param>
+            <param name="newPasswordQuestion">Not used</param>
+            <param name="newPasswordAnswer">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+            <summary>
+            Creates new user.
+            </summary>
+            <param name="username">User name</param>
+            <param name="password">Password</param>
+            <param name="email">E-mail</param>
+            <param name="passwordQuestion">Not used</param>
+            <param name="passwordAnswer">Not used</param>
+            <param name="isApproved">'isApproved' parameter is considered as 'Enabled' property in UserInfo;</param>
+            <param name="providerUserKey">Not used</param>
+            <param name="status">If UserInfoProvider's SetUserInfo method throws exception then status is set to 'ProviderError', else it is set to 'Success'</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.DeleteUser(System.String,System.Boolean)">
+            <summary>
+            Deletes user specified by username.
+            </summary>
+            <param name="username">User name</param>
+            <param name="deleteAllRelatedData">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.
+            </summary>
+            <param name="emailToMatch">User e-mail</param>
+            <param name="pageIndex">Not used</param>
+            <param name="pageSize">Not used</param>
+            <param name="totalRecords">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Gets a collection of membership users where the user name contains the specified user name to match.
+            </summary>
+            <param name="usernameToMatch">User name</param>
+            <param name="pageIndex">Not used</param>
+            <param name="pageSize">Not used</param>
+            <param name="totalRecords">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Gets a collection of all the users in DB.
+            </summary>
+            <param name="pageIndex">Page index</param>
+            <param name="pageSize">Page size</param>
+            <param name="totalRecords">Total number of users</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetNumberOfUsersOnline">
+            <summary>
+            Returns number of online users. Monitor online users feature must be enabled.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetPassword(System.String,System.String)">
+            <summary>
+            Gets password of user specified by username.
+            </summary>
+            <param name="username">User name</param>
+            <param name="answer">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetUser(System.Object,System.Boolean)">
+            <summary>
+            Returns MembershipUser object containing data of user specified by providerUserKey.
+            </summary>
+            <param name="providerUserKey">User key</param>
+            <param name="userIsOnline">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetUser(System.String,System.Boolean)">
+            <summary>
+            Returns MembershipUser object containing data of user specified by his name.
+            </summary>
+            <param name="username">User name</param>
+            <param name="userIsOnline">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetUser(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Returns MembershipUser object containing data of user specified by his name.
+            </summary>
+            <param name="ui">User info</param>        
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.GetUserNameByEmail(System.String)">
+            <summary>
+            Gets user name of user with given email.
+            </summary>
+            <param name="email">User e-mail</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.ResetPassword(System.String,System.String)">
+            <summary>
+            Sets password of user specified by user name to empty string.
+            </summary>
+            <param name="username">User name</param>
+            <param name="answer">Not used</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.UnlockUser(System.String)">
+            <summary>
+            Sets 'Enabled' property of user specified by user name to 'True'.
+            </summary>
+            <param name="userName">User name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+            <summary>
+            Updates data of specified user.
+            </summary>
+            <param name="user">User to update</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.ValidateUser(System.String,System.String)">
+            <summary>
+            Checks whether given password matches the password of user specified by username.
+            </summary>
+            <param name="username">User name</param>
+            <param name="password">Password</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Iitializes the provider.
+            </summary>
+            <param name="strName">Name used to refer to the provider</param>
+            <param name="config">Ignored</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.ApplicationName">
+            <summary>
+            Applicaton name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.EnablePasswordReset">
+            <summary>
+            Enable password reset.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.EnablePasswordRetrieval">
+            <summary>
+            Enable password retrieval.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.MaxInvalidPasswordAttempts">
+            <summary>
+            Maximum invalid password attempts.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.MinRequiredNonAlphanumericCharacters">
+            <summary>
+            Minimum required nonalphanumeric characters.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.MinRequiredPasswordLength">
+            <summary>
+            Minimum required password length.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.PasswordAttemptWindow">
+            <summary>
+            Password attempt window.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.PasswordFormat">
+            <summary>
+            Password format.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.PasswordStrengthRegularExpression">
+            <summary>
+            Password strength regular expression.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.RequiresQuestionAndAnswer">
+            <summary>
+            Required question and aswer.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipProvider.RequiresUniqueEmail">
+            <summary>
+            Requires unique email.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSMembershipUser">
+            <summary>
+            User membership.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSMembershipUser.#ctor(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Contstructor.
+            </summary>
+            <param name="userInfoObj">UserInfo object</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.UserInfoMembership">
+            <summary>
+            User info.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.UserName">
+            <summary>
+            User name (reflects the UserName field).
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.Email">
+            <summary>
+            Email (reflects the Email field).
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.IsApproved">
+            <summary>
+            Is approved (reflects the Enabled field).
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.CreationDate">
+            <summary>
+            Creation date (reflects the UserCreated field).
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.IsLockedOut">
+            <summary>
+            Is locked out (reflects the UserEnabled field).
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSMembershipUser.LastActivityDate">
+            <summary>
+            Last activity date (reflects the LastLogon field).
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSOpenIDHelper">
+            <summary>
+            OpenID helper class.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.CMSOpenIDHelper.RESPONSE_CANCELED">
+            <summary>
+            Represents OpenID response "Canceled".
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.CMSOpenIDHelper.RESPONSE_FAILED">
+            <summary>
+            Represents OpenID response "Failed".
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.CMSOpenIDHelper.RESPONSE_SETUPREQUIRED">
+            <summary>
+            Represents OpenID response "SetupRequired".
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.CMSOpenIDHelper.RESPONSE_AUTHENTICATED">
+            <summary>
+            Represents OpenID response "Authenticated".
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.#ctor">
+            <summary>
+            Constructor initializes OpenID transfer and connection.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.Initialize(System.Object)">
+            <summary>
+            Manually sets OpenID response for this object.
+            </summary>
+            <param name="response">IAuthenticationResponse object</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.GetResponseObject">
+            <summary>
+            Returns OpenID response as object.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.CheckStatus">
+            <summary>
+            Checks status of current user.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.CreateRelyingParty">
+            <summary>
+            Creates relying party for OpenID.
+            </summary>
+            <returns>OpenIdRelyingParty</returns>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.SendRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Send OpenID login request to specified openID provider with user demanded data.
+            </summary>
+            <param name="openIDprovider">URL of the OpenID provider</param>
+            <param name="birthDateRequest">Demand level for user birth date</param>
+            <param name="countryRequest">Demand level for user country</param>
+            <param name="emailRequest">Demand level for user e-mail</param>
+            <param name="fullNameRequest">Demand level for full name</param>
+            <param name="genderRequest">Demand level for user gender</param>
+            <param name="languageRequest">Demand level for user language</param>
+            <param name="nicknameRequest">Demand level for user nick name</param>
+            <param name="postalCodeRequest">Demand level for user postal code</param>
+            <param name="timeZoneRequest">Demand level for user time zone</param>
+            <returns>Returns NULL if request was sucessful, otherwise returns error message with additional data</returns>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.IsValid(System.String)">
+            <summary>
+            Custom OpenID URL validation.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.GetGender(System.Nullable{DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.Gender})">
+            <summary>
+            Gets integer representation of Gender object.
+            </summary>
+            <param name="gender">Gender object</param>
+            <returns>1 - Male, 2 - Female, null - if not set </returns>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.GetRequestValue(System.String)">
+            <summary>
+            Returns DemandLevel of given parameter.
+            </summary>
+            <param name="requestLevel">Name of requested level</param>
+            <returns>Returns DemandLevel</returns>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSOpenIDHelper.CheckOpenIdDLL">
+            <summary>
+            Checks if DotNetOpenAuth.dll is present in /Bin directory.
+            </summary>
+            <returns>Returns true if DotNetOpenAuth.dll is present</returns>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.ClaimedIdentifier">
+            <summary>
+            Returns OpenID Claimed Identifier for current user.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.OpenIDResponse">
+            <summary>
+            Returns OpenID Response as IAuthenticationResponse object.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.BirthDate">
+            <summary>
+            User birthdate.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.Country">
+            <summary>
+            User country.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.Culture">
+            <summary>
+            User culture.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.Email">
+            <summary>
+            User e-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.FullName">
+            <summary>
+            User full name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.UserGender">
+            <summary>
+            Integer code with user gender.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.Language">
+            <summary>
+            User language.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.MailAddress">
+            <summary>
+            User mail address.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.Nickname">
+            <summary>
+            User nickname.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.PostalCode">
+            <summary>
+            User postal code.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSOpenIDHelper.TimeZone">
+            <summary>
+            User time zone.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.CMSRoleProvider">
+            <summary>
+            Class providing role management.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initialization.
+            </summary>
+            <param name="name">Name</param>
+            <param name="config">Config</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+            <summary>
+            Adds user to role.
+            </summary>
+            <param name="usernames">User names</param>
+            <param name="roleNames">Role names</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.CreateRole(System.String)">
+            <summary>
+            Creates current site role.
+            </summary>
+            <param name="roleName">Role name to create</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.DeleteRole(System.String,System.Boolean)">
+            <summary>
+            Deletes specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+            <param name="throwOnPopulatedRole">Throw exception on role which is populated</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.FindUsersInRole(System.String,System.String)">
+            <summary>
+            Find all user in specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+            <param name="usernameToMatch">User name to match</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.GetAllRoles">
+            <summary>
+            Returns all roles.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.GetRolesForUser(System.String)">
+            <summary>
+            Returns all roles for specified user.
+            </summary>
+            <param name="username">User name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.GetUsersInRole(System.String)">
+            <summary>
+            Returns all user in specified role.
+            </summary>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.IsUserInRole(System.String,System.String)">
+            <summary>
+            Determines whether specified user is in specified role.
+            </summary>
+            <param name="username">User name</param>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+            <summary>
+            Removes user from role.
+            </summary>
+            <param name="usernames">User name</param>
+            <param name="roleNames">Role name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.CMSRoleProvider.RoleExists(System.String)">
+            <summary>
+            Determines whether specified role exists.
+            </summary>
+            <param name="roleName">Role name</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSRoleProvider.ApplicationName">
+            <summary>
+            Application name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSRoleProvider.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.CMSRoleProvider.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.InMemoryTokenManager">
+            <summary>
+            InMemoryTokenManager class.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.InMemoryTokenManager.GetConsumerSecret(System.String)">
+            <summary>
+            Returns consumer secret.
+            </summary>
+            <param name="consumerKey">Api key</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.InMemoryTokenManager.GetTokenSecret(System.String)">
+            <summary>
+            Returns token secret.
+            </summary>
+            <param name="token">Auth token</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.InMemoryTokenManager.StoreNewRequestToken(DotNetOpenAuth.OAuth.Messages.UnauthorizedTokenRequest,DotNetOpenAuth.OAuth.Messages.ITokenSecretContainingMessage)">
+            <summary>
+            Stores new request token.
+            </summary>
+            <param name="request">Request as UnauthorizedTokenRequest object</param>
+            <param name="response">Response as ITokenSecretContainingMessage object</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.InMemoryTokenManager.ExpireRequestTokenAndStoreNewAccessToken(System.String,System.String,System.String,System.String)">
+            <summary>
+            Expires request token and stores new access token.
+            </summary>
+            <param name="consumerKey">Api key</param>
+            <param name="requestToken">Request token</param>
+            <param name="accessToken">Access token</param>
+            <param name="accessTokenSecret">Acess token secret</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.InMemoryTokenManager.GetTokenType(System.String)">
+            <summary>
+            Classifies a token as a request token or an access token. Returns Request or Access token, or invalid if the token is not recognized.
+            </summary>
+            <param name="token">The token to classify</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.InMemoryTokenManager.ConsumerKey">
+            <summary>
+            LinkedIn Api key.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.InMemoryTokenManager.ConsumerSecret">
+            <summary>
+            LinkedIn application secret.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.LinkedInHelper">
+            <summary>
+            LinkedIn helper class.
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.LinkedInHelper.RESPONSE_NOTAUTHENTICATED">
+            <summary>
+            Represents LinkedIn response "NotAuthenticated".
+            </summary>
+        </member>
+        <member name="F:CMS.MembershipProvider.LinkedInHelper.RESPONSE_AUTHENTICATED">
+            <summary>
+            Represents LinkedIn response "Authenticated".
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.SendRequest">
+            <summary>
+            Redirects user to LinkedIn with received authToken.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.CheckStatus(System.Boolean,System.Boolean,System.Boolean,System.String[])">
+            <summary>
+            Checks status of current user. Returns LinkedIn response status.
+            </summary>
+            <param name="requireFirstName">Require first name</param>
+            <param name="requireLastName">Require last name</param>
+            <param name="requireBirthDate">Require birth date</param>
+            <param name="customFields">Array of custom LinkedIn profile field names</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.GetResponseValue(System.String)">
+            <summary>
+            Returns field value from LinkedIn respose according to profile field name.
+            </summary>
+            <param name="fieldName">Profile field name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.LinkedInIsAvailable(System.String)">
+            <summary>
+            Indicates if LinkedIn is availabe/enabled on specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.GetLinkedInEnabled(System.String)">
+            <summary>
+            Indicates if LinkedIn is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.GetLinkedInApiKey(System.String)">
+            <summary>
+            Returns api key.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.GetLinkedInSecretKey(System.String)">
+            <summary>
+            Returns application secret.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.Initialize(System.Xml.XmlDocument)">
+            <summary>
+            Loads LinkedIn response.
+            </summary>
+            <param name="response">LinkedIn response as XmlDocument object</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.CreateConsumer">
+            <summary>
+            Creates LinkedIn WebConsumer.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.LinkedInHelper.GetXmlResponse(DotNetOpenAuth.Messaging.IncomingWebResponse)">
+            <summary>
+            Returns LinkedIn response as XmlDocument.
+            </summary>
+            <param name="response">LinkedIn response as IncomingWebResponse object</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.LinkedInHelper.MemberId">
+            <summary>
+            User member id.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.LinkedInHelper.FirstName">
+            <summary>
+            User first name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.LinkedInHelper.LastName">
+            <summary>
+            User last name.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.LinkedInHelper.BirthDate">
+            <summary>
+            User date of birth.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.LinkedInHelper.LinkedInResponse">
+            <summary>
+            Gets or sets LinkedIn Response as XmlDocument object.
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.WindowsLiveLogin">
+            <summary>
+            Class for windows live login authentication.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.#ctor(System.String)">
+            <summary>
+            Object contructor
+            </summary>
+            <param name="siteName">Current site name</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.#ctor(System.String,System.String)">
+            <summary>
+            Object contructor
+            </summary>
+            <param name="appID">Application Id (stored in settings)</param>
+            <param name="secret">Application secret (stored in settings)</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.GetLogoutUrl">
+            <summary>
+            Returns logout URL
+            </summary>        
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.ProcessLogin(System.String,System.String)">
+            <summary>
+            Authorize user
+            </summary>
+            <param name="code">Code representing user</param>
+            <param name="context">Context (url) for return page (that means LiveIDLogin webpart)</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.GetUserAccessToken(System.String)">
+            <summary>
+            Returns access token for user (represented by code)
+            </summary>
+            <param name="code">Code representing user (return after first live id request)</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.GetUserInformation(System.String)">
+            <summary>
+            Returns user information by given token
+            </summary>
+            <param name="token">Token string</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.ParseUserInfo(System.String)">
+            <summary>
+            Create name-value collection from string with user data
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.GetLoginUrl">
+            <summary>
+            Returns live ID login URL 
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.ClearCookieAndRedirect(System.String)">
+            <summary>
+            Clear live id cookies and redirect to the logon page.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.ClearLiveCookie">
+            <summary>
+            Clears Live authentication cookie.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.AuthenticateClientToken(System.String,System.String,System.String)">
+            <summary>
+            Authenticate live ID user by authorization token
+            </summary>
+            <param name="token">Authorization token</param>
+            <param name="context">Return URL</param>        
+            <param name="accessToken">Access token - unique token for user, used in server authorization scenario. Store for possible future use</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.GetClaimsFromTokenSegment(System.String)">
+            <summary>
+            Parse token segment stored in JSON format to class
+            </summary>
+            <param name="claimsTokenSegment">Segment of data</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.ValidateSignature(System.String,System.String,System.String)">
+            <summary>
+            Validates the signature added to the end of token
+            </summary>
+            <param name="envelope">Envelope data segment</param>
+            <param name="token">Token (body) data segment</param>
+            <param name="signature">Hash signature</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.Base64UrlDecode(System.String)">
+            <summary>
+            Decode from Base 64
+            </summary>
+            <param name="encodedSegment">Segment to decode</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.Base64UrlEncode(System.Byte[])">
+            <summary>
+            Encode to Base 64
+            </summary>
+            <param name="arg">Array of bytes to encode</param>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.Secret">
+            <summary>
+            Application secret
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.UseServerSideAuthorization">
+            <summary>
+            Return true if user uses server side authorization scenario
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.AppID">
+            <summary>
+            Application ID
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.SiteName">
+            <summary>
+            Current site name
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.WindowsLiveLogin.User">
+            <summary>
+            Holds the user information after a successful sign-in.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            User constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.#ctor(System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            User constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.setTimestamp(System.String)">
+            <summary>
+            Sets timestamp. For server side scenario it's last profile update time. Client side it's expiration time.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.setTimestamp(System.DateTime)">
+            <summary>
+            Sets timestamp. For server side scenario it's last profile update time. Client side it's expiration time.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.setId(System.String)">
+            <summary>
+            Sets the pairwise unique ID for the user.
+            </summary>
+            <param name="id">User id</param>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.setContext(System.String)">
+            <summary>
+            Sets the the Application context.
+            </summary>
+        </member>
+        <member name="M:CMS.MembershipProvider.WindowsLiveLogin.User.setToken(System.String)">
+            <summary>
+            Sets the the User token.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.User.Timestamp">
+            <summary>
+             Returns the timestamp as obtained from the SSO token.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.User.Id">
+            <summary>
+            Returns the pairwise unique ID for the user.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.User.Context">
+            <summary>
+            Returns the application context that was originally passed
+            to the sign-in request, if any.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.User.Token">
+            <summary>
+            User token
+            </summary>
+        </member>
+        <member name="T:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims">
+            <summary>
+            Class for user information stored in token JSON format
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.expUnixTime">
+            <summary>
+            Exiration time. The unit is given in seconds since midnight of 1/1/1970 in UTC.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.Expiration">
+            <summary>
+            Expiration time - DateTime object.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.Issuer">
+            <summary>
+            Identifies the principal who issued the token.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.Audience">
+            <summary>
+            Domain name for the application.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.UserId">
+            <summary>
+            An identifier for the user which is unique to the application. 
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.Version">
+            <summary>
+            Version identifier for the token.
+            </summary>
+        </member>
+        <member name="P:CMS.MembershipProvider.WindowsLiveLogin.JsonWebTokenClaims.ClientIdentifier">
+            <summary>
+            The Windows client identifier of the application, if there is one.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,26 @@
+﻿<cms_searchindex version="6.0">
+  <NewDataSet>
+    <cms_searchindex>
+      <IndexID>43</IndexID>
+      <IndexName>EcommerceSite.Default</IndexName>
+      <IndexDisplayName>Ecommerce site - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="CMS.File" inclblogcomm="False" id="efcb210e-574e-41a1-9f9f-2bc9b12672c5" path="/%" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="dc0961c6-0e6c-43e0-825c-aa2f5d3ad232" path="/SpecialPages/%" /&gt;&lt;item type="allowed" path="/%" inclforums="False" classnames="" inclblogcomm="False" id="364c7c7a-e662-46b0-9558-c44934a0833a" inclmessagecomm="False" /&gt;&lt;item type="allowed" inclmessagecomm="False" path="/%" inclforums="False" classnames="" inclblogcomm="False" id="acc3ef5b-fda9-4fb0-a8e4-57db18803371" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>55564809-9b90-466f-b466-0318f232943e</IndexGUID>
+      <IndexLastModified>2011-09-17T15:35:28.633+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-09-17T15:35:28.633+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+    </cms_searchindex>
+    <cms_searchindexculture>
+      <IndexID>43</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexsite>
+      <IndexID>43</IndexID>
+      <IndexSiteID>5</IndexSiteID>
+    </cms_searchindexsite>
+  </NewDataSet>
+</cms_searchindex>

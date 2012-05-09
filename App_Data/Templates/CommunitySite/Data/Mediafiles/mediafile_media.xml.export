@@ -1,0 +1,284 @@
+﻿<mediafile_media version="6.0">
+  <NewDataSet>
+    <media_file>
+      <FileID>1801</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>MS Word document</FileTitle>
+      <FileDescription>MS Word document</FileDescription>
+      <FileExtension>.docx</FileExtension>
+      <FileMimeType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</FileMimeType>
+      <FilePath>Documents/Sample-document.docx</FilePath>
+      <FileSize>9954</FileSize>
+      <FileGUID>a19b4531-af5c-4bdc-b7ce-a2726a7f43f4</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:26:17.887+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:30:58.263+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1802</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>HTML document</FileTitle>
+      <FileDescription>HTML document</FileDescription>
+      <FileExtension>.html</FileExtension>
+      <FileMimeType>text/html</FileMimeType>
+      <FilePath>Documents/Sample-document.html</FilePath>
+      <FileSize>271</FileSize>
+      <FileGUID>6b820964-568e-4319-a625-b0b753b99751</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:28:45.45+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:30:48.857+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1803</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>PDF document</FileTitle>
+      <FileDescription>PDF document</FileDescription>
+      <FileExtension>.pdf</FileExtension>
+      <FileMimeType>application/pdf</FileMimeType>
+      <FilePath>Documents/Sample-document.pdf</FilePath>
+      <FileSize>27206</FileSize>
+      <FileGUID>9d145373-6dc8-43be-9187-9611d0a79f87</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:28:53.747+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:30:40.03+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1804</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>MS PowerPoint document</FileTitle>
+      <FileDescription>MS PowerPoint document</FileDescription>
+      <FileExtension>.pptx</FileExtension>
+      <FileMimeType>application/vnd.openxmlformats-officedocument.presentationml.presentation</FileMimeType>
+      <FilePath>Documents/Sample-document.pptx</FilePath>
+      <FileSize>33173</FileSize>
+      <FileGUID>698e3ac7-923f-4f07-a2dd-1b0094bf018e</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:31:23.373+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:31:31.577+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1805</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>MS Excel document</FileTitle>
+      <FileDescription>MS Excel document</FileDescription>
+      <FileExtension>.xlsx</FileExtension>
+      <FileMimeType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</FileMimeType>
+      <FilePath>Documents/Sample-document.xlsx</FilePath>
+      <FileSize>9076</FileSize>
+      <FileGUID>38ec03a0-de19-4a94-99fd-3b0b851b72b4</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:32:02.2+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:32:10.06+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1806</FileID>
+      <FileName>Sample-document</FileName>
+      <FileTitle>XML document</FileTitle>
+      <FileDescription>XML document</FileDescription>
+      <FileExtension>.xml</FileExtension>
+      <FileMimeType>text/xml</FileMimeType>
+      <FilePath>Documents/Sample-document.xml</FilePath>
+      <FileSize>64</FileSize>
+      <FileGUID>26da3900-6b1b-4f85-99e9-4a49b7826bf7</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T16:32:28.717+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:32:36.997+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1779</FileID>
+      <FileName>Windows-XP-Startup</FileName>
+      <FileTitle>WIN XP startup sound</FileTitle>
+      <FileDescription>Windows XP Startup Sound</FileDescription>
+      <FileExtension>.mp3</FileExtension>
+      <FileMimeType>audio/mpeg</FileMimeType>
+      <FilePath>Music/Windows-XP-Startup.mp3</FilePath>
+      <FileSize>77739</FileSize>
+      <FileGUID>e3cdc771-c4ec-4ab0-80de-10b7173a7e75</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-07T15:03:11.7+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:54:52.147+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1780</FileID>
+      <FileName>Windows-XP-Startup</FileName>
+      <FileTitle>WIN XP startup sound</FileTitle>
+      <FileDescription>Windows XP Startup Sound</FileDescription>
+      <FileExtension>.wav</FileExtension>
+      <FileMimeType>audio/wav</FileMimeType>
+      <FilePath>Music/Windows-XP-Startup.wav</FilePath>
+      <FileSize>424644</FileSize>
+      <FileGUID>19d3308b-6244-487f-accc-d1affe037901</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-07T15:03:18.387+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:55:04.71+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1781</FileID>
+      <FileName>Windows-XP-Startup</FileName>
+      <FileTitle>WIN XP startup sound</FileTitle>
+      <FileDescription>Windows XP Startup Sound</FileDescription>
+      <FileExtension>.wma</FileExtension>
+      <FileMimeType>audio/x-ms-wma</FileMimeType>
+      <FilePath>Music/Windows-XP-Startup.wma</FilePath>
+      <FileSize>27072</FileSize>
+      <FileGUID>d1275d5b-7886-4088-9fdc-85cc49f8cc2a</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-07T15:03:25.42+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T16:55:11.57+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1671</FileID>
+      <FileName>IM001775</FileName>
+      <FileTitle>River</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/pjpeg</FileMimeType>
+      <FilePath>Pictures/IM001775.JPG</FilePath>
+      <FileSize>27004</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>9e0e7d0f-7828-42f3-9fcb-1b2eb4f65c93</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2008-12-19T13:51:31.797+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T15:55:14.703+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1670</FileID>
+      <FileName>IM002595</FileName>
+      <FileTitle>Street</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/pjpeg</FileMimeType>
+      <FilePath>Pictures/IM002595.JPG</FilePath>
+      <FileSize>35430</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>db91b4d8-4c7d-4c7a-be3c-471599309f45</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2008-12-19T13:51:25.67+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T15:55:30.267+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1669</FileID>
+      <FileName>IM002601</FileName>
+      <FileTitle>Buildings</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/pjpeg</FileMimeType>
+      <FilePath>Pictures/IM002601.JPG</FilePath>
+      <FileSize>31873</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>d130418f-7960-41f9-9229-9de259026100</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2008-12-19T13:51:14.937+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T15:55:43.033+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1672</FileID>
+      <FileName>IM002628</FileName>
+      <FileTitle>Nature</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/pjpeg</FileMimeType>
+      <FilePath>Pictures/IM002628.JPG</FilePath>
+      <FileSize>42628</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>af89e824-2f81-490e-baa4-3d8cbce906a5</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2008-12-19T13:51:38.45+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T15:55:54.08+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1815</FileID>
+      <FileName>Sample_video</FileName>
+      <FileTitle>Sample video</FileTitle>
+      <FileDescription>Kentico CMS websites</FileDescription>
+      <FileExtension>.avi</FileExtension>
+      <FileMimeType>video/x-msvideo</FileMimeType>
+      <FilePath>Video/Sample_video.avi</FilePath>
+      <FileSize>285612</FileSize>
+      <FileGUID>1ef0d85e-8d90-46ad-b7e7-f629ab21cab5</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T17:01:20.93+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T17:09:07.59+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1816</FileID>
+      <FileName>Sample_video</FileName>
+      <FileTitle>Sample video</FileTitle>
+      <FileDescription>Kentico CMS websites</FileDescription>
+      <FileExtension>.mov</FileExtension>
+      <FileMimeType>video/quicktime</FileMimeType>
+      <FilePath>Video/Sample_video.mov</FilePath>
+      <FileSize>119205</FileSize>
+      <FileGUID>0a15f12c-cc80-44b8-be46-dcec36d41cd8</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T17:01:36.103+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T17:09:18.763+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1817</FileID>
+      <FileName>Sample_video</FileName>
+      <FileTitle>Sample video</FileTitle>
+      <FileDescription>Kentico CMS websites</FileDescription>
+      <FileExtension>.wmv</FileExtension>
+      <FileMimeType>video/x-ms-wmv</FileMimeType>
+      <FilePath>Video/Sample_video.wmv</FilePath>
+      <FileSize>160074</FileSize>
+      <FileGUID>88ca205f-c2a2-4bd3-85cd-dd4992e7cff8</FileGUID>
+      <FileLibraryID>125</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-08T17:01:53.587+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-08T17:09:30.467+01:00</FileModifiedWhen>
+    </media_file>
+  </NewDataSet>
+</mediafile_media>

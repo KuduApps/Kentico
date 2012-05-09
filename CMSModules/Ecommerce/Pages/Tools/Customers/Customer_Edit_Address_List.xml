@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="AddressName" caption="$Unigrid.Customer_Edit_Address.Columns.AddressName$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="AddressIsBilling" externalsourcename="AddressIsBilling" caption="$Unigrid.Customer_Edit_Address.Columns.AddressIsBilling$" wrap="false">
+    </column>
+    <column source="AddressIsShipping" externalsourcename="AddressIsShipping" caption="$Unigrid.Customer_Edit_Address.Columns.AddressIsShipping$" wrap="false">
+    </column>
+    <column source="AddressIsCompany" externalsourcename="AddressIsCompany" caption="$Unigrid.Customer_Edit_Address.Columns.AddressIsCompany$" wrap="false">
+    </column>
+    <column source="AddressEnabled" externalsourcename="AddressEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.address" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

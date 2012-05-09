@@ -1,0 +1,5 @@
+CREATE PROCEDURE [Proc_CMS_Site_SelectAll]
+AS
+BEGIN
+  SELECT * FROM CMS_Site ORDER BY SiteDisplayName
+END

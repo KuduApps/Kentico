@@ -1,0 +1,156 @@
+﻿<cms_inlinecontrol version="6.0">
+  <NewDataSet>
+    <cms_inlinecontrol>
+      <ControlID>14</ControlID>
+      <ControlDisplayName>Attachment image gallery</ControlDisplayName>
+      <ControlName>AttachmentImageGallery</ControlName>
+      <ControlParameterName></ControlParameterName>
+      <ControlDescription>Displays the unsorted attachments of current document in the lightbox. This control uses transformation 'cms.root.AttachmentLightbox' and 'cms.root.AttachmentLightboxDetail' for detail view by default. If document type of current document contains transformation 'AttachmentLightbox' and 'AttachmentLightboxDetail', this transforamtion is used instead.</ControlDescription>
+      <ControlGUID>3b6f219e-6c40-4742-992b-88c04d876d37</ControlGUID>
+      <ControlLastModified>2009-06-17T08:30:24.297+02:00</ControlLastModified>
+      <ControlFileName>~/CMSInlineControls/AttachmentLightBoxGallery.ascx</ControlFileName>
+      <ControlProperties></ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>1</ControlID>
+      <ControlDisplayName>BizForm</ControlDisplayName>
+      <ControlName>BizFormControl</ControlName>
+      <ControlParameterName>Form name</ControlParameterName>
+      <ControlDescription>Displays the BizForm control specified by the given form code name.</ControlDescription>
+      <ControlGUID>d2438925-0147-4ed9-95ba-fa3ab3c5841f</ControlGUID>
+      <ControlLastModified>2010-09-24T15:58:53.943+02:00</ControlLastModified>
+      <ControlFileName>~/CMSModules/BizForms/InlineControls/BizFormControl.ascx</ControlFileName>
+      <ControlProperties>&lt;form&gt;&lt;/form&gt;</ControlProperties>
+      <ControlResourceID>197</ControlResourceID>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>12</ControlID>
+      <ControlDisplayName>Document attachments</ControlDisplayName>
+      <ControlName>DocumentAttachments</ControlName>
+      <ControlParameterName></ControlParameterName>
+      <ControlDescription>Displays the unsorted attachments of current document. This control uses transformation 'cms.root.attachment' by default. If document type of current document contains transformation 'attachment', this transforamtion is used instead.</ControlDescription>
+      <ControlGUID>37d23f6d-78be-447f-8302-16942bdf4409</ControlGUID>
+      <ControlLastModified>2009-06-17T08:28:21.233+02:00</ControlLastModified>
+      <ControlFileName>~/CMSInlineControls/DocumentAttachments.ascx</ControlFileName>
+      <ControlProperties></ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>15</ControlID>
+      <ControlDisplayName>Image control</ControlDisplayName>
+      <ControlName>Image</ControlName>
+      <ControlParameterName>image file URL</ControlParameterName>
+      <ControlDescription>Displays image file specified by the given image URL and additional parameters.</ControlDescription>
+      <ControlGUID>7f272dd8-067f-4b8c-912d-9e12bb54c0be</ControlGUID>
+      <ControlLastModified>2009-05-06T16:39:20.06+02:00</ControlLastModified>
+      <ControlFileName>~/CMSInlineControls/ImageControl.ascx</ControlFileName>
+      <ControlProperties>&lt;form&gt;&lt;/form&gt;</ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>11</ControlID>
+      <ControlDisplayName>Media</ControlDisplayName>
+      <ControlName>Media</ControlName>
+      <ControlParameterName>Media file URL</ControlParameterName>
+      <ControlDescription>Displays media file or flash specified by the given file URL and additional parameters.</ControlDescription>
+      <ControlGUID>87898dae-c5a4-4f67-8eaf-0e10276438d7</ControlGUID>
+      <ControlLastModified>2009-05-27T12:27:52.157+02:00</ControlLastModified>
+      <ControlFileName>~/CMSInlineControls/MediaControl.ascx</ControlFileName>
+      <ControlProperties>&lt;form&gt;&lt;field column="Url" fieldcaption="Url" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="450" publicfield="false" spellcheck="false" guid="8e5ffbe6-aad7-44f1-9d5d-6525c5e965fc" visibility="none" /&gt;&lt;field column="Type" fieldcaption="Type" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="100" publicfield="false" spellcheck="false" guid="0355b9f5-e4e3-4414-84d0-21aa6f22bfd9" visibility="none" /&gt;&lt;field column="Width" fieldcaption="Width" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="bcc9b205-8610-4ae6-8888-69bc6efc2fbc" visibility="none" /&gt;&lt;field column="Height" fieldcaption="Height" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="3f30c598-5b40-4bda-ae7d-af8a254c0792" visibility="none" /&gt;&lt;field column="AutoPlay" fieldcaption="AutoPlay" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="1c832678-f472-424e-9e7e-321303e5370c" visibility="none" /&gt;&lt;field column="Loop" fieldcaption="Loop" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="b1ade3ac-b153-434a-bcc5-5cf9fcb8f44f" visibility="none" /&gt;&lt;field column="Controls" fieldcaption="Controls" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="012a1db0-1a28-4b68-8ff0-8e7f544c348c" visibility="none" /&gt;&lt;field column="AutoActive" fieldcaption="AutoActive" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="16fd191f-eb2b-499a-896d-855468a75366" visibility="none" /&gt;&lt;field column="Menu" fieldcaption="Menu" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="3d969571-8a1b-4029-a84a-4a240a6bb21c" visibility="none" /&gt;&lt;field column="Scale" fieldcaption="Scale" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="250" publicfield="false" spellcheck="false" guid="0d593900-f2c9-40b1-bb89-ff604891f050" visibility="none" /&gt;&lt;field column="Id" fieldcaption="Id" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="250" publicfield="false" spellcheck="false" guid="24729169-5e64-4226-b2f8-254693f69796" visibility="none" /&gt;&lt;field column="Title" fieldcaption="Title" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="250" publicfield="false" spellcheck="false" guid="8a50adb4-37ea-4805-831f-c23470814ced" visibility="none" /&gt;&lt;field column="Stylesheet" fieldcaption="Stylesheet" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="250" publicfield="false" spellcheck="false" guid="f181c073-020d-4355-9e4e-7bf781909c6a" visibility="none" /&gt;&lt;field column="Style" fieldcaption="Style" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="250" publicfield="false" spellcheck="false" guid="2429357c-a21d-4b20-877e-30ed410b5527" visibility="none" /&gt;&lt;/form&gt;</ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>10</ControlID>
+      <ControlDisplayName>Media file</ControlDisplayName>
+      <ControlName>MediaFileControl</ControlName>
+      <ControlParameterName>File GUID</ControlParameterName>
+      <ControlDescription>Displays media file specified by the given file GUID.</ControlDescription>
+      <ControlGUID>9842e890-6659-44cd-9206-6aa644969291</ControlGUID>
+      <ControlLastModified>2010-10-25T14:59:26.68+02:00</ControlLastModified>
+      <ControlFileName>~/CMSModules/MediaLibrary/InlineControls/MediaFileControl.ascx</ControlFileName>
+      <ControlProperties>&lt;form&gt;&lt;field column="Width" fieldcaption="Width" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="ea128047-d151-4818-afc6-1e6ff4dd15b7" visibility="none" /&gt;&lt;field column="Height" fieldcaption="Height" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="37c343ed-10a3-4476-bb3d-1781c7f57673" visibility="none" /&gt;&lt;field column="FileGuid" fieldcaption="File guid" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="50" publicfield="false" spellcheck="false" guid="8e5066ca-74e5-445c-b9a9-4cedd76d2add" visibility="none" /&gt;&lt;field column="SiteName" fieldcaption="Site name" visible="true" columntype="text" fieldtype="usercontrol" allowempty="false" isPK="false" system="false" columnsize="450" publicfield="false" spellcheck="false" guid="60ea2c1c-0ba6-46e9-a531-c7d4694d3910" external="true" visibility="none"&gt;&lt;settings&gt;&lt;controlname&gt;selectsite&lt;/controlname&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</ControlProperties>
+      <ControlResourceID>140</ControlResourceID>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>2</ControlID>
+      <ControlDisplayName>Poll</ControlDisplayName>
+      <ControlName>PollControl</ControlName>
+      <ControlParameterName>Poll name</ControlParameterName>
+      <ControlDescription>Displays the Poll specified by the given code name.</ControlDescription>
+      <ControlGUID>9b909a22-f376-45a1-af59-c9e4fc6234b9</ControlGUID>
+      <ControlLastModified>2008-10-08T17:22:16.747+02:00</ControlLastModified>
+      <ControlFileName>~/CMSModules/Polls/InlineControls/PollControl.ascx</ControlFileName>
+      <ControlProperties></ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>6</ControlID>
+      <ControlDisplayName>Rating</ControlDisplayName>
+      <ControlName>RatingControl</ControlName>
+      <ControlParameterName>Rating type</ControlParameterName>
+      <ControlDescription>Displays rating scale specified by type.</ControlDescription>
+      <ControlGUID>57cdcd1e-82e7-4831-844c-ec6a3ae5019a</ControlGUID>
+      <ControlLastModified>2008-09-29T10:39:49.567+02:00</ControlLastModified>
+      <ControlFileName>RatingControl.ascx</ControlFileName>
+      <ControlProperties></ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>20</ControlID>
+      <ControlDisplayName>Widget</ControlDisplayName>
+      <ControlName>Widget</ControlName>
+      <ControlParameterName>Widget</ControlParameterName>
+      <ControlDescription>Displays inline widget.</ControlDescription>
+      <ControlGUID>342ab0da-5a5d-4561-855e-bfa16d71505c</ControlGUID>
+      <ControlLastModified>2011-04-29T11:23:00.327+02:00</ControlLastModified>
+      <ControlFileName>~/CMSModules/Widgets/InlineControl/InlineWidget.ascx</ControlFileName>
+      <ControlResourceID>152</ControlResourceID>
+    </cms_inlinecontrol>
+    <cms_inlinecontrol>
+      <ControlID>13</ControlID>
+      <ControlDisplayName>YouTube video</ControlDisplayName>
+      <ControlName>YouTubeVideo</ControlName>
+      <ControlParameterName>YouTube video URL</ControlParameterName>
+      <ControlDescription>Displays youtube video by the given URL and additional parameters.</ControlDescription>
+      <ControlGUID>a8b27ddc-fd96-470f-bdca-b0e79059ea79</ControlGUID>
+      <ControlLastModified>2009-04-09T14:08:00.743+02:00</ControlLastModified>
+      <ControlFileName>~/CMSInlineControls/YouTubeControl.ascx</ControlFileName>
+      <ControlProperties>&lt;form&gt;&lt;field column="Url" fieldcaption="Video URL" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="450" publicfield="false" spellcheck="false" guid="5ac205c3-53ad-469e-bc99-310789c73bcf" visibility="none" /&gt;&lt;field column="Width" fieldcaption="Width" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="815b7768-d202-44cb-aaf5-29d9f1c0c68d" visibility="none" /&gt;&lt;field column="Height" fieldcaption="Height" visible="true" columntype="integer" fieldtype="textbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="8e96fc80-b4ae-4e91-874e-15bb3818d4a1" visibility="none" /&gt;&lt;field column="Fs" fieldcaption="Full screen" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="d0be7b51-d47b-44cc-b849-54816213f050" visibility="none" /&gt;&lt;field column="AutoPlay" fieldcaption="AutoPlay" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="e1e600d4-5975-41c7-9708-858c718f7e44" visibility="none" /&gt;&lt;field column="Loop" fieldcaption="Loop" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="efd919be-4524-43fd-8dd0-79db0bc5925e" visibility="none" /&gt;&lt;field column="Rel" fieldcaption="Display related videos" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="13655023-42a8-4747-8081-e67acfcfc51c" visibility="none" /&gt;&lt;field column="Cookies" fieldcaption="Enable delayed cookies" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="b8174412-fc77-41a9-9cab-821640aafa5f" visibility="none" /&gt;&lt;field column="Border" fieldcaption="Show border" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" publicfield="false" spellcheck="false" guid="0b242d6a-74f0-48cc-973a-f70f330c03ba" visibility="none" /&gt;&lt;field column="Color1" fieldcaption="Color 1" visible="true" columntype="text" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="100" publicfield="false" spellcheck="false" guid="758a4cc7-2068-4a04-ac44-d2f5051f29ef" visibility="none" /&gt;&lt;field column="Color2" fieldcaption="Color 2" visible="true" columntype="text" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="100" publicfield="false" spellcheck="false" guid="05277734-4ec6-42fd-9259-9cbdee6c54db" visibility="none" /&gt;&lt;/form&gt;</ControlProperties>
+    </cms_inlinecontrol>
+    <cms_inlinecontrolsite>
+      <ControlID>1</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>2</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>6</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>10</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>11</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>12</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>13</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>14</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>15</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+    <cms_inlinecontrolsite>
+      <ControlID>20</ControlID>
+      <SiteID>1</SiteID>
+    </cms_inlinecontrolsite>
+  </NewDataSet>
+</cms_inlinecontrol>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="LeftNodeID;RightNodeID;RelationshipNameID">
+    <action name="delete" externalsourcename="delete" caption="$General.Remove$" icon="Delete.png" commandargument="{0};{1};{2}" confirmation="$Relationship.DeleteMsg$" />
+  </actions>
+  <columns>
+    <column source="LeftNodeName" externalsourcename="leftnodename" caption="$Unigrid.Relationship.Columns.LeftDocument$" wrap="false" columnname="LeftNodeName">
+      <filter type="text" />
+    </column>
+    <column source="RelationshipDisplayName" caption="$Unigrid.Relationship.Columns.RelationshipName$" wrap="false" localize="true" columnname="RelationshipDisplayName">
+      <filter type="text" />
+    </column>
+    <column source="RightNodeName" externalsourcename="rightnodename" caption="$Unigrid.Relationship.Columns.RightDocument$" wrap="false" columnname="RightNodeName">
+      <filter type="text" />
+    </column>
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+  </pager>
+  <objecttype name="cms.relationshiplist" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

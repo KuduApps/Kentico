@@ -1,0 +1,48 @@
+﻿<forums_forumgroup version="6.0">
+  <NewDataSet>
+    <forums_forumgroup>
+      <GroupID>83</GroupID>
+      <GroupSiteID>53</GroupSiteID>
+      <GroupName>BackPackerForums</GroupName>
+      <GroupDisplayName>Back-packer forums</GroupDisplayName>
+      <GroupOrder>12</GroupOrder>
+      <GroupDescription>This forum is intended for user groups, their members and topics related to the particular groups.</GroupDescription>
+      <GroupGUID>6b18faeb-a9cb-4d6f-8d80-7a5040b91cfd</GroupGUID>
+      <GroupLastModified>2009-01-09T13:55:33.75+01:00</GroupLastModified>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>82</GroupID>
+      <GroupSiteID>53</GroupSiteID>
+      <GroupName>CommunityForums</GroupName>
+      <GroupDisplayName>Community forums</GroupDisplayName>
+      <GroupOrder>11</GroupOrder>
+      <GroupDescription>This is a general forum for both registered and not registered site users.</GroupDescription>
+      <GroupGUID>d4b2bc3a-b55a-44dd-89b5-3158cb47430f</GroupGUID>
+      <GroupLastModified>2009-01-09T13:54:08.13+01:00</GroupLastModified>
+      <GroupAuthorEdit>true</GroupAuthorEdit>
+      <GroupAuthorDelete>true</GroupAuthorDelete>
+      <GroupType>0</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+  </NewDataSet>
+</forums_forumgroup>

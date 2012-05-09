@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.GlobalEventHelper</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.GlobalEventHelper.AbstractDataHandler">
+            <summary>
+            Custom data event handler.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnBeforeInsert(System.Object,System.Object)">
+            <summary>
+            Fires before inserting data to database. Performs the additional actions before data are inserted to database.
+            </summary>
+            <param name="dataObj">Data class object to insert to database</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnAfterInsert(System.Object,System.Object)">
+            <summary>
+            Fires after inserting data to database. Performs the additional actions after data are inserted to database.
+            </summary>
+            <param name="dataObj">Data class object to insert to database</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnBeforeUpdate(System.Object,System.Object)">
+            <summary>
+            Fires before updating data in database. Performs the additional actions before data are updated in database.
+            </summary>
+            <param name="dataObj">Data class object to update in database</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnAfterUpdate(System.Object,System.Object)">
+            <summary>
+            Fires after updating data in database. Performs the additional actions after data are updated in database.
+            </summary>
+            <param name="dataObj">Data class object to update in database</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnBeforeDelete(System.Object,System.Object)">
+            <summary>
+            Fires before deleting data in database. Performs the additional actions before data are deleted in database.
+            </summary>
+            <param name="dataObj">Data class object to delete in database</param>
+            <param name="conn">GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnAfterDelete(System.Object,System.Object)">
+            <summary>
+            Fires after deleting data in database. Performs the additional actions after data are deleted in database.
+            </summary>
+            <param name="dataObj">Data class object to delete in database</param>
+            <param name="conn">GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnBeforeDelete(System.String,System.Int32,System.Object)">
+            <summary>
+            Fires before deleting data from database. Performs the additional actions before data are deleted from database.
+            </summary>
+            <param name="className">Class name representing the data type, such as "cms.user"</param>
+            <param name="id">Primary key value of the record</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnAfterDelete(System.String,System.Int32,System.Object)">
+            <summary>
+            Fires after deleting data from database. Performs the additional actions after data are deleted from database.
+            </summary>
+            <param name="className">Class name representing the data type, such as "cms.user"</param>
+            <param name="id">Primary key value of the record</param>
+            <param name="conn">Current GeneralConnection object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractDataHandler.OnGetContent(System.Object,System.String)">
+            <summary>
+            Fires when TreeNode or Searchable object content is requested.
+            </summary>
+            <param name="obj">Curerently indexed object (TreeNode, ForumPostInfo, ...)</param>
+            <param name="content">Current "content" value</param>
+        </member>
+        <member name="T:CMS.GlobalEventHelper.AbstractExceptionHandler">
+            <summary>
+            Custom exception event handler.
+            </summary>    
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractExceptionHandler.OnException(System.Exception)">
+            <summary>
+            Fires when exception occurs. Performs the additional actions after exception occurs.
+            </summary>
+            <param name="e">Thrown exception</param>
+        </member>
+        <member name="T:CMS.GlobalEventHelper.AbstractSecurityHandler">
+            <summary>
+            Abstract security event handler.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnAuthentication(System.Object,System.String,System.String)">
+            <summary>
+            Fires on user authentication. Performs the additional user authentication to the regular system authentication, return the given UserInfo object to skip.
+            </summary>
+            <param name="userInfo">Current info of the authenticated user (through regular authentication)</param>
+            <param name="username">Username to authenticate</param>
+            <param name="password">Password to authenticate</param>
+            <returns>Returns the authenticated user info object when passed, or null when authentication failed</returns>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnResourceAuthorization(System.Object,System.String,System.String,System.Boolean)">
+            <summary>
+            Fires on user resource authorization. Performs the additional resource authorization procedure. Return original authorized value to skip.
+            </summary>
+            <param name="userInfo">User info object</param>
+            <param name="resourceName">Resource name to authorize</param>
+            <param name="permissionName">Permission name</param>
+            <param name="authorized">Current (system) authorization status</param>
+            <returns>Returns true if the user is authorized against specified resource, false if not.</returns>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnUIElementAuthorization(System.Object,System.String,System.String,System.Boolean)">
+            <summary>
+            Fires on user resource authorization for given UIElement. Performs the additional UI element authorization procedure. Return original authorized value to skip.
+            </summary>
+            <param name="userInfo">User info object</param>
+            <param name="resourceName">Resource name to authorize</param>
+            <param name="elementName">UI element name</param>
+            <param name="authorized">Current (system) authorization status</param>
+            <returns>Returns true if the user is authorized against specified resource UI element, false if not.</returns>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnClassNameAuthorization(System.Object,System.String,System.String,System.Boolean)">
+            <summary>
+            Fires on user class authorization. Performs the additional resource authorization procedure. Return original authorized value to skip.
+            </summary>
+            <param name="userInfo">User info object</param>
+            <param name="className">Class name to authorize</param>
+            <param name="permissionName">Permission name</param>
+            <param name="authorized">Current (system) authorization status</param>
+            <returns>Returns true if the user is authorized against specified resource, false if not.</returns>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnTreeNodeAuthorization(System.Object,System.Object,System.String,System.Object)">
+            <summary>
+            Fires on user tree node authorization. Performs the additional resource authorization procedure. Return original authorized value to skip.
+            </summary>
+            <param name="userInfo">User info object</param>
+            <param name="node">Node to authorize</param>
+            <param name="permissionName">Permission name</param>
+            <param name="authorizationResult">Current (system) authorization status (AuthorizationResultEnum)</param>
+            <returns>Returns the autorization result</returns>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractSecurityHandler.OnFilterDataSetByPermissions(System.Object,System.Data.DataSet,System.String)">
+            <summary>
+            Fires when the DataSet if filtered by the permissions.
+            </summary>
+            <param name="userInfo">User info object</param>
+            <param name="ds">DataSet with the data</param>
+            <param name="permissionName">Permission name</param>
+        </member>
+        <member name="T:CMS.GlobalEventHelper.AbstractTreeNodeHandler">
+            <summary>
+            Custom tree node event handler.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeInsert(System.Object,System.Int32,System.Object)">
+            <summary>
+            Fires before inserting tree node to the tree. Performs the additional actions before the tree node is inserted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to insert to tree</param>
+            <param name="parentNodeId">Parent node ID</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterInsert(System.Object,System.Int32,System.Object)">
+            <summary>
+            Fires after inserting tree node to the tree. Performs the additional actions after the tree node is inserted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object inserted to tree</param>
+            <param name="parentNodeId">Parent node ID</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeInsertNewCultureVersion(System.Object,System.Object)">
+            <summary>
+            Fires before inserting new culture version of tree node to the tree. Performs the additional actions before the new culture version of tree node is inserted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to insert to tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterInsertNewCultureVersion(System.Object,System.Object)">
+            <summary>
+            Fires after inserting new culture version of tree node to the tree. Performs the additional actions after the new culture version of tree node is inserted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object inserted to tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeUpdate(System.Object,System.Object)">
+            <summary>
+            Fires before updating tree node in the tree. Performs the additional actions before the tree node is updated.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to update in tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterUpdate(System.Object,System.Object)">
+            <summary>
+            Fires after updating tree node in the tree. Performs the additional actions after the tree node is updated.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to update in tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeDelete(System.Object,System.Object)">
+            <summary>
+            Fires before deleting tree node from the tree. Performs the additional actions before the tree node is deleted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to delete from tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterDelete(System.Object,System.Object)">
+            <summary>
+            Fires after deleting tree node from the tree. Performs the additional actions after the tree node is deleted.
+            </summary>
+            <param name="treeNodeObj">TreeNode object deleted from tree</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeMove(System.Object,System.Int32,System.Object)">
+            <summary>
+            Fires before moving tree node in the tree. Performs the additional actions before the tree node is moved.
+            </summary>
+            <param name="treeNodeObj">Node to move</param>
+            <param name="targetParentNodeId">Target location</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterMove(System.Object,System.Object)">
+            <summary>
+            Fires after moving tree node in the tree. Performs the additional actions after the tree node is moved.
+            </summary>        
+            <param name="treeNodeObj">Moved TreeNode object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnBeforeCopy(System.Object,System.Int32,System.Boolean,System.Object)">
+            <summary>
+            Fires before copying tree node in the tree. Performs the additional actions before the tree node is copied.
+            </summary>
+            <param name="treeNodeObj">Node to copy</param>
+            <param name="targetParentNodeId">Target location</param>
+            <param name="includeChildNodes">Determines whether copy also the node's child nodes</param> 
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractTreeNodeHandler.OnAfterCopy(System.Object,System.Object)">
+            <summary>
+            Fires after copying tree node in the tree. Performs the additional actions after the tree node is copied.
+            </summary>
+            <param name="treeNodeObj">Copied TreeNode object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="T:CMS.GlobalEventHelper.AbstractWorkflowHandler">
+            <summary>
+            Abstract workflow handler.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnBeforeCheckOut(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires before checking out the document. Performs the additional actions before the document is checked out.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to check out</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnAfterCheckOut(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires after checking out the document. Performs the additional actions after the document is checked out.
+            </summary>
+            <param name="treeNodeObj">TreeNode object that has been checked out</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnBeforeCheckIn(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires before checking In the document. Performs the additional actions before the document is checked in.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to check in</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnAfterCheckIn(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires after checking In the document. Performs the additional actions after the document is checked in.
+            </summary>
+            <param name="treeNodeObj">TreeNode object that has been checked in</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnBeforeApprove(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires before approving the document. Performs the additional actions before the document is approved.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to approve</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnAfterApprove(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Fires after approving the document. Performs the additional actions after the document is approved.
+            </summary>
+            <param name="treeNodeObj">TreeNode object that has been approved</param>
+            <param name="previousStepObj">Previous workflow step object</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnBeforeReject(System.Object,System.Object,System.Object)">
+            <summary>
+            Fires before approving the document. Performs the additional actions before the document is Rejectd.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to Reject</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnAfterReject(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Fires after rejecting the document. Performs the additional actions after the document is rejected.
+            </summary>
+            <param name="treeNodeObj">TreeNode object that has been rejected</param>
+            <param name="previousStepObj">Previous workflow step object</param>
+            <param name="userInfoObj">User info object</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnBeforePublish(System.Object,System.Object)">
+            <summary>
+            Fires before publishing the document. Performs the additional actions before the document is published.
+            </summary>
+            <param name="treeNodeObj">TreeNode object to publish</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.AbstractWorkflowHandler.OnAfterPublish(System.Object,System.Object)">
+            <summary>
+            Fires after publishing the document. Performs the additional actions after the document is published.
+            </summary>
+            <param name="treeNodeObj">TreeNode object that has been published</param>
+            <param name="tree">TreeProvider object to use</param>
+        </member>
+        <member name="T:CMS.GlobalEventHelper.EventHelper">
+            <summary>
+            Class to provide base methods for the custom event handlers management.
+            </summary>
+        </member>
+        <member name="F:CMS.GlobalEventHelper.EventHelper.mHandlersAssemblyName">
+            <summary>
+            Handlers assembly name.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetHandlerObject(System.String)">
+            <summary>
+            Returns the handler object of the specified class name.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.UseCustomHandlers">
+            <summary>
+            Returns true if custom event handlers are implemented and should be used.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetSecurityHandler">
+            <summary>
+            Returns the security handler object interface.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetDataHandler">
+            <summary>
+            Returns the data (DataClass) handler object interface.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetExceptionHandler">
+            <summary>
+            Returns the exception handler object interface.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetTreeNodeHandler">
+            <summary>
+            Returns the TreeNode handler object interface.
+            </summary>
+        </member>
+        <member name="M:CMS.GlobalEventHelper.EventHelper.GetWorkflowHandler">
+            <summary>
+            Returns the Workflow handler object interface.
+            </summary>
+        </member>
+        <member name="P:CMS.GlobalEventHelper.EventHelper.HandlersAssemblyName">
+            <summary>
+            Handlers assembly name.
+            </summary>
+        </member>
+    </members>
+</doc>

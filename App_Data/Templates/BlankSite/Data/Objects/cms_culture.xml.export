@@ -1,0 +1,43 @@
+﻿<cms_culture version="6.0">
+  <NewDataSet>
+    <cms_culture>
+      <CultureID>1</CultureID>
+      <CultureName>Afrikaans - South Africa</CultureName>
+      <CultureCode>af-ZA</CultureCode>
+      <CultureShortName>Afrikaans</CultureShortName>
+      <CultureGUID>d34eb716-5cd2-456b-89d8-24d705762903</CultureGUID>
+      <CultureLastModified>2011-07-11T09:07:31.387+02:00</CultureLastModified>
+      <CultureAlias></CultureAlias>
+    </cms_culture>
+    <cms_culture>
+      <CultureID>2</CultureID>
+      <CultureName>Albanian - Albania</CultureName>
+      <CultureCode>sq-AL</CultureCode>
+      <CultureShortName>Albanian</CultureShortName>
+      <CultureGUID>40a7e7b9-a5e8-4dfa-babf-25eda3b9016d</CultureGUID>
+      <CultureLastModified>2011-03-02T07:08:20.81+01:00</CultureLastModified>
+      <CultureAlias></CultureAlias>
+    </cms_culture>
+    <cms_culture>
+      <CultureID>3</CultureID>
+      <CultureName>Arabic - Algeria</CultureName>
+      <CultureCode>ar-DZ</CultureCode>
+      <CultureShortName>Arabic</CultureShortName>
+      <CultureGUID>189c6063-1b5b-46f3-b72c-16daaf95c946</CultureGUID>
+      <CultureLastModified>2009-12-03T15:26:06.917+01:00</CultureLastModified>
+    </cms_culture>
+    <cms_culture>
+      <CultureID>50</CultureID>
+      <CultureName>English - United States</CultureName>
+      <CultureCode>en-US</CultureCode>
+      <CultureShortName>English</CultureShortName>
+      <CultureGUID>4c98fdfa-841b-431e-9bc8-9fc80800ee45</CultureGUID>
+      <CultureLastModified>2011-08-22T08:35:23.98+02:00</CultureLastModified>
+      <CultureAlias></CultureAlias>
+    </cms_culture>
+    <cms_siteculture>
+      <SiteID>1</SiteID>
+      <CultureID>50</CultureID>
+    </cms_siteculture>
+  </NewDataSet>
+</cms_culture>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Kentico CMS 6.0 Context Help</title>
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" />   
+   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<style type="text/css">
+   
+ /* Tabbed Browsing */ 
+  html {  
+    height: 100%;
+    overflow: hidden;
+    }
+  
+  body {       
+    height: 100%;  
+    overflow: hidden;
+    padding: 0; 
+    margin: 0;
+    font: 11px/1.5em Verdana,Tahoma,Arial,Helvetica,Sans-Serif;
+    background: #fff url("bg_body.png") repeat-y top right; 
+    }
+
+  #body-shift {
+    min-height: 300px;    
+    padding-top: 0px !important;    
+    overflow: auto;    
+    margin-right: 10px;
+    float: left;
+    min-width: 240px;
+    }        
+
+  #ns-header {
+    width: 100%;
+    min-width: 280px;
+    top: 0; left: 0;
+    padding:0;
+    margin: 0;
+    float: left;
+    clear: both;
+    z-index: 1;
+    background-color: #d5d5d5;
+  }      
+
+  #header {
+    overflow: auto;
+    float:left;
+    width:100%;
+    padding-bottom: 10px;
+    }
+
+  #header ul {
+    margin:0;
+    padding:0px;
+    list-style:none;
+    }         
+
+  #header li {
+    float:left;
+    background:url("tableft.gif") repeat-x left top;
+    height: 30px;
+    width: 80px;
+    border-right: #8195a9;
+    line-height: 29px;
+    }
+    
+  #header a {
+    display:block;
+    no-repeat right top;
+    text-align: center;
+    text-decoration:none;
+    font-size: 8pt;
+    font-weight: bold;
+    }
+
+  #header #current {
+    background:url("tableft_s.gif") repeat-x left top;
+    }
+    
+  #header #current a:hover {
+    color: #000;
+    }
+
+  #header li.noncurrent a {
+    color: #098ae2
+    }
+   
+  #header li.noncurrent:hover a {
+    color: #000;
+    }
+
+  #body-wrap {
+    padding: 0px 5px 5px 15px;
+    height: 100%;
+    width: 100%;
+    } 
+
+  #callout-wrap {
+    display: none;
+    position: relative;
+    width: auto;
+    }
+       
+  #callout {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    display: block;
+    background: #fbf8a9;
+    border: 1px solid #757575;
+    padding: 3px;
+    } 
+
+  #scrollPadder {
+    margin: 0;
+    padding: 0;
+    float: left;     
+    display: none;     
+    height: 0px;
+    }  
+   
+  #indexRefs, #indexRefsNoJS { 
+    width: 220px;
+    background-color: #e6e6e6; 
+    padding: 10px 5px 10px 15px; 
+    float: left;
+    border-bottom: 1px solid #d5d5d5; 
+    }        
+
+  a.idxrefs {
+    font-weight: bold;
+    }    
+
+
+/* End Tabbed Browsing */     
+   
+/* Suppress Index underlines in non-IE browsers */
+
+	a { color: black; text-decoration: none }
+	a:visited {color: black}
+	a:hover { text-decoration: underline }
+   
+/* Styles for Index components (you can edit these) */   
+   
+       .navtitle    { font-size: 12pt; font-weight: bold; margin: 12px 0 0 10px; color: #000; }
+       .nav-subtitle { font-size: 8pt; font-weight: bold; line-height: 95%; margin: 5px 0 0 10px; color: &nbsp;#5e687e; } 
+       
+       .navbar      { font-size: 10pt; }
+       .idxsection  { font-family: Arial,Helvetica; font-weight: bold; font-size: 11pt; color: #000000; text-decoration: none;
+                      margin-top: 20px; margin-bottom: 3px; white-space: nowrap;}
+       .idxkeyword  { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; }
+       .idxkeyword2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; }
+       .idxlink     { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000;  }
+
+       TABLE.idxtable { background: #fff; border-width: 1px; border-color: #000000; border-collapse: collapse; }
+       TD.idxtable    { background: #fff; }
+   </style>
+
+<!-- Adjust for MSIE -->                
+<!--[if lte IE 7]>   
+<style type="text/css">
+  #body-shift {  
+    width: 240px;       
+    }    
+    
+  #body-wrap {     
+    width: 93%;
+  }        
+</style>
+<![endif]-->    
+<!--[if lte IE 8]>   
+<style type="text/css">
+  #body-shift {  
+    width: 240px;       
+    }    
+    
+  #body-wrap {     
+    width: 93%;
+  }    
+</style>
+<![endif]-->   
+<!--[if lte IE 6]>
+<style type="text/css">
+   #indexRefs, #indexRefsNoJS { 
+      width: auto;
+      float: none; 
+   }
+   #callout-wrap, #callout { z-index: 1000; }
+   #body-wrap { height: auto; }
+</style>
+<![endif]-->     
+
+<!-- Static page display when JavaScript is off -->
+<noscript>
+<style type="text/css">
+#ns-header {
+position: static;  
+min-width: 0; }
+#indexRefs {
+display: none;
+}
+#indexRefsNoJS {
+  width: auto;
+  background-color: transparent;
+  }
+</style>
+</noscript>
+
+<script type="text/javascript" src="navinith.js"></script>
+<script type="text/javascript"> 
+// Initialize the page
+var IE6 = /msie 6|MSIE 6/.test(navigator.userAgent);
+if (!IE6) {
+   addEvent(window, "load", headResizeIDX);
+   addEvent(window, "resize", headResizeIDX);  
+   }      
+
+function resizeIt() {
+  var newHeight = $(window).height()-$("#ns-header").height();/*40;*/
+  $('#body-shift').height(newHeight);
+}
+$(window).ready(function () {resizeIt(); setTimeout(function() {resizeIt();},100);});
+$(window).resize(function () { resizeIt(); setTimeout(function() {resizeIt();},100);});
+function gotoIndex(indexKey) {
+   var pheight=document.getElementById("ns-header").offsetHeight;
+   var A = document.getElementById(indexKey.charAt(1));
+   var arrayB = document.getElementsByName(indexKey.charAt(1));
+   var B = arrayB[0];
+   
+   if (A || B)
+   
+   {window.location.hash=indexKey;
+   if (!IE6) window.scrollBy(0,-pheight);} 
+   else
+   {
+     callouttext="<p>No index entries<br />beginning with " + indexKey.charAt(1) + "</p>";
+     document.getElementById("callout").innerHTML=callouttext;
+     document.getElementById("callout-wrap").style.display="block";
+     setTimeout("document.getElementById('callout-wrap').style.display='none'", 2500);
+     }
+   }
+
+</script> 
+
+</head>
+<body>
+  <div id="scrollPadder"></div>
+  <div id="ns-header">
+  <div id="header">
+  
+    <ul>
+      <li class="noncurrent"><a href="contexthelp_content_static.html" title="Table of Contents">Contents</a></li>
+      <li id="current"><a href="#>" title="Keyword Index">Index</a></li>
+      
+    </ul>
+  </div>
+
+<div id="indexRefs">
+  <a href="javascript:gotoIndex('#A')" class="idxrefs">A</a>
+  <a href="javascript:gotoIndex('#B')" class="idxrefs">B</a>
+  <a href="javascript:gotoIndex('#C')" class="idxrefs">C</a>
+  <a href="javascript:gotoIndex('#D')" class="idxrefs">D</a>
+  <a href="javascript:gotoIndex('#E')" class="idxrefs">E</a>
+  <a href="javascript:gotoIndex('#F')" class="idxrefs">F</a>
+  <a href="javascript:gotoIndex('#G')" class="idxrefs">G</a>
+  <a href="javascript:gotoIndex('#H')" class="idxrefs">H</a>
+  <a href="javascript:gotoIndex('#I')" class="idxrefs">I</a>
+  <a href="javascript:gotoIndex('#J')" class="idxrefs">J</a>
+  <a href="javascript:gotoIndex('#K')" class="idxrefs">K</a>
+  <a href="javascript:gotoIndex('#L')" class="idxrefs">L</a>
+  <a href="javascript:gotoIndex('#M')" class="idxrefs">M</a>
+  <a href="javascript:gotoIndex('#N')" class="idxrefs">N</a>
+  <br />
+  <a href="javascript:gotoIndex('#O')" class="idxrefs">O</a>
+  <a href="javascript:gotoIndex('#P')" class="idxrefs">P</a>
+  <a href="javascript:gotoIndex('#Q')" class="idxrefs">Q</a>
+  <a href="javascript:gotoIndex('#R')" class="idxrefs">R</a>
+  <a href="javascript:gotoIndex('#S')" class="idxrefs">S</a>
+  <a href="javascript:gotoIndex('#T')" class="idxrefs">T</a>
+  <a href="javascript:gotoIndex('#U')" class="idxrefs">U</a>
+  <a href="javascript:gotoIndex('#V')" class="idxrefs">V</a>
+  <a href="javascript:gotoIndex('#W')" class="idxrefs">W</a>
+  <a href="javascript:gotoIndex('#X')" class="idxrefs">X</a>
+  <a href="javascript:gotoIndex('#Y')" class="idxrefs">Y</a>
+  <a href="javascript:gotoIndex('#Z')" class="idxrefs">Z</a>
+
+<div id="callout-wrap">
+<div id="callout">
+</div>
+</div>
+
+</div>
+<!-- Noscript version of the index links -->
+<noscript>
+<div id="indexRefsNoJS">
+  <a href="#A" class="idxrefs">A</a>
+  <a href="#B" class="idxrefs">B</a>
+  <a href="#C" class="idxrefs">C</a>
+  <a href="#D" class="idxrefs">D</a>
+  <a href="#E" class="idxrefs">E</a>
+  <a href="#F" class="idxrefs">F</a>
+  <a href="#G" class="idxrefs">G</a>
+  <a href="#H" class="idxrefs">H</a>
+  <a href="#I" class="idxrefs">I</a>
+  <a href="#J" class="idxrefs">J</a>
+  <a href="#K" class="idxrefs">K</a>
+  <a href="#L" class="idxrefs">L</a>
+  <a href="#M" class="idxrefs">M</a>
+  <a href="#N" class="idxrefs">N</a>
+  <br />
+  <a href="#O" class="idxrefs">O</a>
+  <a href="#P" class="idxrefs">P</a>
+  <a href="#Q" class="idxrefs">Q</a>
+  <a href="#R" class="idxrefs">R</a>
+  <a href="#S" class="idxrefs">S</a>
+  <a href="#T" class="idxrefs">T</a>
+  <a href="#U" class="idxrefs">U</a>
+  <a href="#V" class="idxrefs">V</a>
+  <a href="#W" class="idxrefs">W</a>
+  <a href="#X" class="idxrefs">X</a>
+  <a href="#Y" class="idxrefs">Y</a>
+  <a href="#Z" class="idxrefs">Z</a>
+</div>
+</noscript>
+
+  </div>
+
+<div id="body-shift">
+<table id="body-wrap" cellpadding="0" border="0"><tr><td valign="top">
+
+</td></tr></table><!--  body-wrap -->
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.ZipUtilities</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.ZipUtilities.CRC32">
+            <summary>
+            Calculates a 32bit Cyclic Redundancy Checksum (CRC) using the
+            same polynomial used by Zip.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.CRC32.#ctor">
+            <summary>
+            Constructor - Construct an instance of the CRC32 class, pre-initialising the table
+            for speed of lookup.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.CRC32.GetCrc32(CMS.IO.Stream)">
+            <summary>
+            Returns the CRC32 for the specified stream.
+            </summary>
+            <param name="input">The stream over which to calculate the CRC32</param>
+            <returns>The CRC32 calculation</returns>
+        </member>
+        <member name="M:CMS.ZipUtilities.CRC32.GetCrc32AndCopy(CMS.IO.Stream,CMS.IO.Stream)">
+            <summary>
+            Returns the CRC32 for the specified stream, and writes the input into the output stream.
+            </summary>
+            <param name="input">The stream over which to calculate the CRC32</param>
+            <param name="output">The stream into which to deflate the input</param>
+            <returns>The CRC32 calculation</returns>
+        </member>
+        <member name="P:CMS.ZipUtilities.CRC32.TotalBytesRead">
+            <summary>
+            Gets total bytes read.
+            </summary>
+        </member>
+        <member name="T:CMS.ZipUtilities.Shared">
+            <summary>
+            Shared class.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.Shared.StringFromBuffer(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Gets string from buffer.
+            </summary>
+            <param name="buf">Buffer</param>
+            <param name="start">Starting index</param>
+            <param name="maxlength">Maximum length</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.Shared.ReadSignature(CMS.IO.Stream)">
+            <summary>
+            Reades the signature.
+            </summary>
+            <param name="s">Stream to read</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.Shared.PackedToDateTime(System.Int32)">
+            <summary>
+            Gets the datetime from packed int.
+            </summary>
+            <param name="packedDateTime">Integer representation of the datetime</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.Shared.DateTimeToPacked(System.DateTime)">
+            <summary>
+            Gets packed int from datetime.
+            </summary>
+            <param name="time">Datetime to be converted</param>
+        </member>
+        <member name="T:CMS.ZipUtilities.ZipDirEntry">
+            <summary>
+            Class representing directory entry inside ZIP file.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipDirEntry.#ctor">
+            <summary>
+            Constructor - Creates ZIP directory entry.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipDirEntry.#ctor(CMS.ZipUtilities.ZipEntry)">
+            <summary>
+            Constructor - Creates ZIP directory entry.
+            </summary>
+            <param name="ze">ZIP entry</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipDirEntry.Read(CMS.IO.Stream)">
+            <summary>
+            Reades dir into zip.
+            </summary>
+            <param name="s">Stream to read</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipDirEntry.Read(CMS.IO.Stream,System.Boolean)">
+            <summary>
+            Reades dir into zip.
+            </summary>
+            <param name="s">Stream to read</param>
+            <param name="TurnOnDebug">Indicates if debug should be turned on</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipDirEntry.SignatureIsNotValid(System.Int32)">
+            <summary>
+            Checks the signature.
+            </summary>
+            <param name="signature">Signature</param>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.LastModified">
+            <summary>
+            Gets time of last modification.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.FileName">
+            <summary>
+            Gets name of file.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.Comment">
+            <summary>
+            Gets comment.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.VersionMadeBy">
+            <summary>
+            Gets version made by (for internal format).
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.VersionNeeded">
+            <summary>
+            Gets version made by (for internal format).
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.CompressionMethod">
+            <summary>
+            Gets method of compression.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.CompressedSize">
+            <summary>
+            Gets size of compressed dir.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipDirEntry.UncompressedSize">
+            <summary>
+            Gets size of uncompressed dir.
+            </summary>
+        </member>
+        <member name="T:CMS.ZipUtilities.ZipEntry">
+            <summary>
+            Class representing ZIP entry.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.ReadHeader(CMS.IO.Stream,CMS.ZipUtilities.ZipEntry)">
+            <summary>
+            Reades header.
+            </summary>
+            <param name="s">Stream to read</param>
+            <param name="ze">ZIP entry</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.SignatureIsNotValid(System.Int32)">
+            <summary>
+            Checks the signature validation.
+            </summary>
+            <param name="signature">Signature</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Read(CMS.IO.Stream)">
+            <summary>
+            Reades ZIP entry.
+            </summary>
+            <param name="s">Stream to read</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Read(CMS.IO.Stream,System.Boolean)">
+            <summary>
+            Reades ZIP entry.
+            </summary>
+            <param name="s">Stream to read</param>
+            <param name="TurnOnDebug">Indicates if debug should be turned on</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Create(System.String)">
+            <summary>
+            Creates ZIP entry.
+            </summary>
+            <param name="filename">File name of the package</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Create(System.String,CMS.IO.Stream)">
+            <summary>
+            Creates ZIP entry from stream.
+            </summary>
+            <param name="filename">File name of the package</param>
+            <param name="stream">Stream</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Extract">
+            <summary>
+            Extracts ZIP archive.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Extract(System.String)">
+            <summary>
+            Extracts ZIP archive.
+            </summary>
+            <param name="basedir">Destination directory</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.WriteCentralDirectoryEntry(CMS.IO.Stream)">
+            <summary>
+            Writes central directory entry.
+            </summary>
+            <param name="s">Stream to write</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.WriteHeader(CMS.IO.Stream,System.Byte[])">
+            <summary>
+            Writes header.
+            </summary>
+            <param name="s">Stream to write</param>
+            <param name="bytes">Bytes to write</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.WriteHeader(CMS.IO.Stream,System.Byte[],CMS.IO.Stream)">
+            <summary>
+            Writes header.
+            </summary>
+            <param name="s">Stream to write</param>
+            <param name="bytes">Bytes to write</param>
+            <param name="inputStream">Stream to read</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipEntry.Write(CMS.IO.Stream)">
+            <summary>
+            Write to the stream.
+            </summary>
+            <param name="s">Stream to write</param>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.LastModified">
+            <summary>
+            Gets the date of last modification.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.FileName">
+            <summary>
+            Gets filename.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.InputStream">
+            <summary>
+            Gets and sets input stream.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.VersionNeeded">
+            <summary>
+            Gets needed version (for internal format).
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.BitField">
+            <summary>
+            Gets bitfield.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.CompressionMethod">
+            <summary>
+            Gets method of compression.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.CompressedSize">
+            <summary>
+            Gets compressed size.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.UncompressedSize">
+            <summary>
+            Gets uncompressed size.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.mFileData">
+            <summary>
+            Gets the file data.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.CompressedStream">
+            <summary>
+            Gets compressed stream.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipEntry.Header">
+            <summary>
+            Gets header.
+            </summary>
+        </member>
+        <member name="T:CMS.ZipUtilities.ZipProvider">
+            <summary>
+            Class for work with ZIP archives.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.#ctor">
+            <summary>
+            Constructor - Creates ZIP provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.#ctor(System.String)">
+            <summary>
+            Constructor - Creates ZIP provider.
+            </summary>
+            <param name="NewZipFileName">File name of the new ZIP archive</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Finalize">
+            <summary>
+            Destructor.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.AddFile(System.String)">
+            <summary>
+            Adds file to archive.
+            </summary>
+            <param name="FileName">File name</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.AddFileFromStream(System.String,CMS.IO.Stream)">
+            <summary>
+            Adds the file from the given stream to the archive.
+            </summary>
+            <param name="FileName">File name to add</param>
+            <param name="stream">Stream with the file data</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.AddDirectory(System.String)">
+            <summary>
+            Adds directory to archive.
+            </summary>
+            <param name="DirectoryName">Directory name</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.AddDirectory(System.String,System.Boolean)">
+            <summary>
+            Adds directory to archive.
+            </summary>
+            <param name="DirectoryName">Directory name</param>
+            <param name="WantVerbose">Flag for verbose</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Save">
+            <summary>
+            Saves created archive.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.WriteCentralDirectoryStructure">
+            <summary>
+            Writes directory structure.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.WriteCentralDirectoryFooter(System.Int64,System.Int64)">
+            <summary>
+            Writes central directory footer.
+            </summary>
+            <param name="StartOfCentralDirectory">Start</param>
+            <param name="EndOfCentralDirectory">End</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Read(System.String)">
+            <summary>
+            Reades specific archive.
+            </summary>
+            <param name="zipfilename">File name of the archive</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Read(System.String,System.Boolean)">
+            <summary>
+            Reades specific archive.
+            </summary>
+            <param name="zipfilename">File name of the archive</param>
+            <param name="TurnOnDebug">Flag for debugging</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.GetEnumerator">
+            <summary>
+            Gets the enumerator.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Gets the enumerator.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.ExtractAll(System.String)">
+            <summary>
+            Extracts all entries of the specific archive.
+            </summary>
+            <param name="path">Path of the package</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.ExtractAll(System.String,System.Boolean)">
+            <summary>
+            Extracts all entries of the specific archive.
+            </summary>
+            <param name="path">Path of the package</param>
+            <param name="WantVerbose">Flag for verbose</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Extract(System.String)">
+            <summary>
+            Extraxts entry from archive.
+            </summary>
+            <param name="filename">File name of the package</param>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Dispose">
+            <summary>
+            Disposes managed and unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:CMS.ZipUtilities.ZipProvider.Dispose(System.Boolean)">
+            <summary>
+            Disposes managed and unmanaged resources.
+            </summary>
+            <param name="disposeManagedResources">Managed resources</param>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipProvider.Name">
+            <summary>
+            Gets name.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipProvider.ReadStream">
+            <summary>
+            Stream to read.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipProvider.WriteStream">
+            <summary>
+            Stream to write.
+            </summary>
+        </member>
+        <member name="P:CMS.ZipUtilities.ZipProvider.Item(System.String)">
+            <summary>
+            Gets the entry from archive.
+            </summary>
+            <param name="filename">File name of the package</param>
+        </member>
+    </members>
+</doc>

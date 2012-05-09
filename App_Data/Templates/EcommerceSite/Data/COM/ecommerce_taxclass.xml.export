@@ -1,0 +1,26 @@
+﻿<ecommerce_taxclass version="6.0">
+  <NewDataSet>
+    <com_taxclass>
+      <TaxClassID>2</TaxClassID>
+      <TaxClassName>SalesTax</TaxClassName>
+      <TaxClassDisplayName>Sales tax</TaxClassDisplayName>
+      <TaxClassZeroIfIDSupplied>false</TaxClassZeroIfIDSupplied>
+      <TaxClassGUID>42a81b4c-45f3-45d7-b660-f2bc08f32052</TaxClassGUID>
+      <TaxClassLastModified>2011-09-23T17:53:58.35+02:00</TaxClassLastModified>
+    </com_taxclass>
+    <com_taxclasscountry>
+      <TaxClassCountryID>1</TaxClassCountryID>
+      <TaxClassID>2</TaxClassID>
+      <CountryID>271</CountryID>
+      <TaxValue>10</TaxValue>
+      <IsFlatValue>false</IsFlatValue>
+    </com_taxclasscountry>
+    <com_taxclassstate>
+      <TaxClassStateID>1</TaxClassStateID>
+      <TaxClassID>2</TaxClassID>
+      <StateID>166</StateID>
+      <TaxValue>45</TaxValue>
+      <IsFlatValue>false</IsFlatValue>
+    </com_taxclassstate>
+  </NewDataSet>
+</ecommerce_taxclass>

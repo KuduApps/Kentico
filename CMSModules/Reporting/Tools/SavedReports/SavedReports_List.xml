@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="View.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="SavedReportTitle" caption="$Unigrid.Report.Columns.SavedReportTitle$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="SavedReportDate" caption="$Unigrid.Report.Columns.SavedReportDate$" wrap="false" />
+    <column source="FullName" caption="$Unigrid.Report.Columns.SavedReportCreatedByFullName$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="Reporting.SavedReportlist" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

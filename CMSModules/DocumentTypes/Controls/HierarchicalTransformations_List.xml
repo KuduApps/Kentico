@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ID" width="50px">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png"   />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns >
+    <column source="ClassName" externalsourcename="doctype" caption="$development.doctypes$" wrap="false">
+    </column >
+    <column source="Level" caption="$inheritlevels.levelname$" externalsourcename="level" wrap="false" >
+      <filter type="text" />
+    </column>
+    <column source="TransformationName" caption="$transformationlist.transformationname$" wrap="false" >
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+</grid>

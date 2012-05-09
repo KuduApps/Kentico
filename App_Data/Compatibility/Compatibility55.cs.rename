@@ -1,0 +1,127 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+using CMS.GlobalHelper;
+using CMS.CMSOutputFilter;
+using CMS.SettingsProvider;
+using CMS.WorkflowEngine;
+using CMS.OutputFilter;
+using CMS.Compatibility;
+using CMS.UIControls;
+
+/// <summary>
+/// Compatibility module loader
+/// </summary>
+[Compatibility55ModuleLoader]
+public partial class CMSModuleLoader
+{
+    #region "Compatibility loader attribute"
+
+    /// <summary>
+    /// Module registration
+    /// </summary>
+    private class Compatibility55ModuleLoaderAttribute : CMSLoaderAttribute
+    {
+        /// <summary>
+        /// Initializes the module
+        /// </summary>
+        public override void Init()
+        {
+            // Init custom methods
+            CMSCustom.Init();
+
+            // System events
+            ClassHelper.OnGetCustomClass += ClassHelperCompatibility.GetCustomClass;
+            MacroResolver.OnResolveCustomMacro += MacroResolverCompatibility.ResolveCustomMacro;
+
+            // Page events
+            // PreInit
+            CMSPage.OnBeforePagePreInit += CMSPageEvents.BeforePagePreInit;
+            CMSPage.OnAfterPagePreInit += CMSPageEvents.AfterPagePreInit;
+
+            // Init
+            CMSPage.OnBeforePageInit += CMSPageEvents.BeforePageInit;
+            CMSPage.OnAfterPageInit += CMSPageEvents.AfterPageInit;
+
+            // Load
+            CMSPage.OnBeforePageLoad += CMSPageEvents.BeforePageLoad;
+            CMSPage.OnAfterPageLoad += CMSPageEvents.AfterPageLoad;
+
+            // PreRender
+            CMSPage.OnBeforePagePreRender += CMSPageEvents.BeforePagePreRender;
+            CMSPage.OnAfterPagePreRender += CMSPageEvents.AfterPagePreRender;
+
+            // Render
+            CMSPage.OnBeforePageRender += CMSPageEvents.BeforePageRender;
+            CMSPage.OnAfterPageRender += CMSPageEvents.AfterPageRender;
+
+
+            // Control events
+            // Init
+            CMSUserControl.OnBeforeUserControlInit += CMSUserControlEvents.BeforeUserControlInit;
+            CMSUserControl.OnAfterUserControlInit += CMSUserControlEvents.AfterUserControlInit;
+
+            // Load
+            CMSUserControl.OnBeforeUserControlLoad += CMSUserControlEvents.BeforeUserControlLoad;
+            CMSUserControl.OnAfterUserControlLoad += CMSUserControlEvents.AfterUserControlLoad;
+
+            // PreRender
+            CMSUserControl.OnBeforeUserControlPreRender += CMSUserControlEvents.BeforeUserControlPreRender;
+            CMSUserControl.OnAfterUserControlPreRender += CMSUserControlEvents.AfterUserControlPreRender;
+
+            // Render
+            CMSUserControl.OnBeforeUserControlRender += CMSUserControlEvents.BeforeUserControlRender;
+            CMSUserControl.OnAfterUserControlRender += CMSUserControlEvents.AfterUserControlRender;
+
+
+            // Application events
+            // Start
+            CMSApplicationEvents.Start.Before += CMSApplication.BeforeAplicationStart;
+            CMSApplicationEvents.Start.After += CMSApplication.AfterApplicationStart;
+
+            // End
+            CMSApplicationEvents.End.Before += CMSApplication.BeforeAplicationEnd;
+            CMSApplicationEvents.End.After += CMSApplication.AfterApplicationEnd;
+
+            // Error
+            CMSApplicationEvents.Error.Before += CMSApplication.BeforeAplicationError;
+            CMSApplicationEvents.Error.After += CMSApplication.AfterApplicationError;
+
+
+            // Session events
+            // Start
+            CMSSessionEvents.Start.Before += CMSSession.BeforeSessionStart;
+            CMSSessionEvents.Start.After += CMSSession.AfterSessionStart;
+
+            // End
+            CMSSessionEvents.End.Before += CMSSession.BeforeSessionEnd;
+            CMSSessionEvents.End.After += CMSSession.AfterSessionEnd;
+
+
+            // Request events
+            // Begin
+            CMSRequestEvents.Begin.Before += CMSRequest.BeforeBeginRequest;
+            CMSRequestEvents.Begin.After += CMSRequest.AfterBeginRequest;
+
+            // End
+            CMSRequestEvents.End.Before += CMSRequest.BeforeEndRequest;
+            CMSRequestEvents.End.After += CMSRequest.AfterEndRequest;
+
+            // Authorize
+            CMSRequestEvents.Authorize.Before += CMSRequest.BeforeAuthorizeRequest;
+            CMSRequestEvents.Authorize.After += CMSRequest.AfterAuthorizeRequest;
+
+            // Authenticate
+            CMSRequestEvents.Authenticate.Before += CMSRequest.BeforeAuthenticateRequest;
+            CMSRequestEvents.Authenticate.After += CMSRequest.AfterAuthenticateRequest;
+
+            // AcquireRequestState
+            CMSRequestEvents.AcquireRequestState.Before += CMSRequest.BeforeAcquireRequestState;
+            CMSRequestEvents.AcquireRequestState.After += CMSRequest.AfterAcquireRequestState;
+        }
+    }
+
+    #endregion
+}

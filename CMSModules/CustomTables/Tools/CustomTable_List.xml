@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" commandargument="ClassID" caption="$General.Edit$" icon="Edit.png" />
+  </actions>
+  <columns>
+    <column source="ClassDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%">
+    </column>
+  </columns>
+  <objecttype name="cms.customtable" columns="ClassDisplayName,ClassID" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

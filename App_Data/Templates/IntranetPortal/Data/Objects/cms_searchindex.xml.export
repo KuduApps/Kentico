@@ -1,0 +1,442 @@
+﻿<cms_searchindex version="6.0">
+  <NewDataSet>
+    <cms_searchindex>
+      <IndexID>169</IndexID>
+      <IndexName>default_department_208f051f-3174-4ee8-a4b2-224588a39c15</IndexName>
+      <IndexDisplayName>Finance - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/Finance/%" classnames="" id="416ecdfc-1c08-454e-9e79-82ebcac691d3" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>bd0210d0-10bd-4344-9f20-d88ef689b18f</IndexGUID>
+      <IndexLastModified>2011-01-13T19:40:16.503+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:15:13.023+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>170</IndexID>
+      <IndexName>forums_department_208f051f-3174-4ee8-a4b2-224588a39c15</IndexName>
+      <IndexDisplayName>Finance - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_208f051f-3174-4ee8-a4b2-224588a39c15" sitename="IntranetPortal" id="627e03b8-8fbd-476c-8df2-7fe7903ae9bd" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>6c983159-4074-46a7-bf9c-1071945579ee</IndexGUID>
+      <IndexLastModified>2011-01-13T19:40:18.493+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:15:13.1+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>171</IndexID>
+      <IndexName>default_department_62e320f8-480f-49f3-bfc3-4ffd603dd99e</IndexName>
+      <IndexDisplayName>HR - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/HR/%" classnames="" id="b91c8c42-e6a1-4214-a648-056c2f374e4b" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>2b8221c3-74b5-42bd-aec8-2bd048a6cf20</IndexGUID>
+      <IndexLastModified>2011-01-13T19:41:25.273+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:15:36.547+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>172</IndexID>
+      <IndexName>forums_department_62e320f8-480f-49f3-bfc3-4ffd603dd99e</IndexName>
+      <IndexDisplayName>HR - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_62e320f8-480f-49f3-bfc3-4ffd603dd99e" sitename="IntranetPortal" id="65d81438-5089-4b45-bccc-fa6339e60f59" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>b9fd2181-1a64-4219-8ae8-cc70daeb6024</IndexGUID>
+      <IndexLastModified>2011-01-13T19:41:26.64+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:15:36.6+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>173</IndexID>
+      <IndexName>IntranetPortal.GeneralContent</IndexName>
+      <IndexDisplayName>Intranet Portal - General content</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item inclblogcomm="False" type="excluded" inclforums="False" path="/Departments/%" classnames="" id="f7113d8a-0613-404e-8f66-4c7771a80f47" inclmessagecomm="False" /&gt;&lt;item type="allowed" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="2a2ddcd1-d682-4370-a3f1-ded35bc21384" path="/%" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="ac24998a-6224-4fb6-a086-484e206db01d" path="/Special-pages" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="be9a2ff0-2f3c-4f0d-a853-3be1c036c813" path="/Special-pages/%" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="bf51e8be-7cbe-4bea-adbf-5758da97948a" path="/Files" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="8f05bac0-a5ec-48c1-a14e-189a66b09e63" path="/Workgroups/%" /&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="cf953f4e-8bd0-4c1b-9b3f-7e51eada865e" path="/Files/%" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>df244a92-19a3-41fd-a728-d7f11ece818e</IndexGUID>
+      <IndexLastModified>2011-03-31T17:16:13.927+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:16:13.91+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>174</IndexID>
+      <IndexName>IntranetPortal.GeneralForums</IndexName>
+      <IndexDisplayName>Intranet Portal - General forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="General;Intranet;TechnicalSupport" sitename="IntranetPortal" id="8329c1a4-d84d-499a-998d-f9196114888d" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>dd9aff9a-08ff-48e7-a2e1-d8fc4c80e5a9</IndexGUID>
+      <IndexLastModified>2011-03-31T17:16:14.193+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:16:14.193+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>175</IndexID>
+      <IndexName>default_department_505a2428-8a90-4537-a594-9f052f4f5ade</IndexName>
+      <IndexDisplayName>IT - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/IT/%" classnames="" id="4fb761cc-7c60-4d3c-a8c1-f3cf75c8fcb1" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>1dcfa67a-8eef-47a5-b280-61251e4eae0c</IndexGUID>
+      <IndexLastModified>2011-03-31T17:16:51.273+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:16:51.257+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>176</IndexID>
+      <IndexName>forums_department_505a2428-8a90-4537-a594-9f052f4f5ade</IndexName>
+      <IndexDisplayName>IT - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_505a2428-8a90-4537-a594-9f052f4f5ade" sitename="IntranetPortal" id="3bb78429-4b80-4ec1-9daa-003b0ce64e1a" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>1e1f5d4e-5555-453f-b7c2-0d2f87df92f8</IndexGUID>
+      <IndexLastModified>2011-03-31T17:16:51.85+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:16:51.847+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>177</IndexID>
+      <IndexName>default_department_862655bd-1ba2-4885-8903-b31517e32924</IndexName>
+      <IndexDisplayName>Management - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/Management/%" classnames="" id="86648a13-68d0-4f2c-a4c2-e23ce80445cd" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>021c54ad-5958-4631-9773-432a31cd8e2d</IndexGUID>
+      <IndexLastModified>2011-03-31T17:17:03.29+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:03.29+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>178</IndexID>
+      <IndexName>forums_department_862655bd-1ba2-4885-8903-b31517e32924</IndexName>
+      <IndexDisplayName>Management - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_862655bd-1ba2-4885-8903-b31517e32924" sitename="IntranetPortal" id="74e1e2ba-b0ed-47b6-8732-2a8b25a521ad" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>214342e7-512c-4ed5-ad18-d9223e144016</IndexGUID>
+      <IndexLastModified>2011-03-31T17:17:03.36+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:03.353+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>179</IndexID>
+      <IndexName>default_group_b4f30797-a9ba-424a-8702-d4cade34a741</IndexName>
+      <IndexDisplayName>Marketing Strategy - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Workgroups/Marketing_Strategy/%" classnames="" sitename="IntranetPortal" id="89b9ab10-011f-48cb-a2e1-2e69f802b34b" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>2dc30d84-f685-40a4-a55f-1e588ff609c6</IndexGUID>
+      <IndexLastModified>2011-01-13T19:47:01.483+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:29.153+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>180</IndexID>
+      <IndexName>forums_group_b4f30797-a9ba-424a-8702-d4cade34a741</IndexName>
+      <IndexDisplayName>Marketing Strategy - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item ForumNames="*_group_b4f30797-a9ba-424a-8702-d4cade34a741" sitename="IntranetPortal" type="allowed" id="87c46be5-8b8a-4e99-90a7-0525c7eac4a0" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>afde201f-e8c4-415b-8be9-874483955ff8</IndexGUID>
+      <IndexLastModified>2011-01-13T19:47:03.013+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:29.177+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>181</IndexID>
+      <IndexName>default_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6</IndexName>
+      <IndexDisplayName>Microsoft Office Upgrade - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Workgroups/Microsoft_Office_Upgrade/%" classnames="" sitename="IntranetPortal" id="efcb18af-8a2c-4a97-b7c5-3eefa4398037" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>fb5aeacb-caa5-4481-a17d-55f7628228a2</IndexGUID>
+      <IndexLastModified>2011-01-13T19:48:21.617+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:57.127+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>182</IndexID>
+      <IndexName>forums_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6</IndexName>
+      <IndexDisplayName>Microsoft Office Upgrade - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item ForumNames="*_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6" sitename="IntranetPortal" type="allowed" id="e86677f1-8b02-4529-9fb5-65e6cc35e240" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>b34b33cf-a0ee-4d97-b0a3-19a08d9ddcfb</IndexGUID>
+      <IndexLastModified>2011-03-31T17:17:56.79+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:17:56.79+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>183</IndexID>
+      <IndexName>default_department_b5f1e074-e0a9-4111-985a-37eef5b573dd</IndexName>
+      <IndexDisplayName>PR &amp; Marketing - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/PR---Marketing/%" classnames="" id="b7aa4810-b694-4b11-aafd-782573e00021" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>f72bc74c-a023-436e-aad2-b3a07ceffb60</IndexGUID>
+      <IndexLastModified>2011-03-31T17:18:20.107+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:18:20.107+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>184</IndexID>
+      <IndexName>forums_department_b5f1e074-e0a9-4111-985a-37eef5b573dd</IndexName>
+      <IndexDisplayName>PR &amp; Marketing - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_b5f1e074-e0a9-4111-985a-37eef5b573dd" sitename="IntranetPortal" id="3e4d8bbe-344e-4087-95ce-92e3896f40cd" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>1e8ff078-7106-4408-8b0e-841b5f99d386</IndexGUID>
+      <IndexLastModified>2011-03-31T17:18:20.19+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:18:20.19+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>185</IndexID>
+      <IndexName>default_department_0cd160f7-5684-41da-8a70-ca7f744aed09</IndexName>
+      <IndexDisplayName>Production - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/Production/%" classnames="" id="1518f785-053a-42f6-b406-204a58e9a71f" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>9957a372-d77a-4d39-8629-b568bec35496</IndexGUID>
+      <IndexLastModified>2011-03-31T17:18:42.3+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:18:42.3+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>186</IndexID>
+      <IndexName>forums_department_0cd160f7-5684-41da-8a70-ca7f744aed09</IndexName>
+      <IndexDisplayName>Production - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_0cd160f7-5684-41da-8a70-ca7f744aed09" sitename="IntranetPortal" id="6da39291-248b-45b0-82ad-5a6343a133d3" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>81f90b4f-fdbc-4f5f-bb12-5210e6fdd3d4</IndexGUID>
+      <IndexLastModified>2011-03-31T17:18:42.343+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:18:42.343+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>187</IndexID>
+      <IndexName>default_department_01c6599c-aa64-4850-9609-be813d85d257</IndexName>
+      <IndexDisplayName>Sales - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Departments/Sales/%" classnames="" id="298b5241-3b54-4fc1-bb45-ddc967842010" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>cbc5a2a7-fbf2-4143-86ac-b47a1461d6be</IndexGUID>
+      <IndexLastModified>2011-01-13T19:52:01.663+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:19:07.897+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>188</IndexID>
+      <IndexName>forums_department_01c6599c-aa64-4850-9609-be813d85d257</IndexName>
+      <IndexDisplayName>Sales - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="*_department_01c6599c-aa64-4850-9609-be813d85d257" sitename="IntranetPortal" id="6695f5b6-bc93-4c40-973d-2dfcf8896bab" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>b3047291-a61b-4da8-9689-500619b8036c</IndexGUID>
+      <IndexLastModified>2011-03-31T17:19:07.343+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:19:07.343+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>189</IndexID>
+      <IndexName>default_group_039217ba-ae16-4c2c-b39b-44802b0de9e9</IndexName>
+      <IndexDisplayName>Tradeshow in Las Vegas - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" path="/Workgroups/Tradeshow_in_Las_Vegas/%" classnames="" sitename="IntranetPortal" id="1838f0df-1253-40a8-90fe-51e0ea3c4fab" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>6e1968c1-8c6d-4311-9d24-eb61c81730a6</IndexGUID>
+      <IndexLastModified>2011-03-31T17:19:29.543+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:19:29.54+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>190</IndexID>
+      <IndexName>forums_group_039217ba-ae16-4c2c-b39b-44802b0de9e9</IndexName>
+      <IndexDisplayName>Tradeshow in Las Vegas - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item ForumNames="*_group_039217ba-ae16-4c2c-b39b-44802b0de9e9" sitename="IntranetPortal" type="allowed" id="26ff7297-b4b8-4121-8bad-4024e07de02e" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>243feaf5-6ba6-4c46-aab7-753e88f35c34</IndexGUID>
+      <IndexLastModified>2011-03-31T17:19:29.597+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-03-31T17:19:29.567+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+    </cms_searchindex>
+    <cms_searchindexculture>
+      <IndexID>169</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>170</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>171</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>172</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>173</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>175</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>176</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>177</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>178</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>179</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>180</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>181</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>182</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>183</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>184</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>185</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>186</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>187</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>188</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>189</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>190</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexsite>
+      <IndexID>169</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>170</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>171</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>172</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>173</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>174</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>175</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>176</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>177</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>178</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>179</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>180</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>181</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>182</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>183</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>184</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>185</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>186</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>187</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>188</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>189</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>190</IndexID>
+      <IndexSiteID>107</IndexSiteID>
+    </cms_searchindexsite>
+  </NewDataSet>
+</cms_searchindex>

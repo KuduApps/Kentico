@@ -1,0 +1,68 @@
+﻿<polls_poll version="6.0">
+  <NewDataSet>
+    <polls_poll>
+      <PollID>100317</PollID>
+      <PollCodeName>PortalSatisfaction</PollCodeName>
+      <PollDisplayName>Portal satisfaction</PollDisplayName>
+      <PollTitle></PollTitle>
+      <PollAllowMultipleAnswers>false</PollAllowMultipleAnswers>
+      <PollQuestion>How do you like our new portal?</PollQuestion>
+      <PollAccess>0</PollAccess>
+      <PollResponseMessage>Thanks for your vote.</PollResponseMessage>
+      <PollGUID>46949152-0052-4ca4-a3cb-4fe83d7f1289</PollGUID>
+      <PollLastModified>2011-04-06T08:05:13.7+02:00</PollLastModified>
+      <PollSiteID>107</PollSiteID>
+      <PollLogActivity>true</PollLogActivity>
+    </polls_poll>
+    <polls_pollanswer>
+      <AnswerID>446</AnswerID>
+      <AnswerText>Very satisfied</AnswerText>
+      <AnswerOrder>1</AnswerOrder>
+      <AnswerCount>4</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100317</AnswerPollID>
+      <AnswerGUID>f4c9600e-0f76-4fd8-8270-b7c3c9f8665d</AnswerGUID>
+      <AnswerLastModified>2011-04-06T08:04:45.827+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>447</AnswerID>
+      <AnswerText>Satisfied</AnswerText>
+      <AnswerOrder>1</AnswerOrder>
+      <AnswerCount>2</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100317</AnswerPollID>
+      <AnswerGUID>528a0d8f-dd8e-4e8e-8b07-980cffab5bd4</AnswerGUID>
+      <AnswerLastModified>2011-04-06T08:04:55.37+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>448</AnswerID>
+      <AnswerText>Neutral</AnswerText>
+      <AnswerOrder>2</AnswerOrder>
+      <AnswerCount>1</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100317</AnswerPollID>
+      <AnswerGUID>4e2a1ec1-e59c-4b06-95a7-e01683179013</AnswerGUID>
+      <AnswerLastModified>2011-04-06T08:05:03.457+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>449</AnswerID>
+      <AnswerText>Dissatisfied</AnswerText>
+      <AnswerOrder>4</AnswerOrder>
+      <AnswerCount>0</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100317</AnswerPollID>
+      <AnswerGUID>b1cb1aca-18d0-4bb7-924b-44c7536481a1</AnswerGUID>
+      <AnswerLastModified>2011-04-06T08:05:08.25+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>450</AnswerID>
+      <AnswerText>Very dissatisfied</AnswerText>
+      <AnswerOrder>5</AnswerOrder>
+      <AnswerCount>0</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100317</AnswerPollID>
+      <AnswerGUID>da2c3fdf-e766-4ef1-a85b-93210e03ed5c</AnswerGUID>
+      <AnswerLastModified>2011-04-06T08:05:13.68+02:00</AnswerLastModified>
+    </polls_pollanswer>
+  </NewDataSet>
+</polls_poll>

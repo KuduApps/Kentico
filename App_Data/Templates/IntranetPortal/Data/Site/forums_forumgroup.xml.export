@@ -1,0 +1,117 @@
+﻿<forums_forumgroup version="6.0">
+  <NewDataSet>
+    <forums_forumgroup>
+      <GroupID>606</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_208f051f-3174-4ee8-a4b2-224588a39c15</GroupName>
+      <GroupDisplayName>Finance forum group</GroupDisplayName>
+      <GroupOrder>1</GroupOrder>
+      <GroupDescription>Forum group for Finance department.</GroupDescription>
+      <GroupGUID>adbc5b05-1071-4ea7-b843-ae89d2421da3</GroupGUID>
+      <GroupLastModified>2010-10-14T15:15:26.717+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/Finance/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>617</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_62e320f8-480f-49f3-bfc3-4ffd603dd99e</GroupName>
+      <GroupDisplayName>HR forum group</GroupDisplayName>
+      <GroupOrder>9</GroupOrder>
+      <GroupDescription>Forum group for HR department.</GroupDescription>
+      <GroupGUID>4cbdec2e-61df-4a93-9756-60219c695da0</GroupGUID>
+      <GroupLastModified>2010-10-08T11:54:21.787+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/HR/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>618</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>IntranetDiscussion</GroupName>
+      <GroupDisplayName>Intranet Discussion</GroupDisplayName>
+      <GroupOrder>10</GroupOrder>
+      <GroupDescription>Intranet discussion forum group.</GroupDescription>
+      <GroupGUID>485a49de-59aa-4770-bd50-0078cfa3b35a</GroupGUID>
+      <GroupLastModified>2010-10-13T16:47:49.813+02:00</GroupLastModified>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>616</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_505a2428-8a90-4537-a594-9f052f4f5ade</GroupName>
+      <GroupDisplayName>IT forum group</GroupDisplayName>
+      <GroupOrder>8</GroupOrder>
+      <GroupDescription>Forum group for IT department.</GroupDescription>
+      <GroupGUID>9c0fc4b9-49e7-42c6-98bd-7a8d79510ef0</GroupGUID>
+      <GroupLastModified>2010-10-08T12:06:42.497+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/IT/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>611</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_862655bd-1ba2-4885-8903-b31517e32924</GroupName>
+      <GroupDisplayName>Management forum group</GroupDisplayName>
+      <GroupOrder>3</GroupOrder>
+      <GroupDescription>Forum group for Management department.</GroupDescription>
+      <GroupGUID>5309625a-a5ac-49a0-91b9-a5e31939418b</GroupGUID>
+      <GroupLastModified>2010-10-13T14:18:14.78+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/Management/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>614</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_b5f1e074-e0a9-4111-985a-37eef5b573dd</GroupName>
+      <GroupDisplayName>PR &amp; Marketing forum group</GroupDisplayName>
+      <GroupOrder>6</GroupOrder>
+      <GroupDescription>Forum group for PR &amp; Marketing department.</GroupDescription>
+      <GroupGUID>4170f259-4774-4e0d-bcde-59ce7d27bd52</GroupGUID>
+      <GroupLastModified>2010-10-08T12:25:29.333+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/PR---Marketing/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>609</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_0cd160f7-5684-41da-8a70-ca7f744aed09</GroupName>
+      <GroupDisplayName>Production forum group</GroupDisplayName>
+      <GroupOrder>2</GroupOrder>
+      <GroupDescription>Forum group for Production department.</GroupDescription>
+      <GroupGUID>5677e1fc-a00e-4575-b834-c47e16990750</GroupGUID>
+      <GroupLastModified>2010-10-14T15:12:10.967+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/Production/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>615</GroupID>
+      <GroupSiteID>107</GroupSiteID>
+      <GroupName>Department_01c6599c-aa64-4850-9609-be813d85d257</GroupName>
+      <GroupDisplayName>Sales forum group</GroupDisplayName>
+      <GroupOrder>7</GroupOrder>
+      <GroupDescription>Forum group for Sales department.</GroupDescription>
+      <GroupGUID>844c5c15-7715-4c14-be86-366bc279d69e</GroupGUID>
+      <GroupLastModified>2010-10-08T12:08:52.75+02:00</GroupLastModified>
+      <GroupBaseUrl>~/Departments/Sales/forums.aspx</GroupBaseUrl>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+  </NewDataSet>
+</forums_forumgroup>

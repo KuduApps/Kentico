@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="GroupID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" />
+    <action name="approve" externalsourcename="approve" caption="$general.approve$"  />
+    <action name="reject" externalsourcename="reject" caption="$general.reject$" />
+  </actions>
+  <columns>
+    <column source="GroupDisplayName" caption="$general.displayname$" wrap="false" localize="true" />
+    <column source="GroupApproved" externalsourcename="GroupApproved" caption="$general.approved$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="community.group" columns="GroupID, GroupDisplayName, GroupApproved" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

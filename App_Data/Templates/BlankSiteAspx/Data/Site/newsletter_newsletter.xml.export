@@ -1,0 +1,21 @@
+﻿<newsletter_newsletter version="6.0">
+  <NewDataSet>
+    <newsletter_newsletter>
+      <NewsletterID>1</NewsletterID>
+      <NewsletterDisplayName>Corporate newsletter</NewsletterDisplayName>
+      <NewsletterName>CorporateNewsletter</NewsletterName>
+      <NewsletterType>T</NewsletterType>
+      <NewsletterSubscriptionTemplateID>2</NewsletterSubscriptionTemplateID>
+      <NewsletterUnsubscriptionTemplateID>3</NewsletterUnsubscriptionTemplateID>
+      <NewsletterSenderName>Business, Inc.</NewsletterSenderName>
+      <NewsletterSenderEmail>business@domain.com</NewsletterSenderEmail>
+      <NewsletterTemplateID>1</NewsletterTemplateID>
+      <NewsletterSiteID>2</NewsletterSiteID>
+      <NewsletterGUID>229228f0-a33e-42d2-847a-0ccc202089a3</NewsletterGUID>
+      <NewsletterUnsubscribeUrl>~/unsubscribe.aspx</NewsletterUnsubscribeUrl>
+      <NewsletterLastModified>2008-03-13T09:35:00+01:00</NewsletterLastModified>
+      <NewsletterOptInTemplateID>0</NewsletterOptInTemplateID>
+      <NewsletterLogActivity>true</NewsletterLogActivity>
+    </newsletter_newsletter>
+  </NewDataSet>
+</newsletter_newsletter>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="ShippingOptionDisplayName" caption="$general.name$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="##ALL##" externalsourcename="ShippOptCharge" caption="$Unigrid.COM_ShippingOption.Columns.ShippingOptionCharge$" wrap="false" sort="ShippingOptionCharge">
+    </column>
+    <column source="ShippingOptionEnabled" externalsourcename="ShippOptEnabled"  caption="$general.enabled$" wrap="false">
+    </column>
+    <column source="ShippingOptionSiteID" externalsourcename="ShippingOptionSiteID" columnname="ShippingOptionSiteID" caption="$com.isglobal$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.shippingoption" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

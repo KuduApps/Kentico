@@ -1,0 +1,1161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.RESTService</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.RESTService.RESTErrorHandler">
+            <summary>
+            Error handler for the REST requests.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTErrorHandler.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Initializes the error handler.
+            </summary>
+            <param name="description">Service description</param>
+            <param name="host">Service host</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTErrorHandler.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Not needed, remains empty, does nothing.
+            </summary>
+            <param name="serviceDescription">Operation description</param>
+            <param name="serviceHostBase">Service host</param>
+            <param name="endpoints">Endpoints</param>
+            <param name="bindingParameters">Binding parameters</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTErrorHandler.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Not needed, remains empty, does nothing.
+            </summary>
+            <param name="serviceDescription">Service description</param>
+            <param name="serviceHostBase">Service host</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTErrorHandler.HandleError(System.Exception)">
+            <summary>
+            Error handler. Logs the exception to the EventLog
+            </summary>
+            <param name="error">Exception</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTErrorHandler.ProvideFault(System.Exception,System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.Message@)">
+            <summary>
+            Not needed. Does nothing.
+            </summary>
+            <param name="error">Excpetion</param>
+            <param name="version">Message version</param>
+            <param name="fault">Fault message</param>
+        </member>
+        <member name="P:CMS.RESTService.RESTErrorHandler.ServiceType">
+            <summary>
+            Service type.
+            </summary>
+        </member>
+        <member name="T:CMS.RESTService.ServiceCookieHelper">
+            <summary>
+            Cookie helper methods for WCF Service.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.ServiceCookieHelper.GetValue(System.String)">
+            <summary>
+            Gets the value of the given cookie.
+            </summary>
+            <param name="cookieName">Name of the cookie</param>
+        </member>
+        <member name="M:CMS.RESTService.ServiceCookieHelper.CMS#SettingsProvider#ISimpleDataContainer#GetValue(System.String)">
+            <summary>
+            Gets the value from cookie.
+            </summary>
+            <param name="cookieName">Cookie name</param>
+        </member>
+        <member name="M:CMS.RESTService.ServiceCookieHelper.CMS#SettingsProvider#ISimpleDataContainer#SetValue(System.String,System.Object)">
+            <summary>
+            Not implemented.
+            </summary>
+            <param name="cookieName">Cookie name</param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:CMS.RESTService.ServiceCookieHelper.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.RESTService.ServiceCookieHelper.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains specified column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.RESTService.ServiceCookieHelper.Instance">
+            <summary>
+            Singleton Instance of the cookie helper.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.ServiceCookieHelper.RequestCookies">
+            <summary>
+            Response cookies collection.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.ServiceCookieHelper.CMS#SettingsProvider#ISimpleDataContainer#Item(System.String)">
+            <summary>
+            Gets or sets the value of the column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.RESTService.ServiceCookieHelper.ColumnNames">
+            <summary>
+            All the cookie names.
+            </summary>
+        </member>
+        <member name="T:CMS.RESTService.ServiceQueryHelper">
+            <summary>
+            QueryString helper methods for WCF Service.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.ServiceQueryHelper.GetValue(System.String)">
+            <summary>
+            Gets the value from QueryString.
+            </summary>
+            <param name="key">QueryString key</param>
+        </member>
+        <member name="M:CMS.RESTService.ServiceQueryHelper.SetValue(System.String,System.Object)">
+            <summary>
+            Not implemented.
+            </summary>
+            <param name="key">QueryString key</param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:CMS.RESTService.ServiceQueryHelper.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.RESTService.ServiceQueryHelper.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains specified column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.RESTService.ServiceQueryHelper.Instance">
+            <summary>
+            Singleton Instance of the service query helper.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.ServiceQueryHelper.Item(System.String)">
+            <summary>
+            Gets or sets the value of the column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.RESTService.ServiceQueryHelper.ColumnNames">
+            <summary>
+            Column names.
+            </summary>
+        </member>
+        <member name="T:CMS.RESTService.ServiceResolver">
+            <summary>
+            Class to resolve the macros in the context of WCF service (REST for example).
+            Handles querystring and cookies macros in a WCS service specific way.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.ServiceResolver.CheckDataSources(System.String,System.Object@)">
+            <summary>
+            Checks all the data sources for the value (at first, it checks if it's not special value).
+            </summary>
+            <param name="expression">Expression</param>
+            <param name="result">Returning result</param>
+        </member>
+        <member name="T:CMS.RESTService.RESTSecurityInvoker">
+            <summary>
+            Security handler over the REST requests
+            </summary>
+        </member>
+        <member name="F:CMS.RESTService.RESTSecurityInvoker.HASH_AUTHENTICATED_USERNAME">
+            <summary>
+            Constant to identify the hash authentication requirement 
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)">
+            <summary>
+            Initializes the invoker.
+            </summary>
+            <param name="operationDescription">Operation description</param>
+            <param name="dispatchOperation">Dispatch operation</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)">
+            <summary>
+            Not needed, remains empty, does nothing.
+            </summary>
+            <param name="operationDescription">Operation description</param>
+            <param name="clientOperation">Client operation</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Not needed, remains empty, does nothing.
+            </summary>
+            <param name="operationDescription">Operation description</param>
+            <param name="bindingParameters">Binding parameters</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.Validate(System.ServiceModel.Description.OperationDescription)">
+            <summary>
+            Not needed, remains empty, does nothing.
+            </summary>
+            <param name="operationDescription">Operation description</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.Invoke(System.Object,System.Object[],System.Object[]@)">
+            <summary>
+            Invokes the operation only when authentiation went well.
+            </summary>
+            <param name="instance">Instance object</param>
+            <param name="inputs">List of inputs</param>
+            <param name="outputs">List of outputs</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AllocateInputs">
+            <summary>
+            Calls AllocateInputs on the invoker.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.InvokeBegin(System.Object,System.Object[],System.AsyncCallback,System.Object)">
+            <summary>
+            Not implemented method.
+            </summary>
+            <param name="instance">Instance object</param>
+            <param name="inputs">List of inputs</param>
+            <param name="callback">Callback object</param>
+            <param name="state">State object</param>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.InvokeEnd(System.Object,System.Object[]@,System.IAsyncResult)">
+            <summary>
+            Not implemented method.
+            </summary>
+            <param name="instance">Instance object</param>
+            <param name="outputs">List of outputs</param>
+            <param name="result">Result object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.GetAuthenticationType(System.String)">
+            <summary>
+            Returns authentication type from settings.
+            </summary>
+            <param name="siteName">Name of the site</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.CheckHash">
+            <summary>
+            Checks hash parameter. Returns true if the parameter matches the requested URL. For request different from GET returns alsways false.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AuthenticateUser(System.String)">
+            <summary>
+            Authenticates the user according to authentication type setting.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AuthenticateUser">
+            <summary>
+            Authenticates the user according to authentication type setting.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AuthenticateUser(System.Boolean,System.String)">
+            <summary>
+            Authenticates the user according to authentication type setting.
+            </summary>
+            <param name="checkHash">If true, hash is checked and has higher priority than authentication</param>
+            <param name="authType">Authentication type</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AuthenticateUserForms">
+            <summary>
+            Authenticates the user from the authentication cookie. If everything is ok returns name of the authenticated user. Otherwise returns null;
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.AuthenticateUserBasic">
+            <summary>
+            Authenticates the user using basic authentication.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.GetQueryParam(System.String)">
+            <summary>
+            Returns query string parameter.
+            </summary>
+            <param name="name">Name of the parameter</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTSecurityInvoker.OperationIsAllowed">
+            <summary>
+            Check the read-only settings for object/document operations.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.CurrentSiteName">
+            <summary>
+            Gets current site name (retrieved from domain accessed).
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.AuthenticationType">
+            <summary>
+            Gets the type of authentication which should be used to authenticate REST service. Default value is basic authentication ("basic" constant). Other option is forms authentication ("forms" constant).
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.RESTServiceEnabled">
+            <summary>
+            Indicates whether the REST service is enabled (in settings).
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.DocumentAccessReadOnly">
+            <summary>
+            Indicates whether the access to the documents is read-only. If true, only GET reguests are allowed.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.ObjectAccessReadOnly">
+            <summary>
+            Indicates whether the access to the objects is read-only. If true, only GET reguests are allowed.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.ServiceTypeEnabled">
+            <summary>
+            Gets the type of the service which is enabled (0 = Everything, 1 = Only objects, 2 = Only documents).
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTSecurityInvoker.IsSynchronous">
+            <summary>
+            Always true - we need synchronous behaviour for authentication.
+            </summary>
+        </member>
+        <member name="T:CMS.RESTService.IRESTService">
+            <summary>
+            REST service interface
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetObject(System.String,System.String)">
+            <summary>
+            Returns object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetSiteObject(System.String,System.String,System.String)">
+            <summary>
+            Returns object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetGlobalObject(System.String,System.String)">
+            <summary>
+            Returns global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetCurrentSiteObject(System.String,System.String)">
+            <summary>
+            Returns object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetObjects(System.String)">
+            <summary>
+            Returns objects of given type from current site.
+            </summary>
+            <param name="objectType">Object type of the object(s)</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetSiteObjects(System.String,System.String)">
+            <summary>
+            Returns objects of given type from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetGlobalObjects(System.String)">
+            <summary>
+            Returns global objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetCurrentSiteObjects(System.String)">
+            <summary>
+            Returns objects of given type from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetAllObjects(System.String)">
+            <summary>
+            Returns all objects of given object type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetChildren(System.String,System.String,System.String)">
+            <summary>
+            Returns spcific child objects of an object of given type with specified ID.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="childObjectType">Object type of children</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetBindings(System.String,System.String,System.String)">
+            <summary>
+            Returns spcific binding objects of an object of given type with specified ID.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="bindingObjectType">Object type of bindings</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteObjects(System.String)">
+            <summary>
+            Deletes object of given type satisfying given parameters (WHERE/TOPN).
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteObject(System.String,System.String)">
+            <summary>
+            Deletes object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteSiteObject(System.String,System.String,System.String)">
+            <summary>
+            Deletes object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteGlobalObject(System.String,System.String)">
+            <summary>
+            Deletes global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteCurrentSiteObject(System.String,System.String)">
+            <summary>
+            Deletes object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.UpdateObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.UpdateSiteObject(System.String,System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.UpdateGlobalObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.UpdateCurrentSiteObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.CreateObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates an object of given type specified by it's parameters.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.CreateSiteObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Creates object of given type with given name assigns it to specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.CreateCurrentSiteObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates object of given type with given name and assigns it to current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.CreateGlobalObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates global object of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetServiceDocument">
+            <summary>
+            Exposes Service Document (available data).
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetSiteList(System.String)">
+            <summary>
+            Exposes the list of all sites.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetChildObjectTypes(System.String,System.String)">
+            <summary>
+            Returns list of child object types of given object.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetBindingsObjectTypes(System.String,System.String)">
+            <summary>
+            Returns list of binding object types of given object.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetMacroResult(System.String)">
+            <summary>
+            Returns the result of the macro expression.
+            </summary>
+            <param name="expression">Data macro expression to evaluate</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetTypeInfo(System.String)">
+            <summary>
+            Returns type info of given object type.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetDocument(System.String)">
+            <summary>
+            Selects tree node(s) according to provided parameters and returns them as dataset. 
+            Three oprations are supported: document (= select single document), all (= select documents), childrenof (= all children of given node)
+            If classNames not specified, the result does not contain coupled data.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.UpdateDocument(System.String,System.IO.Stream)">
+            <summary>
+            Processes given document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+            <param name="stream">Stream with document data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.CreateDocument(System.String,System.IO.Stream)">
+            <summary>
+            Creates new document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+            <param name="stream">Stream with document data</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.DeleteDocument(System.String)">
+            <summary>
+            Deletes specified document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+        </member>
+        <member name="M:CMS.RESTService.IRESTService.GetHashForURL(System.String)">
+            <summary>
+            Returns hash string which can be than used for given URL instead of authetication.
+            </summary>
+            <param name="url">URL of which to get the hash</param>
+        </member>
+        <member name="T:CMS.RESTService.RESTService">
+            <summary>
+            REST service to access and manage CMS data
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetSiteWhereCondition(System.String,System.String,CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Returns WHERE condition for site and combines it with original WHERE condition.
+            </summary>
+            <param name="origWhere">Original where condition</param>
+            <param name="siteName">Name of the site</param>
+            <param name="obj">Info object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectByIDInternal(System.String,System.String)">
+            <summary>
+            Returns object of given type with specified ID.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectByIDInternal(System.String,System.String,System.Boolean)">
+            <summary>
+            Returns object of given type with specified ID.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="binary">If true, binary data are loaded</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectByNameInternal(System.String,System.String,System.String)">
+            <summary>
+            Returns object of given type with specified name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site (if nothing is specified, global objects are returned)</param>
+            <param name="name">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectByNameInternal(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Returns object of given type with specified name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site (if nothing is specified, global objects are returned)</param>
+            <param name="name">Code name of the object</param>
+            <param name="binary">If true, binary data are loaded</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObject(System.String,System.String)">
+            <summary>
+            Returns object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetSiteObject(System.String,System.String,System.String)">
+            <summary>
+            Returns object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetGlobalObject(System.String,System.String)">
+            <summary>
+            Returns global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentSiteObject(System.String,System.String)">
+            <summary>
+            Returns object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjects(System.String,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns list of objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object(s)</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjects(System.String)">
+            <summary>
+            Returns list of objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object(s)</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetSiteObjects(System.String,System.String)">
+            <summary>
+            Returns objects of given type from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetGlobalObjects(System.String)">
+            <summary>
+            Returns global objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentSiteObjects(System.String)">
+            <summary>
+            Returns objects of given type from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetAllObjects(System.String)">
+            <summary>
+            Returns all objects of given object type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetChildren(System.String,System.String,System.String)">
+            <summary>
+            Returns list of child objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="childObjectType">Object type of children</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetBindings(System.String,System.String,System.String)">
+            <summary>
+            Returns list of binding objects of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="bindingObjectType">Object type of bindings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetResponse(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns response for modifying methods - ID and GUID of the modified object.
+            </summary>
+            <param name="info">Info object which was created/updated/deleted</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.SetObjectInternal(CMS.SettingsProvider.GeneralizedInfo,System.IO.Stream,System.Boolean,System.String)">
+            <summary>
+            Deletes given objects and returns it as a result.
+            </summary>
+            <param name="info">Info object to update/create</param>
+            <param name="stream">Data of the object</param>
+            <param name="isCreate">If true new object will be created</param>
+            <param name="siteName">Name of the site to which the object will be assigned (if null, original setting from stream data is preserved)</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteObjectInternal(CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Deletes given objects and returns it as a result.
+            </summary>
+            <param name="info">GeneralizedInfo to delete</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteObjects(System.String)">
+            <summary>
+            Deletes object of given type satisfying given parameters (WHERE/TOPN).
+            </summary>
+            <param name="objectType">Object type of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteObject(System.String,System.String)">
+            <summary>
+            Deletes object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteSiteObject(System.String,System.String,System.String)">
+            <summary>
+            Deletes object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteGlobalObject(System.String,System.String)">
+            <summary>
+            Deletes global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteCurrentSiteObject(System.String,System.String)">
+            <summary>
+            Deletes object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.UpdateObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with specified ID. If ID is not integer, than it's considered object name and 
+            object from current site with given name is returned.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.UpdateSiteObject(System.String,System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with given name from specified site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.UpdateGlobalObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates global object of given type with given name.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.UpdateCurrentSiteObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Updates object of given type with given name from current site.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="objectName">Code name of the object</param>
+            <param name="stream">Object data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CreateObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates an object of given type specified by it's parameters.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object XML data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CreateSiteObject(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Creates an object of given type specified by it's parameters.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="siteName">Name of the site to which the object will be assigned</param>
+            <param name="stream">Object XML data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CreateCurrentSiteObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates an object of given type specified by it's parameters.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object XML data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CreateGlobalObject(System.String,System.IO.Stream)">
+            <summary>
+            Creates global object of given type.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="stream">Object XML data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetServiceDocument">
+            <summary>
+            Exposes Service Document (available data).
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetSiteList(System.String)">
+            <summary>
+            Exposes the list of all sites.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetChildObjectTypes(System.String,System.String)">
+            <summary>
+            Returns list of child object types of given object.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetBindingsObjectTypes(System.String,System.String)">
+            <summary>
+            Returns list of binding object types of given object.
+            </summary>
+            <param name="objectType">Object type of the object</param>
+            <param name="id">ID of the object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetContentType(CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns content type according to format settings.
+            </summary>
+            <param name="settings">Export settings object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetMacroResult(System.String)">
+            <summary>
+            Returns the result of the macro expression.
+            </summary>
+            <param name="expression">Data macro expression to evaluate</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetTypeInfo(System.String)">
+            <summary>
+            Returns TypeInfo of given object type.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="F:CMS.RESTService.RESTService.mTreeProvider">
+            <summary>
+            TreeProvider object.
+            </summary>
+        </member>
+        <member name="F:CMS.RESTService.RESTService.mWorkflowManager">
+            <summary>
+            Workflow manager object.
+            </summary>
+        </member>
+        <member name="F:CMS.RESTService.RESTService.mVersionManager">
+            <summary>
+            VersionManager object.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetDocumentFromSettings(CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns document according to given settings.
+            </summary>
+            <param name="settings">Settings object</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetTreeNode(CMS.SettingsProvider.ExportObjectSettings,System.String,System.Boolean)">
+            <summary>
+            Returns TreeNode instance (exisiting for update, new instance for creations).
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="data">TreeNode data</param>
+            <param name="isUpdate">If true, document is retrieved using settings data, otherwise new document is created</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetDocumentsFromSettings(System.String,CMS.SettingsProvider.ExportObjectSettings,System.String)">
+            <summary>
+            Returns DataSet of documents matching the settings given in ExportObjectSettings object
+            </summary>
+            <param name="operation">Document operation</param>
+            <param name="settings">ExportObjectSettings object</param>
+            <param name="docTypes">Allowed document types</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetResponse(System.Collections.Generic.List{CMS.TreeEngine.TreeNode},CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns response for modifying methods - ID and GUID of the modified object.
+            </summary>
+            <param name="nodes">TreeNode objects which were created/updated/deleted</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetDocument(System.String)">
+            <summary>
+            Selects tree node(s) according to provided parameters and returns them as dataset. 
+            Three oprations are supported: document (= select single document), all (= select documents), childrenof (= all children of given node).
+            If classNames not specified, the result does not contain coupled data.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CreateDocument(System.String,System.IO.Stream)">
+            <summary>
+            Creates new document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+            <param name="stream">Stream with document data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.DeleteDocument(System.String)">
+            <summary>
+            Deletes given document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.UpdateDocument(System.String,System.IO.Stream)">
+            <summary>
+            Processes given document.
+            </summary>
+            <param name="operation">Operation to perform with document</param>
+            <param name="stream">Stream with document data</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.ToODATA(System.Data.DataSet,CMS.SettingsProvider.ExportObjectSettings,System.String,System.String,System.String,System.Uri,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Serializes given DataSet to ODATA.
+            </summary>
+            <param name="ds">DataSet to serialize</param>
+            <param name="settings">Export settings</param>
+            <param name="dataRootName">Root name</param>
+            <param name="title">Title of the feed</param>
+            <param name="description">Description of the feed</param>
+            <param name="feedUri">Feed URI</param>
+            <param name="itemUriPattern">Feed URI pattern (with macros, will be resolved with object data)</param>
+            <param name="modifiedDateColumn">Column with modified data</param>
+            <param name="publishDateColumn">Column with publish date</param>
+            <param name="nameColumn">Name column</param>
+            <param name="idColumn">ID column</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectDataSetFeed(System.Data.DataSet,System.String,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns SyndicationFeed of object dataset.
+            </summary>
+            <param name="ds">DataSet with objects data</param>
+            <param name="objectType">Obejct type of the data inside</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetNodeDataSetFeed(System.Data.DataSet,System.String,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns SyndicationFeed of document dataset.
+            </summary>
+            <param name="ds">DataSet with objects data</param>
+            <param name="siteName">Name of the site</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetItemUri(System.String,System.Data.DataRow,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns Item Uri according to pattern.
+            </summary>
+            <param name="pattern">Pattern with macros</param>
+            <param name="dr">DataRow with object data</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectUri(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns Uri of given obejct type.
+            </summary>
+            <param name="info">GeneralizedInfo</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetNodeUri(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns Uri of given node.
+            </summary>
+            <param name="node">TreeNode object</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetObjectUri(System.String,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns Uri of given obejct type.
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentSiteName">
+            <summary>
+            Returns current site name.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentSite">
+            <summary>
+            Retuns current site info accoding to domain in query string.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentUserName">
+            <summary>
+            Returns current user.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetCurrentUser">
+            <summary>
+            Returns current user.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetModyfiingExportSettings">
+            <summary>
+            Returns basic settings for modifying methods (settings for base objet).
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetQueryParam(System.String)">
+            <summary>
+            Returns query string parameter.
+            </summary>
+            <param name="name">Name of the parameter</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetExportSettings(System.String)">
+            <summary>
+            Creates ExportObjectSettings object from query string parameters.
+            </summary>
+            <param name="rootName">Name of the root</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.SetFormat(CMS.SettingsProvider.ExportObjectSettings,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Sets the format according to content-type and querystring parameter (higher priority).
+            </summary>
+            <param name="settings">Settings object</param>
+            <param name="query">Query string values collection</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetStream(System.Object,System.String,CMS.SettingsProvider.ExportObjectSettings)">
+            <summary>
+            Returns proper stream from given object.
+            </summary>
+            <param name="obj">Info object or TreeNode to get into the stream</param>
+            <param name="objectType">Original object type</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetTotalRecordsTable(System.Int32)">
+            <summary>
+            Returns table containing one olumn and one row with total records number.
+            </summary>
+            <param name="totalRecords">Total records number</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.EnsureCorrectFormat(System.Data.DataSet,System.String)">
+            <summary>
+            Ensures corrent serialization format of given DataSet.
+            </summary>
+            <param name="ds">DataSet to modify</param>
+            <param name="objectType">ObjectType of the data in the DataSet</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.EnsureCorrectFormat(System.Data.DataTable,System.String)">
+            <summary>
+            Ensures corrent serialization format of given DataTable.
+            </summary>
+            <param name="dt">DataTable to modify</param>
+            <param name="objectType">ObjectType of the data in the DataTable</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetHashForURL(System.String)">
+            <summary>
+            Returns hash string which can be than used for given URL instead of authetication.
+            </summary>
+            <param name="url">URL of which to get the hash (starting with '/rest' prefix)</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.GetHashForURL(System.String,System.String)">
+            <summary>
+            Returns hash string which can be than used for given URL instead of authetication.
+            </summary>
+            <param name="url">URL of which to get the hash (starting with '/rest' prefix)</param>
+            <param name="domain">Domain for which to grant the access</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.ReturnForbiddenStatus">
+            <summary>
+            Sets the response status to Forbidden.
+            </summary>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.IsAuthorizedForDocumentType(System.String)">
+            <summary>
+            Returns true if given document type is allowed in settings.
+            </summary>
+            <param name="docType">Document type of an document</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.IsAuthorizedForObject(System.String,System.String,CMS.SettingsProvider.PermissionsEnum)">
+            <summary>
+            Returns true if current user is granted with specified permission to process operation on the given objecttype.
+            </summary>
+            <param name="objectType">Object type of an object</param>
+            <param name="siteName">Name of the site to perform operation on</param>
+            <param name="permission">Permission type</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.CombineDocTypes(System.String)">
+            <summary>
+            Combines (intersection) requested and allowed document types to use in SelectDocuments methods.
+            </summary>
+            <param name="requestedTypes">Document types requested by users</param>
+        </member>
+        <member name="M:CMS.RESTService.RESTService.RewriteRESTUrl(System.String,System.String,System.String)">
+            <summary>
+            Handles the rewriting for REST service.
+            </summary>
+            <param name="relativePath">Relative URL</param>
+            <param name="queryString">Query string</param>
+            <param name="domain">Domain of the request</param>
+            <returns>Two dimensional array, first parameter is rewritten URL, the second is querystring</returns>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.CurrentBaseUri">
+            <summary>
+            Gets current base uri of the REST service
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.CurrentSiteName">
+            <summary>
+            Gets current site name (retrieved from domain accessed).
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.CurrentSite">
+            <summary>
+            Gets current site object recieved from the domain.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.CurrentUserName">
+            <summary>
+            Gets current user name recieved from auth cookie.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.CurrentUser">
+            <summary>
+            Gets current user object recieved from auth cookie.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.AllowedObjectTypes">
+            <summary>
+            Gets the list of allowed object types separated by semicolon. Empty string means all object types are allowed.
+            </summary>
+        </member>
+        <member name="P:CMS.RESTService.RESTService.AllowedDocumentTypes">
+            <summary>
+            Gets the list of allowed document types separated by semicolon. Empty string means all document types are allowed.
+            </summary>
+        </member>
+    </members>
+</doc>

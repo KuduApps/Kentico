@@ -1,0 +1,1525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.MessageBoard</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.MessageBoard.BoardMessageListInfo">
+            <summary>
+            BoardListInfo virtual object.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardMessageListInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageListInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardMessageListInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageListInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardMessageListInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageListInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result (not applied)</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>       
+        </member>
+        <member name="F:CMS.MessageBoard.BoardSubscriptionListInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionListInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardSubscriptionListInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionListInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardSubscriptionListInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionListInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result (not applied)</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>       
+        </member>
+        <member name="T:CMS.MessageBoard.BoardMessagesDataSource">
+            <summary>
+            Board messages data source server control.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardMessagesDataSource.mProperties">
+            <summary>
+            Data properties variable.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessagesDataSource.OnInit(System.EventArgs)">
+            <summary>
+            OnInit override, register OnFilter change event.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessagesDataSource.DataFilter_OnFilterChanged">
+            <summary>
+            OnFilterChange handler.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessagesDataSource.GetDataSourceFromDB">
+            <summary>
+            Gets datasource from DB.
+            </summary>
+            <returns>Dataset as object</returns>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessagesDataSource.GetDefaultCacheDependendencies">
+            <summary>
+            Gets the default cache dependencies for the data source.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.SelectOnlyApproved">
+            <summary>
+            Gets or sets select only approved messages.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.BoardName">
+            <summary>
+            Gets or sets message board name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.DataSource">
+            <summary>
+            Gets Datasource object.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.GroupID">
+            <summary>
+            Gets or sets the group ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.ShowGroupMessages">
+            <summary>
+            Indicates if the group messages should be included. (If no group ID is provided.).
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.UseDocumentFilter">
+            <summary>
+            Indicates if the comments should be retrieved according to document filter settings.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.Path">
+            <summary>
+            Gets or sets the alias path of the board document.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.CultureCode">
+            <summary>
+            Gets or sets the culture code of the board document.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.DocumentsWhereCondition">
+            <summary>
+            Gets or sets the where condition for board documents.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.CombineWithDefaultCulture">
+            <summary>
+            Gets or sets combine with default culture for board document.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.SelectOnlyPublished">
+            <summary>
+            Gets or sets select only published for documents.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessagesDataSource.MaxRelativeLevel">
+            <summary>
+            Gets or sets max relative level for board documents.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardSubscriptionInfo">
+            <summary>
+            BoardSubscriptionInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardSubscriptionInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardSubscriptionInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardSubscriptionInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionLastModified">
+            <summary>
+            Subscription last modified.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionEmail">
+            <summary>
+            Subscription e-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionID">
+            <summary>
+            Subscription ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionGUID">
+            <summary>
+            Subscription GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionBoardID">
+            <summary>
+            Subscription board ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardSubscriptionInfo.SubscriptionUserID">
+            <summary>
+            Subscription user ID.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardSubscriptionInfoProvider">
+            <summary>
+            Class providing BoardSubscriptionInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetSubscriptions(System.Int32,System.Int32)">
+            <summary>
+            Gets all the subscriptions for specified user and site.
+            </summary>
+            <param name="userId">User ID</param>
+            <param name="siteId">Site ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetSubscriptions(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets all the subscriptions for specified user and site.
+            </summary>
+            <param name="userId">User ID</param>
+            <param name="siteId">Site ID</param>
+            <param name="topN">Return top N records</param>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetSubscriptions(System.String,System.String)">
+            <summary>
+            Gets all the subscriptions according specified conditions.
+            </summary>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement to use</param>        
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetSubscriptions(System.String,System.String,System.String)">
+            <summary>
+            Gets all the subscriptions according specified conditions.
+            </summary>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement to use</param>        
+            <param name="columns">Columns</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetBoardSubscriptionInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns the BoardSubscriptionInfo structure for the specified board id an user id.
+            </summary>
+            <param name="boardId">Board id</param>
+            <param name="userId">User id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetBoardSubscriptionInfo(System.Int32)">
+            <summary>
+            Returns the BoardSubscriptionInfo structure for the specified boardSubscription.
+            </summary>
+            <param name="boardSubscriptionId">BoardSubscription id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.SetBoardSubscriptionInfo(CMS.MessageBoard.BoardSubscriptionInfo)">
+            <summary>
+            Sets (updates or inserts) specified boardSubscription.
+            </summary>
+            <param name="boardSubscription">BoardSubscription to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.DeleteBoardSubscriptionInfo(CMS.MessageBoard.BoardSubscriptionInfo)">
+            <summary>
+            Deletes specified boardSubscription.
+            </summary>
+            <param name="infoObj">BoardSubscription object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.DeleteBoardSubscriptionInfo(System.Int32)">
+            <summary>
+            Deletes specified board subscription.
+            </summary>
+            <param name="subscriptionId">Board subscription ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.DeleteBoardSubscriptionInfo(System.Guid)">
+            <summary>
+            Deletes specified board subscription.
+            </summary>
+            <param name="subscriptionGuid">Board subscription GUID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.DeleteBoardSubscriptionInfo(System.Int32,System.Guid)">
+            <summary>
+            Deletes specified board subscription.
+            </summary>
+            <param name="boardId">Board ID</param>
+            <param name="subscriptionGuid">Board subscription GUID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardSubscriptionInfoProvider.GetBoardSubscriptionInfo(System.Int32,System.Guid)">
+            <summary>
+            Returns the BoardSubscriptionInfo structure.
+            </summary>
+            <param name="boardId">Board ID</param>
+            <param name="subscriptionGuid">Board subscription GUID</param>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardMessageActions">
+            <summary>
+             Summary description for BoardMessageDetail
+             </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageActions.FireOnBoardMessageAction(System.String,System.Object)">
+            <summary>
+             Fires action on control action link button click
+             </summary>
+             <param name="actionName">String representation of action</param>
+             <param name="argument">Parameter related to the action</param>
+        </member>
+        <member name="E:CMS.MessageBoard.BoardMessageActions.OnMessageAction">
+            <summary>
+             Event occuring on message action link click
+             </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.MessageBoardID">
+             <summary>
+            Message board ID.
+             </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.ShowEdit">
+            <summary>
+            Indicates whether the EDIT button should be displayed under current conditions.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.ShowDelete">
+            <summary>
+            Indicates whether the DELETE button should be displayed under current conditions.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.ShowApprove">
+            <summary>
+            Indicates whether the APPROVE button should be displayed under current conditions.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.ShowReject">
+            <summary>
+            Indicates whether the REJECT button should be displayed under current conditions.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageActions.MessageID">
+            <summary>
+            Board message ID.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardMessageActions.OnBoardMessageAction">
+            <summary>
+            Refferences to the method called when some message action is fired.
+            </summary>
+            <param name="actionName">Name of the action fired</param>
+            <param name="argument">Argument related to the action</param>
+        </member>
+        <member name="T:CMS.MessageBoard.OnAfterMessageSavedEventHandler">
+            <summary>
+            Refferences to the method called after message was saved.
+            </summary>
+            <param name="message">Board message object</param>
+        </member>
+        <member name="T:CMS.MessageBoard.OnBeforeMessageSavedEventHandler">
+            <summary>
+            Refferences to the method called mefore message is saved.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardProperties">
+            <summary>
+            Summary description for BoardProperties.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardName">
+            <summary>
+            Current board name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardDisplayName">
+            <summary>
+            Current board display name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardRoles">
+            <summary>
+            Default board authorized roles.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardDescription">
+            <summary>
+            Current board description.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardOwner">
+            <summary>
+            Owner of the board.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardOpened">
+            <summary>
+            Indicates whether board is opened.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardAccess">
+            <summary>
+            Indicates type of board access.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardRequireEmails">
+            <summary>
+            Indicates the board message post requires e-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardShowEmails">
+            <summary>
+            Indicates whether the e-mails should be displayed with messages.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardOpenedFrom">
+            <summary>
+            Board opened from.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardOpenedTo">
+            <summary>
+            Board opened to.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardEnableSubscriptions">
+            <summary>
+            Indicates whether the subscriptions are allowed for the current board.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardUnsubscriptionUrl">
+            <summary>
+            Board unsubscription URL.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardBaseUrl">
+            <summary>
+            Board base URL.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.StopProcessing">
+            <summary>
+            Indicates whether processing should be stopped.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.ShowEditButton">
+            <summary>
+            Indicates whether the EDIT button should be displayed.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.ShowDeleteButton">
+            <summary>
+            Indicates whether the DELETE button should be displayed.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.ShowApproveButton">
+            <summary>
+            Indicates whether the APPROVE button should be displayed.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.ShowRejectButton">
+            <summary>
+            Indicates whether the REJECT button should be displayed.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardModerated">
+            <summary>
+            Indicates whether the board is moderated.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.CheckPermissions">
+            <summary>
+            Indicates whether the permissions should be checked.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardUseCaptcha">
+            <summary>
+            Indicates whether the CAPTCHA should be used.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardEnableAnonymousRead">
+            <summary>
+            Indicates whether the existing messages should be displayed for the anonymous users.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.EnableContentRating">
+            <summary>
+            Enables content rating scale for each message.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.MaxRatingValue">
+            <summary>
+            Max value (length) of content rating scale.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.RatingType">
+            <summary>
+            Type of content rating scale.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardModerators">
+            <summary>
+            Default board moderators.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardProperties.BoardLogActivity">
+            <summary>
+            Indicates whether logging activity is performed.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.MessageBoardModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.MessageBoardModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.MessageBoard.MessageBoardModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.MessageBoard.MessageBoardModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardInfo">
+            <summary>
+            BoardInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfo.#ctor(CMS.MessageBoard.BoardProperties)">
+            <summary>
+            Creates new board object according provided properties.
+            </summary>
+            <param name="properties">Board properties applied to created board</param>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardSiteID">
+            <summary>
+            Board site ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardRequireEmails">
+            <summary>
+            If board requires emails.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardLastMessageUserName">
+            <summary>
+            Board last message username.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardUseCaptcha">
+            <summary>
+            Board use captcha.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardAccess">
+            <summary>
+            Board access.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardDescription">
+            <summary>
+            Board description.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardEnableSubscriptions">
+            <summary>
+            Board enable subscriptions.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardDocumentID">
+            <summary>
+            Board document id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardUserID">
+            <summary>
+            Board user id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardGroupID">
+            <summary>
+            Board group id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardOpenedTo">
+            <summary>
+            Board opened to.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardDisplayName">
+            <summary>
+            Board display name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardID">
+            <summary>
+            Board id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardLastModified">
+            <summary>
+            Board last modified.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardGUID">
+            <summary>
+            Board GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardName">
+            <summary>
+            Board name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardModerated">
+            <summary>
+            Board moderated.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardLastMessageTime">
+            <summary>
+            Board last message time.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardOpenedFrom">
+            <summary>
+            Board opened from.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.InheritedUnsubscriptionUrl">
+            <summary>
+            Returns inherited unsubscription url from settings.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardUnsubscriptionURL">
+            <summary>
+            Board unsubscription URL.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.InheritedBaseUrl">
+            <summary>
+            Returns inherited base url from settings.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardBaseURL">
+            <summary>
+            Board base URL.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardEnabled">
+            <summary>
+            Board enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardMessages">
+            <summary>
+            Board messages.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardOpened">
+            <summary>
+            Board opened.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardInfo.BoardLogActivity">
+            <summary>
+            Indicates whether activity is logged.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardInfoProvider">
+            <summary>
+            Class providing BoardInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfo(System.Int32)">
+            <summary>
+            Returns the BoardInfo structure for the specified board.
+            </summary>
+            <param name="boardId">Board id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfo(System.String,System.Int32)">
+            <summary>
+            Returns the BoardInfo structure for the specified board.
+            </summary>
+            <param name="boardName">Board code name</param>
+            <param name="documentId">Document ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardsCount(System.Int32)">
+            <summary>
+            Returns the number of message boards related to the specified document.
+            </summary>
+            <param name="documentId">Document ID to return number of boards for</param> 
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoForUser(System.Int32,System.String)">
+            <summary>
+            Returns the info on board matching specified criteria.
+            </summary>
+            <param name="userId">ID of the user board belongs to</param>
+            <param name="boardName">Name of the board</param>                
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoForGroup(System.Int32,System.String)">
+            <summary>
+            Returns the info on board matching specified criteria.
+            </summary>
+            <param name="groupId">ID of the group board belongs to</param>
+            <param name="boardName">Name of the board</param>                
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.SetBoardInfo(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Sets (updates or inserts) specified board.
+            </summary>
+            <param name="board">Board to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.DeleteBoardInfo(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Deletes specified board.
+            </summary>
+            <param name="infoObj">Board object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoards(System.Int32,System.String)">
+            <summary>
+            Returns Borads for specified site.
+            </summary>
+            <param name="siteId">Site id</param>
+            <param name="where">Where condition</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.DeleteBoardInfo(System.Int32)">
+            <summary>
+            Deletes specified board.
+            </summary>
+            <param name="boardId">Board id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.DeleteDocumentBoards(System.Int32)">
+            <summary>
+            Deletes all the board related information concerning specified document.
+            </summary>
+            <param name="documentId">ID of the document</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsBoardOpened(System.Boolean,System.DateTime,System.DateTime)">
+            <summary>
+            Determines whether the board is opened for the current user.
+            </summary>
+            <param name="boardOpen">Indicates whether the board is opened according settings</param>
+            <param name="openFrom">Date-time value of board opening</param>
+            <param name="openTo">Date-time value of board closing</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetUnsubscriptionUrl(System.String,System.String)">
+            <summary>
+            Gets unsubscribtion page URL.
+            </summary>
+            <param name="boardUnsubscriptionUrl">Board unsubscription URL</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsUserAuthorizedToAddMessages(CMS.MessageBoard.BoardProperties)">
+            <summary>
+            Returns True if current user is authorized to add messages to the specified message board, otherwise returns False.
+            </summary>
+            <param name="boardProperties">Properties of the board</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsUserAuthorizedToAddMessages(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Returns True if current user is authorized to add messages to the specified message board, otherwise returns False.
+            </summary>
+            <param name="board">Board information</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsUserAuthorizedPerBoard(CMS.SiteProvider.UserInfo,System.Int32)">
+            <summary>
+            Checks if the user is authorized per board (if she belongs to the role authorized per board).
+            </summary>
+            <param name="userInfo">User info</param>     
+            <param name="boardId">ID of the board to check</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsUserAuthorizedToManageMessages(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Checks if the current user can manage messages of the specified board.
+            </summary>
+            <param name="board">Board object to check</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoards(System.String,System.String)">
+            <summary>
+            Returns all message board matching specified criteria.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY expression</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoards(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns all message board matching specified criteria.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY expression</param>
+            <param name="topN">Top N condition</param>
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoards(System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Returns all message boards matching specified criteria with associated document data.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY expression</param>
+            <param name="topN">Top N condition</param>
+            <param name="columns">Columns to be selected</param>
+            <param name="documentData">Indicates if document data for each message board should be included in the result dataset</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoInternal(System.Int32)">
+            <summary>
+            Returns the BoardInfo structure for the specified board.
+            </summary>
+            <param name="boardId">Board id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoInternal(System.String,System.Int32)">
+            <summary>
+            Returns the BoardInfo structure for the specified board.
+            </summary>
+            <param name="boardName">Board code name</param>
+            <param name="documentId">Document ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardsCountInternal(System.Int32)">
+            <summary>
+            Returns the number of message boards related to the specified document.
+            </summary>
+            <param name="documentId">Document ID to return number of boards for</param> 
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoForUserInternal(System.Int32,System.String)">
+            <summary>
+            Returns the info on board matching specified criteria.
+            </summary>
+            <param name="userId">ID of the user board belongs to</param>
+            <param name="boardName">Name of the board</param>                
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetBoardInfoForGroupInternal(System.Int32,System.String)">
+            <summary>
+            Returns the info on board matching specified criteria.
+            </summary>
+            <param name="groupId">ID of the group board belongs to</param>
+            <param name="boardName">Name of the board</param>                
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.SetBoardInfoInternal(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Sets (updates or inserts) specified board.
+            </summary>
+            <param name="board">Board to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.DeleteBoardInfoInternal(CMS.MessageBoard.BoardInfo)">
+            <summary>
+            Deletes specified board.
+            </summary>
+            <param name="infoObj">Board object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoardsInternal(System.Int32,System.String)">
+            <summary>
+            Returns Borads for specified site.
+            </summary>
+            <param name="siteId">Site id</param>
+            <param name="where">Where condition</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.DeleteDocumentBoardsInternal(System.Int32)">
+            <summary>
+            Deletes all the board related information concerning specified document.
+            </summary>
+            <param name="documentId">ID of the document</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.IsUserAuthorizedPerBoardInternal(CMS.SiteProvider.UserInfo,System.Int32)">
+            <summary>
+            Checks if the user is authorized per board (if she belongs to the role authorized per board).
+            </summary>
+            <param name="userInfo">User info</param>     
+            <param name="boardId">ID of the board to check</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardInfoProvider.GetMessageBoardsInternal(System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Returns all message boards matching specified criteria with associated document data.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY expression</param>
+            <param name="topN">Top N condition</param>
+            <param name="columns">Columns to be selected</param>
+            <param name="documentData">Indicates if document data for each message board should be included in the result dataset</param>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardMessageInfo">
+            <summary>
+            BoardMessageInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardMessageInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardMessageInfo.mMessageUserInfo">
+            <summary>
+            Post ip, and agent values.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardMessageInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardMessageInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfo.CheckPermissions(CMS.SettingsProvider.PermissionsEnum,System.String,CMS.SettingsProvider.IUserInfo)">
+            <summary>
+            Checks the permissions of the object.
+            </summary>
+            <param name="permission">Permission type</param>
+            <param name="siteName">Name of the site</param>
+            <param name="userInfo">UserInfo object</param>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageBoardID">
+            <summary>
+            Message board ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageIsSpam">
+            <summary>
+            Message Is Spam.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageText">
+            <summary>
+            Message text.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageLastModified">
+            <summary>
+            Message last modified datetime.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageInserted">
+            <summary>
+            Message inserted datetime.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageUserInfo">
+            <summary>
+            Additional user info.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageID">
+            <summary>
+            Message ID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageAvatarGUID">
+            <summary>
+            Message Avatar GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageUserID">
+            <summary>
+            Id of the user who inserted message.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageApprovedByUserID">
+            <summary>
+            ID of the user who approved the message.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageEmail">
+            <summary>
+            Message email.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageUserName">
+            <summary>
+            Message user name.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageGUID">
+            <summary>
+            GUID of the message.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageRatingValue">
+            <summary>
+            Rating of current message (float between 0..1).
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageApproved">
+            <summary>
+            Is message approved or not.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfo.MessageURL">
+            <summary>
+            Message URL.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardMessageInfoProvider">
+            <summary>
+            Class providing BoardMessageInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.GetBoardMessageInfo(System.Int32)">
+            <summary>
+            Returns the BoardMessageInfo structure for the specified boardMessage.
+            </summary>
+            <param name="boardMessageId">BoardMessage id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.SetBoardMessageInfo(CMS.MessageBoard.BoardMessageInfo)">
+            <summary>
+            Sets (updates or inserts) specified boardMessage.
+            </summary>
+            <param name="boardMessage">BoardMessage to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.DeleteBoardMessageInfo(CMS.MessageBoard.BoardMessageInfo)">
+            <summary>
+            Deletes specified boardMessage.
+            </summary>
+            <param name="infoObj">BoardMessage object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.DeleteBoardMessageInfo(System.Int32)">
+            <summary>
+            Deletes specified boardMessage.
+            </summary>
+            <param name="boardMessageId">BoardMessage id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.GetMessages(System.String,System.String)">
+            <summary>
+            Returns dataset of all messages according to where and order by condition.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">OrderBy condition</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.GetMessages(System.Int32)">
+            <summary>
+            Returns dataset of all messages for given board.
+            </summary>
+            <param name="boardId">Message board ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.IsUserMessageOwner(System.Int32,System.Int32)">
+            <summary>
+            Checks if the given user is owner of the given message.
+            </summary>
+            <param name="userId">Id of the user to check</param>
+            <param name="messageId">ID of the message to check</param>        
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.SendNewMessageNotification(CMS.MessageBoard.BoardMessageInfo,System.Boolean,System.Boolean)">
+            <summary>
+            Sends a notification e-mail to all board subscribers and to all board moderators.
+            </summary>
+            <param name="message">Board message data</param>
+            <param name="toSubscribers">Indicates if notification email should be sent to board subscribers</param>
+            <param name="toModerators">Indicates if notification email should be sent to board moderators</param>        
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.UpdateDocumentRating(System.Int32,System.Double,System.Double)">
+            <summary>
+            Updates document ratings according to old and new rating values.
+            </summary>
+            <param name="boardId">Board id</param>
+            <param name="oldRating">Old rating value</param>
+            <param name="newRating">New rating value</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.UpdateMessageBoardCounts(System.Int32)">
+            <summary>
+            Updates message board messages count, last message time and last message user name.
+            </summary>
+            <param name="boardID">Board id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardMessageInfoProvider.GetBoardSiteName(System.Int32)">
+            <summary>
+            Returns sitename for selected board.
+            </summary>
+            <param name="boardId">Board id</param>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardMessageInfoProvider.EnableEmails">
+            <summary>
+            Indicates if e-mails are allowed to be sent to subscribers and moderators, by default it is set to True.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardModeratorInfo">
+            <summary>
+            BoardModeratorInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardModeratorInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardModeratorInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardModeratorInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardModeratorInfo.UserID">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardModeratorInfo.BoardID">
+            <summary>
+            Board id.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardModeratorInfoProvider">
+            <summary>
+            Class providing BoardModeratorInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.GetBoardModeratorInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns the BoardModeratorInfo structure for the specified boardModerator.
+            </summary>
+            <param name="userId">UserID</param>
+            <param name="boardId">BoardID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.SetBoardModeratorInfo(CMS.MessageBoard.BoardModeratorInfo)">
+            <summary>
+            Sets (updates or inserts) specified boardModerator.
+            </summary>
+            <param name="boardModerator">BoardModerator to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.DeleteBoardModeratorInfo(CMS.MessageBoard.BoardModeratorInfo)">
+            <summary>
+            Deletes specified boardModerator.
+            </summary>
+            <param name="infoObj">BoardModerator object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.DeleteBoardModeratorInfo(System.Int32,System.Int32)">
+            <summary>
+            Deletes specified boardModerator.
+            </summary>
+            <param name="userId">UserID</param>
+            <param name="boardId">BoardID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.RemoveModeratorFromBoard(System.Int32,System.Int32)">
+            <summary>
+            Deletes specified BoardModerator info object.
+            </summary>
+            <param name="userId">User id</param>
+            <param name="boardId">Board id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.AddModeratorToBoard(System.Int32,System.Int32)">
+            <summary>
+            Adds new BoardModeratorInfo object.
+            </summary>        
+            <param name="boardId">ID of the board moderator is being added to</param>
+            <param name="userId">ID of the user representing board moderator</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.IsUserBoardModerator(System.Int32,System.Int32)">
+            <summary>
+            Checks if the given user is moderator of the given board.
+            </summary>
+            <param name="userId">ID of the user to check</param>
+            <param name="boardId">ID of the board to check</param>        
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.GetBoardModerators(System.Int32)">
+            <summary>
+            Returns dataset with moderators.
+            </summary>        
+            <param name="boardId">Board ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.GetBoardModerators(System.Int32,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Returns dataset with moderators.
+            </summary>        
+            <param name="boardId">Board ID</param>
+            <param name="columns">Data columns to return</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.SetBoardModerators(System.Int32,System.String)">
+            <summary>
+            Inserts moderators for the specified board.
+            </summary>
+            <param name="boardId">ID of the board moderators are inserted to</param>
+            <param name="moderators">String containing user names separated by semicolon</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardModeratorInfoProvider.SetBoardModerators(System.Int32,System.String,System.Boolean)">
+            <summary>
+            Inserts moderators for the specified board.
+            </summary>
+            <param name="boardId">ID of the board moderators are inserted to</param>
+            <param name="moderators">String containing user names separated by semicolon</param>
+            <param name="useIds">Indicates whether the string representing moderators contains user IDs rather than user names</param>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardRoleInfo">
+            <summary>
+            BoardRoleInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.BoardRoleInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BoardRoleInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BoardRoleInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardRoleInfo.RoleID">
+            <summary>
+            Role id.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.BoardRoleInfo.BoardID">
+            <summary>
+            Board id.
+            </summary>
+        </member>
+        <member name="T:CMS.MessageBoard.BoardRoleInfoProvider">
+            <summary>
+            Class providing BoardRoleInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.GetBoardRoleInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns the BoardRoleInfo structure for the specified boardRole.
+            </summary>
+            <param name="boardId">Board id</param>
+            <param name="roleId">Role id</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.SetBoardRoleInfo(CMS.MessageBoard.BoardRoleInfo)">
+            <summary>
+            Sets (updates or inserts) specified boardRole.
+            </summary>
+            <param name="boardRole">BoardRole to set</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.DeleteBoardRoleInfo(CMS.MessageBoard.BoardRoleInfo)">
+            <summary>
+            Deletes specified boardRole.
+            </summary>
+            <param name="infoObj">BoardRole object</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.DeleteBoardRoleInfo(System.Int32,System.Int32)">
+            <summary>
+            Deletes specified boardRole.
+            </summary>
+            <param name="roleId">ID of the role to delete</param>
+            <param name="boardId">ID of the board role is deleted from</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.RemoveRoleFromBoard(System.Int32,System.Int32)">
+            <summary>
+            Deletes specified boardRole.
+            </summary>
+            <param name="roleId">RoleID</param>
+            <param name="boardId">BoardID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.AddRoleToBoard(System.Int32,System.Int32)">
+            <summary>
+            Adds specified role to the board.
+            </summary>
+            <param name="roleId">RoleID</param>
+            <param name="boardId">BoardID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.IsRoleAllowedForBoard(System.Int32,System.Int32)">
+            <summary>
+            Returns true if role is allowed for given board.
+            </summary>
+            <param name="roleId">Role ID</param>
+            <param name="boardId">Board ID</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.SetBoardRoles(System.Int32,System.String)">
+            <summary>
+            Inserts roles for the specified board.
+            </summary>
+            <param name="boardId">ID of the board roles should be added to</param>
+            <param name="roles">String containing role names separated by semicolon</param>
+        </member>
+        <member name="M:CMS.MessageBoard.BoardRoleInfoProvider.GetBoardRoles(System.Int32,System.String)">
+            <summary>
+            Returns all roles assigned to the specified board.
+            </summary>
+            <param name="boardId">ID of the board for which the roles are returned</param>
+            <param name="columns">Columns to return</param>
+        </member>
+        <member name="T:CMS.MessageBoard.MessageBoardObjectType">
+            <summary>
+            Class holding information on message board available types.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARD">
+            <summary>
+            Code name for message board boards.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDROLE">
+            <summary>
+            Code name for message board roles.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDMESSAGE">
+            <summary>
+            Code name for board message.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDMESSAGELIST">
+            <summary>
+            Code name for list of board messages.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDMODERATOR">
+            <summary>
+            Code name for board moderator.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDSUBSCRIPTION">
+            <summary>
+            Code name for board subscription.
+            </summary>
+        </member>
+        <member name="F:CMS.MessageBoard.MessageBoardObjectType.BOARDSUBSCRIPTIONLIST">
+            <summary>
+            Code name for board subscription list.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.MessageBoardObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.MessageBoard.ThreadEmailSender">
+            <summary>
+            Handles sending message board e-mails in separated thread.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.#ctor(CMS.MessageBoard.BoardMessageInfo)">
+            <summary>
+            Constructor - creates and initialize email sender.
+            </summary>
+            <param name="message">Board message info</param>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.InitSender(CMS.MessageBoard.BoardMessageInfo)">
+            <summary>
+            Init sender private data and resolver.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.CreateMacroResolver">
+            <summary>
+            Creates and initializes macro resolver.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.GetMessageBoarUrl">
+            <summary>
+            Returns absolute URL to the document where the message board is placed on.
+            </summary>        
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.GetEmailMessage(System.Boolean)">
+            <summary>
+            Returns initialized e-mail message without recepients and with unresolved macros.
+            </summary>
+            <param name="toSubscribers">True - email message for subscribers is returned, False - email message for moderators is returned</param>        
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.SendNotificationToSubscribers">
+            <summary>
+            Sends a notification e-mail to all board subscribers.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.SendNotificationToModerators">
+            <summary>
+            Sends a notification e-mail to all board moderators.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.SendToModerators">
+            <summary>
+            Sends e-mails to moderators.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.SendToSubscribers">
+            <summary>
+            Sends e-mails to subsribers.
+            </summary>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.ResolveEmailMacros(CMS.EmailEngine.EmailMessage)">
+            <summary>
+            Resolves e-mail subject, body and plain text body.
+            </summary>
+            <param name="email">Email to be resolved</param>
+        </member>
+        <member name="M:CMS.MessageBoard.ThreadEmailSender.SendNewMessageNotification(System.Security.Principal.WindowsIdentity,System.Boolean,System.Boolean)">
+            <summary>
+            Sends a notification e-mail to all board subscribers and to all board moderators.
+            </summary>       
+            <param name="wi">Windows identity</param>
+            <param name="toSubscribers">Indicates if notification email should be sent to board subscribers</param>
+            <param name="toModerators">Indicates if notification email should be sent to board moderators</param>        
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.EmailToModerators">
+            <summary>
+            Gets or sets the e-mail message to board moderators.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.EmailToSubscribers">
+            <summary>
+            Gets or sets e-mail message to board subscribers.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.Subscribers">
+            <summary>
+            Gets or sets the dataset that holds the information on subscribers e-mail is being sent to.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.SiteName">
+            <summary>
+            Gets or sets the name of the site the message board is placed on.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.Resolver">
+            <summary>
+            Gets or sets the macro resolver to use.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.SubscribersResolver">
+            <summary>
+            Resolver to use for subscribers notifications.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.MessageObj">
+            <summary>
+            Message board info.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.BoardObj">
+            <summary>
+            Current board info.
+            </summary>
+        </member>
+        <member name="P:CMS.MessageBoard.ThreadEmailSender.UnsubscriptionURL">
+            <summary>
+            Resolved unsubscription URL.
+            </summary>
+        </member>
+    </members>
+</doc>

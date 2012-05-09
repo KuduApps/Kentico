@@ -1,0 +1,26 @@
+﻿<ecommerce_supplier version="6.0">
+  <NewDataSet>
+    <com_supplier>
+      <SupplierID>23</SupplierID>
+      <SupplierDisplayName>Hardware supplier, Inc.</SupplierDisplayName>
+      <SupplierPhone></SupplierPhone>
+      <SupplierEmail></SupplierEmail>
+      <SupplierFax></SupplierFax>
+      <SupplierEnabled>true</SupplierEnabled>
+      <SupplierGUID>1aad45cb-220d-4aa1-9a71-8f28cf22b436</SupplierGUID>
+      <SupplierLastModified>2011-02-25T08:56:15.64+01:00</SupplierLastModified>
+      <SupplierSiteID>5</SupplierSiteID>
+    </com_supplier>
+    <com_supplier>
+      <SupplierID>22</SupplierID>
+      <SupplierDisplayName>Notebooks Ltd.</SupplierDisplayName>
+      <SupplierPhone></SupplierPhone>
+      <SupplierEmail></SupplierEmail>
+      <SupplierFax></SupplierFax>
+      <SupplierEnabled>true</SupplierEnabled>
+      <SupplierGUID>0aec8a82-2824-4ed7-b893-1632081194d1</SupplierGUID>
+      <SupplierLastModified>2011-02-25T08:56:23.27+01:00</SupplierLastModified>
+      <SupplierSiteID>5</SupplierSiteID>
+    </com_supplier>
+  </NewDataSet>
+</ecommerce_supplier>

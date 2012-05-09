@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ObjectID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" onclick="if (window.EditPageTemplate) {window.EditPageTemplate({0}); return false;}" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="DisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+  <objecttype name="cms.pagetemplatelist" />
+</grid>

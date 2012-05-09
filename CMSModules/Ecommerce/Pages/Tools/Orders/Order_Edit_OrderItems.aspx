@@ -1,0 +1,8 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="CMSModules_Ecommerce_Pages_Tools_Orders_Order_Edit_OrderItems" Theme="Default" MasterPageFile="~/CMSMasterPages/UI/SimplePage.master" Title="Order - Edit - Items list" CodeFile="Order_Edit_OrderItems.aspx.cs" %>
+
+<%@ Register Src="~/CMSModules/Ecommerce/Controls/ShoppingCart/ShoppingCart.ascx"
+    TagName="ShoppingCart" TagPrefix="cms" %>
+<asp:Content ID="cntBody" runat="server" ContentPlaceHolderID="plcContent">
+    <asp:Label ID="lblInfo" runat="server" EnableViewState="false" Visible="false" CssClass="InfoLabel" />
+    <cms:ShoppingCart ID="Cart" runat="server" IsLiveSite="false" />
+</asp:Content>

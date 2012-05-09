@@ -1,0 +1,3 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="~/CMSFormControls/Sites/SelectSiteWithAllForAdmin.ascx.cs" Inherits="CMSFormControls_Sites_SelectSiteWithAllForAdmin" %>
+<%@ Register Src ="~/CMSFormControls/Sites/SiteSelector.ascx"  TagName="SiteSelector" TagPrefix="cms" %>
+<cms:siteSelector  runat="server" ID="ucSiteSelector" ShortID="ss" IsLiveSite ="false"  UseCodeNameForSelection ="true"/>

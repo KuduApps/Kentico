@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+  </actions>
+  <columns>
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

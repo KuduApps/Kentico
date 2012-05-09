@@ -1,0 +1,1050 @@
+﻿<cms_layout version="6.0">
+  <NewDataSet>
+    <cms_layout>
+      <LayoutID>42</LayoutID>
+      <LayoutCodeName>CMS.FullPageCSS</LayoutCodeName>
+      <LayoutDisplayName>Full page (CSS)</LayoutDisplayName>
+      <LayoutDescription>Full page layout with one full width column using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutVersionGUID>acccc837-f205-4e93-bbe5-e1189ea79619</LayoutVersionGUID>
+      <LayoutGUID>15ab078b-bdd6-4913-9255-0c6c59be7a65</LayoutGUID>
+      <LayoutLastModified>2011-03-22T21:04:29.537+01:00</LayoutLastModified>
+      <LayoutType>ascx</LayoutType>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>6</LayoutID>
+      <LayoutCodeName>CMS.Grid2</LayoutCodeName>
+      <LayoutDisplayName>Grid 2x2 cells</LayoutDisplayName>
+      <LayoutDescription>Grid 2x2 of web part zones.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>b8c19c8f-08b8-4dbd-a6a0-ad49a387be61</LayoutVersionGUID>
+      <LayoutGUID>1644cefb-7a30-4eef-986f-1a03695a0857</LayoutGUID>
+      <LayoutLastModified>2009-12-08T11:35:44.107+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>20</LayoutID>
+      <LayoutCodeName>CMS.Grid2CSS</LayoutCodeName>
+      <LayoutDisplayName>Grid 2x2 cells (CSS)</LayoutDisplayName>
+      <LayoutDescription>Grid 2x2 of web part zones using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 50%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 50%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;div style="width: 50%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 50%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both;"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      
+&lt;/div&gt;
+</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>837ad3a1-3397-4d06-b61c-cb8ddf83e2a2</LayoutVersionGUID>
+      <LayoutGUID>3400c02b-4681-47a4-af16-43c67a9b4013</LayoutGUID>
+      <LayoutLastModified>2008-03-11T18:03:25.953+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>7</LayoutID>
+      <LayoutCodeName>CMS.Grid3</LayoutCodeName>
+      <LayoutDisplayName>Grid 3x2 cells</LayoutDisplayName>
+      <LayoutDescription>Grid 3x2 of web part zones</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTopLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTopCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTopRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>4515dd3e-03b0-4ab4-b81f-a04c889ef795</LayoutVersionGUID>
+      <LayoutGUID>5c5d237e-c2a3-49f1-96c3-190bd03baa7d</LayoutGUID>
+      <LayoutLastModified>2008-03-11T18:05:49.787+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>21</LayoutID>
+      <LayoutCodeName>CMS.Grid3CSS</LayoutCodeName>
+      <LayoutDisplayName>Grid 3x2 cells (CSS)</LayoutDisplayName>
+      <LayoutDescription>Grid 3x2 of web part zones using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 33%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneTopLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 33%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneTopRight" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 34%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneTopCenter" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;div style="width: 33%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 33%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 34%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomCenter" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;  
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>cb060a76-7514-48e0-a50d-2fa3aed301f9</LayoutVersionGUID>
+      <LayoutGUID>775aae79-222c-4e6d-838f-93a0262bdb78</LayoutGUID>
+      <LayoutLastModified>2008-03-11T18:05:55.847+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>1</LayoutID>
+      <LayoutCodeName>CMS.Simple</LayoutCodeName>
+      <LayoutDisplayName>Simple</LayoutDisplayName>
+      <LayoutDescription>Simple layout with one web part zone.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt; </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>d4e51041-7613-4021-9f1b-76bcedd4bddf</LayoutVersionGUID>
+      <LayoutGUID>701bb385-0d11-4b17-9820-df7cafc3a0a2</LayoutGUID>
+      <LayoutLastModified>2009-04-22T16:12:00.447+02:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>3</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumns</LayoutCodeName>
+      <LayoutDisplayName>Three columns</LayoutDisplayName>
+      <LayoutDescription>Three columns with web part zones.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt; 
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>44bacf3e-79fc-452e-a69f-0bf02b2b64b9</LayoutVersionGUID>
+      <LayoutGUID>9d14b4d7-1b38-404b-8249-1294a3d50ac9</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:07:05.727+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>44</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumns20_60_20CSS</LayoutCodeName>
+      <LayoutDisplayName>Three columns - 20/60/20 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Three columns in ratio 20%/60%/20% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div style="width: 20%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 60%; float: left;"&gt;
+    &lt;div class="Content"&gt;&lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;&lt;/div&gt;  
+  &lt;/div&gt;
+  &lt;div style="width: 20%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutVersionGUID>69079729-6bad-4998-9899-5856340c47d6</LayoutVersionGUID>
+      <LayoutGUID>112dddcd-8f96-48bb-9e50-eceada4fe3a5</LayoutGUID>
+      <LayoutLastModified>2010-09-14T16:23:39.15+02:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>43</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumns25_50_25CSS</LayoutCodeName>
+      <LayoutDisplayName>Three columns - 25/50/25 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Three columns in ratio 25%/50%/25% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div style="width: 25%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 50%; float: left;"&gt;
+    &lt;div class="Content"&gt;&lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;&lt;/div&gt;    
+  &lt;/div&gt;
+  &lt;div style="width: 25%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>3c6fac0e-d8b8-431e-86b8-ea73d5dfc35d</LayoutVersionGUID>
+      <LayoutGUID>8fcf2126-e2c2-40cf-b0a7-6694526cc076</LayoutGUID>
+      <LayoutLastModified>2010-09-14T16:24:02.493+02:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>45</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumns33_33_33CSS</LayoutCodeName>
+      <LayoutDisplayName>Three columns - 33/33/33 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Three columns with web part zones using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div style="width: 33%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 34%; float: left;"&gt;
+    &lt;div class="Content"&gt;&lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;&lt;/div&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 33%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutVersionGUID>123065b6-1d5e-4c5e-8ecb-140a8728c6c8</LayoutVersionGUID>
+      <LayoutGUID>686194bc-7f23-4a48-bfdd-e1161cfd64f1</LayoutGUID>
+      <LayoutLastModified>2010-09-14T16:24:28.133+02:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>19</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumnsCSS</LayoutCodeName>
+      <LayoutDisplayName>Three columns (CSS)</LayoutDisplayName>
+      <LayoutDescription>Three columns with web part zones using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 33%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 33%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 34%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>532e7f23-c78e-4f74-861b-f386a189c2b9</LayoutVersionGUID>
+      <LayoutGUID>a96ae4bf-f02b-4b2f-ac84-f49cf2c83a1e</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:08:07.433+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>5</LayoutID>
+      <LayoutCodeName>CMS.ThreeColumnsTopBottom</LayoutCodeName>
+      <LayoutDisplayName>Top row, three columns, bottom row</LayoutDisplayName>
+      <LayoutDescription>Header, three columns and a footer</LayoutDescription>
+      <LayoutCode>&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>e4619866-2374-4eb4-9424-0d5c457c8c0d</LayoutVersionGUID>
+      <LayoutGUID>e6c80e04-274f-4ac7-9da0-da8f21c21182</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:03:09.77+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>4</LayoutID>
+      <LayoutCodeName>CMS.TwoColumnsTopBottom</LayoutCodeName>
+      <LayoutDisplayName>Top row, two columns, bottom row</LayoutDisplayName>
+      <LayoutDescription>Header, two columns and a footer with web part zones</LayoutDescription>
+      <LayoutCode>&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>f298ad59-4cfc-4e88-a983-17aac89d7683</LayoutVersionGUID>
+      <LayoutGUID>906a617f-e329-45ee-a7bf-b96c8af6d665</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:03:28.427+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>2</LayoutID>
+      <LayoutCodeName>CMS.TwoColumns</LayoutCodeName>
+      <LayoutDisplayName>Two columns</LayoutDisplayName>
+      <LayoutDescription>Two columns with web part zones.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td style="width: 49%;"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>ccfe688b-ddbe-4b41-b336-b54df3929bec</LayoutVersionGUID>
+      <LayoutGUID>b4ee3569-7e69-46fa-8b55-b2b1ffe3c3cf</LayoutGUID>
+      <LayoutLastModified>2010-07-30T09:00:00.76+02:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>8</LayoutID>
+      <LayoutCodeName>TwoColumns20_80</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 20/80</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 20%/80%.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="20%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="80%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>c9518e2a-9269-4c2b-a0c6-136426f7418f</LayoutVersionGUID>
+      <LayoutGUID>10dd7256-bdce-4ab8-a49d-f0959b33d370</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:16:06.017+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>14</LayoutID>
+      <LayoutCodeName>CMS.TwoColumns20_80CSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 20/80 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 20%/80% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 20%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 80%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>efb752a8-87f9-4434-89b9-312796d14faf</LayoutVersionGUID>
+      <LayoutGUID>7ab5c1f8-3ec3-452f-85cc-c33dc2b712eb</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:16:17.427+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>9</LayoutID>
+      <LayoutCodeName>TwoColumns30_70</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 30/70</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 30%/70%.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="30%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="70%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>596dce8d-6391-4468-ae4f-31bda94f28e5</LayoutVersionGUID>
+      <LayoutGUID>32053d5c-d7d8-48c9-837a-0353a172663b</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:32:56.647+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>15</LayoutID>
+      <LayoutCodeName>CMS.TwoColumns30_70CSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 30/70 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 30%/70% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 30%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 70%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>32eebbc0-f762-4f3a-a566-4ebbf5034d59</LayoutVersionGUID>
+      <LayoutGUID>1e6331ed-3091-4bf2-adc0-e27e8f5489be</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:33:06.62+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>11</LayoutID>
+      <LayoutCodeName>TwoColumns70_30</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 70/30</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 70%/30%.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="70%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="30%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>50fb9cd7-495f-4900-97a8-17cdd38bd1a7</LayoutVersionGUID>
+      <LayoutGUID>15eb7aac-bf3d-42dd-8179-4f46e44bff05</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:34:27.233+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>16</LayoutID>
+      <LayoutCodeName>CMS.TwoColumns70_30CSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 70/30 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 70%/30% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 70%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 30%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>fa7f849b-bcbf-43ae-9096-83e699602f3d</LayoutVersionGUID>
+      <LayoutGUID>68916806-2b60-43ae-ac8a-b0b741cf9e6e</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:34:33.007+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>10</LayoutID>
+      <LayoutCodeName>TwoColumns80_20</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 80/20</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 80%/20%.</LayoutDescription>
+      <LayoutCode>&lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;div style="width: 100%"&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="80%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="20%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;      </LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>1687c8a9-9b93-4d00-93b1-7e679e416d1f</LayoutVersionGUID>
+      <LayoutGUID>f0357951-1ef8-492b-862f-d3984f0c3296</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:34:39.453+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>17</LayoutID>
+      <LayoutCodeName>CMS.TwoColumns80_20CSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns - 80/20 (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two columns in ratio 80%/20% using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 80%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 20%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>8dc0966c-17a9-42ff-90ef-bdad03a290ed</LayoutVersionGUID>
+      <LayoutGUID>80d21b69-dfd0-4648-9571-36f2dbf1500e</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:34:44.87+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>13</LayoutID>
+      <LayoutCodeName>CMS.TwoColumnsCSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two column layout using CSS</LayoutDescription>
+      <LayoutCode>&lt;div&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneTop" runat="server" /&gt;      
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 50%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 50%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;
+  &lt;cc1:CMSWebPartZone ID="zoneBottom" runat="server" /&gt;
+&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>3eff25e8-4c1e-48b5-9cfd-a2ec21a4bfad</LayoutVersionGUID>
+      <LayoutGUID>550a79a7-95ba-453b-801f-683892a2b365</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:42:46.963+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>12</LayoutID>
+      <LayoutCodeName>CMS.TwoThreeColumns</LayoutCodeName>
+      <LayoutDisplayName>Two columns, three columns</LayoutDisplayName>
+      <LayoutDescription>Two columns 50%/50% in the first row, three columns 30%/30%/30% in the second row.</LayoutDescription>
+      <LayoutCode>&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="50%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;table border="0" width="100%"&gt;
+  &lt;tr valign="top"&gt;
+    &lt;td width="33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomCenter" runat="server" /&gt;      
+    &lt;/td&gt;
+    &lt;td width="33%"&gt;
+      &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>7191c148-dc6c-40a9-b925-a1466bd3c67f</LayoutVersionGUID>
+      <LayoutGUID>9dd18e31-ca68-4166-99fe-0d19428a78d9</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:47:53.7+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_layout>
+      <LayoutID>18</LayoutID>
+      <LayoutCodeName>CMS.TwoThreeColumnsCSS</LayoutCodeName>
+      <LayoutDisplayName>Two columns, three columns (CSS)</LayoutDisplayName>
+      <LayoutDescription>Two columns 50%/50% in the first row, three columns 30%/30%/30% in the second row using CSS.</LayoutDescription>
+      <LayoutCode>&lt;div style="width: 100%;"&gt;
+  &lt;div style="width: 50%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 50%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneRight" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="width: 100%; clear: both;"&gt;
+  &lt;div style="width: 33%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomLeft" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 33%; float: right;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomRight" runat="server" /&gt;      
+  &lt;/div&gt;
+  &lt;div style="width: 34%; float: left;"&gt;
+    &lt;cc1:CMSWebPartZone ID="zoneBottomCenter" runat="server" /&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear: both"&gt;&lt;/div&gt;</LayoutCode>
+      <LayoutCheckedOutFilename></LayoutCheckedOutFilename>
+      <LayoutCheckedOutMachineName></LayoutCheckedOutMachineName>
+      <LayoutVersionGUID>7588708b-a22c-4f82-9745-0a94da53a467</LayoutVersionGUID>
+      <LayoutGUID>7cb4cc0e-6c2f-43a2-81e0-06cc256df48e</LayoutGUID>
+      <LayoutLastModified>2008-03-11T17:48:02.997+01:00</LayoutLastModified>
+    </cms_layout>
+    <cms_metafile>
+      <MetaFileID>899</MetaFileID>
+      <MetaFileObjectID>1</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>622</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>dd71b5db-eb76-4a95-b27d-fedcc91297a1</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:52.747+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>900</MetaFileID>
+      <MetaFileObjectID>2</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>5.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1013</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>3316a2df-090c-46ff-914c-2be9bac62e88</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:52.94+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>901</MetaFileID>
+      <MetaFileObjectID>3</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3columns.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1293</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>b2b6f42e-44f7-4fd9-8c23-8404a709cfcf</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.087+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>902</MetaFileID>
+      <MetaFileObjectID>4</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>6.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1187</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>5b9567ed-0c9c-4515-bcf3-cec178e90527</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.22+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>903</MetaFileID>
+      <MetaFileObjectID>5</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>4.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1402</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>60ef8edf-df35-4ae9-9e46-44683f42a919</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.37+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>904</MetaFileID>
+      <MetaFileObjectID>6</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>grid_2x2.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>988</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>b5efe56f-b8f4-452a-864c-c9e6d848fe91</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.55+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>905</MetaFileID>
+      <MetaFileObjectID>7</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>grif_3x2.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1336</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>3b52d09f-0fec-4ed2-a4f7-253f0b88a2f9</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.7+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>906</MetaFileID>
+      <MetaFileObjectID>8</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_20_80.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1158</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>3ad65115-55a1-4702-8429-38016b16a63c</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:53.87+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>907</MetaFileID>
+      <MetaFileObjectID>9</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_30_70.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1168</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>a7f07b7b-6b6c-46f4-9e09-79a046ff7d7b</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.03+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>908</MetaFileID>
+      <MetaFileObjectID>10</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_80_20.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1068</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>f53fa590-09bd-4a73-a337-45d773414572</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.177+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>909</MetaFileID>
+      <MetaFileObjectID>11</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_70_30.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1078</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>eae871e8-0b7d-4107-9922-74a63b32c84e</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.33+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>910</MetaFileID>
+      <MetaFileObjectID>12</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_3c.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1250</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>cf58a49b-c0f6-4e9d-a1ac-55390a0bc01d</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.497+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>911</MetaFileID>
+      <MetaFileObjectID>13</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>5.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1013</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>5e1a2652-4279-420b-bea4-3b5e2e36da30</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.657+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>912</MetaFileID>
+      <MetaFileObjectID>14</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_20_80.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1158</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>9b19e3ff-4646-4b7b-a9c0-bb2feabafbd0</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.807+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>913</MetaFileID>
+      <MetaFileObjectID>15</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_30_70.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1168</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>c3636e45-f3c6-46bb-bbf9-80b8bc6f86a4</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:54.967+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>914</MetaFileID>
+      <MetaFileObjectID>16</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_70_30.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1078</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>9f22a28d-6d44-4ec4-b740-eea9a35dff4c</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.12+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>915</MetaFileID>
+      <MetaFileObjectID>17</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_80_20.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1068</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>ed62c94f-178e-4e37-86e0-e7501850dfe7</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.26+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>916</MetaFileID>
+      <MetaFileObjectID>18</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>2c_3c.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1250</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>40a23b15-1b79-4e9a-ad5b-9c40aa6a9545</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.41+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>917</MetaFileID>
+      <MetaFileObjectID>19</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3columns.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1293</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>91d3274b-26a4-4dc8-a13e-67be1766c1fa</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.587+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>918</MetaFileID>
+      <MetaFileObjectID>20</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>grid_2x2.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>988</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>b9cbc27d-d217-4ba5-9c64-5a1c0b83a851</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.737+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>919</MetaFileID>
+      <MetaFileObjectID>21</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>grif_3x2.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1336</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>6437bb97-f136-4d8e-8bf5-0b500f8a5a55</MetaFileGUID>
+      <MetaFileLastModified>2010-08-04T15:48:55.9+02:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>2690</MetaFileID>
+      <MetaFileObjectID>42</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>FullPage.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>622</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>28c8dd2a-a348-4885-8908-ad897b735029</MetaFileGUID>
+      <MetaFileLastModified>2011-01-13T18:41:58.187+01:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>2691</MetaFileID>
+      <MetaFileObjectID>43</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3c_25_50_25.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1132</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>f00e41c5-d1ee-435a-b3e6-cd6bd4c58b3b</MetaFileGUID>
+      <MetaFileLastModified>2011-01-13T18:41:58.303+01:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>2692</MetaFileID>
+      <MetaFileObjectID>44</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3c_20_60_20.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1132</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>812fbc16-28e1-4bc6-8382-371503f00e2c</MetaFileGUID>
+      <MetaFileLastModified>2011-01-13T18:41:58.443+01:00</MetaFileLastModified>
+    </cms_metafile>
+    <cms_metafile>
+      <MetaFileID>2693</MetaFileID>
+      <MetaFileObjectID>45</MetaFileObjectID>
+      <MetaFileObjectType>cms.layout</MetaFileObjectType>
+      <MetaFileGroupName>Thumbnail</MetaFileGroupName>
+      <MetaFileName>3columns.png</MetaFileName>
+      <MetaFileExtension>.png</MetaFileExtension>
+      <MetaFileSize>1293</MetaFileSize>
+      <MetaFileMimeType>image/png</MetaFileMimeType>
+      <MetaFileImageWidth>64</MetaFileImageWidth>
+      <MetaFileImageHeight>49</MetaFileImageHeight>
+      <MetaFileGUID>44490e4b-3b00-41e3-a85c-cef61ce8bb14</MetaFileGUID>
+      <MetaFileLastModified>2011-01-13T18:41:58.557+01:00</MetaFileLastModified>
+    </cms_metafile>
+  </NewDataSet>
+</cms_layout>

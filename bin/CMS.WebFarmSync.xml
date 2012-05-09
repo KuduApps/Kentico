@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.WebFarmSync</name>
+    </assembly>
+    <members>
+        <member name="F:CMS.WebFarmSync.WebFarmAnonymousTaskListInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmAnonymousTaskListInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty WebFarmAnonymousTaskListInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmAnonymousTaskListInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new WebFarmAnonymousTaskListInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmAnonymousTaskListInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result (not applied)</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>       
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmTaskListInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskListInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty WebFarmTaskListInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskListInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new WebFarmTaskListInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskListInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result (not applied)</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>       
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmUpdater">
+            <summary>
+            Class for run thread with asynchronous data download.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmUpdater.RunAsync(System.Security.Principal.WindowsIdentity)">
+            <summary>
+            Run async web farm update.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmUpdater.Run">
+            <summary>
+            Run web farm update, this is not asynchronous execution.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmUpdater.Urls">
+            <summary>
+            Urls.
+            </summary>
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmObjectType">
+            <summary>
+            Web farm object types.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmObjectType.WEBFARMSERVER">
+            <summary>
+            Webfarm server.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmObjectType.WEBFARMTASK">
+            <summary>
+            Webfarm task.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmObjectType.WEBFARMTASKLIST">
+            <summary>
+            Virtual Webfarm task list.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmObjectType.WEBFARMANONYMOUSTASKLIST">
+            <summary>
+            Virtual Webfarm anonymous task list.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmServerInfo">
+            <summary>
+            WebFarmServerInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmServerInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty WebFarmServerInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new WebFarmServerInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerID">
+            <summary>
+            Server ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerName">
+            <summary>
+            Server name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerURL">
+            <summary>
+            Server URL.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerDisplayName">
+            <summary>
+            Server display name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerGUID">
+            <summary>
+            Server GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerLastModified">
+            <summary>
+            Object last modified.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerEnabled">
+            <summary>
+            Indicated wheter server is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmServerInfo.ServerLastUpdated">
+            <summary>
+            Web farm server last updated.
+            </summary>
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmServerInfoProvider">
+            <summary>
+            Class providing WebFarmServerInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.UseWebFarmSynchronization">
+            <summary>
+            Ensures the loading of all servers into the hashtable and returns true
+            if there are any servers to be synchronized
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.SetServerTasks(System.String,System.Int32)">
+            <summary>
+            Sets task to server.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverName">Server name</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetAllServers">
+            <summary>
+            Returns the DataSet of all the servers records.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetAllServers(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns the DataSet of all the servers records.
+            </summary>
+            <param name="columns">Data columns to return</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetAllEnabledServers">
+            <summary>
+            Returns the DataSet of all the enabled servers records.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInfoByGUID(System.Guid)">
+            <summary>
+            Returns object with specified GUID.
+            </summary>
+            <param name="guid">Object GUID</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInfo(System.Int32)">
+            <summary>
+            Returns the WebFarmServerInfo structure for the specified webFarmServer.
+            </summary>
+            <param name="webFarmServerId">WebFarmServer id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInfo(System.String)">
+            <summary>
+            Returns the WebFarmServerInfo structure for the specified webFarmServer.
+            </summary>
+            <param name="serverName">ServerName</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.SetWebFarmServerInfo(CMS.WebFarmSync.WebFarmServerInfo)">
+            <summary>
+            Sets (updates or inserts) specified webFarmServer.
+            </summary>
+            <param name="infoObj">WebFarmServer to set</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.DeleteWebFarmServerInfo(CMS.WebFarmSync.WebFarmServerInfo)">
+            <summary>
+            Deletes specified webFarmServer.
+            </summary>
+            <param name="infoObj">WebFarmServer object</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.DeleteWebFarmServerInfo(System.Int32)">
+            <summary>
+            Deletes specified webFarmServer.
+            </summary>
+            <param name="webFarmServerId">WebFarmServer id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.RemoveFromHash(System.String)">
+            <summary>
+            Remove from hash table.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.Clear(System.Boolean)">
+            <summary>
+            Clear hashtable.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.SetServerTasksInternal(System.String,System.Int32)">
+            <summary>
+            Sets task to server.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverName">Server name</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetServersInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns the DataSet of all the servers records.
+            </summary>
+            <param name="columns">Data columns to return</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInternal(System.Guid)">
+            <summary>
+            Returns object with specified GUID.
+            </summary>
+            <param name="guid">Object GUID</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInternal(System.Int32)">
+            <summary>
+            Returns the WebFarmServerInfo structure for the specified webFarmServer.
+            </summary>
+            <param name="webFarmServerId">WebFarmServer id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.GetWebFarmServerInternal(System.String)">
+            <summary>
+            Returns the WebFarmServerInfo structure for the specified webFarmServer.
+            </summary>
+            <param name="serverName">ServerName</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.SetWebFarmServerInternal(CMS.WebFarmSync.WebFarmServerInfo)">
+            <summary>
+            Sets (updates or inserts) specified webFarmServer.
+            </summary>
+            <param name="infoObj">WebFarmServer to set</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmServerInfoProvider.DeleteWebFarmServerInternal(CMS.WebFarmSync.WebFarmServerInfo)">
+            <summary>
+            Deletes specified webFarmServer.
+            </summary>
+            <param name="infoObj">WebFarmServer object</param>
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmTaskInfo">
+            <summary>
+            WebFarmTaskInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSync.WebFarmTaskInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty WebFarmTaskInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new WebFarmTaskInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskID">
+            <summary>
+            Task ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskTextData">
+            <summary>
+            Text data.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskType">
+            <summary>
+            Task type.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskTarget">
+            <summary>
+            Task target.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskMachineName">
+            <summary>
+            Task machine name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskCreated">
+            <summary>
+            Time when task was created.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskEnabled">
+            <summary>
+            Indicates whether all available servers has been assigned to this task.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskBinaryData">
+            <summary>
+            Binary data.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskGUID">
+            <summary>
+            Task GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSync.WebFarmTaskInfo.TaskIsAnonymous">
+            <summary>
+            Indicates if the task is not assigned to any server.
+            </summary>
+        </member>
+        <member name="T:CMS.WebFarmSync.WebFarmTaskInfoProvider">
+            <summary>
+            Class providing WebFarmTaskInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTasks(System.String,System.String)">
+            <summary>
+            Gets the web farm tasks.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTaskInfo(System.Guid)">
+            <summary>
+            Gets the task by given GUID.
+            </summary>
+            <param name="taskGuid">Task GUID</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTaskInfo(System.Int32)">
+            <summary>
+            Returns the WebFarmTaskInfo structure for the specified webFarmTask.
+            </summary>
+            <param name="webFarmTaskId">WebFarmTask id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.SetWebFarmTaskInfo(CMS.WebFarmSync.WebFarmTaskInfo)">
+            <summary>
+            Sets (updates or inserts) specified webFarmTask.
+            </summary>
+            <param name="webFarmTask">WebFarmTask to set</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteWebFarmTaskInfo(CMS.WebFarmSync.WebFarmTaskInfo)">
+            <summary>
+            Deletes specified webFarmTask.
+            </summary>
+            <param name="webFarmTaskObj">WebFarmTask object</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteWebFarmTaskInfo(System.Int32)">
+            <summary>
+            Deletes specified webFarmTask.
+            </summary>
+            <param name="webFarmTaskId">WebFarmTask id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteAllTaskInfo">
+            <summary>
+            Deletes all synchonization tasks.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteAllTaskInfo(System.String)">
+            <summary>
+            Deletes all task for specified server.
+            </summary>
+            <param name="serverName">Name of server (If not set, anonymous tasks are deleted.)</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteServerTask(System.Int32,System.Int32)">
+            <summary>
+            Unassign task from specified server.
+            </summary>
+            <param name="serverId">ID of server</param>
+            <param name="taskId">ID of task</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteServerTasks(System.String)">
+            <summary>
+            Delete all tasks based on where condition.
+            </summary>
+            <param name="whereCondition">Where condition</param>        
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteServerTasks(System.String,System.Int32)">
+            <summary>
+            Deletes the specified server tasks.
+            </summary>
+            <param name="whereCondition">Where condition</param>
+            <param name="serverId">Server ID</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTasksInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Gets the web farm tasks.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+            <param name="topN">Top N expression</param>
+            <param name="columns">Specifies dataset's columns</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTaskInfoInternal(System.Guid)">
+            <summary>
+            Gets the task by given GUID.
+            </summary>
+            <param name="taskGuid">Task GUID</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.GetWebFarmTaskInfoInternal(System.Int32)">
+            <summary>
+            Returns the WebFarmTaskInfo structure for the specified webFarmTask.
+            </summary>
+            <param name="webFarmTaskId">WebFarmTask id</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.SetWebFarmTaskInfoInternal(CMS.WebFarmSync.WebFarmTaskInfo)">
+            <summary>
+            Sets (updates or inserts) specified webFarmTask.
+            </summary>
+            <param name="webFarmTask">WebFarmTask to set</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteWebFarmTaskInfoInternal(CMS.WebFarmSync.WebFarmTaskInfo)">
+            <summary>
+            Deletes specified webFarmTask.
+            </summary>
+            <param name="webFarmTaskObj">WebFarmTask object</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteAllTaskInfoInternal">
+            <summary>
+            Deletes all synchonization tasks.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteAllTaskInfoInternal(System.String)">
+            <summary>
+            Deletes all task for specified server.
+            </summary>
+            <param name="serverName">Name of server</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteServerTaskInternal(System.Int32,System.Int32)">
+            <summary>
+            Unassign task from specified server.
+            </summary>
+            <param name="serverId">ID of server</param>
+            <param name="taskId">ID of task</param>
+        </member>
+        <member name="M:CMS.WebFarmSync.WebFarmTaskInfoProvider.DeleteServerTasksInternal(System.String,System.Int32)">
+            <summary>
+            Deletes the specified server tasks.
+            </summary>
+            <param name="whereCondition">Where condition</param>
+            <param name="serverId">Server ID</param>
+        </member>
+    </members>
+</doc>

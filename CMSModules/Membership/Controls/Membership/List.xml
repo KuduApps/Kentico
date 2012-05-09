@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="MembershipID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditMembership) {window.EditMembership({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="MembershipDisplayName" caption="$membership.membershipname$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.membership" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

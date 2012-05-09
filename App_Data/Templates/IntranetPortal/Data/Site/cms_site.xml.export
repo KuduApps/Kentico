@@ -1,0 +1,16 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>107</SiteID>
+      <SiteName>IntranetPortal</SiteName>
+      <SiteDisplayName>Intranet Portal</SiteDisplayName>
+      <SiteDescription>Intranet portal site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.8</SiteDomainName>
+      <SiteDefaultStylesheetID>90</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteGUID>c8137988-f583-4851-9680-46892e3a707f</SiteGUID>
+      <SiteLastModified>2011-08-29T11:43:25.803+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

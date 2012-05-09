@@ -1,0 +1,1079 @@
+/* --- General --- */
+.UP
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #eee;
+    border: solid 1px #888;
+    padding: 5px 15px 5px 5px;
+}
+
+.UP span
+{
+    vertical-align: middle;
+}
+
+.RTL .UP
+{
+    left: auto;
+    right: 5px;
+    padding: 5px 5px 5px 15px;
+}
+
+.RTL .UP img
+{
+    padding-left: 5px;
+}
+
+.FloatLeft, .RTL .FloatRight
+{
+    float: left;
+    text-align: left;
+}
+
+.FloatRight, .RTL .FloatLeft
+{
+    float: right;
+    text-align: right;
+}
+
+/* --- Design mode --- */
+
+/* --- WIDGETS --- */
+
+/* Widget - Editor & Group admin */
+.EditorWidget .WebPartBorder, .GroupWidget .WebPartBorder
+{
+    padding: 1px;
+    border: none;
+    min-height: 24px;
+    min-width: 60px;
+    clear: both;
+}
+
+.EditorWidget .WebPartBorderActive, .GroupWidget .WebPartBorderActive
+{
+    border: dotted 1px #8a8a8a;
+    padding: 0px;
+    min-height: 24px;
+    min-width: 60px;
+    clear: both;
+}
+
+.EditorWidget .WebPartHeader, .GroupWidget .WebPartHeader
+{
+    height: 0px;
+    display: none;
+    direction: rtl;
+}
+
+.RTL .EditorWidget .WebPartHeader, .RTL .GroupWidget .WebPartHeader
+{
+    direction: ltr;
+}
+
+.EditorWidget .WebPartHeader .WebPartHandle, .GroupWidget .WebPartHeader .WebPartHandle
+{
+    z-index: 9990;
+    height: 18px;
+    cursor: move;
+    direction: ltr; /*float: right;*/ /* JakubH, contact me if you have problems */
+    position: absolute;
+    display: table;
+    background-color: #DADBDA;
+    background-image: url(./Images/CMSModules/CMS_PortalEngine/Widgets/widget_bg.png);
+    background-repeat: repeat-x;
+    padding: 2px 2px 2px 0px;
+    border: solid 1px #908F8F;
+}
+
+.RTL .EditorWidget .WebPartHeader .WebPartHandle, .RTL .GroupWidget .WebPartHeader .WebPartHandle
+{
+    direction: rtl;
+}
+
+.WebPart .ActionTop
+{
+    z-index: 9999 !important;
+}
+
+.WidgetDrag
+{
+    cursor: move !important;
+}
+
+.WidgetVariantSlider
+{
+    float: left;
+}
+
+.RTL .WidgetVariantSlider
+{
+    float: right;
+}
+
+.WidgetVariantSlider .SliderBarPanel, .WidgetVariantSlider .SliderItem
+{
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.WidgetVariantSlider .SliderRight, .WidgetVariantSlider .SliderRightMVT, .WidgetVariantSlider .SliderLeft, .WidgetVariantSlider .SliderLeftMVT, .WidgetVariantSlider .SliderPartLabel
+{
+    margin-top: 2px;
+}
+
+.WidgetVariantSlider .SliderItem
+{
+    padding-top: 2px;
+}
+
+.SliderWidgetConflict
+{
+    padding-top: 1px;
+    font-weight: bold;
+    cursor: help;
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.EditorWidget .WebPartActionButton, .GroupWidget .WebPartActionButton
+{
+    float: left;
+    padding: 0px 1px 0px 3px;
+    cursor: pointer;
+}
+
+.RTL .EditorWidget .WebPartActionButton, .RTL .GroupWidget .WebPartActionButton
+{
+    float: right;
+}
+
+.GroupWidgetZone .WebPartZoneBorder
+{
+    border: 1px solid transparent !important;
+}
+
+
+.EditorWidget .WebPartBorderActive .WebPartHeader, .GroupWidget .WebPartBorderActive .WebPartHeader
+{
+    display: block;
+}
+
+.WidgetHeaderSeparator
+{
+    height: 6px;
+    background: url(./Images/Design/Controls/FrameResizer/Vertical/Resizer.png) repeat-x top left;
+}
+
+.WidgetTabsPageHeader
+{
+    background-color: #ffffff;
+}
+
+.WidgetTabsPageHeader .PageTitleHeader, .WebpartTabsPageHeader .PageTitleHeader, .DialogsPageHeader .PageTitleHeader
+{
+    padding: 6px 5px 2px 10px;
+    white-space: nowrap;
+    background: #414a55 url(./Images/Design/Backgrounds/PageTitleHeaderDark.png) repeat-x top left;
+    border-bottom: 1px solid #414a54;
+}
+
+.WebPartDocumentationHeader
+{
+    background: #edf4f9 url(./Images/Design/Backgrounds/PageTitleHeader.png) repeat-x top left;
+    padding: 5px 5px 2px;
+}
+
+.WidgetTabsPageHeader .PageTitle, .WebpartTabsPageHeader .PageTitle, .DialogsPageHeader .PageTitle, .PageTitleHeader a
+{
+    color: #fff;
+}
+
+/* Zone - Editor & Group admin */
+.EditorWidgetZone .WebPartZoneBorder
+{
+    min-height: 29px;
+    min-width: 40px;
+    border: dotted 1px #000000;
+    padding: 1px;
+}
+
+.GroupWidgetZone .WebPartZoneBorder
+{
+    padding: 1px;
+    min-height: 29px;
+    min-width: 40px;
+    border: 1px solid transparent !important;
+}
+
+.EditorWidgetZone .WebPartZoneBorderActive, .GroupWidgetZone .WebPartZoneBorderActive
+{
+    border: dotted 1px #000000;
+    padding: 1px;
+    min-height: 29px;
+    min-width: 40px;
+}
+
+.GroupWidgetZone .WebPartZoneHeader
+{
+    height: 0px;
+    display: none;
+    text-align: left;
+    padding-right: 22px;
+}
+
+.RTL .GroupWidgetZone .WebPartZoneHeader
+{
+    text-align: right;
+    padding-right: 0px;
+}
+
+.Safari.RTL .GroupWidgetZone .WebPartZoneHeader
+{
+    float: right;
+    margin-right: 30px;
+}
+
+.EditorWidgetZone .WebPartZoneHeader
+{
+    height: 0px;
+    text-align: left;
+    padding-right: 22px;
+    height: 29px;
+}
+
+.RTL .EditorWidgetZone .WebPartZoneHeader
+{
+    text-align: right;
+    padding-right: 0px;
+}
+
+.Safari.RTL .EditorWidgetZone .WebPartZoneHeader
+{
+    float: right;
+    margin-right: 30px;
+}
+
+.EditorWidgetZone .WebPartZoneActions, .GroupWidgetZone .WebPartZoneActions
+{
+    position: absolute;
+    z-index: 9991;
+    height: 16px;
+}
+
+.EditorWidgetZone .WebPartZoneBorderActive .WebPartZoneHeader, .GroupWidgetZone .WebPartZoneBorderActive .WebPartZoneHeader
+{
+    display: block;
+}
+
+.EditorWidgetZone .WebPartZoneCue, .GroupWidgetZone .WebPartZoneCue
+{
+    border: dashed 1px #ff0000;
+    background-color: #ffffff;
+    display: none;
+    margin: 1px;
+    min-height: 26px;
+}
+
+.IE6 .EditorWidgetZone .WebPartZoneCue, .IE6 .GroupWidgetZone .WebPartZoneCue
+{
+    height: 26px;
+}
+
+/* Widget - User */
+.UserWidget .WebPartHandle
+{
+    background: #cdcdcd url(./Images/CMSModules/CMS_PortalEngine/Widgets/back.gif) repeat-x;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+    padding: 2px 3px 5px 8px;
+    cursor: move;
+    height: 17px;
+}
+
+.RTL .UserWidget .WebPartHandle
+{
+    text-align: right;
+    padding: 2px 8px 5px 3px;
+}
+
+.UserWidget .WebPartTitle
+{
+    display: block;
+    padding-top: 2px;
+    padding-left: 5px;
+    overflow: hidden;
+    float: left;
+}
+
+.RTL .UserWidget .WebPartTitle
+{
+    padding-right: 5px;
+}
+
+.UserWidgetDisabled .WebPartHandle
+{
+    cursor: default;
+}
+
+.UserWidget .WebPartBorder, .UserWidget .WebPartBorderActive
+{
+    border: solid 1px #c7c4c4;
+}
+
+.UserWidget .WebPartActionButton
+{
+    float: left;
+    padding: 0px 1px 0px 3px;
+    cursor: pointer;
+}
+
+.RTL .UserWidget .WebPartActionButton
+{
+    float: right;
+}
+
+.UserWidgetDisabled .WebPartActionButton
+{
+    cursor: default;
+}
+
+.UserWidget .WebPartContent
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.MinimizedWidget .WebPartContent
+{
+    display: none;
+}
+
+/* Widget zone - user */
+.UserWidgetZone .WebPartZoneBorder
+{
+    padding: 0px;
+    border: none;
+    min-height: 29px;
+    min-width: 60px;
+    border: 1px solid transparent;
+}
+
+.UserWidgetZoneDisabled .WebPartZoneActionButton
+{
+    cursor: default;
+}
+
+.UserWidgetZone .WebPartZoneBorderActive
+{
+    border: 1px solid gray;
+    padding: 0px;
+    min-height: 29px;
+}
+
+.UserWidgetZone .WebPartZoneHeader
+{
+    height: 0px;
+    display: none;
+    text-align: left;
+    padding-right: 22px;
+    min-width: 40px;
+}
+
+.RTL .UserWidgetZone .WebPartZoneHeader
+{
+    padding-right: 0px;
+}
+
+.Safari.RTL .UserWidgetZone .WebPartZoneHeader
+{
+    float: right;
+    margin-right: -10px;
+}
+
+.UserWidgetZone .WebPartZoneActions
+{
+    position: absolute;
+    float: right;
+    z-index: 9991;
+    height: 16px;
+}
+
+/* Between classes IE7 and RTL cannot be space because they are on same level */
+.IE7.RTL .UserWidgetZone .WebPartZoneActions
+{
+    position: relative;
+}
+
+.UserWidgetZone .WebPartZoneBorderActive .WebPartZoneHeader
+{
+    display: block;
+}
+
+.UserWidgetZone .WebPartZoneCue
+{
+    border: dashed 1px #ff0000;
+    background-color: #ffffff;
+    display: none;
+    margin: 1px;
+    min-height: 26px;
+}
+
+.IE6 .UserWidgetZone .WebPartZoneCue
+{
+    height: 26px;
+}
+
+
+/* Widget actions */
+.EditorWidgetActions .AddWidget
+{
+    background: transparent url(./Images/Design/Controls/WidgetActions/add.png) no-repeat scroll center left;
+    padding-left: 22px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+}
+
+.EditorWidgetActions .ActionWidgetBackground
+{
+    border: 1px solid #8a8a8a;
+    padding: 4px 4px 3px;
+    background: transparent url(./Images/Design/Controls/WidgetActions/background.png) repeat-x center left;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.EditorWidgetActions .ResetWidget
+{
+    background: transparent url(./Images/Design/Controls/WidgetActions/clear.png) no-repeat scroll top left;
+    padding-left: 22px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+}
+
+
+.RTL .EditorWidgetActions .AddWidget, .RTL .EditorWidgetActions .ResetWidget
+{
+    padding-left: 4px;
+    padding-right: 22px;
+    background-position: 98% center;
+}
+
+/* Between classes IE7 and RTL cannot be space because they are on same level */
+.IE7.RTL .EditorWidgetActions .AddWidget, .IE7.RTL .EditorWidgetActions .ResetWidget
+{
+    padding-left: 22px;
+    padding-right: 4px;
+}
+
+.EditorWidgetActions
+{
+    padding: 7px 0;
+}
+
+.WebPartForm .FormCategoryList ul li, .WebPartForm .ReportFormCategoryList ul li
+{
+    list-style-type: none;
+}
+
+
+.WebpartProperties .FormPanel
+{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 137px;
+}
+
+.RTL .WebPartForm .FormPanel
+{
+    padding-top: 5px;
+    padding-right: 141px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+.RTL .WebPartZoneProperties .WebPartForm .FormPanel
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.WidgetsProperties .WebPartForm .FormPanel, .RTL .WidgetsProperties .WebPartForm .FormPanel
+{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+.WebpartProperties .WebPartForm .InfoLabel
+{
+    padding-left: 146px;
+}
+
+.RTL .WebPartForm .InfoLabel
+{
+    padding-right: 146px;
+    padding-left: 0px;
+}
+
+.WidgetsProperties .WebPartForm .InfoLabel
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+
+.RTL .WebPartForm .ReportFormCategoryList
+{
+    float: right;
+}
+
+.RTL .WebPartForm .ReportFormPanel
+{
+    padding: 0px 141px 5px 5px;
+}
+
+.WebPartForm .ReportFormPanel
+{
+    padding: 5px 5px 0 141px;
+}
+
+.WebPartForm .ReportFormCategoryList
+{
+    z-index: 1;
+}
+/*
+.WebPartForm .ReportFormCategoryList ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.WebPartForm .ReportFormCategoryList ul li
+{
+    list-style-type: none;
+}
+
+.WebPartForm .ReportFormCategoryList ul li a
+{
+    display: block;
+    color: #004377;
+    background: url(./Images/Design/Controls/Tabs/Vertical/TabWebPro.png) no-repeat;
+    padding: 5px 0px 5px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+
+.RTL .WebPartForm .ReportFormCategoryList ul li a
+{
+    padding: 5px 16px 5px 0px;
+}
+
+.IE7 .WebPartForm .ReportFormCategoryList ul li a
+{
+    padding-top: 3px;
+}
+
+.WebPartForm .ReportFormCategoryList ul li a:hover
+{
+    background: white url(./Images/Design/Controls/Tabs/Vertical/TabMidHover.png);
+}
+
+
+
+/* Dashboard widget */
+.DashboardMode
+{
+    background-color: #c5cbd0;
+}
+
+.DashBoard
+{
+    padding-bottom: 10px;
+}
+
+.DashboardWidget
+{
+    margin: 15px 10px 1px 10px;
+}
+
+.DashboardWidgetZone
+{
+}
+
+.DashboardWidget .TabsTabs
+{
+    position: relative !important;
+}
+
+.DashboardWidget .WebPartHandle
+{
+    color: #ffffff;
+    text-align: left;
+    white-space: nowrap;
+    padding: 4px 6px 2px 3px;
+    cursor: move;
+    background-color: #d4e6fc;
+    background: url(./Images/CMSModules/CMS_Widgets/dashboardheader.png) repeat-x;
+    background-position: center;
+    height: 20px;
+}
+
+.DashboardActions .DashboardActions
+{
+    padding: 0px !important;
+}
+
+.RTL .DashboardWidget .WebPartHandle
+{
+    text-align: right;
+}
+
+.DashboardWidget .WebPartTitle
+{
+    display: block;
+    padding-top: 2px;
+    padding-left: 8px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.DashboardWidget .WebPartHandle input
+{
+    padding: 0;
+    margin-left: 4px;
+    border: 1px solid #373e46 !important;
+}
+
+.RTL .DashboardWidget .WebPartTitle
+{
+    padding-right: 5px;
+}
+
+.DashboardWidget .WebPartBorder, .DashboardWidget .WebPartBorderActive
+{
+    border: solid 1px #aaaaaa;
+    background-color: #ffffff;
+}
+
+.DashboardWidget .WebPartActionButton
+{
+    float: left;
+    padding: 0px 1px 0px 3px;
+    cursor: pointer;
+}
+
+.RTL .DashboardWidget .WebPartActionButton
+{
+    float: right;
+}
+
+.DashboardWidget .WebPartContent
+{
+    margin: 10px;
+    overflow: hidden;
+}
+
+.DashboardWidget .MyMessagesWebPart
+{
+    margin: 0px 0px 10px 0px;
+}
+
+.IE7 .DashboardWidget .WebPartContent
+{
+    padding-bottom: 10px;
+}
+
+.MinimizedWidget .WebPartContent
+{
+    display: none;
+}
+
+.DashboardWidget .MessagingBox
+{
+    padding: 5px 5px 0px 5px;
+}
+
+/* Widget zone - user */
+.DashboardWidgetZone .WebPartZoneBorder
+{
+    /*padding: 2px;*/
+    border: none;
+}
+
+.DashboardWidgetZone .WebPartZoneBorderActive
+{
+    border: 2px solid #c7c4c4;
+    padding: 0px;
+    min-height: 84px;
+}
+
+.DashboardWidgetZone .WebPartZoneHeader
+{
+    display: none;
+}
+
+.RTL .DashboardWidgetZone .WebPartZoneHeader
+{
+    padding-right: 0px;
+}
+
+.DashboardWidgetZone .WebPartZoneActions
+{
+    position: absolute;
+    float: right;
+    z-index: 9991;
+    height: 16px;
+}
+
+.DashboardMode .WidgetActionButtons
+{
+    float: left;
+    padding: 5px 0px 7px 0px;
+}
+
+.IE8.DashboardMode .WidgetActionButtons, .IE7.DashboardMode .WidgetActionButtons
+{
+    padding: 1px 0px 2px 0px;
+}
+
+.RTL.DashboardMode .WidgetActionButtons
+{
+    float: right;
+}
+
+.DashboardMode .WidgetActionContextHelp
+{
+    float: right;
+}
+
+.RTL.DashboardMode .WidgetActionContextHelp
+{
+    float: left;
+}
+
+/* Between classes IE7 and RTL cannot be space because they are on same level */
+.IE7.RTL .DashboardWidgetZone .WebPartZoneActions
+{
+    position: relative;
+}
+
+.DashboardWidgetZone .WebPartZoneBorderActive .WebPartZoneHeader
+{
+    height: 0px;
+    text-align: left;
+    padding-right: 22px;
+    min-width: 40px;
+    display: block;
+}
+
+.DashboardWidgetZone .WebPartZoneCue
+{
+    border: dashed 1px #ff0000;
+    background-color: #ffffff;
+    min-height: 81px;
+    display: none;
+}
+
+.WebPartZoneHighlight
+{
+    border: solid 1px #000000 !important;
+    min-height: 84px;
+    margin: 1px;
+}
+
+.WebPartZoneHighlight .DashboardWidget
+{
+    margin: 13px 8px 0px 8px;
+}
+
+.WebPartZoneHighlight .WebPartContent, .WebPartZoneHighlight .WebPartHandle
+{
+    background-color: #ffffff;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.IE7 .WebPartZoneHighlight .WebPartContent, .IE7 .WebPartZoneHighlight .WebPartHandle
+{
+    zoom: 1;
+}
+
+.DraggedWebPart .WebPartContent, .DraggedWebPart .WebPartHandle
+{
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+}
+
+.IE6 .DashboardWidgetZone .WebPartZoneCue
+{
+    height: 86px;
+}
+
+.DashboardMode .PageTitleHeader
+{
+    background-color: #ffffff;
+    border-bottom: solid 1px #aaaaaa;
+}
+
+.DashboardMode .DashboardActions
+{
+    text-align: left;
+    padding: 5px 5px 3px 8px;
+}
+
+.PageTitleHeader.DashboardActions
+{
+    padding-left: 11px;
+}
+
+.RTL .DashboardActions
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.DashboardWidget .TabsContent
+{
+    padding: 5px;
+}
+
+.DashboardWidget .TabsLeft
+{
+    background: none;
+    width: 0px;
+}
+
+.DashboardWidget .TabsRight
+{
+    background: none;
+}
+
+.DashboardWidget .TabsHeader
+{
+    background-image: url(./Images/Design/Controls/Tabs/TabsPanel.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 29px;
+}
+
+
+.DashboardMode .AddWidget
+{
+    background: transparent url(./Images/Design/Controls/WidgetActions/add.png) no-repeat scroll center left;
+    padding-left: 22px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+}
+
+.DashboardMode .ResetWidget
+{
+    background: transparent url(./Images/Design/Controls/WidgetActions/clear.png) no-repeat scroll center left;
+    padding-left: 22px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+}
+
+.DashboardMode .ActionWidgetBackground
+{
+    border: 1px solid #8a8a8a;
+    padding: 4px 4px 3px;
+    background: transparent url(./Images/Objects/CMS_Widget/background.png) repeat-x center left;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom:1px;
+}
+
+
+.IE8.DashboardMode .AddWidget, .IE8.DashboardMode .ResetWidget, .IE7.DashboardMode .AddWidget, .IE7.DashboardMode .ResetWidget
+{
+    display: block;
+    float: left;
+}
+
+.RTL.DashboardMode .AddWidget
+{
+    background: url(./Images/Design/Controls/WidgetActions/add.png) no-repeat scroll center right transparent;
+}
+
+.RTL.DashboardMode .ResetWidget
+{
+    background: url(./Images/Design/Controls/WidgetActions/clear.png) no-repeat scroll center right transparent;
+}
+
+
+.RTL.DashboardMode .AddWidget, .RTL.DashboardMode .ResetWidget
+{
+    padding: 0px 24px 0px 0px;
+}
+
+
+/* Layout web parts */
+.UserWidget .LayoutTable
+{
+    border: none;
+}
+
+.LayoutFooter
+{
+    border-top: solid 1px #888888;
+    background-color: #cccccc;
+}
+
+.UserWidget .LayoutFooter
+{
+    display: none;
+}
+
+.LayoutFooterContent
+{
+    background-image: url(./Images/CMSModules/CMS_PortalEngine/Widgets/LayoutFooter.png);
+    background-color: #cccccc;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 2px 3px 1px 3px;
+    height: 18px;
+}
+
+.LayoutAction img
+{
+    border: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.LayoutAction
+{
+    text-decoration: none;
+}
+
+.LayoutAction .ActionTitle
+{
+    text-decoration: underline;
+    vertical-align: top;
+}
+
+.LayoutOverlay
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    filter: alpha(opacity=1);
+    opacity: 0.01;
+    background-color: #fff;
+}
+
+.LayoutInfoOverlay
+{
+    border: solid 1px #ffffff;
+    position: absolute;
+    z-index: 9998;
+    background-color: #008800;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    text-align: center;
+}
+
+.LayoutInfoText
+{
+    background-color: #aaddaa;
+    border: solid 1px #008800;
+    padding: 2px;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    color: #000000;
+    margin: auto;
+}
+
+.VerticalResizer, .HorizontalResizer, .BothResizer, .HorizontalDivResizer
+{
+    background-color: #888888;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.HorizontalResizer
+{
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+    cursor: e-resize;
+    width: 2px;
+    max-width: 2px;
+    min-height: 25px;
+}
+
+.VerticalResizer
+{
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 1px #dddddd;
+    cursor: n-resize;
+    height: 2px;
+    max-height: 2px;
+}
+
+.BothResizer
+{
+    cursor: nw-resize;
+    border: solid 1px #888888;
+    background-color: #888888;
+}
+
+.UserWidget .VerticalResizer, .UserWidget .HorizontalResizer, .UserWidget .BothResizer, .UserWidget .HorizontalDivResizer
+{
+    border: none;
+    background-color: Transparent;
+}
+
+.LayoutCenterColumn, .LayoutLeftColumn
+{
+    border-left: solid 1px #cccccc;
+}
+
+.LayoutCenterColumn, .LayoutRightColumn
+{
+    border-right: solid 1px #cccccc;
+}
+
+.PropertiesContextHelp
+{
+    padding: 3px 5px 0px 5px;
+}

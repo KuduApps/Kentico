@@ -1,0 +1,58 @@
+﻿<polls_poll version="6.0">
+  <NewDataSet>
+    <polls_poll>
+      <PollID>100316</PollID>
+      <PollCodeName>HowDidYouFindThisSite</PollCodeName>
+      <PollDisplayName>How did you find this site?</PollDisplayName>
+      <PollTitle>How did you find this site?</PollTitle>
+      <PollAllowMultipleAnswers>false</PollAllowMultipleAnswers>
+      <PollQuestion>How did you find this site?</PollQuestion>
+      <PollAccess>0</PollAccess>
+      <PollResponseMessage>Thank you!</PollResponseMessage>
+      <PollGUID>6b75b7d0-b6d1-43e7-9256-9f1708569ea7</PollGUID>
+      <PollLastModified>2011-04-06T07:59:24.657+02:00</PollLastModified>
+      <PollSiteID>5</PollSiteID>
+      <PollLogActivity>true</PollLogActivity>
+    </polls_poll>
+    <polls_pollanswer>
+      <AnswerID>443</AnswerID>
+      <AnswerText>Print advertising</AnswerText>
+      <AnswerOrder>1</AnswerOrder>
+      <AnswerCount>4</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100316</AnswerPollID>
+      <AnswerGUID>2af4d2b2-c4d5-4506-bea7-f0772fe92e41</AnswerGUID>
+      <AnswerLastModified>2011-04-06T07:55:55.44+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>444</AnswerID>
+      <AnswerText>Link from another web site</AnswerText>
+      <AnswerOrder>1</AnswerOrder>
+      <AnswerCount>9</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100316</AnswerPollID>
+      <AnswerGUID>73b78ab3-be76-4250-b104-0708d8fcba1e</AnswerGUID>
+      <AnswerLastModified>2011-04-06T07:56:04.1+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>442</AnswerID>
+      <AnswerText>Referred by a friend</AnswerText>
+      <AnswerOrder>2</AnswerOrder>
+      <AnswerCount>13</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100316</AnswerPollID>
+      <AnswerGUID>3b8417fe-feee-427c-859d-3ba972107ebd</AnswerGUID>
+      <AnswerLastModified>2011-04-06T07:59:24.637+02:00</AnswerLastModified>
+    </polls_pollanswer>
+    <polls_pollanswer>
+      <AnswerID>445</AnswerID>
+      <AnswerText>Search engine</AnswerText>
+      <AnswerOrder>4</AnswerOrder>
+      <AnswerCount>5</AnswerCount>
+      <AnswerEnabled>true</AnswerEnabled>
+      <AnswerPollID>100316</AnswerPollID>
+      <AnswerGUID>64e9efcd-1910-4bd1-8d1e-5f852ff7f54d</AnswerGUID>
+      <AnswerLastModified>2011-04-06T07:56:12.027+02:00</AnswerLastModified>
+    </polls_pollanswer>
+  </NewDataSet>
+</polls_poll>

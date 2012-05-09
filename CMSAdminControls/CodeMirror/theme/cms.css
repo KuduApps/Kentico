@@ -1,0 +1,30 @@
+.cm-s-default span.cm-keyword {color: #0000ff; }
+.cm-s-default span.cm-atom {color: #0000ff;}
+.cm-s-default span.cm-number {color: #0000ff;}
+.cm-s-default span.cm-def {color: #00f;}
+.cm-s-default span.cm-variable {color: #000000;}
+.cm-s-default span.cm-variable-2 {color: #0000ff;}
+.cm-s-default span.cm-variable-3 {color: #000000;}
+.cm-s-default span.cm-property {color: #000000;}
+.cm-s-default span.cm-operator {color: #000000; }
+.cm-s-default span.cm-comment {color: #008800;}
+.cm-s-default span.cm-string {color: #0000ff;}
+.cm-s-default span.cm-meta {color: #555;}
+.cm-s-default span.cm-error {color: #f00;}
+.cm-s-default span.cm-qualifier {color: #2b91af;}
+.cm-s-default span.cm-null {color: #000;}
+.cm-s-default span.cm-builtin {color: #f0f;}
+.cm-s-default span.cm-bracket {color: #000;}
+.cm-s-default span.cm-tag {color: #a31515;}
+.cm-s-default span.cm-attribute {color: #ff0000;}
+
+.cm-s-default span.cm-macro { background: #ffdd44; }
+.cm-s-default span.cm-mc { background: #fff4d4; }
+.cm-s-default span.cm-params { background: #fff4d4; }
+.cm-s-default span.cm-aspnettag { background: yellow; }
+.cm-s-default span.cm-c_string {color: #a31515;}
+.cm-s-default span.cm-plsql-comment {color: #008800;}
+.cm-s-default span.cm-css-variable {color: #ff0000;}
+.cm-s-default span.cm-plsql-string {color: #ff0000;}
+.cm-s-default span.cm-css-number {color: #0000ff;}
+.cm-s-default span.cm-mc.CodeMirror-searched { background: yellow; }

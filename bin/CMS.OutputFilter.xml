@@ -1,0 +1,1348 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.OutputFilter</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.OutputFilter.CMSCachedOutput">
+            <summary>
+            Cached output container.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.LoadHeaders">
+            <summary>
+            Loads the current response headers.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.SetHeaders">
+            <summary>
+            Sets the current response headers.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.GetValue(System.String)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.SetValue(System.String,System.Object)">
+            <summary>
+            Sets value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Column value</param> 
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains specified column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.#ctor">
+            <summary>
+            CMSCachedOutput constructor
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization inf</param>
+            <param name="context">Streaming context</param>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSCachedOutput.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Object serialization.
+            </summary>
+            <param name="info">Serialization info</param>
+            <param name="context">Context</param>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.TestCookieName">
+            <summary>
+            Gets or sets the A/B or Multivariate test cookie name
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.OutputData">
+            <summary>
+            Output data.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.CachePageInfo">
+            <summary>
+            Document page info
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.AliasPath">
+            <summary>
+            Alias path.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.OriginalAliasPath">
+            <summary>
+            Original alias path.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.Status">
+            <summary>
+            URL rewriting status.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.Headers">
+            <summary>
+            Headers collection.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.DocumentCampaign">
+            <summary>
+            Document campaign.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.DocumentAliasCampaign">
+            <summary>
+            Campaign for alias document.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.DocumentTrackConversionName">
+            <summary>
+            Document conversion name - Reflects the "DocumentTrackConversionName" data column.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.DocumentConversionValue">
+            <summary>
+            Document conversion value - Reflects the "DocumentConversionValue" data column.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.Item(System.String)">
+            <summary>
+            Gets or sets the value of the column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSCachedOutput.ColumnNames">
+            <summary>
+            Returns the column names.
+            </summary>
+        </member>
+        <member name="T:CMS.OutputFilter.HtmlFormAdapter">
+            <summary>
+            Html form adapter.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.HtmlFormAdapter.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the control.
+            </summary>
+            <param name="writer">Html writer</param>
+        </member>
+        <member name="T:CMS.OutputFilter.FormAdapterHtmlTextWriter">
+            <summary>
+            Form adapter html text writer.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.FormAdapterHtmlTextWriter.#ctor(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="writer">Original writer</param>
+        </member>
+        <member name="M:CMS.OutputFilter.FormAdapterHtmlTextWriter.#ctor(System.IO.TextWriter)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="writer">Original writer</param>
+        </member>
+        <member name="M:CMS.OutputFilter.FormAdapterHtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)">
+            <summary>
+            Writes an attribute to the output.
+            </summary>
+            <param name="name">Attribute name</param>
+            <param name="value">Attribute value</param>
+            <param name="fEncode">Encode attribute?</param>
+        </member>
+        <member name="T:CMS.OutputFilter.InputFilter">
+            <summary>
+            Request input filter.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mFilterGUID">
+            <summary>
+            Filter GUID.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mBytesRead">
+            <summary>
+            Bytes that were already read by the stream.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mBytesWritten">
+            <summary>
+            Bytes that were written by the stream.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mPercentBytes">
+            <summary>
+            Number of bytes for one percent of progress.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mProgressBytes">
+            <summary>
+            Read bytes.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mOriginalStream">
+            <summary>
+            Original stream.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.InputFilter.mProgressCounters">
+            <summary>
+            Progress counters.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.#ctor(System.IO.Stream)">
+            <summary>
+            Constructor, instantiates the filter.
+            </summary>
+            <param name="originalStream">Original stream</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.GetProgress(System.Guid)">
+            <summary>
+            Returns the progress for specified filter GUID.
+            </summary>
+            <param name="filterGuid">Filter GUID</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.SetProgress(System.Guid,System.Double)">
+            <summary>
+            Sets the request progress.
+            </summary>
+            <param name="filterGuid">Filter GUID</param>
+            <param name="progress">Request progress</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.SetProgress(System.Guid,System.Int64,System.Int64)">
+            <summary>
+            Sets the request progress.
+            </summary>
+            <param name="filterGuid">Filter GUID</param>
+            <param name="totalBytes">Total request bytes</param>
+            <param name="processedBytes">Currently processed bytes</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.RemoveProgress(System.Guid)">
+            <summary>
+            Clears the progress counter for the given filter.
+            </summary>
+            <param name="filterGuid">Filter GUID</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+            <summary>
+            BeginRead.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+            <summary>
+            BeginWrite.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.EndRead(System.IAsyncResult)">
+            <summary>
+            EndRead.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.EndWrite(System.IAsyncResult)">
+            <summary>
+            EndWrite.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.ReadByte">
+            <summary>
+            ReadByte.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.WriteByte(System.Byte)">
+            <summary>
+            WriteByte.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.ToString">
+            <summary>
+            ToString.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Flush">
+            <summary>
+            Flushes the stream content.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Seek.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.SetLength(System.Int64)">
+            <summary>
+            SetLength.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes to the stream.
+            </summary>
+            <param name="buffer">Stream buffer</param>
+            <param name="offset">Read offset</param>
+            <param name="count">Bytes count</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads the data from the buffer.
+            </summary>
+            <param name="buffer">Stream buffer</param>
+            <param name="offset">Read offset</param>
+            <param name="count">Bytes count</param>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Close">
+            <summary>
+            Close.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.InputFilter.Dispose(System.Boolean)">
+            <summary>
+            Dispose.
+            </summary>
+            <param name="disposing">Disposing</param>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.CurrentFilter">
+            <summary>
+            Current request filter.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.OriginalStream">
+            <summary>
+            Original stream.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.ProgressCounters">
+            <summary>
+            Progress counters table.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.FilterGUID">
+            <summary>
+            Filter GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.BytesRead">
+            <summary>
+            Bytes that were already read by current stream.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.BytesWritten">
+            <summary>
+            Bytes that were written by current stream.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.CanRead">
+            <summary>
+            Returns if the stream can read.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.CanWrite">
+            <summary>
+            Returns is the stream can write.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.CanSeek">
+            <summary>
+            Returns if the stream can seek.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.CanTimeout">
+            <summary>
+            Returns if the stream can timeout.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.Length">
+            <summary>
+            Stream length.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.Position">
+            <summary>
+            Stream position.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.ReadTimeout">
+            <summary>
+            Read timeout.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.InputFilter.WriteTimeout">
+            <summary>
+            Write timeout.
+            </summary>
+        </member>
+        <member name="T:CMS.OutputFilter.CMSOutputData">
+            <summary>
+            Output data container.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mHtml">
+            <summary>
+            Output HTML.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mTrimmedHtml">
+            <summary>
+            Output HTML with debug information trimmed.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mDataPlain">
+            <summary>
+            Output data for the stream.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mTrimmedDataPlain">
+            <summary>
+            Output data for the stream with debug information trimmed.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mDataCompressed">
+            <summary>
+            Output data in gzip format for the stream.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mTrimmedDataCompressed">
+            <summary>
+            Output data in gzip format for the stream with debug information trimmed.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mGZip">
+            <summary>
+            True if GZip compression is applied to the data.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.CMSOutputData.mHasSubstitutions">
+            <summary>
+            True if the output contains some substitutions.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSOutputData.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSOutputData.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="outputHtml">Output HTML</param>
+            <param name="gZip">GZip the data</param>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSOutputData.WriteOutputToStream(System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+            Writes the data to the stream and closes the stream.
+            </summary>
+            <param name="s">Stream to write to</param>
+            <param name="trimmed">If true, the trimmed version of the output is written to the output</param>
+            <param name="allowSubstitutions">If true, the substitutions are allowed in the code</param>
+            <returns>Returns the size of data written to the output</returns>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSOutputData.ResolveSubstitutions(System.String)">
+            <summary>
+            Resolves the substitutions in the given output HTML.
+            </summary>
+            <param name="html">Output HTML</param>
+        </member>
+        <member name="M:CMS.OutputFilter.CMSOutputData.GetData(System.String)">
+            <summary>
+            Gets the data for given HTML.
+            </summary>
+            <param name="html">Output HTML</param>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.HasDebugInformation">
+            <summary>
+            If true, the output has the debug information
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.Html">
+            <summary>
+            Output HTML.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.GZip">
+            <summary>
+            GZip the data.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.HasSubstitutions">
+            <summary>
+            True if the output contains some substitutions.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.TrimmedHtml">
+            <summary>
+            HTML trimmed with unnecessary information such as debug.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.Data">
+            <summary>
+            Output data.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.TrimmedData">
+            <summary>
+            Output data trimmed with unnecessary information such as debug.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.CMSOutputData.ClientGZip">
+            <summary>
+            Returns whether current user supports GZip and it is allowed on server.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSOutputFilter.OutputFilter">
+            <summary>
+            Fixes bugs in ASP.NET related to XHTML support and URL Rewriting.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mDefaultFilterCapacity">
+            <summary>
+            Default output filter capacity.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mUseCompleteFilter">
+            <summary>
+            Use complete (combined) filter.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mUseParsedSelfClose">
+            <summary>
+            Use parsed self close tags operation (faster) instead of standard self close filter?
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mOutputFilterEndRequest">
+            <summary>
+            When true, the request is completed, when false, the Request.End is called.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mOutputEncoding">
+            <summary>
+            Output encoding.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.responseStream">
+            <summary>
+            Response stream.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.position">
+            <summary>
+            Position.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.responseHtml">
+            <summary>
+            Response HTML.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mApplyFilter">
+            <summary>
+            Apply the filter?
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mLogToFile">
+            <summary>
+            Logs output to file.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mLogToDebug">
+            <summary>
+            Logs output to debug log.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSOutputFilter.OutputFilter.mUseGZip">
+            <summary>
+            Use GZip compression.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedXHTMLResolveUrls(System.String)">
+            <summary>
+            Gets string array of excluded Resolve filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedFormFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded Form filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedXHTMLFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedJavascriptFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML Javascript filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedLowerCaseFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML LowerCase filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedAttributesFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML Attributes filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedTagsFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML Tags filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetExcludedSelfCloseFilterURLs(System.String)">
+            <summary>
+            Gets string array of excluded XHTML Self close filter urls.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.IndentOutputHtml(System.String)">
+            <summary>
+            Returns true if the indentation of the output is enabled.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.MoveViewStateToEnd(System.String)">
+            <summary>
+            Gets the flag whether the viewstate should be moved to the end of the page for SEO purposes.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.CreateOutputFilter">
+            <summary>
+            Creates new instance of output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.EnsureOutputFilter">
+            <summary>
+            Ensures that current request contains the output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.#ctor(System.IO.Stream)">
+            <summary>		
+            Constructor.
+            </summary>
+            <param name="inputStream">Stream of rendered HTML code</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.Close">
+            <summary>
+            Closes the OutputFilter.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.Flush">
+            <summary>
+            Flushes the response stream.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Moves the response stream position.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.SetLength(System.Int64)">
+            <summary>
+            Sets the stream length.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads from the response stream.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.GetOutputCacheKey(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand)">
+            <summary>
+            Gets the output cache key for the request.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.SaveOutputToCache(CMS.OutputFilter.CMSOutputData)">
+            <summary>
+            Saves the output data to the cache.
+            </summary>
+            <param name="outputData">Output to save</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.SendOutputFromCache(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand,CMS.OutputFilter.CMSCachedOutput@)">
+            <summary>
+            Sends the page output from the output cache.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+            <param name="output">Return cached output</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Handles the write event.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.FilterResponse">
+            <summary>
+            Applies the output filter to the output data.
+            </summary>
+            <returns>Returns the filtered data</returns>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilter.ResolveSubstitution(System.String,System.Boolean@)">
+            <summary>
+            Resolves the substitution.
+            </summary>
+            <param name="expression">Expression to resolve</param>
+            <param name="match">Returns true if matched</param>
+        </member>
+        <member name="E:CMS.CMSOutputFilter.OutputFilter.OnResolveSubstitution">
+            <summary>
+            Custom substitution event.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSOutputFilter.OutputFilter.OnBeforeFiltering">
+            <summary>
+            Fires before the filtering occurs.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSOutputFilter.OutputFilter.OnAfterFiltering">
+            <summary>
+            Fires after the filtering occurs.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSOutputFilter.OutputFilter.OnFilterCreated">
+            <summary>
+            Fires after the filter has been created.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.OutputEncoding">
+            <summary>
+            Output encoding.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.UseOutputFilterCache">
+            <summary>
+            Returns true if full client cache is enabled (no revalidation requests).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.TrackCacheDependencies">
+            <summary>
+            Returns true if the cache dependencies for the output cache are tracked.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CacheItems">
+            <summary>
+            List of the cache key items.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CurrentFilter">
+            <summary>
+            Current request filter.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedXHTMLResolveUrls">
+            <summary>
+            Gets string array of excluded Resolve filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedXHTMLURLs">
+            <summary>
+            Gets string array of excluded XHTML filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedJavascriptURLs">
+            <summary>
+            Gets string array of excluded XHTML Javascript filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedLowerCaseURLs">
+            <summary>
+            Gets string array of excluded XHTML LowerCase filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedAttributesURLs">
+            <summary>
+            Gets string array of excluded XHTML Attributes filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedTagsURLs">
+            <summary>
+            Gets string array of excluded XHTML Tags filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedSelfCloseURLs">
+            <summary>
+            Gets string array of excluded XHTML Javascript filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ExcludedFormURLs">
+            <summary>
+            Gets string array of excluded Form filter urls.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ApplyOutputFilter">
+            <summary>
+            If true, filter is applied on current request.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.UseParsedSelfClose">
+            <summary>
+            Use parsed self close tags operation (faster) instead of standard self close filter?
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.UseCompleteFilter">
+            <summary>
+            Use complete (combined) filter.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.DefaultFilterCapacity">
+            <summary>
+            Default capacity for the output filter.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.OutputFilterEndRequest">
+            <summary>
+            When true, the request is completed, when false, the Request.End is called.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.OutputFilterEndRequestRequired">
+            <summary>
+            Gets or sets the value that inidcates whether end request is required
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.ApplyFilter">
+            <summary>
+            If true, the filter is applied to the response.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.LogToFile">
+            <summary>
+            If true, the filter logs the output to the file.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.LogToDebug">
+            <summary>
+            If true, the filter logs the output to the debug.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.UseGZip">
+            <summary>
+            If true, the filter uses GZip compression on output.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CanResolveAllUrls">
+            <summary>
+            Determines whether resolving of all url can be used.
+            See HTMLHelper.ResolveUrls method.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.UseFormActionWithCurrentURL">
+            <summary>
+            Indicates whether form action of page is set to current URL.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CanRead">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CanSeek">
+             <summary></summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.CanWrite">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.Length">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CMS.CMSOutputFilter.OutputFilter.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CMS.CMSOutputFilter.OutputFilter.OutputFilterHandler">
+            <summary>
+            Output filter handler.
+            </summary>
+            <param name="filter">Filter that has been created</param>
+        </member>
+        <member name="T:CMS.CMSOutputFilter.OutputFilter.CustomFilterHandler">
+            <summary>
+            Custom filter handler definition.
+            </summary>
+            <param name="filter">Output filter object</param>
+            <param name="finalHtml">Final HTML code of the page to filter</param>
+        </member>
+        <member name="T:CMS.OutputFilter.OutputHelper">
+            <summary>
+            Output helper.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mHelperObject">
+            <summary>
+            Helper object.
+            </summary> 
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mUseOutputFilterCache">
+            <summary>
+            Use output filter caching?
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mCacheItems">
+            <summary>
+            List of the cache key items.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.CacheItemPriority">
+            <summary>
+            Cache item priority.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mLogOutputToFile">
+            <summary>
+            Indicates if events are logged to the file.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mClearOutputCacheOnPostback">
+            <summary>
+            If true, output cache is cleared on postback.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mDebugOutput">
+            <summary>
+            Debug security?
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mDebugAllOutputs">
+            <summary>
+            Debug security on all pages?
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mOutputLogLength">
+            <summary>
+            Security log length (number of requests to log).
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mLogFile">
+            <summary>
+            Logs file path.
+            </summary>
+        </member>
+        <member name="F:CMS.OutputFilter.OutputHelper.mLastLogs">
+            <summary>
+            Last requests security logs, contains the arrays of [URL, Output, Time].
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.ResetDebugSettings">
+            <summary>
+            Sets all the debug settings to null and causes them to be reloaded.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.LogOutput(CMS.OutputFilter.CMSOutputData,System.Boolean,System.Boolean)">
+            <summary>
+            Logs the output.
+            </summary>
+            <param name="output">Output data</param>
+            <param name="toFile">Log the output to the file</param>
+            <param name="toDebug">Log the output to the debug log</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.LogToFile(System.String)">
+            <summary>
+            Logs the query to file.
+            </summary>
+            <param name="outputHtml">Output HTML</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.EnableOutputCache(System.String)">
+            <summary>
+            Returns true if the output caching is enabled.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.FileSystemOutputCacheMinutes(System.String)">
+            <summary>
+            Returns the number of minutes for which the output cache should be stored in the file system
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.GetOutputCacheKey(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand)">
+            <summary>
+            Gets the output cache key for the request.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.SaveOutputToCache(CMS.OutputFilter.CMSOutputData)">
+            <summary>
+            Saves the output data to the cache.
+            </summary>
+            <param name="outputData">Output to save</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.SendOutputFromCache(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand,CMS.OutputFilter.CMSCachedOutput@)">
+            <summary>
+            Sends the page output from the output cache.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+            <param name="output">Return cached output</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.SetCaching(System.String,CMS.PortalEngine.PageInfo,System.Web.HttpResponse)">
+            <summary>
+            Sets the page caching.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="currentPage">Current page info</param>
+            <param name="response">Response object</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.AddNoClientCacheParameters(CMS.CMSOutputFilter.OutputFilter,System.String@)">
+            <summary>
+            Adds the parameter to disable client cache to the URLs of the page HTML code.
+            </summary>
+            <param name="filter">Filter object</param>
+            <param name="finalHtml">Page HTML code</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.AddNoClientCacheParameter(System.Text.RegularExpressions.Match)">
+            <summary>
+            Adds the parameter to disable client cache to the URLs of the page HTML code. Applies only on URLs with querystring or .aspx pages, except for .axd requests.
+            </summary>
+            <param name="m">Parameter match</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.GetOutputCacheKeyInternal(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand)">
+            <summary>
+            Gets the output cache key for the request.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.SaveOutputToCacheInternal(CMS.OutputFilter.CMSOutputData)">
+            <summary>
+            Saves the output data to the cache.
+            </summary>
+            <param name="outputData">Output to save</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.AddToCacheInternal(System.String,CMS.OutputFilter.CMSCachedOutput,CMS.GlobalHelper.CMSCacheDependency,System.Int32,System.DateTime,System.String)">
+            <summary>
+            Adds the item to the cache
+            </summary>
+            <param name="cacheKey">Cache key</param>
+            <param name="data">Cached data</param>
+            <param name="cd">Cache dependency</param>
+            <param name="cacheMinutes">Cache minutes for the cache item</param>
+            <param name="expires">Expiration time for the cache item</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.TryGetFromCacheInternal(System.String,System.String,CMS.OutputFilter.CMSCachedOutput@)">
+            <summary>
+            Attempts to get the cached output from the cache
+            </summary>
+            <param name="cacheKey">Cache key</param>
+            <param name="siteName">Site name</param>
+            <param name="output">Returning output</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.SendOutputFromCacheInternal(CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand,CMS.OutputFilter.CMSCachedOutput@)">
+            <summary>
+            Sends the page output from the output cache.
+            </summary>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+            <param name="output">Return cached output</param>
+        </member>
+        <member name="M:CMS.OutputFilter.OutputHelper.EndRequest">
+            <summary>
+            Ends the current request
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.HelperObject">
+            <summary>
+            Helper object.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.UseFullClientCache">
+            <summary>
+            Returns true if full client cache is enabled (no revalidation requests).
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.UseOutputFilterCache">
+            <summary>
+            Returns true if full client cache is enabled (no revalidation requests).
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.CacheItems">
+            <summary>
+            List of the cache key items.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.CurrentOutputCache">
+            <summary>
+            Current otput cache minutes.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.CurrentNETOutputCache">
+            <summary>
+            Current otput cache minutes for .NET processing
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.ClearOutputCacheOnPostback">
+            <summary>
+            If true, output cache is cleared on postback.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.LogCurrentOutputToFile">
+            <summary>
+            If true, current output is logged to the file.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.LogOutputToFile">
+            <summary>
+            Indicates if output is logged to the file.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.LogFile">
+            <summary>
+            Logs file.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.DebugOutput">
+            <summary>
+            Debug output?
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.DebugAllOutputs">
+            <summary>
+            Debug Output on all pages, including the UI and preview pages.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.OutputLogLength">
+            <summary>
+            Maximum length of the Output log in number of requests.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.DebugCurrentRequest">
+            <summary>
+            Debug current request output.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.OutputHelper.LastLogs">
+            <summary>
+            Last requests query logs, contains the arrays of [URL, Output, Time].
+            </summary>
+        </member>
+        <member name="T:CMS.OutputFilter.SubstitutionEventArgs">
+            <summary>
+            Substitution event arguments
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SubstitutionEventArgs.Expression">
+            <summary>
+            Expression
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SubstitutionEventArgs.Result">
+            <summary>
+            Result of the substitution
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SubstitutionEventArgs.Match">
+            <summary>
+            Returning true if the substitution was matched
+            </summary>
+        </member>
+        <member name="T:CMS.OutputFilter.FormStateHelper">
+            <summary>
+            Helper for preserving of the form state on postback during authentication.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.GetSavedState">
+            <summary>
+            Gets the currently saved state.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.RestoreFormState">
+            <summary>
+            Attempts to restore the form state.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.SaveFormState">
+            <summary>
+            Saves the form state in case it is needed (anonymous postback on the page that requires authentication).
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.IsAccessingLoginPage">
+            <summary>
+            Checks if the current request is hitting the login page.
+            </summary>
+            <returns>True if the supplied request is hitting the supplied login page, otherwise false.</returns>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.HasAnonymousAccess">
+            <summary>
+            Checks if the current request is hitting a page that has anonymous access.
+            </summary>
+            <returns>True if the request hits anonoymous access, otherwise false.</returns>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.RenderSavedForm(CMS.OutputFilter.SavedFormState)">
+            <summary>
+            Renders the restoration form from saved state.
+            </summary>
+            <param name="state">Saved state</param>
+        </member>
+        <member name="M:CMS.OutputFilter.FormStateHelper.CreateHtmlTextWriter(System.IO.TextWriter,System.Web.Configuration.HttpCapabilitiesBase)">
+            <summary>
+            Gets a HtmlTextWriter to write output to, based on a TextWriter.
+            </summary>
+            <param name="writer">The Text writer holding the output stream</param>
+            <param name="browser">The browser capabilities of the client browser</param>
+        </member>
+        <member name="P:CMS.OutputFilter.FormStateHelper.PreservePostbackValuesOnLogin">
+            <summary>
+            If true, the postback values are preserved when login is required during postback.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.FormStateHelper.AnonymousUser">
+            <summary>
+            Anonymous user principal.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.FormStateHelper.LoginUrl">
+            <summary>
+            Login URL.
+            </summary>
+        </member>
+        <member name="T:CMS.OutputFilter.SavedFormState">
+            <summary>
+            Form state container for restoring the original request post.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.#ctor(System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="url">The path of the original form post request</param>
+            <param name="queryString">QueryString of the original request</param>
+            <param name="form">The form to save</param>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.SaveCurrent(System.Web.HttpContext)">
+            <summary>
+            Saves current form state to the cache for the later use.
+            </summary>
+            <param name="context">Current context</param>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.GetSavedState(System.Guid)">
+            <summary>
+            Gets the saved state from the cache.
+            </summary>
+            <param name="stateGuid">Guid of the saved form state</param>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.Delete">
+            <summary>
+            Deletes this form state from the form state storage provider.
+            </summary>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.GetValue(System.String)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.SetValue(System.String,System.Object)">
+            <summary>
+            Sets value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Column value</param> 
+        </member>
+        <member name="M:CMS.OutputFilter.SavedFormState.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains specified column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.StateGuid">
+            <summary>
+            The unique id of this form state.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.OriginalUrl">
+            <summary>
+            The path of the original form post request.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.OriginalQueryString">
+            <summary>
+            Original post query string.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.Form">
+            <summary>
+            The saved form.
+            </summary>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.Item(System.String)">
+            <summary>
+            Gets or sets the value of the column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="P:CMS.OutputFilter.SavedFormState.ColumnNames">
+            <summary>
+            Returns the column names.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSOutputFilter.OutputFilterModule">
+            <summary>
+            HttpModule wrapper for the output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilterModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Registers the event handler(s).
+            </summary>
+            <param name="app">The http application</param>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilterModule.app_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            Authenticate request handling.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilterModule.app_ReleaseRequestState(System.Object,System.EventArgs)">
+            <summary>
+            Output filter assignment handler.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSOutputFilter.OutputFilterModule.System#Web#IHttpModule#Dispose">
+            <summary>
+            Destructor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="CMSMasterPages_UI_TabsHeaderVertical" CodeFile="TabsHeaderVertical.master.cs" %>
+
+<%@ Register TagPrefix="cms" Namespace="CMS.UIControls" Assembly="CMS.UIControls" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" enableviewstate="false">
+    <title>TabsVerticalHeaderMasterPage</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="<%=mBodyClass%>">
+    <form id="form1" runat="server">
+    <asp:PlaceHolder runat="server" ID="plcManager" />    
+    <asp:Panel runat="server" ID="pnlBody" CssClass="TabsPageHeader">
+        <asp:Panel runat="server" ID="pnlTabsContainer" CssClass="VerticalTabsPanel" EnableViewState="false">
+            <asp:Panel runat="server" ID="pnlLeft" CssClass="VerticalTabsTop">
+                &nbsp;
+            </asp:Panel>
+            <asp:Panel runat="server" ID="pnlTabs" CssClass="VerticalTabsTabs">
+                <asp:Panel runat="server" ID="pnlVertical" CssClass="TabsVertical">
+                    <cms:UITabs ID="tabControlElem" ShortID="t" runat="server" TabControlLayout="Vertical" UseClientScript="true" />
+                </asp:Panel>
+            </asp:Panel>
+            <asp:Panel runat="server" ID="pnlRight" CssClass="VerticalTabsBottom">
+                &nbsp;
+            </asp:Panel>
+        </asp:Panel>
+    </asp:Panel>
+    </form>
+</body>
+</html>

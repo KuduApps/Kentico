@@ -1,0 +1,100 @@
+﻿<notification_template version="6.0">
+  <NewDataSet>
+    <notification_template>
+      <TemplateID>40</TemplateID>
+      <TemplateName>NewProduct</TemplateName>
+      <TemplateDisplayName>New product</TemplateDisplayName>
+      <TemplateLastModified>2012-02-15T11:29:02.347+01:00</TemplateLastModified>
+      <TemplateGUID>c1b8e8a9-3dbb-46d0-a727-573dbdbefff1</TemplateGUID>
+    </notification_template>
+    <notification_templatetext>
+      <TemplateTextID>22</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>31</GatewayID>
+      <TemplateSubject>New product has been added!</TemplateSubject>
+      <TemplateHTMLText>Hi there,&lt;br /&gt;
+&lt;br /&gt;
+New product in&amp;nbsp;&amp;#39;{%notificationsubscription.subscriptioneventdata1|(user)administrator|(hash)113813532d97ef91e0c666aac29c46ae2c32e201dfe1673af9f8be714822270c%}&amp;#39; section&amp;nbsp;has been added.&lt;br /&gt;
+&lt;br /&gt;
+This is automatically generated notification. Please do not reply to this e-mail.&lt;br /&gt;
+</TemplateHTMLText>
+      <TemplatePlainText>Hi there,
+
+New product in '{%notificationsubscription.subscriptioneventdata1|(user)administrator|(hash)113813532d97ef91e0c666aac29c46ae2c32e201dfe1673af9f8be714822270c%}' section has been added.
+
+This is automatically generated notification. Please do not reply to this e-mail.</TemplatePlainText>
+      <TemplateTextGUID>9abd0692-3189-424d-9ae7-21fcf69e1cce</TemplateTextGUID>
+      <TemplateTextLastModified>2012-02-15T11:29:02.347+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>23</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>30</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>ca56ca22-7690-4846-a356-78eb59452f62</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.383+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>24</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>27</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>9720b25d-4b21-4325-8ba3-da2cd412675f</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.49+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>25</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>24</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>1d1e4fad-030b-4738-9e7b-dd58b1518e72</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.553+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>26</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>29</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>71b87652-a1d5-4943-9152-f7cfc92f5d28</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.6+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>84</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>32</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>45677e74-7ce2-4de8-bc81-2795a2c716ec</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.257+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>85</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>34</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>fa47b6c1-754a-46a5-83f5-f00335479445</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.333+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>86</TemplateTextID>
+      <TemplateID>40</TemplateID>
+      <GatewayID>33</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>9fd60a7a-5fa5-4dcf-96da-e03fb121d68f</TemplateTextGUID>
+      <TemplateTextLastModified>2009-06-01T12:19:24.443+02:00</TemplateTextLastModified>
+    </notification_templatetext>
+  </NewDataSet>
+</notification_template>

@@ -1,0 +1,15 @@
+﻿<om_activitytype version="6.0">
+  <NewDataSet>
+    <om_activitytype>
+      <ActivityTypeID>30</ActivityTypeID>
+      <ActivityTypeDisplayName>Custom activity</ActivityTypeDisplayName>
+      <ActivityTypeName>customactivity</ActivityTypeName>
+      <ActivityTypeEnabled>true</ActivityTypeEnabled>
+      <ActivityTypeIsCustom>true</ActivityTypeIsCustom>
+      <ActivityTypeDescription>Custom activity.</ActivityTypeDescription>
+      <ActivityTypeManualCreationAllowed>true</ActivityTypeManualCreationAllowed>
+      <ActivityTypeMainFormControl>##default##</ActivityTypeMainFormControl>
+      <ActivityTypeDetailFormControl>##default##</ActivityTypeDetailFormControl>
+    </om_activitytype>
+  </NewDataSet>
+</om_activitytype>

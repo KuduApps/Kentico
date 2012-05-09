@@ -1,0 +1,103 @@
+﻿<cms_form version="6.0">
+  <NewDataSet>
+    <cms_form>
+      <FormID>3</FormID>
+      <FormDisplayName>Contact Eshop</FormDisplayName>
+      <FormName>ContactEshop</FormName>
+      <FormEmailAttachUploadedDocs>true</FormEmailAttachUploadedDocs>
+      <FormClassID>1713</FormClassID>
+      <FormItems>0</FormItems>
+      <FormReportFields>ContactEshopID;FormInserted;FormUpdated;FirstName;LastName;Email;Message</FormReportFields>
+      <FormDisplayText>Thank you for your message. We will contact you shortly.</FormDisplayText>
+      <FormClearAfterSave>false</FormClearAfterSave>
+      <FormSubmitButtonText>Send message</FormSubmitButtonText>
+      <FormSiteID>5</FormSiteID>
+      <FormGUID>73272205-9510-4260-978d-2c7205113374</FormGUID>
+      <FormLastModified>2011-08-19T08:44:30.557+02:00</FormLastModified>
+      <FormLogActivity>true</FormLogActivity>
+    </cms_form>
+    <cms_class>
+      <ClassID>1713</ClassID>
+      <ClassDisplayName>Contact Eshop</ClassDisplayName>
+      <ClassName>BizForm.ContactEshop</ClassName>
+      <ClassUsesVersioning>false</ClassUsesVersioning>
+      <ClassIsDocumentType>false</ClassIsDocumentType>
+      <ClassIsCoupledClass>true</ClassIsCoupledClass>
+      <ClassXmlSchema>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+  &lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+        &lt;xs:element name="Form_ContactEshop"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="ContactEshopID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" /&gt;
+              &lt;xs:element name="FormInserted" type="xs:dateTime" /&gt;
+              &lt;xs:element name="FormUpdated" type="xs:dateTime" /&gt;
+              &lt;xs:element name="Email"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="100" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="Subject"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="100" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="Message"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="1073741823" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:choice&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:unique name="Constraint1" msdata:PrimaryKey="true"&gt;
+      &lt;xs:selector xpath=".//Form_ContactEshop" /&gt;
+      &lt;xs:field xpath="ContactEshopID" /&gt;
+    &lt;/xs:unique&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</ClassXmlSchema>
+      <ClassFormDefinition>&lt;form&gt;&lt;field column="ContactEshopID" fieldcaption="ContactEshopID" visible="true" columntype="integer" fieldtype="label" allowempty="false" isPK="true" system="false" publicfield="false" spellcheck="true" guid="702f7e27-9b6a-4b84-ae0f-3a84691af799" /&gt;&lt;field column="FormInserted" fieldcaption="Form inserted" visible="false" columntype="datetime" fieldtype="calendar" allowempty="false" isPK="false" system="true" publicfield="false" spellcheck="true" guid="ffb32e1f-05bc-41cb-a3e7-d971c8ce2132" /&gt;&lt;field column="FormUpdated" fieldcaption="Form updated" visible="false" columntype="datetime" fieldtype="calendar" allowempty="false" isPK="false" system="true" publicfield="false" spellcheck="true" guid="97cdb245-48a5-4456-832e-dbd95b544ccc" /&gt;&lt;field column="Email" fieldcaption="Your e-mail" visible="true" columntype="text" fieldtype="usercontrol" allowempty="false" isPK="false" system="false" columnsize="100" publicfield="true" spellcheck="true" guid="d5e4924b-7b8d-4cee-a1e0-a4356cc4184e"&gt;&lt;settings&gt;&lt;controlname&gt;emailinput&lt;/controlname&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Subject" fieldcaption="Subject" visible="true" columntype="text" fieldtype="textbox" allowempty="false" isPK="false" system="false" columnsize="100" publicfield="true" spellcheck="true" guid="2e4dfac0-1dda-4155-abe4-dfe2162d80d1" /&gt;&lt;field column="Message" fieldcaption="Message" visible="true" columntype="longtext" fieldtype="textarea" allowempty="false" isPK="false" system="false" publicfield="true" spellcheck="true" guid="72d24b88-1bfe-4271-8e82-46706ecfab8d" /&gt;&lt;/form&gt;</ClassFormDefinition>
+      <ClassEditingPageUrl></ClassEditingPageUrl>
+      <ClassListPageUrl></ClassListPageUrl>
+      <ClassNodeNameSource></ClassNodeNameSource>
+      <ClassTableName>Form_ContactEshop</ClassTableName>
+      <ClassViewPageUrl></ClassViewPageUrl>
+      <ClassPreviewPageUrl></ClassPreviewPageUrl>
+      <ClassFormLayout></ClassFormLayout>
+      <ClassNewPageUrl></ClassNewPageUrl>
+      <ClassShowAsSystemTable>false</ClassShowAsSystemTable>
+      <ClassUsePublishFromTo>false</ClassUsePublishFromTo>
+      <ClassShowTemplateSelection>false</ClassShowTemplateSelection>
+      <ClassSKUMappings></ClassSKUMappings>
+      <ClassIsMenuItemType>false</ClassIsMenuItemType>
+      <ClassNodeAliasSource></ClassNodeAliasSource>
+      <ClassLastModified>2011-08-19T08:44:30.417+02:00</ClassLastModified>
+      <ClassGUID>7746f44e-3de8-4ef1-811e-465a69472388</ClassGUID>
+      <ClassCreateSKU>false</ClassCreateSKU>
+      <ClassIsProduct>false</ClassIsProduct>
+      <ClassIsCustomTable>false</ClassIsCustomTable>
+      <ClassShowColumns></ClassShowColumns>
+      <ClassLoadGeneration>2</ClassLoadGeneration>
+      <ClassSearchTitleColumn></ClassSearchTitleColumn>
+      <ClassSearchContentColumn></ClassSearchContentColumn>
+      <ClassSearchImageColumn></ClassSearchImageColumn>
+      <ClassSearchCreationDateColumn></ClassSearchCreationDateColumn>
+      <ClassSearchSettings></ClassSearchSettings>
+      <ClassSearchEnabled>true</ClassSearchEnabled>
+      <ClassSKUDefaultDepartmentName></ClassSKUDefaultDepartmentName>
+      <ClassContactMapping>&lt;form&gt;&lt;field column="ContactEmail" mappedtofield="Email" /&gt;&lt;/form&gt;</ClassContactMapping>
+      <ClassContactOverwriteEnabled>true</ClassContactOverwriteEnabled>
+      <ClassSKUDefaultProductType>PRODUCT</ClassSKUDefaultProductType>
+    </cms_class>
+  </NewDataSet>
+</cms_form>

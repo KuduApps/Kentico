@@ -1,0 +1,18 @@
+﻿<blog_comment version="6.0">
+  <NewDataSet>
+    <blog_comment>
+      <CommentID>588</CommentID>
+      <CommentUserName>Global Administrator</CommentUserName>
+      <CommentUserID>53</CommentUserID>
+      <CommentUrl></CommentUrl>
+      <CommentText>test comment</CommentText>
+      <CommentApprovedByUserID>68</CommentApprovedByUserID>
+      <CommentPostDocumentID>728</CommentPostDocumentID>
+      <CommentDate>2010-11-22T13:26:28.817+01:00</CommentDate>
+      <CommentIsSpam>false</CommentIsSpam>
+      <CommentApproved>true</CommentApproved>
+      <CommentIsTrackBack>false</CommentIsTrackBack>
+      <CommentEmail>administrator@localhost.local</CommentEmail>
+    </blog_comment>
+  </NewDataSet>
+</blog_comment>

@@ -1,0 +1,56 @@
+﻿<forumpost_adhoc-949fb7ec-9647-49f5-b23f-092b6265aeb7 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>40</PostId>
+      <PostForumID>15</PostForumID>
+      <PostIDPath>/00000040</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>WM 6</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Roy</PostUserName>
+      <PostUserMail>roy@localhost.local</PostUserMail>
+      <PostText>Is this PDA available with windows mobile 6.0? Thanks</PostText>
+      <PostTime>2008-03-05T19:31:25.91+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:32:30.833+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>a97412ce-b958-4797-bd09-8850fdcbb948</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.077+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:32:30.833+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>41</PostId>
+      <PostForumID>15</PostForumID>
+      <PostParentID>40</PostParentID>
+      <PostIDPath>/00000040/00000041</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:WM 6</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>No, it is not. But there will be newer version of PDA soon and it will contaion WM6.</PostText>
+      <PostTime>2008-03-05T19:32:30.833+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>e3315ad0-74d8-453a-90b9-c4b791ea7203</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.093+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-949fb7ec-9647-49f5-b23f-092b6265aeb7>

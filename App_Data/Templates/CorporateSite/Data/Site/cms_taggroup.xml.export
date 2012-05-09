@@ -1,0 +1,44 @@
+﻿<cms_taggroup version="6.0">
+  <NewDataSet>
+    <cms_taggroup>
+      <TagGroupID>341</TagGroupID>
+      <TagGroupDisplayName>Company blog</TagGroupDisplayName>
+      <TagGroupName>CompanyBlog</TagGroupName>
+      <TagGroupDescription>Tag group for the company blog.</TagGroupDescription>
+      <TagGroupSiteID>110</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2011-05-05T00:08:28.457+02:00</TagGroupLastModified>
+      <TagGroupGUID>06997c57-09b3-41fb-9cbc-ff693fddf3dd</TagGroupGUID>
+    </cms_taggroup>
+    <cms_taggroup>
+      <TagGroupID>338</TagGroupID>
+      <TagGroupDisplayName>Content</TagGroupDisplayName>
+      <TagGroupName>content</TagGroupName>
+      <TagGroupDescription>Main content group</TagGroupDescription>
+      <TagGroupSiteID>110</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2008-09-18T16:56:13.33+02:00</TagGroupLastModified>
+      <TagGroupGUID>d3f15f9d-5f0e-4587-aefa-1503b3184ba9</TagGroupGUID>
+    </cms_taggroup>
+    <cms_taggroup>
+      <TagGroupID>345</TagGroupID>
+      <TagGroupDisplayName>Products</TagGroupDisplayName>
+      <TagGroupName>Products</TagGroupName>
+      <TagGroupDescription></TagGroupDescription>
+      <TagGroupSiteID>110</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2011-06-28T15:32:35.707+02:00</TagGroupLastModified>
+      <TagGroupGUID>4e3caefb-7b54-4b51-9333-dd510c5c3fcd</TagGroupGUID>
+    </cms_taggroup>
+    <cms_taggroup>
+      <TagGroupID>344</TagGroupID>
+      <TagGroupDisplayName>Web Development Blog</TagGroupDisplayName>
+      <TagGroupName>WebDevelopmentBlog</TagGroupName>
+      <TagGroupDescription>Tags for the Web Development blog on the sample Corporate Site.</TagGroupDescription>
+      <TagGroupSiteID>110</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2011-06-21T18:44:39.147+02:00</TagGroupLastModified>
+      <TagGroupGUID>30b4cf64-7611-4ed3-a783-9991763b2026</TagGroupGUID>
+    </cms_taggroup>
+  </NewDataSet>
+</cms_taggroup>

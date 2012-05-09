@@ -1,0 +1,214 @@
+.CodeMirror {
+  font-family: monospace;
+}
+
+.CodeMirror-scroll {
+  overflow: auto;
+  height: 300px;
+  /* This is needed to prevent an IE[67] bug where the scrolled content
+     is visible outside of the scrolling box. */
+  position: relative;
+}
+
+.CodeMirror-gutter {
+  position: absolute; left: 0; top: 0;
+  background-color: #f7f7f7;
+  border-right: 1px solid #eee;
+  min-width: 2em;
+  height: 100%;
+}
+.CodeMirror-gutter-text {
+  color: #aaa;
+  text-align: right;
+  padding: .4em .2em .4em .4em;
+}
+.CodeMirror-lines {
+  padding: .4em;
+}
+
+.CodeMirror pre {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-width: 0; margin: 0; padding: 0; background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0; margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.CodeMirror textarea {
+  font-family: inherit !important;
+  font-size: inherit !important;
+}
+
+.CodeMirror-cursor {
+  z-index: 10;
+  position: absolute;
+  visibility: hidden;
+  border-left: 1px solid black !important;
+}
+.CodeMirror-focused .CodeMirror-cursor {
+  visibility: visible;
+}
+
+span.CodeMirror-selected {
+  background: #ccc !important;
+  color: HighlightText !important;
+}
+.CodeMirror-focused span.CodeMirror-selected {
+  background: Highlight !important;
+}
+
+.CodeMirror-matchingbracket {color: #0f0 !important;}
+.CodeMirror-nonmatchingbracket {color: #f22 !important;}
+
+
+.CodeMirror-searched {background: yellow;}
+
+
+/* Default styles */
+.CM { position: relative; border: #cccccc 1px solid; min-width: 200px; padding: 0; font: 10pt monospace; color: #000000; background: white;}
+.CM code { font: 90% Courier, monospace; color: #144; }
+.CM pre.code {	margin: 1.1em 12px; padding: 0.4em; border: #b5c3d6 1px solid; font-family: Courier, monospace; color: #000000; }
+.CM .CM-wrapping .warn { color: #cc0000 }
+.CM .CM-line-numbers { width: 36px; padding: 0.4em 8px 0 0; margin: 0; border-right: #cccccc 1px solid; text-align: right; font: 10pt monospace; background: #fafafa; color: #000000; }
+.RTL .CM .CM-line-numbers { padding: 0.4em 0 0 8px; border-right: none; border-left: #b5c3d6 1px solid; text-align: left; }
+.CM .CM-toolbar { height: 20px; min-width: 320px; padding: 2px 0 4px 0; text-align: center; border-top: #b5c3d6 1px solid; background: #e9f3fe url('../img/schemeBlue.png'); }
+.CM .CM-toolbar-buttonsBox { float: left; margin: 0 auto auto 10px; }
+.RTL .CM .CM-toolbar-buttonsBox { float: right; margin: 0 10px auto auto; }
+.CM .CM-toolbar img { height: 16px; width: 16px; margin: 0 4px 2px 4px; padding: 2px; border: transparent 1px solid; vertical-align: middle; line-height: 16px; text-decoration: none; }
+.CM .CM-toolbar img:hover { border: #b5c3d6 1px solid; cursor: pointer; }
+.CM .CM-toolbar img.active { border: #b5c3d6 1px solid; background-color: #b5c3d6; }
+.CM .CM-toolbar-linesBox { width: 130px; float: right; text-align: left; margin: 2px 10px auto auto; }
+.RTL .CM .CM-toolbar-linesBox { float: left; text-align: right; margin: 2px auto auto 10px; }
+.CM .CM-toolbar-currentLine { width: 50px; height: 14px;  margin: 0 2px 0 2px; padding: 0; vertical-align: middle; text-align: center; font: 11px Verdana; overflow: hidden; }
+.CM .CM-toolbar-totalLines { }
+.CM .CM-bookmarks { position: absolute; right: 0; top: 0; width: 250px; height: 100%; border-left: solid 1px #b5c3d6; background: #ffffff; text-align: left; overflow: auto; z-index: 19994 }
+.RTL .CM .CM-bookmarks { position: absolute; left: 0; right: auto; border-left: none; border-right: solid 1px #b5c3d6; text-align: right; }
+.CM .CM-bookmarks a { display: block; margin: 1px; padding: 1px 2px 1px 5px; font: 11px Verdana; text-decoration: none;  white-space: nowrap; color: #000000; }
+.RTL .CM .CM-bookmarks a { margin: 1px 5px 1px 2px; }
+.CM .CM-bookmarks a:hover { cursor: pointer; background-color: #e9f3fe; }
+
+/* Blue color scheme              */
+/*   Color               #b5c3d6  */
+/*   Background color    #e9f3fe  */
+/*   Line numbers        #7180a3  */
+
+.CM-orange { border-color: #b5c3d6; }
+.CM-orange pre.code { border-color: #b5c3d6; }
+.CM-orange .CM-line-numbers { border-color: #b5c3d6; background: #e9f3fe; color: #b5c3d6; }
+.CM-orange .CM-toolbar { border-color: #b5c3d6; background: #e9f3fe url('../img/schemeOrange.png'); }
+.CM-orange .CM-toolbar img:hover { border-color: #b5c3d6; }
+.CM-orange .CM-toolbar img.active { border-color: #b5c3d6; background-color: #e9f3fe; }
+.CM-orange .CM-bookmarks { border-color: #b5c3d6; }
+.CM-orange .CM-bookmarks a:hover { background-color: #e9f3fe; }
+
+/* Orange color scheme            */
+/*   Color               #93a1b4  */
+/*   Background color    #ffdeaa  */
+/*   Line numbers        #7180a3  */
+
+.CM-orange { border-color: #93a1b4; }
+.CM-orange pre.code { border-color: #93a1b4; }
+.CM-orange .CM-line-numbers { border-color: #93a1b4; background: #ffdeaa; color: #7180a3; }
+.CM-orange .CM-toolbar { border-color: #93a1b4; background: #ffdeaa url('../img/schemeOrange.png'); }
+.CM-orange .CM-toolbar img:hover { border-color: #93a1b4; }
+.CM-orange .CM-toolbar img.active { border-color: #93a1b4; background-color: #ffdeaa; }
+.CM-orange .CM-bookmarks { border-color: #93a1b4; }
+.CM-orange .CM-bookmarks a:hover { background-color: #ffdeaa; }
+
+/* Silver color scheme            */
+/*   Color               #c0c0c0  */
+/*   Background color    #efefef  */
+/*   Line numbers        #7180a3  */
+
+.CM-silver { border-color: #c0c0c0; }
+.CM-silver pre.code { border-color: #c0c0c0; }
+.CM-silver .CM-line-numbers { border-color: #c0c0c0; background: #efefef; color: #7180a3; }
+.CM-silver .CM-toolbar { border-color: #c0c0c0; background: #efefef url('../img/schemesilver.png'); }
+.CM-silver .CM-toolbar img:hover { border-color: #c0c0c0; }
+.CM-silver .CM-toolbar img.active { border-color: #c0c0c0; background: #efefef; }
+.CM-silver .CM-bookmarks { border-color: #c0c0c0; }
+.CM-silver .CM-bookmarks a:hover { background-color: #efefef; }
+
+/* Green color scheme             */
+/*   Color               #aabbaa  */
+/*   Background color    #cef2ac  */
+/*   Line numbers        #7180a3  */
+
+.CM-green { border-color: #aabbaa; }
+.CM-green pre.code { border-color: #aabbaa; }
+.CM-green .CM-line-numbers { border-color: #aabbaa; background: #cef2ac; color: #7180a3; }
+.CM-green .CM-toolbar { border-color: #aabbaa; background: #cef2ac url('../img/schemegreen.png'); }
+.CM-green .CM-toolbar img:hover { border-color: #aabbaa; }
+.CM-green .CM-toolbar img.active { border-color: #aabbaa; background: #cef2ac; }
+.CM-green .CM-bookmarks { border-color: #aabbaa; }
+.CM-green .CM-bookmarks a:hover { background-color: #cef2ac; }
+
+/* Special styles */
+.CM.CM-FullScreen
+{
+    position: fixed;
+    height: auto;
+    width: auto;
+    left: 0;
+    top: 0;
+    left:0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 19990;
+    margin: 1px;
+    border: solid 3px #444;
+}
+
+.CM.CM-FullScreen .CodeMirror-scroll
+{
+    position: absolute;
+    height: auto;
+    width: auto;
+    left:0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 19992;
+    margin: 1px 1px 28px 1px;
+}
+
+.CM.CM-FullScreen .CM-toolbar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 19993;
+}
+
+.ReadOnly .CodeMirror-scroll
+{
+    background-color: #f4f4f4;
+}
+
+.ReadOnly .CodeMirror-cursor
+{
+    display: none;
+}
+
+
+.TreeEditor .AutoSize .CodeMirror-scroll 
+{
+    overflow: auto;
+    width: 500px;
+    height: 30px;
+}
+
+.MacroDesigner .TreeEditor .AutoSize .CodeMirror-scroll 
+{
+    width: 250px;
+}
+

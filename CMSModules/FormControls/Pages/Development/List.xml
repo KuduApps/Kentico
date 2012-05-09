@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="UserControlID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="UserControlDisplayName" caption="$general.displayname$" wrap="false" localize="true" />
+    <column source="UserControlType" externalsourcename="controltype" caption="$formcontrols.type$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.formusercontrol" columns="UserControlID, UserControlDisplayName, UserControlType" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

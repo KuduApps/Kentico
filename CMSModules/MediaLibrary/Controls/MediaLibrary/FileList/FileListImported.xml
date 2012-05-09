@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameter="FileName">
+    <action name="copy" externalsourcename="copyfile" caption="$General.copy$" icon="Clone.png" />
+    <action name="move" externalsourcename="movefile" caption="$General.move$" icon="move.png" />
+    <action name="edit" externalsourcename="editfile" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="import" externalsourcename="importfile" caption="$General.Import$" icon="fileimport.png"/>
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="FileName" caption="$general.filename$" sort="FileName"  width="100%" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="Size" caption="$unigrid.media.file.columns.size$" sort="FileSize"  wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="PasteLink" wrap="false">
+    </column>    
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="false" />
+    <key name="ShowSelection" value="true" />
+  </options>
+</grid>

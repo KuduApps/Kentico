@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="delete" commandargument="UserID" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png"  confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="UserID" externalsourcename="userid" caption="$emailqueue.recipient$" wrap="false" />
+    <column source="LastSendResult" externalsourcename="result" istext="true" caption="$EmailQueue.LastSendResult$" wrap="false">
+      <tooltip source="LastSendResult" externalsourcename="resulttooltip" />
+    </column>
+  </columns>
+  <objecttype name="cms.emailuser" columns="UserID, LastSendResult" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+    <key name="ShowSelection" value="true" />
+    <key name="SelectionColumn" value="UserID" />
+  </options>
+</grid>

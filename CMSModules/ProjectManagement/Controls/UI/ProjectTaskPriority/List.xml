@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="TaskPriorityID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditProjecttaskpriority) {window.EditProjecttaskpriority({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+    <action name="up" caption="$Unigrid.Groups.Actions.up$" icon="Up.png" />
+    <action name="down" caption="$Unigrid.Groups.Actions.down$" icon="Down.png" />
+  </actions>
+  <columns>
+    <column source="TaskPriorityDisplayName" caption="$general.name$" wrap="false" allowsorting="false" />
+    <column source="TaskPriorityDefault" caption="$general.default$" externalsourcename="TaskPriorityDefault" wrap="false" allowsorting="false" />
+    <column source="TaskPriorityEnabled" caption="$general.enabled$" externalsourcename="TaskPriorityEnabled" wrap="false" allowsorting="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="PM.ProjectTaskPriority" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
+

@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SelectTaxAddressType.ascx.cs" Inherits="CMSModules_Ecommerce_FormControls_SelectTaxAddressType" %>
+<asp:RadioButtonList ID="rblAddresType" runat="server" RepeatDirection="Horizontal" CssClass="RadioButtonList" />

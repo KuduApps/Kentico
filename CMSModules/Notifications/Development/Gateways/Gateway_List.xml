@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+
+  <actions>
+    <action name="edit"  caption="$General.Edit$" icon="Edit.png"  />
+    <action name="delete"  caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+
+  <columns>
+    <column source="GatewayDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="GatewayEnabled" externalsourcename="GatewayEnabled"  caption="$general.enabled$" wrap="false" width="100%" />
+  </columns>
+
+  <objecttype name="notification.gateway" />
+
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

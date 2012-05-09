@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="DepartmentDisplayName" caption="$general.name$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="DepartmentSiteID" externalsourcename="DepartmentSiteID" columnname="DepartmentSiteID" caption="$com.isglobal$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.department" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

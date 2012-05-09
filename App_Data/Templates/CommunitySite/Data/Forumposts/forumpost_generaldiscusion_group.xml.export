@@ -1,0 +1,61 @@
+﻿<forumpost_generaldiscusion_group version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>443</PostId>
+      <PostForumID>128</PostForumID>
+      <PostIDPath>/00000443</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>The Czech republic</PostSubject>
+      <PostUserName>Frank</PostUserName>
+      <PostUserMail>frank@localhost.local</PostUserMail>
+      <PostText>I love the Czech Republic :)</PostText>
+      <PostTime>2008-10-25T18:33:10.913+02:00</PostTime>
+      <PostApprovedByUserID>352</PostApprovedByUserID>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>Brandon</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-28T20:10:19.087+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>92989939-e49e-457a-86c1-2f34262a2720</PostGUID>
+      <PostLastModified>2010-02-08T14:11:37.44+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsLocked>false</PostIsLocked>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>272</PostViews>
+      <PostLastEdit>2010-02-08T14:11:37.423+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Brandon</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-28T20:10:19.087+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>461</PostId>
+      <PostForumID>128</PostForumID>
+      <PostParentID>443</PostParentID>
+      <PostIDPath>/00000443/00000461</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:The Czech republic</PostSubject>
+      <PostUserName>Brandon</PostUserName>
+      <PostUserMail>brandon@localhost.local</PostUserMail>
+      <PostText>Hi, I was in Prague for 5 days last week, and I can honestly say it is one of the most interesting and mesmerising places I've ever seen in Europe.</PostText>
+      <PostTime>2008-10-28T20:10:19.087+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>eeb2e6f3-3a68-41e7-9442-bd513a8f3015</PostGUID>
+      <PostLastModified>2008-11-25T17:03:58.17+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-10-28T20:10:19.087+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_generaldiscusion_group>

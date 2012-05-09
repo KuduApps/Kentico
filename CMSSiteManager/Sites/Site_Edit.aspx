@@ -1,0 +1,1 @@
+<%@ Page Language="C#" MasterPageFile="~/CMSMasterPages/UI/TabsHeader.master" AutoEventWireup="true" Inherits="CMSSiteManager_Sites_Site_Edit" Title="Sites - Edit"  Theme="default" CodeFile="Site_Edit.aspx.cs" %>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ContainerID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="ContainerDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.WebPartContainer" columns="ContainerID, ContainerDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

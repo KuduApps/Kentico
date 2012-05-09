@@ -1,0 +1,16 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="CMSModules_Permissions_Pages_Administration_Default"
+    MasterPageFile="~/CMSMasterPages/UI/SimplePage.master" CodeFile="Default.aspx.cs" Theme="default" %>
+
+<%@ Register Src="~/CMSModules/Permissions/Controls/PermissionsFilter.ascx" TagName="PermissionsFilter" TagPrefix="cms" %>
+<%@ Register Src="~/CMSModules/Permissions/Controls/PermissionsMatrix.ascx" TagName="PermissionsMatrix" TagPrefix="cms" %>
+ 
+<asp:Content ID="Content1" ContentPlaceHolderID="plcContent" runat="server">
+<cms:LocalizedLabel ID="lblNoSite" CssClass="InfoLabel PageContent" runat="server" ResourceString="Administration.Permissions.NoSite"
+        DisplayColon="false" EnableViewState="false"
+        Visible="false" />
+    <cms:PermissionsFilter ID="prmhdrHeader" runat="server" IsLiveSite="false" /> 
+    <cms:PermissionsMatrix ID="prmMatrix" ShortID="mx" runat="server" QueryName="cms.permission.getpermissionMatrix" ColumnItemTooltipColumn="PermissionDescription" 
+        RowItemIDColumn="RoleID" ColumnItemIDColumn="PermissionID" RowItemDisplayNameColumn="RoleDisplayName" ColumnItemDisplayNameColumn="PermissionDisplayName" 
+        RowItemTooltipColumn="RoleDisplayName" ItemTooltipColumn="PermissionDescription" />            
+</asp:Content>
+

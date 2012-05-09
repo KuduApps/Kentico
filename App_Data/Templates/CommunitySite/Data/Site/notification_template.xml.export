@@ -1,0 +1,100 @@
+﻿<notification_template version="6.0">
+  <NewDataSet>
+    <notification_template>
+      <TemplateID>55</TemplateID>
+      <TemplateName>NewsSubscription</TemplateName>
+      <TemplateDisplayName>News subscription</TemplateDisplayName>
+      <TemplateSiteID>53</TemplateSiteID>
+      <TemplateLastModified>2009-01-12T13:43:05.343+01:00</TemplateLastModified>
+      <TemplateGUID>22f125d6-ba91-4359-b49e-0d41c4565deb</TemplateGUID>
+    </notification_template>
+    <notification_templatetext>
+      <TemplateTextID>87</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>31</GatewayID>
+      <TemplateSubject>Community Site News</TemplateSubject>
+      <TemplateHTMLText>Hello,&lt;br /&gt;
+&lt;br /&gt;
+news item {%notificationcustomdata.newstitle%} has been just published on the Community site. You can see it at {%documentlink%}.&lt;br /&gt;
+&lt;br /&gt;
+You are subscribed for receiving this automatic e-mail notification. If you no longer wish to receive these notifications, please change your preferences in your user profile at the Community Site.</TemplateHTMLText>
+      <TemplatePlainText>Hello,
+
+news item {%notificationcustomdata.newstitle%} has been just published on the Community site. You can see it at {%documentlink%}.
+
+You are subscribed for receiving this automatic e-mail notification. If you no longer wish to receive these notifications, please change your preferences in your user profile at the Community Site.</TemplatePlainText>
+      <TemplateTextGUID>9c239f4c-5169-43f1-b679-24e3a70fe9a8</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.013+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>88</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>32</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>c516e99a-114e-4f0b-b9e9-01aa71b20208</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.06+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>89</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>34</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>0f62035f-ace7-4992-aeb7-e1c77713f587</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.093+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>90</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>30</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>a8ec6c6e-f15a-4620-aa48-7f3ec1f9ae9b</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.14+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>91</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>33</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>985071af-7da7-4372-84b2-be89fc33eedf</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.17+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>92</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>27</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>4c8ff102-f728-4ee4-a067-dce75493d4b7</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.203+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>93</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>24</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText></TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>16342d65-2319-40e9-b923-164946120ccd</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.233+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+    <notification_templatetext>
+      <TemplateTextID>94</TemplateTextID>
+      <TemplateID>55</TemplateID>
+      <GatewayID>29</GatewayID>
+      <TemplateSubject></TemplateSubject>
+      <TemplateHTMLText>&lt;br /&gt;</TemplateHTMLText>
+      <TemplatePlainText></TemplatePlainText>
+      <TemplateTextGUID>56243ecc-bda7-4a8e-918a-1e17281e7cf3</TemplateTextGUID>
+      <TemplateTextLastModified>2009-01-12T13:43:05.28+01:00</TemplateTextLastModified>
+    </notification_templatetext>
+  </NewDataSet>
+</notification_template>

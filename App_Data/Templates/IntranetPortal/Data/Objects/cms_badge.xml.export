@@ -1,0 +1,44 @@
+﻿<cms_badge version="6.0">
+  <NewDataSet>
+    <cms_badge>
+      <BadgeID>45</BadgeID>
+      <BadgeName>AdvancedMember</BadgeName>
+      <BadgeDisplayName>Advanced member</BadgeDisplayName>
+      <BadgeImageURL>~/App_Themes/Default/Images/Objects/CMS_Badge/Default/advancedmember.gif</BadgeImageURL>
+      <BadgeIsAutomatic>true</BadgeIsAutomatic>
+      <BadgeTopLimit>100000</BadgeTopLimit>
+      <BadgeGUID>90cba1a8-38e3-47c8-ab98-2790a05d39d4</BadgeGUID>
+      <BadgeLastModified>2009-12-20T22:38:37.743+01:00</BadgeLastModified>
+    </cms_badge>
+    <cms_badge>
+      <BadgeID>43</BadgeID>
+      <BadgeName>Member</BadgeName>
+      <BadgeDisplayName>Member</BadgeDisplayName>
+      <BadgeImageURL>~/App_Themes/Default/Images/Objects/CMS_Badge/Default/member.gif</BadgeImageURL>
+      <BadgeIsAutomatic>true</BadgeIsAutomatic>
+      <BadgeTopLimit>10</BadgeTopLimit>
+      <BadgeGUID>2988a647-9f0e-4c4e-b740-5576021683f8</BadgeGUID>
+      <BadgeLastModified>2009-12-20T22:38:54.463+01:00</BadgeLastModified>
+    </cms_badge>
+    <cms_badge>
+      <BadgeID>46</BadgeID>
+      <BadgeName>Admin</BadgeName>
+      <BadgeDisplayName>Site admin</BadgeDisplayName>
+      <BadgeImageURL>~/App_Themes/Default/Images/Objects/CMS_Badge/Default/siteadmin.gif</BadgeImageURL>
+      <BadgeIsAutomatic>false</BadgeIsAutomatic>
+      <BadgeTopLimit>0</BadgeTopLimit>
+      <BadgeGUID>1f57161b-6d6f-46f4-8519-faffd2ce9eef</BadgeGUID>
+      <BadgeLastModified>2009-12-20T22:39:02.307+01:00</BadgeLastModified>
+    </cms_badge>
+    <cms_badge>
+      <BadgeID>44</BadgeID>
+      <BadgeName>ValuedMember</BadgeName>
+      <BadgeDisplayName>Valued member</BadgeDisplayName>
+      <BadgeImageURL>~/App_Themes/Default/Images/Objects/CMS_Badge/Default/valuedmember.gif</BadgeImageURL>
+      <BadgeIsAutomatic>true</BadgeIsAutomatic>
+      <BadgeTopLimit>30</BadgeTopLimit>
+      <BadgeGUID>e7e4c1ce-a292-483a-af6d-8594548b01a4</BadgeGUID>
+      <BadgeLastModified>2009-12-20T22:38:47.273+01:00</BadgeLastModified>
+    </cms_badge>
+  </NewDataSet>
+</cms_badge>

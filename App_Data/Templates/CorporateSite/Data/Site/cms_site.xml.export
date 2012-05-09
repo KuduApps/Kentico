@@ -1,0 +1,16 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>110</SiteID>
+      <SiteName>CorporateSite</SiteName>
+      <SiteDisplayName>Corporate site</SiteDisplayName>
+      <SiteDescription>Sample Corporate web site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.3</SiteDomainName>
+      <SiteDefaultStylesheetID>163</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteGUID>96182b06-a671-4dcb-a52c-23c0160344de</SiteGUID>
+      <SiteLastModified>2011-10-05T17:00:02.63+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

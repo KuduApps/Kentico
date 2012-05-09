@@ -1,0 +1,117 @@
+﻿<forumpost_wheretogoineurope version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>48</PostId>
+      <PostForumID>17</PostForumID>
+      <PostIDPath>/00000048</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>What place shouldn't we miss?</PostSubject>
+      <PostUserID>68</PostUserID>
+      <PostUserName>Abi</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Any tips about what places to visit during our month in Europe?</PostText>
+      <PostTime>2008-05-20T16:06:06.84+02:00</PostTime>
+      <PostThreadPosts>5</PostThreadPosts>
+      <PostThreadLastPostUserName>Kate</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-05-22T20:16:15.017+02:00</PostThreadLastPostTime>
+      <PostUserSignature>-= A B 1 =-</PostUserSignature>
+      <PostGUID>7ff78459-1960-4b5b-af23-3001ed0c38ca</PostGUID>
+      <PostLastModified>2008-12-14T21:01:53.263+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>106</PostViews>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>5</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Kate</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-05-22T20:16:15.017+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>49</PostId>
+      <PostForumID>17</PostForumID>
+      <PostParentID>48</PostParentID>
+      <PostIDPath>/00000048/00000049</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:What place shouldn't we miss?</PostSubject>
+      <PostUserName>Steve</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>If you're looking for the place that is the total opposite of Arizona, then go for Austria. You can find there everything we miss around here, including cows. </PostText>
+      <PostTime>2008-05-21T18:10:26.947+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>f3c4a130-97fe-4cf0-874d-266d1681b00f</PostGUID>
+      <PostLastModified>2008-05-21T18:10:26.947+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>1</PostViews>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>50</PostId>
+      <PostForumID>17</PostForumID>
+      <PostParentID>48</PostParentID>
+      <PostIDPath>/00000048/00000050</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:What place shouldn't we miss?</PostSubject>
+      <PostUserName>Josh</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Hey, if you decide to go to Austria, stop by in Slovenia, especially Ljubljana. You might be suprised.</PostText>
+      <PostTime>2008-05-21T20:15:28.387+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>d910d22e-ccd3-446a-ae18-ae5648b20ffb</PostGUID>
+      <PostLastModified>2008-05-21T20:15:28.387+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>51</PostId>
+      <PostForumID>17</PostForumID>
+      <PostParentID>48</PostParentID>
+      <PostIDPath>/00000048/00000051</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:What place shouldn't we miss?</PostSubject>
+      <PostUserName>Kate</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Everybody says Paris is the best. And I'm gonna say it as well. Paris is the best.</PostText>
+      <PostTime>2008-05-22T20:16:15.017+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>95f25c36-dd3d-4dd4-90f7-1d4c8b36c781</PostGUID>
+      <PostLastModified>2008-05-22T20:16:15.017+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>52</PostId>
+      <PostForumID>17</PostForumID>
+      <PostParentID>50</PostParentID>
+      <PostIDPath>/00000048/00000050/00000052</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:What place shouldn't we miss?</PostSubject>
+      <PostUserName>Abi</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Sounds mysterious...</PostText>
+      <PostTime>2008-05-21T20:15:57.013+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>0635084a-d240-4e8b-8ee1-c8ae17c77a7c</PostGUID>
+      <PostLastModified>2008-05-21T20:15:57.013+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_wheretogoineurope>

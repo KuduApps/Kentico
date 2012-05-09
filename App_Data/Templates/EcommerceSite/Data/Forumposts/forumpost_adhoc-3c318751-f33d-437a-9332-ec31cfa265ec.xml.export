@@ -1,0 +1,131 @@
+﻿<forumpost_adhoc-3c318751-f33d-437a-9332-ec31cfa265ec version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>15</PostId>
+      <PostForumID>6</PostForumID>
+      <PostIDPath>/00000015</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Waterproof?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Luke</PostUserName>
+      <PostUserMail>luke@localhost.local</PostUserMail>
+      <PostText>Is this camera waterproof or is there any waterproof case for this model?</PostText>
+      <PostTime>2008-03-05T19:07:54.873+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:10:09.05+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>5b183297-05a0-4a65-865b-227e498cbf94</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.827+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>1</PostViews>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:10:09.05+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>16</PostId>
+      <PostForumID>6</PostForumID>
+      <PostIDPath>/00000016</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Additional lens...</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Jane</PostUserName>
+      <PostUserMail>jane@localhost.local</PostUserMail>
+      <PostText>Are there any optional lens for this camera?</PostText>
+      <PostTime>2008-03-05T19:14:56.727+01:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>public</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-14T13:33:05.47+02:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>c60dbea8-ab3b-4868-bd53-01b8772918f5</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.857+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>public</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-14T13:33:05.47+02:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>17</PostId>
+      <PostForumID>6</PostForumID>
+      <PostParentID>16</PostParentID>
+      <PostIDPath>/00000016/00000017</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Additional lens...</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>admin@localhost.local</PostUserMail>
+      <PostText>Yes. For example: EF-S 10-22/3.5-4.5.</PostText>
+      <PostTime>2008-03-05T19:15:19.407+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>a41ec3a0-f0d8-4132-85f0-7c2553c0b3e0</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.873+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>18</PostId>
+      <PostForumID>6</PostForumID>
+      <PostParentID>15</PostParentID>
+      <PostIDPath>/00000015/00000018</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Waterproof?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>admin@localhost.local</PostUserMail>
+      <PostText>We are sorry but it isn't possible to use it under water. Look out for different model.</PostText>
+      <PostTime>2008-03-05T19:10:09.05+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>941bddde-e733-4abd-b338-84975b0dcb74</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.843+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>19</PostId>
+      <PostForumID>6</PostForumID>
+      <PostParentID>17</PostParentID>
+      <PostIDPath>/00000016/00000017/00000019</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Additional lens...</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Jane</PostUserName>
+      <PostUserMail>jane@localhost.local</PostUserMail>
+      <PostText>Thank you for your quick answer.</PostText>
+      <PostTime>2008-03-05T19:15:51.843+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>93ad8b8a-7fdd-44d2-884a-3f0fead5d1f8</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.89+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-3c318751-f33d-437a-9332-ec31cfa265ec>

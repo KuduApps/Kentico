@@ -1,0 +1,16 @@
+<%-- Installer --%>
+<asp:Wizard runat="server" SkinID="InstallWizard" CssClass="InstallWizard"/>
+ 
+<%-- GridView --%>
+<asp:GridView runat="server" SkinID="ReportGridDefault" Font-Name="Verdana" Font-Size="10pt" Cellpadding="4"
+HeaderStyle-BackColor="#888888" HeaderStyle-ForeColor="White" AlternatingRowStyle-BackColor="#dddddd" />
+
+<%-- GridView  analytics--%>
+<asp:GridView runat="server" SkinID="ReportGridAnalytics"  runat="server" CSSClass="UniGridGrid">
+  <HeaderStyle CssClass="UniGridHead"  />
+  <RowStyle CssClass="EvenRow"  />
+  <AlternatingRowStyle CssClass="OddRow" />
+  <PagerStyle CssClass="UniGridHead"/>
+</asp:GridView>
+
+

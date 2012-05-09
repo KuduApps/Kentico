@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="CategoryDisplayName" externalsourcename="DisplayName" caption="$MultipleCategoriesSelector.CategoryName$" width="100%" wrap="false" localize="true" />
+    <column width="100%"/>
+  </columns>
+  <objecttype name="cms.category" />
+  <pager>
+    <key name="DefaultPageSize" value="10" />
+  </pager>
+  <options>
+    <key name="DisplayFilter" value="false" />
+    <key name="ShowSelection" value="true" />
+  </options>
+</grid>

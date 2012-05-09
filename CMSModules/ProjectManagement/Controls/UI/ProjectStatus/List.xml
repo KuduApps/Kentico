@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="StatusID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditProjectstatus) {window.EditProjectstatus({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+    <action name="up" caption="$Unigrid.Groups.Actions.up$" icon="Up.png" />
+    <action name="down" caption="$Unigrid.Groups.Actions.down$" icon="Down.png" />
+  </actions>
+  <columns>
+    <column source="StatusDisplayName" caption="$general.name$" wrap="false" allowsorting="false">
+      <filter type="text" />
+    </column>
+    <column source="StatusColor" caption="$pm.projectstatus.color$" externalsourcename="StatusColor" wrap="false" allowsorting="false" />
+    <column source="StatusIcon" caption="$pm.projectstatus.icon$" externalsourcename="StatusIcon" wrap="false" allowsorting="false" />
+    <column source="StatusIsNotStarted" caption="$pm.projectstatus.isnotstartedstatus$" externalsourcename="StatusIsNotStarted" wrap="false" allowsorting="false" />
+    <column source="StatusIsFinished" caption="$pm.projectstatus.isfinishstatus$" externalsourcename="StatusIsFinished" wrap="false" allowsorting="false" />
+    <column source="StatusEnabled" caption="$general.enabled$" externalsourcename="StatusEnabled" wrap="false" allowsorting="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="PM.ProjectStatus" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
+

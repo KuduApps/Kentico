@@ -1,0 +1,16 @@
+﻿<media_library version="6.0">
+  <NewDataSet>
+    <media_library>
+      <LibraryID>125</LibraryID>
+      <LibraryName>Media</LibraryName>
+      <LibraryDisplayName>Media</LibraryDisplayName>
+      <LibraryDescription>Here you can find different kinds of media files.</LibraryDescription>
+      <LibraryFolder>Media</LibraryFolder>
+      <LibraryAccess>0</LibraryAccess>
+      <LibrarySiteID>53</LibrarySiteID>
+      <LibraryGUID>08edb9e9-f51f-4d21-a0e4-c2d8e9fcd36f</LibraryGUID>
+      <LibraryLastModified>2009-12-16T17:32:48.363+01:00</LibraryLastModified>
+      <LibraryTeaserPath></LibraryTeaserPath>
+    </media_library>
+  </NewDataSet>
+</media_library>

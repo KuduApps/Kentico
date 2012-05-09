@@ -1,0 +1,24 @@
+﻿body
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+    font-family: Comic Sans MS;
+    font-size: small;
+}
+
+a[href]
+{
+	color: -moz-hyperlinktext !important;		/* For Firefox... mark as important, otherwise it becomes black */
+	text-decoration: -moz-anchor-decoration;	/* For Firefox 3, otherwise no underline will be used */
+}
+
+img
+{
+    filter: Gray;
+}
+
+h1
+{
+    font-size: 160%;
+}

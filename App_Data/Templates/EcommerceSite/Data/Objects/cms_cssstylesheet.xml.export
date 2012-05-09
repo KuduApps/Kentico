@@ -1,0 +1,2155 @@
+﻿<cms_cssstylesheet version="6.0">
+  <NewDataSet>
+    <cms_cssstylesheet>
+      <StylesheetID>5</StylesheetID>
+      <StylesheetDisplayName>Ecommerce site</StylesheetDisplayName>
+      <StylesheetName>EcommerceSite</StylesheetName>
+      <StylesheetText>/*#Main styles#*/
+body
+{
+  font-family: Arial;
+  font-size: 12px;
+}
+body.LTR, body.RTL
+{
+  background: gray;
+  padding: 0px;
+  margin: 0px;
+}
+
+legend
+{
+  font-size: 12px;
+}
+
+a
+{
+ color: #356B99;
+}
+
+a:hover
+{
+ text-decoration: none;
+}
+
+.Hidden, .HiddenButton, .HiddenLabel
+{
+    display: none;
+}
+
+img, a
+{
+    border: none;
+}
+
+h1
+{
+ color: #356B99;
+ font-size: 180%;
+/* background-color: #eeeeee; */
+ margin-top: 5px;
+}
+
+h2
+{
+ color: #356B99;
+ font-size: 160%;
+ background-color: #eeeeee;
+ padding: 5px 10px;
+ margin-bottom: 5px;
+}
+
+h3
+{
+ color: #356B99;
+ font-size: 130%;
+ margin-bottom: 5px;
+ margin-top: 10px;
+}
+
+.caption h3
+{
+margin: 10px 0 10px 0;
+}
+
+h1.homepage
+{
+color: black;
+font-size: 18px;
+background: none;
+font-weight: normal;
+margin: 10px 3px 10px 3px;
+}
+
+.contentWithRightBlock
+{
+background: white  url(../App_Themes/EcommerceSite/Images/contetn_rightblock_bg.gif) 100% 0% repeat-y;
+}
+
+.topBlock
+{
+  width: 960px;
+  /*height: 135px;*/
+  margin: 0px auto;
+  background: white;
+  border: 2px solid white;
+  border-bottom: none;
+  border-top: 1px solid white;
+}
+
+.DesignMode .topBlock
+{
+  width: 960px;
+  /*_width: 965px;*/
+}
+
+.EditMode .topBlock
+{
+  width: 960px;
+  /*_width: 965px;*/
+}
+.topBlock .WebPart_TopImage
+{
+  float: right;
+  width: 959px;
+}
+
+.topShoppingcartPadding
+{
+  padding-left: 650px;
+}
+
+.DesignMode .topShoppingcartPadding
+{
+  padding-left: 630px;
+}
+
+.DesignMode .topShoppingcart
+{
+  width: 290px;
+}
+
+.topShoppingcart
+{
+  position: absolute;
+}
+
+.topShoppingcart .shoppingCart
+{
+  font-family: Verdana;
+  padding-right: 14px;
+  background: url(../App_Themes/EcommerceSite/Images/shoppingCartPreviewBackground03.gif) no-repeat top left;
+  width: 283px;
+  height: 92px;
+}
+
+.leftBlock
+{
+  width: 201px;
+  float: left;
+  background: white;
+}
+.subContent
+{
+  width: 759px;
+  float: left;
+}
+.contentTopBlock
+{
+  width: 552px;
+  float: left;
+  margin: 0px 0px 0px 3px;
+}
+.contentBlock
+{
+  width: 552px;
+  float: left;
+  margin: 0px 0px 0px 3px;
+}
+
+.IE6 .ProductList
+{
+  padding: 0px 5px 0px 10px;
+}
+
+.contentBlock
+{
+  margin-left: 1px;
+}
+.rightBlock
+{
+  width: 200px;
+  float: right;
+  background: white;
+  
+}
+.IE6 .DesignMode .homeHeader a img
+{
+  width: 548px;
+}
+.IE6 .DesignMode .hotOffersBox
+{
+  padding: 0px;
+}
+.IE6 .EditMode .homeHeader .EditableImageEdit, .IE6 .EditMode .homeHeader .EditableImageEdit img
+{
+  width: 548px !important;
+}
+.IE6 .EditMode .homeHeader
+{
+  width: 548px !important;
+}
+.mainBlock
+{
+  width: 960px;
+  margin: 0px auto;
+  background:  white url(../App_Themes/EcommerceSite/Images/mainblock_bg4.gif) repeat-y;
+  border: 2px solid white;
+  border-top: none;  
+  border-bottom: 3px solid white;
+}
+
+.footerBlock
+{
+  width: 960px;
+  height: 63px;
+  margin: 0px auto;
+  text-align: center;
+  background:  url(../App_Themes/EcommerceSite/Images/footer_bg.gif) repeat-x;
+  border: 2px solid white;
+  border-top: none;
+
+}
+
+.clear {width:0; height:0; clear:both; line-height: 0px; font-size: 0px;}
+
+.highlight
+{
+  background: Yellow;
+}
+
+.CMSValidator
+{
+    color: Red;
+}
+
+/*#Other styles#*/
+
+.UnigridActionButton
+{
+    margin-right: 5px;
+}
+
+.RTL .UnigridActionButton
+{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.TextAreaField
+{
+  width: 280px;
+  height: 100px;
+}
+
+.button, .SubscriptionButton, .signoutButton, .Button, .CMSSearchDialogSearchButton, .PollVoteButton
+{
+  border: 1px solid #c3c3c3;
+  padding: 0px;
+  color: #fff;
+  background:  url(../App_Themes/EcommerceSite/Images/button_background.gif) repeat-x top left;
+  font-weight: bold;
+  font-size: 11px;
+  width: 55px;
+  height: 20px;
+
+  cursor: pointer;
+}
+
+.LogonTextBox
+{
+  width:140px;
+}
+
+.signoutButton
+{
+  float: right;
+  display: block;
+  margin-top: 5px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+.IE6 .signoutButton
+{
+  margin-right: 13px;
+}
+
+.ContentButton
+{
+  width: 100px;
+}
+
+.LongButton
+{
+  width: 160px;
+}
+
+.ContentButton, .SubmitButton, .LongButton, .LongSubmitButton, .XLongButton
+{
+    background: #E0E0E0 !important;
+    border: 1px outset #E0E0E0 !important;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.TextLeft
+{
+  text-align: left;
+}
+
+.RTL .TextLeft
+{
+  text-align: right;
+}
+
+.TextRight
+{
+  text-align: right;
+}
+
+.RTL .TextRight
+{
+  text-align: left;
+}
+
+.BreadBox
+{
+  font-size: 14px;
+  padding: 10px 5px 10px 3px;
+}
+.BreadBox .CMSBreadCrumbsLink
+{
+  font-size: 14px !important;
+}
+
+
+.leftInfoBlock
+{
+  padding-left: 24px;
+  padding-right: 4px;
+}
+
+.leftInfoBlock ul{
+padding-left: 3px;
+margin: 0px;
+}
+
+.leftInfoBlock li{
+padding-left: 15px; 
+list-style: none;
+background: url(../App_Themes/EcommerceSite/Images/arrow_left.gif) no-repeat 0% 60%;
+margin: 0;
+}
+
+.rightInfoBlock
+{
+  padding-right: 24px;
+  padding-left: 4px;
+}
+
+.ProductList{
+padding: 0px 10px;
+}
+
+.EditingFormErrorLabel
+{
+  color: #ff0000;
+}
+
+.PrintLink
+{
+position: absolute;
+
+}
+
+.PrintLink a{
+display: block;
+padding: 9px 10px 5px 30px;
+background: url(../App_Themes/EcommerceSite/Images/Print.gif) 0px 5px no-repeat;
+margin-top:3px;
+text-align: right;
+width: 20px;
+margin-left:470px;
+}
+
+.PasswStrenghtIndicator
+{
+  max-width: 292px;
+}
+
+/*#Polls#*/
+.PollControl{
+padding: 0 3px 0px 23px;
+}
+
+.PollTitle
+{
+  font-weight:bold;
+  display:none;
+  margin-bottom:10px
+}
+
+.PollAnswers{
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.PollGraph
+{
+  height: 8px;
+  border: 1px solid #b0b0b0;
+}
+
+.PollGraph div
+{
+  height: 8px;
+  background: url(../App_Themes/EcommerceSite/Images/poll05.gif) 100% 0% repeat-x;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.PollQuestion
+{
+  font-size:12px;
+  font-weight: bold;
+}
+
+.PollCount
+{
+  text-align: right;
+}
+
+.PollFooter
+{
+  margin-top:10px;
+}
+
+
+
+
+/*#Products#*/
+.ProductImage{
+  height: 140px;
+}
+
+.IE6 .ProductImage
+{
+  height: 143px;
+}
+
+.ProductImage a{
+height: 140px;
+
+}
+
+.ProductImage img{
+border: none;
+}
+
+.ProductImage{
+text-align: center;
+padding-bottom: 10px;
+}
+
+.ProductBreadcrumbs{
+background: url(../App_Themes/EcommerceSite/Images/product_top_background.gif) repeat-x;
+background-position: bottom center;
+height:30px;
+}
+
+.ProductList table{
+/*width: 100%;*/
+}
+
+.ProductList h1{
+padding-left: 30px;
+background: url(../App_Themes/EcommerceSite/Images/h1point.gif) no-repeat 5px 5px;
+}
+
+.ProductTitle{
+background: #326590;
+display: block;
+color: white;
+text-align: center;
+padding: 5px 2px 5px 2px;
+font-size: 12px;
+}
+
+.ProductPrice{
+font-size: 13px;
+padding: 3px 3px 5px 3px;
+font-weight: bold;
+background: #f0f0f0;
+}
+
+.ProductPriceDetail{
+font-size: 13px;
+padding: 3px 3px 5px 0px;
+font-weight: bold;
+}
+
+.ProductPriceDetailTax{
+font-size: 12px;
+padding: 3px 3px 5px 0px;
+}
+
+.ProductPriceLabel{
+font-size: 13px;
+padding: 5px 3px 5px 3px;
+font-weight: bold;
+}
+
+.ProductPriceLabelTax{
+font-size: 12px;
+padding: 5px 3px 5px 3px;
+width: 100px;
+}
+
+.ProductPrice .right{
+text-align: right;
+}
+
+.ProductPrice .left {
+padding-top: 12px;
+}
+
+.ProductBox{
+padding-top: 20px
+}
+
+.ProductFooter{
+text-align: center;
+}
+
+.productDetail img
+{
+  border: none;
+}
+
+.productDescription
+{
+  text-align: justify;
+}
+
+.productDetailLinks
+{
+  margin-top: 15px;
+  padding: 3px 0 0 3px;
+        background: white url(../App_Themes/EcommerceSite/Images/bg_price.gif) no-repeat;
+  height: 45px;
+}
+
+.productOptionsTable
+{
+  margin-top: 10px;
+}
+
+
+.ProductPreview
+{
+  width: 175px;
+}
+
+.AddToCartContainer
+{ 
+  padding-top: 10px;
+  background: white url(../App_Themes/EcommerceSite/Images/ShoppingCart/bg_options_bottom.gif) repeat-x;
+  text-align: right;
+}
+
+.right .AddToCartContainer
+{  
+  background: none;
+  padding-top: 0;
+  margin: 0;
+}
+
+
+
+
+.ProductOptionSelectorContainer
+{
+  border: 1px solid #d7d7d7;
+  padding: 0px 10px;
+  margin: 6px 0px;
+}
+.ProductOptionSelectorContainer select
+{
+   width: 75%;
+}
+.productDetail .ProductPrice
+{
+  width: 180px;
+  padding: 5px 5px;
+  display: block;
+  background:  url(../App_Themes/EcommerceSite/Images/bg_price.gif) no-repeat top right;
+  font-weight: bold;
+}
+
+input.AddToWishlistImageButton
+{
+  float: left;
+}
+
+
+.wishlistAdd .AddToCartContainer
+{
+  background: none;
+}
+
+.removeFromWishlist
+{
+  margin-top: -18px;
+}
+
+
+.TotalPriceContainer
+{
+  text-align: center;
+  background: #bde5f2;
+  padding: 7px 10px 9px 0px;
+  margin-bottom: 3px;
+}
+
+.TotalPriceLabel
+{
+  font-weight: bold;
+  text-align: right;
+}
+
+.TotalPrice
+{
+  font-weight: bold;
+  text-align: right;
+}
+
+.lightboxField .Pager
+{
+clear: both;
+}
+
+/*#Products/Forum#*/
+.ForumTree .Actions
+{
+  background-color: #bee6fa;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+.ForumTree .ForumManage
+{
+  background-color: #C4DBE7;
+  padding: 5px 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.ForumTree .ForumPost
+{
+  padding: 5px;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+.ForumTree .PostText
+{
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.ForumTree .PostActionLink
+{
+  padding: 1px 5px;
+  background: #bee6fa;
+  display: block;
+  float: left;
+  border: 1px solid silver;
+  color:  black;
+  text-decoration: none;
+}
+
+.ForumTree .PostActionLink:hover
+{
+  background: #9ed5f2;
+  border: 1px solid gray;
+}
+
+
+.ForumTree .PostActionSeparator{
+  display: block;
+  float: left;
+  padding: 2px 5px;
+}
+.ForumTree .PostUserLink{
+  font-weight: bold;
+}
+.ForumTree .Posts
+{
+  width: 580px;
+  background: #f6f6f6;
+}
+.ForumTree .PostSubject
+{
+  font-weight: bold;
+  display: block;
+  padding: 5px 0px;
+}
+.TextboxItemShort, .TextboxItem, .TextareaItem
+{
+  width: 220px;
+}
+
+.TextareaItem
+{
+  height: 90px;
+}
+
+.ForumTree .Title, .ForumNewPost .Title
+{
+  font-weight: bold;
+  margin: 5px 5px;;
+  display: block;
+}
+
+.ForumTree .PostTree .Name
+{
+  cursor: pointer;
+}
+
+
+/*#Products/Filter#*/
+.ProductFilter
+{
+  background: url(../App_Themes/EcommerceSite/Images/product_top_background.gif) repeat-x;
+  background-position: bottom center;
+  font-size: 10px;
+  height: 65px;
+}
+.ProductFilter Select
+{
+  width:160px;
+  height:18px;
+  font-size:10px;
+}
+/*#Shopping cart preview#*/
+.topBlock .shoppingCart
+{
+  padding-left: 0px;
+}
+.topBlock .shoppingCart a
+{
+  color: #000;
+  text-decoration: none;
+}
+.topBlock .shoppingCart a:hover
+{
+  text-decoration: underline;
+}
+.topBlock .shoppingCart
+{
+  /*line-height: 33px;*/
+}
+
+.MyProfileUserSignature{
+width: 300px;
+height: 100px;
+}
+
+/*#Menus#*/
+/*#Menus/Left menu#*/
+.leftMenuCMSListMenuUL
+{
+  list-style: none;
+  padding: 0px 0px 0px 10px;
+  margin-left: 17px;
+}
+
+.leftMenuCMSListMenuUL ul{
+margin: 0;
+padding-left: 3px; 
+}
+
+
+.leftMenuCMSListMenuLink, .leftMenuCMSListMenuLinkHighlighted
+{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.leftMenuCMSListMenuLink:hover
+{
+  text-decoration: underline;
+}
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuLI
+{
+  background: url(../App_Themes/EcommerceSite/Images/arrow_left.gif) no-repeat center left;
+  padding-left: 15px;
+  height: 13px;
+  line-height: 13px;
+  margin: 4px 0px;
+}
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuHighlightedLI
+{
+  background: url(../App_Themes/EcommerceSite/Images/arrow_left_active.gif) no-repeat 0px 2px;
+  padding-left: 15px;
+  /*height: 11px;*/
+  line-height: 13px;
+  margin: 4px 0px;
+}
+
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuLI .leftMenuCMSListMenuUL
+{
+  display: none;
+}
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuHighlightedLI .leftMenuCMSListMenuUL
+{
+  display: block;
+
+}
+
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuHighlightedLI .leftMenuCMSListMenuUL .leftMenuCMSListMenuLI,
+.leftMenuCMSListMenuUL .leftMenuCMSListMenuHighlightedLI .leftMenuCMSListMenuUL .leftMenuCMSListMenuHighlightedLI
+{
+  font-weight: normal;
+  line-height: 13px;
+}
+
+/*#Menus/Top menu#*/
+.topMenuLeft
+{
+  background: url(../App_Themes/EcommerceSite/Images/menu_top_left.gif) no-repeat top left;
+  width: 4px;
+  height: 38px;
+  font-size: 1px;
+  float: left;
+  margin: 1px 0px 0px;
+}
+.topMenuRight
+{
+  background: url(../App_Themes/EcommerceSite/Images/menu_top_right.gif) no-repeat top left;
+  width: 4px;
+  height: 38px;
+  font-size: 1px;
+  float: left;
+  margin: 1px 0px 0px;
+}
+.topMenuCMSListMenuLink, .topMenuCMSListMenuLinkHighlighted
+{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  /*height: 29px;*/
+  margin-left: 3px;
+  padding: 0px 13px 0px 10px;
+  text-align: center;
+}
+
+
+.topMenuCMSListMenuLinkHighlighted{
+  background: #4482b4 url(../App_Themes/EcommerceSite/Images/menu_top_active_right.gif) no-repeat center right;
+  
+}
+
+.topMenuCMSListMenuLink:hover{
+  background: #4482b4 url(../App_Themes/EcommerceSite/Images/menu_top_active_right.gif) no-repeat center right;
+}
+
+.IE6 .topMenuCMSListMenuLink:hover{
+  background: none;
+  text-decoration: underline;
+}
+
+
+
+.topMenuCMSListMenuLI:hover, .topMenuCMSListMenuHighlightedLI
+{
+  
+  background: #4482b4 url(../App_Themes/EcommerceSite/Images/menu_top_active_left.gif) no-repeat center left;
+}
+
+
+
+
+.topMenuCMSListMenuLI, .topMenuCMSListMenuHighlightedLI
+{
+  float: left;
+  margin: 4px 0 0 0;
+  display: block;
+}
+
+.topMenuCMSListMenuUL
+{
+  list-style-type: none;
+  margin: 1px 0px 0px;
+  height: 38px;
+  padding: 0;
+  line-height: 27px;
+  float: left;
+}
+
+.toplistmenu{
+background: url(../App_Themes/EcommerceSite/Images/menu_top_background03.gif) 0px 1px no-repeat;
+height: 40px;
+padding-left: 2px;
+}
+
+.toplistmenu li{
+margin-left: 2px;
+margin-right: 2px;
+}
+
+.IE .toplistmenu li{
+  width: 80px;
+}
+
+
+/*#Boxes#*/
+/*#Boxes/Blue box left#*/
+.boxBlueLeft
+{
+  background: #d7d7d7 url(../App_Themes/EcommerceSite/Images/box_blue_background.gif) repeat-y top left;
+  margin-bottom: 3px;
+  margin-top: 1px;
+}
+.boxBlueLeftTop div {
+  background: url(../App_Themes/EcommerceSite/Images/box_left_top.gif) no-repeat top left;
+}
+.boxBlueLeftTop {
+  background: url(../App_Themes/EcommerceSite/Images/box_right_top.gif) no-repeat top right;
+}
+.boxBlueLeftBot div {
+  background: url(../App_Themes/EcommerceSite/Images/box_left_bottom.gif) no-repeat bottom left;
+}
+.boxBlueLeftBot {
+  background: url(../App_Themes/EcommerceSite/Images/box_right_bottom.gif) no-repeat bottom right;
+}
+.boxBlueLeftTop div, .boxBlueLeftTop, .boxBlueLeftBot div, .boxBlueLeftBot
+{
+  width: 100%;
+  height: 14px;
+  font-size: 1px;
+}
+
+.boxBlueLeft h2
+{
+  background-color: #eeeeee;
+  font-size: 100%;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-top: 0px;
+  line-height: 10px;
+  padding: 7px 5px 7px 9px;
+}
+
+/*#Boxes/Blue box right#*/
+.boxBlueRight
+{
+  background: #c4dbe7 url(../App_Themes/EcommerceSite/Images/box_light_background.gif) repeat-y top right;
+  margin-bottom: 3px;
+}
+.boxBlueRightHeader
+{
+  margin-bottom: 0px;
+  margin-top: 1px;
+  padding-bottom: 10px;
+}
+.boxBlueRight p
+{
+  padding: 0px 20px 0 9px;
+  margin: 0px;
+}
+.boxBlueRight .NewsReleaseTitle
+{
+  margin: 10px 0px;
+}
+.boxBlueRightTop div {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_left_top.gif) no-repeat top left;
+}
+.boxBlueRightTop {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_right_top.gif) no-repeat top right;
+}
+.boxBlueRightBot div {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_left_bottom.gif) no-repeat bottom left;
+}
+.boxBlueRightBot {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_right_bottom.gif) no-repeat bottom right;
+}
+.boxBlueRightTop div, .boxBlueRightTop, .boxBlueRightBot div, .boxBlueRightBot
+{
+  width: 100%;
+  height: 14px;
+  font-size: 1px;
+}
+.boxBlueRight h2
+{
+  background-color: #e6f0f5;
+  font-size: 100%;
+  font-weight: normal;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: 10px;
+  padding: 7px 5px 7px 9px;
+}
+.boxBlueRightHeader h2
+{
+  margin-bottom: 0px;
+  line-height: 17px;
+}
+.boxBlueRightHeader .FeedLink
+{
+  text-decoration: none;
+}
+.boxBlueRightHeader .FeedIcon
+{
+  vertical-align: top;
+  margin-right: 3px;
+}
+.RTL .boxBlueRightHeader .FeedIcon
+{
+  margin-left: 3px;
+}
+
+
+/*#Search box#*/
+.searchText
+{
+  border: 1px #c3c3c3 solid;
+  width: 112px;
+  height: 16px;
+  margin-left: 25px;
+}
+.searchBox
+{
+  margin-top: 5px;
+  min-height: 26px;
+}
+.boxSearchLeft
+{
+ background: #d7d7d7 url(../App_Themes/EcommerceSite/Images/box_blue_background.gif) repeat-y top left;
+ margin-bottom: 3px;
+ margin-top: 1px;
+ min-height: 39px;
+}
+
+
+
+.boxSearchLeftTop div {
+ background: url(../App_Themes/EcommerceSite/Images/box_left_top.gif) no-repeat top left;
+}
+.boxSearchLeftTop {
+ background: url(../App_Themes/EcommerceSite/Images/box_right_top.gif) no-repeat top right;
+}
+.boxSearchLeftBot div {
+ background: url(../App_Themes/EcommerceSite/Images/box_left_bottom.gif) no-repeat bottom left;
+}
+.boxSearchLeftBot {
+ background: url(../App_Themes/EcommerceSite/Images/box_right_bottom.gif) no-repeat bottom right;
+}
+.boxSearchLeftTop div, .boxSearchLeftTop, .boxSearchLeftBot div, .boxSearchLeftBot
+{
+ width: 100%;
+ height: 4px;
+ font-size: 1px;
+}
+
+/*#Newsletter subscription#*/
+.Subscription
+{
+  margin-left: 9px;
+}
+.SubscriptionTextbox
+{
+  border: 1px #c3c3c3 solid;
+  width: 112px;
+  height: 16px;
+}
+
+/*#Random product#*/
+.randomProduct
+{
+  text-align: center;
+  padding-right: 19px;
+}
+.randomProduct img
+{
+  border: none;
+}
+
+
+.DesignMode .topMenuCMSListMenuUL
+{
+  width: 534px !important;
+}
+
+
+/*#Shopping cart item selector#*/
+
+.AddToShoppingCartTextBox
+{
+  width:25px;
+}
+
+
+.AddToShoppingCartLink
+{
+  background-image: url('Images/ShoppingCart/AddToCart.gif');
+  background-position: left -2px;
+  background-repeat: no-repeat;
+  padding-left: 18px;  
+  color: #000000;
+  text-decoration: underline;
+}
+
+.AddToShoppingCartButton
+{
+  width:80px;
+}
+
+/*#Portal context menu#*/
+.PortalContextMenu
+{
+    border: solid 1px #666666;
+    background-color: #e0e0e0;
+    font-size: 11px;
+    display: block;
+    min-width: 135px;
+}
+
+.PortalContextMenu .Item
+{
+    border-bottom: solid 1px #a4b2bc;
+    height: 21px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+}
+
+.PortalContextMenu .ItemLast
+{
+    height: 21px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.PortalContextMenu .ItemPadding
+{
+    background: url(../App_Themes/CommunitySite/Images/userPortalContextMenu.gif) repeat-x;
+    padding: 0px 3px 1px 5px;
+    white-space: nowrap;
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.PortalContextMenu .ItemPadding:hover, .PortalContextMenu .ItemSelected .ItemPadding
+{
+    display: block;
+    background-color: #ffffff;
+    background-image: none;
+    border-left: solid 4px #ffb540;
+    padding: 0px 3px 1px 1px;
+    border-bottom: solid 1px #a4b2bc;
+}
+
+.UserContextActiveNode
+{
+    background-color: #e4e4e4;
+}
+
+.PortalContextMenu .Item .Icon, .PortalContextMenu .ItemLast .Icon
+{
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+
+}
+
+.TreePortalContextMenu .Item .IconBig, .UserPortalContextMenu .ItemLast .IconBig
+{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.PortalContextMenu .Item .Name, .PortalContextMenu .ItemLast .Name, .PortalContextMenu .Item .NameInactive, .PortalContextMenu .ItemLast .NameInactive
+{
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.PortalContextMenu .Separator
+{
+    height: 1px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+
+/*#Random product with status#*/
+.randomProductWithStatus
+{
+  float: left;
+  width: 182px;
+}
+/*#News#*/
+
+.newsRepeater
+{
+margin: 15px 0;
+}
+
+.newsItem
+{
+  background-color: #eeeeee;
+  padding: 5px;
+  margin: 5px 0px;
+  border: 1px solid #b0b0b0
+}
+
+.newsItem p
+{
+  margin-top: 0px;
+}
+.newsItemDetail .Date
+{
+  font-size: 120%;
+  font-weight: bold;
+}
+/*#Tags#*/
+.autocomplete_completionListElement
+{
+  visibility: hidden;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 1px solid #A4B2BC;
+  overflow: auto;
+  height: 200px;
+  text-align: left;
+  list-style-type: none;
+  background-color: #fff;
+}
+
+.RTL .autocomplete_completionListElement
+{
+  text-align: right;
+}
+
+.autocomplete_highlightedListItem
+{
+  background-color: #ffff99;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.autocomplete_listItem
+{
+  padding: 1px;
+}
+/*#Search#*/
+.SearchResult
+{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.ResultTitle
+{
+  font-size: 120%;
+  margin-bottom: 3px;
+}
+.ResultPath
+{
+  background-color: #eeeeee;
+  padding: 2px;
+}
+.CMSSearchDialogSearchForTextBox
+{
+  width: 154px !important;
+}
+.CMSSearchDialogSearchModeDropDownList
+{
+  width: 160px !important;
+}
+/*#Tab menu#*/
+.myAccMenu
+{
+  background: url(../App_Themes/EcommerceSite/Images/myAccMenuBackground.gif) no-repeat top left;
+  margin-left: -7px;
+  width: 754px;
+  min-height: 38px;
+}
+.IE6 .myAccMenu
+{
+  height: 38px;
+}
+.myAccMenu .TabsHeader
+{
+  /*background: url(../App_Themes/EcommerceSite/Images/myAccMenuRight.gif) no-repeat top right;*/
+}
+.myAccMenu .TabControl
+{
+  height: 35px;
+}
+
+.TabControlTable
+{
+
+
+margin-left: 3px;
+}
+
+
+.myAccMenu .TabControlSelectedLeft{
+  background: url(../App_Themes/EcommerceSite/Images/myAccMenuActiveLeft.gif) 100% 0% no-repeat; 
+}
+
+.myAccMenu .TabControlSelectedRight{
+  background: url(../App_Themes/EcommerceSite/Images/myAccMenuActiveRight.gif) left top no-repeat;
+}
+
+.myAccMenu .TabControlSelected{
+  background: url(../App_Themes/EcommerceSite/Images/myAccMenuActive.gif) repeat-x;
+  height: 35px;
+}
+.myAccMenu .TabControlSelected a{
+  color: #000;
+}
+
+table.Grid{
+width: 100%;
+padding: 0px 10px;
+}
+
+.TabsHeader a
+{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 2px 0px 2px;
+  text-align: center;
+}
+
+.TabsHeader a:hover{
+  display: block;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 0px 2px 0px 2px;
+  text-align: center;
+}
+
+/*#Tab menu/Sub menu#*/
+
+.TabsContent
+{
+  margin-top: 10px;
+}
+.TabsContent .TabControlTable
+{
+  background: none;
+  width: 350px;
+  height: 26px;
+}
+.TabsContent .TabsHeader
+{
+  background: none;
+  background-color: #c4dbe7;
+  height: 28px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+.TabsContent .TabControlSelectedLeft {
+  background: none;
+  width: 4px;
+  height: 26px;
+  font-size: 1px;
+  float: left;
+}
+
+.TabsContent .TabControlSelectedRight {
+  background: none;
+  width: 4px;
+  height: 26px;
+  font-size: 1px;
+  float: left;
+}
+
+.TabsContent .TabControl {
+  height: 26px;
+}
+
+.TabsContent .TabControlSelected {
+  background: white;
+}
+.TabsContent .TabControlSelected a
+{
+color: #000;
+}
+
+
+.GeneralActions
+{
+ background-color: #eeeeee;
+ padding: 2px 5px;
+}
+
+/*#Sign out and user name box#*/
+.boxSignoutRight
+{
+  background: #c4dbe7 url(../App_Themes/EcommerceSite/Images/box_light_background.gif) repeat-y top right;
+  margin-bottom: 2px;
+  margin-top: 1px;
+  overflow: hidden;
+  line-height: 29px;
+}
+
+.DesignMode .boxSignoutRight
+{
+  line-height: 15px;
+}
+
+.boxSignoutRightTop div {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_left_top.gif) no-repeat top left;
+}
+.boxSignoutRightTop {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_right_top.gif) no-repeat top right;
+}
+.boxSignoutRightBot div {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_left_bottom.gif) no-repeat bottom left;
+}
+.boxSignoutRightBot {
+  background: url(../App_Themes/EcommerceSite/Images/box_light_right_bottom.gif) no-repeat bottom right;
+}
+.boxSignoutRightTop div, .boxSignoutRightTop, .boxSignoutRightBot div, .boxSignoutRightBot
+{
+  width: 100%;
+  height: 4px;
+  font-size: 1px;
+}
+
+.SignContent{
+min-height: 30px;
+}
+
+.IE6 .SignContent{
+  height: 30px;
+}
+
+.SignContent span{
+font-size: 11px;
+}
+
+input.AddToCartTextBox{
+width: 25px;
+margin-top: 6px;
+margin-left: 260px;
+float: left;
+}
+
+
+.OptionCategoryName{
+display: block;
+font-weight: bold;
+padding: 5px 0px 5px 0px;
+}
+
+
+.OptionCategoryDescription{
+display: block;
+padding: 5px 0px;
+}
+
+.productOptions
+{
+  background: #f9f9f9 url('../App_Themes/EcommerceSite/Images/ShoppingCart/bg_productoptions_top.gif') repeat-x;
+}
+
+.WishListLink{
+text-align: right;
+}
+
+.WishListLink img{
+margin-top: 2px;
+}
+
+
+.CartItemSelector{
+padding: 6px 10px;
+}
+
+.right .CartItemSelector{
+padding: 0px 10px;
+}
+
+.logonReg, .textHeader, .wishList, .myAccount
+{
+  padding: 0px 10px;
+}
+
+.IE6 .logonReg, .textHeader, .IE6 .wishList, .myAccount
+{
+  padding: 0px 0px 0px 10px;
+}
+
+.textHeader{
+width: 97%;
+}
+
+.newsList
+{
+  padding: 0px 7px;
+}
+
+/*#ShoppingCart#*/
+
+
+.subContent .shoppingCart
+{
+  padding: 10px 10px;
+}
+
+.IE6 .subContent .shoppingCart
+{
+  padding-right: 0;
+}
+
+.ShoppingCartStepImage
+{
+    border: none;
+  margin-top: 10px;
+  padding:0px;
+  vertical-align: middle;
+}
+
+.ShoppingCartStepSeparator
+{
+    border: none;
+    margin-top: 10px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+.CartStepHeader
+{
+  background-color: #326590;
+  color: #ffffff;  
+  padding: 5px;  
+  font-weight: bold;
+  font-family:Arial;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.CartStepTable th
+{
+  background-color: #326590;
+  color: #ffffff;  
+  font-family:Arial;
+  font-size: 11px;
+}
+
+.CartStepTable
+{
+  border: 1px solid #326590;
+  border-collapse: separate;
+  width: 740px;
+}
+
+.CartStepPanel
+{
+  padding: 5px;
+}
+
+.CartContentTable td
+{
+  border: 1px solid #dddddd;    
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+
+
+.CartContentTable th
+{
+  border: 1px solid #dddddd;  
+  font-family:Arial;
+  font-size: 11px;  
+}
+
+.ErrorLabel{
+color: red;
+font-weight: bold;
+}
+
+.LineErrorLabel
+{
+color: #ff0000;
+text-align: left;
+}
+
+
+.BlockTitle{
+font-size: 14px;
+font-weight: bold;
+padding: 5px 0 5px 0;
+margin: 15px 5px;
+display: block;
+}
+
+.PricePanel
+{
+  float: right;
+}
+
+.ItemsNotAvailable{
+color: red;
+}
+
+.MyCredit, .MyOrders, .MyAddresses{
+padding: 0px 6px;
+}
+
+.UniGridHead td, .UniGridHead th
+{
+  text-align: left;
+}
+
+.UniGridGrid td, .UniGridGrid th
+{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    border-right: none;
+    border-left: none;
+}
+
+.UniGridGrid td td, .UniGridGrid th td
+{
+    border: none;
+}
+
+.NewAttachmentDisabled
+{
+  text-decoration: underline;
+}
+.AttachmentsList 
+{
+  border:1px solid #CCCCCC;
+  padding:5px;
+}
+
+.AttachmentsList .Icon
+{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: -3px;
+    border-right: 5px solid white;
+}
+
+/*#Breadcrumbs#*/
+
+.TitleBreadCrumbSeparator
+{
+  background-image: url(../App_Themes/Default/Images/Design/Controls/Breadcrumbs/arrowright.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 7px;
+  padding: 0 5px;
+  width: 17px;
+  display: inline !important;
+}
+
+/*#Buttons#*/
+.ContentButton,
+.SubmitButton
+{
+  width: 100px;
+}
+
+.shoppingCart input[type=submit]
+{
+  padding: 0px 15px;
+}
+.UnitsTextBox
+{
+  width: 40px;
+}
+.TextBoxField, .TextBoxField
+{
+  width: 280px;
+}
+.DropDownField
+{
+  width: 285px;
+}
+
+.galleryPreview{
+width: 120px;
+height: 120px;
+float: left;
+border: 1px solid #c4dbe7;
+text-align: center;
+margin: 5px;
+}
+
+.IE6 .galleryPreview
+{
+margin: 4px;
+}
+
+.DesignMode .galleryPreview{
+margin: 4px;
+}
+
+.galleryImage{
+display: table-cell;
+vertical-align: middle;
+width: 120px;
+height: 120px;
+text-align: center;
+line-height: 120px;
+}
+
+.IE6.galleryImage{
+height: 123px;
+}
+
+.hotOffers
+{
+  float: left;
+  border: 1px solid silver;
+  margin: 2px;
+  background: #297dae;
+}
+
+.hotOffers img
+{
+  border: none;
+}
+
+.hotImage
+{
+  height: 200px;
+  line-height: 200px;
+  width: 268px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background: white url(../App_Themes/EcommerceSite/Images/product_top_bg.gif) repeat-x;
+}
+
+.IE6 .hotImage img
+{
+  padding-top: 20px;
+}
+.PagePlaceholderBorder .hotImage
+{
+  width: 266px;
+}
+
+.hotPrice
+{
+  margin-bottom: 2px;
+  background-color: #fff;
+  padding: 0px 0px 5px;
+}
+.hotPrice span
+{
+  width: 140px;
+  padding: 5px 15px;
+  display: block;
+  background: url(../App_Themes/EcommerceSite/Images/priceBackground.gif) no-repeat top left;
+  font-weight: bold;
+}
+.hotLink
+{
+  height: 30px;
+  width: 266px;
+}
+
+.hotText
+{
+  text-align: center;
+  height: 30px;
+  width: 266px;
+  display:table-cell;
+  vertical-align:middle;
+  line-height: 25px;
+}
+
+
+
+.hotText a
+{
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.hotOffersBox{
+padding: 4px 0px 1px 2px;
+}
+
+
+.PagerResults{
+text-align: center;
+}
+
+.PagerNumberArea{
+text-align: center;
+background: #f0f0f0;
+font-weight: bold;
+}
+
+.SelectedPrev{
+padding: 0px 2px;
+}
+
+.SelectedPage{
+background: #8bd4f2;
+padding: 0px 1px;
+border: 1px solid gray;
+}
+
+.PagerNumberArea{
+padding-bottom: 2px;
+}
+
+.PagerNumberArea a{
+border: 1px solid #f0f0f0;
+padding: 0px 1px;
+}
+
+.PagerNumberArea a:hover{
+text-decoration: none;
+border: 1px solid gray;
+background: #e0e0e0;
+color: black;
+}
+
+table.productDetailInfo td{
+vertical-align: top;
+}
+
+table.productDetail td{
+vertical-align: top;
+}
+
+.NewsReleaseTitle{
+width: 165px;
+padding-left: 10px;
+}
+
+.panelOptions
+{
+  background-color: red;
+}
+
+/*#Wishlist#*/
+.wishlist
+{
+  margin-top: 10px;
+}
+.wishlist .ProductImage
+{
+  width: 100px;
+  text-align: center;
+}
+.wishlist .ProductDetail
+{
+  margin-top: 15px;
+}
+.wishlist .ProductPrice
+{
+  width: 140px;
+  padding: 5px 15px;
+  height: 26px;
+  display: block;
+  background: url(../App_Themes/EcommerceSite/Images/priceBackground.gif) no-repeat top left;
+  font-weight: bold;
+  margin: 5px 0px 0px;
+}
+.btnContinue
+{
+  text-align: right;
+  padding:10px 0px;
+}
+td.ProductImageWishlist
+{
+padding-top: 30px;  
+vertical-align: top;
+width: 100px;
+text-align: center;
+}
+
+
+td.ProductImageWishlist img{
+border: none;
+}
+
+.ProductData h2{
+font-size: 16px;
+}
+/*#Company#*/
+.zoneCompanyContent
+{
+  float: left;
+  width: 400px;
+}
+.zoneCompanyMap
+{
+  float: left;
+  width: 330px;
+}
+
+.Map
+{
+  padding-left:10px
+}
+
+.Map img
+{
+  border: solid 1px #cccccc;
+  padding: 3px;
+}
+
+.Map .Header
+{
+  font-weight: bold;
+}
+
+.Map .Address
+{
+  font-size: 10px;
+}
+
+.OfficeDetail img
+{
+  border: solid 1px #cccccc;
+  padding: 3px;
+}
+
+.OfficeDetail .Description
+{
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+/*#Random product right column#*/
+
+.randomProductWithStatusRightBlock
+{
+  margin-bottom: 5px;
+  margin-left: 5px;
+  float: left;
+  background: #b6d2e0;
+
+}
+.IE6 .randomProductWithStatusRightBlock
+{
+  margin-left: 2px;
+}
+.featuresProdContent{
+  padding-top: 10px;
+}
+.IE6 .featuresProdContent{
+  padding-top: 0px;
+}
+
+.imageLink
+{
+  width: 50px;
+  float: left;
+  height: 50px;
+  background: white;
+}
+
+
+.imageLinkContent
+{
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imageLinkContent img
+{
+  border: none;
+  float: none;
+  line-height: 50px;
+}
+
+.randomProductWithStatusRightBlock .randomProductRight
+{
+  float: left;
+  width: 119px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.DesignMode .randomProductWithStatusRightBlock .randomProductRight
+{
+  width: 112px;
+}
+
+.randomProductWithStatusRightBlock .randomProductRight div
+{
+  width: 120px;
+  height: 33px;
+  padding-top: 3px;
+
+}
+
+
+.PagerControl{
+padding: 20px 0px;
+background: url(../App_Themes/EcommerceSite/Images/product_top_bg.gif) repeat-x;
+}
+
+/*#Send to friend#*/
+.sendToFriendYourMessage
+{
+ color: #356B99;
+ text-decoration: underline;
+ padding-top: 3px;
+ display: block;
+ cursor: pointer;
+}
+.sendToFriendYourMessage:hover
+{
+ text-decoration: none;
+ cursor: pointer;
+}
+
+input.sendToFriendEmailTextbox{
+width: 210px;
+}
+
+.boxBlueRight h2{
+color: #356B99;
+}
+
+/*#Modal popup#*/
+.ModalBackground
+{
+  z-index: 10000 !important;
+  background-color: #888888;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+.ModalPanel
+{
+    background-color: #ffffff;
+    padding: 10px;
+    /* position: fixed !important; */
+}
+
+
+.SubscriptionsGroup
+{
+  padding: 8px;
+}
+
+.SubscriptionsPanel
+{
+  padding-top: 22px;
+}
+
+/*#Content rating#*/
+.ratingStar {
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(../App_Themes/Default/Images/Design/Controls/ContentRating/FilledStar.png);
+
+}
+
+.emptyRatingStar {
+    background-image: url(../App_Themes/Default/Images/Design/Controls/ContentRating/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(../App_Themes/Default/Images/Design/Controls/ContentRating/SavedStar.png);
+}
+
+.CntRatingResult
+{
+    clear:left;
+    padding-top:5px;
+}
+
+.CntRatingRadioTable tr
+{
+    text-align: center;
+}
+
+/*#Tooltip#*/
+.TooltipTitle
+{
+    font-weight: bold;
+}
+
+.RTL .TooltipTitle, .RTL .TooltipDescription
+{
+    clear: both;
+    direction: rtl;
+    text-align: right;
+}
+
+.RTL .TooltipImage
+{
+    float: right;
+}</StylesheetText>
+      <StylesheetCheckedOutMachineName></StylesheetCheckedOutMachineName>
+      <StylesheetCheckedOutFileName></StylesheetCheckedOutFileName>
+      <StylesheetVersionGUID>5b71d49a-aee2-41c8-8b3f-9e36cacb539b</StylesheetVersionGUID>
+      <StylesheetGUID>762aad39-2cde-41d0-8718-97124dedc3a4</StylesheetGUID>
+      <StylesheetLastModified>2011-10-04T10:17:53.59+02:00</StylesheetLastModified>
+    </cms_cssstylesheet>
+    <cms_cssstylesheet>
+      <StylesheetID>6</StylesheetID>
+      <StylesheetDisplayName>Ecommerce site printer styles</StylesheetDisplayName>
+      <StylesheetName>EcommerceSitePrinter</StylesheetName>
+      <StylesheetText>/*#Main styles#*/
+body.LTR, body.RTL {
+   background:#fff;
+}</StylesheetText>
+      <StylesheetVersionGUID>c5c724f9-9f3f-4394-8156-cb1e071a0a6f</StylesheetVersionGUID>
+      <StylesheetGUID>b5aa5598-2281-4c4b-8633-626ab76e8338</StylesheetGUID>
+      <StylesheetLastModified>2008-04-24T18:19:54.877+02:00</StylesheetLastModified>
+    </cms_cssstylesheet>
+    <cms_cssstylesheetsite>
+      <StylesheetID>5</StylesheetID>
+      <SiteID>5</SiteID>
+    </cms_cssstylesheetsite>
+    <cms_cssstylesheetsite>
+      <StylesheetID>6</StylesheetID>
+      <SiteID>5</SiteID>
+    </cms_cssstylesheetsite>
+  </NewDataSet>
+</cms_cssstylesheet>

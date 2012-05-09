@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_Facebook_FacebookRecommendations" CodeFile="~/CMSWebParts/CommunityServices/Facebook/FacebookRecommendations.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlRecommendations" EnableViewState="false" />

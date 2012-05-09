@@ -1,0 +1,40 @@
+﻿<ecommerce_currency version="6.0">
+  <NewDataSet>
+    <com_currency>
+      <CurrencyID>3</CurrencyID>
+      <CurrencyName>CZK</CurrencyName>
+      <CurrencyDisplayName>Czech Crown</CurrencyDisplayName>
+      <CurrencyCode>CZK</CurrencyCode>
+      <CurrencyRoundTo>2</CurrencyRoundTo>
+      <CurrencyEnabled>true</CurrencyEnabled>
+      <CurrencyFormatString>{0:F} Kč</CurrencyFormatString>
+      <CurrencyIsMain>false</CurrencyIsMain>
+      <CurrencyGUID>0597ef10-770d-46ad-a474-731958f3b497</CurrencyGUID>
+      <CurrencyLastModified>2011-08-29T08:36:37.873+02:00</CurrencyLastModified>
+    </com_currency>
+    <com_currency>
+      <CurrencyID>2</CurrencyID>
+      <CurrencyName>EUR</CurrencyName>
+      <CurrencyDisplayName>Euro</CurrencyDisplayName>
+      <CurrencyCode>EUR</CurrencyCode>
+      <CurrencyRoundTo>2</CurrencyRoundTo>
+      <CurrencyEnabled>true</CurrencyEnabled>
+      <CurrencyFormatString>€ {0:F}</CurrencyFormatString>
+      <CurrencyIsMain>false</CurrencyIsMain>
+      <CurrencyGUID>64bf8e9d-e74a-4a37-b5b8-56a2634e832d</CurrencyGUID>
+      <CurrencyLastModified>2011-09-07T17:24:19.433+02:00</CurrencyLastModified>
+    </com_currency>
+    <com_currency>
+      <CurrencyID>1</CurrencyID>
+      <CurrencyName>USD</CurrencyName>
+      <CurrencyDisplayName>U.S. Dollar</CurrencyDisplayName>
+      <CurrencyCode>USD</CurrencyCode>
+      <CurrencyRoundTo>2</CurrencyRoundTo>
+      <CurrencyEnabled>true</CurrencyEnabled>
+      <CurrencyFormatString>${0:F}</CurrencyFormatString>
+      <CurrencyIsMain>true</CurrencyIsMain>
+      <CurrencyGUID>0715559b-8eb3-44e8-86c3-1cf0ca5d93fa</CurrencyGUID>
+      <CurrencyLastModified>2011-10-05T21:56:09.28+02:00</CurrencyLastModified>
+    </com_currency>
+  </NewDataSet>
+</ecommerce_currency>

@@ -1,0 +1,32 @@
+﻿<forumpost_intranet version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>1412</PostId>
+      <PostForumID>473</PostForumID>
+      <PostIDPath>/00001412</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>How do I create a new workgroup?</PostSubject>
+      <PostUserID>1046</PostUserID>
+      <PostUserName>JenniferW</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Can anybody help me?</PostText>
+      <PostTime>2010-10-13T16:46:56.193+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>JenniferW</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2010-10-13T16:46:56.193+02:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>9a2ed7f8-27ff-4518-aff9-ce68b3ac6a1d</PostGUID>
+      <PostLastModified>2010-10-13T16:46:56.2+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>27</PostViews>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.158&lt;/ip&gt;&lt;agent&gt;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; MS-RTC LM 8)&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>JenniferW</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2010-10-13T16:46:56.193+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_intranet>

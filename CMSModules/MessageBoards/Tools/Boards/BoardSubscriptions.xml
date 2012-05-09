@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" commandargument="SubscriptionID" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" commandargument="SubscriptionID" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+  </actions>
+  <columns>
+    <column source="SubscriptionEmail" caption="$general.email$" wrap="false">
+      <filter type="text"/>
+    </column>
+    <column source="UserName" externalsourcename="formattedusername" caption="$general.username$" wrap="false">
+      <filter type="text"/>
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="board.subscriptionlist" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

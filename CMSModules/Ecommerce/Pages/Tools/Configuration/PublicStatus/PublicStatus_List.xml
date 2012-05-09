@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="PublicStatusDisplayName" externalsourcename="PublicStatusName" caption="$general.name$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="PublicStatusEnabled" externalsourcename="PublicStatusEnabled"  caption="$general.enabled$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.publicstatus" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

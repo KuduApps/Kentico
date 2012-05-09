@@ -1,0 +1,17 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>6</SiteID>
+      <SiteName>PersonalSite</SiteName>
+      <SiteDisplayName>Personal site</SiteDisplayName>
+      <SiteDescription>Sample personal web site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.6</SiteDomainName>
+      <SiteDefaultStylesheetID>7</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteDefaultEditorStylesheet>7</SiteDefaultEditorStylesheet>
+      <SiteGUID>4a57dd6e-f9fa-4146-8f09-4dd191ac41c1</SiteGUID>
+      <SiteLastModified>2010-10-13T11:17:24.62+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

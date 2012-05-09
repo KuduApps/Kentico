@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ClassID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="#objectmenu" />
+  </actions>
+  <columns>
+    <column source="ClassDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="ClassName" caption="$general.codename$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.documenttype" columns="[ClassID], [ClassDisplayName], [ClassName]" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="TimeZoneDisplayName" caption="$Unigrid.TimeZ.Columns.TimeZoneDisplayName$" wrap="false" localize="true"> 
+      <filter type="text"></filter>
+    </column>
+    <column source="TimeZoneGMT" caption="$Unigrid.TimeZ.Columns.TimeZoneGMT$" wrap="false">
+    </column>
+    <column source="TimeZoneDaylight" externalsourcename="Daylight"  caption="$Unigrid.TimeZ.Columns.TimeZoneDaylight$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="cms.timezone" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.VirtualPathHelper</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.VirtualPathHelper.IVirtualPathProvider">
+            <summary>
+            Virtual path provider interface.
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.IVirtualPathProvider.Register">
+            <summary>
+            Registers the provider object.
+            </summary>
+        </member>
+        <member name="T:CMS.VirtualPathHelper.VirtualPathHelper">
+            <summary>
+            Virtual provider helper.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mProviderObject">
+            <summary>
+            Provider object instance.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mProviderAssemblyName">
+            <summary>
+            Provider assembly name.
+            </summary>
+        </member>
+        <member name="F:CMS.VirtualPathHelper.VirtualPathHelper.mVirtualPathProviderInitilaized">
+            <summary>
+            Indicates if virtual provider is initialized.
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.RegisterVirtualPathProvider">
+            <summary>
+            Creates the virtual path provider object and registers the object within the system.
+            </summary>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.Init(System.Web.UI.Page)">
+            <summary>
+            Initialize virtual path provider.
+            </summary>
+            <param name="page">Page</param>
+        </member>
+        <member name="M:CMS.VirtualPathHelper.VirtualPathHelper.EnsureInit(System.Web.UI.Page)">
+            <summary>
+            Ensueres initialization of virtual path provider.
+            </summary>
+            <param name="page"></param>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.ProviderAssemblyName">
+            <summary>
+            Provider library assembly.
+            </summary>
+        </member>
+        <member name="P:CMS.VirtualPathHelper.VirtualPathHelper.ProviderObject">
+            <summary>
+            Returns the helper object.
+            </summary>
+        </member>
+    </members>
+</doc>

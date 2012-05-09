@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" externalsourcename="edit"  caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="VolumeDiscountMinCount" caption="$unigrid.product_edit_volumediscount.columns.volumediscountmincount$" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="DiscountValue" caption="$Unigrid.Product_Edit_VolumeDiscount.Columns.VolumeDiscountValue$" wrap="true">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.volumediscount" columns="VolumeDiscountID,VolumeDiscountMinCount,VolumeDiscountValue,VolumeDiscountIsFlatValue"/>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

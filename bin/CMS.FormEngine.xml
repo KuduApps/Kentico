@@ -1,0 +1,3245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.FormEngine</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.FormEngine.CodeGenerator">
+            <summary>
+            Helper for the code generation.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.CodeGenerator.GetPropertyCode(CMS.FormEngine.FormFieldInfo,System.String,System.Text.StringBuilder)">
+            <summary>
+            Gets the C# code for the property based on the given field.
+            </summary>
+            <param name="ffi">Form field info</param>
+            <param name="baseControl">Base control name in case the properties are mirrored to the base control</param>
+            <param name="sbInit">String builder for the initialization code of the base control</param>
+        </member>
+        <member name="M:CMS.FormEngine.CodeGenerator.GetPropertiesCode(CMS.FormEngine.FormInfo,System.Boolean,System.String,System.Text.StringBuilder)">
+            <summary>
+            Gets the C# code for the propertiest based on the given form information.
+            </summary>
+            <param name="fi">Form information</param>
+            <param name="systemFields">If true, the system fields are included to the code generation</param>
+            <param name="baseControl">Base control name in case the properties are mirrored to the base control</param>
+            <param name="sbInit">String builder for the initialization code of the base control</param>
+        </member>
+        <member name="T:CMS.FormEngine.FormItem">
+            <summary>
+            FormItem class represents.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormItem.Clone">
+            <summary>
+            Clones current object and returns copy of it.
+            </summary>
+            <returns>Returns either FormFieldInfo or FormCategoryInfo depending on current object.</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormItem.GetXmlNode(System.Xml.XmlDocument)">
+            <summary>
+            Returns XML representation of current object.
+            </summary>
+            <param name="doc">XML document with other items</param>
+            <returns>Returns XmlNode</returns>
+        </member>
+        <member name="T:CMS.FormEngine.FormResolveTypeEnum">
+            <summary>
+            Field macro resolving control types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormResolveTypeEnum.None">
+            <summary>
+            Disable macro resolving.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormResolveTypeEnum.AllFields">
+            <summary>
+            Resolves all macros.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormResolveTypeEnum.Visible">
+            <summary>
+            Resolves only macros in visible fields.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormResolveTypeEnum.Hidden">
+            <summary>
+            Resolves only macros in hidden fields.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.AlternativeFormInfo">
+            <summary>
+            AlternativeFormInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.AlternativeFormInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty AlternativeFormInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new AlternativeFormInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfo.CheckPermissions(CMS.SettingsProvider.PermissionsEnum,System.String,CMS.SettingsProvider.IUserInfo)">
+            <summary>
+            Checks the permissions of the object.
+            </summary>
+            <param name="permission">Permission type</param>
+            <param name="siteName">Name of the site</param>
+            <param name="userInfo">UserInfo object</param>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormDisplayName">
+            <summary>
+            Form display name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormDefinition">
+            <summary>
+            Form definition.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormName">
+            <summary>
+            Form code name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormID">
+            <summary>
+            ID of the form.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormLayout">
+            <summary>
+            Form layout.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormClassID">
+            <summary>
+            Form class ID.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormLastModified">
+            <summary>
+            Form last modified DateTime.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormGUID">
+            <summary>
+            Form GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FullName">
+            <summary>
+            Alternative form full name ("classname"."formname").
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.AlternativeFormInfo.FormCoupledClassID">
+            <summary>
+            Form coupled class ID.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.AlternativeFormInfoProvider">
+            <summary>
+            Class providing AlternativeFormInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeFormInfo(System.String)">
+            <summary>
+            Returns the AlternativeFormInfo structure for the alternative form specified by its full name.
+            </summary>
+            <param name="alternativeFormFullName">Full name of the alternative form ('classname.'formname')</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeFormInfo(System.Int32)">
+            <summary>
+            Returns the AlternativeFormInfo structure for the specified alternativeForm.
+            </summary>
+            <param name="alternativeFormId">AlternativeForm id</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetForms(System.String,System.String)">
+            <summary>
+            Returns all alternative forms that match the conditions.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by clause</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeForms(System.String,System.String)">
+            <summary>
+            Returns all alternative forms that match the conditions.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by clause</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeForms(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns all alternative forms that match the conditions.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by clause</param>
+            <param name="topN">TOP n query parameter</param>
+            <param name="columns">Columns to retrieve</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetClassesWithAlternativeForms">
+            <summary>
+            Returns dataset of all classes that have alternative forms.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.SetAlternativeFormInfo(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Sets (updates or inserts) specified alternativeForm.
+            </summary>
+            <param name="alternativeForm">AlternativeForm to set</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.DeleteAlternativeFormInfo(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Deletes specified alternativeForm.
+            </summary>
+            <param name="infoObj">AlternativeForm object</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.DeleteAlternativeFormInfo(System.Int32)">
+            <summary>
+            Deletes specified alternativeForm.
+            </summary>
+            <param name="alternativeFormId">AlternativeForm id</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.Clear(System.Boolean)">
+            <summary>
+            Clears the hashtables.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeFormInfoInternal(System.String)">
+            <summary>
+            Returns the AlternativeFormInfo structure for the alternative form specified by its full name.
+            </summary>
+            <param name="alternativeFormFullName">Full name of the alternative form ('classname.'formname')</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetAlternativeFormInfoInternal(System.Int32)">
+            <summary>
+            Returns the AlternativeFormInfo structure for the alternative form specified by its ID.
+            </summary>
+            <param name="alternativeFormId">Alternative form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetClassesWithAlternativeFormsInternal">
+            <summary>
+            Returns dataset of all classes that have alternative forms.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.SetAlternativeFormInfoInternal(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Sets (updates or inserts) specified alternativeForm.
+            </summary>
+            <param name="alternativeForm">AlternativeForm to set</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.DeleteAlternativeFormInfoInternal(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Deletes specified alternativeForm.
+            </summary>
+            <param name="infoObj">AlternativeForm object</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.RegisterObjectInHashtables(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Registeres the object instance within the hashtables.
+            </summary>
+            <param name="infoObj">Object to register</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.DeleteObjectFromHashtables(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Removes the object instance from the hashtables.
+            </summary>
+            <param name="infoObj">Object to remove</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.UpdateObjectInHashtables(CMS.FormEngine.AlternativeFormInfo)">
+            <summary>
+            Updates the object instance in the hashtables.
+            </summary>
+            <param name="infoObj">Object to update</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetInfoByFullName(System.String,System.Boolean)">
+            <summary>
+            Gets an instance of Alternative form object based on the given full name.
+            </summary>
+            <param name="fullName">Alternative form full code name ('classcodename.formcodename')</param>
+            <param name="useHashtable">If true, the object is taken through the hashtable</param>
+        </member>
+        <member name="M:CMS.FormEngine.AlternativeFormInfoProvider.GetInfoByFullName(System.String)">
+            <summary>
+            Returns the AlternativeFormInfo structure for the specified alternative form.
+            </summary>
+            <param name="fullName">Alternative form full code name ('classcodename.formcodename')</param>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormInfo">
+            <summary>
+            BizFormInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.BizFormInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BizFormInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BizFormInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.IsFormAllowedForRole(System.Int32)">
+            <summary>
+            Indicates whether form is allowed for specified role.
+            </summary>
+            <param name="roleId">Role id</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.IsFormAllowedForUser(CMS.SiteProvider.UserInfo,System.String)">
+            <summary>
+            Indicates whether specified user is authorized for specified form.
+            </summary>        
+            <param name="user">User info</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.IsFormAllowedForUser(System.String,System.String)">
+            <summary>
+            Indicates whether specified user is authorized for specified form.
+            </summary>        
+            <param name="userName">User name</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.ClearAuthorizedRoles">
+            <summary>
+            Sets Hashtable with authorized roles to NULL -> enforce hashtable reload next time the data are needed.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.ResetFormInfo">
+            <summary>
+            Sets Form property to NULL -> enforce FormInfo reload next time the data are needed.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfo.CheckPermissions(CMS.SettingsProvider.PermissionsEnum,System.String,CMS.SettingsProvider.IUserInfo)">
+            <summary>
+            Checks the permissions of the object.
+            </summary>
+            <param name="permission">Permission type</param>
+            <param name="siteName">Name of the site</param>
+            <param name="userInfo">UserInfo object</param>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.AuthorizedRoles">
+            <summary>
+            Hashtable of roles the form is allowed for.
+            RoleId is key and RoleName is value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormItems">
+            <summary>
+            Gets or sets items count.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormDisplayName">
+            <summary>
+            Form display name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormReportFields">
+            <summary>
+            Report fields.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormName">
+            <summary>
+            Form code name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormID">
+            <summary>
+            Form id.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormRedirectToUrl">
+            <summary>
+            Redirect to url.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormClearAfterSave">
+            <summary>
+            Clear form.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormDisplayText">
+            <summary>
+            Display text.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormSendFromEmail">
+            <summary>
+            From E-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormSendToEmail">
+            <summary>
+            To E-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormEmailSubject">
+            <summary>
+            E-mail subject.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormEmailTemplate">
+            <summary>
+            Form notification e-mail template text.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormEmailAttachUploadedDocs">
+            <summary>
+            Attach uploaded documents to notification e-mail.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormClassID">
+            <summary>
+            Class id.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormSiteID">
+            <summary>
+            Site id.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormSubmitButtonText">
+            <summary>
+            Submit button text.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormSubmitButtonImage">
+            <summary>
+            Submit image button.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormConfirmationEmailField">
+            <summary>
+            Field name whose value is used as recipient email address the confirmation email is sent to.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormConfirmationTemplate">
+            <summary>
+            Form confirmation template text.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormConfirmationSendFromEmail">
+            <summary>
+            Form confirmation send from email.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormConfirmationEmailSubject">
+            <summary>
+            Form confirmation email subject.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormGUID">
+            <summary>
+            Form GUID.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormLastModified">
+            <summary>
+            Object last modified.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormAccess">
+            <summary>
+            Form access.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.Form">
+            <summary>
+            Form definition.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormInfo.FormLogActivity">
+            <summary>
+            Indicates if bozform activity is logged.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormInfoProvider">
+            <summary>
+            Class providing BizFormInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfoByGUID(System.Guid,System.Int32)">
+            <summary>
+            Returns object with specified GUID.
+            </summary>
+            <param name="guid">Object GUID</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfo(System.Int32)">
+            <summary>
+            Returns the BizFormInfo structure for the specified bizForm.
+            </summary>
+            <param name="bizFormId">BizForm ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfo(System.String,System.Int32)">
+            <summary>
+            Returns the BizFormInfo structure for the specified form and site.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfo(System.String,System.String)">
+            <summary>
+            Returns the BizFormInfo structure for the specified form and site.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.SetBizFormInfo(CMS.FormEngine.BizFormInfo)">
+            <summary>
+            Sets (updates or inserts) specified bizForm.
+            </summary>
+            <param name="bizForm">BizForm to set</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.ClearBizHash">
+            <summary>
+            Clear hashtable.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormInfo(CMS.FormEngine.BizFormInfo)">
+            <summary>
+            Deletes specified bizForm.
+            </summary>
+            <param name="bizFormObj">BizForm object</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormInfo(System.Int32)">
+            <summary>
+            Deletes specified bizForm.
+            </summary>
+            <param name="bizFormId">BizForm ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormsForSite(System.Int32)">
+            <summary>
+            Returns the dataset containing the bizforms for the specified site.
+            </summary>
+            <param name="siteID">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormsForSite(System.Int32,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns the dataset containing the bizforms for the specified site.
+            </summary>
+            <param name="siteID">Site ID</param>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormsForSite(System.Int32,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the dataset containing the bizforms for the specified site.
+            </summary>
+            <param name="siteID">Site ID</param>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetAllBizForms">
+            <summary>
+            Returns the dataset containing all BizForms.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizForms(System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the dataset containing BizForms.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizForms(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns the dataset containing BizForms.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.CreateBizFormDataClass(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates bizform data class definition based on the given parameters.
+            </summary>
+            <param name="className">Form class name</param>
+            <param name="displayName">Form display name</param>
+            <param name="tableName">Form table name</param>
+            <param name="primaryKeyName">Table primary key column name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetTimeField(System.String,System.String)">
+            <summary>
+            Returns new form field info of the datetime datatype indicating when form data were changed(inserted/updated).
+            </summary>
+            <param name="fieldName">Field name</param>
+            <param name="fieldCaption">Field caption</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.AddRoleToForm(System.Int32,System.Int32)">
+            <summary>
+            Adds specified role to the form.
+            </summary>
+            <param name="roleId">Role ID</param>
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RemoveRoleFromForm(System.Int32,System.Int32)">
+            <summary>
+            Removes specified role from the form.
+            </summary>
+            <param name="roleId">Role ID</param>
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RemoveAllRolesFromForm(System.Int32)">
+            <summary>
+            Removes all allowed roles from the form.
+            </summary>        
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetFormAuthorizedRoles(System.Int32)">
+            <summary>
+            Returns DataSet with roles that are allowed for specified form.
+            </summary>        
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.LicenseVersionCheck(System.String,CMS.SettingsProvider.FeatureEnum,CMS.SettingsProvider.VersionActionEnum)">
+            <summary>
+            License version check.
+            </summary>
+            <param name="domain">Domain name</param>
+            <param name="feature">Feature</param>
+            <param name="action">Action</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.CheckLicense">
+            <summary>
+            Checks the license.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.Clear(System.Boolean)">
+            <summary>
+            Clears the hashtable.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RefreshDataCount(System.String,System.Int32)">
+            <summary>
+            Refresh bizform items count.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteData(System.String,System.Int32)">
+            <summary>
+            Delete all bizform data.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RemoveFromHash(System.String)">
+            <summary>
+            Remove from hash table.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormRecordFiles(System.String,CMS.DataEngine.IDataClass,System.String)">
+            <summary>
+            Deletes all files of specified BizForm record.
+            </summary>
+            <param name="classFormDefinition">BizForm class form definition</param>
+            <param name="formRecord">BizForm record</param>
+            <param name="siteName">SiteName</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormFiles(System.String,System.String,System.Int32)">
+            <summary>
+            Deletes all files of the specified BizForm.
+            </summary>
+            <param name="className">BizForm class name</param>
+            <param name="column">Name of the column where file information is stored, optional</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormFileColumns(System.String)">
+            <summary>
+            Returns names of the columns where BizForm file information is stored.
+            </summary>
+            <param name="classFormDefinition">BizForm's class form definition</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormFile(System.String,System.String,System.String)">
+            <summary>
+            Deletes uploaded file from file system.
+            </summary>
+            <param name="fileName">File name in format "[guid].[extension]/[originalfilename].[extension]"</param>
+            <param name="directoryPath">Directory path</param>
+            <param name="siteName">Name of the site to which is bizform assigned. Is used for web farms</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfoInternal(System.Guid,System.Int32)">
+            <summary>
+            Returns object with specified GUID.
+            </summary>
+            <param name="guid">Object GUID</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfoInternal(System.Int32)">
+            <summary>
+            Returns the BizFormInfo structure for the specified bizForm.
+            </summary>
+            <param name="bizFormId">BizForm ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormInfoInternal(System.String,System.Int32)">
+            <summary>
+            Returns the BizFormInfo structure for the specified form and site.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.SetBizFormInfoInternal(CMS.FormEngine.BizFormInfo)">
+            <summary>
+            Sets (updates or inserts) specified bizForm.
+            </summary>
+            <param name="bizForm">BizForm to set</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormInfoInternal(CMS.FormEngine.BizFormInfo)">
+            <summary>
+            Deletes specified bizForm.
+            </summary>
+            <param name="bizFormObj">BizForm object</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormsForSiteInternal(System.Int32,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the dataset containing the bizforms for the specified site.
+            </summary>
+            <param name="siteID">Site ID</param>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetBizFormsInternal(System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the dataset containing the bizforms for the specified site.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY condition</param>
+            <param name="topN">TOP N</param>
+            <param name="columns">Selected columns</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RemoveAllRolesFromFormInternal(System.Int32)">
+            <summary>
+            Removes all allowed roles from the form.
+            </summary>        
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.GetFormAuthorizedRolesInternal(System.Int32)">
+            <summary>
+            Returns DataSet with roles that are allowed for specified form.
+            </summary>        
+            <param name="formId">Form ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RefreshDataCountInternal(System.String,System.Int32)">
+            <summary>
+            Refresh bizform items count.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteDataInternal(System.String,System.Int32)">
+            <summary>
+            Delete all bizform data.
+            </summary>
+            <param name="formName">Form name</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.DeleteBizFormFilesInternal(System.String,System.String,System.Int32)">
+            <summary>
+            Deletes all files of the specified BizForm.
+            </summary>
+            <param name="className">BizForm class name</param>
+            <param name="column">Name of the column where file information is stored, optional</param>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormInfoProvider.RemoveObjectDependencies(CMS.FormEngine.BizFormInfo)">
+            <summary>
+            Deletes BizForm dependencies.
+            </summary>
+            <param name="bizFormObj">BizForm object</param>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormRoleInfo">
+            <summary>
+            BizFormRoleInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.BizFormRoleInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty BizFormRoleInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new BizFormRoleInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormRoleInfo.FormID">
+            <summary>
+            ID of the Form.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormRoleInfo.RoleID">
+            <summary>
+            ID of the Role.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormRoleInfoProvider">
+            <summary>
+            Class providing BizFormRoleInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.GetBizFormRoleInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns the BizFormRoleInfo structure for the specified bizFormRole.
+            </summary>
+            <param name="roleId">RoleID</param>
+            <param name="formId">FormID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.GetBizFormRoleInfos(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns BizFormRoleInfo objects specified by parameters.
+            </summary>
+            <param name="where">WHERE condition</param>
+            <param name="orderBy">ORDER BY statement</param>
+            <param name="topN">Number of returned records</param>
+            <param name="columns">Data columns to return</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.SetBizFormRoleInfo(CMS.FormEngine.BizFormRoleInfo)">
+            <summary>
+            Sets (updates or inserts) specified bizFormRole.
+            </summary>
+            <param name="bizFormRole">BizFormRole to set</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.DeleteBizFormRoleInfo(CMS.FormEngine.BizFormRoleInfo)">
+            <summary>
+            Deletes specified bizFormRole.
+            </summary>
+            <param name="infoObj">BizFormRole object</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.RemoveRoleFromForm(System.Int32,System.Int32)">
+            <summary>
+            Deletes specified bizFormRole.
+            </summary>
+            <param name="formId">FormID</param>
+            <param name="roleId">RoleID</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormRoleInfoProvider.AddRoleToForm(System.Int32,System.Int32)">
+            <summary>
+            Adds specified role to the form.
+            </summary>
+            <param name="roleId">Role Id</param>
+            <param name="formId">Form Id</param>
+        </member>
+        <member name="T:CMS.FormEngine.FieldEditorControlsEnum">
+            <summary>
+            Type of custom controls that can be selected from the control list in FieldEditor.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.None">
+            <summary>
+            No controls are displayed.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.All">
+            <summary>
+            All controls are displayed.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.ModeSelected">
+            <summary>
+            Controls are displayed according to the FieldEditor mode.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.Bizforms">
+            <summary>
+            Controls that are displayed in Bizforms.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.DocumentTypes">
+            <summary>
+            Controls that are displayed in document types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.SystemTables">
+            <summary>
+            Controls that are displayed in system tables.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.Controls">
+            <summary>
+            Controls that are displayed in controls.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.Reports">
+            <summary>
+            Controls that are displayed in reports.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.CustomTables">
+            <summary>
+            Controls that are displayed in custom tables.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FieldEditorControlsEnum.Visibility">
+            <summary>
+            Controls that are used for user visibility.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormAccessEnum">
+            <summary>
+            Indicates which group of users can manage form.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormAccessEnum.AllBizFormUsers">
+            <summary>
+            All bizform users can access bizform management.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormAccessEnum.OnlyAuthorizedRoles">
+            <summary>
+            Only authorized roles can acces bizform management.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormCategoryInfo">
+            <summary>
+            Class for storing info about categories.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormCategoryInfo.mCategoryName">
+            <summary>
+            Category name.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormCategoryInfo.mCategoryCaption">
+            <summary>
+            Category caption.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormCategoryInfo.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormCategoryInfo.#ctor(System.Xml.XmlNode)">
+            <summary>
+            Constructor, initializes the category instance from given XML data.
+            </summary>
+            <param name="categoryNode">XML node sith the category data</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormCategoryInfo.Clone">
+            <summary>
+            Returns cloned object of current FormCategoryInfo object.
+            </summary>
+            <returns>Returns clone of FormCategoryInfo</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormCategoryInfo.GetXmlNode(System.Xml.XmlDocument)">
+            <summary>
+            Gets XmlNode for current FormCategoryInfo object.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormCategoryInfo.CategoryName">
+            <summary>
+            Category name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormCategoryInfo.CategoryCaption">
+            <summary>
+            Category caption.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormCategoryInfo.IsInherited">
+            <summary>
+            If true, the category is inherited from parent class.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldControlTypeEnum">
+            <summary>
+            Field control types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.LabelControl">
+            <summary>
+            Label control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.TextBoxControl">
+            <summary>
+            TextBox control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.DropDownListControl">
+            <summary>
+            DropDownList control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.RadioButtonsControl">
+            <summary>
+            RadioButtons control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.MultipleChoiceControl">
+            <summary>
+            MultipleChoice control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.ImageSelectionControl">
+            <summary>
+            ImageSelection control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.FileSelectionControl">
+            <summary>
+            FileSelectionControl.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.CustomUserControl">
+            <summary>
+            CustomUser control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.UploadControl">
+            <summary>
+            Upload control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.TextAreaControl">
+            <summary>
+            TextArea control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.HtmlAreaControl">
+            <summary>
+            HtmlArea control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.CalendarControl">
+            <summary>
+            Calendar control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.CheckBoxControl">
+            <summary>
+            CheckBox control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.IntegerNumberTextBox">
+            <summary>
+            TextBox with integer number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.DecimalNumberTextBox">
+            <summary>
+            TextBox with decimal number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.Unknown">
+            <summary>
+            Unknown control - error control type.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.UploadFile">
+            <summary>
+            Upload file field (HTTP Input file).
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.ListBoxControl">
+            <summary>
+            Listbox control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.BBEditorControl">
+            <summary>
+            BBEditor control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.DocumentAttachmentsControl">
+            <summary>
+            Document attachments control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.MediaSelectionControl">
+            <summary>
+            Media selector control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.DirectUploadControl">
+            <summary>
+            Direct uploader control.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.LongNumberTextBox">
+            <summary>
+            TextBox with long integer number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.SelectColumns">
+            <summary>
+            Selector for table columns.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeEnum.EncryptedPassword">
+            <summary>
+            Encrypted password control.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldControlTypeCode">
+            <summary>
+            Field control types - string public constants.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.CALENDAR">
+            <summary>
+            Calendar.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.CHECKBOX">
+            <summary>
+            CheckBox.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.USERCONTROL">
+            <summary>
+            UserControl.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.CUSTOMUSERCONTROL">
+            <summary>
+            CustomUserControl.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.DROPDOWNLIST">
+            <summary>
+            DropDownList.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.FILEPATH">
+            <summary>
+            FilePath.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.HTMLAREA">
+            <summary>
+            HtmlArea.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.IMAGEPATH">
+            <summary>
+            ImagePath.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.MEDIAPATH">
+            <summary>
+            MediaPath.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.LABEL">
+            <summary>
+            Label.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.MULTIPLECHOICE">
+            <summary>
+            MultipleChoice.
+            </summary>        
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.RADIOBUTTONS">
+            <summary>
+            Radiobuttons.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.TEXTAREA">
+            <summary>
+            TextArea.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.INTEGER_NUMBER_TEXTBOX">
+            <summary>
+            TextBox with integer number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.LONG_NUMBER_TEXTBOX">
+            <summary>
+            TextBox with long integer number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.DECIMAL_NUMBER_TEXTBOX">
+            <summary>
+            TextBox with decimal number.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.TEXTBOX">
+            <summary>
+            TextBox with text.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.UPLOAD">
+            <summary>
+            Upload.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.DIRECTUPLOAD">
+            <summary>
+            Direct upload.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.UPLOAD_FILE">
+            <summary>
+            Upload file (HTTP input file).
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.LISTBOX">
+            <summary>
+            Listbox.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.BBEDITOR">
+            <summary>
+            BBEditor.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldControlTypeCode.DOCUMENT_ATTACHMENTS">
+            <summary>
+            Document attachments.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldDataTypeEnum">
+            <summary>
+            Field data types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Text">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.LongText">
+            <summary>
+            Long text.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Integer">
+            <summary>
+            Integer.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Decimal">
+            <summary>
+            Double.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.DateTime">
+            <summary>
+            Date and Time.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Boolean">
+            <summary>
+            Boolean.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.File">
+            <summary>
+            File.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.DocumentAttachments">
+            <summary>
+            Document attachments.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Unknown">
+            <summary>
+            Unknown type - error.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.LongInteger">
+            <summary>
+            Long integer.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeEnum.Binary">
+            <summary>
+            Binary.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldDataTypeCode">
+            <summary>
+            Field data types - string constants.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.TEXT">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.LONGTEXT">
+            <summary>
+            Long text.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.INTEGER">
+            <summary>
+            Integer.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.LONGINTEGER">
+            <summary>
+            Long integer.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.DOUBLE">
+            <summary>
+            Double.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.DATETIME">
+            <summary>
+            Date and Time.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.BOOLEAN">
+            <summary>
+            Boolean.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.FILE">
+            <summary>
+            File.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.DOCUMENT_ATTACHMENTS">
+            <summary>
+            Document attachments.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.BINARY">
+            <summary>
+            Binary.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldDataTypeCode.ALL">
+            <summary>
+            All datatypes.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldInfo">
+            <summary>
+            Represents form field definition.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.ToString">
+            <summary>
+            Returns field name value.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.#ctor(System.Xml.XmlNode)">
+            <summary>
+            Constructor, initializes the Form field info instance from the given XML node.
+            </summary>
+            <param name="fieldNode">XML node with the field data</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.Clone">
+            <summary>
+            Clones the object.
+            </summary>
+            <returns>Returns clone of FormFiedlInfo</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.GetXmlNode(System.Xml.XmlDocument)">
+            <summary>
+            Returns the XML node representing the FormFieldInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormFieldInfo.GetVisibilityXml(System.Xml.XmlDocument)">
+            <summary>
+            Returns the XML node representing the FormFieldInfo object only with limited properties.
+            XML node contains only: field name, field visibility
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Name">
+            <summary>
+            Column name.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Caption">
+            <summary>
+            Column caption.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Visible">
+            <summary>
+            Indicates whether field is visible.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Enabled">
+            <summary>
+            Indicates whether field is Enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.DataType">
+            <summary>
+            Data type.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.FieldType">
+            <summary>
+            Type of the field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.AllowEmpty">
+            <summary>
+            Indicates whether field allow empty values.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.PrimaryKey">
+            <summary>
+            Indicates whether field is a primary key.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.System">
+            <summary>
+            Indicates if field is a system field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.External">
+            <summary>
+            Indicates if field is external, if so it represents column from another table which is included in CMS_Tree_View_Joined (CMS_Document, CMS_Node, ...).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Size">
+            <summary>
+            Size of the field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Description">
+            <summary>
+            Description of the field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Settings">
+            <summary>
+            Setting pairs (hastable).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.DefaultValue">
+            <summary>
+            Field dafault value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.RegularExpression">
+            <summary>
+            Regular expression.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MinStringLength">
+            <summary>
+            Minimal string length.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MaxStringLength">
+            <summary>
+            Maximal string length.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MinValue">
+            <summary>
+            Minimal value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MaxValue">
+            <summary>
+            Maximal value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MinNumericValue">
+            <summary>
+            Minimal numeric value (takes effect only when field type is set to int or double).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MaxNumericValue">
+            <summary>
+            Maximal numeric value (takes effect only when field type is set int or double).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MinLongNumericValue">
+            <summary>
+            Minimal numeric value (takes effect only when field type is set to long).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MaxLongNumericValue">
+            <summary>
+            Maximal numeric value (takes effect only when field type is set to long).
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MinDateTimeValue">
+            <summary>
+            Minimal datetime value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MaxDateTimeValue">
+            <summary>
+            Maximal datetime value.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.ValidationErrorMessage">
+            <summary>
+            Validation error message.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.CaptionStyle">
+            <summary>
+            Caption style.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.InputControlStyle">
+            <summary>
+            Input control style.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.ControlCssClass">
+            <summary>
+            Control CSS class.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.PublicField">
+            <summary>
+            Indicates whether field is public.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.SpellCheck">
+            <summary>
+            Indicates whether field should be spell-checked.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Guid">
+            <summary>
+            Field unique identifier.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.AllowUserToChangeVisibility">
+            <summary>
+            Indicates whether user can change field visibility.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.Visibility">
+            <summary>
+            Indicates who the field should be visible to.
+            Values: none, all, authenticated, friends
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.VisibilityControl">
+            <summary>
+            Indicates type of visibility form control.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.IsMacro">
+            <summary>
+            Indicates whether field default value is macro expression.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.DisplayIn">
+            <summary>
+            Adjust the context in which the attribute can be displayed.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.HasDependingFields">
+            <summary>
+            Gets or sets value indicating if other fields are depending on this field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.DependsOnAnotherField">
+            <summary>
+            Gets or sets value indicating if field is depending on some other field.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.IsInherited">
+            <summary>
+            If true, the field is inherited from parent class.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormFieldInfo.MappedToField">
+            <summary>
+            Indicates field to which this one is mapped.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormFieldVisibilityTypeCode">
+            <summary>
+            Field visibility types - string constants.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldVisibilityTypeCode.NONE">
+            <summary>
+            The field is hidden.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldVisibilityTypeCode.ALL">
+            <summary>
+            The field is visible to all.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldVisibilityTypeCode.AUTHENTICATED">
+            <summary>
+            The field is visible to authenticated users.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormFieldVisibilityTypeCode.FRIENDS">
+            <summary>
+            The field is visible to friends.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormHelper">
+            <summary>
+            Class providing form helper methods.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.CORE">
+            <summary>
+            Constant used to determine formfield info which doesn't contain before/after definition of system field.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORTEXT">
+            <summary>
+            FormUserControlInfo column UserControlForText.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORLONGTEXT">
+            <summary>
+            FormUserControlInfo column UserControlForLongText.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORINTEGER">
+            <summary>
+            FormUserControlInfo column UserControlForInteger.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORDECIMAL">
+            <summary>
+            FormUserControlInfo column UserControlForDecimal.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORDATETIME">
+            <summary>
+            FormUserControlInfo column UserControlForDateTime.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORBOOLEAN">
+            <summary>
+            FormUserControlInfo column UserControlForBoolean.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORFILE">
+            <summary>
+            FormUserControlInfo column UserControlForFile.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORGUID">
+            <summary>
+            FormUserControlInfo column UserControlForGuid.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORDOCATTACHMENTS">
+            <summary>
+            FormUserControlInfo column UserControlForDocAttachments.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLFORALL">
+            <summary>
+            Virtual FormUserControlInfo column that indicates User Control is for all data types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.USERCONTROLTYPE">
+            <summary>
+            FormUserControlInfo column UserControlType.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.REPLACED_SEMICOLON">
+            <summary>
+            Used to separate values from text on each line in 'Options' mode.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.SEMICOLON_TO_REPLACE">
+            <summary>
+            Enables usesrs to insert semicolon into 'options' mode values.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.OPTIONS_REGEX">
+            <summary>
+            Regular expression for XML with options data.
+                                          | ITEM GROUP          | VALUE GROUP          | TEXT GROUP
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.tableLockFI">
+            <summary>
+            Table lock for saving used for formInfos.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.tableLockWPFI">
+            <summary>
+            Table lock for web parts.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.tableLockWFI">
+            <summary>
+            Table lock for widgets.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.tableLockFCP">
+            <summary>
+            Table lock for form control parameters.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.formInfos">
+            <summary>
+            Cached FormInfo objects.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.webPartFormInfos">
+            <summary>
+            Cached web part FormInfo objects.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.widgetFormInfos">
+            <summary>
+            Cached widget FormInfo objects.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormHelper.formControlParameterInfos">
+            <summary>
+            Caching for form control parameters.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldDataType(System.String)">
+            <summary>
+            Converts field data type string to field data type enumeration.
+            </summary>
+            <param name="type">String to convert</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldControlType(System.String)">
+            <summary>
+            Converts string to FormFieldControlType.
+            </summary>
+            <param name="controlTypeString">String to convert</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldControlTypeString(CMS.FormEngine.FormFieldControlTypeEnum)">
+            <summary>
+            Converts FormFieldControlType to string.
+            </summary>
+            <param name="controlType">FormFieldControlType to convert</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.IsFieldOfType(CMS.FormEngine.FormFieldInfo,CMS.FormEngine.FormFieldControlTypeEnum)">
+            <summary>
+            Returns true if FormFieldInfo is of specified type.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldDataTypeString(CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Converts form field data type enumeration to form field data type string.
+            </summary>
+            <param name="dataType">FormFieldDataType to convert</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDataType(CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Converts FormFieldDataType to System.Type.
+            </summary>
+            <param name="dataType">FormFieldDataType to convert</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldTypes(System.Boolean,System.Boolean)">
+            <summary>
+            Returns dataset with all field types.
+            </summary>
+            <param name="isDocumentType">TRUE - GUID field is not included in returned DataSet, FALSE - it is included</param>
+            <param name="isSystemDevelopment">Indicates whether the set is for the use in System development section</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldTypes(System.Boolean)">
+            <summary>
+            Returns dataset with all field types.
+            </summary>
+            <param name="isDocumentType">TRUE - GUID field is not included in returned DataSet, FALSE - it is included</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldTypes">
+            <summary>
+            Returns dataset with all field types for document types.
+            </summary>        
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.AddDataRow(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            Adds datarow to FieldTypes or FieldControlTypes dataset table.
+            </summary>
+            <param name="table">Data table</param>
+            <param name="firstColumnValue">First column value</param>
+            <param name="secondColumnValue">Second column value</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormUserControlsForDataType(System.String,System.Boolean,CMS.FormEngine.FieldEditorControlsEnum,System.Boolean)">
+            <summary>
+            Returns DataSet with FormUserControlInfo objects that supports specified datatype.
+            </summary>
+            <param name="dataType">Supported data type</param>
+            <param name="emptyRow">Indicates whether empty datarow is added to the result</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>
+            <param name="simplifiedMode">Indicates whether it is a simplified mode</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormUserControlsForDataType(System.String,System.Boolean,CMS.FormEngine.FieldEditorControlsEnum,System.Boolean,CMS.SiteProvider.FormUserControlTypeEnum)">
+            <summary>
+            Returns DataSet with FormUserControlInfo objects that supports specified datatype.
+            </summary>
+            <param name="dataType">Supported data type</param>
+            <param name="emptyRow">Indicates whether empty datarow is added to the result</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>
+            <param name="simplifiedMode">Indicates whether it is a simplified mode</param>
+            <param name="controlType">Form user control type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDataTypeColumn(System.String)">
+            <summary>
+            Returns name of column for given data type.
+            </summary>
+            <param name="dataType">Data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetControlTypeColumn(CMS.FormEngine.FieldEditorControlsEnum)">
+            <summary>
+            Returns name of  FormUserControlInfo column for specified control type location.
+            </summary>
+            <param name="controlType">FieldEditorControlsEnum specifies control location</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldControlTypesWithUserControls(System.String,CMS.FormEngine.FieldEditorControlsEnum,System.Boolean,System.Boolean)">
+            <summary>
+            Returns dataset with control types and user controls.
+            </summary>
+            <param name="fieldType">Field type, can be empty for simplified mode</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>      
+            <param name="simplifiedMode">Indicates whether get controls for simplified mode(advanced mode is set by default)</param>        
+            <param name="isPrimary">Indicates whether it is a 'primary key' field</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldControlTypesWithUserControls(System.String,CMS.FormEngine.FieldEditorControlsEnum,System.Boolean,System.Boolean,CMS.SiteProvider.FormUserControlTypeEnum)">
+            <summary>
+            Returns dataset with control types and user controls.
+            </summary>
+            <param name="fieldType">Field type, can be empty for simplified mode</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>      
+            <param name="simplifiedMode">Indicates whether get controls for simplified mode(advanced mode is set by default)</param>        
+            <param name="isPrimary">Indicates whether it is a 'primary key' field</param>
+            <param name="type">FormUserControlTypeEnum type of control</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetAvailableControlTypes(System.String,CMS.FormEngine.FieldEditorControlsEnum,System.Boolean)">
+            <summary>
+            Returns DataSet with available form control types for specified column data type and field editor controls.
+            </summary>
+            <param name="dataType">Supported data type</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>
+            <param name="isPrimary">Indicates if field is primary field</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetAvailableControlTypesValue(System.String,CMS.FormEngine.FieldEditorControlsEnum)">
+            <summary>
+            Returns DataSet with available control types for specified conditions.
+            </summary>
+            <param name="dataType">Supported data type</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetBasicFormDefinition(System.String)">
+            <summary>
+            Returns basic form definition of the table with primary key only.
+            </summary>
+            <param name="primaryKey">Primary key name</param>         
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetHtmlEditorAreaCss(System.String)">
+            <summary>
+            Returns path to the default editor css file for the specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.IsControlAdded(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Indicates whether control should be added to the result dataset of controls or not.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetClassesFields(CMS.FormEngine.FormFieldControlTypeEnum)">
+            <summary>
+            Returns the HashTable of all the coupled document type classes which uses the specified fields. [ClassName] -> [ FormFieldInfo[] fields ].
+            </summary>
+            <param name="fieldType">Field type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadDefaultValues(System.String,CMS.SettingsProvider.IDataContainer)">
+            <summary>
+            Loads the default class values to the Data container.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="container">Data container</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadDefaultValues(System.String,System.Data.DataRow)">
+            <summary>
+            Loads the default class values to the DataRow.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="dr">Datarow</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadDefaultValues(CMS.TreeEngine.TreeNode)">
+            <summary>
+            Loads the default class values to the document node.
+            </summary>
+            <param name="node">Document node</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldDataType(System.Type,System.Int32)">
+            <summary>
+            Returns form field data type from input table column data.
+            </summary>
+            <param name="type">Column data type</param>
+            <param name="maxLength">Maximum length of the column value</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldDataTypeFromDBType(System.String)">
+            <summary>
+            Returns form field data type from database column data type.
+            </summary>
+            <param name="type">Database column data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldDefaultControlType(CMS.FormEngine.FormFieldDataTypeEnum,System.Boolean)">
+            <summary>
+            Returns default form field control type according to the form field data type.
+            </summary>
+            <param name="dataType">Form field data type</param>
+            <param name="isPrimary">Indicates whether it is a primary field</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetXmlFormDefinitionFromXmlSchema(System.String,System.Boolean)">
+            <summary>
+            Returns xml form definition from input xml schema.
+            </summary>
+            <param name="xmlSchema">Xml schema</param>
+            <param name="isSystem">If it is true, all field are assigned like system</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetXmlFormDefinitionFromXmlSchema(System.String,System.Boolean,System.String)">
+            <summary>
+            Returns xml form definition from input xml schema.
+            </summary>
+            <param name="xmlSchema">Xml schema</param>
+            <param name="isSystem">If it is true, all field are assigned like system</param>
+            <param name="formDefinition">If not null then this definition is a base definition and only gets updated with new fields from xml schema</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.MergeVisibility(CMS.FormEngine.FormInfo,CMS.FormEngine.FormInfo,System.Boolean)">
+            <summary>
+            Merges original FormInfo and alternative FormInfos and returns the resulting FormInfo.
+            </summary>
+            <param name="original">Default/original FormInfo</param>
+            <param name="visibility">Visibility FormInfo</param>
+            <param name="includeAllAltFields">If true, result will contain event those fields which are not in the original FormInfo</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.MergeFormDefinitions(System.String,System.String)">
+            <summary>
+            Merges original and alternative form definitions and returns the result.
+            </summary>
+            <param name="original">Default/original form definition</param>
+            <param name="alternative">Alternative form definition (just differences from original)</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.MergeFormDefinitions(System.String,System.String,System.Boolean)">
+            <summary>
+            Merges original and alternative form definitions and returns the result.
+            </summary>
+            <param name="original">Default/original form definition</param>
+            <param name="alternative">Alternative form definition (just differences from original)</param>
+            <param name="includeAllAltFields">If true, result will contain event those fields which are not in the original definition</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.CombineFormDefinitions(System.String,System.String)">
+            <summary>
+            Combines two form definitions together. Fields from second definition are added at the end of first definition.
+            </summary>
+            <param name="def1">First form definition</param>
+            <param name="def2">Second form definition</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldsWithDefaultValue(System.String,System.String,System.String)">
+            <summary>
+            Returns "alternative form fields definition" containing only specified attribute and value for all fields
+            E.g. Set visible false for all fields in alt. form.
+            </summary>
+            <param name="sourceXml">Default/original form definition</param>
+            <param name="attributeName">Attribute which should be set to default</param>
+            <param name="value">Default value</param>        
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormDefinitionDifference(System.String,System.String)">
+            <summary>
+            Returns XML differences between original and alternative form definitions
+            (i.e. returns only fields that differs from each other)        
+            </summary>
+            <param name="original">Default/original form definition</param>
+            <param name="alternative">Alternative form definition</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDifferentAttributes(System.Xml.XmlAttributeCollection,System.Xml.XmlAttributeCollection)">
+            <summary>
+            Returns array with different attributes which are in both collections.
+            </summary>
+            <param name="origAttributes">Collection of original attributes</param>
+            <param name="newAttributes">Collection of new attributes</param>
+            <returns>2-dimensional array: 0-attribute name, 1-attribute value</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetSettingsDifferences(System.Collections.Hashtable,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            Returns original settings in Hashtable modified by new settings. If new settings doesn't differ then method returns original settings.
+            </summary>
+            <param name="origSettings">Original 'settins' node</param>
+            <param name="newSettings">New 'settings' node</param>
+            <param name="includeNonExisting">If true empty settings which are non-empty in original are included too</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetSettingsDifferences(System.Xml.XmlNode,System.Xml.XmlNode,System.Boolean)">
+            <summary>
+            Returns differences in XML of new settings from original settings. If no differences exist returns null.
+            </summary>
+            <param name="origSettings">Original 'settins' node</param>
+            <param name="newSettings">New 'settings' node</param>
+            <param name="includeNonExisting">If true empty settings which are non-empty in original are included too</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormFieldInfo(System.String,System.String)">
+            <summary>
+            Returns initialized FormFieldInfo structure according to the specified table column schema.
+            </summary>
+            <param name="tableName">Database table name</param>
+            <param name="columnName">Database table column name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ConvertContainerToFieldType(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Converts given container class to the field type.
+            </summary>
+            <param name="className">Name of the class</param>
+            <param name="tableName">Name of the table to be created</param>
+            <param name="idFieldName">Name of the primary key field</param>
+            <param name="nameField">Name of the name field</param>
+            <param name="siteName">Name of the site</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormInfo(System.String,System.Boolean)">
+            <summary>
+            Returns FormInfo object for specified class name or alternative name. 
+            Method loops through supplied class list and returns first object existing.
+            If alternative name is specified then it is merged with default class and then returned
+            If coupled class exists for given alternative form then it is merged as well.
+            If alternative form info not found then its default class is returned.
+            </summary>
+            <param name="classes">Class names or alternative names separated by semicolon</param>
+            <param name="clone">When returned FormInfo is used only for reading then cloning can be set to FALSE</param>
+            <returns>Null if no FormInfo found for any of the specified classes. Otherwise returns first FormInfo which was found.</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetWebPartFormInfo(System.String,System.String,CMS.FormEngine.FormInfo,CMS.FormEngine.FormInfo,System.Boolean)">
+            <summary>
+            Returns cached and merged FormInfo for web parts.
+            </summary>
+            <param name="webPartName">Name of the web part. Use suffix FormHelper.CORE to set different name for form info which doesn't contain before/after definitions</param>
+            <param name="webPartProperties">XML schema for web part FormInfo</param>
+            <param name="beforeDefinition">FormInfo for Before definition of the web part</param>
+            <param name="afterDefinition">FormInfo for After definition of the web part</param>
+            <param name="clone">When returned FormInfo is used only for reading then cloning can be set to FALSE</param>
+            <returns>Returns FormInfo object</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetWidgetFormInfo(System.String,System.String,System.String,CMS.FormEngine.FormInfo,System.Boolean)">
+            <summary>
+            Returns cached and merged FormInfo for widgets.
+            </summary>
+            <param name="widgetName">Name of the widget</param>
+            <param name="zoneType">Type of the zone where widget is placed</param>
+            <param name="widgetProperties">Widget properties</param>
+            <param name="zoneTypeDefinition">FormInfo for Before or After section</param>
+            <param name="clone">When returned FormInfo is used only for reading then cloning can be set to FALSE</param>
+            <returns>Returns FormInfo object</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFormControlParameters(System.String,System.String,System.Boolean)">
+            <summary>
+            Returns cached form control parameters.
+            </summary>
+            <param name="formControlName">Name of a form control</param>
+            <param name="formControlParameters">XML with FormInfo definition for form control parameters. This parameter is optional and will be used only if cached FormInfo won't be found</param>
+            <param name="clone">Indicates if cloned object should be returned or original one instead. Use cloning when FormInfo will be modified. Don't use cloning when FormInfo will be used only for reading data</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.InitTable(CMS.SettingsProvider.ProviderStringValueDictionary@,System.String,System.Object@)">
+            <summary>
+            Initializes given dictionary.
+            </summary>
+            <param name="dictionary">Dictionary</param>
+            <param name="objectType">Object type</param>
+            <param name="tableLock">Lock object</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ClearFormInfos(System.Boolean)">
+            <summary>
+            Clears cached FormInfo objects.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ClearWebPartFormInfos(System.Boolean)">
+            <summary>
+            Clears cached web part FormInfos.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ClearWidgetFormInfos(System.Boolean)">
+            <summary>
+            Clears cached web part FormInfos.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ClearFormControlParameters(System.Boolean)">
+            <summary>
+            Clears cached form control parameters.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.Clear(System.Boolean)">
+            <summary>
+            Clears all cached objects.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.RenameFieldInFormLayout(System.Int32,System.String,System.String)">
+            <summary>
+            Changes field name in form layout definition.
+            </summary>
+            <param name="classId">Class ID (data class ID)</param>
+            <param name="oldFieldName">Old field name</param>
+            <param name="newFieldName">New field name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ColumnExistsInView(System.String,System.String)">
+            <summary>
+            Checks if column name is unique in system tables which are joined with given table into view.
+            </summary>
+            <param name="className">Name of the class, where column with columnName is created</param>
+            <param name="columnName">Name of the column to be checked</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ViewsHaveColumn(System.String[],System.String)">
+            <summary>
+            Checks if column specified by name is present in views specified by view name.
+            </summary>
+            <param name="views">Array of classNames, in which table to search</param>
+            <param name="columnName">Name of column, which is searched for</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.UpdateInheritedClasses(CMS.SettingsProvider.DataClassInfo)">
+            <summary>
+            Updates the classes inherited from the given class.
+            </summary>
+            <param name="parentClass">Parent class</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.UpdateInheritedClasses(CMS.SettingsProvider.DataClassInfo,System.Int32)">
+            <summary>
+            Updates the classes inherited from the given class.
+            </summary>
+            <param name="parentClass">Parent class</param>
+            <param name="originalParentClassId">Class ID of the original parent to avoid loops</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.UpdateInheritedClass(CMS.SettingsProvider.DataClassInfo,CMS.SettingsProvider.DataClassInfo)">
+            <summary>
+            Updates the class inherited from the given class.
+            </summary>
+            <param name="parentClass">Parent class info</param>
+            <param name="inheritedClass">Inherited class info</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.UpdateInheritedClass(CMS.SettingsProvider.DataClassInfo,CMS.SettingsProvider.DataClassInfo,System.Int32)">
+            <summary>
+            Updates the class inherited from the given class.
+            </summary>
+            <param name="parentClass">Parent class info</param>
+            <param name="inheritedClass">Inherited class info</param>
+            <param name="originalParentClassId">Class ID of the original parent to avoid loops</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.RemoveInheritedFields(CMS.FormEngine.FormInfo,System.Boolean)">
+            <summary>
+            Removes the inherited fields from the given form info.
+            </summary>
+            <param name="fi">Form info</param>
+            <param name="deleteFields">If false, the inherited fields are only unmarked as inherited</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.RemoveInheritance(CMS.SettingsProvider.DataClassInfo,System.Boolean)">
+            <summary>
+            Removes the inheritance from the given class.
+            </summary>
+            <param name="inheritedClass">Inherited class</param>
+            <param name="deleteFields">If true, the fields are supposed to be deleted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDoubleValueInDBCulture(System.String)">
+            <summary>
+            Gets double value in 'en-us' culture format for database storation.
+            </summary>
+            <param name="value">Value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDateTimeValueInDBCulture(System.String)">
+            <summary>
+            Gets datetime value in 'en-us' culture format for database storation.
+            </summary>
+            <param name="value">Value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDoubleValueInCurrentCulture(System.String)">
+            <summary>
+            Gets double value of type string in current culture format from database.
+            </summary>
+            <param name="value">String value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDoubleValueInCurrentCulture(System.Object)">
+            <summary>
+            Gets double value of type object in current culture format from database.
+            </summary>
+            <param name="value">Object value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDateTimeValueInCurrentCulture(System.String)">
+            <summary>
+            Gets datetime value of type string in current culture format from database.
+            </summary>
+            <param name="value">String value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetDateTimeValueInCurrentCulture(System.Object)">
+            <summary>
+            Gets datetime value of type object in current culture format from database.
+            </summary>
+            <param name="value">Object value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ConvertToDoubleInCurrentCulture(System.String)">
+            <summary>
+            Converts value in current culture to double in current culture format.
+            </summary>
+            <param name="value">Value to be converted</param>
+            <returns>Returns Double.NaN if not a double number</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ConvertToDateTimeInDBCulture(System.String)">
+            <summary>
+            Converts value in current culture to double in database culture format.
+            </summary>
+            <param name="value">Value to be converted</param>
+            <returns>Returns Double.NaN if not a double number</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.ConvertToDoubleInDBCulture(System.String)">
+            <summary>
+            Converts value in current culture to double in database culture format.
+            </summary>
+            <param name="value">Value to be converted</param>
+            <returns>Returns Double.NaN if not a double number</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.IsDoubleInCurrentCulture(System.String)">
+            <summary>
+            Returns true if the value is double number for current culture.
+            </summary>
+            <param name="value">Value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.IsDoubleInDBCulture(System.String)">
+            <summary>
+            Returns true if the value is double number for database culture.
+            </summary>
+            <param name="value">Value to be converted</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFullFileName(System.String,System.String)">
+            <summary>
+            Returns full file name ([name.extension] if extension is specified) or ([name] only if extension is not specified).
+            </summary>
+            <param name="fileName">File name</param>
+            <param name="fileExtension">File extension</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetGuidFileName(System.String)">
+            <summary>
+            Returns file name in format [guid].[extension].
+            </summary>
+            <param name="fileNamesString">File names from database in format "[guid].[extension]/[originalfilename].[extension]"</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFilePhysicalPath(System.String,System.String)">
+            <summary>
+            Gets path to the file in file system.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="fileName">File name</param>
+            <returns>Physical path</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFilePhysicalPath(System.String,System.String,System.String)">
+            <summary>
+            Gets path to the file in file system.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="fileName">File name</param>
+            <param name="webFullPath">Physical path to the root of the web project (e.g. c:\WebProject\), if it is not specified web application physical path is used</param>
+            <returns>Physical path</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetBizFormFilesFolderPath(System.String)">
+            <summary>
+            Returns BizForm files folder physical path according to 'CMSBizFormFilesFolder' settings key.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetBizFormFilesFolderPath(System.String,System.String)">
+            <summary>
+            Returns BizForm files folder physical path according to 'CMSBizFormFilesFolder' settings key.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="webFullPath">Physical path to the root of the web project (e.g. c:\WebProject\), if it is not specified web application physical path is used</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.UseSiteSpecificCustomFolder(System.String)">
+            <summary>
+            Indicates if site specific custom folder should be used for storing bizform files.
+            </summary>
+            <param name="siteName">Site name</param>
+            <returns>True if custom folder is used, otherwise false</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.BizFormFilesFolder(System.String)">
+            <summary>
+            Gets custom bizform file folder path.
+            </summary>
+            <param name="siteName">Site name</param>
+            <returns>Value of custom bizform file folder</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadItemsIntoList(System.String,System.String,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldInfo)">
+            <summary>
+            Loads items into list type of control.
+            </summary>
+            <param name="options">Items specified by 'options'</param>
+            <param name="query">Items specified by 'query'</param>
+            <param name="list">List control</param>
+            <param name="fieldInfo">Current fieldInfo, may be NULL</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.SelectSingleValue(System.String,System.Web.UI.WebControls.ListControl)">
+            <summary>
+            Selects single value in control of type ListControl.
+            </summary>
+            <param name="selectedValue">SelectedValue</param>
+            <param name="list">List control</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.SelectMultipleValues(System.String[],System.Web.UI.WebControls.ListItemCollection,System.Web.UI.WebControls.ListSelectionMode)">
+            <summary>
+            Selects multiple values in control.
+            </summary>
+            <param name="selectedValues">Selected values</param>
+            <param name="list">List item collection</param>
+            <param name="mode">Selection mode</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetCurrentDataType(CMS.FormEngine.FormFieldInfo)">
+            <summary>
+            Returns FormFieldDataTypeEnum according to current field info.
+            </summary>
+            <returns>Current data type</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadItemsFromOptions(System.String,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Loads data from options into items list collection.
+            </summary>
+            <param name="options">Options in XML or plain text format</param>
+            <param name="items">Items collection to be loaded</param>
+            <param name="dataType">Data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.LoadItemsFromQuery(System.String,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Loads data from query into items list collection.
+            </summary>
+            <param name="queryWithResolvedMacros">Query with resolved macros</param>
+            <param name="items">Items collection to be loaded</param>
+            <param name="dataType">Data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.TryLoadXml(System.String,System.Xml.XmlNode@)">
+            <summary>
+            Checks if provided options are in XML format and tries to load them into XML node.
+            </summary>
+            <param name="options">Options in XML format</param>
+            <param name="xmlNode">Output XML node</param>
+            <returns>Returns TRUE if loading was successful</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.InsertItemsFromXml(System.Xml.XmlNode,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Inserts items from old (5.5 and older) XML format.
+            </summary>
+            <param name="xmlNode">XML with items</param>
+            <param name="items">Item list collection</param>
+            <param name="dataType">Data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.TryLoadRegexOptions(System.String,System.Text.RegularExpressions.MatchCollection@)">
+            <summary>
+            Get lines from regular expresion.
+            </summary>
+            <param name="text">Text to be parsed</param>
+            <param name="foundLines">Matched collection</param>
+            <returns>Returns TRUE if regular expression found any matches</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.InsertItemsFromRegex(System.Text.RegularExpressions.MatchCollection,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Completes text from found regex groups.
+            </summary>
+            <param name="foundLines">Matched regex groups representing lines.</param>
+            <param name="items">List item collection</param>
+            <param name="dataType">Data type of the field</param>
+            <returns>Returns completed text</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.InsertItemsFromText(System.String,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Inserts items from plain text.
+            </summary>
+            <param name="options">Text with options</param>
+            <param name="items">List item collection</param>
+            <param name="dataType">Data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.InsertResolvedItem(System.String,System.String,System.Web.UI.WebControls.ListItemCollection,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Inserts item into list collection, resolves macros and formates value field.
+            </summary>
+            <param name="text">Text of the item</param>
+            <param name="value">Value of the item</param>
+            <param name="items">List collection</param>
+            <param name="dataType">Data type of the item</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.FormateData(System.String,CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Formates value according to specific data type.
+            </summary>
+            <param name="value">Value of the item</param>
+            <param name="dataType">Data type</param>
+            <returns>Returns formated data</returns>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldControlTypes(System.String,System.Boolean)">
+            <summary>
+            Returns dataset with control types.
+            </summary>
+            <param name="fieldType">Field type</param>
+            <param name="isPrimary">Indicates whether it is a 'primary' field</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldControlTypes(System.String,System.Boolean,CMS.FormEngine.FieldEditorControlsEnum)">
+            <summary>
+            Returns dataset with control types.
+            </summary>
+            <param name="fieldType">Field type</param>
+            <param name="isPrimary">Indicates whether it is a 'primary' field</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>      
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFieldControlTypesForSimplifiedMode(System.Boolean,CMS.FormEngine.FieldEditorControlsEnum)">
+            <summary>
+            Returns dataset with field controls for simplified mode.
+            </summary>
+            <param name="isPrimary">Indicates whether field is primary key</param>
+            <param name="fieldEditorControls">Indicates which controls should be displayed when selecting custom user control from the list</param>      
+        </member>
+        <member name="M:CMS.FormEngine.FormHelper.GetFCKEditorAreaCss(System.String)">
+            <summary>
+            Returns path to the default editor css file for the specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="T:CMS.FormEngine.FormInfo">
+            <summary>
+            Ensures management of XML file that represents the form definition.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormInfo.DISPLAY_CONTEXT_DASHBOARD">
+            <summary>
+            Dashboard display context.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormInfo.mFormName">
+            <summary>
+            FormInfo name.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormInfo.xml">
+            <summary>
+            XML document representing FormInfo.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormInfo.mItemsList">
+            <summary>
+            Items array list.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormInfo.mUsesHtmlArea">
+            <summary>
+            Indicates if any item uses HtmlArea.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.#ctor(System.String)">
+            <summary>
+            Constructor, creates the form info structure and loads speficied form definition.
+            </summary>
+            <param name="formDefinition">XML definition of the form</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.AddFormItem(CMS.FormEngine.FormItem,System.Int32)">
+            <summary>
+            Add form item (field or category) after a specified field.
+            </summary>
+            <param name="formItem">Form item (FormFieldInfo or FormCategoryInfo object) to add</param>
+            <param name="index">Index of newly inserted item</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFormField(System.String)">
+            <summary>
+            Returns field object with data from specified field.
+            </summary>
+            <param name="fieldName">Field to get data from</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.UpdateFormField(System.String,CMS.FormEngine.FormFieldInfo)">
+            <summary>
+            Update specified field node.
+            </summary>
+            <param name="fieldName">Name of a field to update</param>
+            <param name="field">Data for update</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.AddFormField(CMS.FormEngine.FormFieldInfo)">
+            <summary>
+            Add specified field at the end of the form.
+            </summary>
+            <param name="field">Field to add</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.AddFormField(CMS.FormEngine.FormFieldInfo,System.Int32)">
+            <summary>
+            Add a form field at the specified position.
+            </summary>
+            <param name="field">Field to add</param>
+            <param name="index">Position to insert to</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.RemoveFormField(System.String)">
+            <summary>
+            Remove specified form field.
+            </summary>
+            <param name="fieldName">Name of a field to remove</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.MoveFormFieldDown(System.String)">
+            <summary>
+            Moves specified form field down.
+            </summary>
+            <param name="fieldName">Name of a field to move</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.MoveFormFieldUp(System.String)">
+            <summary>
+            Moves specified form field up.
+            </summary>
+            <param name="fieldName">Name of a field to move</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetColumnNames">
+            <summary>
+            Returns an array of field names.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetDataRow">
+            <summary>
+            Returns empty data row with column names and types.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFields(System.Boolean,System.Boolean)">
+            <summary>
+            Returns an array of FormFieldInfo objects (system fields included).
+            </summary>
+            <param name="visible">Indicates whether object with visible set to 'True' should be returned</param>
+            <param name="invisible">Indicates whether object with visible set to 'False' should be returned</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFields(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Returns an array of FormFieldInfo objects.
+            </summary>
+            <param name="visible">Indicates whether object with visible set to 'True' should be returned</param>
+            <param name="invisible">Indicates whether object with visible set to 'False' should be returned</param>
+            <param name="includeSystem">Indicates whether also system fields are included</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFields(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Returns an array of FormFieldInfo objects.
+            </summary>
+            <param name="visible">Indicates whether object with visible set to 'True' should be returned</param>
+            <param name="invisible">Indicates whether object with visible set to 'False' should be returned</param>
+            <param name="includeSystem">Indicates whether also system fields are included</param>
+            <param name="onlyPrimaryKeys">Indicates whether only primary keys should be returned</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFields(CMS.FormEngine.FormFieldControlTypeEnum)">
+            <summary>
+            Returns the array of the FormFieldInfo objects.
+            </summary>
+            <param name="fieldType">Form field control type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFields(CMS.FormEngine.FormFieldDataTypeEnum)">
+            <summary>
+            Returns the array of the FormFieldInfo objects.
+            </summary>
+            <param name="fieldDataType">Form field data type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.UpdateExistingFields(CMS.FormEngine.FormInfo)">
+            <summary>
+            Updates the existing fields from the FormInfo definition.
+            </summary>
+            <param name="existing">FormInfo with existing fields</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFormCategory(System.String)">
+            <summary>
+            Returns CategoryInfo object specified by category name.
+            </summary>
+            <param name="name">Category name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.UpdateFormCategory(System.String,CMS.FormEngine.FormCategoryInfo)">
+            <summary>
+            Update specified category node.
+            </summary>
+            <param name="categoryName">Name of category to update</param>
+            <param name="fci">FormCategoryInfo object with data for update</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.RemoveFormCategory(System.String)">
+            <summary>
+            Remove specified form category.
+            </summary>
+            <param name="categoryName">Name of a category to remove</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.AddFormCategory(CMS.FormEngine.FormCategoryInfo)">
+            <summary>
+            Add a form category at the end of the nodes.
+            </summary>
+            <param name="categObj">FormCategoryInfo object with data to add</param>        
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.AddFormCategory(CMS.FormEngine.FormCategoryInfo,System.Int32)">
+            <summary>
+            Add a form category at the end of the nodes.
+            </summary>
+            <param name="categObj">FormCategoryInfo object with data to add</param>        
+            <param name="index">Index to which to add the category</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.MoveFormCategoryDown(System.String)">
+            <summary>
+            Moves specified form category down.
+            </summary>
+            <param name="categoryName">Name of a category to move</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.MoveFormCategoryUp(System.String)">
+            <summary>
+            Moves specified form category up.
+            </summary>
+            <param name="categoryName">Name of a category to move</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetCategoryNames">
+            <summary>
+            Returns an array of category names.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetXmlDefinition">
+            <summary>
+            Returns FormInfo definition in xml.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetVisibilityXML">
+            <summary>
+            Returns FromInfo definition in XML used only for FormVisibilityInfo with limited FormFieldInfo attributes.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.UsesHtmlArea">
+            <summary>
+            Returns true, if the form uses one or more visible HTML area fields.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFormElements(System.Boolean,System.Boolean)">
+            <summary>
+            Returns the ArrayList of the form elements (system fields included).
+            </summary>
+            <param name="visible">Return visible fields</param>
+            <param name="invisible">Return invisible fields</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetFormElements(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the ArrayList of the form elements.
+            </summary>
+            <param name="visible">Return visible fields</param>
+            <param name="invisible">Return invisible fields</param>
+            <param name="hideSystemFields">Return non-system fields only</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.CombineWithForm(CMS.FormEngine.FormInfo,System.Boolean,System.String)">
+            <summary>
+            Combines the form with another form info.
+            </summary>
+            <param name="newForm">Form to include</param>
+            <param name="overwriteExisting">If true, existing fields from source form are overwritten by new form fields if their names match</param>
+            <param name="excludeColumns">Columns to exclude from form combining, separated by semicolon (;)</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.CombineWithForm(CMS.FormEngine.FormInfo,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Combines the form with another form info.
+            </summary>
+            <param name="newForm">Form to include</param>
+            <param name="overwriteExisting">If true, existing fields from source form are overwritten by new form fields if their names match</param>
+            <param name="excludeColumns">Columns to exclude from form combining, separated by semicolon (;)</param>
+            <param name="includeCategories">If true, categories from the new form will be added</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.CombineWithForm(CMS.FormEngine.FormInfo,System.Boolean,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Combines the form with another form info.
+            </summary>
+            <param name="newForm">Form to include</param>
+            <param name="overwriteExisting">If true, existing fields from source form are overwritten by new form fields if their names match</param>
+            <param name="excludeColumns">Columns to exclude from form combining, separated by semicolon (;)</param>
+            <param name="includeCategories">If true, categories from the new form will be added</param>
+            <param name="preserveCategory">If false than even if overwriteExisting is false, field is moved to the current category (but the properties of the field are not overwritten)</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.LoadDefaultValues(CMS.SettingsProvider.IDataContainer)">
+            <summary>
+            Loads the default values into the data container.
+            </summary>
+            <param name="container">Container to load</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.LoadDefaultValues(System.Data.DataRow,System.String)">
+            <summary>
+            Loads the default values into the DataRow.
+            </summary>
+            <param name="dr">Datarow to load</param>
+            <param name="xmlDefintion">XML definition</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.LoadDefaultValues(System.Data.DataRow)">
+            <summary>
+            Loads the default values into the DataRow.
+            </summary>
+            <param name="dr">Datarow to load</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.LoadDefaultValues(System.Data.DataRow,System.Boolean)">
+            <summary>
+            Loads the default values into the DataRow.
+            </summary>
+            <param name="dr">Datarow to load</param>
+            <param name="enableMacros">If true, macro expression as default values are allowed</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.LoadDefaultValues(System.Data.DataRow,CMS.FormEngine.FormResolveTypeEnum)">
+            <summary>
+            Loads the default values into the DataRow.
+            </summary>
+            <param name="dr">Datarow to load</param>
+            <param name="resolveType">Type of macro resolving</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetDefaultValue(CMS.FormEngine.FormFieldInfo)">
+            <summary>
+            Returns default value of the form field info in specific type.
+            </summary>
+            <param name="ffi">Form field info</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetDefaultValue(CMS.FormEngine.FormFieldInfo,System.Boolean)">
+            <summary>
+            Returns default value of the form field info in specific type.
+            </summary>
+            <param name="ffi">Form field info</param>
+            <param name="enableMacros">If true, macro expression as default values are allowed</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.GetDefaultValue(CMS.FormEngine.FormFieldInfo,CMS.FormEngine.FormResolveTypeEnum)">
+            <summary>
+            Returns default value of the form field info in specific type.
+            </summary>
+            <param name="ffi">Form field info</param>
+            <param name="resolveType">Type of macro resolving</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.Repair">
+            <summary>
+            Remove duplicit items.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.EnsureGUIDs">
+            <summary>
+            Ensures each column contains GUID parameter.
+            </summary>        
+        </member>
+        <member name="M:CMS.FormEngine.FormInfo.Clone">
+            <summary>
+            Clones the object.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormInfo.ItemsList">
+            <summary>
+            Returns the list of all FormFieldInfos and FormCategoryInfos.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.FormInfo.FormName">
+            <summary>
+            Gets or sets FormInfo name.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormLayoutEnum">
+            <summary>
+            Form layout enumeration - for default form layout.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormLayoutEnum.Standard">
+            <summary>
+            Standard layout - Single table, categories as rows.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormLayoutEnum.Tables">
+            <summary>
+            Tables layout - Each category has its own table.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormModeEnum">
+            <summary>Form mode enumeration.</summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormModeEnum.Insert">
+            <summary>
+            Insert mode.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormModeEnum.Update">
+            <summary>
+            Update mode.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormModeEnum.InsertNewCultureVersion">
+            <summary>
+            Insert new culture version.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.FormObjectType">
+            <summary>
+            Form object types.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormObjectType.BIZFORM">
+            <summary>
+            Code name for BizForms.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormObjectType.ALTERNATIVEFORM">
+            <summary>
+            Code name for alternative form.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormObjectType.BIZFORMROLE">
+            <summary>
+            BizForm role binding.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormObjectType.GetObject(System.Data.DataRow,System.String,CMS.SettingsProvider.BaseInfo@)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+            <param name="infoObj">Resulting object</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.FormEngine.FormVisibilityInfo">
+            <summary>
+            Ensures management of XML file that represents the form visibility definition.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.FormVisibilityInfo.fi">
+            <summary>
+            FormInfo initialized by constructor of this class.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.#ctor">
+            <summary>
+            Constructor, creates an empty FormVisibilityInfo structure.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.#ctor(System.String,System.String)">
+            <summary>
+            Constructor, creates the FormVisibilityInfo structure and loads visibility definition.
+            </summary>
+            <param name="visibilityDefinition">XML definition in the form [&lt;form name="..."&gt;&lt;field column="..." visibility="..." /&gt;&lt;/form&gt;]*</param>
+            <param name="formName">Form name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.GetFormInfo">
+            <summary>
+            Returns FormInfo created by constructor of this class.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.LoadXmlDefinition(System.String,System.String)">
+            <summary>
+            Loads XML document from the specified string.
+            </summary>
+            <param name="xmlString">String containing XML document to load</param>
+            <param name="formName">Form name</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.GetXmlDefinition">
+            <summary>
+            Returns string definition from XML.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.SetVisibilityField(System.String,System.String,System.String)">
+            <summary>
+            Inserts or updates specified field node.
+            </summary>
+            <param name="fieldName">Name of a field to update</param>
+            <param name="visibility">Visibility value</param>
+            <param name="formName">Form name, used if load definition is null</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormVisibilityInfo.MergeVisibility(System.String,System.String,System.String)">
+            <summary>
+            Merges full visibility definition with visibility definition of specific form.
+            </summary>
+            <param name="fullDefinition">May contain several form visibility definitions</param>
+            <param name="formVisibility">Visibility definition of specific form</param>
+            <param name="formName">Form name</param>
+        </member>
+        <member name="T:CMS.FormEngine.FormModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.FormModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormModule.ClearHashtables(System.Boolean)">
+            <summary>
+            Clears the module hashtables.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.FormModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormItem">
+            <summary>
+            Class providing access to BizForm data.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.GetObjectTypeResourceKey">
+            <summary>
+            Gets the resource key for the name of the object type.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.Clone">
+            <summary>
+            Creates a clone of BizForm item
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.UpdateData">
+            <summary>
+            Update BizForm item DataClass.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.InsertData">
+            <summary>
+            Insert BizForm item DataClass.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(System.String)">
+            <summary>
+            Creates new BizFormItem from data class name.
+            </summary>
+            <param name="className">Class name of the BizForm class</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(System.String,CMS.FormEngine.BizFormItemProvider)">
+            <summary>
+            Creates new BizFormItem from form name.
+            </summary>
+            <param name="className">Class name of the BizForm class</param>
+            <param name="provider">Existing instance of BizFormItemProvider</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(System.Data.DataRow,System.String)">
+            <summary>
+            Creates new BizFormItem from form name and fills the data from DataRow.
+            </summary>
+            <param name="dataRow">DataRow with all data</param>
+            <param name="className">Class name of the BizForm class</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(System.Data.DataRow,System.String,CMS.FormEngine.BizFormItemProvider)">
+            <summary>
+            Creates new BizFormItem from data class name and fills the data from DataRow.
+            </summary>
+            <param name="dataRow">DataRow with all data</param>
+            <param name="className">Class name of the BizForm class</param>
+            <param name="provider">Existing instance of BizFormItemProvider</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(CMS.FormEngine.BizFormItem,System.Boolean)">
+            <summary>
+            Creates new BizFormItem from source BizFormItem.
+            </summary>
+            <param name="sourceInfo">Source BizForm item</param>
+            <param name="keepSourceData">If true, source data are kept</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.#ctor(CMS.FormEngine.BizFormItem,System.Boolean,CMS.FormEngine.BizFormItemProvider)">
+            <summary>
+            Creates new BizFormItem from source BizFormItem.
+            </summary>
+            <param name="sourceInfo">Source BizForm item</param>
+            <param name="keepSourceData">If true, source data are kept</param>
+            <param name="provider">Existing instance of BizFormItemProvider</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.GetValue(System.String)">
+            <summary>
+            Gets BizForm item value.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItem.SetValue(System.String,System.Object)">
+            <summary>
+            Sets value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Column value</param> 
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.BizFormItemProvider">
+            <summary>
+            BizFormItemProvider instance used to access data. If no BizFormItemProvider is assigned, 
+            a new BizFormItemProvider instance is created.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.BizFormClassName">
+            <summary>
+            Gets classname of BizForm item.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.ItemID">
+            <summary>
+            Gets or sets BizForm item ID.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.FormInserted">
+            <summary>
+            Gets or sets BizForm item insertion date.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.FormUpdated">
+            <summary>
+            Gets or sets date of modification of BizForm item.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.UpdateTimeStamp">
+            <summary>
+            If true, timestamp of the object is updated when saved.
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItem.ObjectDisplayName">
+            <summary>
+            Object display name.
+            </summary>
+        </member>
+        <member name="T:CMS.FormEngine.BizFormItemProvider">
+            <summary>
+            Class for retrieving BizForm items.
+            </summary>
+        </member>
+        <member name="F:CMS.FormEngine.BizFormItemProvider.mTypeInfos">
+            <summary>
+            BizForms TypeInfos [className.ToLower()] -> [TypeInfo]
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItem(System.Int32,System.String)">
+            <summary>
+            Returns BizForm item of specified class name and item ID.
+            </summary>
+            <param name="itemId">Item ID</param>
+            <param name="className">Class name of the BizForm</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItems(System.String,System.String,System.String)">
+            <summary>
+            Returns Dataset of all data record for given BizForm filtered out by where condition and ordered by given expression.
+            </summary>
+            <param name="className">Class name of the BizForm</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>        
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItems(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Returns Dataset of all data record for given BizForm filtered out by where condition and ordered by given expression.
+            </summary>
+            <param name="className">Class name of the BizForm</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>        
+            <param name="topN">Top N items</param>        
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItems(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns Dataset of all data record for given BizForm filtered out by where condition and ordered by given expression.
+            </summary>
+            <param name="className">Class name of the BizForm</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>        
+            <param name="topN">Top N items</param>
+            <param name="columns">Coluns to select, null or empty returns all columns</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItems(System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns Dataset of all data record for given BizForm filtered out by where condition and ordered by given expression.
+            </summary>
+            <param name="className">Class name of the BizForm</param>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>        
+            <param name="topN">Top N items</param>
+            <param name="columns">Coluns to select, null or empty returns all columns</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.DeleteItems(System.String)">
+            <summary>
+            Deletes all items for given BizForm.
+            </summary>
+            <param name="className">Class name of the BizForm</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.LicenseVersionCheck(System.String,CMS.SettingsProvider.FeatureEnum,CMS.SettingsProvider.VersionActionEnum)">
+            <summary>
+            License version checker.
+            </summary>
+            <param name="domain">Domain name</param>
+            <param name="feature">Feature type</param>
+            <param name="action">Type of action - edit, insert, delete</param>
+            <returns>Returns true if feature is without any limitations for domain and action</returns>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.CheckLicense(CMS.SettingsProvider.VersionActionEnum,System.String)">
+            <summary>
+            Checks the license.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.ClearLicHash">
+            <summary>
+            Clear BizForm items hash count values.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetClassName(System.String)">
+            <summary>
+            Gets BizForm item class name from given object type.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetObjectType(System.String)">
+            <summary>
+            Gets BizForm item object type from given class name.
+            </summary>
+            <param name="className">Class name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetItemName(CMS.FormEngine.BizFormItem,System.String)">
+            <summary>
+            Gets Bizform item name.
+            </summary>
+            <param name="item">BizFrom table item</param>
+            <param name="classDisplayName">Class display name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.GetTypeInfo(System.String)">
+            <summary>
+            Returns the TypeInfo for specified class.
+            </summary>
+            <param name="className">Class name</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.Clear(System.Boolean)">
+            <summary>
+            Clear the class infos and properties lists of all object types.
+            </summary>
+            <param name="logTask">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.FormEngine.BizFormItemProvider.Remove(System.String,System.Boolean)">
+            <summary>
+            Removes the specified TypeInfo.
+            </summary>
+            <param name="className">Class name to remove</param>
+            <param name="logTask">If true, web farm tasks are logged</param>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItemProvider.TypeInfos">
+            <summary>
+            BizForms TypeInfos [className.ToLower()] -> [TypeInfo]
+            </summary>
+        </member>
+        <member name="P:CMS.FormEngine.BizFormItemProvider.UpdateSystemFields">
+            <summary>
+            True if system fileds should be updated.
+            </summary>
+        </member>
+    </members>
+</doc>

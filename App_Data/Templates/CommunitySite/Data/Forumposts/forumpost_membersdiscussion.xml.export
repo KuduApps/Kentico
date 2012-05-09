@@ -1,0 +1,133 @@
+﻿<forumpost_membersdiscussion version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>520</PostId>
+      <PostForumID>110</PostForumID>
+      <PostIDPath>/00000520</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Flight tickets for sale</PostSubject>
+      <PostUserID>347</PostUserID>
+      <PostUserName>Pogo</PostUserName>
+      <PostUserMail>wayne.pronger@localhost.local</PostUserMail>
+      <PostText>Hi everybody,
+I have a pair of one way flight tickets from Vancouver, Canada, to Paris, France. The departure date is November 18th.
+Due to some personal reasons, I'm not able to fly myself, so if there is somebody interested in flying this direction, I'm offering these tickets for the half of the original price, which gives the great $500 per ticket. </PostText>
+      <PostTime>2008-11-05T15:19:07+01:00</PostTime>
+      <PostThreadPosts>5</PostThreadPosts>
+      <PostThreadLastPostUserName>Pogo</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-11-05T16:20:25+01:00</PostThreadLastPostTime>
+      <PostUserSignature>/:.p.o.g.o.:\</PostUserSignature>
+      <PostGUID>1c17e0f2-579a-45f4-a421-924d09380d46</PostGUID>
+      <PostLastModified>2009-01-09T16:05:32.827+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>70</PostViews>
+      <PostLastEdit>2009-01-09T16:05:32.827+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>5</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Pogo</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-11-05T16:20:25+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>521</PostId>
+      <PostForumID>110</PostForumID>
+      <PostParentID>520</PostParentID>
+      <PostIDPath>/00000520/00000521</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Flight tickets for sale</PostSubject>
+      <PostUserID>346</PostUserID>
+      <PostUserName>Nikky</PostUserName>
+      <PostUserMail>nicole.dubois@localhost.local</PostUserMail>
+      <PostText>Wow Pogo,
+you're my man!!! I'll be returning back to France around that time and ain't got my ticket yet, so if you still have them, I'll surely take one of them. </PostText>
+      <PostTime>2008-11-05T15:29:44+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>..: N1kky :..</PostUserSignature>
+      <PostGUID>b13398d3-10b4-4ba0-9f34-a93968120864</PostGUID>
+      <PostLastModified>2008-11-05T16:29:44.937+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>523</PostId>
+      <PostForumID>110</PostForumID>
+      <PostParentID>520</PostParentID>
+      <PostIDPath>/00000520/00000523</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Flight tickets for sale</PostSubject>
+      <PostUserID>347</PostUserID>
+      <PostUserName>Pogo</PostUserName>
+      <PostUserMail>wayne.pronger@localhost.local</PostUserMail>
+      <PostText>Wow!!!
+Thank you very much indeed young ladies, you've been most helpful to me. And many other thanks go to the people who established this great site, withou it, I wouldn't really know what to do with the tickets. Be sure I'll recommend the site to everyone whom it may concern. </PostText>
+      <PostTime>2008-11-05T16:20:25+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>/:.p.o.g.o.:\</PostUserSignature>
+      <PostGUID>3e7ea649-98b1-4a23-89bb-a59943418c59</PostGUID>
+      <PostLastModified>2008-11-30T14:08:01.833+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>522</PostId>
+      <PostForumID>110</PostForumID>
+      <PostParentID>521</PostParentID>
+      <PostIDPath>/00000520/00000521/00000522</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Flight tickets for sale</PostSubject>
+      <PostUserID>347</PostUserID>
+      <PostUserName>Pogo</PostUserName>
+      <PostUserMail>wayne.pronger@localhost.local</PostUserMail>
+      <PostText>Hi Nikky,
+nice to hear such things from you, I was already thinking that the tickets will remain unused. To be honest, I was firstly hoping to sell them both together, but sure, the first of them is yours. </PostText>
+      <PostTime>2008-11-05T16:00:15+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>/:.p.o.g.o.:\</PostUserSignature>
+      <PostGUID>8dc79595-5006-4119-b916-d3af5968cf59</PostGUID>
+      <PostLastModified>2008-11-05T16:30:15.047+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>524</PostId>
+      <PostForumID>110</PostForumID>
+      <PostParentID>522</PostParentID>
+      <PostIDPath>/00000520/00000521/00000522/00000524</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Flight tickets for sale</PostSubject>
+      <PostUserID>341</PostUserID>
+      <PostUserName>Mia</PostUserName>
+      <PostUserMail>mia.lee@localhost.local</PostUserMail>
+      <PostText>No worries Pogo,
+I'll take the second one. I'm on a journey around the world and I'm currently thinking of some way how to get from Canada to Europe, so why not start in Paris, moreover for the great price... </PostText>
+      <PostTime>2008-11-05T16:05:47+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>#-Ma-Ma-Mia-#</PostUserSignature>
+      <PostGUID>ccbe96b7-9a64-492c-acc7-881c91e11190</PostGUID>
+      <PostLastModified>2008-11-05T16:31:47.313+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_membersdiscussion>

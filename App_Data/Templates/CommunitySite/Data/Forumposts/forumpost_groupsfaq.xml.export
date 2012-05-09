@@ -1,0 +1,41 @@
+﻿<forumpost_groupsfaq version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>442</PostId>
+      <PostForumID>112</PostForumID>
+      <PostIDPath>/00000442</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Frequently asked questions</PostSubject>
+      <PostUserID>350</PostUserID>
+      <PostUserName>Jenny</PostUserName>
+      <PostUserMail>jane.oakley@localhost.local</PostUserMail>
+      <PostText>Here are some of the back-packing related questions that appear repeatedly in our mailbox:
+
+Q: What is back-packing?
+A: Back-packing is a low-budget, independent way of international travelling. Its main features are preference of youth hostels to traditional hotels, independence in where and when to go, use of public transport and hitchhiking, and, last but not least, use of back-packs as the primary luggage.
+
+Q: What's the history of back packing? Where did it come from?
+A: There is no exact answer to this question. However, the era of hippies in the 1960s and 70s is generally considered to be the age when this way of travelling spread across the world. </PostText>
+      <PostTime>2008-10-25T18:15:57.86+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Jenny</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T18:15:57.86+02:00</PostThreadLastPostTime>
+      <PostUserSignature>+ + J3nny + +</PostUserSignature>
+      <PostGUID>3a581c2d-283a-46aa-aa14-1e687820dbe4</PostGUID>
+      <PostLastModified>2009-05-26T14:31:25.677+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>24</PostViews>
+      <PostLastEdit>2009-05-26T14:31:25.677+02:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jenny</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T18:15:57.86+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_groupsfaq>

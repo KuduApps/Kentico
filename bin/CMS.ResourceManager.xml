@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.ResourceManager</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.ResourceManager.FileResourceEditor">
+            <summary>
+            String resource manager for use with the .resx files.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceEditor.mResourceFiles">
+            <summary>
+            Resource files.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceEditor.mCultureResourcesHT">
+            <summary>
+            Resources for each culture as hashtable ("table of tables").
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceEditor.mCultureResourcesDS">
+            <summary>
+            Resources for each culture as dataset ("table of datasets").
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.GetResFilename(System.String)">
+            <summary>
+            Returns resource filename.
+            </summary>
+            <param name="uiculture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.#ctor(System.String)">
+            <summary>
+            Constructor, creates a new instance of the FileResourceManager object.
+            </summary>
+            <param name="resourceFiles">Resource files to use</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.#ctor(System.String,System.String)">
+            <summary>
+            Constructor, creates a new instance of the FileResourceManager object.
+            </summary>
+            <param name="resourceFile">Resource file to use</param>
+            <param name="culture">Culture of resource file</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.GetResourceString(System.String,System.String)">
+            <summary>
+            Returns default resource string specified culture.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="culture">Requested culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.GetResourceDataSet(System.String)">
+            <summary>
+            Returns dataset containing default resource strings.
+            </summary>
+            <param name="culture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.DeleteResourceString(System.String,System.String)">
+            <summary>
+            Removes default resource string.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="culture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.DeleteResourceString(System.String,System.String,System.Boolean)">
+            <summary>
+            Removes default resource string.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="culture">Culture</param>
+            <param name="dontSave">If true file will not be saved after delete</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.SetResourceString(System.String,System.String,System.String)">
+            <summary>
+            Sets/updates default resource string.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="value">Resource string value</param>
+            <param name="culture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.SetResourceString(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Sets/updates default resource string.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="value">Resource string value</param>
+            <param name="culture">Culture</param>
+            <param name="dontSave">True if file shouldn't be saved after update</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.SaveFile(System.String,System.String)">
+            <summary>
+            Stores modified resource strings orf requested culture to file.
+            </summary>
+            <param name="filename">Filename (including path)</param>
+            <param name="culture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceEditor.LoadFiles(System.String[],System.String)">
+            <summary>
+            Loads the resource file from the specified path.
+            </summary>
+            <param name="resourceFiles">Files to load</param>
+            <param name="culture">File culture</param>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceEditor.ResourceFiles">
+            <summary>
+            Resource files.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.FileResourceManager">
+            <summary>
+            String resource manager for use with the .resx files.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mLoadAllStrings">
+            <summary>
+            If true, all resource strings are loaded on the Resource manager initialization.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mCulture">
+            <summary>
+            Culture of the manager.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mResourceFiles">
+            <summary>
+            Resource files.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mProcessedStrings">
+            <summary>
+            Processed strings.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mAllReadersCompleted">
+            <summary>
+            True if all readers are completed.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mResources">
+            <summary>
+            Contains resources pre-loaded in memory.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.FileResourceManager.mReaders">
+            <summary>
+            Array of the resource readers.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.#ctor(System.String,System.String)">
+            <summary>
+            Constructor, creates a new instance of the FileResourceManager object.
+            </summary>
+            <param name="resourceFile">Resource file to use</param>
+            <param name="culture">Culture of resource file</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.GetResFilename(System.String)">
+            <summary>
+            Returns resource filename.
+            </summary>
+            <param name="uiculture">Culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.GetString(System.String)">
+            <summary>
+            Returns the resource string of currently loaded culture/language.
+            </summary>
+            <param name="key">Resource string key</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.SetString(System.String,System.String)">
+            <summary>
+            Sets the resource string of currently loaded culture/language.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="value">Resource string value</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.DeleteString(System.String)">
+            <summary>
+            Remove resource string from currently loaded culture.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.LoadFiles(System.String[],System.String)">
+            <summary>
+            Loads the resource file from the specified path.
+            </summary>
+            <param name="resourceFiles">Files to load</param>
+            <param name="culture">File culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.LoadStrings(System.String[],System.String)">
+            <summary>
+            Loads the resource file from the specified path.
+            </summary>
+            <param name="resourceFiles">Files to load</param>
+            <param name="culture">File culture</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceManager.ReadString(System.String)">
+            <summary>
+            Reads the string from the resource readers.
+            </summary>
+            <param name="key">String key</param>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceManager.ResourceFiles">
+            <summary>
+            Resource files.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceManager.Culture">
+            <summary>
+            Manager culture.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.FileResourceReader">
+            <summary>
+            Reader for the resource files.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceReader.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="filePath">File path to read</param>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceReader.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceReader.CloseReaders">
+            <summary>
+            Closes the readers.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.FileResourceReader.GetNextString(System.String@,System.String@)">
+            <summary>
+            Gets the next string from the resource file.
+            </summary>
+            <param name="name">Returns string name</param>
+            <param name="value">Returns string value</param>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceReader.IsCompleted">
+            <summary>
+            Returns true if the file is completed.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceReader.FilePath">
+            <summary>
+            File path.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.FileResourceReader.Reader">
+            <summary>
+            Reader for the resource file.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceStringInfo">
+            <summary>
+            Resource info data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceStringInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.SetValue(System.String,System.Object)">
+            <summary>
+            Sets the object value.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains given column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.#ctor">
+            <summary>
+            Constructor, creates an empty ResourceStringInfo structure.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor, creates an ResourceStringInfo object from the given DataRow data.
+            </summary>
+            <param name="dr">Datarow with the class info data</param>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.StringId">
+            <summary>
+            The string id.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.StringKey">
+            <summary>
+            The string key.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.StringIsCustom">
+            <summary>
+            The string is custom.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.TranslationText">
+            <summary>
+            The translation text.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.UICultureCode">
+            <summary>
+            The UICulture code.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.StringLoadGeneration">
+            <summary>
+            String load generation.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceStringInfo.ColumnNames">
+            <summary>
+            Column names.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceObjectType">
+            <summary>
+            Resource manager object types.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceObjectType.RESOURCESTRING">
+            <summary>
+            Code name for resource string.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceObjectType.RESOURCESTRINGLIST">
+            <summary>
+            Code name for resource string list.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceObjectType.RESOURCETRANSLATION">
+            <summary>
+            Code name for resource translation.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceObjectType.UICULTURE">
+            <summary>
+            Code name for UI cultures.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceObjectType.RESOURCETRANSLATED">
+            <summary>
+            Code name for translated resource.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceStringListInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringListInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ResourceStringListInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceStringListInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result (not applied)</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>       
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceTranslatedInfo">
+            <summary>
+            ResourceTranslated virtual object.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceTranslatedInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslatedInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ResourceTranslated object.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslatedInfo.GetData(CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the data according to the set of input parameters.
+            </summary>
+            <param name="parameters">Query parameters</param>
+            <param name="where">Where condition to filter data</param>
+            <param name="orderBy">Order by statement</param>
+            <param name="topN">Specifies number of returned records</param>        
+            <param name="columns">Data columns to return</param>
+            <param name="binaryData">If true, binary data are returned in the result</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total number of available records</param>        
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceTranslationInfo">
+            <summary>
+            ResourceTranslationInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.ResourceTranslationInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.GetExisting">
+            <summary>
+            Gets the existing object.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.SetValue(System.String,System.Object)">
+            <summary>
+            Sets the object value.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Returns value of column.
+            </summary>
+            <param name="columnName">Column name</param>
+            <param name="value">Returns the value</param>
+            <returns>Returns true if the operation was successful (the value was present)</returns>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.ContainsColumn(System.String)">
+            <summary>
+            Returns true if the object contains given column.
+            </summary>
+            <param name="columnName">Column name</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ResourceTranslationInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new ResourceTranslationInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceTranslationInfo.TranslationStringID">
+            <summary>
+            ID of translation string.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceTranslationInfo.TranslationUICultureID">
+            <summary>
+            ID of UI culture.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceTranslationInfo.TranslationID">
+            <summary>
+            ID of translation.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceTranslationInfo.TranslationText">
+            <summary>
+            Translation text.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.ResourceTranslationInfo.ColumnNames">
+            <summary>
+            Column names.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceTranslationInfoProvider">
+            <summary>
+            Resource translation management.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.GetResourceTranslationInfo(System.Int32)">
+            <summary>
+            Gets the resource translation from the database.
+            </summary>
+            <param name="translationId">Translation ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.GetResourceTranslationInfo(System.Int32,System.Int32)">
+            <summary>
+            Gets the resource translation from the database.
+            </summary>
+            <param name="stringId">String ID</param>
+            <param name="uiCultureId">UI culture ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.SetResourceTranslationInfo(CMS.ResourceManager.ResourceTranslationInfo)">
+            <summary>
+            Updates / Inserts the translation object in the database
+            </summary>
+            <param name="infoObj">Translation object</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.DeleteResourceTranslationInfo(System.Int32)">
+            <summary>
+            Deletes the resource translation object.
+            </summary>
+            <param name="translationId">Translation ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.DeleteResourceTranslationInfo(CMS.ResourceManager.ResourceTranslationInfo)">
+            <summary>
+            Deletes the resource translation object.
+            </summary>
+            <param name="infoObj">ResourceTranslation object</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.GetResourceTranslated(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Returns DataSet with translated resources string form specified parameters.
+            </summary>
+            <param name="where">SQL WHERE condition</param>
+            <param name="orderBy">SQL ORDERBY condition</param>
+            <param name="columns">SQL columns restriction</param>
+            <param name="topN">Number of returned records</param>
+            <returns>Returns DataSet</returns>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceTranslationInfoProvider.GetResourceTranslated(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns DataSet with translated resources string form specified parameters.
+            </summary>
+            <param name="where">SQL WHERE condition</param>
+            <param name="orderBy">SQL ORDERBY condition</param>
+            <param name="columns">SQL columns restriction</param>
+            <param name="topN">Number of returned records</param>
+            <param name="offset">Offset of records</param>
+            <param name="maxRecords">Maximum number of records</param>
+            <param name="totalRecords">Returns total records</param>
+            <returns>Returns DataSet</returns>
+        </member>
+        <member name="T:CMS.ResourceManager.SqlResourceManager">
+            <summary>
+            Provides access to resource strings stored in db.
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.SqlResourceManager.resources">
+            <summary>
+            Contains resources pre-loaded in memory. Table of [cultureCode.ToLower + "." + stringKey.ToLower] -> [Text]
+            </summary>
+        </member>
+        <member name="F:CMS.ResourceManager.SqlResourceManager.mDefaultUICulture">
+            <summary>
+            Default UI culture.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.SetResourceStringInfo(CMS.ResourceManager.ResourceStringInfo)">
+            <summary>
+            Sets new reource string and new translation of it, updates existing resource string and its translations.
+            </summary>
+            <param name="infoObj">Resource string info</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetResourceStringInfo(System.String)">
+            <summary>
+            Returns ResourceStringInfo by specified key.
+            </summary>
+            <param name="key">Resource string key</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetResourceStringInfo(System.Int32)">
+            <summary>
+            Returns ResourceStringInfo by specified ID.
+            </summary>
+            <param name="stringId">Resource string ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetResourceStringInfo(System.String,System.String)">
+            <summary>
+            Returns ResourceStringInfo by specified key and specified cultureCode. Always returns string object.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="cultureCode">Culture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetResourceStringInfo(System.Int32,System.String)">
+            <summary>
+            Returns ResourceStringInfo by specified ID and specified cultureCode. Always returns string object.
+            </summary>
+            <param name="stringId">Resource string ID</param>
+            <param name="cultureCode">Culture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetResourceStringInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns ResourceStringInfo by specified StringID and specified uiCultureID.
+            </summary>
+            <param name="stringId">Resource string ID</param>
+            <param name="uiCultureId">CultureID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.DeleteResourceStringInfo(System.Int32)">
+            <summary>
+            Deletes the resource string.
+            </summary>
+            <param name="stringId">String ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.DeleteResourceStringInfo(CMS.ResourceManager.ResourceStringInfo)">
+            <summary>
+            Deletes the resource string.
+            </summary>
+            <param name="infoObj">ResourceString object</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.DeleteResourceStringInfo(System.String,System.String)">
+            <summary>
+            Deletes resource string translation with specified StringKey and specified uiCulture.
+            If uiCultureCode equals to default culture, then the resource string will be delete from all cultures, else the resource string will be deleted only from specified UICulture.
+            </summary>
+            <param name="stringKey">Resource StringKey</param>
+            <param name="uiCultureCode">UICultureCode</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.ExistTranslation(System.String,System.String)">
+            <summary>
+            Returns true if translation of specified String key exist in specified Culture.
+            </summary>
+            <param name="stringKey">Resource string key</param>
+            <param name="cultureCode">Resource string UICulture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.ExistString(System.Int32)">
+            <summary>
+            Returns true if specified string key exists.
+            </summary>
+            <param name="stringId">Resource string id</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.ExistString(System.String)">
+            <summary>
+            Returns true if specified string key exists.
+            </summary>
+            <param name="stringKey">Resource string key</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetString(System.String,System.String)">
+            <summary>
+            Returns string by specified key and specified cultureCode.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="cultureCode">Resource string UICulture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetString(System.String,System.String,System.String)">
+            <summary>
+            Returns string by specified key and specified cultureCode.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="cultureCode">Resource string UICulture code</param>
+            <param name="defaultValue">Default value in case string was not found</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetStringFromDB(System.String,System.String)">
+            <summary>
+            Returns string by specified key and specified cultureCode.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="cultureCode">Resource string UICulture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetStringStrictly(System.String,System.String)">
+            <summary>
+            Returns string by specified key and specified cultureCode.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="cultureCode">Resource string UICulture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetKey(System.Int32)">
+            <summary>
+            Gets StringKey by specified StringID.
+            </summary>
+            <param name="stringId">String ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetUICultureCode(System.Int32)">
+            <summary>
+            Gets UICultureCode by specified UICultureID.
+            </summary>
+            <param name="uiCultureId">UI culture ID</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.GetUICultureID(System.String)">
+            <summary>
+            Gets the UI culture ID.
+            </summary>
+            <param name="cultureCode">Culture code</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.LoadGeneration(System.Int32)">
+            <summary>
+            Loads the specified generation of the objects.
+            </summary>
+            <param name="generation">Generation to load</param>
+            <returns>Returns true if the generation was not empty</returns>
+        </member>
+        <member name="F:CMS.ResourceManager.SqlResourceManager.tableLock">
+            <summary>
+            Table lock for loading.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.LoadStrings">
+            <summary>
+            Loads all strings from the database to memory.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.RemoveFromHash(System.String)">
+            <summary>
+            Remove from hash table.
+            </summary>
+            <param name="dataText">Text data</param>
+        </member>
+        <member name="M:CMS.ResourceManager.SqlResourceManager.Clear">
+            <summary>
+            Clears the resource string table.
+            </summary>
+        </member>
+        <member name="P:CMS.ResourceManager.SqlResourceManager.DefaultUICulture">
+            <summary>
+            Returns default UI culture.
+            </summary>
+        </member>
+        <member name="T:CMS.ResourceManager.ResourceManagerModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceManagerModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.ResourceManager.ResourceManagerModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+    </members>
+</doc>

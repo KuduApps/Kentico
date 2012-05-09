@@ -1,0 +1,30 @@
+﻿<cms_membership version="6.0">
+  <NewDataSet>
+    <cms_membership>
+      <MembershipID>71</MembershipID>
+      <MembershipName>GoldPartners</MembershipName>
+      <MembershipDisplayName>Gold Partners</MembershipDisplayName>
+      <MembershipDescription>Sample membership.</MembershipDescription>
+      <MembershipLastModified>2011-08-17T15:42:51.103+02:00</MembershipLastModified>
+      <MembershipGUID>4fb03888-9680-4532-a004-02841d520026</MembershipGUID>
+      <MembershipSiteID>110</MembershipSiteID>
+    </cms_membership>
+    <cms_membership>
+      <MembershipID>70</MembershipID>
+      <MembershipName>SilverPartners</MembershipName>
+      <MembershipDisplayName>Silver Partners</MembershipDisplayName>
+      <MembershipDescription>Sample membership.</MembershipDescription>
+      <MembershipLastModified>2011-08-17T15:42:28.533+02:00</MembershipLastModified>
+      <MembershipGUID>ff0d7fd4-fa8a-48ef-8fea-6603cf5939ca</MembershipGUID>
+      <MembershipSiteID>110</MembershipSiteID>
+    </cms_membership>
+    <cms_membershiprole>
+      <MembershipID>70</MembershipID>
+      <RoleID>3294</RoleID>
+    </cms_membershiprole>
+    <cms_membershiprole>
+      <MembershipID>71</MembershipID>
+      <RoleID>3293</RoleID>
+    </cms_membershiprole>
+  </NewDataSet>
+</cms_membership>

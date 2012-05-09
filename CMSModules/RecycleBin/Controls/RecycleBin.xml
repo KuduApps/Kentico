@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="VersionHistoryID">
+    <action name="view" externalsourcename="view" caption="$general.view$" icon="View.png" onclick="ViewVersion({0}); return false;" />
+    <action name="restore" commandargument="VersionHistoryID"  caption="$General.Restore$" icon="undo.png" confirmation="$recyclebin.confirmrestore$" />
+    <action name="destroy" commandargument="VersionHistoryID"  caption="$General.Delete$" icon="delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="VersionDocumentName" externalsourcename="documentname" caption="$general.documentname$" maxlength="100" wrap="false" width="100%" sort="[CMS_VersionHistory].[VersionDocumentName]">
+      <tooltip source="VersionDocumentName" externalsourcename="documentname" />
+    </column>
+    <column source="DocumentNamePath" caption="$general.documentnamepath$" maxlength="100" wrap="false" width="100%" sort="[CMS_VersionHistory].[DocumentNamePath]">
+      <tooltip source="DocumentNamePath" />
+    </column>
+    <column source="VersionClassID" externalsourcename="versionclassid" caption="$general.documenttype$" wrap="false" maxlength="50" sort="ClassDisplayName" >
+      <tooltip source="VersionClassID" externalsourcename="versionclassid" width="0" />
+    </column>
+    <column source="NodeSiteID" externalsourcename="nodesiteid" caption="$general.sitename$" wrap="false" />
+    <column source="VersionDeletedWhen" externalsourcename="deletedwhen" caption="$Unigrid.RecycleBin.Columns.LastModified$" wrap="false">
+      <tooltip source="VersionDeletedWhen" externalsourcename="deletedwhentooltip" />
+    </column>
+  </columns>
+  <objecttype name="cms.documentrecyclebinlist" columns="[VersionHistoryID], [DocumentID], [NodeSiteID], [DocumentNamePath], [VersionDocumentName], [VersionClassID], [VersionDeletedByUserID], [VersionDeletedWhen], [VersionNumber], [VersionComment], [ToBePublished], [PublishFrom], [PublishTo], [WasPublishedFrom], [WasPublishedTo], [ClassDisplayName], [ClassName]" />
+  <options>
+    <key name="ShowSelection" value="true" />
+    <key name="SelectionColumn" value="VersionHistoryID" />
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

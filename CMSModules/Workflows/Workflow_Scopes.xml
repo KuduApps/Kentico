@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="ScopeStartingPath" caption="$WorkflowList.WorkflowScopes.Columns.ScopeStartingPath$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="ClassDisplayName" externalsourcename="classdisplayname"  caption="$general.DocumentType$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="ScopeCultureID" externalsourcename="scopecultureid" caption="$general.culture$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.workflowscopelist" columns="CMS_WorkflowScope.ScopeID, CMS_WorkflowScope.ScopeStartingPath, CMS_WorkflowScope.ScopeCultureID, CMS_Site.SiteDisplayName, CMS_Class.ClassDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

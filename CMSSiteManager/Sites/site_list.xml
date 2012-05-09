@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="SiteID">
+    <action name="editSite" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" />
+    <separator />
+    <action name="editContent" externalsourcename="editcontent" caption="$Unigrid.SiteList.Actions.EditContent$" icon="Editcontent.png" />
+    <action name="openLiveSite" externalsourcename="openlivesite" caption="$Unigrid.SiteList.Actions.OpenLiveSite$" icon="Livesite.png" />
+    <separator />
+    <action name="start" caption="$Unigrid.SiteList.Actions.Start$" icon="Run.png" />
+    <action name="stop" caption="$Unigrid.SiteList.Actions.Stop$" icon="Stop.png" />
+    <separator />
+    <action name="export" caption="$Unigrid.SiteList.Actions.Export$" icon="Exportsite.png" />
+  </actions>
+  <columns>
+    <column source="SiteDisplayName" caption="$general.sitename$" wrap="false" width="100%" localize="true" >
+      <filter type="text" />
+    </column>
+    <column source="##ALL##" externalsourcename="sitestatus" caption="$Unigrid.SiteList.Columns.SiteStatus$" wrap="false" />
+    <column source="SiteDomainName"  caption="$Unigrid.SiteList.Columns.SiteDomainName$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="Documents"  caption="$general.documents$" wrap="false" />
+    <column source="##ALL##" externalsourcename="culture" caption="$Unigrid.SiteList.Columns.DefaultCulture$" wrap="false" />
+  </columns>
+  <objecttype name="cms.sitelist" columns="SiteID, SiteName, SiteDisplayName, SiteStatus, SiteIsOffline, SiteDomainName, Documents" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
+

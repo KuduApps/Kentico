@@ -1,0 +1,15 @@
+﻿<forums_forumattachment version="6.0">
+  <NewDataSet>
+    <forums_attachment>
+      <AttachmentID>147</AttachmentID>
+      <AttachmentFileName>Sample-empty-document.docx</AttachmentFileName>
+      <AttachmentFileExtension>.docx</AttachmentFileExtension>
+      <AttachmentGUID>748eeb94-8431-4a1f-9be3-a1fc30e2d2c1</AttachmentGUID>
+      <AttachmentLastModified>2010-10-13T16:54:22.053+02:00</AttachmentLastModified>
+      <AttachmentMimeType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</AttachmentMimeType>
+      <AttachmentFileSize>9919</AttachmentFileSize>
+      <AttachmentPostID>1410</AttachmentPostID>
+      <AttachmentSiteID>107</AttachmentSiteID>
+    </forums_attachment>
+  </NewDataSet>
+</forums_forumattachment>

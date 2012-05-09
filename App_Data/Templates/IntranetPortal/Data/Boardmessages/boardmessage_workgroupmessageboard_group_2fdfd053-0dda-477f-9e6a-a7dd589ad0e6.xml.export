@@ -1,0 +1,58 @@
+﻿<boardmessage_workgroupmessageboard_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6 version="6.0">
+  <NewDataSet>
+    <board_message>
+      <MessageID>2834</MessageID>
+      <MessageUserName>Brad Summers</MessageUserName>
+      <MessageText>Hi all,
+
+this message board should serve you as a quick way how to let all members of our workgroup know about something important.
+
+Please use the 'Subscribe' link to receive automatic e-mail notifications about new messages on the board.</MessageText>
+      <MessageEmail>brads@localhost.local</MessageEmail>
+      <MessageURL></MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>3978</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageApprovedByUserID>1030</MessageApprovedByUserID>
+      <MessageUserID>1030</MessageUserID>
+      <MessageUserInfo></MessageUserInfo>
+      <MessageInserted>2010-11-08T18:43:45.56+01:00</MessageInserted>
+      <MessageLastModified>2010-11-08T18:44:23.357+01:00</MessageLastModified>
+      <MessageGUID>b31f0bc7-3654-4099-8d63-4fdbd25b03ee</MessageGUID>
+    </board_message>
+    <board_message>
+      <MessageID>2835</MessageID>
+      <MessageUserName>Collin Douglas</MessageUserName>
+      <MessageText>Good news everyone!!!
+
+I've just come back from Mr. Hillman and he's given me no budget limit for this project at all. He says that investment in the latest technology is always the best thing to do. Wise thinking, isn't it?
+
+So we do not have to get concerned with the final cost much, we just have to buy no more than what we really need in terms of provided functionality.</MessageText>
+      <MessageEmail>colind@localhost.local</MessageEmail>
+      <MessageURL></MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>3978</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageUserID>1035</MessageUserID>
+      <MessageUserInfo></MessageUserInfo>
+      <MessageInserted>2010-11-08T19:00:34.343+01:00</MessageInserted>
+      <MessageLastModified>2010-11-08T19:00:34.36+01:00</MessageLastModified>
+      <MessageGUID>c2a707fc-91ed-4205-b38f-896f157912e6</MessageGUID>
+    </board_message>
+    <board_message>
+      <MessageID>2836</MessageID>
+      <MessageUserName>Ruth Baker</MessageUserName>
+      <MessageText>I'd like to add that besides the e-mail notifications (the 'Subscribe' link), this cool intranet site even has an RSS feed with all content of this workgroup. Wow, this intranet it is so advanced!!!</MessageText>
+      <MessageEmail>ruthb@localhost.local</MessageEmail>
+      <MessageURL></MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>3978</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageUserID>1054</MessageUserID>
+      <MessageUserInfo></MessageUserInfo>
+      <MessageInserted>2010-11-08T18:54:28.147+01:00</MessageInserted>
+      <MessageLastModified>2010-11-08T18:54:28.16+01:00</MessageLastModified>
+      <MessageGUID>9afe5f87-9a78-4a34-b684-9b851b1be0a6</MessageGUID>
+    </board_message>
+  </NewDataSet>
+</boardmessage_workgroupmessageboard_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6>

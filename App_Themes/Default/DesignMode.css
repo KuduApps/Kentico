@@ -1,0 +1,2803 @@
+/* --- General styles --- */
+
+/* Overall styles */
+body, html
+{
+    height: 100%;
+}
+
+.ClearBoth
+{
+    line-height: 1px;
+    font-size: 1px;
+    clear: both;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+}
+
+.FloatLeft, .RTL .FloatRight
+{
+    float: left;
+    text-align: left;
+}
+
+.FloatRight, .RTL .FloatLeft
+{
+    float: right;
+    text-align: right;
+}
+
+.HiddenButton
+{
+    display: none;
+}
+
+.ContentButton
+{
+    width: 90px;
+}
+
+.DesignMode .WebPartContent .WebpartDesignPadding
+{
+    width: 1px;
+    height: 30px;
+}
+
+.UP
+{
+    background-color: #ffffff;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.UP img
+{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+/* Edit menu */
+.MenuItemEdit, .MenuItemEditSmall
+{
+    padding-right: 10px !important;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.RTL .MenuItemEdit
+{
+    padding-left: 10px;
+    padding-right: 0px !important;
+}
+
+.MenuItemEdit img, .MenuItemEditSmall img
+{
+    padding: 5px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.MenuItemEdit img
+{
+    width: 24px;
+    height: 24px;
+}
+
+.MenuItemEditDisabled
+{
+    padding-right: 10px;
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+.RTL .MenuItemEditDisabled
+{
+    padding-right: 0px !important;
+    padding-left: 10px;
+}
+
+.MenuItemEditDisabled img
+{
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Editing management */
+.FCKEditorArea
+{
+    background-color: transparent;
+}
+
+.PortalEditArea, .TemplateEditArea
+{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.PortalEditorToolbar, .TemplateEditorToolbar
+{
+    background-color: #f5f3ec;
+    border-left: solid 1px #a4b2bc;
+}
+
+.PortalManager
+{
+    width: 97%;
+    position: absolute;
+    border-right: solid 1px #a4b2bc;
+    z-index: 9000;
+}
+
+.FCKEditorDisabled
+{
+    margin: 1px;
+    border: solid 1px #888888;
+    padding: 2px;
+    color: #888888;
+    overflow: auto;
+}
+
+.WorkflowInfo
+{
+    display: block;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.PageManagerInfoContainer
+{
+    top: 0px;
+    width: 100%;
+}
+
+.PageManagerWorkflowInfo
+{
+    background-color: #f5f3ec;
+    border-bottom: solid 1px #a4b2bc;
+    overflow: hidden;
+    padding: 4px 5px 4px 10px;
+    margin: 0px;
+}
+
+.RTL .PageManagerWorkflowInfo
+{
+    padding: 4px 10px 4px 5px;
+    text-align: right;
+}
+
+.PageManagerInfo
+{
+    color: #000000;
+    background-color: #ffffff;
+    display: block;
+    padding: 4px 3px 3px 10px;
+    border-bottom: solid 1px #a4b2bc;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.RTL .PageManagerInfo
+{
+    padding: 4px 10px 3px 3px;
+}
+
+.PageManagerError
+{
+    color: #ff0000;
+    background-color: #ffffff;
+    display: block;
+    padding: 3px;
+    border-bottom: solid 1px #a4b2bc;
+}
+
+.PageManagerPreviewInfo
+{
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 4px 5px 4px 10px;
+    border-bottom: solid 1px #a4b2bc;
+    background-color: #ffffff;
+    background-color: #f5f3ec;
+}
+
+.RTL .PageManagerPreviewInfo
+{
+    padding: 4px 10px 4px 5px;
+}
+
+.PreviewInfo
+{
+    color: #000000;
+}
+
+.PreviewInfoLink
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #0000ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.PortalManagerWorkflowInfo
+{
+    background-color: #f5f3ec;
+    border-bottom: solid 1px #a4b2bc;
+    height: 28px;
+    overflow: hidden;
+    padding: 1px 5px 1px 5px;
+    margin: 0px;
+}
+
+.PortalManagerInfo
+{
+    color: #000000;
+    background-color: #ffffff;
+    display: block;
+    padding: 3px;
+    border-bottom: solid 1px #a4b2bc;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.PortalManagerError
+{
+    color: #ff0000;
+    background-color: #ffffff;
+    display: block;
+    padding: 3px;
+    border-bottom: solid 1px #a4b2bc;
+}
+
+.SaveIndicator
+{
+    background-color: #89a;
+    color: #000000;
+    display: block;
+    z-index: 10001;
+    position: absolute;
+    text-align: center;
+    width: 110%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.PassiveIndicator
+{
+    z-index: 10000;
+}
+
+.AttachmentsList
+{
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.ClearBorder .AttachmentsList
+{
+    border: 0px none;
+    padding: 0px;
+}
+
+/* Editable regions */
+.CMSEditableRegionEdit
+{
+    border: dashed 1px #888888;
+    overflow: hidden;
+    margin: 1px;
+}
+
+.CMSEditableRegionTitle
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    padding: 2px 2px 2px 5px;
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+.RTL .CMSEditableRegionTitle
+{
+    padding: 2px 5px 2px 2px;
+}
+
+.CMSEditableRegionTextBox
+{
+    margin: 0px;
+}
+
+.CMSEditableRegionError
+{
+    color: #ff0000;
+    padding: 2px;
+}
+
+/* Editable Texts */
+.EditableTextEdit
+{
+    border: dashed 1px #888888;
+    overflow: hidden;
+    margin: 1px;
+}
+
+.EditableTextTitle
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    padding: 4px 2px 4px 5px;
+    background-color: #d4e6fc;
+    background: url(./Images/CMSModules/CMS_Widgets/dashboardheader.png) repeat-x;
+    background-position: center;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.EditableTextError
+{
+    color: #ff0000;
+    padding: 2px;
+    display: block;
+}
+
+.EditableImageEdit
+{
+    border: dashed 1px #888888;
+    margin: 1px;
+    padding: 1px;
+    min-height: 23px;
+}
+
+.IE6 .EditableImageEdit
+{
+    height: 23px;
+}
+
+.EditableImageEdit img
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.EditableImageEditBody
+{
+    min-height: 22px;
+}
+
+.IE6 .EditableImageEditBody
+{
+    height: 22px;
+}
+
+.ImageSelector
+{
+    min-height: 24px;
+}
+
+.EditableImageEdit .ImageSelectorHeader, .EditButtons
+{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background: transparent url(./Images/Objects/CMS_Widget/background.png) repeat-x center left;
+    border: solid 1px #8a8a8a;
+    opacity: 0.87;
+}
+
+.EditableImageEdit .ImageSelectorHeader:hover
+{
+    opacity: 1;
+}
+
+.EditButtons
+{
+    opacity: 1;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+
+.RTL.IE9 .EditableImageEdit .ImageSelectorHeader
+{
+    min-width: 150px;
+}
+
+.RTL .EditableTextTitle
+{
+    padding: 2px 5px 2px 2px;
+}
+
+.EditableTextTextBox
+{
+    margin: 0px;
+}
+
+/* Edit mode buttons */
+.CMSEditModeButtonAdd, .CMSEditModeButtonEdit, .CMSEditModeButtonDelete, .EditableImageEdit .SelectButton, .EditableImageEdit .ClearButton
+{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px 0px 25px;
+    margin: 1px;
+    color: #000000;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    display: inline;
+    line-height: 25px;
+}
+
+.CMSEditModeButtonAdd, .CMSEditModeButtonEdit, .CMSEditModeButtonDelete
+{
+    line-height: 20px;
+    display: block;
+    float: left;
+}
+
+.RTL .CMSEditModeButtonAdd, .RTL .CMSEditModeButtonEdit, .RTL .CMSEditModeButtonDelete
+{
+    padding: 0px 21px 0px 5px;
+    background-position: right !important;
+    border: 1px solid red;
+    display: block;
+    float: right;
+}
+
+.CMSEditModeButtonClear
+{
+    clear: both;
+    line-height: 0px;
+    height: 0px;
+}
+
+.CMSEditModeButtonAdd
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/add.png);
+}
+
+.CMSEditModeButtonEdit
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/edit.png);
+}
+
+.CMSEditModeButtonDelete
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/delete.png);
+}
+
+/* Editable image */
+.EditableImageEdit .SelectButton
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/add.png);
+}
+
+.EditableImageEdit .SelectButtonDisabled
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/adddisabled.png);
+}
+
+.EditableImageEdit .ClearButton
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/delete.png);
+}
+
+.EditableImageEdit .ClearButtonDisabled
+{
+    background-image: url(./Images/Design/Controls/EditModeButtons/deletedisabled.png);
+}
+
+.EditableImageEdit .SelectButton, .EditableImageEdit .ClearButton
+{
+    margin: 0px;
+    padding: 1px 5px 1px 25px;
+    border: none;
+    line-height: 21px;
+    background-position: 3px 0px;
+}
+
+.RTL .EditableImageEdit .SelectButton, .RTL .EditableImageEdit .ClearButton
+{
+    padding: 1px 19px 1px 5px;
+    margin: 0px 5px;
+    display: block;
+    float: left;
+    background-position: right center;
+    white-space: nowrap;
+}
+
+.RTL .Gecko .EditableImageEdit .SelectButton
+{
+    padding: 1px 38px 1px 5px;
+}
+
+.RTL .IE7 .EditableImageEdit .SelectButton
+{
+    margin: 0px 5px 0px 20px;
+}
+
+/* Errors */
+.WebPartError, .FormControlError
+{
+    padding: 1px;
+    border: solid 1px #ff0000;
+}
+
+.DesignMode .WebPartContent .WebPartError
+{
+    padding-top: 25px;
+}
+
+.TransformationError
+{
+    padding: 1px;
+    border: solid 1px #ff0000;
+    display: block;
+}
+
+.WebPartErrorTitle, .FormControlErrorTitle
+{
+    font-weight: bold;
+}
+
+.InlineControlError
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    border: solid 1px #ff0000;
+    padding: 1px;
+    margin: 1px;
+    line-height: 18px;
+}
+
+/* FCK editor floating panel override */
+.TabsPageScrollArea .FCKFloatingPanel, .ScrollArea .FCKFloatingPanel, .FCKFloatingPanelUC
+{
+    position: absolute;
+}
+
+.FCKFloatingPanel
+{
+    position: fixed;
+    z-index: 9001;
+}
+
+/* Overall */
+.ErrorLabel, .EditingFormErrorLabel
+{
+    color: #ff0000;
+    display: block;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.AsyncError
+{
+    /* eg. when thread is lost (application restart) */
+    color: #ff0000;
+}
+
+.EditingFormLabelCell
+{
+    /*vertical-align: top;*/
+    /*padding-top: 9px;*/
+}
+
+.FormPanel .EditingFormLabelCell
+{
+    vertical-align: middle;
+}
+
+.RTL .ErrorLabel
+{
+    text-align: right;
+}
+
+.EditingFormInfoLabel
+{
+    display: block;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.RTL .EditingFormInfoLabel
+{
+    text-align: right;
+}
+
+.InfoLabel
+{
+    display: block;
+    padding-bottom: 10px;
+    background: none;
+}
+
+.BoldInfoLabel
+{
+    color: #000000;
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.PageContent
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 20px 10px 15px 10px;
+}
+
+fieldset .PageContent
+{
+    padding: 0px 4px;
+}
+
+.NoPadding
+{
+    padding: 20px 0px 15px 0px !important;
+}
+
+.NoPadding table
+{
+    padding: 20px 12px 15px 12px;
+}
+
+/* Page Title */
+
+
+.PageTitleImage
+{
+    vertical-align: middle;
+    padding: 0px 5px 5px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.RTL .PageTitleImage
+{
+    padding: 0px 0px 5px 5px;
+}
+
+
+.TitleBreadCrumb
+{
+}
+
+.TitleBreadCrumbLast
+{
+}
+.PageTitleBreadCrumbsPadding .TitleBreadCrumbSeparator, .GroupMediaLibraries .TitleBreadCrumbSeparator
+{
+    display: inline;
+}
+
+.RTL .TitleBreadCrumbSeparator
+{
+    background-image: url(./Images/Design/Controls/Breadcrumbs/arrowleft.png);
+}
+
+.RTL.IE9 .TitleBreadCrumbSeparator
+{
+    background-position: -8px 1px;
+}
+
+/* Content new */
+.ContentNewClasses
+{
+    border: none;
+}
+
+.ContentNewClass
+{
+    padding: 5px;
+    color: #0000ff;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.ContentNewLink
+{
+    padding: 5px;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.ContentNewClass img, .ContentNewLink img
+{
+    vertical-align: middle;
+    padding-right: 3px;
+}
+
+.RTL .ContentNewClass img, .RTL .ContentNewLink img
+{
+    padding-left: 3px;
+    padding-right: 0px;
+}
+
+/* Content list */
+.MassAction
+{
+    clear: both;
+    padding-top: 15px;
+}
+
+/* Messaging */
+.MessagingDialog textarea
+{
+    width: 325px;
+    height: 130px;
+}
+
+.MessagingDialog .SendMessage
+{
+    padding: 20px 12px 15px;
+}
+
+.MyMessages .BodyField
+{
+    width: 325px !important;
+    height: 300px;
+    border: 1px solid #aeaeae;
+}
+
+.MessagingDialog .SubjectField
+{
+    width: 325px;
+}
+
+.MyMessages .SubjectField
+{
+    width: 98%;
+}
+
+.MyMessages .BodyField
+{
+    width: 98% !important;
+    height: 300px !important;
+    border: 1px solid #aeaeae;
+}
+
+.SubjectField
+{
+    width: 280px;
+}
+
+.MessagingBox .FieldCaption
+{
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.MessagingBox .Field
+{
+    width: 100%;
+}
+
+/* Forum */
+.MyProfileUserSignature
+{
+    width: 280px;
+    height: 100px;
+}
+
+/* Forms */
+.TextBoxField
+{
+    width: 292px;
+}
+
+.ShortTextBox
+{
+    width: 100px;
+}
+
+.TextBoxFieldSmall
+{
+    width: 147px;
+}
+
+.TextAreaField
+{
+    width: 292px;
+    height: 100px;
+    line-height: 14px;
+}
+
+.Safari .TextAreaField
+{
+    width: 288px;
+}
+
+.TextAreaMedium
+{
+    width: 292px;
+    height: 200px;
+}
+
+.TextAreaHigh
+{
+    width: 292px;
+    height: 300px;
+}
+
+.TextAreaLarge
+{
+    width: 620px;
+    height: 280px;
+}
+
+.TextAreaBody
+{
+    width: 500px;
+    height: 150px;
+}
+
+.TextAreaCode
+{
+    font-size: 12px;
+    width: 500px;
+    height: 300px;
+}
+
+.DropDownField
+{
+    width: 294px;
+    height: 20px;
+}
+
+.Safari .DropDownField
+{
+    line-height: 14px;
+}
+
+.IE9 .DropDownField
+{
+    width: 296px;
+}
+
+.DropDownFieldSmall
+{
+    width: 150px;
+}
+
+.DropDownFieldShort
+{
+    width: 50px;
+}
+
+.DropDownFieldDesigner
+{
+    width: 399px;
+}
+
+.ListBoxField
+{
+    width: 297px;
+    height: 100px;
+}
+
+.FieldLabel
+{
+    text-align: left;
+    white-space: nowrap;
+}
+
+.FieldLabelTop
+{
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+.RTL .FieldLabel
+{
+    text-align: right;
+}
+
+.ContentListBox
+{
+    width: 295px;
+    height: 300px;
+}
+
+.ContentListBoxLow
+{
+    width: 295px;
+    height: 150px;
+}
+
+.DesignerListBox
+{
+    width: 100%;
+    height: 350px;
+}
+
+.FormGroupHeader
+{
+    font-weight: bold;
+    display: block;
+    padding: 0px 10px 2px 2px;
+}
+
+.RTL FormGroupHeader
+{
+    padding: 15px 2px 2px 10px;
+}
+
+.FormGroupPadding
+{
+    width: 20px;
+}
+
+.EditingFormLabel
+{
+    padding-left: 5px;
+}
+
+.FieldEditor .EditingFormLabel
+{
+    padding-left: 0px;
+    display: block;
+}
+
+.RTL .EditingFormLabel
+{
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.EditingFormCategory
+{
+    font-weight: bold;
+    padding-top: 10px; /*text-decoration: underline;*/
+}
+
+.EditingFormControl
+{
+    border: solid 1px #bbbbbb;
+    padding: 3px;
+    width: 286px;
+}
+
+.IE7 .EditingFormControl, .IE8 .EditingFormControl
+{
+    width: 288px;
+}
+
+.EditForm
+{
+    border: solid 1px #cccccc;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+/* Uploader */
+.UploaderCurrentFile
+{
+    width: auto;
+    color: #0000ff;
+    text-decoration: underline;
+    float: left;
+    margin-left: 5px;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.RTL .UploaderCurrentFile
+{
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.UploaderDelete
+{
+    vertical-align: middle;
+    float: left;
+}
+
+.RTL .UploaderDelete
+{
+    float: right;
+}
+
+.UploaderAction
+{
+    margin-right: 5px;
+    vertical-align: middle;
+    float: left;
+}
+
+.RTL .UploaderAction
+{
+    margin-left: 5px;
+    float: right;
+}
+
+.UploaderWebDAVEdit
+{
+    margin-right: 5px;
+    vertical-align: middle;
+    float: left;
+}
+
+.RTL .UploaderWebDAVEdit
+{
+    margin-left: 5px;
+    float: right;
+}
+
+.UploaderLabel
+{
+    margin-right: 5px;
+}
+
+.RTL .UploaderLabel
+{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+/* Context menu */
+.TreeNewContextMenu
+{
+    min-width: 200px !important;
+}
+
+.TreeContextMenu
+{
+    min-width: 130px;
+}
+
+.TreeContextMenu .Item, .TreeContextMenu .ItemLast
+{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+}
+
+.TreeContextMenu .ItemLast
+{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.TreeContextActiveNode
+{
+    background-color: #e4e4e4;
+}
+
+.TreeContextMenu .Item .Icon, .TreeContextMenu .ItemLast .Icon
+{
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+}
+
+.TreeContextMenu .Item .IconBig, .TreeContextMenu .ItemLast .IconBig
+{
+    float: left;
+    padding-top: 2px; /*width: 20px;     height: 20px;*/
+}
+
+.RTL .TreeContextMenu .Item .IconBig, .RTL .TreeContextMenu .ItemLast .IconBig
+{
+    float: right;
+}
+
+.TreeContextMenu .Item .Name, .TreeContextMenu .ItemLast .Name, .TreeContextMenu .Item .NameInactive, .TreeContextMenu .ItemLast .NameInactive
+{
+    line-height: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.TreeContextMenu .Separator
+{
+    height: 1px;
+    margin: 1px 0;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    width: 100%;
+}
+
+.IE7 .TreeContextMenu .Separator
+{
+    /* Remove width from IE7 */
+    width: auto;
+}
+
+/* --- Design mode --- */
+
+/* Web parts */
+.WebPart
+{
+    min-height: 20px;
+}
+
+.WebPartUpdating
+{
+    border: dashed 1px #ff0000;
+}
+
+.StandardWebPart .WebPartBorder
+{
+    padding: 1px;
+    min-height: 26px;
+}
+
+.StandardWebPart .WebPartBorderActive
+{
+    padding: 0px;
+    border: dashed 1px #ff0000;
+    min-height: 26px;
+}
+
+.IE6 .StandardWebPart .WebPartBorderActive, .IE6 .StandardWebPart .WebPartBorder
+{
+    height: 26px;
+}
+
+.StandardWebPart .WebPartHeader, .StandardWebPart .LayoutWebPartHeader
+{
+    background-color: #cccccc;
+    border: solid 1px #8d8d8d;
+    color: #000000;
+    margin: 1px;
+    z-index: 9900;
+    text-align: left;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.RTL .StandardWebPart .WebPartHeader, .RTL .StandardWebPart .LayoutWebPartHeader
+{
+    text-align: right;
+}
+
+.StandardWebPart .WebPartHeader
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartHeader.png);
+    background-color: #e4f2ff;
+    position: absolute;
+}
+
+.WebPartBorder .WebPartHeader
+{
+    filter: alpha(opacity=87);
+    opacity: 0.87;
+}
+
+.WebPartBorderActive .WebPartHeader
+{
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.StandardWebPart .WebPartSource
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartSourceHeader.png);
+    background-color: #dedeee;
+}
+
+.StandardWebPart .WebPartFilter
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartFilterHeader.png);
+}
+
+.StandardWebPart .WebPartPlaceholder
+{
+    background-color: #d1f2b2;
+    background-image: url(./Images/Design/Backgrounds/PlaceholderHeader.png);
+    background-repeat: repeat-x;
+}
+
+.StandardWebPart .WebPartInvisible
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartInvisibleHeader.png);
+    background-color: #dbdbdb;
+}
+
+.IE7 .RTL .StandardWebPart .WebPartHeader
+{
+    float: right;
+    position: relative;
+}
+
+.WebPart .WebPartHandle
+{
+    cursor: move;
+}
+
+.WebPart .WebPartHandle .WebPartHandle
+{
+    padding: 0px 2px;
+}
+
+.WebPart .WebPartTitle
+{
+    padding: 3px;
+    float: left;
+    min-width: 100px;
+}
+
+.IE7 .WebPart .WebPartTitle
+{
+    min-width: 0px;
+}
+
+.RTL .WebPart .WebPartTitle
+{
+    float: right;
+}
+
+.StandardWebPart .WebPartLeftAction, .StandardZone .WebPartZoneLeftAction, .PagePlaceholderLeftAction
+{
+    padding: 2px 3px 2px 3px;
+    margin: 0px;
+    width: 10px;
+    min-height: 19px;
+}
+
+.RTL .StandardWebPart .WebPartLeftAction, .RTL .StandardZone .WebPartZoneLeftAction, .PagePlaceholderLeftAction
+{
+    border-right: inherit;
+}
+
+
+.StandardWebPart .WebPartLeftAction img, .StandardZone .WebPartZoneLeftAction img, .PagePlaceholderLeftAction img
+{
+    padding: 2px 0px 2px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.IE7 .StandardWebPart .WebPartLeftAction img, .IE7 .StandardZone .WebPartZoneLeftAction img, .IE7 .PagePlaceholderLeftAction img
+{
+    padding: 5px 0px 1px 0px;
+}
+
+.StandardWebPart .WebPartRightAction, .StandardZone .WebPartZoneRightAction, .PagePlaceholderRightAction
+{
+    padding: 2px;
+    margin: 0px;
+    width: 16px;
+}
+
+.RTL .StandardWebPart .WebPartRightAction, .RTL .StandardZone .WebPartZoneRightAction, .RTL .PagePlaceholderRightAction
+{
+    border-left: inherit;
+}
+
+.StandardWebPart .WebPartActionButton, .StandardZone .WebPartZoneActionButton, .PagePlaceholderActionButton
+{
+    cursor: pointer;
+    max-height: 16px;
+}
+
+.StandardWebPart .WebPartActiveContextMenu .WebPartLeftAction
+{
+    background-color: #eaf1fa;
+}
+
+.StandardWebPart .WebPartPlaceholder .WebPartActiveContextMenu .WebPartLeftAction
+{
+    background-color: #95BB76;
+    border-right: #80a263;
+    padding-right: 4px;
+}
+
+.StandardWebPart .WebPartPlaceholder .WebPartActiveContextMenu .WebPartRightAction
+{
+    border-left: #80a263;
+}
+
+.StandardWebPart .WebPartTypeIcon
+{
+    float: left;
+    margin: 3px;
+}
+
+.IE7 .StandardWebPart .WebPartTypeIcon
+{
+    float: left;
+    margin: 3px;
+    margin-top: 2px;
+    position: relative;
+    top: 1px;
+}
+
+.RTL .StandardWebPart .WebPartTypeIcon
+{
+    float: right;
+    margin-left: 3px;
+    margin-right: auto;
+}
+
+.WireframeWebPart
+{
+    background-color: white;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    margin: 5px 5px 15px 5px;
+}
+
+.WireframeWebPart *
+{
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: Comic Sans MS;
+}
+
+.WireframeWebPart h1
+{
+    font-size: 160%;
+}
+
+.WireframeWebPart img
+{
+    filter: Gray;
+}
+
+.WireframeWebPart .Comments
+{
+    filter: none;
+    padding: 3px;
+}
+
+.WireframeContainer
+{
+    border: solid 2px #000000;
+}
+
+.WireframeHeader
+{
+    font-weight: bold;
+    border-bottom: solid 2px #000000;
+    padding: 3px;
+}
+
+.WireframeContent
+{
+    padding: 3px;
+}
+
+/* Web part zones */
+.StandardZone .WebPartZoneHeader, .StandardZone .WebPartZoneHeaderOrphaned
+{
+    background-color: #feb54f;
+    border-bottom: solid 1px #8d8d8d;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+    min-height: 20px;
+    font-family: Arial;
+    font-size: 13px;
+    background-repeat: repeat-x;
+}
+
+.RTL .StandardZone .WebPartZoneHeader, .RTL .StandardZone .WebPartZoneHeaderOrphaned
+{
+    text-align: right;
+}
+
+.StandardZone .WebPartZoneHandle
+{
+    padding: 3px;
+    float: left;
+}
+
+.RTL .StandardZone .WebPartZoneHandle
+{
+    float: right;
+}
+
+.StandardZone .WebPartZoneHeader
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartZoneHeader.png);
+}
+
+.StandardZone .WebPartZoneHeaderOrphaned
+{
+    background-image: url(./Images/Design/Backgrounds/WebpartZoneOrphanedHeader.png);
+}
+
+.StandardZone .WebPartZoneHeaderOrphaned, .StandardZone .WebPartZoneHeader, .StandardWebPart .WebPartHeader
+{
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.StandardZone .WebPartZoneTypeIcon
+{
+    float: left;
+    margin-right: 3px;
+}
+
+.RTL .StandardZone .WebPartZoneTypeIcon
+{
+    float: right;
+    margin-right: auto;
+    margin-left: 3px;
+}
+
+
+.StandardZone .WebPartZoneTitle, .PagePlaceholderTitle
+{
+    display: block;
+}
+
+.PagePlaceholderTitle
+{
+    margin-left: 4px;
+}
+
+.StandardZone .WebPartZoneTitle
+{
+    float: left;
+}
+
+.RTL .StandardZone .WebPartZoneTitle
+{
+    float: right;
+}
+
+
+.StandardZone .WebPartZoneBorder
+{
+    border: solid 1px #8d8d8d;
+    margin: 1px;
+}
+
+.StandardZone .WebPartZoneBorderActive
+{
+    border: solid 1px #8d8d8d;
+    margin: 1px;
+}
+
+.StandardZone .WebPartZoneCue
+{
+    border: dashed 1px #ff0000;
+    background-color: #ffffff;
+    display: none;
+    margin: 1px;
+    min-height: 26px;
+}
+
+.IE6 .StandardZone .WebPartZoneCue
+{
+    height: 26px;
+}
+
+.StandardZone .WebPartZoneActiveContextMenu .WebPartZoneLeftAction
+{
+    background-color: #ffdca4;
+}
+
+.PagePlaceholderActiveContextMenu .PagePlaceholderLeftAction
+{
+    background-color: #ceefaf;
+}
+
+.PagePlaceholderLeftAction
+{
+    border-right: 1px solid #83a566;
+}
+
+.PagePlaceholderBorder
+{
+    padding: 1px;
+}
+
+.PagePlaceholderBorderActive
+{
+    padding: 0px;
+    border: dashed 1px #ff0000;
+}
+
+.PagePlaceholderHeader
+{
+    background-image: url(./Images/Design/Backgrounds/PlaceholderHeader.png);
+    background-repeat: repeat-x;
+    background-color: #95bb76;
+    border: solid 1px #8d8d8d;
+    color: #000000;
+    margin: 1px;
+    text-align: left;
+    white-space: nowrap;
+    min-height: 20px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+
+.RTL .PagePlaceholderHeader
+{
+    text-align: right;
+}
+
+/* Portal context menu */
+.ZoneContextMenu
+{
+    background: #ffe8c7 url(./Images/Design/Backgrounds/ContextMenuZoneBackground.png) repeat-y top left;
+}
+
+.PlaceholderContextMenu
+{
+    background: #ddfec1 url(./Images/Design/Backgrounds/ContextMenuPlaceholderBackground.png) repeat-y top left;
+}
+
+.PortalContextMenu .Item
+{
+    display: block;
+    color: #000000 !important;
+    overflow: hidden;
+    border: none !important;
+    height: auto !important;
+}
+
+.ContextMenu
+{
+    border: none !important;
+    background: none !important;
+}
+
+.IE7 .ContextMenu
+{
+    width: 165px;
+}
+
+.PortalContextMenu .ItemLast
+{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    height: auto !important;
+}
+
+.PortalContextMenu .ItemSelected, .PortalContextMenu .ItemLast, .PortalContextMenu .Item
+{
+    height: auto !important;
+}
+
+.PlaceholderContextMenu
+{
+    min-width: 150px;
+}
+
+.ZoneContextMenu .ItemPadding:hover, .ZoneContextMenu .ItemSelected .ItemPadding
+{
+    background: #FEBB5F url(./Images/Design/Backgrounds/ContextMenuZoneActiveItem.png) repeat-y top left;
+}
+
+.PlaceholderContextMenu .ItemPadding:hover, .PlaceholderContextMenu .ItemSelected .ItemPadding
+{
+    background: #ebffdb url(./Images/Design/Backgrounds/ContextMenuPlaceholderActiveItem.png) repeat-y top left;
+}
+
+
+.TreeContextActiveNode
+{
+    background-color: #e4e4e4;
+}
+
+.PortalContextMenu .Item .Icon, .PortalContextMenu .ItemLast .Icon
+{
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+}
+
+.PortalContextMenu .Item .Name, .PortalContextMenu .ItemSelected .Name, .PortalContextMenu .ItemLast .Name, .PortalContextMenu .Item .NameInactive, .PortalContextMenu .ItemLast .NameInactive
+{
+    line-height: 20px !important;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    top: 1px;
+}
+
+.IE9 .PortalContextMenu .Item .Name, .IE9 .PortalContextMenu .ItemSelected .Name, .IE9 .PortalContextMenu .ItemLast .Name, .IE9 .PortalContextMenu .Item .NameInactive, .IE9 .PortalContextMenu .ItemLast .NameInactive
+{
+    line-height: 20px !important;
+    top: 2px;
+}
+
+.PortalContextMenu .Separator
+{
+    height: 1px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    margin: 1px 0;
+}
+
+.PlaceholderLayoutBackground
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10001 !important;
+    background-color: #888888;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+.PlaceholderLayout
+{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    width: 98%;
+    z-index: 10002 !important;
+    padding: 0px 0px 3px 0px;
+    margin: 1px;
+    overflow: auto;
+    text-align: left;
+}
+
+.PlaceholderLayoutContent
+{
+    padding: 0px 1px 0px 5px;
+}
+
+.PlaceholderLayoutContent .LayoutEditor
+{
+    overflow: hidden;
+}
+
+.RTL .PlaceholderLayout
+{
+    text-align: right;
+}
+
+.PagePlaceholderDesignLayoutCode
+{
+    width: 99%;
+    border: 1px solid #ccc;
+}
+
+.ModalCloseButton
+{
+    border: none;
+    padding: 0px 0px 4px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.PlaceholderLayout .PlaceholderTitleLeft
+{
+    text-align: left;
+}
+
+
+.RTL .PlaceholderLayout .PlaceholderTitleLeft
+{
+    text-align: right;
+}
+
+
+.PlaceholderLayout .PlaceholderTitleRight
+{
+    text-align: right;
+}
+
+.RTL .PlaceholderLayout .PlaceholderTitleRight
+{
+    text-align: left;
+}
+
+.PlaceholderMenu
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 0px 10px 0px 10px;
+    height: 42px;
+}
+
+.PlaceholderMenu td
+{
+    white-space: nowrap;
+}
+
+.PlaceholderHeaderLine, .PlaceholderInfoLine
+{
+    padding: 3px; /*border-bottom: solid 1px #cccccc;*/
+    border-top: solid 1px #cccccc;
+    display: block;
+    background-color: #ffffff;
+}
+
+.LayoutDirectives
+{
+    color: #888888;
+}
+
+/* Video-like webpart correction */
+.WebPart .VideoLikeContent
+{
+    padding-top: 26px;
+}
+
+.FrameContent
+{
+    padding: 0px 6px 0px 6px;
+}
+
+.PageContentViewer
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 0px 6px 15px 6px;
+}
+
+.HeaderTitleBreadcrumbs
+{
+    border-bottom: solid 1px #CCCCCC;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+/* Captcha controls */
+.CaptchaTable
+{
+    border-collapse: collapse;
+}
+
+.CaptchaTextBox
+{
+    width: 50px;
+}
+
+.CaptchaTextBoxSmall
+{
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.CaptchaAfterText
+{
+    padding: 10px;
+}
+
+
+/* Layout web parts */
+.StandardWebPart .LayoutWebPartHeader
+{
+    background-image: url(./Images/CMSModules/CMS_PortalEngine/Widgets/LayoutFooter.png);
+    border: none;
+}
+
+.StandardWebPart .LayoutWebPartHeader table
+{
+    width: 100%;
+}
+
+.LayoutTable
+{
+    border: solid 2px #888888;
+}
+
+.LayoutHeader
+{
+    border-bottom: solid 1px #888888;
+    padding: 0px;
+    margin: 0px;
+}
+
+.LayoutFooter
+{
+    border-top: solid 1px #888888;
+    background-color: #cccccc;
+}
+
+.UserWidget .LayoutFooter
+{
+    display: none;
+}
+
+.LayoutFooterContent
+{
+    background-image: url(./Images/CMSModules/CMS_PortalEngine/Widgets/LayoutFooter.png);
+    background-color: #cccccc;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 0px 3px 0px 3px;
+    min-height: 16px;
+}
+
+.LayoutLeftActions, .LayoutRightActions
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 20px;
+}
+
+.LayoutLeftActions
+{
+    float: left;
+}
+
+.RTL LayoutLeftActions
+{
+    float: right;
+}
+
+.LayoutRightActions
+{
+    float: right;
+}
+
+.RTL LayoutRightActions
+{
+    float: right;
+}
+
+.LayoutAction img
+{
+    border: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.LayoutAction
+{
+    text-decoration: none;
+}
+
+.LayoutAction .ActionTitle
+{
+    text-decoration: underline;
+    vertical-align: top;
+}
+
+.LayoutOverlay
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    filter: alpha(opacity=1);
+    opacity: 0.01;
+    background-color: #fff;
+}
+
+.LayoutInfoOverlay
+{
+    border: solid 1px #ffffff;
+    position: absolute;
+    z-index: 9998;
+    background-color: #008800;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    text-align: center;
+}
+
+.LayoutInfoText
+{
+    background-color: #aaddaa;
+    border: solid 1px #008800;
+    padding: 2px;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    color: #000000;
+    margin: auto;
+}
+
+.VerticalResizer, .HorizontalResizer, .BothResizer, .HorizontalDivResizer
+{
+    background-color: #008800;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.HorizontalResizer
+{
+    border-left: solid 1px #aaddaa;
+    border-right: solid 1px #aaddaa;
+    cursor: e-resize;
+    width: 2px;
+    max-width: 2px;
+    min-height: 25px;
+}
+
+.VerticalResizer
+{
+    border-top: solid 1px #aaddaa;
+    border-bottom: solid 1px #aaddaa;
+    cursor: n-resize;
+    height: 2px;
+    max-height: 2px;
+}
+
+.BothResizer
+{
+    cursor: nw-resize;
+    border: solid 1px #008800;
+    background-color: #008800;
+}
+
+.LayoutCenterColumn, .LayoutLeftColumn
+{
+    border-left: solid 1px #cccccc;
+}
+
+.LayoutCenterColumn, .LayoutRightColumn
+{
+    border-right: solid 1px #cccccc;
+}
+
+.WireframeWebPart .VerticalResizer
+{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+.WireframeWebPart .HorizontalResizer
+{
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+}
+
+.WireframeWebPart .BothResizer
+{
+    border: solid 1px #000000;
+    background-color: #000000;
+}
+
+.WireframeWebPart .VerticalResizer, .WireframeWebPart .HorizontalResizer, .WireframeWebPart .HorizontalDivResizer
+{
+    background-color: #000000;
+}
+
+/*  Variant Slider */
+.VariantSlider
+{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-right: 7px;
+    height: 23px;
+    float: left;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 11px;
+    color: #004377;
+}
+.RTL .VariantSlider
+{
+    padding-right: 0px;
+    padding-left: 7px;
+    float: right;
+}
+
+.WebPartHandle .VariantSlider
+{
+    border-right: 1px solid #9bb3d1;
+}
+.RTL .WebPartHandle .VariantSlider
+{
+    border-right: none;
+    border-left: 1px solid #9bb3d1;
+}
+
+.WebPartZoneHeader .VariantSlider
+{
+    border-right: 1px solid #d29842;
+}
+.RTL .WebPartZoneHeader .VariantSlider
+{
+    border-right: none;
+    border-left: 1px solid #d29842;
+}
+
+.SliderItem, .SliderItemSeparator
+{
+    padding-top: 3px;
+    float: left;
+}
+
+.RTL .SliderItem, .RTL .SliderItemSeparator
+{
+    float: right;
+}
+
+.SliderItemPadding
+{
+    padding-right: 1px;
+    padding-left: 3px;
+}
+
+.SliderItem .PartLabel
+{
+    padding-top: 1px;
+}
+
+.SliderItemSeparator
+{
+    width: 10px;
+}
+
+.SliderPartLabel
+{
+    font-family: Arial;
+    font-size: 13px;
+    color: #000000;
+}
+
+.SliderHandle
+{
+    margin-top: 2px;
+    height: 18px;
+    width: 10px;
+}
+
+.SliderLeft, .SliderLeftMVT
+{
+    width: 16px;
+    height: 16px;
+    background: url(./Images/Design/Controls/VariantSlider/arrowLeft.png) no-repeat;
+    cursor: pointer;
+}
+
+.RTL .SliderLeft
+{
+    background: url(./Images/Design/Controls/VariantSlider/arrowRight.png) no-repeat;
+}
+
+.SliderLeftMVT
+{
+    background: url(./Images/Design/Controls/VariantSlider/MVT/arrowLeft.png) no-repeat;
+}
+
+.RTL .SliderLeftMVT
+{
+    background: url(./Images/Design/Controls/VariantSlider/MVT/arrowRight.png) no-repeat;
+}
+
+
+.SliderRight, .SliderRightMVT
+{
+    width: 16px;
+    height: 16px;
+    background: url(./Images/Design/Controls/VariantSlider/arrowRight.png) no-repeat;
+    cursor: pointer;
+}
+
+.RTL .SliderRight
+{
+    background: url(./Images/Design/Controls/VariantSlider/arrowLeft.png) no-repeat;
+}
+
+.SliderRightMVT
+{
+    background: url(./Images/Design/Controls/VariantSlider/MVT/arrowRight.png) no-repeat;
+}
+
+.RTL .SliderRightMVT
+{
+    background: url(./Images/Design/Controls/VariantSlider/MVT/arrowLeft.png) no-repeat;
+}
+
+
+.SliderBarPanel
+{
+    cursor: pointer;
+}
+
+.SliderBtn, .SliderBtnEnabled
+{
+    cursor: pointer;
+}
+
+.SliderBtnEnabled
+{
+    display: none;
+}
+
+.SliderBtnDisabled
+{
+    cursor: default;
+}
+
+.SliderConflict
+{
+    float: left;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+    cursor: help;
+}
+
+.CMSVariant
+{
+    display: none;
+}
+
+/* MVT Combination panel */
+.MVTCombinationPanel
+{
+    padding-left: 17px;
+    padding-right: 7;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 20px;
+    line-height: 20px;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #000000;
+    vertical-align: middle;
+    background: url(./Images/Design/Controls/Tabs/TabsPanel.png) repeat-x left bottom;
+    background-color: #AFAFAF;
+}
+
+.RTL .MVTCombinationPanel
+{
+    padding-right: 17px;
+    padding-left: 7px;
+}
+
+.MVTCombinationPanelWarning
+{
+    background-color: #f5f5f5;
+    border-bottom: solid 1px #afafaf;
+    color: #000;
+    padding: 2px;
+    padding-left: 17px;
+}
+
+.RTL .MVTCombinationPanelWarning
+{
+    padding-left: 0px;
+    padding-right: 17px;
+}
+
+.MVTCombinationDDL
+{
+    border: solid 1px #AEAEAE;
+    margin-left: 6px;
+    width: 170px;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 17px;
+}
+
+
+.RTL .MVTCombinationDDL
+{
+    margin-left: 0px;
+    margin-right: 6px;
+}
+
+/* Dropdown items - enabled/disabled */
+.MVTCombinationDDL .DropDownItemDisabled
+{
+    color: #cccccc;
+}
+
+.MVTCombinationEnabled
+{
+    margin-left: 5px;
+}
+
+.RTL .MVTCombinationEnabled
+{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.MVTCombinationCustomName
+{
+    padding-left: 30px;
+}
+
+.RTL .MVTCombinationCustomName
+{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.MVTCombinationCustomNameText
+{
+    margin-left: 6px;
+    margin-top: 1px;
+    border: solid 1px #AEAEAE;
+    width: 170px;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 15px;
+    padding-left: 3px;
+}
+
+.RTL .MVTCombinationCustomNameText
+{
+    margin-left: 0px;
+    margin-right: 6px;
+    padding-left: 0px;
+    padding-right: 3px;
+}
+
+.MVTCombinationButton, .MVTCombinationButtonUse
+{
+    padding-bottom: 3px;
+    margin-right: 12px;
+    color: #ffffff;
+    margin-left: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    width: 90px;
+    height: 20px;
+    background: url(./Images/Design/Buttons/ContentButton.png);
+}
+
+.MVTCombinationButtonUse
+{
+    width: 150px;
+    background: url(./Images/Design/Buttons/LongSubmitButton.png);
+}
+
+.RTL .MVTCombinationButton, .RTL .MVTCombinationButtonUse
+{
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.MVTLoading
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #eeeeee;
+    border: solid 1px #888888;
+    padding: 5px 15px 5px 5px;
+    z-index: 10001;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.RTL .MVTLoading
+{
+    right: 5px;
+    padding: 5px 5px 5px 15px;
+}
+
+
+.MVTLoading img
+{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.RTL .MVTLoading img
+{
+    vertical-align: middle;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.MVTLoading span
+{
+    vertical-align: middle;
+}
+
+.RTL .MVTLoading
+{
+    left: auto;
+    right: 5px;
+    padding: 5px 5px 5px 15px;
+}
+
+.RTL .MVTLoading img
+{
+    padding-left: 5px;
+}
+
+
+.PagePlaceholderRightAction
+{
+    border-left: 1px solid #85a768 !important;
+}
+
+.WebPartZoneRightAction
+{
+    border-left: 1px solid #d29842;
+}
+
+.WebPartZoneLeftAction
+{
+    border-right: 1px solid #d29842;
+}
+
+.WebPartLeftAction
+{
+    border-right: 1px solid #9bb3d1;
+}
+
+.WebPartRightAction
+{
+    border-left: 1px solid #9bb3d1;
+}
+
+.WebPartContextMenu, .ZoneContextMenu, .PlaceholderContextMenu
+{
+    border: 1px solid #bfbfbf;
+    padding: 2px 1px;
+    background: url("./Images/Design/Backgrounds/WebpartContextMenu.png") repeat-y scroll 0 0 #ffffff;
+    min-width: 165px;
+    padding-top: 0px !important;
+}
+
+.WebPartContextMenu .ItemPadding, .ZoneContextMenu .ItemPadding, .PlaceholderContextMenu .ItemPadding
+{
+    padding: 5px 14px;
+    cursor: pointer;
+}
+
+.WebPartContextMenu .ItemPadding:hover
+{
+    background: url("./Images/Design/Backgrounds/WebpartContextMenuHover.png") repeat-y scroll right top #bbcee6;
+}
+
+.ZoneContextMenu .ItemPadding:hover
+{
+    background: url("./Images/Design/Backgrounds/ZoneContextMenuHover.png") repeat-y scroll right top #faca7d;
+}
+
+.PlaceholderContextMenu .ItemPadding:hover
+{
+    background: url("./Images/Design/Backgrounds/PlaceholderContextMenuHover.png") repeat-y scroll right top #9dc27d;
+}
+
+.StandardWebPart .WebPartHeader .WebPartLeftAction
+{
+    border-right: 1px solid #94adcd;
+}
+
+.StandardWebPart .WebPartSource .WebPartLeftAction
+{
+    border-right: 1px solid #9d9daf;
+}
+
+
+.StandardWebPart .WebPartFilter .WebPartLeftAction
+{
+    border-right: 1px solid #b1b6ba;
+}
+
+.StandardWebPart .WebPartPlaceholder .WebPartLeftAction
+{
+    border-right: 1px solid #799c5c;
+}
+
+.StandardWebPart .WebPartInvisible .WebPartLeftAction
+{
+    border-right: 1px solid #a9a6a6;
+}
+
+.StandardWebPart .WebPartHeader .WebPartRightAction
+{
+    border-left: 1px solid #94adcd;
+}
+
+.StandardWebPart .WebPartSource .WebPartRightAction
+{
+    border-left: 1px solid #9d9daf;
+}
+
+
+.StandardWebPart .WebPartFilter .WebPartRightAction
+{
+    border-left: 1px solid #b1b6ba;
+}
+
+.StandardWebPart .WebPartPlaceholder .WebPartRightAction
+{
+    border-left: 1px solid #799c5c;
+}
+
+.StandardWebPart .WebPartInvisible .WebPartRightAction
+{
+    border-left: 1px solid #a9a6a6;
+}
+
+.WebPartZoneHeaderOrphaned .WebPartZoneRightAction
+{
+    border-left: 1px solid #b4b4b4;
+}
+
+.WebPartZoneHeaderOrphaned .WebPartZoneLeftAction
+{
+    border-right: 1px solid #b4b4b4;
+}
+
+.WebPartZoneHeaderOrphaned .WebPartZoneActiveContextMenu .WebPartZoneLeftAction
+{
+    background-color: #ececec;
+}
+
+.WebPartSource .WebPartActiveContextMenu .WebPartLeftAction
+{
+    background-color: #dedeee;
+}
+
+.WebPartFilter .WebPartActiveContextMenu .WebPartLeftAction
+{
+    background-color: #e3ecf0;
+}
+
+.WebPartInvisible .WebPartActiveContextMenu .WebPartLeftAction
+{
+    background-color: #dbdbdb;
+}
+
+.cke_skin_kentico .cke_dialog_title
+{
+    padding: 6px 5px 2px 10px;
+    white-space: nowrap;
+    background: #414a55 url(./Images/Design/Backgrounds/PageTitleHeaderDark.png) repeat-x top left;
+    border-bottom: 1px solid #414a54;
+    color: #fff !important;
+}
+
+.cke_skin_kentico .cke_dialog_footer
+{
+    border-top: solid 1px #cccccc !important;
+    background: #dedede url(./Images/Design/Backgrounds/DialogFooterBackground.png) repeat-x top left;
+}
+
+.cke_skin_kentico .cke_separator
+{
+    background: url(./Images/Design/Controls/UniMenu/RightBorder.png) no-repeat center left;
+}
+
+.PlaceholderLayout
+{
+    color: #000000 !important;
+    font-family: Arial !important;
+    font-size: 12px !important;
+}
+
+.PlaceholderLayout .PageTitleHeader
+{
+    background: #414a55 url(./Images/Design/Backgrounds/PageTitleHeaderDark.png) repeat-x top left !important;
+    border-bottom: none;
+    display: block;
+}
+
+.PlaceholderLayout .PageTitle
+{
+    color: #fff !important;
+    padding: 5px 5px 1px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.TreeContextMenu, .PortalContextMenu
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 0px 1px 0px 1px;
+}
+
+.IE .TreeContextMenu
+{
+    width: 135px;
+}
+
+.TreeContextMenu .ItemPadding, .PortalContextMenu .ItemPadding
+{
+    padding: 2px 3px 3px 5px !important;
+    margin: 1px 0px 1px 0px !important;
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+    background: none !important;
+    border: none !important;
+}
+
+.TreeContextMenu .ItemPadding:hover, .TreeContextMenu .ItemSelected .ItemPadding, .PortalContextMenu .ItemPadding:hover, .PortalContextMenu .ItemSelected .ItemPadding
+{
+    display: block;
+    padding: 2px 3px 3px 5px !important;
+    margin: 1px 0px 1px 0px !important;
+}
+
+.IE9 .TreeContextMenu .ItemPadding, .IE9 .PortalContextMenu .ItemPadding
+{
+    padding: 0px 3px 3px 5px !important;
+    line-height: 20px !important;
+}
+
+.IE9 .TreeContextMenu .ItemPadding:hover, .IE9 .TreeContextMenu .ItemSelected .ItemPadding, .IE9 .PortalContextMenu .ItemPadding:hover, .IE9 .PortalContextMenu .ItemSelected .ItemPadding
+{
+    padding: 0px 3px 3px 5px !important;
+    line-height: 20px !important;
+}
+
+.Uploader
+{
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    padding: 3px;
+    width: 288px;
+}
+.Uploader .Uploader
+{
+    width: 283px;
+}
+
+.PageTitle
+{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #586979;
+}
+
+.PageTitleHeader, .SubTitleHeader
+{
+    padding: 6px 5px 2px 8px;
+    border-bottom: solid 1px #8d8d8d;
+    display: block;
+    white-space: nowrap;
+    background: #cdcdcd url(./Images/Design/Backgrounds/PageTitleHeader.png) repeat-x top left;
+}
+
+.RTL .PageTitleHeader, .RTL .SubTitleHeader
+{
+    padding: 6px 10px 2px 5px;
+}
+
+.SubTitleHeader
+{
+    background: none;
+}
+
+
+.PageTitleBreadCrumbs
+{
+    padding: 0px 5px 0px 10px;
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    background: #ffffff url(./Images/Design/Backgrounds/PageTitleBreadcrumbs.png) repeat-x bottom left;
+}
+
+.RTL .PageTitleBreadCrumbs
+{
+    padding: 0px 10px 0px 5px;
+}
+
+.SiteHeaderLine
+{
+    background: #f2f2f2 url(./Images/Design/Backgrounds/BreadcrumbsGradient.png) repeat-x top left;
+    padding: 5px 10px;
+}
+
+.TitleBreadCrumbSeparator
+{
+    background-image: url(./Images/Design/Controls/Breadcrumbs/arrowright.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 7px;
+    padding: 0px 5px 0px 5px;
+}
+
+.PageTitleBreadCrumbsPadding
+{
+    padding: 8px 0px 6px 11px;
+    background-image: url(./Images/Design/Controls/Breadcrumbs/arrowright.png);
+    background-repeat: no-repeat;
+    background-position: 0px 11px;
+}
+
+.RTL .PageTitleBreadCrumbsPadding
+{
+    padding: 8px 11px 6px 0px;
+    background-image: url(./Images/Design/Controls/Breadcrumbs/arrowleft.png);
+    background-position: right center;
+}
+
+body.Buttons
+{
+    background: url("./Images/Design/Backgrounds/ButtonArea.png") repeat-x scroll 0 0 #DDDDDD;
+    border-top: 1px solid #cccccc;
+}
+
+
+
+
+
+/* ----------- SKIN PART OF CSS ---------- */
+.TreeContextMenu
+{
+    border: solid 1px #bfbfbf !important;
+    background: #ffffff url(./Images/Design/Backgrounds/ContextMenuBackground.png) repeat-y top left !important;
+}
+
+.PortalContextMenu
+{
+    border: solid 1px #bfbfbf !important;
+    background: #ffffff url(./Images/Design/Backgrounds/ContextMenuBackground.png) repeat-y top left !important;
+}
+
+.TreeContextMenu .ItemPadding:hover, .TreeContextMenu .ItemSelected .ItemPadding
+{
+    background: #faca7d url(./Images/Design/Backgrounds/ContextMenuActiveItem.png) repeat-y scroll right top !important;
+}
+
+.PortalContextMenu .ItemPadding:hover, .PortalContextMenu .ItemSelected .ItemPadding
+{
+    background: #faca7d url(./Images/Design/Backgrounds/ContextMenuActiveItem.png) repeat-y scroll right top !important;
+}
+
+.TreeContextMenu .ItemPadding
+{
+    background: #ffffff url(./Images/Design/Backgrounds/ContextMenuBackground.png) repeat-y top left !important;
+}
+
+.Uploader
+{
+    border: solid 1px #cccccc;
+    background-color: #ffffff;
+}
+
+.PageTitle
+{
+    color: #586979;
+}
+
+/* Macro auto completion */
+.AutoCompleteHints
+{
+    background: white;
+    border: 1px solid;
+    padding: 4px;
+    overflow: auto;
+    max-height: 200px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.AutoCompleteHints ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.AutoCompleteHints li
+{
+    line-height: 20px;
+}
+
+.AutoCompleteHints a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.AutoCompleteHints img
+{
+    padding: 1px;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.AutoCompleteHints .selected
+{
+    background: navy;
+    color: white;
+}
+
+.AutoCompleteHints .selected a
+{
+    color: white;
+}
+
+.AutoCompleteContext
+{
+    background: rgb(255,255,225);
+    border: 1px solid;
+    padding: 5px;
+    max-width: 500px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+
+.CPMenuBorder, .CPMenuBorderActive
+{
+    position: absolute;
+    cursor: pointer;
+}
+
+.WebPartBorder .CPMenuBorder, .WebPartZoneBorder .CPMenuBorder
+{
+    display: none;
+}
+
+.WebPartBorder .CPContainer, .WebPartZoneBorder .CPContainer
+{
+    border: none;
+    padding: 1px;
+}
+
+.WebPartBorderActive .CPContainer, .WebPartZoneBorderActive .CPContainer
+{
+    padding: 0px;
+    border: dotted 1px #8a8a8a;
+}
+
+.CPMenuWebPart, .CPMenuZone
+{
+    background-color: #D2E1F4;
+    background-image: url(./Images/Design/Backgrounds/WebpartHeader.png);
+    border: solid 1px #9C9C9C;
+    width: 16px;
+    height: 16px;
+}
+
+.CPMenuZone
+{
+    background-color: #D2E1F4;
+    background-image: url(./Images/Design/Backgrounds/WebpartZoneHeader.png);
+}
+
+.CPMenuButton
+{
+    float: left;
+    margin: 3px;
+}
+
+.CPMenuBorderActive .CPMenuWebPart
+{
+    background-image: none;
+    background-color: #ECF2FA;
+}
+
+.CPMenuBorderActive .CPMenuZone
+{
+    background-image: none;
+    background-color: #FFDCA4;
+}
+

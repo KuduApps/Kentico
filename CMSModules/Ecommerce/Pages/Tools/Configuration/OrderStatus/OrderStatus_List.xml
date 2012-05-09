@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+    <actions>
+        <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+        <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+        <action name="moveup" caption="$General.MoveUp$" icon="Up.png" />
+        <action name="movedown" caption="$General.MoveDown$" icon="Down.png" />
+    </actions>
+    <columns>
+        <column source="StatusDisplayName" caption="$general.name$" wrap="false" localize="true">
+            <filter type="text" />
+        </column>
+        <column source="StatusEnabled" externalsourcename="statusenabled"  caption="$general.enabled$" wrap="false">
+        </column>
+        <column source="StatusColor" externalsourcename="statuscolor" caption="$Unigrid.OrderStatus.Columns.StatusColor$" wrap="false">
+        </column>
+        <column source="StatusSendNotification" externalsourcename="StatusSendNotification" caption="$Unigrid.OrderStatus.Columns.StatusSendNotification$" wrap="false">
+        </column>
+        <column source="StatusOrderIsPaid" externalsourcename="statusorderispaid" caption="$unigrid.orderstatus.columns.statusorderispaid$" wrap="false">
+        </column>
+        <column width="100%"></column>
+    </columns>
+    <objecttype name="ecommerce.orderstatus" />
+    <options>
+        <key name="DisplayFilter" value="true" />
+    </options>
+</grid>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="DiscountLevelDisplayName" caption="$general.name$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="DiscountLevelEnabled" externalsourcename="DiscLevelEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="DiscountValue"  caption="$Unigrid.DiscountLevel.Columns.DiscountLevelValue$" wrap="false" sort="DiscountLevelValue">
+    </column>
+    <column source="DiscountLevelValidFrom" caption="$Unigrid.DiscountLevel.Columns.DiscountLevelValidFrom$" wrap="false">
+    </column>
+    <column source="DiscountLevelValidTo" caption="$Unigrid.DiscountLevel.Columns.DiscountLevelValidTo$" wrap="false">
+    </column>
+    <column source="DiscountLevelSiteID" externalsourcename="DiscountLevelSiteID" columnname="DiscountLevelSiteID" caption="$com.isglobal$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.discountlevel" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

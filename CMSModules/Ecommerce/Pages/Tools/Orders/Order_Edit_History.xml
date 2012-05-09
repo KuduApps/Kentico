@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <columns>
+    <column source="Date" caption="$Unigrid.OrderHistory.Columns.Date$" wrap="false" allowsorting="false">
+    </column>
+    <column source="ToStatusDisplayName" externalsourcename="ToStatusDisplayName" caption="$Unigrid.OrderHistory.Columns.Status$" wrap="false" allowsorting="false">
+    </column>
+    <column source="UserName" externalsourcename="formattedusername" caption="$general.username$" wrap="false" allowsorting="false">
+    </column>
+    <column source="FullName" caption="$general.fullname$" wrap="false" allowsorting="false">
+    </column>
+    <column source="Note" caption="$Unigrid.OrderHistory.Columns.Note$" wrap="false" allowsorting="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

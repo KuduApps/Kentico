@@ -1,0 +1,49 @@
+﻿<forums_forumuserfavorites version="6.0">
+  <NewDataSet>
+    <forums_userfavorites>
+      <FavoriteID>46</FavoriteID>
+      <UserID>53</UserID>
+      <ForumID>107</ForumID>
+      <FavoriteName>Announcements</FavoriteName>
+      <SiteID>53</SiteID>
+      <FavoriteGUID>161b6888-9076-4fef-99d5-48451ed6b5f2</FavoriteGUID>
+      <FavoriteLastModified>2008-12-04T15:23:57+01:00</FavoriteLastModified>
+    </forums_userfavorites>
+    <forums_userfavorites>
+      <FavoriteID>89</FavoriteID>
+      <UserID>352</UserID>
+      <ForumID>107</ForumID>
+      <FavoriteName>Announcements</FavoriteName>
+      <SiteID>53</SiteID>
+      <FavoriteGUID>e919c526-04ed-4c11-a071-44f57581e875</FavoriteGUID>
+      <FavoriteLastModified>2008-12-04T16:18:34.36+01:00</FavoriteLastModified>
+    </forums_userfavorites>
+    <forums_userfavorites>
+      <FavoriteID>94</FavoriteID>
+      <UserID>341</UserID>
+      <PostID>424</PostID>
+      <FavoriteName>Forum rules</FavoriteName>
+      <SiteID>53</SiteID>
+      <FavoriteGUID>2a3636e6-d112-4dad-a0fd-b96c9b3af648</FavoriteGUID>
+      <FavoriteLastModified>2008-12-10T11:20:41.657+01:00</FavoriteLastModified>
+    </forums_userfavorites>
+    <forums_userfavorites>
+      <FavoriteID>93</FavoriteID>
+      <UserID>341</UserID>
+      <ForumID>111</ForumID>
+      <FavoriteName>Groups announcements</FavoriteName>
+      <SiteID>53</SiteID>
+      <FavoriteGUID>3c89ec0b-e81c-48cd-8300-60b35c37e02f</FavoriteGUID>
+      <FavoriteLastModified>2008-12-10T11:08:15.97+01:00</FavoriteLastModified>
+    </forums_userfavorites>
+    <forums_userfavorites>
+      <FavoriteID>92</FavoriteID>
+      <UserID>53</UserID>
+      <PostID>421</PostID>
+      <FavoriteName>Welcome to our forum</FavoriteName>
+      <SiteID>53</SiteID>
+      <FavoriteGUID>7dd25564-4da1-4359-8ff2-c2607d4bdb9a</FavoriteGUID>
+      <FavoriteLastModified>2008-12-10T11:05:29.75+01:00</FavoriteLastModified>
+    </forums_userfavorites>
+  </NewDataSet>
+</forums_forumuserfavorites>

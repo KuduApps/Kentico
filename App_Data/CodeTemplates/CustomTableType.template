@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+
+using CMS.GlobalHelper;
+using CMS.SiteProvider;
+using CMS.TreeEngine;
+
+/// <summary>
+/// ##SUMMARY##
+/// </summary>
+public partial class CustomTableType : CustomTableItem
+{
+    #region "Variables"
+
+    /// <summary>
+    /// Class name of this custom table type
+    /// </summary>
+    public const string CLASSNAME = "##CLASSNAME##";
+
+    #endregion
+
+
+    #region "Properties"
+
+    // ##PROPERTIES##
+
+    #endregion
+
+
+    #region "Methods"
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    public CustomTableType()
+        : base(null, CLASSNAME, null)
+    {
+    }
+
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    /// <param name="tree">Tree provider to use</param>
+    public CustomTableType(CustomTableItemProvider provider)
+        : base(null, CLASSNAME, provider)
+    {
+    }
+
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    /// <param name="dr">Document data</param>
+    /// <param name="tree">Tree provider to use</param>
+    public CustomTableType(DataRow dr, CustomTableItemProvider provider)
+        : base(dr, CLASSNAME, provider)
+    {
+    }
+
+    #endregion
+}

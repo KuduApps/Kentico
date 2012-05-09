@@ -1,0 +1,7 @@
+CREATE PROCEDURE [Proc_CMS_Class_GetClassesOnSite]
+	@SiteID int
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT * FROM CMS_Class WHERE ClassID IN (SELECT ClassID FROM CMS_ClassSite WHERE SiteID = @SiteID) ORDER BY ClassName
+END

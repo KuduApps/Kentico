@@ -1,0 +1,286 @@
+﻿<forumpost_websiteforums version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>1486</PostId>
+      <PostForumID>496</PostForumID>
+      <PostIDPath>/00001486</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Products requests</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>administrator@localhost.local</PostUserMail>
+      <PostText>In this thread, you can post requests for new products that you would like to be available in our web shop. We will monitor this thread regularly, so you have a good chance for your requested products to appear in our range soon.</PostText>
+      <PostTime>2011-06-21T19:26:51.163+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>6</PostThreadPosts>
+      <PostThreadLastPostUserName>Trevor Lloyd</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2011-06-21T20:00:58.197+02:00</PostThreadLastPostTime>
+      <PostUserSignature>Global Administrator</PostUserSignature>
+      <PostGUID>45af39e4-6579-4998-82cf-d2d841c73c48</PostGUID>
+      <PostLastModified>2011-06-21T19:26:51.227+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>9</PostViews>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>6</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Trevor Lloyd</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2011-06-21T20:00:58.197+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1491</PostId>
+      <PostForumID>496</PostForumID>
+      <PostIDPath>/00001491</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Services feedback</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>administrator@localhost.local</PostUserMail>
+      <PostText>In this thread, you can express your opinions on the services we provide. Whether you have experience with our services in web design, web development, network administration or the recently introduced consulting, any type of feedback is highly appreciated!</PostText>
+      <PostTime>2011-06-21T19:59:50.72+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>5</PostThreadPosts>
+      <PostThreadLastPostUserName>Susanne Paige</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2011-06-21T20:18:39.55+02:00</PostThreadLastPostTime>
+      <PostUserSignature>Global Administrator</PostUserSignature>
+      <PostGUID>dc2b480d-f61d-43b2-8981-4bfeb1c10dc0</PostGUID>
+      <PostLastModified>2011-06-21T20:20:18.807+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>46</PostViews>
+      <PostLastEdit>2011-06-21T20:20:18.807+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>5</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Susanne Paige</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2011-06-21T20:18:39.55+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1493</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1491</PostParentID>
+      <PostIDPath>/00001491/00001493</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>Consulting exceeding all expectations</PostSubject>
+      <PostUserName>Jimmy Lydon</PostUserName>
+      <PostUserMail>jimmy.lydon@localhost.local</PostUserMail>
+      <PostText>Hi,
+
+I must say that your consultants are in a class of their own. Throughout my whole career, I have never met consultants with this level of expertise, knowledge and natural willingness to help us solve our problems. What really persuaded me of the uniqueness of the services you provide was the ability to go extra mile. They not only helped us overcome the hurdles that we ordered them for, but also gave valuable advice on many other aspects of the project. Not a single cent extra was charged for that, which convinced me that there is no need to look for consulting anywhere else in case that the need for consulting emerges in the future.
+
+Many thanks and congratulations for being the best!</PostText>
+      <PostTime>2011-06-21T20:08:19.95+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostUserSignature>Jimmy Lydon</PostUserSignature>
+      <PostGUID>53f804a2-43c6-46d8-8165-2137c259f7ae</PostGUID>
+      <PostLastModified>2011-06-21T20:09:00.573+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:09:00.573+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1494</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1491</PostParentID>
+      <PostIDPath>/00001491/00001494</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>Web development - London Office</PostSubject>
+      <PostUserName>Susanne Paige</PostUserName>
+      <PostUserMail>susanne.paige@localhost.local</PostUserMail>
+      <PostText>Hi, I am a representative of one of your first customers in London. We are currently having our company website re-designed and updated by your London Office team and only praise can be said to their job so far. Clear communication, reasonable pricing and developers listening to our needs, all of that made us think that we have chosen the right company to take care of our website. 
+
+Can't wait for the project to be finished and for the re-vamped website to go live!</PostText>
+      <PostTime>2011-06-21T20:15:08.15+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>Susanne Paige</PostUserSignature>
+      <PostGUID>361bea33-07fb-4cb8-9217-409bc74f7193</PostGUID>
+      <PostLastModified>2011-06-21T20:20:50.977+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:20:50.977+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1487</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1486</PostParentID>
+      <PostIDPath>/00001486/00001487</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>Apple iPad 2</PostSubject>
+      <PostUserName>Trevor Lloyd</PostUserName>
+      <PostUserMail>trevor.lloyd@localhost.local</PostUserMail>
+      <PostText>Hi, how about the new iPad 2? I've alread got the first version, but I just can't wait to the new one, it seems advanced and trendy!!!</PostText>
+      <PostTime>2011-06-21T19:29:03.657+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>Trevor Lloyd</PostUserSignature>
+      <PostGUID>3da94ca1-87a6-412f-a5b3-a3a27d637ef4</PostGUID>
+      <PostLastModified>2011-06-21T19:29:57.163+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T19:29:57.163+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1489</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1486</PostParentID>
+      <PostIDPath>/00001486/00001489</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>More smartphones</PostSubject>
+      <PostUserName>Jane Tait</PostUserName>
+      <PostUserMail>jane.tait@localhost.local</PostUserMail>
+      <PostText>Hi, I would like to see a wider range of smartphones in your e-shop. The current range is really impressive, but some more models would still be appreciated.</PostText>
+      <PostTime>2011-06-21T19:37:02.46+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>54980b19-4cf9-4f8a-847d-bbb96fea1154</PostGUID>
+      <PostLastModified>2011-06-21T19:37:02.46+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1490</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1489</PostParentID>
+      <PostIDPath>/00001486/00001489/00001490</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:More smartphones</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>administrator@localhost.local</PostUserMail>
+      <PostText>Hi Jane, we are working on this at the moment. If everything goes well, you should be able to see many more models from various suppliers soon. You can expect more cost-savvy models, more manufacturers and a larger variety of operating systems.</PostText>
+      <PostTime>2011-06-21T19:56:23.483+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostUserSignature>Global Administrator</PostUserSignature>
+      <PostGUID>a40933e4-9b28-42d2-b40a-e442508cb8f5</PostGUID>
+      <PostLastModified>2011-06-21T20:20:04.323+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:20:04.323+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1488</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1487</PostParentID>
+      <PostIDPath>/00001486/00001487/00001488</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Apple iPad 2</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>administrator@localhost.local</PostUserMail>
+      <PostText>Hi Trevor, good news for you, the iPad 2 is already available. You can order it right now in the Products section, under Laptops and Tablets. And the price is only $510.99, nothing but a great deal for such a masterpiece hardware!</PostText>
+      <PostTime>2011-06-21T19:32:15.513+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>e73fda15-ebbd-42d7-8970-8a8ffeb60a87</PostGUID>
+      <PostLastModified>2011-06-21T20:19:46.34+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:19:46.327+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1495</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1494</PostParentID>
+      <PostIDPath>/00001491/00001494/00001495</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Web development - London Office</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>administrator@localhost.local</PostUserMail>
+      <PostText>Hi Susanne, we are pleased by your kind words and promise that we will do our best for you to be nothing but a totally satisfied customer. And please, if you could spread the word about the services we provide among your business partners, we would greatly appreciate it.</PostText>
+      <PostTime>2011-06-21T20:17:13.497+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>Global Administrator</PostUserSignature>
+      <PostGUID>85b6ae8e-c3c9-4174-aea4-38560b9913c7</PostGUID>
+      <PostLastModified>2011-06-21T20:21:03.85+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:21:03.833+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1496</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1495</PostParentID>
+      <PostIDPath>/00001491/00001494/00001495/00001496</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Web development - London Office</PostSubject>
+      <PostUserName>Susanne Paige</PostUserName>
+      <PostUserMail>susanne.paige@localhost.local</PostUserMail>
+      <PostText>Hi,be sure of that! In fact, we've already given you company contacts to some of our business partners who are planning to have a brand new website developed and are currently choosing the right company for that job. I think that with the reference we provided, they should contact you soon ;-)</PostText>
+      <PostTime>2011-06-21T20:18:39.55+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>7a698244-5d40-48a4-b985-df4e33471e6b</PostGUID>
+      <PostLastModified>2011-06-21T20:21:43.503+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:21:43.487+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1492</PostId>
+      <PostForumID>496</PostForumID>
+      <PostParentID>1488</PostParentID>
+      <PostIDPath>/00001486/00001487/00001488/00001492</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Apple iPad 2</PostSubject>
+      <PostUserName>Trevor Lloyd</PostUserName>
+      <PostUserMail>trevor.lloyd@localhost.local</PostUserMail>
+      <PostText>Wow, don't let me be mistaken, but you seem to be the very first web shop to have it in stock. Ordered already, can't wait for it to arrive :-)))</PostText>
+      <PostTime>2011-06-21T20:00:58.197+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostUserSignature>Trevor Lloyd</PostUserSignature>
+      <PostGUID>89097b25-7b6d-4a2a-9298-130237e82978</PostGUID>
+      <PostLastModified>2011-06-21T20:19:36.873+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2011-06-21T20:19:36.873+02:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_websiteforums>

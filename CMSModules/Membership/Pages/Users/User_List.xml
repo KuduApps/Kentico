@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="UserID">
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="roles" externalsourcename="roles" caption="$userlist.addtoroles$" icon="Manageroles.png" onclick="manageRoles({0}); return false;" />
+    <action name="haspassword" externalsourcename="haspassword" caption="$userlist.nopassword$" icon="Warning.png" />
+  </actions>
+  <columns>
+    <column source="UserName" externalsourcename="formattedusername" caption="$general.username$" wrap="false">
+    </column>
+    <column source="FullName" caption="$general.fullname$" wrap="false" width="100%">
+    </column>
+    <column source="Email" caption="$Unigrid.UserList.Columns.Email$" wrap="false">
+    </column>
+    <column source="UserNickName" caption="$Unigrid.UserList.Columns.UserNickName$" wrap="false">
+    </column>
+    <column source="UserCreated" caption="$Unigrid.UserList.Columns.UserCreated$" wrap="false">
+    </column>
+    <column source="UserEnabled" externalsourcename="UserEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+  </columns>
+  <objecttype name="cms.userlist" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

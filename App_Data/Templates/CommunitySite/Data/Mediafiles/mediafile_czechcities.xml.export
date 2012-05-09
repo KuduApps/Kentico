@@ -1,0 +1,42 @@
+﻿<mediafile_czechcities version="6.0">
+  <NewDataSet>
+    <media_file>
+      <FileID>2285</FileID>
+      <FileName>IM002595</FileName>
+      <FileTitle>Street</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>IM002595.JPG</FilePath>
+      <FileSize>35430</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>47279c36-67ea-4137-a4b7-986942190e32</FileGUID>
+      <FileLibraryID>138</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-16T13:37:59.73+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-16T13:37:59.73+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>2286</FileID>
+      <FileName>IM002601</FileName>
+      <FileTitle>Buildings</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>IM002601.JPG</FilePath>
+      <FileSize>31873</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>c8f2c0f7-50b1-43cb-bd3d-fbf38da9cf89</FileGUID>
+      <FileLibraryID>138</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-16T13:38:29.65+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-16T13:38:29.65+01:00</FileModifiedWhen>
+    </media_file>
+  </NewDataSet>
+</mediafile_czechcities>

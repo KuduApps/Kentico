@@ -1,0 +1,3632 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.ImportExport</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.CMSImportExport.AbstractImportExportSettings">
+            <summary>
+            Abstract class for import and export settings.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.SEPARATOR">
+            <summary>
+            Internal status separator.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSelectedGlobalObjectsHashtable">
+            <summary>
+            Hashtable with lists of global selected objects [ObjectType.ToLower()] -> [ArrayList of code names]
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSelectedSiteObjectsHashtable">
+            <summary>
+            Hashtable with lists of site selected objects [ObjectType.ToLower()] -> [ArrayList of code names]
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSelectedGlobalTasksHashtable">
+            <summary>
+            Hashtable with lists of global selected tasks [ObjectType.ToLower()] -> [ArrayList of task IDs]
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSelectedSiteTasksHashtable">
+            <summary>
+            Hashtable with lists of site selected tasks [ObjectType.ToLower()] -> [ArrayList of task IDs]
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mProcessGlobalObjectsHashtable">
+            <summary>
+            Hashtable with lists of global objects to be processed.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mProcessSiteObjectsHashtable">
+            <summary>
+            Hashtable with lists of site objects to be processed.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSettingsHashtable">
+            <summary>
+            Hashtable with additional settings.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mVersionsComparations">
+            <summary>
+            Versions comparations.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mEventLog">
+            <summary>
+            Event log object.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mVersion">
+            <summary>
+            Version of the package.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mHotfixVersion">
+            <summary>
+            Hotfix version of the package.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mTemporaryFilesPath">
+            <summary>
+            Temporary files path.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mProgressLog">
+            <summary>
+            Process state.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mEventLogSource">
+            <summary>
+            Event log source.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mEventLogCode">
+            <summary>
+            Event log code.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mProcessCanceled">
+            <summary>
+            Flag for process cancelation.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mWebsitePath">
+            <summary>
+            Website path.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mDefaultProcessObjectType">
+            <summary>
+            Default object process type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mExcludedNames">
+            <summary>
+            Excludes object names.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSiteId">
+            <summary>
+            Site ID.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSiteName">
+            <summary>
+            Site name.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mSiteInfo">
+            <summary>
+            Site info.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mInfoDataSet">
+            <summary>
+            Data set with additional information.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mPersistentSettingsKey">
+            <summary>
+            Persistent key to store the settings.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mWriteLog">
+            <summary>
+            If true, write to the log is enabled.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mCurrentUser">
+            <summary>
+            Current user info.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mUICulture">
+            <summary>
+            Current UI culture.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.AbstractImportExportSettings.mAdministratorId">
+            <summary>
+            Administrator user ID.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.#ctor(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Constructor - Creates abstract settings.
+            </summary>
+            <param name="currentUser">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSettings(System.String)">
+            <summary>
+            Gets additional settings.
+            </summary>
+            <param name="settingsKey">Settings key</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetSettings(System.String,System.Object)">
+            <summary>
+            Sets additional settings.
+            </summary>
+            <param name="settingsKey">Settings key</param>
+            <param name="value">Value of the settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetInfo(System.String)">
+            <summary>
+            Gets additional information.
+            </summary>
+            <param name="infoKey">Information key</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetInfo(System.String,System.Object)">
+            <summary>
+            Sets additional information.
+            </summary>
+            <param name="infoKey">Information key</param>
+            <param name="value">Value of the information</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSelectedObjects(System.String,System.Boolean)">
+            <summary>
+            Gets selected objects of specified type.
+            </summary>
+            <param name="type">Type of the objects</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSelectedObjectsArray(System.String,System.Boolean)">
+            <summary>
+            Gets selected objects of specified type.
+            </summary>
+            <param name="type">Type of the objects</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetSelectedObjects(System.Collections.Generic.IList{System.String},System.String,System.Boolean)">
+            <summary>
+            Sets selected objects of specified type.
+            </summary>
+            <param name="list">Array of selected objects code names</param>
+            <param name="type">Type of the objects</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetSelectedObjects(System.Collections.ArrayList,System.String,System.Boolean)">
+            <summary>
+            Sets selected objects of specified type.
+            </summary>
+            <param name="list">List of selected objects code names</param>
+            <param name="type">Type of the objects</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsSelected(System.String,System.String,System.Boolean)">
+            <summary>
+            Check if the object with specified code name is selected.
+            </summary>
+            <param name="type">Type of the objects</param>
+            <param name="codeName">Code name of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.Select(System.String,System.String,System.Boolean)">
+            <summary>
+            Selects the given object.
+            </summary>
+            <param name="type">Type of the objects</param>
+            <param name="codeName">Code name of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.Deselect(System.String,System.String,System.Boolean)">
+            <summary>
+            Selects the given object.
+            </summary>
+            <param name="type">Type of the objects</param>
+            <param name="codeName">Code name of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsProcessed(System.String,System.String,System.Boolean)">
+            <summary>
+            Check if the object with specified code name is processed.
+            </summary>
+            <param name="objectType">Type of the objects</param>
+            <param name="codeName">Code name of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsObjectTypeProcessed(System.String,System.Boolean,CMS.CMSImportExport.ProcessObjectEnum)">
+            <summary>
+            Check if the object with specified code name is processed.
+            </summary>
+            <param name="objectType">Type of the objects</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+            <param name="processType">Explicitly set process type of the object type (Use ProcessObjectEnum.Default as default settings)</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSelectedTasks(System.String,System.Boolean)">
+            <summary>
+            Gets selected tasks of specified type.
+            </summary>
+            <param name="type">Type of the tasks</param>
+            <param name="siteTasks">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSelectedTasksArray(System.String,System.Boolean)">
+            <summary>
+            Gets selected tasks of specified type.
+            </summary>
+            <param name="type">Type of the tasks</param>
+            <param name="siteTasks">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetSelectedTasks(System.Collections.ArrayList,System.String,System.Boolean)">
+            <summary>
+            Sets selected objects of specified object type.
+            </summary>
+            <param name="list">List of selected tasks code names</param>
+            <param name="type">Type of the tasks</param>
+            <param name="siteObjects">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsTaskSelected(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Check if the task with specified code name is selected.
+            </summary>
+            <param name="type">Type of the tasks</param>
+            <param name="taskId">Task ID</param>
+            <param name="siteObjects">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SelectTask(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Selects the given task.
+            </summary>
+            <param name="type">Type of the tasks</param>
+            <param name="taskId">Task ID</param>
+            <param name="siteObjects">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.DeselectTask(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Selects the given task.
+            </summary>
+            <param name="type">Type of the tasks</param>
+            <param name="taskId">Task ID</param>
+            <param name="siteObjects">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsEmptySelection">
+            <summary>
+            Check if there is no selected object or task in general.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsEmptyObjectSelection">
+            <summary>
+            Check if there is no selected object in general.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsEmptyObjectSelection(System.Boolean)">
+            <summary>
+            Check if there is no selected object.
+            </summary>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsEmptyTaskSelection">
+            <summary>
+            Check if there is no selected tasks in general.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsEmptyTaskSelection(System.Boolean)">
+            <summary>
+            Check if there is no selected tasks.
+            </summary>
+            <param name="siteObjects">Indicates if the tasks are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetSelectedObjectTypes(System.Boolean)">
+            <summary>
+            Gets object types that have been selected to process.
+            </summary>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetObjectsProcessType(System.String,System.Boolean)">
+            <summary>
+            Gets process type of object type.
+            </summary>
+            <param name="type">Type of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SetObjectsProcessType(CMS.CMSImportExport.ProcessObjectEnum,System.String,System.Boolean)">
+            <summary>
+            Sets objects process type of specified type.
+            </summary>
+            <param name="processType">Process type of the object</param>
+            <param name="type">Type of the object</param>
+            <param name="siteObjects">Indicates if the objects are site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsAutomaticallySelected(System.String)">
+            <summary>
+            Indicates if given object type is automatically selected.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetObjectWhereCondition(System.String,System.Boolean)">
+            <summary>
+            Gets the where condition for specified type of object.
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="siteObject">Site object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetObjectTypeFilePath(System.String,System.Boolean)">
+            <summary>
+            Gets file path within the package for object type.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="siteObjects">Indicates if the object is site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsLowerVersion(System.String)">
+            <summary>
+            Indicates if current version is lower than given one.
+            </summary>
+            <param name="version">Version to compare</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsLowerVersion(System.String,System.String)">
+            <summary>
+            Indicates if current version is lower than given one.
+            </summary>
+            <param name="version">Version to compare</param>
+            <param name="hotfixVersion">Hotfix version</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.Cancel">
+            <summary>
+            Cancels the process.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SavePersistentLog">
+            <summary>
+            Saves the log to the persistent storage.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.SavePersistent">
+            <summary>
+            Saves the settings object to the presistent storage.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetFromPersistentStorage(System.String)">
+            <summary>
+            Gets the settings from the persistent storage.
+            </summary>
+            <param name="key">Key to the persistent storage</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetProgressState">
+            <summary>
+            Gets progress state.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetLimitedProgressLog(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets limited progress log for callback.
+            </summary>
+            <param name="reqMessageLength">Requested message part length</param>
+            <param name="reqErrorLength">Requested error part length</param>
+            <param name="reqWarningLength">Requested warning part length</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.ClearProgressLog">
+            <summary>
+            Clears progress log.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.LogProgressState(CMS.CMSImportExport.LogStatusEnum,System.String)">
+            <summary>
+            Logs progress state.
+            </summary>
+            <param name="type">Type of the message</param>
+            <param name="message">Message to be logged</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.LogProgressError(System.String,System.Exception)">
+            <summary>
+            Logs error progress state.
+            </summary>
+            <param name="description">Message to be logged</param>
+            <param name="ex">Exception to be logged</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.CreateEventLog">
+            <summary>
+            Creates new event log.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.FinalizeEventLog">
+            <summary>
+            Finalizes event log.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsWarning">
+            <summary>
+            Returns true if there are warnings during the process.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.IsError">
+            <summary>
+            Returns true if there is an error during the process.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetString(System.String)">
+            <summary>
+            Gets resource string in correct culture.
+            </summary>
+            <param name="key">Resource string key</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetAPIString(System.String,System.String)">
+            <summary>
+            Gets resource string in correct culture.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="defaultValue">Default value</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization function.
+            </summary>
+            <param name="info">Serialization info</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.AbstractImportExportSettings.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor - Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization inf</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.EventLog">
+            <summary>
+            Event log object.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.Version">
+            <summary>
+            Version of the package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.HotfixVersion">
+            <summary>
+            Hotfix version of the package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.InfoDataSet">
+            <summary>
+            DataSet with additional information.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.CurrentUser">
+            <summary>
+            Current user info.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.EventLogSource">
+            <summary>
+            Event log source.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.EventLogCode">
+            <summary>
+            Event log code.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.ProgressLog">
+            <summary>
+            Progress log of the process.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.WebsitePath">
+            <summary>
+            Physical path to the web site root (ends with \).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.OriginalTemporaryFilesPath">
+            <summary>
+            Original temporary files path.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.TemporaryFilesPath">
+            <summary>
+            Physical path to the temporary files (ends with \).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.ProcessCanceled">
+            <summary>
+            Indicates if the process should be canceled.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.DefaultProcessObjectType">
+            <summary>
+            Default object process type.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.ExcludedNames">
+            <summary>
+            Array of expressions. Objects with display names and code names starting with these expresions are filtered out.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.SiteId">
+            <summary>
+            Site ID of the site to be processed.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.SiteName">
+            <summary>
+            Site name of the site to be processed.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.SiteInfo">
+            <summary>
+            Site info of the site to be processed.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.PersistentSettingsKey">
+            <summary>
+            Key for presistent storage.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.WriteLog">
+            <summary>
+            Indicates if logging to the log is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.UICulture">
+            <summary>
+            UI culture.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AbstractImportExportSettings.AdministratorId">
+            <summary>
+            Administrator user ID.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.DeletionInfo">
+            <summary>
+            Deletion info.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.DeletionInfo.mPersistentSettingsKey">
+            <summary>
+            Persistent key to store the settings.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.DeletionInfo.mUICulture">
+            <summary>
+            Current UI culture.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization function.
+            </summary>
+            <param name="info">Serialization info</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization inf</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.SavePersistent">
+            <summary>
+            Saves the settings object.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.GetProgressState">
+            <summary>
+            Gets progress state.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.LogDeletionState(CMS.CMSImportExport.LogStatusEnum,System.String)">
+            <summary>
+            Logs deletion state.
+            </summary>
+            <param name="type">Type of the message</param>
+            <param name="message">Message to be logged</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.DeletionInfo.GetAPIString(System.String,System.String)">
+            <summary>
+            Gets resource string in correct culture.
+            </summary>
+            <param name="key">Resource string key</param>
+            <param name="defaultValue">Default value</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.UICulture">
+            <summary>
+            UI culture.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.DeletionLog">
+            <summary>
+            Keep information about deletion progress.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.WebRootFullPath">
+            <summary>
+            Web root full path.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.PersistentSettingsKey">
+            <summary>
+            Persistent key to store the settings.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.DeleteMetaFiles">
+            <summary>
+            Indicates if meta files should be deleted.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.DeleteMediaFiles">
+            <summary>
+            Indicates if media files should be deleted.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.DeleteAttachments">
+            <summary>
+            Indicates if attachments should be deleted.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.SiteName">
+            <summary>
+            Site name.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.DeletionInfo.SiteDisplayName">
+            <summary>
+            Site display name.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.SiteDeletionManager">
+            <summary>
+            Site deletion manager.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.SiteDeletionManager.SEPARATOR">
+            <summary>
+            Logs separator.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteDeletionManager.#ctor(CMS.CMSImportExport.DeletionInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="deletionInfo">Deletion info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteDeletionManager.UpdateDeleteLog(CMS.TreeEngine.TreeNode)">
+            <summary>
+            Update the delete log.
+            </summary>
+            <param name="node">Node that is about to be deleted</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteDeletionManager.ProcessFolder(System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            Process folder.
+            </summary>
+            <param name="codeName">Code name</param>
+            <param name="delete">Indicates if folder should be deleted</param>
+            <param name="path">Folder path</param>
+            <param name="webRootFullPath">Full path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteDeletionManager.DeleteSite(System.Object)">
+            <summary>
+            Import execution.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteDeletionManager.DeletionInfo">
+            <summary>
+            Deletion info.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteDeletionManager.Status">
+            <summary>
+            Process status.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteDeletionManager.CurrentUser">
+            <summary>
+            Current user.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.HashtableEnum">
+            <summary>
+            Hashtable type enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.HashtableEnum.GlobalSelectedObjects">
+            <summary>
+            Global selected obejct types hashtable.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.HashtableEnum.SiteSelectedObjects">
+            <summary>
+            Site selected object types hashtable.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.HashtableEnum.GlobalProcessedObjects">
+            <summary>
+            Global processed object types hashtable.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.HashtableEnum.SiteProcessedObjects">
+            <summary>
+            Site processed object types hashtable.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.HashtableEnum.AdditionalSettings">
+            <summary>
+            Additional settings hashtable.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.LogStatusEnum">
+            <summary>
+            Logs status mode enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.Info">
+            <summary>
+            Information during process.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.Error">
+            <summary>
+            Finished with error.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.Warning">
+            <summary>
+            Warning during the process.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.Finish">
+            <summary>
+            Successfully finished.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.UnexpectedFinish">
+            <summary>
+            Unexpectly finished.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.LogStatusEnum.Start">
+            <summary>
+            Process starting.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ProcessObjectEnum">
+            <summary>
+            Type of object processing enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessObjectEnum.Default">
+            <summary>
+            Default.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessObjectEnum.All">
+            <summary>
+            Process all objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessObjectEnum.Selected">
+            <summary>
+            Proces only selected.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessObjectEnum.None">
+            <summary>
+            Do not process.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessObjectEnum.SiteBinding">
+            <summary>
+            Add site binding(special configuration).
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ProcessStatus">
+            <summary>
+            Process status enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessStatus.Stopped">
+            <summary>
+            Stopped.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessStatus.Running">
+            <summary>
+            Running.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessStatus.Finished">
+            <summary>
+            Finished.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessStatus.Error">
+            <summary>
+            Error occurred.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ProcessStatus.Restarted">
+            <summary>
+            Application restarted.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportTypeEnum">
+            <summary>
+            Export type enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ExportTypeEnum.None">
+            <summary>
+            No objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ExportTypeEnum.All">
+            <summary>
+            All objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ExportTypeEnum.Site">
+            <summary>
+            Site objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ExportTypeEnum.Default">
+            <summary>
+            Default.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportExportModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportSpecialCaseContext">
+            <summary>
+            Class representing context for import special cases.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportSpecialCaseContext.#ctor(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Constructor. Ensures context with special settings for block of actions during the life of this object.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.FileOperation">
+            <summary>
+            Class representing file operation.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.SourcePath">
+            <summary>
+            Source file.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.DestinationPath">
+            <summary>
+            Destination file.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.Operation">
+            <summary>
+            Operation to process.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.Result">
+            <summary>
+            Result of the operation.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.ParameterType">
+            <summary>
+            Parameter type
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperation.Parameter">
+            <summary>
+            Operation parameter.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperation.#ctor(System.String,System.String,CMS.CMSImportExport.FileOperationEnum)">
+            <summary>
+            Constructor - Creates the file operation.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+            <param name="operation">File operation</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperation.#ctor(System.String,System.String,CMS.CMSImportExport.FileOperationEnum,CMS.CMSImportExport.FileOperationParamaterTypeEnum,System.String)">
+            <summary>
+            Constructor - Creates the file operation.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+            <param name="operation">File operation</param>
+            <param name="parameterType">Parameter type</param>
+            <param name="parameter">Operation parameter</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.FileOperationEnum">
+            <summary>
+            File operation enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationEnum.None">
+            <summary>
+            No operation.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationEnum.CopyFile">
+            <summary>
+            Copy file.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationEnum.CopyDirectory">
+            <summary>
+            Copy directory.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.FileResultEnum">
+            <summary>
+            File result enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileResultEnum.Unknown">
+            <summary>
+            No result.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileResultEnum.PermissionsError">
+            <summary>
+            Permissions errror.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.FileOperationParamaterTypeEnum">
+            <summary>
+            File operation parameter type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationParamaterTypeEnum.None">
+            <summary>
+            None.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationParamaterTypeEnum.Webfarm">
+            <summary>
+            Webfarm task.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.FileOperationParamaterTypeEnum.Assembly">
+            <summary>
+            Assembly.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportConverter">
+            <summary>
+            Import package conversion.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.EnsureConversion(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Ensures all actions for conversion.
+            </summary>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.EnsureConversion(CMS.CMSImportExport.SiteImportSettings,System.Boolean)">
+            <summary>
+            Ensures all actions for conversion.
+            </summary>
+            <param name="settings">Site import settings</param>
+            <param name="forceSeparateFolder">Force creating separate folder</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackage(CMS.CMSImportExport.SiteImportSettings,System.Collections.ArrayList)">
+            <summary>
+            Process all necessary conversions.
+            </summary>
+            <param name="originalSettings">Original site import settings</param>
+            <param name="conversions">Conversions to be processed</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackage(CMS.CMSImportExport.SiteImportSettings,System.Collections.ArrayList,System.Boolean)">
+            <summary>
+            Process all necessary conversions.
+            </summary>
+            <param name="originalSettings">Original site import settings</param>
+            <param name="conversions">Conversions to be processed</param>
+            <param name="forceSeparateFolder">Force creating separate folder</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.EnsureSeparateFolder(CMS.CMSImportExport.SiteExportSettings,CMS.CMSImportExport.SiteImportSettings,System.String,System.String)">
+            <summary>
+            Ensures separate folder for version conversion to keep track of package structure
+            </summary>
+            <param name="exSettings">Export settings</param>
+            <param name="imSettings">Import settings</param>
+            <param name="targetPath">Target files path</param>
+            <param name="conversion">Convesion number</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackageTo31(System.String,CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Converts the import package to the 3.1 version.
+            </summary>
+            <param name="sourcePath">Source path (directory)</param>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackageTo40Beta(System.String,CMS.CMSImportExport.SiteExportSettings,CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Converts the import package to the 4.0 BETA version.
+            </summary>
+            <param name="sourcePath">Source path (directory)</param>
+            <param name="exSettings">Export settings</param>
+            <param name="imSettings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackageTo40(System.String,CMS.CMSImportExport.SiteExportSettings,CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Converts the import package to the 4.0 version.
+            </summary>
+            <param name="sourcePath">Source path (directory)</param>
+            <param name="exSettings">Export settings</param>
+            <param name="imSettings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ConvertPackageTo60(System.String,CMS.CMSImportExport.SiteExportSettings,CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Converts the import package to the 4.0 version.
+            </summary>
+            <param name="sourcePath">Source path (directory)</param>
+            <param name="exSettings">Export settings</param>
+            <param name="imSettings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.ExtractBinaryData(System.Object[])">
+            <summary>
+            Extracts the object binary data from the object.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.LoadDataSet(System.String)">
+            <summary>
+            Loads the DataSet from given file.
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.LoadDataSet(System.String,CMS.GlobalHelper.DataHelper.ActionCallback,System.Object[])">
+            <summary>
+            Loads the DataSet from given file.
+            </summary>
+            <param name="filePath">File path</param>
+            <param name="rowCallback">Data row callback. Adds the element name to the parameters when reading the DataSet</param>
+            <param name="parameters">Callback parameters</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.SaveDataSet(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String,System.Boolean)">
+            <summary>
+            Saves the objects to the file.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">If true, objects are site objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.EnsureSettingsCategoryCodeNames(System.Data.DataTable)">
+            <summary>
+            Ensures settings category code names for the settings categories.
+            </summary>
+            <param name="categoryDT">Category table</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.CopyFile(System.String,System.String)">
+            <summary>
+            Copy file for the import and unset the readonly attributes.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportConverter.CopyDirectory(System.String,System.String)">
+            <summary>
+            Copy directory including subdirectories and files.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="targetPath">Target path</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportConverter.Versions">
+            <summary>
+            Array of incomaptible versions.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.VersionInfo">
+            <summary>
+            Class for version info.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.VersionInfo.#ctor(System.String,System.String)">
+            <summary>
+            Constructor - Creates version info.
+            </summary>
+            <param name="versionString">Version string</param>
+            <param name="hotfixString">Hotfix version string</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.VersionInfo.CompareTo(System.Object)">
+            <summary>
+            Compares two objects.
+            </summary>
+            <param name="obj">Version info object</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.Version">
+            <summary>
+            Gets main version number.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.HotfixVersion">
+            <summary>
+            Gets hotfix version number.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.SubVersion">
+            <summary>
+            Gets sub version character.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.BetaVersion">
+            <summary>
+            Gets beta version.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.RCVersion">
+            <summary>
+            Gets RC version.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.IsBeta">
+            <summary>
+            Indicates if version is beta.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.IsRC">
+            <summary>
+            Indicates if version is RC.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.VersionInfo.IsNormal">
+            <summary>
+            Indicates if version is normal.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportExportHelper">
+            <summary>
+            Helper class for import/export process
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.CMS_INFO_TYPE">
+            <summary>
+            Info type for additional information.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.MAX_FILE_LENGTH">
+            <summary>
+            Maximal length of the exported file name with path.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.EXPORT_OBJECT_WIDTH">
+            <summary>
+            Width of the export object modal window.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.EXPORT_OBJECT_HEIGHT">
+            <summary>
+            Height of the export object modal window.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.EXPORT_BACKUP_PATH">
+            <summary>
+            Path where the backup Zip archive will be created.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.EXPORTINFO_FILE">
+            <summary>
+            Export info file.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.EXPORT_EXTENSION">
+            <summary>
+            Export extension.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.PACKAGE_EXTENSION">
+            <summary>
+            Export package extension.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.DATA_FOLDER">
+            <summary>
+            Data folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.CONVERSION_FOLDER">
+            <summary>
+            Conversion folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.BIZFORM_PREFIX">
+            <summary>
+            Prefix for BizForm data object type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.CUSTOMTABLE_PREFIX">
+            <summary>
+            Prefix for custom table data object type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.FORUMPOST_PREFIX">
+            <summary>
+            Prefix for forum posts object type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.BOARDMESSAGE_PREFIX">
+            <summary>
+            Prefix for board messages object type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.MEDIAFILE_PREFIX">
+            <summary>
+            Prefix for media files object type.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.BIZFORM_FOLDER">
+            <summary>
+            BizForm folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.CUSTOMTABLE_FOLDER">
+            <summary>
+            Custom table folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.FORUMPOSTS_FOLDER">
+            <summary>
+            Forum posts folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.MEDIAFILES_FOLDER">
+            <summary>
+            Media files folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.BOARDMESSAGES_FOLDER">
+            <summary>
+            Board messages folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SITE_MACRO">
+            <summary>
+            Site macro.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.OBJECT_VERSION_SUFFIX">
+            <summary>
+            Object versions suffix.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_DOC_HISTORY">
+            <summary>
+            Process documents history.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_DOC_RELATIONSHIPS">
+            <summary>
+            Process document relationships.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_DOC_ACLS">
+            <summary>
+            Document ACLs.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_BLOG_COMMENTS">
+            <summary>
+            Process blog comments.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_EVENT_ATTENDEES">
+            <summary>
+            Process event attendees.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_BIZFORM_DATA">
+            <summary>
+            Process BizForm data.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_CUSTOMTABLE_DATA">
+            <summary>
+            Process custom table data.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_FORUM_POSTS">
+            <summary>
+            Process forum posts.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_MEDIA_FILES">
+            <summary>
+            Process media files.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_MEDIA_FILES_PHYSICAL">
+            <summary>
+            Copy media files (physical files).
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_BIZFORM_FILES_PHYSICAL">
+            <summary>
+            Copy BizForm files (physical files).
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_BOARD_MESSAGES">
+            <summary>
+            Process board messages.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_TASKS">
+            <summary>
+            Process export tasks.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_RUN_SITE">
+            <summary>
+            Run site after import.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_SITE">
+            <summary>
+            Import / export site
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_DELETE_SITE">
+            <summary>
+            Delete site after errror during import.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_GLOBAL_FOLDERS">
+            <summary>
+            Copy global folders.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_ASSEMBLIES">
+            <summary>
+            Copy global folders.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_SITE_FOLDERS">
+            <summary>
+            Copy site folders.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_SKIP_OBJECT_ON_TRANSLATION_ERROR">
+            <summary>
+            Skip translation errors.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_DELETE_TEMPORARY_FILES">
+            <summary>
+            Delete temporary files.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_ADD_SITE_BINDINGS">
+            <summary>
+            Add site bindings in case the object is not imported (updated).
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_PROCESS_ECOMMERCE">
+            <summary>
+            Process e-commerce objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_PROCESS_COMMUNITY">
+            <summary>
+            Process community objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_UPDATE_SITE_DEFINITION">
+            <summary>
+            Update site definition if importing to the existing site.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_OVERWRITE_SYSTEM_QUERIES">
+            <summary>
+            Overwrite system queries.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_COPY_ASPX_TEMPLATES_FOLDER">
+            <summary>
+            Copy ASPX templates folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_COPY_FORUM_CUSTOM_LAYOUTS_FOLDER">
+            <summary>
+            Copy forum custom layouts folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_WEBTEMPLATE_EXPORT">
+            <summary>
+            Indicates that web template is exported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_WORKFLOW_SCOPES">
+            <summary>
+            Indicates if workflow scopes should be imported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_PAGETEMPLATE_SCOPES">
+            <summary>
+            Indicates if page template scopes should be imported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_PAGETEMPLATE_VARIANTS">
+            <summary>
+            Indicates if web part/zone/widget variatns shoul be imported with the page template.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_USER_PERSONALIZATIONS">
+            <summary>
+            Indicates if user personalization should be imported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_GROUP_MEMBERSHIP">
+            <summary>
+            Indicates if group membership should be imported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_USER_DASHBOARDS">
+            <summary>
+            Indicates if user dashboards should be imported.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SETTINGS_USER_SITE_DASHBOARDS">
+            <summary>
+            Indicates if user dashboards should be imported even if user isn't imported
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_START_TIME">
+            <summary>
+            Start time of the process.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_SYSTEM_VERSION">
+            <summary>
+            Version of the system.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_HOTFIX_VERSION">
+            <summary>
+            Version of the hotfix.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_MACHINE_NAME">
+            <summary>
+            Machine name.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_CURRENT_USER">
+            <summary>
+            Current user.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_DOMAIN_NAME">
+            <summary>
+            Domain name.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_SINGLE_OBJECT">
+            <summary>
+            Single object.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_SITE_INCLUDED">
+            <summary>
+            Site included.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_TIME_STAMP">
+            <summary>
+            Time stamp.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_HISTORY_NAME">
+            <summary>
+            History name.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_HISTORY_DATE">
+            <summary>
+            History date.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_WEBTEMPLATE_FLAG">
+            <summary>
+            Webtemplate flag.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INFO_SYSTEM_WEBAPP">
+            <summary>
+            Web application flag.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SRC_SKINS_FOLDER">
+            <summary>
+            Skins folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SRC_CONTAINERS_FOLDER">
+            <summary>
+            Web part containers folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SRC_FORUM_LAYOUTS_FOLDER">
+            <summary>
+            Forum custom layouts folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SRC_TEMPLATES_FOLDER">
+            <summary>
+            Templates folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.ATTACHMENT_FOLDER">
+            <summary>
+            Attachment folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.METADATA_FOLDER">
+            <summary>
+            Meta files folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SKINS_FOLDER">
+            <summary>
+            Skins folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.WEBPARTS_FOLDER">
+            <summary>
+            WebParts folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.FORMCONTROLS_FOLDER">
+            <summary>
+            Formuser controls folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.DOCTYPESICONS_FOLDER">
+            <summary>
+            Document types icons folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.INLINECONTROLS_FOLDER">
+            <summary>
+            Inline controls folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.APPCODE_SITE_FOLDER">
+            <summary>
+            AppCode site folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.APPDATA_SITE_FOLDER">
+            <summary>
+            AppData site folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.APPCODE_GLOBAL_FOLDER">
+            <summary>
+            AppCode global folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.TEMPLATES_FOLDER">
+            <summary>
+            Templates folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.FILES_FOLDER">
+            <summary>
+            Templates folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.GLOBAL_FOLDER">
+            <summary>
+            Global folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.SITE_FOLDER">
+            <summary>
+            Site folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.ECOMMERCE_FOLDER">
+            <summary>
+            E-commerce folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.COMMUNITY_FOLDER">
+            <summary>
+            Community folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.DOCUMENTS_FOLDER">
+            <summary>
+            Documents folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.GENERALOBJECTS_FOLDER">
+            <summary>
+            General objects folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.MODULES_FOLDER">
+            <summary>
+            Modules folder.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mObjectTree">
+            <summary>
+            Object tree.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mImportWebSiteDirectory">
+            <summary>
+            Fictive web site directory for imported physical files (for testing purposes only).
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mSiteUtilsFolderPath">
+            <summary>
+            Site utils folder path.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mLangSuffixes">
+            <summary>
+            Language suffixes for code behind files
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mAppCodeFolder">
+            <summary>
+            Name of the App_Code folder
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportHelper.mCompressionBufferSize">
+            <summary>
+            Size of buffer used to un/compress packages
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsDesignerCodeBehind(System.String)">
+            <summary>
+            Indicates if file is designer code behind file
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetObjectBackupFolder(CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Gets the backup folder for a given object
+            </summary>
+            <param name="obj">Object to backup or restore</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetTemporaryFolder(System.String)">
+            <summary>
+            Returns Temporary folder physical path.
+            </summary>
+            <param name="webFullPath">Full path to the root of the web project (e.g. c:\WebProject\)</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetSiteUtilsFolder">
+            <summary>
+            Returns Site Utils folder physical path.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetSiteUtilsFolderRelativePath">
+            <summary>
+            Returns Site Utils folder relative path.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsLowerVersion(System.String,System.String,System.String,System.String)">
+            <summary>
+            Returns true if the first given version is lower than the second one.
+            </summary>
+            <param name="version1">First version</param>
+            <param name="hotfixVersion1">First hotfix version</param>
+            <param name="version2">Second version</param>
+            <param name="hotfixVersion2">Second hotfix version</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.RemoveExportExtension(System.String)">
+            <summary>
+            Remove export extensions.
+            </summary>
+            <param name="path">Starting path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetExportFilePath(System.String)">
+            <summary>
+            Returns the real file path for the specified path.
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetRealFilePath(System.String)">
+            <summary>
+            Returns the real file path for the specified file.
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.RenameExportedFiles(System.String)">
+            <summary>
+            Rename exported files.
+            </summary>
+            <param name="path">Path where the file should be renamed</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetObjectTypeName(System.String)">
+            <summary>
+            Gets the name for the object type.
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetObjectTypeName(System.String,CMS.CMSImportExport.AbstractImportExportSettings)">
+            <summary>
+            Gets the name for the object type.
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="settings">Import or export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetObjectTypeSubFolder(CMS.CMSImportExport.AbstractImportExportSettings,System.String,System.Boolean)">
+            <summary>
+            Gets subfolder for specified object type.
+            </summary>
+            <param name="settings">Import export settings</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsEcommerceObjectType(System.String)">
+            <summary>
+            Returns true if object type is from e-commerce module.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsCommunityObjectType(System.String)">
+            <summary>
+            Returns true if object type is from community module.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsCMSObjectType(System.String)">
+            <summary>
+            Returns true if object type is general object.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsDocumentObjectType(System.String)">
+            <summary>
+            Returns true if object type is from documents data.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetSafeObjectTypeName(System.String)">
+            <summary>
+            Gets safe object type name.
+            </summary>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetDocumentsDataWhereCondition(System.String,System.Data.DataSet,System.String,System.String,CMS.SettingsProvider.SelectCondition)">
+            <summary>
+            Gets where condition for specified object type based on documents. Uses the given condition object to build the where condition.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="ds">DataSet with documents</param>
+            <param name="parentIdColumn">Name of the column with ID value</param>
+            <param name="sourceColumn">Name of the source column with ID value</param>
+            <param name="cond">Condition object to use for building the where condition</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.ValidateExportFileName(CMS.CMSImportExport.SiteExportSettings,System.String)">
+            <summary>
+            Validate export file name.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="fileName">File name to validate</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.InitSingleObjectExportSettings(CMS.CMSImportExport.SiteExportSettings,CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Initialize provided export settings
+            </summary>
+            <param name="settings">Export settings to be initialized</param>
+            <param name="infoObj">Object to be exported, which will be used to initialize export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetInheritedWebParts(CMS.SettingsProvider.GeneralizedInfo,System.Collections.ArrayList)">
+            <summary>
+            Get list of inhereted web parts for web part object
+            </summary>
+            <param name="infoObj">Web part object</param>
+            <param name="webparts">List of inherited web parts</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetSavedReports(CMS.SettingsProvider.GeneralizedInfo,System.Collections.ArrayList)">
+            <summary>
+            Get list of saved reports for report object
+            </summary>
+            <param name="infoObj">Report object</param>
+            <param name="reports">List of report saved reports</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.GetDependantWebPart(CMS.SettingsProvider.GeneralizedInfo,System.Collections.ArrayList)">
+            <summary>
+            Get list of dependant web parts for widget object
+            </summary>
+            <param name="infoObj">Widget object</param>
+            <param name="webparts">List of dependant web parts</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportHelper.IsPostProcessFile(System.String)">
+            <summary>
+            Indicates if file should be post processed
+            </summary>
+            <param name="extension">File extension</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.ObjectTree">
+            <summary>
+            Object tree.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.ObjectTypes">
+            <summary>
+            Array of the object types processed in import / export.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.ImportWebSiteDirectory">
+            <summary>
+            Fictive web site directory for imported physical files (for testing purposes only).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.SiteUtilsFolderPath">
+            <summary>
+            Site utils folder path (default: ~/CMSSiteUtils/)
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.LangSuffixes">
+            <summary>
+            Language suffixes for code behind files
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.AppCodeFolder">
+            <summary>
+            Name of the App_Code folder for current instance
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportExportHelper.CompressionBufferSize">
+            <summary>
+            Size of buffer used to un/compress packages
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ProcessCanceledException">
+            <summary>
+            Exception for the cancelation of the process.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ProcessCanceledException.#ctor">
+            <summary>
+            Constructor - Creates process canceled exception.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ProcessCanceledException.#ctor(System.String)">
+            <summary>
+            Constructor - Creates process canceled exception.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportExportObjectType">
+            <summary>
+            Class representing import/export object types
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportExportObjectType.EXPORTHISTORY">
+            <summary>
+            Export history.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportExportObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.FileOperationCollection">
+            <summary>
+            Collection of files for processing.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.#ctor">
+            <summary>
+            Constructor - Creates an empty FileOperationCollection object.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Add(System.String,CMS.CMSImportExport.FileOperationEnum)">
+            <summary>
+            Adds the file operation to the list.
+            </summary>
+            <param name="filePath">File path</param>
+            <param name="operation">Operation</param>
+            <returns>True if the operation was added.</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Add(System.String,System.String,CMS.CMSImportExport.FileOperationEnum)">
+            <summary>
+            Adds the file operation to the list.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+            <param name="operation">Operation</param>
+            <returns>True if the operation was added.</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Add(System.String,System.String,CMS.CMSImportExport.FileOperationEnum,CMS.CMSImportExport.FileOperationParamaterTypeEnum,System.String)">
+            <summary>
+            Adds the file operation to the list.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+            <param name="operation">Operation</param>
+            <param name="parameterType">Parameter type</param>
+            <param name="parameter">Operation parameter</param>
+            <returns>True if the operation was added.</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Remove(CMS.CMSImportExport.FileOperation)">
+            <summary>
+            Removes the file operation from the list.
+            </summary>
+            <param name="operation">File operation</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Contains(CMS.CMSImportExport.FileOperation)">
+            <summary>
+            Indicates if the operation aleready exists.
+            </summary>
+            <param name="operation">File operation</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.SetResult(CMS.CMSImportExport.FileOperation,CMS.CMSImportExport.FileResultEnum)">
+            <summary>
+            Sets the file operation result.
+            </summary>
+            <param name="operation">File operation</param>
+            <param name="result">Operation result</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.GetResultList(CMS.CMSImportExport.FileResultEnum)">
+            <summary>
+            Gets the file operation result list.
+            </summary>
+            <param name="result">Operation result</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.FileOperationCollection.Clear">
+            <summary>
+            Clear the collection
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.FileOperationCollection.Operations">
+            <summary>
+            List of file operations.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.FileOperationCollection.Count">
+            <summary>
+            Count of the file operations.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.FileOperationCollection.Item(System.Int32)">
+            <summary>
+            Gets the operation on specific index.
+            </summary>
+            <param name="index">Operation index to get</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportTypeEnum">
+            <summary>
+            Import type enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportTypeEnum.None">
+            <summary>
+            No objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportTypeEnum.All">
+            <summary>
+            All objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportTypeEnum.New">
+            <summary>
+            New objects.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportTypeEnum.Default">
+            <summary>
+            Default.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportHistoryInfo">
+            <summary>
+            ExportHistoryInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ExportHistoryInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ExportHistoryInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new ExportHistoryInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportDateTime">
+            <summary>
+            Date of the export history.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportFileName">
+            <summary>
+            File name of the export history.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportSiteID">
+            <summary>
+            Site ID of the exported site.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportSettings">
+            <summary>
+            Export settings used during the export process.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportUserID">
+            <summary>
+            ID of the user who performed the export.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportHistoryInfo.ExportID">
+            <summary>
+            Export history ID.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportHistoryInfoProvider">
+            <summary>
+            Class providing ExportHistoryInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistoryInfo(System.Int32)">
+            <summary>
+            Returns the ExportHistoryInfo structure for the specified export history.
+            </summary>
+            <param name="exportHistoryId">Export history ID</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.SetExportHistoryInfo(CMS.CMSImportExport.ExportHistoryInfo)">
+            <summary>
+            Sets (updates or inserts) specified exportHistory.
+            </summary>
+            <param name="exportHistory">Export history info object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.DeleteExportHistoryInfo(CMS.CMSImportExport.ExportHistoryInfo)">
+            <summary>
+            Deletes specified export history.
+            </summary>
+            <param name="exportHistoryObj">Export history info object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.DeleteExportHistoryInfo(System.Int32)">
+            <summary>
+            Deletes specified export history.
+            </summary>
+            <param name="exportHistoryId">Export history ID</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.DeleteExportHistry(System.Int32)">
+            <summary>
+            Deletes all export histories for given site.
+            </summary>
+            <param name="siteId">ID of the site</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.DeleteExportHistories(System.Int32)">
+            <summary>
+            Deletes all export histories for given site.
+            </summary>
+            <param name="siteId">ID of the site</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistories(System.Int32)">
+            <summary>
+            Returns the export histories for the specified site.
+            </summary>
+            <param name="siteId">ID of the site</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistories(System.String)">
+            <summary>
+            Returns the export histories for the specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistories(System.String,System.String)">
+            <summary>
+            Returns the export histories.
+            </summary>
+            <param name="where">WHERE expression</param>
+            <param name="orderBy">Sort expression</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistories(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Returns the export histories.
+            </summary>
+            <param name="where">WHERE expression</param>
+            <param name="orderBy">Sort expression</param>
+            <param name="columns">Select only specified columns</param>
+            <param name="topN">Select only top N rows</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportHistoryInfoProvider.GetExportHistories(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Returns the export histories.
+            </summary>
+            <param name="where">WHERE expression</param>
+            <param name="orderBy">Sort expression</param>
+            <param name="columns">Select only specified columns</param>
+            <param name="topN">Select only top N rows</param>
+            <param name="offset">Index of first record to get</param>
+            <param name="maxRecords">Maximum number of records to get. If maxRecords is zero or less, all records are returned (no paging is used)</param>
+            <param name="totalRecords">Returns total records</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportManager">
+            <summary>
+            Class representing import manager.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportManager.#ctor(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Constructor - Creates import manager.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportManager.Import(System.Object)">
+            <summary>
+            Runs import process.
+            </summary>
+            <param name="parameter">Import parameter</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportManager.ThrowExceptionOnError">
+            <summary>
+            Indicates if exception should be thrown on error.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportManager.Settings">
+            <summary>
+            Import settings.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportManager.ImportStatus">
+            <summary>
+            Import status.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportManager">
+            <summary>
+            Export manager class.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportManager.#ctor(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Constructor - Creates export manager.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportManager.Export(System.Object)">
+            <summary>
+            Runs export process.
+            </summary>
+            <param name="parameter">Export parameter</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportManager.Settings">
+            <summary>
+            Export settings.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportManager.ExportStatus">
+            <summary>
+            Export status.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportProvider">
+            <summary>
+            Class for exporting the objects and sites.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.LogProgress(System.String)">
+            <summary>
+            Logs the export progress.
+            </summary>
+            <param name="message">Progress message</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportCanceled(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Export canceled.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyASPXTemplates(System.String,System.String,System.String[],System.String)">
+            <summary>
+            Copy ASPX templates folder.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="targetPath">Target path</param>
+            <param name="excludedNames">Excluded names</param>
+            <param name="websitePath">Web site path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.UnsetReadonlyAttribute(System.String)">
+            <summary>
+            Remove readonly atrribute for the file.
+            </summary>
+            <param name="filePath">File full path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.UnsetReadonlyAttributesDirectory(System.String)">
+            <summary>
+            Unset files readonly attribute in specified folder.
+            </summary>
+            <param name="folder">Folder</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.DeleteTemporaryFiles">
+            <summary>
+            Delete temporary files in default folder.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.DeleteTemporaryFiles(CMS.CMSImportExport.SiteExportSettings,System.Boolean)">
+            <summary>
+            Delete temporary files.
+            </summary>
+            <param name="settings">Export settings</param>        
+            <param name="onlyFolderStructure">Indicates if only folder structure should be deleted</param>        
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.DeleteTemporaryFiles(System.String)">
+            <summary>
+            Recursively delete all files in specified path.
+            </summary>
+            <param name="path">Path of the temporary files</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.LogProgress(CMS.CMSImportExport.LogStatusEnum,CMS.CMSImportExport.SiteExportSettings,System.String)">
+            <summary>
+            Logs progress.
+            </summary>
+            <param name="type">Type of the information</param>
+            <param name="settings">Export settings</param>
+            <param name="description">Log message</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.LogProgressError(CMS.CMSImportExport.SiteExportSettings,System.String,System.Exception)">
+            <summary>
+            Logs progress error.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="description">Error description</param>
+            <param name="ex">Exception to log</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.GetExportData(CMS.CMSImportExport.SiteExportSettings,CMS.SettingsProvider.QueryDataParameters,System.String,System.String,System.String,System.Boolean,System.Boolean,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Gets the export data for specified objects.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parameters">Query parameters for the selection</param>
+            <param name="where">Where condition for the objects</param>
+            <param name="objectType">Object type</param>
+            <param name="parentObjectType">Parent object type</param>
+            <param name="childData">Indicates if child data should be included</param>
+            <param name="selectionOnly">If true, the method gets only the data needed for the selection</param>
+            <param name="th">If set, data translation table is initialized</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.GetExportData(CMS.CMSImportExport.SiteExportSettings,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Gets the export data for specified objects.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="objectType">Object type</param>
+            <param name="parentObjectType">Parent object type</param>
+            <param name="siteObjects">Indicates if the object type is site dependent</param>
+            <param name="childData">Indicates if child data should be included</param>
+            <param name="selectionOnly">If true, the method gets only the data needed for the selection</param>
+            <param name="th">If set, data translation table is initialized</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportObjectsData(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Exports all the objects.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportWebTemplate(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Export web template.
+            </summary>
+            <param name="siteName">Site code name</param>
+            <param name="websitePath">Full web site path</param>
+            <param name="targetPath">Full target path</param>
+            <param name="excludedExpressions">Expressions to exclude the exported objects due to code name and display name</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportWebTemplate(System.String,System.String,System.String,System.String[],CMS.SiteProvider.UserInfo)">
+            <summary>
+            Export web template.
+            </summary>
+            <param name="siteName">Site code name</param>
+            <param name="websitePath">Full web site path</param>
+            <param name="targetPath">Full target path</param>
+            <param name="excludedExpressions">Expressions to exclude the exported objects due to code name and display name</param>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportWebTemplate(System.String,System.String,System.String,System.String[],System.Boolean,System.Boolean)">
+            <summary>
+            Export web template.
+            </summary>
+            <param name="siteName">Site code name</param>
+            <param name="websitePath">Full web site path</param>
+            <param name="targetPath">Full target path</param>
+            <param name="excludedExpressions">Expressions to exclude the exported objects due to code name and display name</param>
+            <param name="exportEcommerce">Indicates if e-commerce module objects should be exported</param>
+            <param name="exportCommunity">Indicates if community module objects should be exported</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportWebTemplate(System.String,System.String,System.String,System.String[],System.Boolean,System.Boolean,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Export web template.
+            </summary>
+            <param name="siteName">Site code name</param>
+            <param name="websitePath">Full web site path</param>
+            <param name="targetPath">Full target path</param>
+            <param name="excludedExpressions">Expressions to exclude the exported objects due to code name and display name</param>
+            <param name="exportEcommerce">Indicates if e-commerce module objects should be exported</param>
+            <param name="exportCommunity">Indicates if community module objects should be exported</param>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportBizFormsData(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet)">
+            <summary>
+            Export BizForms data.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportCustomTablesData(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet)">
+            <summary>
+            Export custom tables data.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportForumPosts(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet)">
+            <summary>
+            Export forum posts.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportBoardMessages(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet)">
+            <summary>
+            Export board messages.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportMediaFiles(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet)">
+            <summary>
+            Export media files.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.GetBizFormData(System.Int32,System.String,System.String)">
+            <summary>
+            Returns dataset of BizForm records.
+            </summary>
+            <param name="bizFormClassId">BizForm class ID</param>
+            <param name="where">Where condition expression</param>
+            <param name="orderBy">Orderby expression</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.GetCustomTableData(System.String,System.String,System.String)">
+            <summary>
+            Returns dataset of custom table records.
+            </summary>
+            <param name="customTableName">Custom table class name</param>
+            <param name="where">Where condition expression</param>
+            <param name="orderBy">Orderby expression</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyGlobalFolders(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Copies the global folders to the destination package.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopySiteFolders(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Copies the site fodlers to the destination package.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyASPXTemplatesFolder(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Copy ASPX templates folder.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopySourceFiles(System.String,System.String,System.String)">
+            <summary>
+            Copies all source files (including code behind files, designer files)
+            </summary>
+            <param name="sourceObjectPath">Source object file path</param>
+            <param name="targetObjectPath">Target object file path</param>
+            <param name="websitePath">Web site path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyFiles(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String)">
+            <summary>
+            Copies the object files to the destination package.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Type of the object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyFiles(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String,System.Int32,System.String)">
+            <summary>
+            Copies the object files to the destination package.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Type of the object</param>
+            <param name="parentId">Parent object ID</param>
+            <param name="parentCodeName">Code name of the parent object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportAssembly(System.String,System.String,System.String,System.String)">
+            <summary>
+            Exports assmebly file.
+            </summary>
+            <param name="webSitePath">Physical path to the web site root (ends with \).</param>
+            <param name="targetPath">Destination path</param>
+            <param name="sourcePath">Source path</param>
+            <param name="assemblyName">Name of assembly to export</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.SaveObjects(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String,System.Boolean)">
+            <summary>
+            Saves the objects to the file.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Type of the object</param>
+            <param name="siteObjects">Indicates if object type is site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportObject(System.Int32,System.String,System.String,System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Export site to file.
+            </summary>
+            <param name="objectId">Exported object ID</param>
+            <param name="objectType">Exported object type</param>
+            <param name="fullExportFilePath">Full path to the target file(for example c:\export\filename.zip)</param>
+            <param name="websitePath">Path to the web site root(If there is the HttpContext available, the parameter can be null)</param>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportObject(CMS.SettingsProvider.GeneralizedInfo,System.String,System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Export site to file.
+            </summary>
+            <param name="infoObj">Object to be exported</param>
+            <param name="fullExportFilePath">Full path to the target file(for example c:\export\filename.zip)</param>
+            <param name="websitePath">Path to the web site root(If there is the HttpContext available, the parameter can be null)</param>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportSite(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Export site to file.
+            </summary>
+            <param name="siteName">Site name of the exported site</param>
+            <param name="fullExportFilePath">Full path to the target file(for example c:\export\filename.zip)</param>
+            <param name="websitePath">Path to the web site root(If there is the HttpContext available, the parameter can be null)</param>
+            <param name="template">Indicates if the web template should be exported</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportSite(System.String,System.String,System.String,System.Boolean,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Export site to file.
+            </summary>
+            <param name="siteName">Site name of the exported site</param>
+            <param name="fullExportFilePath">Full path to the target file(for example c:\export\filename.zip)</param>
+            <param name="websitePath">Path to the web site root(If there is the HttpContext available, the parameter can be null)</param>
+            <param name="template">Indicates if the web template should be exported</param>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportDocumentsData(CMS.CMSImportExport.SiteExportSettings,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Exports the documents.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="th">Translation table</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.ExportDocumentsData(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String,CMS.SettingsProvider.TranslationHelper,System.Boolean)">
+            <summary>
+            Handle all operations for documents data export.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="objectType">Type of the object</param>
+            <param name="th">Translation helper</param>
+            <param name="siteObjects">Indicates if the object type is site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.RegisterTranslationRecords(System.Data.DataSet,System.String,CMS.SettingsProvider.TranslationHelper,System.String,System.String[])">
+            <summary>
+            Ensure translation records registration.
+            </summary>
+            <param name="ds">Source dataset</param>
+            <param name="objectType">Type of the object</param>
+            <param name="th">Translation helper</param>
+            <param name="siteName">Site name</param>
+            <param name="excludedNames">Excluded object names</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.GetDocumentsData(CMS.CMSImportExport.SiteExportSettings,System.Data.DataSet,System.String,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Gets the documents subobjects data.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="parentDS">DataSet of parent objects</param>
+            <param name="objectType">Type of the object</param>
+            <param name="th">Translation table</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyPackageTemplateFiles(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Finalize export - copy template files.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CreateZipPackage(CMS.CMSImportExport.SiteExportSettings)">
+            <summary>
+            Finalize export - create ZIP export package.
+            </summary>
+            <param name="settings">Export settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CompressFolder(CMS.CMSImportExport.SiteExportSettings,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.String,System.String,ICSharpCode.SharpZipLib.Checksums.Crc32)">
+            <summary>
+            Compress specified folder.
+            </summary>
+            <param name="settings">Export settings</param>
+            <param name="outStream">Output stream</param>
+            <param name="path">Destination path</param>
+            <param name="tmpPath">Temporary files path</param>
+            <param name="crc">CRC</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CompressEntry(ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.String,System.String,ICSharpCode.SharpZipLib.Checksums.Crc32)">
+            <summary>
+            Compress entry of the ZIP export package file.
+            </summary>
+            <param name="outStream">Output stream</param>
+            <param name="entryPath">Path of the entry</param>
+            <param name="tmpPath">Temporary files path</param>
+            <param name="crc">CRC</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyFile(System.String,System.String,System.String)">
+            <summary>
+            Copy file for the export and unset the readonly attributes.
+            </summary>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+            <param name="websitePath">Web site path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.IsFileExcluded(System.String)">
+            <summary>
+            Indicates if file name is excluded.
+            </summary>
+            <param name="fileName">File name</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyDirectory(System.String,System.String,System.String)">
+            <summary>
+            Copies specified directory including its subdirectories and all underlying files.
+            </summary>
+            <param name="sourcePath">Full disk path of the source directory</param>
+            <param name="targetPath">Full disk path of the new copy of the directory including its name</param>
+            <param name="websitePath">Web site path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ExportProvider.CopyDirectory(System.String,System.String,System.String[],System.String)">
+            <summary>
+            Copies specified directory including its subdirectories and all underlying files.
+            </summary>
+            <param name="sourcePath">Full disk path of the source directory</param>
+            <param name="targetPath">Full disk path of the new copy of the directory including its name</param>
+            <param name="excludedDirs">Subdirectories to be excluded</param>
+            <param name="websitePath">Web site path</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportProvider.ExcludedFolders">
+            <summary>
+            Excluded folders which are not included into the export package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ExportProvider.ExcludedFiles">
+            <summary>
+            Excluded files which are not included into the export package.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSImportExport.ExportProvider.OnProgressLog">
+            <summary>
+            Progress log event.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ExportProvider.OnProgressLogEventHandler">
+            <summary>
+            Progress log event handler.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.SiteExportSettings">
+            <summary>
+            Class representing export settings.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.#ctor">
+            <summary>
+            Constructor - Creates export settings.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.#ctor(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Constructor - Creates export settings.
+            </summary>
+            <param name="userInfo">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Gets data for serialization.
+            </summary>
+            <param name="info">Serialization info</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor - Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization inf</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.LoadDefaultSelection">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.LoadDefaultSelection(System.Boolean)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="loadAdditionalSettigns">Indicates if additional settings should be loaded</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.LoadDefaultSelection(System.String,System.Boolean,CMS.CMSImportExport.ExportTypeEnum)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Indicates if the object set are site dependent objects</param>
+            <param name="exportType">Type of the export</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.LoadDefaultSelection(System.String,System.Boolean,CMS.CMSImportExport.ExportTypeEnum,System.Boolean,System.Boolean)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Indicates if the object set are site dependent objects</param>
+            <param name="exportType">Type of the export</param>
+            <param name="loadObjects">If true, the objects are loaded</param>
+            <param name="loadTasks">If true, the tasks are loaded</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.EnsureAutomaticSelection(CMS.SettingsProvider.GeneralizedInfo,System.Boolean)">
+            <summary>
+            Ensures automatic selection for given object type.
+            </summary>
+            <param name="infoObj">Info object</param>
+            <param name="siteObjects">Indicates if object is site object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.GetDependingObjectTypes(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the array of object types that depend on specified object type [root type, site object, depending type].
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="child">Seek the child types</param>
+            <param name="binding">Seek the binding types</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.IsExportedObjectType(System.String)">
+            <summary>
+            Returns true if the given object type is exported type (root type).
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.GetXML">
+            <summary>
+            Returns export settings configuration in XML.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.WriteHashtableXML(System.Xml.XmlWriter,System.Collections.Hashtable,System.String)">
+            <summary>
+            Gets XML for given hashtable.
+            </summary>
+            <param name="writer">XML writer</param>
+            <param name="hashtable">Hashtable to process</param>
+            <param name="tagName">Start element of the XML</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteExportSettings.LoadFromXML(System.String)">
+            <summary>
+            Loads export settings configuration from XML.
+            </summary>
+            <param name="xml">XML with configuration</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.CopyFiles">
+            <summary>
+            Indicates if the files should be processed.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.TargetPath">
+            <summary>
+            Target path for the export package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.TargetFullPath">
+            <summary>
+            Gets complete target full path with file name.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.TimeStamp">
+            <summary>
+            If set, only objects modified after this date are exported.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.CreatePackage">
+            <summary>
+            Indicates if the ZIP package should be created.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.TargetFileName">
+            <summary>
+            Target file name of the export package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.ExportType">
+            <summary>
+            Type of the export.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.Version">
+            <summary>
+            Version of the package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteExportSettings.HotfixVersion">
+            <summary>
+            Hotfix version of the package.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportProvider">
+            <summary>
+            Ensures import of data and settings.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.LogProgress(System.String)">
+            <summary>
+            Logs the import progress.
+            </summary>
+            <param name="message">Progress message</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetFirstExportFile(System.String)">
+            <summary>
+            Gets the first export file found in the specified directory.
+            </summary>
+            <param name="path">Starting path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CreateTemporaryFiles(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Creates temporary files.
+            </summary>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.DeleteTemporaryFiles(CMS.CMSImportExport.SiteImportSettings,System.Boolean)">
+            <summary>
+            Delete temporary files.
+            </summary>
+            <param name="settings">Import settings</param>        
+            <param name="onlyFolderStructure">True if only folder structure should be deleted and folders should be left</param>        
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.DeleteTemporaryFiles(System.String)">
+            <summary>
+            Recursively delete all files in specified path.
+            </summary>
+            <param name="path">Path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.Uncompress(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Uncompress the zip file.
+            </summary>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CopyImportFiles(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Copy all files and folders from file list.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CopyFile(CMS.CMSImportExport.SiteImportSettings,System.String,System.String)">
+            <summary>
+            Copy file for the import and unset the readonly attributes.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="sourcePath">Source path</param>
+            <param name="destPath">Destination path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.EnsureTargetPath(CMS.CMSImportExport.SiteImportSettings,System.String)">
+            <summary>
+            Gets correct target path (especially for App_Code paths)
+            </summary>
+            <param name="settings">Site import settings</param>
+            <param name="originalPath">Original target path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CopyDirectory(CMS.CMSImportExport.SiteImportSettings,System.String,System.String)">
+            <summary>
+            Copy directory.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="sourcePath">Source path</param>
+            <param name="targetPath">Target path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.LogProgress(CMS.CMSImportExport.LogStatusEnum,CMS.CMSImportExport.SiteImportSettings,System.String)">
+            <summary>
+            Logs progress.
+            </summary>
+            <param name="type">Type of the informtion</param>
+            <param name="settings">Import settings</param>
+            <param name="description">Log message</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportObjectsData(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Imports all the objects.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportObjectType(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean,CMS.SettingsProvider.TranslationHelper,CMS.CMSImportExport.ProcessObjectEnum,System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            Imports the specific object type.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="objectType">Object type to import</param>
+            <param name="siteObject">Site objects</param>
+            <param name="th">Translation helper</param>
+            <param name="process">Process type</param>
+            <param name="importedParentIDs">Table of imported parent object IDs. When set, only objects with parent from the table are imported</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetExistingObjects(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Gets the Dataset of existing database objects.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+            <param name="selectionOnly">If true, only data needed for selection are retrieved</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetObjectsData(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean)">
+            <summary>
+            Gets the objects data table.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetVersion(System.String)">
+            <summary>
+            Returns the version of the specified file.
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.LoadObjects(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean)">
+            <summary>
+            Loads the objects from the import package.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.LoadObjects(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Loads the objects from the import package.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+            <param name="selectionOnly">If true, the objects are loaded only for the selection reasons</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ProcessAdditionalActions(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Process additional actions after import.
+            </summary>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CreateSiteSkeleton(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Creates site info with additional information.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ProcessTasks(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,System.String,System.Boolean,CMS.SettingsProvider.TranslationHelper,System.Collections.Generic.List{CMS.CMSImportExport.AffectedObject})">
+            <summary>
+            Imports the objects.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="ds">Source DataSet</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+            <param name="th">Translation helper</param>
+            <param name="affectedObjects">Affected objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ProcessTask(CMS.CMSImportExport.SiteImportSettings,CMS.Synchronization.ExportTaskInfo,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper,System.Int32,System.Collections.Generic.List{CMS.CMSImportExport.AffectedObject})">
+            <summary>
+            Processes the task.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="taskObj">Task object</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+            <param name="targetSiteId">Target object site ID</param>
+            <param name="affectedObjects">List of affected objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetDataSet(System.String,CMS.SettingsProvider.TaskTypeEnum,System.String)">
+            <summary>
+            Returns the dataset loaded from the given task data.
+            </summary>
+            <param name="taskData">Task data to make the dataset from</param>
+            <param name="taskType">Task type</param>
+            <param name="taskObjectType">Task object type</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportObjects(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,System.String,System.Boolean,CMS.SettingsProvider.TranslationHelper,System.Boolean,CMS.CMSImportExport.ProcessObjectEnum,System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            Imports the objects.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="ds">Source DataSet</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObjects">Site objects</param>
+            <param name="th">Translation helper</param>
+            <param name="importChild">Import child objects?</param>
+            <param name="processType">Process type</param>
+            <param name="importedParentIDs">Table of imported parent object IDs. When set, only objects with parent from the table are imported</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.UpdateObject(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.GeneralizedInfo,System.Boolean,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper,System.Boolean,System.Int32,CMS.CMSImportExport.ProcessObjectEnum,System.Collections.Generic.Dictionary{System.Int32,System.Int32},System.Collections.Generic.List{CMS.SettingsProvider.GeneralizedInfo},System.Collections.Generic.List{CMS.CMSImportExport.AffectedObject},CMS.SettingsProvider.BaseInfo)">
+            <summary>
+            Updates the object. Returns true if the object was updated.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="infoObj">Object to update</param>
+            <param name="siteObject">Site object</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+            <param name="updateChild">Update child objects?</param>
+            <param name="targetSiteId">Target object site ID</param>
+            <param name="process">Process type</param>
+            <param name="importedParentIDs">Table of imported parent object IDs. When set, only objects with parent from the table are imported</param>
+            <param name="postProcessList">List of objects which should be processed after finishing of main objects</param>
+            <param name="affectedObjects">Affected objects for further process</param>
+            <param name="parentObject">Parent object of object to update</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AssignToSite(System.Data.DataSet,CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.GeneralizedInfo,CMS.CMSImportExport.SiteImportSettings,System.Int32,System.Int32,CMS.SettingsProvider.TranslationHelper,System.Collections.Generic.List{CMS.CMSImportExport.AffectedObject})">
+            <summary>
+            Assign object to site.
+            </summary>
+            <param name="ds">Source data set</param>
+            <param name="bindingObj">Binding object</param>
+            <param name="infoObj">Object to assign</param>
+            <param name="settings">Site import settings</param>
+            <param name="oldObjectId">Old ID of the object</param>
+            <param name="targetSiteId">Target site ID</param>
+            <param name="th">Translation helper</param>
+            <param name="affectedObjects">List of affected objects</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ParentImported(CMS.SettingsProvider.GeneralizedInfo,System.Collections.Generic.Dictionary{System.Int32,System.Int32})">
+            <summary>
+            Indicates if parent for given object was imported.
+            </summary>
+            <param name="infoObj">Info object</param>
+            <param name="importedParentIDs">Parent object IDs</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.LoadBinaryData(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Loads the binary data to the object.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="infoObj">Info object</param>
+            <returns>Returns the binary column name or null when object does not have binary data</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddImportFiles(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,System.String,System.Boolean,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Adds the object files to the import files list.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObject">Indicates if object is site object</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddImportFiles(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,System.String,System.Boolean,System.Int32,System.String,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Adds the object files to the import files list.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="ds">DataSet with the objects data</param>
+            <param name="objectType">Object type</param>
+            <param name="siteObject">Indicates if object is site object</param>
+            <param name="parentId">Parent object ID</param>
+            <param name="parentCodeName">Code name of the parent object</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.IsModuleLoaded(System.String,System.Data.DataRow)">
+            <summary>
+            Indicates if module is loaded for given object
+            </summary>
+            <param name="objectType">Object type</param>
+            <param name="data">Object data</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportAssembly(CMS.CMSImportExport.SiteImportSettings,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+            <summary>
+            Imports assembly file.
+            </summary>
+            <param name="settings">Import settings object</param>
+            <param name="objectType">Object type the assembly belongs to</param>
+            <param name="siteObject">Indicates if object is site object</param>
+            <param name="sourcePath">Source path</param>
+            <param name="targetPath">Destination path</param>
+            <param name="objectName">Code name of an object the assembly belongs to</param>
+            <param name="assemblyName">Name of the assembly</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddSourceFiles(CMS.CMSImportExport.SiteImportSettings,System.String,System.String)">
+            <summary>
+            Add object source files for processing (including code behind files, designer files)
+            </summary>
+            <param name="settings">Site import settings</param>
+            <param name="sourceObjectPath">Source object file path</param>
+            <param name="targetObjectPath">Target object file path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetTargetPath(CMS.CMSImportExport.SiteImportSettings,System.String)">
+            <summary>
+            Gets real target path
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="originalPath">Original target path</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddGlobalFolders(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Adds the global folders to import files list.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddASPXTemplatesFolder(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Add the ASPX templates folder to import file list.
+            </summary>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.AddSiteFolders(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Adds the site fodlers to import files list.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetImportFilesList">
+            <summary>
+            Gets all possible packages from import folder.
+            </summary>
+            <returns>Array of file names</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetImportFilesList(System.String)">
+            <summary>
+            Gets all possible packages from import folder.
+            </summary>
+            <returns>Array of file names</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportCanceled(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Import cancelled.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportSite(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Import site from the file.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="siteDisplayName">Site display name</param>
+            <param name="siteDomain">Site domain</param>
+            <param name="fullSourcePath">Full path to the source file</param>
+            <param name="websitePath">Path to the web site root(optional)</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportSite(System.String,System.String,System.String,System.String,System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Import site from the file.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="siteDisplayName">Site display name</param>
+            <param name="siteDomain">Site domain</param>
+            <param name="fullSourcePath">Full path to the source file</param>
+            <param name="websitePath">Path to the web site root(optional)</param>
+            <param name="currentUser">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ConvertModuleToUIElements(CMS.SiteProvider.ResourceInfo,System.Data.DataRow,CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Converts module settings to appropriate UI Elements.
+            </summary>
+            <param name="resource">Module object</param>      
+            <param name="dr">Module original data</param>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.IsToolsModule(System.String)">
+            <summary>
+            Returns true if specified module is standard module from CMS Desk -> Tools section, otherwise returns false.
+            </summary>
+            <param name="moduleName">Module name to check</param>        
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.IsImportEnabled(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Indicates if import is enabled.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.InitTreeProvider(CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Initialize tree provider.
+            </summary>
+            <param name="settings">Import setings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetInheritedACLs(CMS.CMSImportExport.SiteImportSettings,System.String,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Translate inherited ACL list.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="oldAclList">Old ACL list</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportDocumentsData(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import documents data with all dependent objects.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.CreateSiteRoot(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Creates site root.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.SetAdditionalDocumentIDColumns(CMS.CMSImportExport.SiteImportSettings,CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Sets additional document ID columns.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="node">Tree node</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportBizFormsData(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import BizForms data.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportCustomTablesData(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import custom table data.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportForumPosts(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import forum posts.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportBoardMessages(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import board messages.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportMediaFiles(CMS.CMSImportExport.SiteImportSettings,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Import media files.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="parentDS">Parent dataset</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ImportDocuments(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.TranslationHelper,System.Collections.Generic.List{System.Int32}@,CMS.TreeEngine.TreeProvider)">
+            <summary>
+            Sets documents.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="th">Translation helper</param>
+            <param name="importedDocumentIDs">List of imported document IDs</param>
+            <param name="tree">Tree provider</param>
+            <returns>Hashtable (key: Old DocumentID value, value: Old NodeID value)</returns>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.EnsureUniqueGUID(System.Collections.Hashtable,CMS.TreeEngine.TreeNode)">
+            <summary>
+            Ensure unique GUID for the node.
+            </summary>
+            <param name="guidTable">GUID table</param>
+            <param name="node">Tree node</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.ExecuteSQLScript(System.String,CMS.CMSImportExport.SiteImportSettings)">
+            <summary>
+            Executes given SQL script.
+            </summary>
+            <param name="fileName">File name</param>
+            <param name="settings">Site import settings</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.GetObjectProcessType(CMS.CMSImportExport.SiteImportSettings,CMS.SettingsProvider.GeneralizedInfo,System.Boolean,CMS.CMSImportExport.ProcessObjectEnum)">
+            <summary>
+            Gets object process type
+            </summary>
+            <param name="settings">Site import settings</param>
+            <param name="infoObj">Object</param>
+            <param name="siteObject">Site object</param>
+            <param name="processType">Process type</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.ImportProvider.IsObjectPostProcess(System.String)">
+            <summary>
+            Indicates if the object type supports post processing
+            </summary>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportProvider.PageTemplateCategoryRootId">
+            <summary>
+            Gets ID of the root page template category.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportProvider.WebPartCategoryRootId">
+            <summary>
+            Gets ID of the root web part category.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.ImportProvider.CheckPackageVersion">
+            <summary>
+            Indicates if package version should be checked.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSImportExport.ImportProvider.OnProgressLog">
+            <summary>
+            Progress log event.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSImportExport.ImportProvider.OnBeforeImport">
+            <summary>
+            Event raised before import.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSImportExport.ImportProvider.OnAfterImport">
+            <summary>
+            Event raised after import.
+            </summary>
+        </member>
+        <member name="E:CMS.CMSImportExport.ImportProvider.OnImportError">
+            <summary>
+            Event raised after import error.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportProvider.OnProgressLogEventHandler">
+            <summary>
+            Progress log event handler.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportProvider.OnImportEventHandler">
+            <summary>
+            Delegate for import events.
+            </summary>
+            <param name="settings">Import settings</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportProvider.OnImportErrorEventHandler">
+            <summary>
+            Delegate for import error events.
+            </summary>
+            <param name="settings">Import settings</param>
+            <param name="ex">Import exception</param>
+        </member>
+        <member name="T:CMS.CMSImportExport.ImportProvider.UpdateResultEnum">
+            <summary>
+            Result of the update operation.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportProvider.UpdateResultEnum.NotProcessed">
+            <summary>
+            Not processsed.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportProvider.UpdateResultEnum.OK">
+            <summary>
+            Imported correctly.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportProvider.UpdateResultEnum.Error">
+            <summary>
+            Imported with errors.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportProvider.UpdateResultEnum.Skipped">
+            <summary>
+            The object was skipped.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.ImportProvider.UpdateResultEnum.PostProcess">
+            <summary>
+            Imported, but post processing required.
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.AffectedObject">
+            <summary>
+            Affected object info
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.AffectedObject.#ctor(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.TaskTypeEnum)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="obj">Info object</param>
+            <param name="taskType">Task type</param>
+        </member>
+        <member name="P:CMS.CMSImportExport.AffectedObject.Object">
+            <summary>
+            Info object
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.AffectedObject.TaskType">
+            <summary>
+            Task type
+            </summary>
+        </member>
+        <member name="T:CMS.CMSImportExport.SiteImportSettings">
+            <summary>
+            Class representing import settings.
+            </summary>
+        </member>
+        <member name="F:CMS.CMSImportExport.SiteImportSettings.mFileOperations">
+            <summary>
+            File operation collection.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.#ctor">
+            <summary>
+            Constructor - Creates import settings.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.#ctor(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Constructor - Creates import settings.
+            </summary>
+            <param name="currentUser">Current user info</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization function.
+            </summary>
+            <param name="info">Serialization info</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor - Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization inf</param>
+            <param name="ctxt">Streaming context</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.LoadDefaultSelection">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.LoadDefaultSelection(System.Boolean)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="loadAdditionalSettigns">Indicates if additional settings should be loaded</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.LoadDefaultSelection(System.String,System.Boolean,CMS.CMSImportExport.ImportTypeEnum)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="siteObjects">Indicates if the object is site dependent</param>
+            <param name="importType">Type of the import</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.LoadDefaultSelection(System.String,System.Boolean,CMS.CMSImportExport.ImportTypeEnum,System.Boolean,System.Boolean)">
+            <summary>
+            Loads the default selection to the export settings tables.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="siteObjects">Indicates if the object is site dependent</param>
+            <param name="importType">Type of the import</param>
+            <param name="loadObjects">If true, the objects are loaded</param>
+            <param name="loadTasks">If true, the tasks are loaded</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.EnsureAutomaticSelection(CMS.SettingsProvider.GeneralizedInfo,System.Boolean)">
+            <summary>
+            Ensures automatic selection for given obejct type.
+            </summary>
+            <param name="infoObj">Info object</param>
+            <param name="siteObjects">Indicates if object is site object</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.IsIncluded(System.String,System.Boolean)">
+            <summary>
+            Check if object type is included in the package.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="siteObjects">Indicates if the object is site dependent</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.LoadBinaryData(CMS.SettingsProvider.BaseInfo)">
+            <summary>
+            Loads the binary data to the specified object.
+            </summary>
+            <param name="infoObj">Object to load</param>
+        </member>
+        <member name="M:CMS.CMSImportExport.SiteImportSettings.ClearInfoData">
+            <summary>
+            Clears info data
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.Version">
+            <summary>
+            Version of the package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.HotfixVersion">
+            <summary>
+            Hotfix package version
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.FullVersion">
+            <summary>
+            Full package version
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.EnableSearchTasks">
+            <summary>
+            Indicates if the search tasks should be enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.CopyFiles">
+            <summary>
+            Indicates if the files should be processed.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.SiteIsIncluded">
+            <summary>
+            Indicates if the site should be included in the package.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.IsWebTemplate">
+            <summary>
+            Indicates if web template is imported.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.TemporaryFilesCreated">
+            <summary>
+            Indicates if temporary files were created.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.DeleteTemporaryFiles">
+            <summary>
+            Indicates if temporary files were created and should be deleted.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.CurrentUrl">
+            <summary>
+            Current URL of the import process.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.SourceFilePath">
+            <summary>
+            Full source file path of the package (ends with \).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.SiteDisplayName">
+            <summary>
+            Site display name.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.IsOlderVersion">
+            <summary>
+            Indicates if package is from older version.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.IsOlderHotfixVersion">
+            <summary>
+            Indicates if package is from older version including hotfix.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.SiteDomain">
+            <summary>
+            Site domain name.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.SiteDescription">
+            <summary>
+            Site description.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.UseOldZipProvider">
+            <summary>
+            Indicates if old ZIP provider should be used.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.LogObjectsWarnings">
+            <summary>
+            Indicates if binding and objects warnings should be logged.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.LogSynchronization">
+            <summary>
+            Indicates if the synchronization should be logged.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.LogIntegration">
+            <summary>
+            Indicates if the integration tasks should be logged.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.ImportType">
+            <summary>
+            Type of the import process.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.ExistingSite">
+            <summary>
+            If true, import is into an existing site (defined by SiteId).
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.ScriptParameter">
+            <summary>
+            Parameter which is used for SQL script execution.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.RebuildSearchIndex">
+            <summary>
+            Indicates if site search indexes should be rebuilt at the end of import.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.IsWebApplication">
+            <summary>
+            Indicates if site search indexes should be rebuilt at the end of import.
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.AppCodeFolder">
+            <summary>
+            Name of the App_Code folder (depending on the package source - WebApp vs Website)
+            </summary>
+        </member>
+        <member name="P:CMS.CMSImportExport.SiteImportSettings.FileOperations">
+            <summary>
+            File operations collection.
+            </summary>
+        </member>
+    </members>
+</doc>

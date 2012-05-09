@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.ISearchEngine</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.ISearchEngine.ISearchProvider">
+            <summary>
+            Interface for search provider.
+            </summary>
+        </member>
+        <member name="M:CMS.ISearchEngine.ISearchProvider.Search(System.String,System.String,System.String,System.String,CMS.ISearchEngine.SearchModeEnum,System.Boolean,System.String,System.Boolean,System.Boolean,System.String,System.String,System.Boolean)">
+            <summary>
+            Searches content specified by parameters.
+            </summary>
+            <param name="siteName">Site code name</param>
+            <param name="searchNodePath">Starting alias path without %</param>
+            <param name="cultureCode">Culture code</param>
+            <param name="searchExpression">Expression to searched for</param>
+            <param name="searchMode">Search mode - all words, any word, exact phrase</param>
+            <param name="searchChildNodes">Search child nodes under the given starting path</param>
+            <param name="classNames">Class names in format cms.article;cms.news</param>
+            <param name="filterResultsByReadPermission">Indicates if only documents the current user is allowed to read should be displayed</param>
+            <param name="searchOnlyPublished">Indicates if only published documents should be searched</param>
+            <param name="whereCondition">Where condition</param>
+            <param name="orderBy">Order by clause</param>
+            <param name="combineWithDefaultCulture">Specifies if return the default culture document when specified culture not found</param>
+        </member>
+        <member name="T:CMS.ISearchEngine.SearchHelper">
+            <summary>
+            Class contains help methods.
+            </summary>
+        </member>
+        <member name="M:CMS.ISearchEngine.SearchHelper.GetSearchModeString(CMS.ISearchEngine.SearchModeEnum)">
+            <summary>
+            Converts SearchModeEnum enumeration to string. Default returns "anyword".
+            </summary>
+            <param name="mode">Mode</param>
+        </member>
+        <member name="M:CMS.ISearchEngine.SearchHelper.GetSearchModeEnum(System.String)">
+            <summary>
+            Converts string to SearchModeEnum. Default returns SearchModeEnum.AnyWord.
+            </summary>
+            <param name="mode">String representation of mode</param>        
+        </member>
+        <member name="M:CMS.ISearchEngine.SearchHelper.GetSearchModeString(System.Type,System.Int32)">
+            <summary>
+            Returns SearchMode string code derived from type of enumeration and enum value.
+            </summary>
+            <param name="enumType">Enum type</param>
+            <param name="value">Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:CMS.ISearchEngine.SearchHelper.GetSearchScopeEnum(System.String)">
+            <summary>
+            Convertes SearchScopeEnum to string.
+            </summary>
+            <param name="scope">Scope</param>        
+        </member>
+        <member name="M:CMS.ISearchEngine.SearchHelper.GetSearchScopeString(CMS.ISearchEngine.SearchScopeEnum)">
+            <summary>
+            Converts string scope to enumeration.
+            </summary>
+            <param name="scope">Scope</param>        
+        </member>
+        <member name="T:CMS.ISearchEngine.SearchModeEnum">
+            <summary>
+            Search mode enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.ISearchEngine.SearchModeEnum.ExactPhrase">
+            <summary>
+            Searches for expressions containing exact phrase.
+            </summary>
+        </member>
+        <member name="F:CMS.ISearchEngine.SearchModeEnum.AnyWord">
+            <summary>
+            Searches for expressions containing any of specified words.
+            </summary>
+        </member>
+        <member name="F:CMS.ISearchEngine.SearchModeEnum.AllWords">
+            <summary>
+            Searches for expressions containing all specified words.
+            </summary>
+        </member>
+        <member name="T:CMS.ISearchEngine.SearchScopeEnum">
+            <summary>
+            Indicates if all content or only its part should be searched.
+            </summary>
+        </member>
+        <member name="F:CMS.ISearchEngine.SearchScopeEnum.SearchAllContent">
+            <summary>
+            All content search.
+            </summary>
+        </member>
+        <member name="F:CMS.ISearchEngine.SearchScopeEnum.SearchCurrentSection">
+            <summary>
+            Search current section.
+            </summary>
+        </member>
+    </members>
+</doc>

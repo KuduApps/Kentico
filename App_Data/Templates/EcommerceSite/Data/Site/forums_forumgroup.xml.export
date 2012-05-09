@@ -1,0 +1,28 @@
+﻿<forums_forumgroup version="6.0">
+  <NewDataSet>
+    <forums_forumgroup>
+      <GroupID>3</GroupID>
+      <GroupSiteID>5</GroupSiteID>
+      <GroupName>AdHocForumGroup</GroupName>
+      <GroupDisplayName>AdHoc forum group</GroupDisplayName>
+      <GroupOrder>1</GroupOrder>
+      <GroupDescription></GroupDescription>
+      <GroupGUID>e71b2e42-8b7c-47ba-9c6a-12ff126d81e5</GroupGUID>
+      <GroupLastModified>2009-01-09T16:42:51.433+01:00</GroupLastModified>
+      <GroupBaseUrl></GroupBaseUrl>
+      <GroupUnsubscriptionUrl>~/SpecialPages/Unsubscribe.aspx</GroupUnsubscriptionUrl>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>511</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+  </NewDataSet>
+</forums_forumgroup>

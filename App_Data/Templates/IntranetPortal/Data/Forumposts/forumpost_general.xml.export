@@ -1,0 +1,97 @@
+﻿<forumpost_general version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>1407</PostId>
+      <PostForumID>471</PostForumID>
+      <PostIDPath>/00001407</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>How can we improve our travel policy?</PostSubject>
+      <PostUserID>1045</PostUserID>
+      <PostUserName>SusanC</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>We will appreciate if you come with ideas of what you would like to change in our travel policy. Thank you!</PostText>
+      <PostTime>2010-10-13T16:40:34.563+02:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>RachelV</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2010-10-13T16:53:58.14+02:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>1840b63b-3462-47c3-b476-980a99e6ba4f</PostGUID>
+      <PostLastModified>2010-10-13T16:40:34.74+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>55</PostViews>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.158&lt;/ip&gt;&lt;agent&gt;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; MS-RTC LM 8)&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>RachelV</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2010-10-13T16:53:58.14+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1408</PostId>
+      <PostForumID>471</PostForumID>
+      <PostParentID>1407</PostParentID>
+      <PostIDPath>/00001407/00001408</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:How can we improve our travel policy?</PostSubject>
+      <PostUserID>1032</PostUserID>
+      <PostUserName>JeromeW</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>It would be great if the company covered minibars in hotel rooms :)</PostText>
+      <PostTime>2010-10-13T16:41:30.777+02:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>0d3e982d-7815-42fd-944d-7d30cac5965a</PostGUID>
+      <PostLastModified>2010-10-13T16:41:30.79+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.158&lt;/ip&gt;&lt;agent&gt;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; MS-RTC LM 8)&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1409</PostId>
+      <PostForumID>471</PostForumID>
+      <PostParentID>1407</PostParentID>
+      <PostIDPath>/00001407/00001409</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:How can we improve our travel policy?</PostSubject>
+      <PostUserID>1046</PostUserID>
+      <PostUserName>JenniferW</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>I think the expense report could be simplified. I spend way too much time filling it out :(</PostText>
+      <PostTime>2010-10-13T16:45:15.333+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>2cc6076f-6f38-4ba7-939a-3ef43eda6d95</PostGUID>
+      <PostLastModified>2010-10-13T16:45:15.34+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.158&lt;/ip&gt;&lt;agent&gt;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; MS-RTC LM 8)&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1410</PostId>
+      <PostForumID>471</PostForumID>
+      <PostParentID>1409</PostParentID>
+      <PostIDPath>/00001407/00001409/00001410</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:How can we improve our travel policy?</PostSubject>
+      <PostUserID>1050</PostUserID>
+      <PostUserName>RachelV</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Have you seen the latest version? We have already simplified it as much as possible. If you still find something we should remove, please let us know.</PostText>
+      <PostTime>2010-10-13T16:53:58.14+02:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>22bbcfad-a5b7-4050-aa41-1d2f771a2d66</PostGUID>
+      <PostLastModified>2011-01-13T19:34:55.193+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.158&lt;/ip&gt;&lt;agent&gt;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; MS-RTC LM 8)&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>1</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_general>

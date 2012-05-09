@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ObjectID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" onclick="if (window.EditReport) {window.EditReport({0}); return false;}" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="clone" caption="$Unigrid.Report.Actions.Clone$" icon="Clone.png" />
+  </actions>
+  <columns>
+    <column source="DisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="reporting.reportlist" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

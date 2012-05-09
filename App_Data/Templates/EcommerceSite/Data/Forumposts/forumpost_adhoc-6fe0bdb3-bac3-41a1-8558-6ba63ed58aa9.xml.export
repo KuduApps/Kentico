@@ -1,0 +1,79 @@
+﻿<forumpost_adhoc-6fe0bdb3-bac3-41a1-8558-6ba63ed58aa9 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>22</PostId>
+      <PostForumID>8</PostForumID>
+      <PostIDPath>/00000022</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>WAV support</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Alex</PostUserName>
+      <PostUserMail>alex@localhost.local</PostUserMail>
+      <PostText>Does this player support *.wav files?</PostText>
+      <PostTime>2008-03-05T18:46:24.133+01:00</PostTime>
+      <PostThreadPosts>3</PostThreadPosts>
+      <PostThreadLastPostUserName>Alex</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T18:48:45.277+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>d8f2dd2a-ca17-4cc3-9656-406a99584b09</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.733+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>3</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Alex</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T18:48:45.277+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>23</PostId>
+      <PostForumID>8</PostForumID>
+      <PostParentID>22</PostParentID>
+      <PostIDPath>/00000022/00000023</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:WAV support</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Yes, since firmware version 1.12.</PostText>
+      <PostTime>2008-03-05T18:47:23.227+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>a01b8753-1d42-4cc1-a5c5-d24fb11d716d</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.733+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>24</PostId>
+      <PostForumID>8</PostForumID>
+      <PostParentID>23</PostParentID>
+      <PostIDPath>/00000022/00000023/00000024</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:WAV support</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Alex</PostUserName>
+      <PostUserMail>alex@localhost.local</PostUserMail>
+      <PostText>Thank you.</PostText>
+      <PostTime>2008-03-05T18:48:45.277+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>9e788832-8fba-4490-bda5-09f057df35ca</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.75+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-6fe0bdb3-bac3-41a1-8558-6ba63ed58aa9>

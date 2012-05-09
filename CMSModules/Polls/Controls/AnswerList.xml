@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="AnswerID">
+    <action name="edit" caption="$General.Edit$" icon="edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="moveup" caption="$General.MoveUp$" icon="up.png" />
+    <action name="movedown" caption="$General.MoveDown$" icon="down.png" />
+  </actions>
+  <columns>
+    <column source="AnswerText" caption="$Unigrid.Polls_Answer.Columns.AnswerText$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="AnswerCount" caption="$Unigrid.Polls_Answer.Columns.AnswerCount$" wrap="false" >
+      <filter type="integer" />
+    </column>
+    <column source="AnswerEnabled" externalsourcename="AnswerEnabled" caption="$general.enabled$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="polls.pollanswer" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

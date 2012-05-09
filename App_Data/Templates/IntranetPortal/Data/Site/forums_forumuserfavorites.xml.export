@@ -1,0 +1,13 @@
+﻿<forums_forumuserfavorites version="6.0">
+  <NewDataSet>
+    <forums_userfavorites>
+      <FavoriteID>154</FavoriteID>
+      <UserID>53</UserID>
+      <ForumID>472</ForumID>
+      <FavoriteName>Technical Support</FavoriteName>
+      <SiteID>107</SiteID>
+      <FavoriteGUID>8c441ebe-df88-4db3-ae6e-972bf9fe12eb</FavoriteGUID>
+      <FavoriteLastModified>2010-09-23T18:21:30.9+02:00</FavoriteLastModified>
+    </forums_userfavorites>
+  </NewDataSet>
+</forums_forumuserfavorites>

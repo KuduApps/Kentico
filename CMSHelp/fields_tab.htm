@@ -1,0 +1,459 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head> 
+   <title>Fields tab</title> 
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta name="generator" content="Help &amp; Manual" /> 
+   <meta name="keywords" content="" />
+   <meta name="description" content="Fields tab" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" /> 
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+   
+   	.breadhead {
+	margin: 0;
+	padding-right: 5px;
+	}
+   
+   
+</style>
+<![endif]-->
+   
+<script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 6.0 Context Help - Fields tab".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Desk &gt; Tools &gt; Forms &gt; Form edit &gt; Fields tab /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20Fields_tab%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-105987-4']);
+  _gaq.push(['_setDomainName', '.kentico.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>        
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?fields_tab.htm"; }
+  else { parent.quicksync('a1.3.6.4.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 6.0 Context Help</span><br />
+<p class="p_Heading1"><span class="f_Heading1">Fields tab</span></p>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Desk &gt; Tools &gt; Forms &gt; Form edit:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <p class="p_Heading1"><span class="f_Heading1">Fields tab</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="general_tab.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="form_tab2.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <p class="p_Heading1"><span class="f_Heading1">Fields tab</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="general_tab.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="form_tab2.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:support@kentico.com?subject=Documentation%20feedback&body=Ref%20ID:%20Fields_tab%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+<div id="autoTocWrapper"></div>
+</div> 
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p>On this tab, you can define fields that will be used in the form. The following actions are available:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 8px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Move up</span> (<img src="up.png" width="13" height="13" border="0" alt="Up">) - moves the field up, which changes its position in the form.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 8px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Move down</span> (<img src="down.png" width="13" height="13" border="0" alt="Down">) - moves the field down, which changes its position in the form.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 8px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">New category</span> (<img src="newcategory.png" width="13" height="13" border="0" alt="NewCategory">) - creates a new category for fields. Fields belonging to a category are grouped together and displayed under a header in the form.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 8px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">New attribute</span> (<img src="addwebpart.png" width="13" height="13" border="0" alt="AddWebPart">) - adds a new field.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 8px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Delete item</span> (<img src="delete.png" width="13" height="13" border="0" alt="Delete">) - deletes the currently selected field.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Simple mode</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="5" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Column name</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Name of the database table column.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Show on public form</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>If unchecked, this attribute will be displayed only in CMS Desk (not on the form on the live site).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Field caption</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Text displayed next to the field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Field type</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Defines input type for this field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Maximum length</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Maximum length of the field value.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Allow empty value</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>If unchecked, validation check for empty value in the field will be performed when the form is submitted.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Default value</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Default value of the field that will be pre-filled when the form is displayed.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>The properties available under the <span style="font-weight: bold;">Field settings</span> section depend on the selected <span style="font-weight: bold;">Field type</span>. Please see the property tooltips for more information.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Advanced mode</span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Please note</span>:<span style="font-weight: bold;"> </span>Not all options may be available depending on the selected <span style="font-weight: bold;">Attribute type</span>.</p>
+<p>&nbsp;</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="5" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Database</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Column name</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>The name that will be used for the database column storing the values of the field. It will also serve to identify the field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Attribute type</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Type of value that the field should contain.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Attribute size</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Sets the maximum amount of characters that can be entered into the field. Only available if the <span style="font-weight: bold;">Attribute type</span> is set to <span style="font-style: italic;">Text</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Allow empty value</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Enable this if you do not wish the field to be checked for empty values. If not enabled, an asterisk (*) will be displayed next to the attribute.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Default value</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Default value of the field that will be pre-filled when the form is displayed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="225" style="width:225px; border: solid 1px #000000;"><p>Display attribute in the editing form</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>If you uncheck this property, then the given field will not be available for editing.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Field appearance</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Field caption</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Text displayed next to the field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Form control type</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Filters the options available in the <span style="font-weight: bold;">Form control</span> drop-down list below according to their type.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Form control</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Sets the specific form control that should be used in the form to interact with the given field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Field description</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Tooltip which will be displayed if a user hovers over the field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Has depending fields</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Indicates that other fields may be updated dynamically depending on the value of the given field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Depends on another field</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Indicates that the behaviour (e.g. the available selection options) of the given field can be affected depending on the value of some other field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Editing control settings</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p>The settings in this section are used to perform additional configuration of the selected <span style="font-weight: bold;">Form control</span>, which affects the behaviour or appearance of the field. Please see individual tooltips for more information.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Validation</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Regular expression</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>This regular expression will be used by the validator of the field. Only available if the selected <span style="font-weight: bold;">Attribute type</span> is <span style="font-style: italic;">Text</span> or <span style="font-style: italic;">Long text</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Min/Max length</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Sets the minimum/maximum length for entered values. Only available if the selected <span style="font-weight: bold;">Attribute type</span> is <span style="font-style: italic;">Text</span> or <span style="font-style: italic;">Long text</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Min/Max value</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Sets the minimum/maximum value that can be entered. Only available if the selected <span style="font-weight: bold;">Attribute type</span> is numerical.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>From/To</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Can be used to specify a time interval into which the entered value must belong. Only available if the selected <span style="font-weight: bold;">Attribute type</span> is <span style="font-style: italic;">Date and time</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Error message</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Error message displayed if a user enters invalid input into the field and attempts to save the form.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">CSS styles</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Caption style</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Used to set CSS styles for the caption of the given field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Input style</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Used to set CSS styles for the input entered into the field.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>Control CSS class</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>Name of the CSS class used to style the field.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;">&nbsp;</p>
+<p>Any changes to field settings must be confirmed by clicking the <img src="save.png" width="13" height="13" border="0" alt="Save"> <span style="font-weight: bold;">Save field</span> button at the top.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>Detailed information about the Forms module can be found in <a href="http://devnet.kentico.com/docs/6_0/devguide/bizforms_module_overview.htm" target="_blank" class="weblink">Developer's Guide -&gt; Modules -&gt; Forms</a>. Please refer to <a href="http://devnet.kentico.com/docs/6_0/devguide/form_controls_overview.htm" target="_blank" class="weblink">Developer's Guide -&gt; Development -&gt; Form controls</a> to learn more about form fields and their configuration.</p>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?fields_tab.htm" target="_top" title="Right-click to copy the URL of this help topic">
+<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?fields_tab.htm</a>
+</p>
+</noscript>
+<script type="text/javascript">
+var autoURL = true;
+if (autoURL) {
+      document.write(getHref("index.html","Help URL:","Right-click to copy the URL of this help topic"));
+      } else {
+             document.write('<p class="help-url"><b>Help URL:&nbsp;</b>');
+             document.write('<a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?fields_tab.htm" target="_top" title="Right-click to copy the URL of this help topic"><%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?fields_tab.htm</a>');
+             document.write('</p>');
+      }
+</script>
+
+</div></div> 
+</body>
+</html>
+
+
+
+
+

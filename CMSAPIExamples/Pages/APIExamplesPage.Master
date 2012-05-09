@@ -1,0 +1,68 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="APIExamplesPage.master.cs"
+    Inherits="CMSAPIExamples_Pages_APIExamplesPage" %>
+
+<%@ Register Assembly="CMS.PortalControls" Namespace="CMS.PortalControls" TagPrefix="cms" %>
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/PageTitle.ascx" TagName="PageTitle"
+    TagPrefix="cms" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>API Examples master page</title>
+    <style type="text/css">
+        html, body
+        {
+            height: 100%;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            height: 100%;
+            max-height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="<%=mBodyClass%>">
+    <form id="form1" runat="server">
+    <asp:Panel ID="pnlHeader" runat="server" CssClass="PageHeader" EnableViewState="false">
+        <cms:PageTitle ID="titleElem" ShortID="t" runat="server" />
+    </asp:Panel>
+    <div class="MainExampleContainer">
+        <div class="ExampleOuter Left">
+            <div class="ExampleTitle">
+                <asp:ImageButton ID="btnRunAll" runat="server" EnableViewState="false" OnClick="btnRunAll_Click"
+                    CssClass="ExampleMassActionBtn" ToolTip="Run all" />
+                <asp:Label ID="lblCreate" runat="server" EnableViewState="false" />
+            </div>
+            <div class="ExampleInner">
+                <asp:Label runat="server" ID="lblCreateInfo" EnableViewState="false" CssClass="InfoLabel" />
+                <asp:ContentPlaceHolder ID="plcLeftContainer" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="ExampleOuter Right">
+            <div class="ExampleTitle">
+                <asp:ImageButton ID="btnCleanAll" runat="server" EnableViewState="false" OnClick="btnCleanAll_Click"
+                    CssClass="ExampleMassActionBtn" ToolTip="Cleanup all" />
+                <asp:Label ID="lblClean" runat="server" EnableViewState="false" />
+            </div>
+            <div class="ExampleInner">
+                <asp:Label runat="server" ID="lblCleanInfo" EnableViewState="false" CssClass="InfoLabel" />
+                <asp:ContentPlaceHolder ID="plcRightContainer" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div class="ExampleCodeOuter">
+        <asp:Label ID="lblCode" runat="server" CssClass="ExampleTitle" Text="Code" EnableViewState="false" />
+        <div class="ExampleCodeInner">
+            <cms:CMSUpdatePanel ID="pnlUpdateCode" runat="server" RenderMode="Inline" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <cms:ExtendedTextArea runat="server" ID="txtCode" EditorMode="Advanced" Language="CMSSharp"
+                        Height="165px" ReadOnly="true" />
+                </ContentTemplate>
+            </cms:CMSUpdatePanel>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

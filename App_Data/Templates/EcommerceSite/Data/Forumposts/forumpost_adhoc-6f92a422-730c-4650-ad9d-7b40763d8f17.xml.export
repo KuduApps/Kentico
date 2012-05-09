@@ -1,0 +1,63 @@
+﻿<forumpost_adhoc-6f92a422-730c-4650-ad9d-7b40763d8f17 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>34</PostId>
+      <PostForumID>12</PostForumID>
+      <PostIDPath>/00000034</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>How do I?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Peter</PostUserName>
+      <PostUserMail>peter@localhost.local</PostUserMail>
+      <PostText>I've purchased this phone and I need help. How do I erase standard themes, pictures, videos? They are somehow locked, aren't they?</PostText>
+      <PostTime>2008-03-05T19:23:39.03+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:24:47.48+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>2f608e92-f60d-4588-b56f-c007b2e6b675</PostGUID>
+      <PostLastModified>2009-01-09T17:02:15.473+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2009-01-09T17:02:15.473+01:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:24:47.48+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>35</PostId>
+      <PostForumID>12</PostForumID>
+      <PostParentID>34</PostParentID>
+      <PostIDPath>/00000034/00000035</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:How do I?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Yes, files are locked. You need to connect phone using USB cable and use original Motorola software to delete these files.</PostText>
+      <PostTime>2008-03-05T19:24:47.48+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>b23972bf-d509-4158-9cc9-6ca7c10a8262</PostGUID>
+      <PostLastModified>2008-11-05T14:05:30.65+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-11-05T14:05:30.65+01:00</PostLastEdit>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-6f92a422-730c-4650-ad9d-7b40763d8f17>

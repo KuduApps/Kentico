@@ -1,0 +1,55 @@
+﻿<forumpost_adhoc-44bd948f-f206-4240-bcb5-5fb07c843644 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>32</PostId>
+      <PostForumID>11</PostForumID>
+      <PostIDPath>/00000032</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>GPS software</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>John</PostUserName>
+      <PostUserMail>john@localhost.local</PostUserMail>
+      <PostText>Is it possible to use TomTom navigation software?</PostText>
+      <PostTime>2008-03-05T19:20:11.22+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:20:49.44+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>f6e76f39-d786-4f22-9753-d1e94757f1ba</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.937+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:20:49.44+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>33</PostId>
+      <PostForumID>11</PostForumID>
+      <PostParentID>32</PostParentID>
+      <PostIDPath>/00000032/00000033</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:GPS software</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Yes, of course. The latest version of TomTom is fully compatible.</PostText>
+      <PostTime>2008-03-05T19:20:49.44+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>fe3d1c14-1b90-46a1-8884-cf1955605886</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.953+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-44bd948f-f206-4240-bcb5-5fb07c843644>

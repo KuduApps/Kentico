@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" CodeBehind="~/App_Code/CMSPages/GetResource.ashx.cs" Class="ResourceHandler" %>

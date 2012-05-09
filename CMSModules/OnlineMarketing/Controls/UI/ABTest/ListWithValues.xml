@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ABTestID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditAbTest) {window.EditAbTest({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="ABTestDisplayName" caption="$abtesting.testname$" wrap="false" width="100%">
+      <filter type="text" size="100" />
+    </column>
+    <column source="ABTestOriginalPage" caption="$abtesting.originalpage$" wrap="false">
+      <filter type="text" size="450" />
+    </column>
+    <column source="ABTestConversions" caption="$abtesting.conversionscount$" wrap="false" />
+    <column source="HitsValue" caption="$abtesting.totalconversionvalue$" wrap="false" />
+    <column source="ABTestOpenFrom" caption="$abtesting.start$" wrap="false" />
+    <column source="ABTestOpenTo" caption="$abtesting.end$" wrap="false" />
+    <column source="ABTestCulture" caption="$general.culture$" wrap="false" />
+    <column source="ABTestID" externalsourcename="ABTestStatus" caption="$general.status$" wrap="false"/>
+  </columns>
+  <objecttype name="om.abtestlist" columns="ABTestDisplayName,ABTestID,ABTestCulture,ABTestOriginalPage,ABTestOpenFrom,ABTestOpenTo,ABTestEnabled,ABTestConversions,ABTestSiteID,HitsValue" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
+

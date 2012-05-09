@@ -1,0 +1,29 @@
+﻿<newsletter_newsletter version="6.0">
+  <NewDataSet>
+    <newsletter_newsletter>
+      <NewsletterID>106</NewsletterID>
+      <NewsletterDisplayName>Corporate Newsletter</NewsletterDisplayName>
+      <NewsletterName>CorporateNewsletter</NewsletterName>
+      <NewsletterType>T</NewsletterType>
+      <NewsletterSubscriptionTemplateID>197</NewsletterSubscriptionTemplateID>
+      <NewsletterUnsubscriptionTemplateID>198</NewsletterUnsubscriptionTemplateID>
+      <NewsletterSenderName>Company Name</NewsletterSenderName>
+      <NewsletterSenderEmail>sender@localhost.local</NewsletterSenderEmail>
+      <NewsletterTemplateID>196</NewsletterTemplateID>
+      <NewsletterSiteID>110</NewsletterSiteID>
+      <NewsletterGUID>6cb33bf8-8968-4cea-ad1a-41578f4486bd</NewsletterGUID>
+      <NewsletterUnsubscribeUrl>~/SpecialPages/Unsubscribe/Newsletter.aspx</NewsletterUnsubscribeUrl>
+      <NewsletterBaseUrl></NewsletterBaseUrl>
+      <NewsletterLastModified>2011-09-22T08:39:43.473+02:00</NewsletterLastModified>
+      <NewsletterUseEmailQueue>false</NewsletterUseEmailQueue>
+      <NewsletterEnableOptIn>true</NewsletterEnableOptIn>
+      <NewsletterOptInTemplateID>212</NewsletterOptInTemplateID>
+      <NewsletterSendOptInConfirmation>true</NewsletterSendOptInConfirmation>
+      <NewsletterOptInApprovalURL>~/SpecialPages/Newsletter-approval.aspx</NewsletterOptInApprovalURL>
+      <NewsletterTrackOpenEmails>false</NewsletterTrackOpenEmails>
+      <NewsletterTrackClickedLinks>false</NewsletterTrackClickedLinks>
+      <NewsletterDraftEmails></NewsletterDraftEmails>
+      <NewsletterLogActivity>true</NewsletterLogActivity>
+    </newsletter_newsletter>
+  </NewDataSet>
+</newsletter_newsletter>

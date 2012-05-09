@@ -1,0 +1,611 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head> 
+   <title>Methods in transformations</title> 
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta name="generator" content="Help &amp; Manual" /> 
+   <meta name="keywords" content="" />
+   <meta name="description" content="Methods in transformations" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" /> 
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+   
+   	.breadhead {
+	margin: 0;
+	padding-right: 5px;
+	}
+   
+   
+</style>
+<![endif]-->
+   
+<script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 6.0 Context Help - Methods in transformations".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("General &gt; Methods in transformations /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20newedit_transformation_methods%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-105987-4']);
+  _gaq.push(['_setDomainName', '.kentico.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>        
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?newedit_transformation_methods.htm"; }
+  else { parent.quicksync('a4.8'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 6.0 Context Help</span><br />
+<p class="p_Heading1"><span class="f_Heading1">Methods in transformations</span></p>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        General:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <p class="p_Heading1"><span class="f_Heading1">Methods in transformations</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="metadata_editor.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="ui_data_export.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <p class="p_Heading1"><span class="f_Heading1">Methods in transformations</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="metadata_editor.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="ui_data_export.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:support@kentico.com?subject=Documentation%20feedback&body=Ref%20ID:%20newedit_transformation_methods%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+<div id="autoTocWrapper"></div>
+</div> 
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p>The following expressions can be used in transformation code:</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Community and membership</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAge(object dateOfBirth, string unknownAge)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAge(Eval("UserDateOfBirth"),"Unknown age") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns age according to the date of birth given in the first parameter. If the date of birth is not available, the method returns the string specified in the second parameter. </td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetGender(object genderObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetGender(Eval("UserGender")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns gender of the currently transformed user based on value from the gender field specified in the parameter. If no gender is found, <span style="font-style: italic;">N/A</span> is returned.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetGroupAvatarImage(int maxSideSize, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetGroupAvatarImage(200, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar contained in the<span style="font-style: italic;"> AvatarGuid</span> field of the currently transformed group, with maximum side size specified in the first parameter. The second parameter specifies value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetGroupAvatarImage(object avatarID, int maxSideSize, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetGroupAvatarImage(Eval("GroupAvatarID"), 200, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar with the identifier specified in the first parameter, with maximum side size specified in the second parameter. The third parameter specifies value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetGroupAvatarImage(object avatarID, int maxSideSize, int width, int height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetGroupAvatarImage(Eval("GroupAvatarID"), 200, 150, 150, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar with the identifier specified in the first parameter, with maximum side size specified in the second parameter and maximum width and height specified in the third and fourth parameter. The fifth parameter specifies value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetGroupProfileUrl(object groupNameObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetGroupProfileUrl(Eval("GroupName") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the given group's profile.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetMemberProfileUrl(object memberNameObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetMemberProfileUrl(Eval("UserName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the given user's profile.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserAvatarImage(int maxSideSize, string alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserAvatarImage(200, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar contained in the<span style="font-style: italic;"> AvatarGuid</span> field of the currently transformed user, with maximum side size specified in the first parameter. The second parameter sets the value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserAvatarImage(object userID, int maxSideSize, int width, int height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserAvatarImage(Eval("UserID"), 200, 150, 150, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns an image tag displaying the current avatar of the user specified by the identifier in the first parameter, with a maximum side size, width and height set through the other parameters. The last parameter sets the value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserAvatarImage(object avatarID, object userID, int maxSideSize, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserAvatarImage(Eval("UserAvatarID"), Eval("UserID"), 200, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar with identifier specified in the first parameter, of the user whose identifier is specified in the second parameter, with maximum side size specified in the third parameter. The last parameter sets the value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserAvatarImage(object avatarID, object userID, int maxSideSize, int width, int height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserAvatarImage(Eval("UserAvatarID"), Eval("UserID"), 200, 150, 150, "Alternate text") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the avatar with identifier specified in the first parameter, of the user whose identifier is specified in the second parameter, with maximum side size specified in the third parameter and maximum width and height specified in the fourth and fifth parameter. The last parameter sets the value of the <span style="font-style: italic;">alt</span> attribute of the image tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserProfileURL(object userNameObj )</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserProfileURL(Eval("UserName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the user profile of the user whose user name is specified in the only parameter of the method.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Data</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">DataItem{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# ((DataRowView)Container.DataItem)["UserName"] %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the DataItem object of the current binding context.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">DataItemIndex{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# DataItemIndex %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the data item index for current transformation container. You have to use <span style="font-style: italic;">Container.DataItemIndex</span> for an index in current binding context.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">DataRowView{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# Container.DataRowView["UserName"] %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the DataRowView of the current record data.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">DisplayIndex{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# DisplayIndex %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the current position of the data item as displayed in a control.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">DocumentCustomData{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# DocumentCustomData["myproperty2"] %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the document custom data value (culture specific). <span style="font-style: italic;">DocumentCustomData</span> is a database column which may contain a custom XML. Using the ["nodename"] notation, you can retrieve data stored in the specified node of the XML.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">EditableItems{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# EditableItems["mainText"] %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the editable region value.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">Eval(string columnName)</span></p>
+<p><span style="font-style: italic;">&lt;%# Eval("NewsTitle") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the value of the given field.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">Eval&lt;ReturnType&gt;(string columnName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBlogCommentsCount(Eval("DocumentID"), Eval&lt;string&gt;("NodeAliasPath")) %&gt;</span></p>
+<p>The <span style="font-style: italic;">Eval</span> method described above returns a value of the <span style="font-style: italic;">object</span> data type by default. This method provides the option to return a value of the data type specified within the angle brackets.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Eval(string columnName, bool encode)</span></p>
+<p><span style="font-style: italic;">&lt;%# Eval("NewsTitle", true) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the value of the given field. If the second parameter is true, the value will be HTML encoded.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">EvalCDATA(string columnName)</span></p>
+<p><span style="font-style: italic;">&lt;%# EvalCDATA("FieldName") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the value of the given field, escapes all occurrences of the ]]&gt; sequence in the returned string and wraps the whole string in the &lt;![CDATA["wrapped text"]]&gt; enclosure. More information can be found in <a href="%3CHELP_LOCATION%3Edevguide/syndication_transformations.htm" target="_blank" class="weblink">Developer's Guide -&gt; Modules -&gt; Syndication -&gt; Transformations</a>.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">EvalCDATA( string columnName, bool encapsulate )</span></p>
+<p><span style="font-style: italic;">&lt;%# EvalCDATA("FieldName", true) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>If the second parameter is true, the method returns the value of the given field, escapes all occurrences of the ]]&gt; sequence in the returned string and wraps the whole string in the &lt;![CDATA["wrapped text"]]&gt; enclosure. If the second parameter is false, the value will be returned, escaping will be performed, but the wrapping will not be performed. More information can be found in <a href="%3CHELP_LOCATION%3Edevguide/syndication_transformations.htm" target="_blank" class="weblink">Developer's Guide -&gt; Modules -&gt; Syndication -&gt; Transformations</a>.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetEditableValue(string controlId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetEditableValue("mainText") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets text entered in the specified editable region. The functionality is analogical to <span style="font-style: italic;">EditableItems{get;}</span>.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">NodeCustomData{get;}</span></p>
+<p><span style="font-style: italic;">&lt;%# NodeCustomData["myproperty1"] %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Similar to <span style="font-style: italic;">DocumentCustomData{get;}</span>, with the difference that this method gets the node custom data value from the <span style="font-style: italic;">NodeCustomData</span> column of the record in the <span style="font-style: italic;">CMS_Tree</span> database table, which is common for all cultural versions of the transformed object.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Date &amp; time</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">FormatDate(object dateTime)</span></p>
+<p><span style="font-style: italic;">&lt;%# FormatDateTime(DateTime.Now) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Transforms the date-time specified in the parameter to date only (without time), while the date is formatted according to the current culture.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">FormatDateTime(object dateTime, string format)</span></p>
+<p><span style="font-style: italic;">&lt;%# FormatDateTime(DateTime.Now, "MM/dd/yyyy HH:mm") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Formats the date-time specified in the first parameter according to the format specified in the second parameter. If no format is specified, the date and time is formatted according to the current culture.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetCustomDateTime(object dateTime, string timeZoneName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetCustomDateTime(DateTime.Now, "GreenwichMeanTime") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the date-time specified in the first parameter converted to the time zone specified in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDate(string dateTimeField)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDate("NewsReleaseDate") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns date from the specified date-time field.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDateTime(string dateTimeField)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDateTime("NewsReleaseDate") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the date-time value from the specified field. </td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDateTime(string dateTimeField, string formattingString)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDateTime("NewsReleaseDate", "MM/dd/yyyy HH:mm") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns formatted date-time value from the specified date-time field in the given format.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetSiteDateTime(object dateTime)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetSiteDateTime(Eval("NewsReleaseDate")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the provided date-time converted to the current site's time zone.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserDateTime(object dateTime)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserDateTime(Eval("NewsReleaseDate")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the provided date-time converted to the current user's time zone.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Document links and URLs</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAbsoluteUrl(string relativeUrl, int siteId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAbsoluteUrl("~/Home.aspx", Eval&lt;int&gt;("NodeSiteID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Converts the provided relative URL to an absolute URL with the domain name of site specified by the identifier provided in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAbsoluteUrl(string relativeUrl, object siteNameObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAbsoluteUrl("~/Home.aspx", Eval("SiteName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Converts the provided relative URL to an absolute URL with the domain name of the site whose name is provided in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAttachmentIconUrl(object attachmentExtension, string iconSet)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAttachmentIconUrl(Eval("AttachmentExtension"), "List") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the file type icon according to the specified extension. The second parameter is the name of the icon-set sub-folder where the icons are stored.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAttachmentUrl(string attachmentFileName, string nodeAliasPath)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAttachmentUrl(Eval&lt;string&gt;("AttachmentName"), Eval&lt;string&gt;("NodeAliasPath")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the attachment with a name specified in the first parameter of the document with <span style="font-style: italic;">nodeAliasPath</span> specified in the second parameter. This method returns the same URL as the <span style="font-style: italic;">GetFileUrl </span>method, but needn't load the whole document, which results in better performance. </td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBlogCommentUrl(object documentIdObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBlogCommentUrl(Eval("DocumentID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the blog post where the specified blog comment was added, based on the provided document identifier.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDocumentLink()</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDocumentLink() %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of a link pointing to the currently rendered document. The document name is encoded by default.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDocumentLink(bool encodeName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDocumentLink(false) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of a link pointing to the currently rendered document. If the second parameter is set to false, the method does not encode the document name.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDocumentUrl()</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDocumentUrl() %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the currently rendered document.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDocumentUrl(object nodeGuidColumn, object nodeAlias)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDocumentUrl(Eval("NodeGUID"), Eval("NodeAlias")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns permanent URL (with NodeGUID in querystring) of the specified document. The document is specified by its node GUID in the first parameter and its node alias in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetFileIconUrl(object attachmentGuidColumn)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetFileIconUrl("FileAttachment") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the file type icon according to the extension of the file stored in the specified column.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetFileIconUrl(object attachmentGuidColumn, string iconSet)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetFileIconUrl("FileAttachment", "List") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the file type icon according to the extension of the file stored in the specified column. The second parameter is the name of the icon-set sub-folder where the icons are stored.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetFileUrl(object attachmentGuidColumn)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetFileUrl("ProductPhoto") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the file specified by the attachment GUID column of the given name.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetFileUrl(object attachmentFileName, object attachmentDocumentId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetFileUrl(Eval("AttachmentFileName"), Eval("AttachmentDocumentID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the attachment with the name specified in the first parameter of the document with identifier specified in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetForumPostUrl(object postIdPath, object forumId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetForumPostUrl(Eval("PostIDPath"), Eval("ForumID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the forum post specified by the path in the first parameter, from the forum specified by the identifier in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetMediaFileUrl(object fileGUID, object fileName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetMediaFileUrl(Eval("FileGUID") ,Eval("FileName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the specified media file. The media file is specified by the file GUID in the first parameter and its name in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetMessageBoardUrl(object documentIdObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetMessageBoardUrl(Eval("BoardDocumentID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the document where the specified message board is placed, based on the document identifier provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetProductUrl(object skuGUID, object skuName, object siteName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetProductUrlForFeed(Eval("SKUGUID"), Eval("SKUName"), Eval("SiteName") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the product specified by the GUID in the first parameter, SKU name in the second parameter and site name in the last parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUserAvatarImageUrl(object avatarID, object userID, int maxSideSize, int width, int height)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUserAvatarImageUrl(Eval("UserAvatarID"), Eval("UserID"), 200, 150, 150) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns avatar image URL based on the avatar identifier provided in the first parameter. If the avatar is not defined, returns a gender dependent avatar based on the identifier of the user provided in the second parameter, or a default user avatar if it is defined.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUrl(object aliasPath, object urlPath)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUrl(Eval("NodeAliasPath"), Eval("DocumentUrlPath")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the document specified by its alias path in the first parameter or its URL path specified in the second one.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetUrl(object aliasPath, object urlPath, object siteName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetUrl(Eval("NodeAliasPath"), Eval("DocumentUrlPath"), Eval("SiteName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the specified document similarly as the method above, but from a site specified in the third parameter.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Images</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetEditableImage(string controlId, object maxSideSize, object width, object height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetEditableImage("EditableImage", 200, 200, 200, "Company logo") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns an <span style="font-style: italic;">img</span> tag of the image displayed by the <span style="font-weight: bold;">Editable image</span> web part whose control ID is provided in the first parameter. The second parameter is the maximal side size of the returned <span style="font-style: italic;">img</span> tag in pixels. The third and fourth parameters determine the width and height of the returned image tag. The last parameter specifies the alternative description text of the returned image (the <span style="font-style: italic;">alt</span> attribute).</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetEditableImageUrl(string controlId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetEditableImageUrl("EditableImage") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the URL of the image displayed by the <span style="font-weight: bold;">Editable image</span> web part whose control ID is provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImage(object attachmentGuidColumn)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImage("NewsTeaser") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image whose GUID is stored in the column of the given name.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImage(object attachmentGuidColumn, int maxSideSize)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImage("NewsTeaser", 200) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image whose GUID is stored in the column of the given name. The second parameter is the maximal side size of the returned <span style="font-style: italic;">img</span> tag in pixels.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImage(object attachmentGuidColumn, int width, int height)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImage("NewsTeaser", 200, 100) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image whose GUID is stored in the column of the name specified in the first parameter, with maximal width and height specified in the second and third parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImage(object attachmentGuidColumn, object maxSideSize, object width, object height)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImage("NewsTeaser", 200, 200, 100) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image whose GUID is stored in the column of the name specified in the first parameter, with maximal width and height specified in the second and third parameter and maximal side size specified in the fourth parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImage(object attachmentGuidColumn, object maxSideSize, object width, object height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImage("NewsTeaser", 200, 200, 100, "image") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image specified the same way as in the method above, while the fifth parameter defines value of the returned <span style="font-style: italic;">img </span>tag's <span style="font-style: italic;">alt</span> attribute.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImageByUrl(object imageUrl )</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImageByUrl("~/Images/Image1.aspx") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image specified by its URL.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImageByUrl(object imageUrl, int width, int height)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImageByUrl("~/Images/Image1.aspx", 100, 200) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image specified by its URL, with maximal width and height (in pixels) specified in the second and third parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImageByUrl(object imageUrl, int maxSideSize)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImageByUrl("~/Images/Image1.aspx", 200) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image specified by its URL, with maximal side size (in pixels) specified in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetImageByUrl(object imageUrl, object maxSideSize, object width, object height, object alt)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetImageByUrl("~/Images/Image1.aspx", 200, 100, 200, "image") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns complete HTML code of the image specified by its URL, with maximal side size specified in the second parameter and maximal width and height specified in the third and fourth parameter. The fifth parameter defines the value of the <span style="font-style: italic;">alt</span> attribute of the returned <span style="font-style: italic;">img</span> tag.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">IfImage(object attachmentGuidColumn, object isImage, object notImage)</span></p>
+<p><span style="font-style: italic;">&lt;%# IfImage("NewsTeaser", "It is an image", "It isn't an image") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>If the<span style="font-style: italic;"> </span>column specified in the first parameter contains a GUID of an image, the method returns the value of the first parameter. If it is not an image, it returns the value of the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Microsoft SharePoint</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">SplitSharePointField(string value, int index)</span></p>
+<p><span style="font-style: italic;">&lt;%#</span><span style="font-style: italic;"> SplitSharePointField((string)Eval("ows_FileRef"),1)) </span><span style="font-style: italic;">%&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Helper function for splitting combined fields returned by SharePoint. E.g. <span style="font-style: italic;">ows_LastModified="1;#2009-03-17T10:32:17Z"</span>. The first parameter is the original combined field, the second is the index of the returned part.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetSharePointFileUrl(string value, int index)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetSharePointFileUrl("tester4", SharePointFunctions.SplitSharePointField((string)Eval("ows_FileRef"),1)) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL link to get the specified document or picture from the SharePoint server. The first parameter is the SharePoint server URL, the second one is the path and name of the document to download.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Text</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">EnsureMaximumLineLength(object textObj, int maxLength)</span></p>
+<p><span style="font-style: italic;">&lt;%# EnsureMaximumLineLength("SomeVeryLongStringWithoutAnyBlankSpaces", 20) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Ensures a line break of a long uninterrupted text specified in the first parameter (such as a URL) after the number of characters specified in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">HTMLEncode(string text)</span></p>
+<p><span style="font-style: italic;">&lt;%# HTMLEncode("Sample text &lt;br /&gt;") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Encodes HTML tags in the given text.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">LimitLength(object textObj, int maxLength, string padString)</span></p>
+<p><span style="font-style: italic;">&lt;%# LimitLength("Some example long text", 10 , "...") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Limits text specified in the first parameter to the length specified in the second parameter. The last parameter is the trimming postfix, i.e. the string appended to the end of the shortened string. The trimming postfix is included in the maximal length, i.e. if the "..." postfix is used with maximal length of 100 characters, the returned string will have the first 97 characters of the original string, followed by three dots.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">LimitLength(object textObj, int maxLength, string padString, bool wholeWords)</span></p>
+<p><span style="font-style: italic;">&lt;%# LimitLength("Some example long text", 10 , "...") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The same as the method above, while if the last parameter is <span style="font-style: italic;">true</span>, trimming will not be performed in the middle of a word.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">RemoveDiscussionMacros(object inputText)</span></p>
+<p><span style="font-style: italic;">&lt;%# RemoveDiscussionMacros("[quote]Sample example text[/quote]") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Removes all discussion macros (also referred to as <span style="font-style: italic;">BBCode macros</span>) from the provided text.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">StripTags(object inputText)</span></p>
+<p><span style="font-style: italic;">&lt;%# StripTags("Sample text &lt;br /&gt;") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Removes HTML tags from the provided text.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Smart search</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">SearchResultUrl(bool absolute)</span></p>
+<p><span style="font-style: italic;">&lt;%# SearchResultUrl(true) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the current search result document; the only parameter indicates if the returned URL should be absolute. If false, a relative URL is returned.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">SearchHighlight(string text, string startTag, string endTag)</span></p>
+<p><span style="font-style: italic;">&lt;%# SearchHighlight("some search result text","&lt;span style=\"background-color: #FEFF8F\"&gt;","&lt;/span&gt;") %&gt; </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Wraps the text entered in the first parameter within the tags specified in the other two parameters.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetSearchImageUrl(string noImageUrl, int maxSideSize)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetSearchImageUrl("~/App_Themes/Default/Images/CMSModules/SmartSearch/no_image.gif", 90) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the current search result image; the first parameter specifies URL returned if no image is found, the second one specifies the maximal side size to which the image will be resized.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetSearchValue(string columnName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetSearchValue("DocumentName") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the specified column's value for the current search result.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Syndication (RSS, Atom, XML)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAtomDateTime(object dateTime)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAtomDateTime(Eval("DocumentCreatedWhen")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns date and time for Atom feeds (according to <span style="font-style: italic;">RFC 3339</span>) from the provided <span style="font-style: italic;">DateTime</span> object.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetRSSDateTime(object dateTime)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetRSSDateTime(Eval("DocumentCreatedWhen")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns date and time for RSS feeds (according to <span style="font-style: italic;">RFC 822</span>) from the provided <span style="font-style: italic;">DateTime</span> object.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetProductUrlForFeed(object skuGUID, object skuName, object siteName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetProductUrlForFeed(Eval("SKUGUID"),Eval("SKUName"),Eval("SiteName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the specified product with the <span style="font-style: italic;">feed</span> querystring parameter appended. The product is specified by its SKU GUID in the first parameter and SKU name in the second parameter. The site name provided in the last parameter ensures that correct domain is used in the returned URL.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDocumentUrlForFeed()</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDocumentUrlForFeed() %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>This method is used in transformations of RSS and Atom web parts. It returns URL of the rendered document using the <span style="font-style: italic;">GetDocumentUrl()</span> method and adds the <span style="font-style: italic;">feed=&lt;feed_name&gt;</span> querystring parameter to the URL; the feed name is taken from the <span style="font-style: italic;">Feed name</span> web part property.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="text-decoration: underline;">Please note</span>: as the 'feed' querystring parameter is added when this method is used, please use a different parameter name in the <span style="font-style: italic;">Feed querystring key</span> property of the RSS or Atom web parts in this case.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetForumPostUrlForFeed(object postIdPath, object forumId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetForumPostUrlForFeed(Eval("PostIDPath"), Eval("PostForumID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the forum post specified by its path in the first parameter and the forum identifier specified in the second parameter, with the <span style="font-style: italic;">feed</span> querystring parameter appended.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetMediaFileUrlForFeed(object fileGUID, object fileName)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetMediaFileUrlForFeed(Eval("FileGUID"), Eval("FileName")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the media file specified by its GUID in the first parameter and its file name in the second parameter, with the <span style="font-style: italic;">feed</span> querystring parameter appended.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetMessageBoardUrlForFeed(object documentIdObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetMessageBoardUrlForFeed("DocumentIdObj") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of the message board specified by the identifier of the document where the message board is placed, with the <span style="font-style: italic;">feed</span> querystring parameter appended.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBlogCommentUrlForFeed(object documentIdObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBlogCommentUrlForFeed(Eval("DocumentID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns URL of comments of the blog post specified by its document identifier, with the <span style="font-style: italic;">feed</span> querystring parameter appended.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Other</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetAbsoluteUrl(string relativeUrl)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetAbsoluteUrl("~/Home.aspx") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Converts the provided relative URL to an absolute URL.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBlogCommentsCount(object documentIdObj, string nodeAliasPath)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBlogCommentsCount(Eval("DocumentID"), Eval&lt;string&gt;("NodeAliasPath")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the number of comments of the blog post specified by its document identifier in the first parameter and its node alias path in the second parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBlogCommentsCount(object documentIdObj, string nodeAliasPath, bool includingTrackbacks)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBlogCommentsCount(Eval("DocumentID"), Eval&lt;string&gt;("NodeAliasPath"), true) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Gets the number of comments of the blog post specified by its document identifier in the first parameter and its node alias path in the second parameter. The last parameter indicates if trackback posts should be included in the result.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">IfCompare(object value, object comparableValue, object falseResult, object trueResult)</span></p>
+<p><span style="font-style: italic;">&lt;%# IfCompare(1, 2, "The values are different", "The values are equal") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Compares values of the first and the second parameter. If the parameters are different or are both NULL, the third parameter is returned. If they are equal, the fourth parameter is returned.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">IfEmpty(object value, object emptyResult, object nonEmptyResult)</span></p>
+<p><span style="font-style: italic;">&lt;%# IfEmpty(Eval("ProductPhoto"), "no image", GetImage("ProductPhoto")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Checks for emptiness of the value specified in the first parameter. If it is NULL, the second parameter is returned. If it has some value, the third parameter is returned.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetNotEmpty(object columnsObj)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetNotEmpty("FullName;UserName") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the first <span style="font-style: italic;">nonEmpty</span> column. A list of column names separated by a semicolon should be provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetColumnName(string columns)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetColumnName("column1;column2;column3") %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the name of the first column which is present and has some value. A list of column names separated by a semicolon should be provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetColumnName(string columns, bool allowEmptyColumn)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetColumnName("column1;column2;column3", false) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns the first column which is present. A list of column names separated by a semicolon should be provided in the first parameter. If the second parameter is <span style="font-style: italic;">true</span>, it does not matter if a column is empty or with some value. If <span style="font-style: italic;">false</span>, only column with some value can be returned.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetDateTimeString(object dateTime, bool showTooltip)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetDateTimeString(Eval("EventDate"), true) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns a string representation of date-time with dependence on the current <span style="font-style: italic;">ITimeZone manager</span> time zone settings. If the second parameter is <span style="font-style: italic;">true</span>, the returned string gets wrapped with a tooltip span.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBadgeImage(int badgeId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBadgeImage(Eval&lt;int&gt;("UserBadgeID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns image tag of the badge whose identifier is provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">GetBadgeName(int badgeId)</span></p>
+<p><span style="font-style: italic;">&lt;%# GetBadgeName(Eval&lt;int&gt;("UserBadgeID")) %&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Returns name of the badge whose identifier is provided in the parameter.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Context menus</span></p>
+<p>&nbsp;</p>
+<p>When editing transformations displaying <span style="font-weight: bold;">Users </span>or <span style="font-weight: bold;">Groups</span>, you can enclose the transformation code within one of the following controls, which enables context menus after a right-click on the selected user or group:</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-weight: bold;">Users</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="12" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="705" bgcolor="#d3d3d3" style="width:705px; background-color:#d3d3d3; border: solid 1px #999999;"><p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">usermenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">runat</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="server"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="userMenuElem"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">MenuID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="userContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">Parameter</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">='</span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">&lt;%</span><span style="font-size: 9pt; font-family: 'Courier New';"># Eval("UserID").ToString() </span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">%&gt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">'</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ContextMenuCssClass</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="UserContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New';">... transformation code ...</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;/</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">usermenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 11pt; font-weight: bold;">Groups</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="12" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="705" bgcolor="#d3d3d3" style="width:705px; background-color:#d3d3d3; border: solid 1px #999999;"><p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">groupmenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">runat</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="server"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="groupMenuElem"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">MenuID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="groupContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">Parameter</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">='</span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">&lt;%</span><span style="font-size: 9pt; font-family: 'Courier New';"># Eval("GroupID").ToString() </span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">%&gt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">'</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ContextMenuCssClass</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="UserContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New';">... transformation code ...</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;/</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">groupmenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p>The code above displays the default context menu controls for users or groups. These controls are stored in  <span style="font-weight: bold;">&lt;web project&gt;\CMSAdminControls\ContextMenus</span>:</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">GroupContextMenu.ascx</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 7px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">UserContextMenu.ascx</span></td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p>You can also develop your custom controls for this purpose. In this case, you need to include the <span style="font-weight: bold;">MenuControlPath</span> parameter in the <span style="font-style: italic;">cms:usermenucontainer</span> or <span style="font-style: italic;">cms:groupmenucontainer</span> controls in the transformation and set its value to the path to your control:</p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="820" cellspacing="0" cellpadding="12" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="705" bgcolor="#d3d3d3" style="width:705px; background-color:#d3d3d3; border: solid 1px #999999;"><p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">groupmenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">runat</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="server"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="groupMenuElem"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">MenuID</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="groupContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">Parameter</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">='</span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">&lt;%</span><span style="font-size: 9pt; font-family: 'Courier New';"># Eval("GroupID").ToString() </span><span style="font-size: 9pt; font-family: 'Courier New'; background-color: #ffee62;">%&gt;</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">'</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000;">ContextMenuCssClass</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">="UserContextMenu"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><br>
+<span style="font-size: 9pt; font-family: 'Courier New'; color: #ff0000; background-color: #ffffff;">MenuControlPath</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff; background-color: #ffffff;">="~\CMSAdminControls\ContextMenus\MyGroupContextMenu.ascx"</span><span style="font-size: 9pt; font-family: 'Courier New';"> </span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New';">... transformation code ...</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&lt;/</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">cms</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">:</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #a31515;">groupmenucontainer</span><span style="font-size: 9pt; font-family: 'Courier New'; color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?newedit_transformation_methods.htm" target="_top" title="Right-click to copy the URL of this help topic">
+<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?newedit_transformation_methods.htm</a>
+</p>
+</noscript>
+<script type="text/javascript">
+var autoURL = true;
+if (autoURL) {
+      document.write(getHref("index.html","Help URL:","Right-click to copy the URL of this help topic"));
+      } else {
+             document.write('<p class="help-url"><b>Help URL:&nbsp;</b>');
+             document.write('<a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?newedit_transformation_methods.htm" target="_top" title="Right-click to copy the URL of this help topic"><%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?newedit_transformation_methods.htm</a>');
+             document.write('</p>');
+      }
+</script>
+
+</div></div> 
+</body>
+</html>
+
+
+
+
+

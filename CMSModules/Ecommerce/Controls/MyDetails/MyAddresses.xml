@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <columns>
+    <column source="AddressID" externalsourcename="actions" caption="$Unigrid.Actions$" wrap="false" localize="true" allowsorting="false" />
+    <column source="AddressName" caption="$Unigrid.Customer_Edit_Address.Columns.AddressName$" wrap="false" localize="true" />
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.address" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

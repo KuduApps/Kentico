@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="NodeID;NodeParentID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" onclick="EditItem({0}, {1}); return false;"  />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" onclick="DeleteItem({0}, {1}); return false;" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="documentname" sort="DocumentName" caption="$general.documentname$" wrap="false" width="100%" />
+    <column source="ClassDisplayName" externalsourcename="classdisplayname" caption="$general.documenttype$" wrap="false" maxlength="50" >
+      <tooltip source="ClassDisplayName" externalsourcename="classdisplaynametooltip" width="0" />
+    </column>
+    <column source="DocumentModifiedWhen" externalsourcename="modifiedwhen" caption="$general.modified$" wrap="false">
+      <tooltip source="DocumentModifiedWhen" externalsourcename="modifiedwhentooltip" />
+    </column>
+    <column source="Published" externalsourcename="published" caption="$general.published$" wrap="false" style="text-align: center;" />
+    <column source="DocumentLastVersionNumber" externalsourcename="versionnumber" caption="$general.version$" wrap="false" />
+    <column source="NodeID" externalsourcename="documentculture" allowsorting="false" caption="$general.languages$" wrap="false" style="text-align: center;" />
+  </columns>
+  <options>
+    <key name="ShowSelection" value="true" />
+  </options>
+</grid>

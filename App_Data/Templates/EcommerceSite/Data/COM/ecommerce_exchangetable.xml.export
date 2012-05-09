@@ -1,0 +1,26 @@
+﻿<ecommerce_exchangetable version="6.0">
+  <NewDataSet>
+    <com_exchangetable>
+      <ExchangeTableID>5</ExchangeTableID>
+      <ExchangeTableDisplayName>Sample exchange table</ExchangeTableDisplayName>
+      <ExchangeTableGUID>a386f625-0d35-43bc-957b-257b0138d14f</ExchangeTableGUID>
+      <ExchangeTableLastModified>2011-09-23T10:05:14.92+02:00</ExchangeTableLastModified>
+    </com_exchangetable>
+    <com_currencyexchangerate>
+      <ExchagneRateID>107</ExchagneRateID>
+      <ExchangeRateToCurrencyID>3</ExchangeRateToCurrencyID>
+      <ExchangeRateValue>0.055</ExchangeRateValue>
+      <ExchangeTableID>5</ExchangeTableID>
+      <ExchangeRateGUID>2d5719e9-f26a-48e0-a588-113a04da0bad</ExchangeRateGUID>
+      <ExchangeRateLastModified>2011-09-23T10:05:14.917+02:00</ExchangeRateLastModified>
+    </com_currencyexchangerate>
+    <com_currencyexchangerate>
+      <ExchagneRateID>117</ExchagneRateID>
+      <ExchangeRateToCurrencyID>2</ExchangeRateToCurrencyID>
+      <ExchangeRateValue>1.345</ExchangeRateValue>
+      <ExchangeTableID>5</ExchangeTableID>
+      <ExchangeRateGUID>66595f9c-7ab5-47d7-8332-6e5796a8efce</ExchangeRateGUID>
+      <ExchangeRateLastModified>2011-09-23T10:03:37.747+02:00</ExchangeRateLastModified>
+    </com_currencyexchangerate>
+  </NewDataSet>
+</ecommerce_exchangetable>

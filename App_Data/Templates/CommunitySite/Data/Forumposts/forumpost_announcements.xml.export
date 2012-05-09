@@ -1,0 +1,77 @@
+﻿<forumpost_announcements version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>421</PostId>
+      <PostForumID>107</PostForumID>
+      <PostIDPath>/00000421</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Welcome to our forum</PostSubject>
+      <PostUserID>350</PostUserID>
+      <PostUserName>Jenny</PostUserName>
+      <PostUserMail>jane.oakley@localhost.local</PostUserMail>
+      <PostText>Hi there,
+welcome to the community forum. My name is Jane Oakley and I am one of the founders of this community site. In this forum, you can find discussions on various travelling-related topics. You can discuss your recent or future destinations, ways of travelling, travelling equipment, just anything you would like to know something about or, on the other hand, share your opinion about with others.
+We hope that this forum will become a source of valuable information for you and that it will be a place to that you will always like to return. And one last thing, please read the forum rules and do your best to follow them. It will just make this forum a much better place for all of us.</PostText>
+      <PostTime>2008-10-25T11:32:51.087+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Jenny</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T11:32:51.087+02:00</PostThreadLastPostTime>
+      <PostUserSignature>+ + J3nny + +</PostUserSignature>
+      <PostGUID>52608ba9-6daf-43b7-a30e-f657ab0202b6</PostGUID>
+      <PostLastModified>2011-11-28T23:25:09.427+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsLocked>true</PostIsLocked>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>92</PostViews>
+      <PostLastEdit>2008-10-26T12:12:36.683+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jenny</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T11:32:51.087+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>424</PostId>
+      <PostForumID>107</PostForumID>
+      <PostIDPath>/00000424</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Forum rules</PostSubject>
+      <PostUserID>350</PostUserID>
+      <PostUserName>Jenny</PostUserName>
+      <PostUserMail>jane.oakley@localhost.local</PostUserMail>
+      <PostText>While we don't want you to be bothered by too many restrictions, there are always some golden rules to be followed in order for the forum to fully serve its purpose, so here they are:
+
+1) Read up before asking! There might already be an answer to your question, so please use the Search function before creating new threads.
+
+2) Behave! Profanity and insults will not be tolerated, just as vulgar expressions and all that kind of stuff. Be nice, it's just much much better.
+
+3) Do not spam! No commercial advertising is accepted and will result in a permanent ban! This doesn't apply to personal ads.
+
+4) No warez, cracks, serials or illegally obtained copyrighted content!</PostText>
+      <PostTime>2008-10-25T11:59:09.483+02:00</PostTime>
+      <PostApprovedByUserID>53</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Jenny</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T11:59:09.483+02:00</PostThreadLastPostTime>
+      <PostUserSignature>+ + J3nny + +</PostUserSignature>
+      <PostGUID>e63b7c2c-d977-4210-be0e-426021f2bbe0</PostGUID>
+      <PostLastModified>2008-12-18T16:00:08.567+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsLocked>true</PostIsLocked>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>1</PostStickOrder>
+      <PostViews>274</PostViews>
+      <PostLastEdit>2008-10-26T12:14:22.887+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jenny</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T11:59:09.483+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_announcements>

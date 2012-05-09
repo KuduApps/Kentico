@@ -1,0 +1,16 @@
+﻿<cms_relationshipname version="6.0">
+  <NewDataSet>
+    <cms_relationshipname>
+      <RelationshipNameID>1</RelationshipNameID>
+      <RelationshipDisplayName>is related to</RelationshipDisplayName>
+      <RelationshipName>isrelatedto</RelationshipName>
+      <RelationshipAllowedObjects>;##DOCUMENTS##;</RelationshipAllowedObjects>
+      <RelationshipGUID>7c81f609-34ab-4317-8ec8-3f00eb5f6ba6</RelationshipGUID>
+      <RelationshipLastModified>2008-08-20T13:47:09.153+02:00</RelationshipLastModified>
+    </cms_relationshipname>
+    <cms_relationshipnamesite>
+      <RelationshipNameID>1</RelationshipNameID>
+      <SiteID>2</SiteID>
+    </cms_relationshipnamesite>
+  </NewDataSet>
+</cms_relationshipname>

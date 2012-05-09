@@ -1,0 +1,55 @@
+﻿<forumpost_adhoc-46caf3b0-d252-4c14-b425-ba6330c54156 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>38</PostId>
+      <PostForumID>14</PostForumID>
+      <PostIDPath>/00000038</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Software compatibility</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Jeniffer</PostUserName>
+      <PostUserMail>jeniffer@localhost.local</PostUserMail>
+      <PostText>Is this player supported by Winamp like e.x. iPod?</PostText>
+      <PostTime>2008-03-05T19:29:02.753+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:30:01.59+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>34517034-c866-4cc2-85df-4e61d6268aa7</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.047+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:30:01.59+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>39</PostId>
+      <PostForumID>14</PostForumID>
+      <PostParentID>38</PostParentID>
+      <PostIDPath>/00000038/00000039</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Software compatibility</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Yes, it is. You can manage your songs and playlists by winamp.</PostText>
+      <PostTime>2008-03-05T19:30:01.59+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>333c0d06-2be2-459e-9403-edbabba78656</PostGUID>
+      <PostLastModified>2008-03-14T11:30:20.06+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-46caf3b0-d252-4c14-b425-ba6330c54156>

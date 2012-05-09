@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="NodeID;NodeChildNodesCount">
+    <action name="select" commandargument="NodeID" externalsourcename="select" caption="$general.select$" icon="next.png" />
+    <action name="showsubdocuments" externalsourcename="showsubdocuments" caption="$synchronization.showsubdocuments$" icon="subdocument.png" />
+  </actions>
+  <columns>
+    <column source="##ALL##" sort="documentname" externalsourcename="documentname" caption="$general.documentname$" wrap="false" width="100%" >
+      <tooltip source="##ALL##" externalsourcename="documentnametooltip" width="0" encode="false" />
+    </column>
+    <column source="ClassDisplayName" caption="$general.documenttype$" wrap="false" maxlength="50" >
+      <tooltip source="ClassDisplayName" width="0" />
+    </column>
+    <column source="DocumentModifiedWhen" caption="$synchronization.lastmodified$" wrap="false" />
+  </columns>
+  <pager>
+    <key name="PageSizeOptions" value="10,15,25,50,100,##ALL##" />
+    <key name="DefaultPageSize" value="15" />
+  </pager>
+  <options>
+  </options>
+</grid>

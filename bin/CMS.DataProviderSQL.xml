@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.DataProviderSQL</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.DataProviderSQL.DataConnection">
+            <summary>
+            Represents SQL Server data connection.
+            </summary>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="connectionString">Connection string</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.PrepareCommand(System.String,CMS.SettingsProvider.QueryDataParameters,CMS.SettingsProvider.QueryTypeEnum,System.Boolean,System.Boolean@,System.Boolean@)">
+            <summary>
+            Prepares the SQL command for the query.
+            </summary>
+            <param name="queryText">Query or stored procedure to be run</param>
+            <param name="queryParams">Query parameters</param>
+            <param name="queryType">Indicates it query is a SQL query or stored procedure</param>
+            <param name="allowTransaction">Allow transaction for the command</param>
+            <param name="closeConnection">Close connection</param>
+            <param name="commitTransaction">Commit transaction</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.ExecuteQuery(System.String,CMS.SettingsProvider.QueryDataParameters,CMS.SettingsProvider.QueryTypeEnum,System.Boolean)">
+            <summary>
+            Returns result of the query.
+            </summary>
+            <param name="queryText">Query or stored procedure to be run</param>
+            <param name="queryParams">Query parameters</param>
+            <param name="queryType">Indicates it query is a SQL query or stored procedure</param>
+            <param name="requiresTransaction">If true, the query should run within transaction</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.ExecuteNonQuery(System.String,CMS.SettingsProvider.QueryDataParameters,CMS.SettingsProvider.QueryTypeEnum,System.Boolean)">
+            <summary>
+            Returns result of the query.
+            </summary>
+            <param name="queryText">Query or stored procedure to be run</param>
+            <param name="queryParams">Query parameters</param>
+            <param name="queryType">Indicates it query is a SQL query or stored procedure</param>
+            <param name="requiresTransaction">If true, the query should run within transaction</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.ExecuteReader(System.String,CMS.SettingsProvider.QueryDataParameters,CMS.SettingsProvider.QueryTypeEnum,System.Data.CommandBehavior)">
+            <summary>
+            Returns result of the query as a Data reader. Keeps the connection open.
+            </summary>
+            <param name="queryText">Query or stored procedure to be run</param>
+            <param name="queryParams">Query parameters</param>
+            <param name="queryType">Indicates it query is a SQL query or stored procedure</param>
+            <param name="commandBehavior">Command behavior</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.ExecuteScalar(System.String,CMS.SettingsProvider.QueryDataParameters,CMS.SettingsProvider.QueryTypeEnum,System.Boolean)">
+            <summary>
+            Returns a single value result of the query.
+            </summary>
+            <param name="queryText">Query or stored procedure to be run</param>
+            <param name="queryParams">Query parameters</param>
+            <param name="queryType">Indicates it query is a SQL query or stored procedure</param>
+            <param name="requiresTransaction">If true, the query should run within transaction</param>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataConnection.GetXmlSchema(System.String)">
+            <summary>
+            Returns XML schema for specified table.
+            </summary>
+            <param name="tableName">Name of a table to get xml schema for</param>
+        </member>
+        <member name="P:CMS.DataProviderSQL.DataConnection.NativeDBConnection">
+            <summary>
+            Native connection object. It depends on provider type.
+            </summary>
+        </member>
+        <member name="T:CMS.DataProviderSQL.DataProvider">
+            <summary>
+            Data provider class.
+            </summary>
+        </member>
+        <member name="M:CMS.DataProviderSQL.DataProvider.GetNewConnection(System.String)">
+            <summary>
+            Returns new data connection.
+            </summary>
+            <param name="connectionString">Connection string</param>
+        </member>
+        <member name="T:CMS.DataProviderSQL.SqlGenerator">
+            <summary>
+            Sql generator.
+            </summary>
+        </member>
+        <member name="T:CMS.DataProviderSQL.TableManager">
+            <summary>
+            Ensures management of database table and table column.
+            </summary>
+        </member>
+    </members>
+</doc>

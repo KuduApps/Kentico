@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="delete" commandargument="SubscriptionID" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$"/>
+  </actions>
+  <columns>
+    <column source="SubscriptionEmail" caption="$general.email$" wrap="false" allowsorting="false">
+      <filter type="text" />
+    </column>
+    <column source="##ALL##" externalsourcename="displayname"  caption="$board.subscriptions.messboard$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+    <key name="ShowDirectPageControl" value="false" />
+    <key name="DefaultPageSize" value="10" />
+  </pager>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

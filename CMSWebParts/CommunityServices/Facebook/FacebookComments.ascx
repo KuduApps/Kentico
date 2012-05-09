@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="~/CMSWebParts/CommunityServices/Facebook/FacebookComments.ascx.cs" Inherits="CMSWebParts_CommunityServices_Facebook_FacebookComments" %>
+<asp:Literal runat="server" ID="ltlComments" EnableViewState="false" />

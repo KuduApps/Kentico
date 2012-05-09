@@ -1,0 +1,1440 @@
+﻿/* Dialogs */
+.DialogMainBlock
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.DialogContent
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.DialogPageBody .PageTitleHeader, .WidgetTabsPageHeader .PageTitleHeader
+{
+    background: #CCCCCC !important;
+    background-image: url(./Images/Dialogs/DialogHeader.png) !important;
+}
+
+.LiveSiteDialog .SelectorBorder
+{
+    background-image: url(./Images/Dialogs/Resizer.png) !important;
+}
+
+.DialogPageBody .PageFooterLine
+{
+    background: #CCCCCC !important;
+    border-top: 1px solid #999 !important;
+}
+
+.DialogPageBody .UniFlatSearchPanel
+{
+    background: #CCCCCC !important;
+    background-image: url(./Images/Dialogs/TabDialogHeader.png) !important;
+}
+
+.DialogLeftBlock
+{
+    height: 100%;
+    width: 236px;
+    float: left;
+    overflow: hidden;
+}
+
+.DialogRightBlock
+{
+    height: 100%;
+    margin-left: 243px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Safari .DialogRightBlock, .Opera .DialogRightBlock, .Gecko .DialogRightBlock
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.DialogCompleteBlock
+{
+    width: 100%;
+    height: 100%;
+}
+
+.DialogWebContent
+{
+    height: 65px;
+    padding: 10px 10px 0px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+}
+
+.DialogWebProperties
+{
+    border-top: 1px solid #A4B2BC;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.DialogWebPropertiesTiny
+{
+    top: 60px;
+}
+
+.DialogWebUrlMaxBox
+{
+    width: 800px;
+}
+
+.DialogLinkWebProperties
+{
+    border-top: 1px solid #A4B2BC;
+    position: absolute;
+    top: 107px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.DialogProperties
+{
+    background-color: #fff;
+    float: left;
+    height: 296px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10;
+}
+
+.DialogPropertiesFullSize
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DialogPropertiesFullSize input, .DialogProperties input
+{
+    font-size: 11px;
+}
+
+.DialogPropertiesPreview
+{
+    position: absolute;
+    overflow: auto;
+    border: 1px solid #A4B2BC;
+    padding: 5px;
+    display: none;
+}
+
+.DialogItemUrlBox
+{
+    width: 94%;
+    float: left;
+}
+
+.DialogItemUrlRefresh
+{
+    padding: 3px 3px 0px;
+}
+
+.DialogResizerH
+{
+    background: url(./Images/MediaLibrary/FrameResizer/Horizontal/ResizerButton.gif) no-repeat center;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 33px;
+    font-size: 33px;
+    width: 10px;
+    height: 33px;
+    left: 233px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 1000;
+    clear: both;
+}
+
+.IE6 .DialogResizerH
+{
+    max-height: 5px;
+    background-attachment: fixed;
+}
+
+.DialogResizerArrowH
+{
+    background: url(./Images/MediaLibrary/FrameResizer/Horizontal/Minimize.gif) no-repeat center;
+    width: 10px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 33px;
+}
+
+.DialogResizerVLine, .HeaderSeparator
+{
+    height: 6px;
+    font-size: 0;
+    border-top: 1px solid #999;
+    background-image: url(./Images/MediaLibrary/FrameResizer/Vertical/Resizer.gif);
+    background-repeat: repeat-x;
+    background-position: center;
+    width: 100%;
+}
+
+.DialogResizerV
+{
+    background: url(./Images/MediaLibrary/FrameResizer/Vertical/ResizerButton.gif) no-repeat center;
+    height: 6px;
+    width: 33px;
+    font-size: 4px;
+    line-height: 4px;
+    z-index: 1000;
+    clear: both;
+    float: right;
+}
+
+.DialogResizerArrowV
+{
+    background: url(./Images/MediaLibrary/FrameResizer/Vertical/Maximize.gif) no-repeat center;
+    width: 33px;
+    height: 6px;
+    line-height: 4px;
+    font-size: 4px;
+    cursor: pointer;
+}
+
+.DialogViewContent
+{
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.DialogElementHidden
+{
+    display: none;
+}
+
+.DialogViewContentTop
+{
+    padding: 10px;
+    width: 97%;
+    height: 30px;
+}
+
+.DialogViewContentBottom
+{
+    height: 100px;
+    padding: 0px 10px 10px;
+}
+
+.DialogLabel
+{
+    white-space: nowrap;
+}
+
+.DialogMediaLibraryBlock
+{
+    height: 80px;
+    padding: 10px;
+    border-bottom: 1px solid #ACB8C0;
+}
+
+.DialogMediaLibraryBlockMediaLibraryUI
+{
+    height: 10px;
+    padding: 5px 10px 16px;
+    background-color: #EDDDC9;
+}
+
+.DialogMediaLibraryBlock select
+{
+    width: 165px;
+}
+
+.DialogSiteBlock
+{
+    height: 25px;
+    padding: 10px;
+    border-bottom: 1px solid #A4B2BC;
+}
+
+.DialogSiteDropdown
+{
+    width: 185px;
+}
+
+.DialogSearchBox
+{
+    height: 26px;
+    float: none;
+}
+
+.DialogSearch
+{
+    display: table-cell;
+    height: 26px;
+    vertical-align: middle;
+    padding-right: 3px;
+    float: left;
+}
+
+.DialogSearchLabel
+{
+    display: table-cell;
+    height: 26px;
+    padding-right: 3px;
+    padding-top: 4px;
+    float: left;
+}
+
+.DialogListItem
+{
+    cursor: pointer;
+    overflow: hidden;
+    width: 200px;
+}
+
+.DialogListItemUnselectable
+{
+    cursor: default;
+    display: inline;
+}
+
+.DialogListItemNameRow
+{
+    white-space: nowrap;
+}
+
+.DialogSelectedItem
+{
+    background-color: #FFF8CD;
+}
+
+.DialogTileItem
+{
+    border: solid 1px #ACB8C0;
+    width: 210px;
+    height: 62px;
+    background-color: #FFF;
+}
+
+.DialogTileItemShadow
+{
+    width: 216px;
+    height: 68px;
+    float: left;
+    margin: 0px 11px 11px 0px;
+    background-image: url(./Images/MediaLibrary/tiles_shadow.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.DialogTileItemBox
+{
+    width: 210px;
+    height: 62px;
+}
+
+.DialogThumbnailItem
+{
+    border: solid 1px #ACB8C0;
+    width: 170px;
+    height: 136px;
+    background-color: #FFF;
+}
+
+.DialogThumbnailItemShadow
+{
+    width: 176px;
+    height: 142px;
+    margin: 0px 11px 11px 0px;
+    float: left;
+    background-image: url(./Images/MediaLibrary/thumbs_shadow.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.DialogThumbnailItemBox
+{
+    width: 170px;
+    height: 136px;
+}
+
+.DialogThumbnailItemInfo
+{
+    margin-left: 4px;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2px 0px 2px 0px;
+    text-align: center;
+    white-space: nowrap;
+    width: 160px;
+}
+
+.DialogTileItem td
+{
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.DialogTileSeparator
+{
+    background-color: #FFFFFF;
+    float: right;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+}
+
+.DialogTileItemActions
+{
+    margin-top: -21px;
+    text-align: right;
+    padding: 0px 1px 1px;
+    float: right;
+}
+
+.DialogTileItemInfo
+{
+    font-size: 10px;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px;
+    width: 132px;
+}
+
+.DialogTileTitleBold
+{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.DialogTileItemImage
+{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    padding: 2px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+}
+
+.TilesMultipleSelection
+{
+    position: absolute;
+    bottom: 9px;
+    left: 5px;
+}
+
+.IE6 .TilesMultipleSelection, .IE7 .TilesMultipleSelection, .IE8 .TilesMultipleSelection
+{
+    left: 1px;
+    bottom: 6px;
+}
+
+.ThumbMultipleSelection
+{
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+}
+
+.IE6 .ThumbMultipleSelection, .IE7 .ThumbMultipleSelection, .IE8 .ThumbMultipleSelection
+{
+    bottom: 8px;
+}
+
+.DialogTileItemImageContainer
+{
+    height: 52px;
+    width: 52px;
+    margin: 4px 5px 0px 4px;
+    float: left;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.DialogThumbItemImageContainer
+{
+    height: 95px;
+    width: 100%;
+    margin: 4px 0px 0px 0px;
+}
+
+.DialogViewArea
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.DialogTilesClear
+{
+    clear: both;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.DialogThumbnailItemImage
+{
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 170px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.DialogThumbnailItemImage td
+{
+    width: 170px;
+    height: 95px;
+}
+
+.DialogTileItemInfoGreyText
+{
+    color: #9B9B9B;
+}
+
+.DialogThumbnailActions
+{
+    float: right;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 0 4px;
+    margin-top: -26px;
+}
+
+.IE6 .DialogThumbnailActions, .IE7 .DialogThumbnailActions
+{
+    padding: 0 1px;
+    margin-top: -21px;
+}
+
+.IE8 .DialogThumbnailActions
+{
+    padding: 0 1px;
+    margin-top: -25px;
+}
+
+.DialogThumbnailUploadAction
+{
+    float: right;
+    padding-top: 1px;
+}
+
+.DialogMassActionsContent
+{
+    margin-top: 10px;
+}
+
+.IE6 .DialogMassActionsContent
+{
+    margin-top: 0px;
+}
+
+.DialogMassActionsDropdown
+{
+    padding: 0px 5px;
+    display: inline;
+}
+
+.DialogMassActionsDropdown Input
+{
+    margin: 0px 5px;
+}
+
+.DialogTreeArea
+{
+    float: left;
+    width: 236px;
+}
+
+.DialogTreeArea .ContentTree
+{
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.DialogTreeAreaSeparator
+{
+    width: 7px;
+    height: 100%;
+    float: left;
+    background-color: #E2EEFB;
+    background: url(./Images/MediaLibrary/FrameResizer/Horizontal/Resizer.gif) repeat-y top left;
+}
+
+.DialogMediaLibraryTreeArea
+{
+    overflow: auto;
+}
+
+.DialogMediaLibraryTreeArea .ContentTree
+{
+    padding-top: 5px;
+    width: 236px;
+}
+
+.DialogMediaLibraryTreeAreaSep, .DialogMediaLibraryTreeAreaSep DIV
+{
+    display: inline;
+}
+
+.DialogMediaLibraryTreeAreaSep .InfoLabel
+{
+    padding: 5px 12px 0px;
+}
+
+.DialogErrorArea
+{
+    padding: 10px 10px 0px;
+}
+
+.DialogListingInfo
+{
+    padding: 10px 10px 0px 10px;
+}
+
+.DialogListingInfo .ListingPath
+{
+    font-weight: bold;
+}
+
+.DialogListingInfo .ListingClose
+{
+    text-decoration: underline;
+}
+
+.DialogInfoArea
+{
+    padding: 10px;
+}
+
+.Dialog_Tabs .ui-state-default
+{
+    background: transparent !important;
+}
+
+.Dialog_Tabs .ui-tabs-nav
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabsPanel.gif") !important;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    border: 0px !important;
+    height: 24px;
+    margin: 0px !important;
+    padding: 3px 5px 0px !important;
+}
+
+.Dialog_Tabs .ui-tabs-nav a
+{
+    font-weight: normal !important;
+    cursor: pointer !important;
+    padding: 0px !important;
+    font-size: 11px !important;
+    height: 24px;
+}
+
+.Dialog_Tabs .ui-tabs-nav li
+{
+    border-style: none !important;
+    border-color: inherit !important;
+    border-width: 0px !important; /* background: !important;*/
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 11px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0px !important;
+    text-decoration: none;
+    top: 0px !important;
+    margin: 0px !important;
+    float: left !important;
+}
+
+.RTL .Dialog_Tabs .ui-tabs-nav li
+{
+    float: right !important;
+}
+
+.Dialog_Tabs .ui-tabs-panel
+{
+    border: 0px none !important;
+    padding: 6px !important;
+    background-color: #fff;
+    height: 257px;
+    overflow: hidden;
+}
+
+.Dialog_Tabs .JqueryUITabLeft, .Dialog_Tabs .JqueryUITabRight
+{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 24px;
+    background-color: transparent !important;
+}
+
+.Dialog_Tabs .JqueryUITabCenter
+{
+    display: block;
+    float: left;
+    padding: 0px 6px;
+    color: #004377;
+}
+
+.Dialog_Tabs .ui-state-hover .JqueryUITabCenter
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabMidHover.gif") !important;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+.Dialog_Tabs .ui-tabs-selected
+{
+    background-color: transparent !important;
+}
+
+.Dialog_Tabs .ui-tabs-selected .JqueryUITabCenter
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabMidSelected.gif") !important;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+.Dialog_Tabs .ui-tabs-selected .JqueryUITabLeft
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabBorderLeftSelected.gif");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 24px;
+}
+
+.RTL .Dialog_Tabs .ui-tabs-selected .JqueryUITabLeft
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabBorderRightSelected.gif");
+}
+
+.Dialog_Tabs .ui-tabs-selected .JqueryUITabRight
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabBorderRightSelected.gif");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 24px;
+}
+
+.RTL .Dialog_Tabs .ui-tabs-selected .JqueryUITabRight
+{
+    background-image: url("./Images/MediaLibrary/Tabs/TabBorderLeftSelected.gif");
+}
+
+.RTL .Dialog_Tabs .ui-tabs-selected .JqueryUITabCenter, .RTL .Dialog_Tabs .ui-tabs-selected .JqueryUITabLeft, .RTL .Dialog_Tabs .ui-tabs-selected .JqueryUITabRight
+{
+    float: right;
+}
+
+.DialogMenu
+{
+    border-bottom: solid 1px #a4b2bc;
+    background-repeat: repeat-x;
+    background-image: url(./Images/MediaLibrary/menubg.png) !important;
+    background-position: top left;
+    display: block;
+    float: left;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DialogMenuLine
+{
+    height: 5px;
+    line-height: 5px;
+    min-height: 5px;
+    border-bottom: 1px solid #a4b2bc;
+    background-color: #f0ede1;
+}
+
+.DialogMenu .DialogMenuLeft
+{
+    border-right: 1px solid #999;
+    background-repeat: repeat-x;
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+    width: 230px;
+    float: left;
+    height: 41px;
+    padding: 2px 3px;
+}
+
+.DialogMenu .Smaller
+{
+    width: 118px;
+}
+
+.DialogMenu .MenuItemLeft
+{
+    background-image: url(./Images/MediaLibrary/addfolder.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 74px;
+    height: 36px;
+    margin: 2px;
+    padding: 0px 0px 0px 36px;
+    color: #004377;
+    float: left;
+    text-align: left;
+}
+
+.DialogMenu .MenuItemLeft span
+{
+    padding-top: 11px;
+    display: block;
+    float: left;
+}
+
+.DialogMenuInnerDiv
+{
+    width: 110px;
+    height: 36px;
+    color: #004377;
+}
+
+.DialogMenuInnerDiv img
+{
+    position: absolute;
+}
+
+.DialogMenuInnerDiv span
+{
+    position: absolute;
+    margin: 10px 0 0 33px;
+}
+
+.RTL .DialogMenuInnerDiv span
+{
+    margin: 10px 33px 0 0;
+}
+
+.DialogMenu .MenuItemLeft img
+{
+    padding: 0px 7px 2px 8px;
+}
+
+.DialogMenu .MenuItemLeftOver
+{
+    background-image: url(./Images/MediaLibrary/addfolderover.png);
+}
+
+.DialogMenu .MenuItemLeftOver img
+{
+    padding: 0px 7px 2px 8px;
+}
+
+.MediaLibraryFolderActions
+{
+    line-height: 20px;
+    height: 20px;
+    padding: 5px 0px 5px 8px;
+    border-bottom: 1px solid #a4b2bc;
+    background-color: #CCC;
+}
+
+.NewItemImage
+{
+    margin: 0 5px 1px 0;
+    vertical-align: middle;
+}
+
+.FolderLinkHorizontal
+{
+    float: left;
+    padding-right: 7px;
+}
+
+.DialogsUploaderDisabled
+{
+    padding-left: 2px;
+    position: relative;
+}
+
+.DialogsFolderDisabled
+{
+    background-image: url(./Images/MediaLibrary/addfolderdisabled.png) !important;
+    cursor: default !important;
+    color: #666 !important;
+}
+
+.DialogsFolderDisabledTitle
+{
+    font-family: Arial;
+    font-size: 12px;
+    left: 36px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.DialogsFileDisabledTitle
+{
+    font-family: Arial;
+    font-size: 12px;
+    left: 35px;
+    position: absolute;
+    top: 10px;
+}
+
+.DialogMenu .DialogFileUploader
+{
+    padding: 2px 3px 0px 0px;
+}
+
+.ImageExtraClass
+{
+    position: absolute;
+}
+
+.ImageTooltip
+{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 3px;
+    display: block;
+}
+
+.DialogMenu .DialogMenuRight
+{
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+    width: 350px;
+    height: 41px;
+    float: left;
+    padding: 2px;
+}
+
+.DialogMenu .MenuItemRight
+{
+    width: 102px;
+    height: 36px;
+    margin: 2px 3px;
+    padding: 0px 0px 0px 8px;
+    cursor: pointer;
+    color: #004377;
+    float: left;
+}
+
+.DialogMenu .MenuItemRight span
+{
+    padding-top: 11px;
+    display: block;
+    float: left;
+}
+
+.DialogMenu .MenuItemRight img
+{
+    float: left;
+    padding-right: 5px;
+    padding-top: 6px;
+}
+
+.DialogMenu .MenuItemRightOver
+{
+    background-image: url(./Images/MediaLibrary/buttonover.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    font-weight: normal;
+}
+
+.DialogMenu .DialogFullScreen
+{
+    width: 110px;
+    height: 41px;
+    padding: 2px;
+    position: absolute;
+    right: 35px;
+}
+
+.DialogMenu .DialogMenuHelp
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: right;
+    padding: 11px 5px;
+}
+
+.DialogFooter
+{
+    border-top: solid 1px #A4B2BC;
+    padding: 15px 15px 15px 0px;
+}
+
+.DialogPager
+{
+    float: left;
+}
+
+.DialogPageSize
+{
+    float: right;
+    text-align: right;
+}
+
+.PageFooterLine
+{
+    border-top: solid 1px #A4B2BC;
+    padding: 10px 15px;
+    background-color: #E9F3FE;
+}
+
+.DialogGuidParams
+{
+    text-align: left;
+}
+
+#tooltip
+{
+    position: absolute;
+    z-index: 5000;
+}
+
+.LiveSiteDialog .PageFooterLine, .ButtonsArea
+{
+    background: #CCCCCC !important;
+    border-top: 1px solid #999 !important;
+}
+
+.LiveSiteDialog .PageTitleHeader
+{
+    background: #CCCCCC !important;
+    background-image: url(./Images/Dialogs/DialogHeader.png) !important;
+}
+
+.LiveSiteDialog .UniFlatPager
+{
+    background: #CCCCCC !important;
+    background-image: url(./Images/Dialogs/WebpartSelectorPager.png) !important;
+    border-bottom: 1px solid #999 !important;
+    border-top: 1px solid #999 !important;
+}
+
+.LiveSiteDialog input[type="submit"]
+{
+    background: #E0E0E0 !important;
+    border: 1px outset #E0E0E0 !important;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.LiveSiteDialog .HeaderSeparator
+{
+    background-image: url(./Images/MediaLibrary/FrameResizer/Vertical/Resizer.gif) !important;
+}
+
+.LiveSiteDialog .VerticalFrameResizer
+{
+    background-image: url(./Images/MediaLibrary/FrameResizer/Vertical/ResizerButton.gif) !important;
+}
+
+.LiveSiteDialog .VerticalResizerBorder
+{
+    background-image: url(./Images/MediaLibrary/FrameResizer/Vertical/Resizer.gif) !important;
+}
+
+.LiveSiteDialog .FullTabsLeft, .LiveSiteDialog .TabsLeft
+{
+    background-image: url(./Images/MediaLibrary/Tabs/TabsPanel.gif) !important;
+}
+
+.LiveSiteDialog .FullTabsRight, .LiveSiteDialog .TabsRight, .LiveSiteDialog .TabsRightDialog
+{
+    background-image: url(./Images/MediaLibrary/Tabs/TabsPanel.gif) !important;
+}
+
+.LiveSiteDialog .TabControlSelectedLeft, .RTL .LiveSiteDialog .TabControlSelectedRight
+{
+    background-image: url(./Images/MediaLibrary/Tabs/TabBorderLeftSelected.gif) !important;
+}
+
+.LiveSiteDialog .TabControlSelectedRight, .RTL .LiveSiteDialog .TabControlSelectedLeft
+{
+    background-image: url(./Images/MediaLibrary/Tabs/TabBorderRightSelected.gif) !important;
+}
+
+.LiveSiteDialog .TabControlSelected
+{
+    background-image: url(./Images/MediaLibrary/Tabs/TabMidSelected.gif) !important;
+}
+
+/* UniSelector */
+.UniSelector .LongButton
+{
+    margin: 5px 2px 0px 0px;
+}
+
+/* Media library UI */
+.MediaLibraryContainer
+{
+    border: 1px solid #CCCCCC;
+    position: relative;
+    height: 600px;
+}
+
+.MediaLibraryContainer input[type="text"], .MediaLibraryContainer input[type="password"], .MediaLibraryContainer select
+{
+    border: 1px solid #AEAEAE;
+}
+
+.MediaLibraryContainer .TextBoxField
+{
+    width: 292px !important;
+}
+
+.MediaLibraryContainer .TextAreaField
+{
+    border: 1px solid #AEAEAE;
+    height: 100px;
+    width: 292px !important;
+}
+
+.MediaLibrary input[type="submit"]
+{
+    background: #E0E0E0 !important;
+    border: 1px outset #E0E0E0 !important;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.MediaLibrary .PageTitleHeader
+{
+    background-image: url(./Images/Dialogs/DialogHeader.png) !important;
+    background: #CCCCCC !important;
+}
+
+.MediaLibrary .PageFooterLine
+{
+    background: #CCCCCC !important;
+    border-top: 1px solid #999 !important;
+}
+
+.MediaLibrary.FolderEdit .ajax__tab_body
+{
+    padding: 0px !important;
+}
+
+.MediaLibrary.FolderEdit .FolderEditLabelArea
+{
+    padding: 0px 6px !important;
+}
+
+.MediaLibraryTitleLine
+{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.MediaLibraryTree
+{
+    padding: 5px 0px;
+}
+
+.MediaLibraryImportForm
+{
+    float: left;
+    width: 400px;
+}
+
+.MediaLibraryImportPreview
+{
+    float: left;
+    width: 300px;
+}
+
+.MediaProperties .ajax__tab_body
+{
+    padding: 10px;
+}
+
+.MediaProperties .ajax__tab_body input
+{
+    font-size: 13px;
+}
+
+.Dialog_Tabs .MediaLibraryCustomTab
+{
+    overflow: auto;
+    height: 256px;
+}
+
+.MediaLibraryNewFolder .ajax__tab_header
+{
+    display: none !important;
+}
+
+
+/* UniGrid */
+.UniGridBody a
+{
+    color: #000000;
+}
+
+.UniGridHead
+{
+    text-decoration: none;
+    color: #313131;
+    background-color: #DDDDDD;
+    height: 26px;
+    background-image: none;
+}
+
+.UniGridHead th, .UniGridHead td
+{
+    text-align: left;
+    padding: 0px 12px 0px 10px;
+    font-weight: bold;
+}
+
+.IE7 .UniGridHead th, .IE7 .UniGridHead td
+{
+    background-image: none !important;
+    background-color: #DDDDDD !important;
+}
+
+.UniGridHead a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.UniGridMain
+{
+    width: 100%;
+}
+
+.UniGridGrid
+{
+    width: 100%;
+    border: 1px solid #CCCCCC;
+}
+
+.UnigridSelection
+{
+    text-align: center !important;
+    padding: 0px 12px 0px 10px !important;
+}
+
+.UniGridGrid td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: solid 1px #CCCCCC !important;
+    border-top: solid 1px #CCCCCC !important;
+}
+
+.OddRow
+{
+    background-color: #eee;
+    height: 27px;
+}
+.IE6 .EvenRow, .IE7 .OddRow, .IE7 .EvenRow
+{
+    height: 20px;
+}
+
+.EvenRow
+{
+    height: 27px;
+}
+
+.UnigridActionButton
+{
+    width: 16px;
+    height: 16px;
+}
+
+/* UniGrid pager */
+.UniGridPager
+{
+    text-decoration: none;
+    color: #313131;
+    background-color: #DDDDDD !important;
+    background-image: none !important;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    height: 27px;
+    line-height: 22px;
+}
+
+.UniGridClearPager .UniGridPager
+{
+    border: 0px none;
+    background-color: Transparent;
+    background-image: none;
+}
+
+.UniGridPager a, .UniGridPager a:focus, .UniGridPager a:hover, .UniGridPager a:active
+{
+    outline: none;
+}
+
+.UniGridPager th, .UniGridPager td
+{
+    background-image: none !important;
+    font-weight: bold;
+}
+
+.UnigridPagerSelectedPage, .UnigridPagerPage
+{
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px 4px;
+    margin: 0px 1px;
+    border: 1px solid #DDDDDD;
+}
+
+.UnigridPagerPage:hover
+{
+    border: 1px solid #AAAAAA;
+    background-color: #CCCCCC;
+}
+
+.UnigridPagerSelectedPage
+{
+    border: 1px solid #AAAAAA;
+    background-color: #CCCCCC;
+}
+
+.UnigridPagerFirst, .UnigridPagerLast, .UnigridPagerPrev, .UnigridPagerNext, .UnigridPagerDirectPage, .UnigridPagerPageSize
+{
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin: 2px 5px 0px 3px;
+}
+
+.UnigridPagerDirectPage, .UnigridPagerPageSize
+{
+    margin: 3px 5px 0px 3px;
+}
+
+.UnigridPagerPageSize
+{
+    float: none;
+}
+
+.UnigridPagerFirst
+{
+    background: url(./Images/UniGrid/First.gif) no-repeat top left;
+}
+.UnigridPagerLast
+{
+    background: url(./Images/UniGrid/Last.gif) no-repeat top left;
+}
+.UnigridPagerPrev
+{
+    background: url(./Images/UniGrid/Prev.gif) no-repeat top left;
+}
+.UnigridPagerNext
+{
+    background: url(./Images/UniGrid/Next.gif) no-repeat top left;
+}
+.UnigridPagerFirst:hover
+{
+    background: url(./Images/UniGrid/FirstOver.gif) no-repeat top left;
+}
+.UnigridPagerLast:hover
+{
+    background: url(./Images/UniGrid/LastOver.gif) no-repeat top left;
+}
+.UnigridPagerPrev:hover
+{
+    background: url(./Images/UniGrid/PrevOver.gif) no-repeat top left;
+}
+.UnigridPagerNext:hover
+{
+    background: url(./Images/UniGrid/NextOver.gif) no-repeat top left;
+}
+
+.UnigridPagerDirectPage, .UnigridPagerPageSize
+{
+    width: auto;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.UnigridPagerPages
+{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.LeftAlign
+{
+    float: left;
+}
+
+/* Image editor */
+.ImageEditorMain
+{
+    border-bottom: 1px solid #999999 !important;
+    border-left: 1px solid #999999 !important;
+}
+
+.ImageEditorMain .MenuHeaderItem, .ImageEditorMain .MenuHeaderItemSelected
+{
+    text-decoration: none;
+    color: #313131;
+    background-color: #DDDDDD;
+    height: 26px;
+    background-image: none;
+    border-top: 1px solid #999999 !important;
+}
+
+.ImageEditorMain .MenuHeaderItemSelected
+{
+    border-bottom: 1px solid #999999 !important;
+}
+
+.ImageEditorMain .Divider
+{
+    background-color: #999999 !important;
+}
+
+.ImageEditorFrame
+{
+    border: 1px solid #999999 !important;
+}
+

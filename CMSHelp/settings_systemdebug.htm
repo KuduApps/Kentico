@@ -1,0 +1,952 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head> 
+   <title>Debug</title> 
+   <!-- Template design (c) copyright 2008-2009 by Tim Green and EC Software -->
+   <meta name="generator" content="Help &amp; Manual" /> 
+   <meta name="keywords" content="" />
+   <meta name="description" content="Debug" />
+   <meta name="copyright" content="© 2012 Kentico Software" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <link type="text/css" href="default.css" rel="stylesheet" /> 
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+   <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+         
+   <!-- CSS set with project variables and local attributes --> 
+   <style type="text/css" media="screen"> 
+   body { background: #fff; } 
+   #breadcrumbs {width: 100%; background-color: white; border-bottom: 1px solid #000; padding: 0px 0px 5px 15px;
+   margin: 3px 0; font-size: 8pt; color: #000;}
+   #breadcrumbs a { color: #000; text-decoration: none;}
+   #breadcrumbs a:visited { color: #000; }
+   #breadcrumbs a:hover { color: #098ae2; text-decoration: none; }
+   .help-url { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; 
+               color: #1f84e8; text-align: center; margin: 5px 20px 10px 0px; 
+               padding-top: 14px; border-top: 1px solid #000;}
+   .help-url a { color: #098ae2; text-decoration: none; }
+   .help-url a:visited { color: #098ae2; }
+   .help-url a:hover { color: #098ae2; text-decoration: underline; }
+   .highlight {background: #ffff40;}
+   .breadhead {padding: 5px 0px 0px 0px !important;}    
+   #innerdiv   
+   {   
+   padding-left: 5px;
+   }
+   
+
+   </style> 
+
+<!-- Adjustment for IE -->
+<!--[if lte IE 8]>
+<style type="text/css">
+.topichead { padding-right: 0; }
+   
+   
+   	.breadhead {
+	margin: 0;
+	padding-right: 5px;
+	}
+   
+   
+</style>
+<![endif]-->
+   
+<script type="text/javascript">
+// Initialize the page 
+addEvent(window, "load", nsrInit);
+addEvent(window, "load", doResize);
+addEvent(window, "resize", doResize);
+addEvent(window, "load", toggleJump);
+
+</script>
+
+
+<script type="text/javascript">
+function mailFB_custom() {
+var headerText = unQuot("Feedback on: Kentico CMS 6.0 Context Help - Debug".replace('&nbsp;',''));
+var fb1 = "mailto:" + escape('Kentico Support Team <support@kentico.com>') + "?subject=" + headerText;
+var titlePath = unQuot("CMS Site Manager &gt; Settings &gt; System &gt; Debug /");
+var fb2 = "&body=Ref:%20" + titlePath + "%20ID:%20settings_systemdebug%0A%0D%0A%0D" + unQuot("Dear Support Staff,") + "%0A%0D%0A%0D";
+var fb = fb1 + fb2;
+document.location.href=fb;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-105987-4']);
+  _gaq.push(['_setDomainName', '.kentico.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>        
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?settings_systemdebug.htm"; }
+  else { parent.quicksync('a2.3.4.7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="printheader">
+<span id="printtitle">Kentico CMS 6.0 Context Help</span><br />
+<p class="p_Heading1"><span class="f_Heading1">Debug</span></p>
+</div>
+<div id="idheader" style="border-bottom:1px solid #000;margin:0px 0px;"> 
+<table id="breadtable" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+  <tr >
+  <td align="left" class="breadhead" >
+       <p id="breadcrumbs"><a href="mode_selection.htm"
+        onmouseover="document.images.main.src='home_h.gif'" 
+        onmouseout="document.images.main.src='home.gif'">
+        <img name="main" src="home.gif" border="0" alt="Home topic" title="Home topic" /></a> 
+        
+        CMS Site Manager &gt; <a href="settings_settings.htm">Settings</a> &gt; <a href="settings_system.htm">System</a>:</p> 
+  </td>
+  </tr>
+</table>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" id="headtable"> 
+
+<!-- Script version of NavHeader -->
+  <tr id="scriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead" style="padding-left: 15px;"> 
+    <p class="p_Heading1"><span class="f_Heading1">Debug</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_systemsearch.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+        onmouseout="document.images.prev.src='button_prev.gif'">
+        <img name="prev" src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_onlinemarketing.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+        onmouseout="document.images.next.src='button_next.gif'"><img name="next" src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+
+   
+   
+   
+   
+   
+
+     
+   <td id="print-button" align="center" width="20" class="idnav" valign="bottom">
+     <a href="javascript: print();" 
+     onmouseover="document.images.printbutton.src='print_h.gif'" 
+     onmouseout="document.images.printbutton.src='print.gif'"><img name="printbutton" border="0" alt="Print this topic" title="Print this topic" src="print.gif" /></a>
+   </td>  
+     
+     
+
+  
+   <td id="mail-feedback" align="center" width="20" class="idnav" valign="bottom">
+   <a href="#"
+        onclick='mailFB_custom();'
+        onmouseover="document.images.feedback.src='mail_h.gif'" 
+        onmouseout="document.images.feedback.src='mail.gif'"><img name="feedback" src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+<!-- End script navheader version -->
+
+<!-- NoScript version of navheader -->
+
+  <tr id="noScriptNavHead" valign="middle" style="height: auto;"> 
+    <td align="left" class="topichead"> 
+    <p class="p_Heading1"><span class="f_Heading1">Debug</span></p>
+
+    </td>
+    <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_systemsearch.htm">
+        <img src="button_prev.gif" border="0" alt="Previous topic" title="Previous topic" /></a>
+     
+   </td>
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+     <a href="settings_onlinemarketing.htm">
+        <img src="button_next.gif" border="0" alt="Next topic" title="Next topic" /></a>
+        
+   </td>
+   
+   
+   
+  
+   
+
+     
+     
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <img border="0" alt="JavaScript is required for the print function" title="JavaScript is required for the print function" src="print_d.gif" />
+   </td>
+     
+     
+   
+   <td align="center" width="20" class="idnav" valign="bottom">
+   <a href="mailto:support@kentico.com?subject=Documentation%20feedback&body=Ref%20ID:%20settings_systemdebug%0D%0D"><img src="mail.gif" border="0" alt="Mail us feedback on this topic!" title="Mail us feedback on this topic!" /></a>
+   </td>
+   
+   <td width="4">&nbsp;</td>
+  </tr>
+
+<!-- End noscript navheader version -->
+  </table>
+<div id="autoTocWrapper"></div>
+</div> 
+
+<div id="idcontent"><div id="innerdiv">
+<!--ZOOMRESTART-->
+<p>On this page, you can configure settings of system debugging. Each of the settings in this section has a related <span style="font-style: italic;">web.config</span> key that can be added to the <span style="font-style: italic;">appSettings</span> section of the <span style="font-style: italic;">web.config </span>file in order to achieve the same configuration. The tables below list particular settings along with their related web.config keys and provide explanation of their functionality.</p>
+<p>&nbsp;</p>
+<p>It may happen that you specify different configuration in the settings and in the <span style="font-style: italic;">web.config</span> file. In such cases, boolean settings (true/false) need to be enabled at least in one place (in <span style="font-style: italic;">web.config</span> or in settings) in order to be enabled, while log lengths specified in <span style="font-weight: bold;">Site Manager -&gt; Settings</span> have higher priority than log lengths specified in the web.config.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">General</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Disable debugging</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDisableDebug</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Globally disables all debugs, regardless of individual debug settings.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug Import/Export</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugImportExport</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If disabled, debug information is not logged for the Import/Export user interface. To optimize system performance, it is recommended to have this option disabled unless you really need to debug the Import/Export process.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug resources</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugResources</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If false, all resource requests (<span style="font-style: italic;">GetResource</span> and <span style="font-style: italic;">GetCSS</span>) are ignored by all debugs.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug scheduler</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugScheduler</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If false, all scheduler operations are excluded from all debugs.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Cache access</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable cache access debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugCache</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables cache access debugging and the <span style="font-weight: bold;">Cache access</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display cache access debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugCacheLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, cache access debug information is also displayed at the bottom of each live site page. This option requires cache access debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug cache access of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllCaches</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, access to data cached for pages of the administration interface (CMS Desk and Site Manager) will also be included in the cache access debug. This option requires cache access debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log cache access to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogCache</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, cache access debug log is saved into the <span style="font-style: italic;">logcache.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require cache access debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Cache access debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugCacheLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the cache access debug log on the <span style="font-weight: bold;">Debug -&gt; Cache access</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugCacheStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging cache access and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logcache.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">SQL queries</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable SQL query debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSQLQueries</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables SQL query debugging and the <span style="font-weight: bold;">SQL queries</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display SQL query debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSQLQueriesLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, SQL query debug information is also displayed at the bottom of each live site page. This option requires SQL query debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug SQL queries of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllSQLQueries</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, SQL queries called by pages of the administration interface (CMS Desk and Site Manager) will also be included in the SQL query debug. This option requires SQL query debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log SQL queries to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogSQLQueries</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, SQL query debug log is saved into the <span style="font-style: italic;">logsql.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require SQL query debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>SQL query debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSQLQueriesLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the SQL query debug log on the <span style="font-weight: bold;">Debug -&gt; SQL queries</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug SQL connections</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSQLConnections</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, SQL connection operations (new, open, close) are logged in the SQL query debug log.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSQLQueriesStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging SQL queries and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logsql.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">IO</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable IO operation debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugFiles</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables IO operation debugging and the <span style="font-weight: bold;">IO</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display IO operation debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugFilesLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, IO operation debug information is also displayed at the bottom of each live site page. This option requires IO operation debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug IO operations of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllFiles</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, IO operations called by pages of the administration interface (CMS Desk and Site Manager) will also be included in the IO operation debug. This option requires IO operation debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log IO operations to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogFiles</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, IO operation debug log is saved into the <span style="font-style: italic;">logfiles.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require IO operation debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>IO operation debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugFilesLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the IO operation debug log on the <span style="font-weight: bold;">Debug -&gt; IO</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugFilesStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging IO operations and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logfiles.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Page ViewState</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable ViewState debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugViewState</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables ViewState debugging and the <span style="font-weight: bold;">Page ViewState</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display ViewState debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugViewStateLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, ViewState debug information is also displayed at the bottom of each live site page. This option requires ViewState debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug ViewState of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllViewStates</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, ViewState of administration interface pages (CMS Desk and Site Manager) will also be included in the ViewState debug. This option requires ViewState debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>ViewState debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugViewStateLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the ViewState debug log on the <span style="font-weight: bold;">Debug -&gt; </span><span style="font-weight: bold;">ViewState</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Output</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable output debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugOutput</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables page output debugging and the <span style="font-weight: bold;">Output</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug output of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllOutputs</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, output of administration interface pages (CMS Desk and Site Manager) will also be included in the output debug. This option requires output debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log output to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogOutputToFile</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, output debug log is saved into the <span style="font-style: italic;">logOutput.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require output debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Output debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugOutputToFile</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the output debug log on the <span style="font-weight: bold;">Debug -&gt; Output</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Security</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable security debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSecurity</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables security operation debugging and the <span style="font-weight: bold;">Security</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display security debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSecurityLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, security operation debug information is also displayed at the bottom of each live site page. This option requires security debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug security operations of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllSecurity</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, security checks performed by pages of the administration interface (CMS Desk and Site Manager) will also be included in the security debug. This option requires security debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log security operations to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogSecurity</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, security debug log is saved into the <span style="font-style: italic;">logSecurity.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require security debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Security debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSecurityLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the security debug log on the <span style="font-weight: bold;">Debug -&gt; Security</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugSecurityStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging security and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logSecurity.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Macros</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable macro debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugMacros</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables macro debugging and the <span style="font-weight: bold;">Macros</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display macro debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugMacrosLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, macro debug information is also displayed at the bottom of each live site page. This option requires macro debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug macros resolved on UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllMacros</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, macros resolved on pages of the administration interface (CMS Desk and Site Manager) will also be included in the macro debug. This option requires macro debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log macros to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogMacros</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, macro debug log is saved into the <span style="font-style: italic;">logmacros.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require macro debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Macro debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugMacrosLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the macro debug log on the <span style="font-weight: bold;">Debug -&gt; Macros</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length</span> setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugMacrosStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging cache macros and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logmacros.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Analytics</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable web analytics debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAnalytics</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables web analytics debugging and the <span style="font-weight: bold;">Analytics</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display web analytics debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAnalyticsLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, web analytics debug information is also displayed at the bottom of each live site page. This option requires web analytics debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log web analytics to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogAnalytics</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, web analytics debug log is saved into the <span style="font-style: italic;">loganalytics.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require web analytics debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Web analytics debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAnalyticsLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the web analytics debug log on the <span style="font-weight: bold;">Debug -&gt; Analytics</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length </span>setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAnalyticsStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging web analytics and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">loganalytics.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Requests</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable request debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugRequests</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables request debugging and the <span style="font-weight: bold;">Requests</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display request debug on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugRequestsLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, request debug information is also displayed at the bottom of each live site page. This option requires request debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug UI page requests</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllRequests</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, administration interface (CMS Desk and Site Manager) page requests will also be included in the macro debug. This option requires request debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log requests to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogRequests</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, request debug log is saved into the <span style="font-style: italic;">logRequests.log</span> and <span style="font-style: italic;">logRequestsUrls.log</span> files in the <span style="font-style: italic;">~\App_Data</span> folder. The first file contains the full log, while the second one only lists requested URLs. This option does not require request debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Request debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugRequestsLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the request debug log on the <span style="font-weight: bold;">Debug -&gt; Requests</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length </span>setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugRequestsStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging requests and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logRequests.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Web farm</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable web farm debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugWebFarm</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables request debugging and the <span style="font-weight: bold;">Web farm</span> tab in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug web farm operations of UI pages</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllWebFarm</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, operations performed via the administration interface (CMS Desk and Site Manager) will also be included in the web farm debug. This option requires web farm debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log web farm operations to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogWebFarm</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, web farm debug log is saved into the <span style="font-style: italic;">logwebfarm.log</span> file in the <span style="font-style: italic;">~\App_Data</span> folder. This option does not require web farm debugging to be enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Web farm debug log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugWebFarmLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the maximum length of the web farm debug log on the <span style="font-weight: bold;">Debug -&gt; Requests</span> tab, i.e. the number of requests for which debug information is preserved and displayed on the tab. If empty, value of the <span style="font-weight: bold;">Default log length </span>setting (or the <span style="font-weight: bold;">CMSDebugEverythingLogLength</span> key) is used.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugWebFarmStack</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked when debugging web farm operations and is displayed in the <span style="font-weight: bold;">Context</span> column. This information is only available in the debugging UI and on the live site, not in the debug log written into the <span style="font-style: italic;">logwebfarm.log</span> file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">All</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="98%" cellspacing="0" cellpadding="5" border="1" style="border: solid 2px #000000; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Setting</span></p>
+</td>
+<td valign="middle" width="23%" bgcolor="#c0c0c0" style="width:23%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Web.config key</span></p>
+</td>
+<td valign="middle" width="54%" bgcolor="#c0c0c0" style="width:54%; background-color:#c0c0c0; border: solid 1px #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Debug everything everywhere</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugEverythingEverywhere</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables all debugs, includes UI pages in all debugs and ensures that the debugs are displayed both in the <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span><span style="font-style: italic;"> </span>interface and on the live site.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Enable all debugs</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugEverything</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables all debugs and ensures that the corresponding tabs are displayed in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display all debugs on live site</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugEverythingLive</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, debug information of all debug types is displayed at the bottom of each live site page. This only applies to debugs that are already enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Include UI pages in all debugs</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugAllForEverything</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, actions performed on UI pages are included in all debugs. This only applies to debugs that are already enabled.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Log everything to file</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSLogEverythingToFile</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Enables logging of all possible operations (including the Event log and E-mail sending log) into <span style="font-style: italic;">.log</span> files stored in the <span style="font-style: italic;">~/App_Data/</span> folder.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Default log length</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugEverythingLogLength</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>Sets the default maximum length of all debugs on the respective tabs in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt;</span><span style="font-weight: bold;">System -&gt; Debug</span>. This value is used if no log length is configured for the respective type of debug.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>Display stack information in every debug</p>
+</td>
+<td valign="top" width="23%" style="width:23%; border: solid 1px #000000;"><p>CMSDebugStackForEverything</p>
+</td>
+<td valign="top" width="54%" style="width:54%; border: solid 1px #000000;"><p>If enabled, stack is tracked by all debugs and is displayed on the respective tabs in <span style="font-weight: bold;">Site Manager -&gt; Administration -&gt; System -&gt; Debug</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>More information can be found in <a href="http://devnet.kentico.com/docs/6_0/devguide/debugging_overview.htm" target="_blank" class="weblink">Developer's Guide -&gt; Development -&gt; Debugging and system information</a>.</p>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP--> 
+
+<noscript>
+<p class="help-url"><b>Help URL:&nbsp;</b><a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_systemdebug.htm" target="_top" title="Right-click to copy the URL of this help topic">
+<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_systemdebug.htm</a>
+</p>
+</noscript>
+<script type="text/javascript">
+var autoURL = true;
+if (autoURL) {
+      document.write(getHref("index.html","Help URL:","Right-click to copy the URL of this help topic"));
+      } else {
+             document.write('<p class="help-url"><b>Help URL:&nbsp;</b>');
+             document.write('<a href="<%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_systemdebug.htm" target="_top" title="Right-click to copy the URL of this help topic"><%HELP_LOCATION%><%DEVNET_PATH_NAME%>/index.html?settings_systemdebug.htm</a>');
+             document.write('</p>');
+      }
+</script>
+
+</div></div> 
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,10 @@
+<%@ Control Language="C#" AutoEventWireup="true"
+    Inherits="CMSFormControls_Classes_SelectTransformation" CodeFile="SelectTransformation.ascx.cs" %>
+<%@ Register src="~/CMSAdminControls/UI/UniSelector/UniSelector.ascx" tagname="UniSelector" tagprefix="cms" %>
+<cms:CMSUpdatePanel ID="pnlUpdate" runat="server">
+    <ContentTemplate>
+        <cms:UniSelector ID="uniSelector" runat="server" FilterControl="~/CMSFormControls/Filters/DocTypeFilter.ascx"
+            DisplayNameFormat="{%TransformationName%}" AllowEditTextBox="true" ReturnColumnName="TransformationName"
+            ObjectType="cms.transformation" ResourcePrefix="transformationselector" SelectionMode="SingleTextBox" />
+    </ContentTemplate>
+</cms:CMSUpdatePanel>

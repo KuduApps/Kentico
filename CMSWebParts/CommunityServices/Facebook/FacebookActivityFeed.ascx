@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_Facebook_FacebookActivityFeed" CodeFile="~/CMSWebParts/CommunityServices/Facebook/FacebookActivityFeed.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlActivityFeed" EnableViewState="false" />

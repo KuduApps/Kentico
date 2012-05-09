@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+    <columns>
+        <column source="OrderID" caption="$MyOrders.OrderID$" wrap="false" />
+        <column source="OrderDate" caption="$MyOrders.OrderDate$" wrap="false" />
+        <column source="##ALL##" externalsourcename="Totalprice" caption="$MyOrders.TotalPrice$" wrap="false" sort="OrderTotalPriceInMainCurrency" />
+        <column source="StatusDisplayName" externalsourcename="StatusDisplayName" caption="$MyOrders.Status$" wrap="false" />
+        <column source="OrderTrackingNumber" caption="$MyOrders.TrackingNumber$" wrap="false" />
+        <column source="OrderID" externalsourcename="Invoice" caption="$MyOrders.Invoice$" wrap="false" allowsorting="false" />
+        <column source="OrderID" externalsourcename="downloads" caption="$myorders.downloads$" wrap="false" allowsorting="false" />
+        <column width="100%" />
+    </columns>
+    <objecttype name="ecommerce.orderlist" />
+    <options>
+        <key name="DisplayFilter" value="false" />
+    </options>
+</grid>

@@ -1,0 +1,36 @@
+﻿<ecommerce_publicstatus version="6.0">
+  <NewDataSet>
+    <com_publicstatus>
+      <PublicStatusID>50</PublicStatusID>
+      <PublicStatusName>Bestseller</PublicStatusName>
+      <PublicStatusDisplayName>Bestseller</PublicStatusDisplayName>
+      <PublicStatusEnabled>true</PublicStatusEnabled>
+      <PublicStatusGUID>0939d0fd-b8ab-4e2a-81fe-5dc12e991fb8</PublicStatusGUID>
+      <PublicStatusLastModified>2011-07-15T07:29:57.927+02:00</PublicStatusLastModified>
+    </com_publicstatus>
+    <com_publicstatus>
+      <PublicStatusID>4</PublicStatusID>
+      <PublicStatusName>FeaturedProduct</PublicStatusName>
+      <PublicStatusDisplayName>Featured product</PublicStatusDisplayName>
+      <PublicStatusEnabled>true</PublicStatusEnabled>
+      <PublicStatusGUID>d3e96b69-6f4c-4a2f-ad64-eadfa641453a</PublicStatusGUID>
+      <PublicStatusLastModified>2011-07-15T09:24:49.777+02:00</PublicStatusLastModified>
+    </com_publicstatus>
+    <com_publicstatus>
+      <PublicStatusID>5</PublicStatusID>
+      <PublicStatusName>NewProduct</PublicStatusName>
+      <PublicStatusDisplayName>New product</PublicStatusDisplayName>
+      <PublicStatusEnabled>true</PublicStatusEnabled>
+      <PublicStatusGUID>c2d3a454-b185-4e19-8c89-7b4541a33f7f</PublicStatusGUID>
+      <PublicStatusLastModified>2011-07-15T09:24:56.633+02:00</PublicStatusLastModified>
+    </com_publicstatus>
+    <com_publicstatus>
+      <PublicStatusID>51</PublicStatusID>
+      <PublicStatusName>Sale</PublicStatusName>
+      <PublicStatusDisplayName>Sale</PublicStatusDisplayName>
+      <PublicStatusEnabled>true</PublicStatusEnabled>
+      <PublicStatusGUID>cad25723-80e2-4171-8f6f-e6e50d5495b5</PublicStatusGUID>
+      <PublicStatusLastModified>2011-07-15T07:30:08.52+02:00</PublicStatusLastModified>
+    </com_publicstatus>
+  </NewDataSet>
+</ecommerce_publicstatus>

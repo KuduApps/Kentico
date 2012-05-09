@@ -1,0 +1,16 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>5</SiteID>
+      <SiteName>EcommerceSite</SiteName>
+      <SiteDisplayName>E-commerce site</SiteDisplayName>
+      <SiteDescription>Sample E-commerce site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.5</SiteDomainName>
+      <SiteDefaultStylesheetID>5</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteGUID>b79902d8-26d2-4106-ac02-1aae14671899</SiteGUID>
+      <SiteLastModified>2010-08-16T11:35:58.54+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

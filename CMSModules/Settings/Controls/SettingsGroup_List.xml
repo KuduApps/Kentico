@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="KeyID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="moveup" caption="$General.MoveUp$" icon="Up.png" />
+    <action name="movedown" caption="$General.MoveDown$" icon="Down.png" />
+    <action name="ishidden" externalsourcename="ishidden" caption="$settings.ishidden$" icon="Warning.png" />
+  </actions>
+  <columns>
+    <column source="KeyDisplayName" externalsourcename="KeyDisplayName" caption="$general.displayname$" wrap="false" allowsorting="false">
+      <filter type="text" />
+    </column>
+    <column source="KeyName" externalsourcename="KeyName" caption="$general.codename$" wrap="false" allowsorting="false">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.settingskey" Columns="KeyID,KeyName,KeyDisplayName,KeyIsHidden" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

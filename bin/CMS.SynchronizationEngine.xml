@@ -1,0 +1,1433 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.SynchronizationEngine</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.SynchronizationEngine.BaseIntegrationConnector">
+            <summary>
+            Class that needs to be inherited during implementing custom integration connector.
+            Serveral members have to be implemented in order to achieve desired functionality.
+            </summary>
+        </member>
+        <member name="F:CMS.SynchronizationEngine.BaseIntegrationConnector.internalTranslations">
+            <summary>
+            ID translation table [className.ToLower()] -> Hashtable [OldID -> NewID]
+            </summary>
+        </member>
+        <member name="F:CMS.SynchronizationEngine.BaseIntegrationConnector.externalTranslations">
+            <summary>
+            ID translation table [className.ToLower()] -> Hashtable [ID -> "codename|sitename|parentid"]
+            </summary>
+        </member>
+        <member name="F:CMS.SynchronizationEngine.BaseIntegrationConnector.mSyncHelper">
+            <summary>
+            SyncHelper instance.
+            </summary>
+        </member>
+        <member name="F:CMS.SynchronizationEngine.BaseIntegrationConnector.mClearTranslationsAfterProcessing">
+            <summary>
+            Says whether to clear cached translation information.
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessExternalTask(System.Object,IntegrationProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String)">
+            <summary>
+            Processes incoming task.
+            </summary>
+            <param name="obj">Object or document to process (either already prepared ICMSObject or raw external object)</param>
+            <param name="result">What to do if the processing fails</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of input data</param>
+            <param name="siteName">Name of the target site</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessExternalTask(CMS.SettingsProvider.ICMSObject,IntegrationProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String)">
+            <summary>
+            Processes incoming task.
+            </summary>
+            <param name="obj">Object or document to process</param>
+            <param name="result">What to do if the processing fails</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of input data</param>
+            <param name="siteName">Name of the target site</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskAsync(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TranslationHelper,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementing outcoming CMS object processing. Identifiers of object is already prepared to match external application.
+            </summary>
+            <param name="cmsObject">CMS object to process (accepts TreeNode or GeneralizedInfo)</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of data</param>
+            <param name="errorMessage">Possible error message</param>
+            <param name="siteName">Name of site</param>
+            <param name="translations">Translation helper object containing translations for given object</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskSync(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementing synchronous outcoming CMS object processing.
+            </summary>
+            <param name="cmsObject">CMS object to process</param>
+            <param name="taskType">Type of task</param>
+            <param name="errorMessage">Possible error message</param>
+            <param name="siteName">Name of site</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.RequestTasksProcessing(System.String)">
+            <summary>
+            Performs a request to a special page on server defined by given url causing immediate task processing for all connectors.
+            </summary>
+            <param name="serverUrl">URL of the server to make the request to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.RequestTasksProcessing(System.String,System.String)">
+            <summary>
+            Performs a request to a special page on server defined by given url causing immediate task processing for connector specified by name.
+            </summary>
+            <param name="serverUrl">URL of the server to make the request to</param>
+            <param name="connectorName">Name of connector to notify</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTask(CMS.Synchronization.IntegrationTaskInfo)">
+            <summary>
+            Processes single internal task.
+            </summary>
+            <param name="task">Task info object</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessExternalTask(CMS.Synchronization.IntegrationTaskInfo)">
+            <summary>
+            Processes single external task.
+            </summary>
+            <param name="task">Task info object</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTasks">
+            <summary>
+            Fetches internal tasks and processes them one by one.
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessExternalTasks">
+            <summary>
+            Fetches external tasks and processes them one by one.
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTasks(System.Collections.Generic.IEnumerable{CMS.Synchronization.IntegrationTaskInfo})">
+            <summary>
+            Processes given internal tasks one by one.
+            </summary>
+            <param name="tasks">Tasks to process</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessExternalTasks(System.Collections.Generic.IEnumerable{CMS.Synchronization.IntegrationTaskInfo})">
+            <summary>
+            Processes given external tasks one by one.
+            </summary>
+            <param name="tasks">Tasks to process</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeTo(CMS.Synchronization.AbstractIntegrationSubscription)">
+            <summary>
+            Assigns given subscription to this connector.
+            </summary>
+            <param name="match">Subscription to add</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeTo(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum)">
+            <summary>
+            Subscribes this connector to given type of task.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToAllObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to given types of tasks for object processing.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String)">
+            <summary>
+            Subscribes this connector to given types of object.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="objectType">Type of object to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="objectType">Type of object to subscribe to</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String,System.String,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="objectType">Type of object to subscribe to</param>
+            <param name="siteName">Name of site to subscribe to</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task to subscribe to</param>
+            <param name="objectTypes">Types of objects to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToObjects(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task to subscribe to</param>
+            <param name="siteName">Name of site to subscribe to</param>
+            <param name="objectTypes">Types of objects to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToAllDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to given types of tasks for document processing.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String)">
+            <summary>
+            Subscribes this connector to given class names.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="className">Name of class to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="className">Name of class to subscribe to</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,System.String,System.String,CMS.SettingsProvider.TaskTypeEnum[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="className">Name of class to subscribe to</param>
+            <param name="siteName">Name of site to subscribe to</param>
+            <param name="taskTypes">Types of tasks to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task to subscribe to</param>
+            <param name="classNames">Names of classes to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SubscribeToDocuments(CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String[])">
+            <summary>
+            Subscribes this connector to process tasks matching given conditions.
+            </summary>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task to subscribe to</param>
+            <param name="siteName">Name of site to subscribe to</param>
+            <param name="classNames">Names of classes to subscribe to</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.PrepareInternalTranslations(CMS.SettingsProvider.ICMSObject,CMS.Synchronization.TaskDataTypeEnum)">
+            <summary>
+            Prepares translations for external document or object to enable identifying corresponding internal object.
+            </summary>
+            <param name="cmsObject">External CMS object</param>
+            <param name="dataType">Type of data</param>
+            <returns>Translations</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.TranslateColumnsToExternal(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.TranslationHelper,System.Boolean)">
+            <summary>
+            Translates column values of given object to match external ones.
+            </summary>
+            <param name="infoObj">Internal object</param>
+            <param name="th">Translations</param>
+            <param name="processChildren">Whether to translate columns of child objects</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.TranslateColumnsToExternal(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TranslationHelper,System.Boolean)">
+            <summary>
+            Translates column values of given document to match external ones.
+            </summary>
+            <param name="node">Internal document</param>
+            <param name="th">Translations</param>
+            <param name="processChildren">Whether to translate columns of child objects</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.TranslateColumnsToExternal(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TranslationHelper,System.Boolean)">
+            <summary>
+            Translates column values of given CMS object to match external ones.
+            </summary>
+            <param name="cmsObject">Internal CMS object</param>
+            <param name="th">Translations</param>
+            <param name="processChildren">Whether to translate columns of child objects</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessIDForInternalObject(CMS.SettingsProvider.TraverseObjectSettings,CMS.SettingsProvider.ICMSObject,System.String,System.String,System.Boolean)">
+            <summary>
+            Handles FK translations
+            </summary>
+            <param name="settings">Export settings object</param>
+            <param name="obj">Object (TreeNode / Info object) to process</param>
+            <param name="columnName">Column name of the dependency</param>
+            <param name="objectType">Object type of the dependency</param>
+            <param name="required">Determines whether the dependency is required (reflects required flag from TypeInfo).</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessIDForExternalObject(CMS.SettingsProvider.TraverseObjectSettings,CMS.SettingsProvider.ICMSObject,System.String,System.String,System.Boolean)">
+            <summary>
+            Handles FK translations
+            </summary>
+            <param name="settings">Export settings object</param>
+            <param name="obj">Object (TreeNode / Info object) to process</param>
+            <param name="columnName">Column name of the dependency</param>
+            <param name="objectType">Object type of the dependency</param>
+            <param name="required">Determines whether the dependency is required (reflects required flag from TypeInfo).</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessIDForExternalObject(CMS.SettingsProvider.TraverseObjectSettings,System.Int32,System.String)">
+            <summary>
+            Handles FK translations
+            </summary>
+            <param name="settings">Export settings object</param>
+            <param name="objectId">Object ID of the dependency</param>
+            <param name="objectType">Object type of the dependency</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetNotImplementedException(System.Boolean)">
+            <summary>
+            Gets message customized for NotImplementedException (for internal purpopses only).
+            </summary>
+            <param name="incoming">Direction (true for external tasks, false for internal tasks)</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SetInternalTranslation(System.String,System.Int32,System.Int32)">
+            <summary>
+            Sets translation for class name and identifier.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="oldId">Old identifier</param>
+            <param name="newId">New identifier</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetInternalTranslation(System.String,System.Int32)">
+            <summary>
+            Gets translation for class name and identifier.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="oldId">Old identifier</param>
+            <returns>New identifer if present</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ClearInternalTranslations">
+            <summary>
+            Clears hashtable with internal translations
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.SetExternalTranslation(System.String,System.Int32,System.String)">
+            <summary>
+            Sets translation for class name and identifier.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="id">External identifier</param>
+            <param name="translationRecord">Translation record ("codename|sitename|parentid")</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetExternalTranslation(System.String,System.Int32)">
+            <summary>
+            Gets translation for class name and identifier.
+            </summary>
+            <param name="className">Class name</param>
+            <param name="id">External identifier</param>
+            <returns>Translation record ("codename|sitename|parentid|groupid")</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ClearExternalTranslations">
+            <summary>
+            Clears hashtable with external translations
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskAsync(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.TranslationHelper,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementation of asynchronous outcoming object processing. Identifiers of object are already prepared to match external application.
+            </summary>
+            <param name="infoObj">Object to process</param>
+            <param name="translations">Translation helper object containing translations for given object</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of data</param>
+            <param name="siteName">Name of site</param>
+            <param name="errorMessage">Possible error message</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskAsync(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TranslationHelper,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementation of asynchronous outcoming document processing. Identifiers of document are already prepared to match external application.
+            </summary>
+            <param name="node">Document to process</param>
+            <param name="translations">Translation helper object containing translations for given document</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of data</param>
+            <param name="siteName">Name of site</param>
+            <param name="errorMessage">Possible error message</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskSync(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementation of synchronous outcoming object processing. Identifiers of object are in their original state.
+            </summary>
+            <param name="infoObj">Object to process</param>
+            <param name="taskType">Type of task</param>
+            <param name="siteName">Name of site</param>
+            <param name="errorMessage">Possible error message</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.ProcessInternalTaskSync(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String@)">
+            <summary>
+            Suitable for implementation of synchronous outcoming document processing. Identifiers of object are in their original state.
+            </summary>
+            <param name="node">Document to process</param>
+            <param name="taskType">Type of task</param>
+            <param name="errorMessage">Possible error message</param>
+            <param name="siteName">Name of site</param>
+            <returns>Processing result</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetExternalObjectID(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Based on parameters this method will find out identifier of the object matching external application.
+            </summary>
+            <param name="objectType">Type of object</param>
+            <param name="codeName">Code name of object</param>
+            <param name="siteName">Site name of object</param>
+            <param name="parentType">Type of parent object</param>
+            <param name="parentId">Parent object identifier</param>
+            <param name="groupId">Group identifier</param>
+            <returns>Object identifier for external usage</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetExternalDocumentID(System.Guid,System.String,System.String,System.Boolean)">
+            <summary>
+            Based on parameters this method will find out identifier of the document matching external application.
+            </summary>
+            <param name="nodeGuid">Document unique identifier</param>
+            <param name="cultureCode">Document culture code</param>
+            <param name="siteName">Document site name</param>
+            <param name="returnDocumentId">Whether to return document or node identifier</param>
+            <returns>Document identifier for external usage</returns>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetInternalObjectParams(System.Int32,System.String,System.String@,System.String@,System.Int32@,System.Int32@)">
+            <summary>
+            By supplying object type and identifier the method ensures filling output parameters needed for correct translation between external and internal object.
+            </summary>
+            <param name="id">Identifier of the object</param>
+            <param name="objectType">Type of the object</param>
+            <param name="codeName">Returns code name</param>
+            <param name="siteName">Returns site name</param>
+            <param name="parentId">Returns identifier of parent object</param>
+            <param name="groupId">Returns identifier of object community group</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.GetInternalDocumentParams(System.Int32,System.String,System.Guid@,System.String@,System.String@)">
+            <summary>
+            By supplying document identifier and class name the method ensures filling output parameters needed for correct translation between external and internal document.
+            </summary>
+            <param name="id">Identifier of the document</param>
+            <param name="className">Class name of the document</param>
+            <param name="nodeGuid">Returns document unique identifier</param>
+            <param name="cultureCode">Returns culture code</param>
+            <param name="siteName">Returns site name</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.BaseIntegrationConnector.PrepareInternalObject(System.Object,CMS.SettingsProvider.TaskTypeEnum,CMS.Synchronization.TaskDataTypeEnum,System.String)">
+            <summary>
+            Transforms given external object to internal (to TreeNode or GeneralizedInfo).
+            </summary>
+            <param name="obj">Object or document to transform</param>
+            <param name="taskType">Type of task</param>
+            <param name="dataType">Type of input data</param>
+            <param name="siteName">Name of site</param>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.BaseIntegrationConnector.LogIntegrationForExternalTasks">
+            <summary>
+            Determines whether to log integration tasks when processing external tasks.
+            False by default.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.BaseIntegrationConnector.FetchedInternalTasks">
+            <summary>
+            Fetches internal integration tasks for processing.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.BaseIntegrationConnector.FetchedExternalTasks">
+            <summary>
+            Fetches external integration tasks for processing.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.BaseIntegrationConnector.SyncHelper">
+            <summary>
+            SyncHelper instance.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.BaseIntegrationConnector.ClearTranslationsAfterProcessing">
+            <summary>
+            Says whether to clear cached translation information (true by default). Applies both to internal and external tasks.
+            If switched to false, translations can still be cleared by calling ClearInternalTranslations() or ClearExternalTranslations().
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.IntegrationExternalTasksProcessor">
+            <summary>
+            Provides an ITask interface for external integration task synchronization.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.IntegrationExternalTasksProcessor.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Executes external integration tasks synchronization.
+            </summary>
+            <param name="task">Scheduling task info object</param>
+            <returns>Possible error</returns>
+        </member>
+        <member name="T:CMS.Synchronization.BaseIntegrationSubscription">
+            <summary>
+            Class representing subscription to documents or objects
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.#ctor(System.String,CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="connectorName">Name of connector the subscription is attached to</param>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task which to subscribe to</param>
+            <param name="siteName">Name of site which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.IsMatch(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given CMS object and task type match the subscription.
+            This method recognizes TreeNode and GeneralizedInfo as the CMS object.
+            </summary>
+            <param name="obj">CMS object to match</param>
+            <param name="taskType">Task type to match</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if the CMS object and task correspond with subscription settings</returns>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.IsMatch(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given info object and task type match the subscription
+            </summary>
+            <param name="infoObj">Info object to match</param>
+            <param name="taskType">Task type to match</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if the info object and task correspond with subscription settings</returns>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.IsMatch(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given node and task type match the subscription
+            </summary>
+            <param name="node">Node to match</param>
+            <param name="taskType">Task type to match</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if the node and task correspond with subscription settings</returns>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.IsMatch(CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given task type matches the TaskType property
+            </summary>
+            <param name="taskType">Task type to evaluate</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if task type is equal to TaskType property</returns>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.IsMatch(System.String)">
+            <summary>
+            Determines whether given site name matches the SiteName property
+            </summary>
+            <param name="siteName">Name of site to evaluate</param>
+            <returns>TRUE if site name matches SiteName property</returns>
+        </member>
+        <member name="M:CMS.Synchronization.BaseIntegrationSubscription.GetRegex(System.String)">
+            <summary>
+            Returns regular expression with pattern used to match words like 'cms.%' or 'cms.pagetemplate%' where '%' represents with 0-n characters
+            </summary>
+            <param name="expression">User-friendly expression to transformate to regular expression</param>
+            <returns>Regular expression object</returns>
+        </member>
+        <member name="P:CMS.Synchronization.BaseIntegrationSubscription.TaskProcessType">
+            <summary>
+            Type of task processing (sync/async etc.)
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.BaseIntegrationSubscription.TaskType">
+            <summary>
+            Task type of document or object to match.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.BaseIntegrationSubscription.SiteName">
+            <summary>
+            Site name of document or object to match.
+            Use AbstractIntegrationSubscription.GLOBAL_OBJECTS to match only global objects.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.BaseIntegrationSubscription.ConnectorName">
+            <summary>
+            Name of connector the subscription is attached to.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.DocumentIntegrationSubscription">
+            <summary>
+            Class representing subscription to documents
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.DocumentIntegrationSubscription.#ctor(System.String,CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String,System.String,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="connectorName">Name of connector the subscription is attached to</param>
+            <param name="taskProcessType">Type of task processing (supported: AsyncSimple, AsyncSimpleSnapshot, SyncSnapshot)</param>
+            <param name="taskType">Type of task which to subscribe to</param>
+            <param name="siteName">Name of site which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+            <param name="documentNodeAliasPath">Node alias path of document which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+            <param name="documentCultureCode">Culture code of document which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+            <param name="documentClassName">Class name of document which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+        </member>
+        <member name="M:CMS.Synchronization.DocumentIntegrationSubscription.IsMatch(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given node and task type match the subscription
+            </summary>
+            <param name="obj">TreeNode to match</param>
+            <param name="taskType">Task type to match</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if the node and task correspond with subscription settings</returns>
+        </member>
+        <member name="P:CMS.Synchronization.DocumentIntegrationSubscription.DocumentNodeAliasPath">
+            <summary>
+            Alias path of document to match
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.DocumentIntegrationSubscription.DocumentCultureCode">
+            <summary>
+            Culture code of document to match
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.DocumentIntegrationSubscription.DocumentClassName">
+            <summary>
+            Class name of document to match
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.ObjectIntegrationSubscription">
+            <summary>
+            Class representing subscription to objects
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ObjectIntegrationSubscription.#ctor(System.String,CMS.SynchronizationEngine.TaskProcessTypeEnum,CMS.SettingsProvider.TaskTypeEnum,System.String,System.String,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="connectorName">Name of connector the subscription is attached to</param>
+            <param name="taskProcessType">Type of task processing (sync/async etc.)</param>
+            <param name="taskType">Type of task which to subscribe to</param>
+            <param name="siteName">Name of site which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+            <param name="objectType">Type of object which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+            <param name="objectCodeName">Code name of object which to subscribe to (accepts '%' as a wildcard representing 0-n characters)</param>
+        </member>
+        <member name="M:CMS.Synchronization.ObjectIntegrationSubscription.IsMatch(CMS.SettingsProvider.ICMSObject,CMS.SettingsProvider.TaskTypeEnum,CMS.SynchronizationEngine.TaskProcessTypeEnum@)">
+            <summary>
+            Determines whether given info object and task type match the subscription
+            </summary>
+            <param name="obj">GeneralizedInfo to match</param>
+            <param name="taskType">Task type to match</param>
+            <param name="taskProcessType">Returns type of task processing</param>
+            <returns>TRUE if the info object and task correspond with subscription settings</returns>
+        </member>
+        <member name="P:CMS.Synchronization.ObjectIntegrationSubscription.ObjectType">
+            <summary>
+            Type of object to match
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.ObjectIntegrationSubscription.ObjectCodeName">
+            <summary>
+            Code name of object to match
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.SyncHelper">
+            <summary>
+            Helper class for synchronization methods.
+            </summary>
+        </member>
+        <member name="F:CMS.Synchronization.SyncHelper.mAdministratorId">
+            <summary>
+            Administrator user ID.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetInstance">
+            <summary>
+            Gets the instance of the helper.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProcessTask(CMS.SettingsProvider.TaskTypeEnum,System.String,System.String,System.String)">
+            <summary>
+            Processes the given task.
+            </summary>
+            <param name="taskType">Type of the task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document/object data for the synchronization task</param>
+            <param name="taskBinaryData">Binary data for the synchronization task</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProcessTask(CMS.SettingsProvider.TaskTypeEnum,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Processes the given task.
+            </summary>
+            <param name="taskType">Type of the task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document/object data for the synchronization task</param>
+            <param name="taskBinaryData">Binary data for the synchronization task</param>
+            <param name="processChildren">Indicates if also child objects should be processed</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetSynchronizationTaskDataSet(CMS.SettingsProvider.TaskTypeEnum,System.String,System.String)">
+            <summary>
+            Gets synchronization task empty DataSet for specified task type.
+            </summary>
+            <param name="taskType">Task type</param>
+            <param name="className">Document class name (optional)</param>
+            <param name="taskObjectType">Task object type (optional)</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetDataSet(System.String,CMS.SettingsProvider.TaskTypeEnum,System.String)">
+            <summary>
+            Returns the dataset loaded from the given task data.
+            </summary>
+            <param name="taskData">Task data to make the DataSet from</param>
+            <param name="taskType">Task type</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateObject(System.Data.DataSet,System.Data.DataSet,System.String,CMS.SettingsProvider.TranslationHelper,System.Boolean,System.Boolean)">
+            <summary>
+            Updates the object.
+            </summary>
+            <param name="objectDS">Object data</param>
+            <param name="binaryData">Binary data</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="th">Translation helper</param>
+            <param name="addToSite">If true, assigns the object to the site</param>
+            <param name="updateChildren">Indicates if child objects should be updated</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateObjects(CMS.SettingsProvider.BaseInfo,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper,System.Boolean,System.Data.DataSet,System.Boolean)">
+            <summary>
+            Updates the object.
+            </summary>
+            <param name="infoObj">Object type definition to process</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+            <param name="updateChildren">Indicates if child objects should be updated</param>
+            <param name="binaryData">DataSet with binary data</param>
+            <param name="addToSite">If true, assigns the objects to the site</param>
+            <returns>Returns last processed object</returns>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateObject(CMS.SettingsProvider.GeneralizedInfo,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper,System.Boolean,System.Data.DataSet,System.Boolean)">
+            <summary>
+            Updates the object.
+            </summary>
+            <param name="infoObj">Object to update</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+            <param name="updateChildren">Indicates if child objects should be updated</param>
+            <param name="binaryData">DataSet with binary data</param>
+            <param name="addToSite">If true, assigns the object to the site</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.CreateSiteBinding(CMS.SettingsProvider.GeneralizedInfo,System.Int32)">
+            <summary>
+            Creates a site binding. (Site is specified by SyncHelper.SiteID property.)
+            </summary>
+            <param name="bindingObj">Binding object to create.</param>
+            <param name="boundObjectId">Identifier of bound object.</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.DeleteObject(System.Data.DataSet,System.String)">
+            <summary>
+            Deletes the object.
+            </summary>
+            <param name="objectDS">Object data</param>
+            <param name="taskObjectType">Object type</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.RemoveObjectsFromSite(CMS.SettingsProvider.GeneralizedInfo,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Removes the objects from site.
+            </summary>
+            <param name="infoObj">Object type definition to process</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.RemoveObjectFromSite(CMS.SettingsProvider.GeneralizedInfo,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Removes the object from site.
+            </summary>
+            <param name="infoObj">Object to update</param>
+            <param name="ds">DataSet with the object data</param>
+            <param name="th">Translation table</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.RemoveObjectFromSite(System.Data.DataSet,System.String,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Removes the object from the site.
+            </summary>
+            <param name="objectDS">Object data</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateDocument(System.Data.DataSet,System.String,System.Boolean)">
+            <summary>
+            Updates the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+            <param name="processChildren">Indicates if also child objects should be processed</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.PublishDocument(System.Data.DataSet,System.String)">
+            <summary>
+            Publishes the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ArchiveDocument(System.Data.DataSet,System.String)">
+            <summary>
+            Archives the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.RejectDocument(System.Data.DataSet,System.String)">
+            <summary>
+            Rejects the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.DeleteDocument(System.Data.DataSet,System.Boolean,System.String)">
+            <summary>
+            Deletes the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="deleteAllCultures">Delete all culture versions</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.MoveDocument(System.Data.DataSet,System.String)">
+            <summary>
+            Moves the document.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateRelationships(CMS.TreeEngine.TreeNode,System.Data.DataTable)">
+            <summary>
+            Updates the relationships.
+            </summary>
+            <param name="node">Document node</param>
+            <param name="relationshipsTable">Relationships table</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateCategories(CMS.TreeEngine.TreeNode,System.Data.DataTable,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Updates the categories.
+            </summary>
+            <param name="node">Document node</param>
+            <param name="categoriesTable">Categories table</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateAliases(CMS.TreeEngine.TreeNode,System.Data.DataTable,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Updates the document aliases.
+            </summary>
+            <param name="node">Document node</param>
+            <param name="aliasesTable">Aliases table</param>
+            <param name="th">Translation helper</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.TranslateNodeColumns(CMS.TreeEngine.TreeNode,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Translates given node columns using data from helper.
+            </summary>
+            <param name="node">Node to translate</param>
+            <param name="th">Translation helper with the data</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProceedWithTranslations(CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Determines whether to continue with translation operations.
+            </summary>
+            <param name="th">Current translation helper object</param>
+            <returns>TRUE if OperationType is other than Integration. When OperationType is  Integration there also have to be some translations present.</returns>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.RemoveExcludedValues(CMS.TreeEngine.TreeNode)">
+            <summary>
+            Removes excluded column values from the given document.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.HasObjectTable(System.String,System.Data.DataSet)">
+            <summary>
+            Indicates if source has object table.
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="ds">Source data</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProcessMediaFolder(CMS.SettingsProvider.TaskTypeEnum,System.Data.DataSet)">
+            <summary>
+            Process media folder task.
+            </summary>
+            <param name="taskType">Task type</param>
+            <param name="ds">DataSet with folder data</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.UpdateACLs(CMS.TreeEngine.TreeNode,System.Data.DataSet,CMS.SettingsProvider.TranslationHelper)">
+            <summary>
+            Update node with permissions from DataSet.
+            </summary>
+            <param name="node">Node to process</param>
+            <param name="documentDS">DataSet with permissions tables</param>
+            <param name="th">TranslationHelper</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProcessACLItems(System.Data.DataSet,CMS.SettingsProvider.TaskTypeEnum,System.String)">
+            <summary>
+            Break ACL inheritance.
+            </summary>
+            <param name="documentDS">Document data</param>
+            <param name="taskType">Task type information</param>
+            <param name="safeClassName">Class name of document in safe format</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetSynchronizationTaskDataSetInternal(CMS.SettingsProvider.TaskTypeEnum,System.String,System.String)">
+            <summary>
+            Gets synchronization task empty DataSet for specified task type.
+            </summary>
+            <param name="taskType">Task type</param>
+            <param name="className">Document class name (optional)</param>
+            <param name="taskObjectType">Task object type (optional)</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.ProcessTaskInternal(CMS.SettingsProvider.TaskTypeEnum,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Processes the given task.
+            </summary>
+            <param name="taskType">Type of the task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document/object data for the synchronization task</param>
+            <param name="taskBinaryData">Binary data for the synchronization task</param>
+            <param name="processChildren">Indicates if also child objects should be processed</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetDataSetInternal(System.String,CMS.SettingsProvider.TaskTypeEnum,System.String)">
+            <summary>
+            Returns the dataset loaded from the given task data.
+            </summary>
+            <param name="taskData">Task data to make the DataSet from</param>
+            <param name="taskType">Task type</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetPhysicalFilesDataSet(System.String)">
+            <summary>
+            Gets physical files DataSet.
+            </summary>
+            <param name="binaryData">String representation of physical files data</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.EnsureExcludedObjectValues(CMS.SettingsProvider.GeneralizedInfo,CMS.SettingsProvider.GeneralizedInfo)">
+            <summary>
+            Removes excluded column values from the given object.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SyncHelper.GetError(System.String)">
+            <summary>
+            Returns the full error message.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.AdministratorId">
+            <summary>
+            Administrator user ID.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.TreeProvider">
+            <summary>
+            TreeProvider object to use.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.ExcludeColumns">
+            <summary>
+            Gets ore sets the excluded columns of the document which are not staged.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.LogTasks">
+            <summary>
+            Indicates if logging staging tasks is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.UseTreeCustomHandlers">
+            <summary>
+            Indicates if custom handlers should be used for document operations.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.OperationType">
+            <summary>
+            Defines the operation type.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.SiteName">
+            <summary>
+            Gets or sets current site name.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.ExcludeObjectColumns">
+            <summary>
+            Gets ore sets the excluded columns of the object which are not staged.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.SiteID">
+            <summary>
+            Gets site ID.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.TranslationSiteID">
+            <summary>
+            Gets site ID for translation.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncHelper.CurrentUser">
+            <summary>
+            Current user.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.ServiceAssertion">
+            <summary>
+            X509 service assertion.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.CreateClientOutputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No client output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.CreateClientInputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No client input filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.CreateServiceInputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            Service input filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.CreateServiceOutputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No service output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.ReadXml(System.Xml.XmlReader,System.Collections.Generic.IDictionary{System.String,System.Type})">
+            <summary>
+            Reading the request.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceAssertion.WriteXml(System.Xml.XmlWriter)">
+            <summary>
+            Writes the XML.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.ServiceInputFilter">
+            <summary>
+            X509 Service input filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceInputFilter.#ctor(CMS.Synchronization.ServiceAssertion,Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="parentAssertion">Parent assertion</param>
+            <param name="filterContext">Filter context</param>
+        </member>
+        <member name="M:CMS.Synchronization.ServiceInputFilter.ValidateMessageSecurity(Microsoft.Web.Services3.SoapEnvelope,Microsoft.Web.Services3.Security.Security)">
+            <summary>
+            Validates the message security.
+            </summary>
+            <param name="envelope">Message envelope</param>
+            <param name="security">Security context</param>
+        </member>
+        <member name="M:CMS.Synchronization.CMS.SynchronizationEngine.SyncServerWse.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.StagingHelper">
+            <summary>
+            Overall staging methods.
+            </summary>
+        </member>
+        <member name="F:CMS.Synchronization.StagingHelper.AUTHENTICATION_PROCESSED">
+            <summary>
+            Authentication of the token was processed.
+            </summary>
+        </member>
+        <member name="F:CMS.Synchronization.StagingHelper.mX509Certificates">
+            <summary>
+            Hashtable of the X509 certificates indexed by keyIdentifier.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.IsServerEnabled(System.String)">
+            <summary>
+            Returns true if the staging server is enabled.
+            </summary>
+            <param name="siteName">Site name to check</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.ServerAuthenticationType(System.String)">
+            <summary>
+            Returns server authentication type for specified site.
+            </summary>
+            <param name="siteName">Site name to check</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.CompareArray(System.Byte[],System.Byte[])">
+            <summary>
+            Compares two byte arrays, returns true, if they are equal.
+            </summary>
+            <param name="a">Array 1</param>
+            <param name="b">Array 2</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetSHA1HashByteArray(System.String)">
+            <summary>
+            Returns the SHA1 hash byte array for given password string.
+            </summary>
+            <param name="password">Password string</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetSHA1Hash(System.String)">
+            <summary>
+            Returns the hash for the specified password.
+            </summary>
+            <param name="password">Password to hash</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetTaskTypeString(CMS.SettingsProvider.TaskTypeEnum)">
+            <summary>
+            Returns the task type string.
+            </summary>
+            <param name="taskType">Task type</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetTaskTypeEnum(System.String)">
+            <summary>
+            Returns the task type enumeration value.
+            </summary>
+            <param name="taskType">String task type representation</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.CheckUsernameToken(Microsoft.Web.Services3.Security.Tokens.UsernameToken,System.String)">
+            <summary>
+            Returns true if given client token is valid.
+            </summary>
+            <param name="token">Token to check</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetClientX509TokenKey(System.String)">
+            <summary>
+            Returns client token key.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetServerX509TokenKey(System.String)">
+            <summary>
+            Returns server token key.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetX509Token(System.String)">
+            <summary>
+            Returns the security token for X509 authentication.
+            </summary>
+            <param name="keyIdentifier">Token key identifier</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.RetrieveX509TokenFromStore(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.String)">
+            <summary>
+            Retrieves the X509 security token from the store.
+            </summary>
+            <param name="storeLocation">Store location</param>
+            <param name="storeName">Store name</param>
+            <param name="keyIdentifier">Token key identifier</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.CheckClientX509Token(Microsoft.Web.Services3.Security.Tokens.X509SecurityToken,System.String)">
+            <summary>
+            Returns true if given client token is valid.
+            </summary>
+            <param name="token">Token to check</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.CheckServerX509Token(Microsoft.Web.Services3.Security.Tokens.X509SecurityToken,System.String)">
+            <summary>
+            Returns true if given server token is valid.
+            </summary>
+            <param name="token">Token to check</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.GetSigningX509Token(Microsoft.Web.Services3.SoapContext,Microsoft.Web.Services3.Security.Security)">
+            <summary>
+            This method checks if the incoming message has signed all the important message parts such as soap:Body, all the addressing headers and timestamp.
+            </summary>
+            <param name="context">Soap context to get the signing token for</param>
+            <param name="security">Security context</param>
+            <returns>The signing token</returns>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.CheckSignature(Microsoft.Web.Services3.SoapContext,Microsoft.Web.Services3.Security.Security,Microsoft.Web.Services3.Security.MessageSignature)">
+            <summary>
+            Checks the context signature of the message.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.VerifyMessageParts(Microsoft.Web.Services3.SoapContext)">
+            <summary>
+            Vefies, if all the required message parts are present.
+            </summary>
+            <param name="context">Soap context</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.RunSynchronization(System.Int32,System.Int32)">
+            <summary>
+            Runs the synchronization.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverId">Server ID</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.RunSynchronization(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Runs the task synchronization for specified server.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverId">Server ID</param>
+            <param name="runOlder">Runs also older tasks</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.RunSynchronization(System.Int32,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Runs the task synchronization for specified server.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverId">Server ID</param>
+            <param name="runOlder">Runs also older tasks</param>
+            <param name="siteId">Site ID (specifies the site which should be used to get the servers when no server is specified)</param>
+        </member>
+        <member name="M:CMS.Synchronization.StagingHelper.LogSynchronizationError(System.Int32,System.Int32,System.String)">
+            <summary>
+            Logs the synchronization error.
+            </summary>
+            <param name="taskId">Task ID</param>
+            <param name="serverId">Server ID</param>
+            <param name="result">Result</param>
+        </member>
+        <member name="P:CMS.Synchronization.StagingHelper.TreatServerNamesAsInstances">
+            <summary>
+             Indicates whether to delete instance global tasks (tasks belonging to servers with same ServerName) after synchronization
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.StagingWorker">
+            <summary>
+            Automatic staging worker task.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.StagingWorker.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Executes the publish action.
+            </summary>
+            <param name="task">Task to process</param>
+        </member>
+        <member name="T:CMS.Synchronization.SyncClient">
+            <summary>
+            Synchronization client.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SyncClient.#ctor(CMS.Synchronization.ServerInfo)">
+            <summary>
+            Constructor, initializes synchronization service client for specified server.
+            </summary>
+            <param name="server">Server data</param>
+        </member>
+        <member name="M:CMS.Synchronization.SyncClient.RunTask(CMS.Synchronization.TaskInfo)">
+            <summary>
+            Runs the synchronization task.
+            </summary>
+            <param name="taskObj">Task object</param>
+            <returns>Returns error message</returns>
+        </member>
+        <member name="M:CMS.Synchronization.SyncClient.GetError(System.String)">
+            <summary>
+            Returns the full error message.
+            </summary>
+            <param name="errorMessage">Error message</param>
+        </member>
+        <member name="P:CMS.Synchronization.SyncClient.Timeout">
+            <summary>
+            Gets timeout for staging service.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncClient.StagingSOAPMustUnderstand">
+            <summary>
+            Gets or sets the value that indicates whether staging SOAP must understand.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncClient.Service">
+            <summary>
+            Synchronization service.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.SyncClient.Server">
+            <summary>
+            Synchronization server.
+            </summary>
+        </member>
+        <member name="T:CMS.SynchronizationEngine.SyncServer">
+            <summary>
+            Content staging service.
+            </summary>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.SyncServer.ProcessSyncTask(System.String,System.String,System.String)">
+            <summary>
+            Processes the given synchronization task.
+            </summary>
+            <param name="taskTitle">Title of the synchronization task</param>
+            <param name="taskType">Type of the synchronization task</param>
+            <param name="taskData">Document data for the synchronization task</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.SyncServer.ProcessSynchronizationTask(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Processes the given synchronization task.
+            </summary>
+            <param name="taskTitle">Title of the synchronization task</param>
+            <param name="taskType">Type of the synchronization task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document data for the synchronization task</param>
+            <param name="systemVersion">System version</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.SyncServer.ProcessSynchronizationTask(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Processes the given synchronization task.
+            </summary>
+            <param name="taskTitle">Title of the synchronization task</param>
+            <param name="taskType">Type of the synchronization task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document data for the synchronization task</param>
+            <param name="taskBinaryData">Binary data for the synchronization task</param>
+            <param name="systemVersion">System version</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.SyncServer.ProcessSynchronizationTask(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Processes the given synchronization task.
+            </summary>
+            <param name="taskTitle">Title of the synchronization task</param>
+            <param name="taskType">Type of the synchronization task</param>
+            <param name="taskObjectType">Task object type</param>
+            <param name="taskData">Document data for the synchronization task</param>
+            <param name="taskBinaryData">Binary data for the synchronization task</param>
+            <param name="taskServerList">List of servers, which already processed the synchronization task</param>
+            <param name="systemVersion">System version</param>
+        </member>
+        <member name="M:CMS.SynchronizationEngine.SyncServer.GetError(System.String)">
+            <summary>
+            Returns the full error message.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.SyncServer.LogTasks">
+            <summary>
+            Indicates if logging staging task is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.SyncServer.UseTreeCustomHandlers">
+            <summary>
+            Indicates if custom handlers should be used for document staging operations.
+            </summary>
+        </member>
+        <member name="P:CMS.SynchronizationEngine.SyncServer.SyncHelper">
+            <summary>
+            SyncHelper instance.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.SynchronizationModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SynchronizationModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.Synchronization.SynchronizationModule.Init">
+            <summary>
+            Initializes synchronization module
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.SynchronizationModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.Synchronization.SynchronizationModule.ClearHashtables(System.Boolean)">
+            <summary>
+            Clears the module hashtables.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.Synchronization.SynchronizationModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="T:CMS.Synchronization.WebServiceAuthorization">
+            <summary>
+            Web service authorization interface for username authentication.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.WebServiceAuthorization.VerifyToken(Microsoft.Web.Services3.Security.Tokens.SecurityToken)">
+            <summary>
+            Verifies the incoming username token.
+            </summary>
+            <param name="token">Token to verify</param>
+        </member>
+        <member name="M:CMS.Synchronization.WebServiceAuthorization.AuthenticateToken(Microsoft.Web.Services3.Security.Tokens.UsernameToken)">
+            <summary>
+            Authentication function, returns the password for specified username.
+            </summary>
+            <param name="token">Token to authorize against</param>
+        </member>
+        <member name="T:CMS.Synchronization.X509ClientAssertion">
+            <summary>
+            X509 Security assertion.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientAssertion.#ctor(System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="clientKeyId">Client certificate key ID</param>
+            <param name="serverKeyId">Server certificate key ID</param>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientAssertion.CreateClientOutputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            Client output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientAssertion.CreateClientInputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No client input filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientAssertion.CreateServiceInputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No service input filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientAssertion.CreateServiceOutputFilter(Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            No service output filter.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.X509ClientAssertion.ClientKeyId">
+            <summary>
+            Client certificate key ID.
+            </summary>
+        </member>
+        <member name="P:CMS.Synchronization.X509ClientAssertion.ServerKeyId">
+            <summary>
+            Server certificate key ID.
+            </summary>
+        </member>
+        <member name="T:CMS.Synchronization.X509ClientOutputFilter">
+            <summary>
+            Client output filter.
+            </summary>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientOutputFilter.#ctor(CMS.Synchronization.X509ClientAssertion,Microsoft.Web.Services3.Design.FilterCreationContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="parentAssertion">Parent assertion</param>
+            <param name="filterContext">Filter context</param>
+        </member>
+        <member name="M:CMS.Synchronization.X509ClientOutputFilter.SecureMessage(Microsoft.Web.Services3.SoapEnvelope,Microsoft.Web.Services3.Security.Security)">
+            <summary>
+            Secures the message context.
+            </summary>
+            <param name="envelope">Message envelope</param>
+            <param name="security">Security context</param>
+        </member>
+    </members>
+</doc>

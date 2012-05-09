@@ -1,0 +1,16 @@
+﻿<media_library version="6.0">
+  <NewDataSet>
+    <media_library>
+      <LibraryID>438</LibraryID>
+      <LibraryName>VideoGallery</LibraryName>
+      <LibraryDisplayName>Video gallery</LibraryDisplayName>
+      <LibraryDescription></LibraryDescription>
+      <LibraryFolder>VideoGallery</LibraryFolder>
+      <LibraryAccess>0</LibraryAccess>
+      <LibrarySiteID>110</LibrarySiteID>
+      <LibraryGUID>1df22d5d-25b5-472e-a48d-3fa350d2a7f3</LibraryGUID>
+      <LibraryLastModified>2011-06-15T18:53:58.34+02:00</LibraryLastModified>
+      <LibraryTeaserPath></LibraryTeaserPath>
+    </media_library>
+  </NewDataSet>
+</media_library>

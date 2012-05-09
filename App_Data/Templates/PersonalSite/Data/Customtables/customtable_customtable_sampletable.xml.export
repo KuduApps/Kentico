@@ -1,0 +1,42 @@
+﻿<customtable_customtable_sampletable version="6.0">
+  <NewDataSet>
+    <table>
+      <ItemID>4</ItemID>
+      <ItemCreatedBy>53</ItemCreatedBy>
+      <ItemCreatedWhen>2008-10-20T13:42:40+02:00</ItemCreatedWhen>
+      <ItemModifiedBy>53</ItemModifiedBy>
+      <ItemModifiedWhen>2009-12-18T09:59:18.013+01:00</ItemModifiedWhen>
+      <ItemOrder>1</ItemOrder>
+      <ItemText>Sample text 1</ItemText>
+      <ItemGUID>d541c160-1be1-4d1f-b0e6-c995ce17b3c7</ItemGUID>
+    </table>
+    <table>
+      <ItemID>5</ItemID>
+      <ItemCreatedBy>53</ItemCreatedBy>
+      <ItemCreatedWhen>2008-10-20T13:42:52+02:00</ItemCreatedWhen>
+      <ItemModifiedBy>1149</ItemModifiedBy>
+      <ItemModifiedWhen>2011-09-22T08:57:42.773+02:00</ItemModifiedWhen>
+      <ItemOrder>2</ItemOrder>
+      <ItemText>Sample text 2</ItemText>
+      <ItemGUID>f7bba57b-cd1a-41d4-a883-cf914c454db9</ItemGUID>
+    </table>
+    <table>
+      <ItemID>6</ItemID>
+      <ItemCreatedBy>53</ItemCreatedBy>
+      <ItemCreatedWhen>2008-10-20T13:43:01+02:00</ItemCreatedWhen>
+      <ItemModifiedBy>53</ItemModifiedBy>
+      <ItemModifiedWhen>2009-10-07T14:54:34.543+02:00</ItemModifiedWhen>
+      <ItemOrder>3</ItemOrder>
+      <ItemText>Sample text 3</ItemText>
+      <ItemGUID>b1b32b02-9f11-43cd-a664-2bc0e2f74061</ItemGUID>
+    </table>
+    <table>
+      <ItemID>8</ItemID>
+      <ItemCreatedBy>53</ItemCreatedBy>
+      <ItemCreatedWhen>2010-03-05T18:51:55.767+01:00</ItemCreatedWhen>
+      <ItemOrder>4</ItemOrder>
+      <ItemText>Sample text 4</ItemText>
+      <ItemGUID>e2a90ffd-c717-43c7-9b30-cf885dec31b6</ItemGUID>
+    </table>
+  </NewDataSet>
+</customtable_customtable_sampletable>

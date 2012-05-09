@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+
+using CMS.WorkflowEngine;
+using CMS.GlobalHelper;
+using CMS.TreeEngine;
+
+/// <summary>
+/// ##SUMMARY##
+/// </summary>
+public partial class DocType : ContentDocument
+{
+    #region "Variables"
+
+    /// <summary>
+    /// Class name of this document type
+    /// </summary>
+    public const string CLASSNAME = "##CLASSNAME##";
+
+    #endregion
+
+
+    #region "Properties"
+
+    // ##PROPERTIES##
+
+    #endregion
+
+
+    #region "Methods"
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    public DocType()
+        : base(null, CLASSNAME, null)
+    {
+    }
+
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    /// <param name="tree">Tree provider to use</param>
+    public DocType(TreeProvider tree)
+        : base(null, CLASSNAME, tree)
+    {
+    }
+
+
+    /// <summary>
+    /// Constructor, initializes new document of this type
+    /// </summary>
+    /// <param name="dr">Document data</param>
+    /// <param name="tree">Tree provider to use</param>
+    public DocType(DataRow dr, TreeProvider tree)
+        : base(dr, CLASSNAME, tree)
+    {
+    }
+
+    #endregion
+}

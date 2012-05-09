@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <columns>
+    <column source="EventDate" externalsourcename="eventdate"  caption="$Ecommerce.MyCredit.EventDate$" wrap="false" />
+    <column source="EventName" caption="$Ecommerce.MyCredit.EventName$" wrap="false" />
+    <column source="EventCreditChange" externalsourcename="eventcreditchange" caption="$Ecommerce.MyCredit.EventCreditChange$"  wrap="false" />
+    <column source="EventDescription" caption="$Ecommerce.MyCredit.EventDescription$" wrap="true" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="ecommerce.creditevent" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

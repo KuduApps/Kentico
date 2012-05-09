@@ -1,0 +1,37 @@
+﻿<ecommerce_supplier version="6.0">
+  <NewDataSet>
+    <com_supplier>
+      <SupplierID>35</SupplierID>
+      <SupplierDisplayName>E-book Supplier</SupplierDisplayName>
+      <SupplierPhone>123-456-7890</SupplierPhone>
+      <SupplierEmail>ebooks@localhost.local</SupplierEmail>
+      <SupplierFax>123-456-7891</SupplierFax>
+      <SupplierEnabled>true</SupplierEnabled>
+      <SupplierGUID>42be3b65-b598-42c9-88e6-c8b8eb6a0e0d</SupplierGUID>
+      <SupplierLastModified>2011-07-12T10:26:40.2+02:00</SupplierLastModified>
+      <SupplierSiteID>110</SupplierSiteID>
+    </com_supplier>
+    <com_supplier>
+      <SupplierID>33</SupplierID>
+      <SupplierDisplayName>Hardware Supplier</SupplierDisplayName>
+      <SupplierPhone>123-456-7890</SupplierPhone>
+      <SupplierEmail>hardware@localhost.local</SupplierEmail>
+      <SupplierFax>123-456-7891</SupplierFax>
+      <SupplierEnabled>true</SupplierEnabled>
+      <SupplierGUID>a8ff8f14-89ab-42bc-bc89-972de10f42f3</SupplierGUID>
+      <SupplierLastModified>2011-07-12T10:34:11.873+02:00</SupplierLastModified>
+      <SupplierSiteID>110</SupplierSiteID>
+    </com_supplier>
+    <com_supplier>
+      <SupplierID>34</SupplierID>
+      <SupplierDisplayName>Software Supplier</SupplierDisplayName>
+      <SupplierPhone>123-456-7890</SupplierPhone>
+      <SupplierEmail>software@localhost.local</SupplierEmail>
+      <SupplierFax>123-456-7891</SupplierFax>
+      <SupplierEnabled>true</SupplierEnabled>
+      <SupplierGUID>cc320013-8a62-4357-b5b5-8c3d7018777d</SupplierGUID>
+      <SupplierLastModified>2011-07-12T10:27:01.313+02:00</SupplierLastModified>
+      <SupplierSiteID>110</SupplierSiteID>
+    </com_supplier>
+  </NewDataSet>
+</ecommerce_supplier>

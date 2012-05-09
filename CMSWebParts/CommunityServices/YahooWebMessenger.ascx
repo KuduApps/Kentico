@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="~/CMSWebParts/CommunityServices/YahooWebMessenger.ascx.cs" Inherits="CMSWebParts_CommunityServices_YahooWebMessenger" %>
+<asp:Literal ID="ltlYahooMessenger" runat="server" />

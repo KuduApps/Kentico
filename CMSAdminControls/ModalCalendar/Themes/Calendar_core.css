@@ -1,0 +1,52 @@
+﻿.datetime-ui-time-arrow_move
+{
+    width: 7px;
+    height: 6px;
+    cursor: hand;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.datetime-ui-timeicon-n
+{
+    background-position: -4px -22px;
+}
+.datetime-ui-timeicon-s
+{
+    background-position: -69px -22px;
+}
+.hourShift
+{
+    height: 19px;
+}
+.datetime-ui-time-div
+{
+    width: 50px;
+}
+.datetime-ui-time-textbox
+{
+    width: 25px;
+}
+.datetime-ui-buttonOK
+{
+    cursor: pointer;
+    margin: 0.5em 0.2em 0.4em;
+    overflow: visible;
+    padding: 0.2em 0.6em 0.3em;
+    width: auto;
+}
+.datetime-ui-range-div
+{
+    position: absolute;
+    width: auto;
+    display: none;
+}
+.datetime-ui-range-button-panel
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.datetime-ui-range-header
+{
+    background-color: #505F6D;
+}

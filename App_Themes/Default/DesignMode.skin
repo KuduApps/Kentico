@@ -1,0 +1,9 @@
+<%-- Form edit --%>
+<asp:RadioButtonList runat="server" SkinID="EditingFormRadioButtonList" CssClass="ContentRadioButtonList" />
+
+<%-- Content new --%>
+<asp:GridView runat="server" SkinID="ContentNewClasses" CssClass="ContentNewClasses" />
+
+<%-- UniGrid --%>
+<asp:GridView runat="server" SkinID="UniGridGrid" CssClass="UniGridGrid">
+</asp:GridView>

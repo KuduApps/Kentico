@@ -1,0 +1,3448 @@
+﻿<cms_emailtemplate version="6.0">
+  <NewDataSet>
+    <cms_emailtemplate>
+      <EmailTemplateID>744</EmailTemplateID>
+      <EmailTemplateName>Blog.NotificationToModerators</EmailTemplateName>
+      <EmailTemplateDisplayName>Blogs - Notification to blog moderators</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+    body, td
+    {
+      font-size: 12px; 
+      font-family: Arial;
+    }
+    &lt;/style&gt;
+  &lt;/head&gt;  
+  &lt;body&gt;
+  &lt;p&gt;
+    New blog post comment was added and now is waiting for your approval:
+  &lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog post:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}"&gt;{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}"&gt;{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Added by:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {% TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)4b71a93e79e739fb3ae7b6974ef7976e89cf36312bde20e9d6facfda1ed037f7%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Date and time:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Text:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}   
+    &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;    
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>744e6923-0224-4a10-b633-7922646db03d</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:29:44.237+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New blog post comment was added and now is waiting for your approval: 
+
+Blog post:   [url={%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}]{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}[/url]
+Blog:   [url={%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}]{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}[/url]
+Added by:   {% TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)4b71a93e79e739fb3ae7b6974ef7976e89cf36312bde20e9d6facfda1ed037f7%}  
+Date and time:   {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}  
+Text:   {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Comment needs to be approved on the blog post {%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>blog</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>769</EmailTemplateID>
+      <EmailTemplateName>Blog.NewCommentNotification</EmailTemplateName>
+      <EmailTemplateDisplayName>Blogs - Notification to blog owner</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+    body, td
+    {
+      font-size: 12px; 
+      font-family: Arial
+    }
+    &lt;/style&gt;
+  &lt;/head&gt;  
+  &lt;body&gt;
+  &lt;p&gt;
+    New comment was added to your blog post:
+  &lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog post:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}"&gt;{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}"&gt;{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Added by:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {% TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)4b71a93e79e739fb3ae7b6974ef7976e89cf36312bde20e9d6facfda1ed037f7%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Date and time:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Text:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;    
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>f5083a57-1355-430a-a1b9-5679e3d0e5fc</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:11:27.857+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New comment was added to your blog post:
+
+Blog post: [url={%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}]{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}[/url]
+Blog: [url={%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}]{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}[/url]
+Added by: {%TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)82f847d9f01b4508eac406822bdbbe98c1a80733642f2fcd551a71f801403fc2%}
+Date and time: {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}
+
+Text: {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}
+
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>New comment was added to your blog post {%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>blog</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>768</EmailTemplateID>
+      <EmailTemplateName>Blog.NotificationToSubcribers</EmailTemplateName>
+      <EmailTemplateDisplayName>Blogs - Notification to blog post subscribers</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+    body, td
+    {
+      font-size: 12px; 
+      font-family: Arial
+    }
+    &lt;/style&gt;
+  &lt;/head&gt;  
+  &lt;body&gt;
+  &lt;p&gt;
+    New comment was added to the blog post you are subscribed to:
+  &lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog post:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}"&gt;{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Blog:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}"&gt;{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Added by:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)82f847d9f01b4508eac406822bdbbe98c1a80733642f2fcd551a71f801403fc2%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Date and time:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Text:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;    
+
+  &lt;p&gt;
+        &lt;a href="{%unsubscriptionlink|(user)administrator|(hash)3230c3e21f6b1607e56b3f829dcd57b84dd3dfd9d5ebcd0ae34ee4d093e70503%}"&gt;Click here to unsubscribe&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>c82d3577-1657-43b5-8fd8-b3172a87b9d1</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:30:45.597+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New comment was added to the blog post you are subscribed to:
+
+Blog post: [url={%BlogPostLink|(user)administrator|(hash)36b5558e168e922c56383acc40fe079b2efd68f857b64f97a385862abe2844de%}]{%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}[/url]
+Blog: [url={%BlogLink|(user)administrator|(hash)a1ddcef316152dbb4652173cd4ac8626475803af9c5499abb3924c0b4efaeaba%}]{%Blog.DocumentName|(user)administrator|(hash)88bc0ea070a09841abcf6bfbd1263528493bffa42525c540c6988e463c1a0ab9%}[/url]
+Added by: {%TrimSitePrefix(Comment.CommentUserName)|(user)administrator|(hash)82f847d9f01b4508eac406822bdbbe98c1a80733642f2fcd551a71f801403fc2%}
+Date and time: {%Comment.CommentDate|(user)administrator|(hash)6b2f1f598c0d8e5749a513a8a3f4fd36ab983e7f73a2a918c3dbb889cbc5e0ba%}
+
+Text: {%Comment.CommentText|(user)administrator|(hash)cba96462e792288c8a01d19ae320c62d9e44ad30fcf4edc7f9fc79e3d111e8c7%}
+
+[url={%unsubscriptionlink|(user)administrator|(hash)3230c3e21f6b1607e56b3f829dcd57b84dd3dfd9d5ebcd0ae34ee4d093e70503%}]Click here to unsubscribe[/url]
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>New comment was added to the blog post {%BlogPost.DocumentName|(user)administrator|(hash)424d42b9dc90388d432b8deb80a8ad90d83db9f839f9b724a653601fea4c86e5%}</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>blog</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>760</EmailTemplateID>
+      <EmailTemplateName>Boards.NotificationToModerators</EmailTemplateName>
+      <EmailTemplateDisplayName>Boards - Notification to board moderators</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+    body, td
+    {
+      font-size: 12px; 
+      font-family: Arial;
+    }
+    &lt;/style&gt;
+  &lt;/head&gt;  
+  &lt;body&gt;
+  &lt;p&gt;
+    New message was added and now is waiting for your approval:
+  &lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Board:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%DocumentLink%}"&gt;{%Board.BoardDisplayName|(user)administrator|(hash)bb060a4c64bcfb096333ba7efd49626a1c8fd313bc4e5a00cd874de545443d12%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Added by:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%TrimSitePrefix(Message.MessageUserName)|(user)administrator|(hash)9c50b792057764e71c40b15c714b181ff47d599f61e214868e4c1ef499fe5dca%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Date and time:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Message.MessageInserted|(user)administrator|(hash)7a0f0ac6cf10a84d82362d66fd55fa12060d13fc6c7530c561083d936a01a3eb%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Text:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Message.MessageText|(user)administrator|(hash)437c7c76660588790076b39fd34e1daf8bbe1a319c3cf7f41a12b8a8ad59601e%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;    
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>35a95893-ee26-449e-b257-edb134a67c44</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T15:45:42.93+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New message was added and now is waiting for your approval: 
+
+Board:   [url={%DocumentLink%}]{%Board.BoardDsiplayName|(user)administrator|(hash)83414e3171ab82d20995f4689e5b7ba9088662c0455783a5602d875a5d90aa0b%}[/url]
+Added by:   {%TrimSitePrefix(Message.MessageUserName)|(user)administrator|(hash)9c50b792057764e71c40b15c714b181ff47d599f61e214868e4c1ef499fe5dca%}  
+Date and time:   {%Message.MessageInserted|(user)administrator|(hash)7a0f0ac6cf10a84d82362d66fd55fa12060d13fc6c7530c561083d936a01a3eb%}  
+Text:   {%Message.MessageText|(user)administrator|(hash)437c7c76660588790076b39fd34e1daf8bbe1a319c3cf7f41a12b8a8ad59601e%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Message needs to be approved in the board {%Board.BoardDisplayName|(user)administrator|(hash)bb060a4c64bcfb096333ba7efd49626a1c8fd313bc4e5a00cd874de545443d12%}</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>boards</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>751</EmailTemplateID>
+      <EmailTemplateName>Boards.NotificationToSubscribers</EmailTemplateName>
+      <EmailTemplateDisplayName>Boards - Notification to board subscribers</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+    body, td
+    {
+      font-size: 12px; 
+      font-family: Arial;
+    }
+    &lt;/style&gt;
+  &lt;/head&gt;  
+  &lt;body&gt;
+  &lt;p&gt;
+    New message was added to the board you are subscribed to:
+  &lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Board:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href="{%DocumentLink%}"&gt;{%Board.BoardDisplayName|(user)administrator|(hash)bb060a4c64bcfb096333ba7efd49626a1c8fd313bc4e5a00cd874de545443d12%}&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Added by:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%TrimSitePrefix(Message.MessageUserName)|(user)administrator|(hash)9c50b792057764e71c40b15c714b181ff47d599f61e214868e4c1ef499fe5dca%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Date and time:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Message.MessageInserted|(user)administrator|(hash)7a0f0ac6cf10a84d82362d66fd55fa12060d13fc6c7530c561083d936a01a3eb%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr valign="top"&gt;
+    &lt;td&gt;
+    &lt;strong&gt;Text:&amp;nbsp;&lt;/strong&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+    {%Message.MessageText|(user)administrator|(hash)437c7c76660588790076b39fd34e1daf8bbe1a319c3cf7f41a12b8a8ad59601e%}
+    &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;    
+
+  &lt;p&gt;
+        &lt;a href="{%UnsubscriptionLink%}"&gt;Click here to unsubscribe&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>856a1cbf-6340-4c20-b7da-ac32810b8546</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T15:46:21.78+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New message was added to the board you are subscribed to: 
+
+Board:   [url={%DocumentLink%}"]{%Board.BoardDisplayName|(user)administrator|(hash)bb060a4c64bcfb096333ba7efd49626a1c8fd313bc4e5a00cd874de545443d12%}[/url]
+Added by:   {%TrimSitePrefix(Message.MessageUserName)|(user)administrator|(hash)9c50b792057764e71c40b15c714b181ff47d599f61e214868e4c1ef499fe5dca%}  
+Date and time:   {%Message.MessageInserted|(user)administrator|(hash)7a0f0ac6cf10a84d82362d66fd55fa12060d13fc6c7530c561083d936a01a3eb%}  
+Text:   {%Message.MessageText|(user)administrator|(hash)437c7c76660588790076b39fd34e1daf8bbe1a319c3cf7f41a12b8a8ad59601e%}  
+
+[url={%UnsubscriptionLink%}]Click here to unsubscribe[/url]
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>New message was added to the board {%Board.BoardDisplayName|(user)administrator|(hash)bb060a4c64bcfb096333ba7efd49626a1c8fd313bc4e5a00cd874de545443d12%}</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>boards</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>705</EmailTemplateID>
+      <EmailTemplateName>BookingEvent.Invitation</EmailTemplateName>
+      <EmailTemplateDisplayName>Booking system - Event invitation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;
+&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;Thank you for your registration for event {%EventName|(encode)false%}. This is an e-mail confirmation that you have been registered. Below, you can find event details:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Event: {%EventName|(encode)false%}&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;{%EventSummary|(encode)false%}&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;{%EventDetails|(encode)false%}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt;&lt;br /&gt;
+{%EventLocation|(encode)false%}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt;&lt;br /&gt;
+{%EventDateString|(encode)false%}&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>eb37ce02-7853-4f91-bbd1-127597ebce66</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-07-17T12:06:11.653+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Hello,
+
+Thank you for your registration for event {%EventName|(encode)false%}. This is an e-mail confirmation that you have been registered. Below, you can find event details:
+
+Event: {%EventName|(encode)false%}
+
+{%EventSummary|(encode)false%}
+
+{%EventDetails|(encode)false%}
+
+Location:
+{%EventLocation|(encode)false%}
+
+Date:
+{%EventDateString|(encode)false%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>bookingevent</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>843</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.EproductExpirationNotification</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - E-product expiration notification</EmailTemplateDisplayName>
+      <EmailTemplateText>You have bought the folowing e-products, please download them until their download links expire. Once the download link expires, you won't be able to download the file.
+&lt;br /&gt;
+
+{%EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable")|(user)administrator|(hash)fef517a14a52a2216f7d25ef0905f4a692857a108b31d9e064cc8ceb385a240e%}
+&lt;br /&gt;
+
+You can download your e-products also from My profile -&gt; Orders section until their expiration.
+&lt;br /&gt;
+
+This is an automatic reminder, please do not respond.
+&lt;br /&gt;
+
+Thank you.
+</EmailTemplateText>
+      <EmailTemplateGUID>26c89400-44e4-4208-92ba-cdd7d6bd407e</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-07T17:14:42.597+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have bought the folowing e-products, please download them until their download links expire. Once the download link expires, you won't be able to download the file.
+
+{%EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable")|(user)administrator|(hash)fef517a14a52a2216f7d25ef0905f4a692857a108b31d9e064cc8ceb385a240e%}
+
+You can download your e-products also from My profile -&gt; Orders section until their expiration.
+
+This is an automatic reminder, please do not respond.
+Thank you.</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerceeproductexpiration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>167</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderNotificationToAdmin</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order notification to administrator</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;
+&lt;table cellspacing="0" cellpadding="5" bordercolor="black" border="1" width="600"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td height="50" valign="bottom" colspan="2"&gt;
+            &lt;table height="100%" width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left; vertical-align: bottom;"&gt;&lt;span style="font-size: 18pt;"&gt;New order&lt;/span&gt;&lt;/td&gt;
+                        &lt;td style="text-align: center; vertical-align: middle;"&gt;&lt;span style="font-family: Garamond,Times,serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="text-align: left;"&gt;&lt;br /&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Invoice number:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td style="text-align: left;"&gt;&lt;br /&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Order date:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Order status:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%} &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width="50%" style="text-align: left; vertical-align: top;"&gt;&lt;strong&gt;Supplier&lt;/strong&gt;
+            &lt;br /&gt;
+            &lt;br /&gt;
+            &lt;table&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Company address&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td width="50%" style="text-align: left; vertical-align: top;"&gt;&lt;span style="font-weight: bold;"&gt;Customer&lt;/span&gt;&lt;br /&gt;
+            &lt;br /&gt;
+            {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+            &lt;br /&gt;
+            &lt;strong&gt;Company address:&lt;/strong&gt;
+            {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Payment option&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: center;"&gt;{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Shipping option&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: center;"&gt;{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="text-align: left;"&gt;
+            {%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+            &lt;hr size="1" /&gt;
+            &lt;div style="text-align: right;"&gt;
+            &lt;table cellpadding="5" style="text-align: left;"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;&lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;&lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="vertical-align: top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;{%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Order note&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div style="padding-top-10px;"&gt;{%NewOrderLink%}&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>f49163f2-32c3-4c7b-ab1b-c128d621c02f</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T08:13:28.51+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>New order Company logo 
+ 
+
+Invoice number: {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+ 
+Order date: {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}
+Order status: {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%} 
+ 
+Supplier 
+
+Company address 
+
+
+Customer 
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+Company address: {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+
+Payment option  
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+ 
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}
+Tax summary: {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+ 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>166</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderNotificationToCustomer</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order notification to customer</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;
+&lt;p&gt;Thank you for your order. Below you can find the order details.&lt;/p&gt;
+&lt;table width="600" cellspacing="0" cellpadding="5" bordercolor="black" border="1"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td height="50" valign="bottom" colspan="2"&gt;
+            &lt;table height="100%" width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left; vertical-align: bottom;"&gt;&lt;span style="font-size: 18pt;"&gt;Your order&lt;/span&gt;&lt;/td&gt;
+                        &lt;td style="text-align: center; vertical-align: middle;"&gt;&lt;span style="font-family: Garamond,Times,serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="text-align: left;"&gt;&lt;br /&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Invoice number:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td style="text-align: left;"&gt;&lt;br /&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Order date:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td valign="bottom" style="text-align: left;"&gt;&lt;strong&gt;Order status:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 10px;"&gt;{%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width="50%" style="text-align: left; vertical-align: top;"&gt;&lt;strong&gt;Supplier&lt;/strong&gt;&lt;br /&gt;
+            &lt;br /&gt;
+            &lt;table&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Company address&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td width="50%" style="text-align: left; vertical-align: top;"&gt;&lt;span style="font-weight: bold;"&gt;Customer&lt;/span&gt;&lt;br /&gt;
+            &lt;br /&gt;
+            {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+            &lt;br /&gt;
+            &lt;strong&gt;Company address:&lt;/strong&gt;
+            {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Payment option&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: center;"&gt;{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Shipping option&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: center;"&gt;{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="text-align: left;"&gt;{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}&lt;hr size="1" /&gt;
+            &lt;div style="text-align: right;"&gt;
+            &lt;table cellpadding="5" style="text-align: left;"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;&lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;&lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="vertical-align: top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td style="text-align: right; padding-right: 0px;"&gt;{%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+            &lt;table width="100%"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Order note&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style="text-align: left;"&gt;{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>674d1b85-ce19-40bd-b2df-166a5891090a</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T08:14:08.647+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Thank you for your order!
+
+Your order Company logo
+ 
+
+Invoice number: {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+ 
+Order date: {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}
+Order status: {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}
+ 
+Supplier
+
+Company address
+ Customer
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+Company address: {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+Payment option
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}
+Tax summary: {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+ 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>706</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderPaymentNotificationToAdmin</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order payment notification to administrator</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Payment for the order below received.&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="5" border="1" bordercolor="black" width="600px"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" valign="bottom" height="50"&gt;
+      &lt;table width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left; vertical-align: bottom;"
+            &lt;span style="font-size: 18pt"&gt;New order&lt;/span&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: center; vertical-align: middle;"&gt;
+            &lt;span style="font-family: Garamond, Times, serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Invoice number:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order date:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+  &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order status:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;  
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;strong&gt;Supplier&lt;/strong&gt;
+      &lt;br/&gt;
+      &lt;br/&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            Company address
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;span style="font-weight: bold"&gt; Customer &lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+        {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Payment option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Shipping option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left" colspan="2"&gt;
+      {%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+      &lt;hr size="1" /&gt;
+      &lt;div style="text-align: right;"&gt;
+      &lt;table style="text-align: left;" cellpadding="5"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Shipping tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ShippingTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)e44e8ed374402353c054e1d0a129da7dd1cd5abf209cec406830894cd852bc7b%}
+          &lt;/td&gt;
+  &lt;/tr&gt;  
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+          &lt;/td&gt;
+  &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Order note &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            {%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div style="padding-top-10px;"&gt;
+   {%NewOrderLink%}
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>7b821e4a-d695-42a7-85f2-1ca14c208953</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T08:10:59.683+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Payment for the order below received.
+
+New order  Company logo  
+ 
+
+Invoice number:  {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%} 
+
+ 
+Order date:  {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}  
+Order status:  {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}  
+
+ 
+Supplier 
+
+Company address  
+
+Customer 
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%} 
+ 
+Payment option  
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}  
+ 
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}
+Shipping tax summary:
+{%ShippingTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)e44e8ed374402353c054e1d0a129da7dd1cd5abf209cec406830894cd852bc7b%}
+
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}
+Tax summary: 
+{%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+ 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>707</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderPaymentNotificationToCustomer</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order payment notification to customer</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;We have received your payment for the order bellow:&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="5" border="1" bordercolor="black" width="600px"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" valign="bottom" height="50"&gt;
+      &lt;table width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left; vertical-align: bottom;"
+            &lt;span style="font-size: 18pt"&gt;Your order&lt;/span&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: center; vertical-align: middle;"&gt;
+            &lt;span style="font-family: Garamond, Times, serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Invoice number:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order date:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Format(Order.OrderDate, "{0:d}"|(user)administrator|(hash)6f79510dc59f2df24b4c5b9d07b36cf7482b447fc933541ec0bbafeb745609f1%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+  &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order status:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%} 
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;  
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;strong&gt;Supplier&lt;/strong&gt;
+      &lt;br/&gt;
+      &lt;br/&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            Company address
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;span style="font-weight: bold"&gt; Customer &lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+        {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+          &lt;tbody&gt;
+              &lt;tr&gt;
+                  &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Payment option&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td style="text-align: center;"&gt;{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;    
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+          &lt;tbody&gt;
+              &lt;tr&gt;
+                  &lt;td style="text-align: left;"&gt;&lt;span style="font-weight: bold;"&gt;Shipping option&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td style="text-align: center;"&gt;{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;  
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left" colspan="2"&gt;
+      {%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+      &lt;hr size="1" /&gt;
+      &lt;div style="text-align: right;"&gt;
+      &lt;table style="text-align: left;" cellpadding="5"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Shipping tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ShippingTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)e44e8ed374402353c054e1d0a129da7dd1cd5abf209cec406830894cd852bc7b%}
+          &lt;/td&gt;
+  &lt;/tr&gt;  
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+          &lt;/td&gt;
+  &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Order note &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            {%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+{%IfDataSourceIsEmpty(EproductsTable, "",
+"&lt;p&gt;Your &lt;b&gt;e-products download links were activated&lt;/b&gt;, please download the files before their expiration. Once the files expire, you won't be able to download them.&lt;/p&gt;" +
+EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable")|(user)administrator|(hash)13109af79801052a66b6fb87d6102dfbd7df3d1522d522aa5e00c2ab3a22d238%}
+
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>5da46ce2-23bf-4c2e-9dbb-22d67c550399</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T10:02:32.997+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>We have received your payment for the order below.
+
+Your order  Company logo  
+ 
+
+Invoice number: {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%} 
+
+ 
+Order date: {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%} 
+Order status: {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}
+
+ 
+Supplier 
+
+Company address  
+
+Customer 
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%} 
+ 
+Payment option  
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+ 
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%} 
+Shipping tax summary: {%ShippingTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)e44e8ed374402353c054e1d0a129da7dd1cd5abf209cec406830894cd852bc7b%}
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}  
+Tax summary: {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}  
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+
+
+{%EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable",
+"Your e-products download links were activated, please download the files before their expiration. Once the files expire, you won't be able to download them.")|(user)administrator|(hash)a24d6ee33533038e21bd562a0cfbb8148332016389fd696277d7ee39cd1c9f8e%}
+ 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>731</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderStatusNotificationToAdmin</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order status notification to administrator</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Status of the order bellow has changed&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="5" border="1" bordercolor="black" width="600px"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" valign="bottom" height="50"&gt;
+      &lt;table width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left; vertical-align: bottom;"
+            &lt;span style="font-size: 18pt"&gt;New order&lt;/span&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: center; vertical-align: middle;"&gt;
+            &lt;span style="font-family: Garamond, Times, serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Invoice number:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order date:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+  &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order status:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%OrderStatus.StatusDisplayName|(user)administrator|(hash)d6c68de905b2b672c83145fd1c3b42fda0e83621645a6db50d3a8cafb613ac2e%} 
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;  
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;strong&gt;Supplier&lt;/strong&gt;
+      &lt;br/&gt;
+      &lt;br/&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            Company address
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;span style="font-weight: bold"&gt; Customer &lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+        {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+      &lt;br /&gt;
+  &lt;strong&gt;Company address:&lt;/strong&gt;
+  {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Payment option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Shipping option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left" colspan="2"&gt;
+      {%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%} 
+      &lt;hr size="1" /&gt;
+      &lt;div style="text-align: right;"&gt;
+      &lt;table style="text-align: left;" cellpadding="5"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+          &lt;/td&gt;
+  &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Order note &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            {%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div style="padding-top-10px;"&gt;
+   {%NewOrderLink%}
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>a32836fb-5d7e-4e71-9dcf-33bc920859b6</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T08:15:19.817+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Status of the order bellow has changed
+
+New order  Company logo  
+ 
+
+Invoice number:  {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}  
+
+ 
+Order date:  {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%} 
+Order status:  {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}  
+
+ 
+Supplier 
+
+Company address  
+
+Customer 
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+Company address: {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+ 
+Payment option  
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}  
+ 
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%} 
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%} 
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}  
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%} 
+Tax summary: 
+{%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}  
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+ 
+
+{%NewOrderLink%}</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>732</EmailTemplateID>
+      <EmailTemplateName>Ecommerce.OrderStatusNotificationToCustomer</EmailTemplateName>
+      <EmailTemplateDisplayName>E-commerce - Order status notification to customer</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Status of your order has changed.&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="5" border="1" bordercolor="black" width="600px"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" valign="bottom" height="50"&gt;
+      &lt;table width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left; vertical-align: bottom;"
+            &lt;span style="font-size: 18pt"&gt;Your order&lt;/span&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: center; vertical-align: middle;"&gt;
+            &lt;span style="font-family: Garamond, Times, serif; font-size: 24pt; font-style: italic;"&gt;Company logo&lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Invoice number:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left"&gt;    
+      &lt;br /&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order date:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+  &lt;tr&gt;
+          &lt;td style="text-align: left;" valign="bottom"&gt; 
+            &lt;strong&gt;Order status:&lt;/strong&gt;
+          &lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 10px"&gt;
+            {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;  
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;strong&gt;Supplier&lt;/strong&gt;
+      &lt;br/&gt;
+      &lt;br/&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            Company address
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;br /&gt;
+    &lt;/td&gt;
+    &lt;td style="text-align: left; vertical-align: top" width="50%"&gt;
+      &lt;span style="font-weight: bold"&gt; Customer &lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+        {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+      &lt;br /&gt;
+  &lt;strong&gt;Company address:&lt;/strong&gt;
+  {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+      &lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Payment option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt; 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Shipping option &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: center"&gt;
+            {%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: left" colspan="2"&gt;
+      {%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%}
+      &lt;hr size="1" /&gt;
+      &lt;div style="text-align: right;"&gt;
+      &lt;table style="text-align: left;" cellpadding="5"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total shipping:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Total price:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            &lt;strong&gt;{%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}&lt;/strong&gt;
+          &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="vertical-align:top;"&gt;&lt;strong&gt;Tax summary:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style="text-align: right; padding-right: 0px;"&gt;
+            {%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}
+          &lt;/td&gt;
+  &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div style="height: 120px;"&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;table width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            &lt;span style="font-weight: bold"&gt; Order note &lt;/span&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style="text-align: left"&gt;
+            {%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>68ca5608-f80f-4972-88f3-24daaf669c32</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-30T08:15:55.157+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Status of your order has changed.
+
+Your order  Company logo  
+ 
+
+Invoice number:  {%Order.OrderInvoiceNumber|(user)administrator|(hash)2526fa4a5e2bc2b4a58e8fab08d08b139025706f1f614719df397bc9bd3b90a5%} 
+
+ 
+Order date:  {%Format(Order.OrderDate, "{0:d}")|(user)administrator|(hash)1cccd184308256a5f6b82024b0aa03bb4e9c9d4eaa029664e3714197a15300b6%}  
+Order status:  {%GetResourceString(OrderStatus.StatusDisplayName)|(user)administrator|(hash)09902315904d1db9014aea7bf4d5d4d5680f68f7aed449931a8570c2d9dc27e6%}  
+
+ 
+Supplier 
+
+Company address  
+
+Customer 
+
+{%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)7960adbbbb40670d0bf29659fe42435cc7ec2db333a9b4f6d7d4d8133fe2c2e1%}
+Company address: {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address"|(user)administrator|(hash)98f29f2a9bdf80406f46478366c2c8276adaa3775727fa4a66819b5665e2abb9%}
+ 
+Payment option  
+{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(user)administrator|(hash)f4bd53a4cf633921fb1f15e9097ff5312b27b1eb54cf01fb5669c38dbdec1cb1%}  
+ 
+Shipping option  
+{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(user)administrator|(hash)748fabbfafb7f9dfdf45675a28eba4bdc4c072592e58a0c358051d0a3153bf8e%}  
+ 
+{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter")|(user)administrator|(hash)9e8c2d4859c4e8c80639a9cffb6cc25fc935fb55e7b03c135c935bf947d8bcf0%} 
+--------------------------------------------------------------------------------
+
+Total shipping: {%TotalShipping.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)ab9d10aa152f2e3a3c22e79c05607ad18691707fce7787aba2d512335482886e%}  
+Total price: {%TotalPrice.Format(Currency.CurrencyFormatString)|(user)administrator|(hash)49695c0d3fa3613ef4a7958194fc8cfd077dee4d8198799beaf432a0dbf8c7f0%}  
+Tax summary: 
+{%ContentTaxesTable.ApplyTransformation("Ecommerce.Transformations.Order_TaxesTable", "Ecommerce.Transformations.Order_TaxesTableHeader", "Ecommerce.Transformations.Order_TaxesTableFooter")|(user)administrator|(hash)76921da8b0bdaf955b33c85e57dab8feaccc01f0ae2cedc9def953d4b39660c1%}  
+
+  
+Order note  
+{%Order.OrderNote|(encode)|(user)administrator|(hash)a5ed7cf37728b6c1ad6cf0cf4c5d39df4ed3d35a95731a7bc7841d04318951bf%}
+ 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>ecommerce</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>161</EmailTemplateID>
+      <EmailTemplateName>Forums.NewPost</EmailTemplateName>
+      <EmailTemplateDisplayName>Forums -  New post</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	  &lt;style&gt;
+		BODY, TD
+		{
+		  font-size: 12px; 
+		  font-family: arial
+		}
+	  &lt;/style&gt;
+	&lt;/head&gt;	
+	&lt;body&gt;
+	&lt;p&gt;
+	  This is a notification of a new post added to the forum you subscribed to:
+	&lt;/p&gt;
+	&lt;table&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Forum:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%forumdisplayname|(user)administrator|(hash)dd1dfb82deb7c9b2e3b197a001a5291d802843e3f0ce9c0bfdd95e91df9d7ca3%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Subject:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%postsubject|(user)administrator|(hash)e56d5792480ad52910a80e58c2b291c828171c7ac0b44710a5359226c3e4aec2%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Posted by:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%TrimSitePrefix(postusername)|(user)administrator|(hash)b0ae51562f7d1a17e88e14c7f874fb3d4c073375d0b0448a6c652333e7b23c96%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Date and time:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%posttime|(user)administrator|(hash)f62620daa9b076c5f0285f62df043c342623be119a9a078b1b0f1f229b640610%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Text:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%posttext|(user)administrator|(hash)a6b362d6212ce0833b9639c862a1474c2130a4d345367fbf6ccdfb82efac0133%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	&lt;/table&gt;	  
+
+	&lt;p&gt;
+	&lt;a href="{%link|(user)administrator|(hash)3a1cd5192d11737a7dd51e04d3f31fd32d1dfa837d7f9baf3bb13e133a9d4cbc%}"&gt;Click here to view forum on-line&lt;/a&gt; &amp;nbsp;
+        &lt;a href="{%unsubscribelink|(user)administrator|(hash)17d4337051c12b345cb95ff96aa289a8b83328b81456e734143603b41afe40c1%}"&gt;Click here to unsubscribe&lt;/a&gt;
+	&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>2fd97ef6-d0c3-4cd0-99fa-2cda6928773d</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:35:19.51+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is a notification of a new post added to the forum you subscribed to: 
+
+Forum:  {%forumdisplayname|(user)administrator|(hash)dd1dfb82deb7c9b2e3b197a001a5291d802843e3f0ce9c0bfdd95e91df9d7ca3%}  
+Subject:  {%postsubject|(user)administrator|(hash)e56d5792480ad52910a80e58c2b291c828171c7ac0b44710a5359226c3e4aec2%}  
+Posted by:  {%TrimSitePrefix(postusername)|(user)administrator|(hash)b0ae51562f7d1a17e88e14c7f874fb3d4c073375d0b0448a6c652333e7b23c96%}  
+Date and time:  {%posttime|(user)administrator|(hash)f62620daa9b076c5f0285f62df043c342623be119a9a078b1b0f1f229b640610%}  
+Text:  {%posttextplain|(user)administrator|(hash)0de8ef6ca151a2f05cffce3719512013956667dc6e76600b594108e9d0200912%}  
+
+Click here to view forum on-line:
+{%link|(user)administrator|(hash)3a1cd5192d11737a7dd51e04d3f31fd32d1dfa837d7f9baf3bb13e133a9d4cbc%} 
+Click here to unsubscribe:
+{%unsubscribelink|(user)administrator|(hash)17d4337051c12b345cb95ff96aa289a8b83328b81456e734143603b41afe40c1%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>forum</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>165</EmailTemplateID>
+      <EmailTemplateName>Forums.ModeratorNotice</EmailTemplateName>
+      <EmailTemplateDisplayName>Forums - Moderator notification</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	  &lt;style&gt;
+		BODY, TD
+		{
+		  font-size: 12px; 
+		  font-family: arial
+		}
+	  &lt;/style&gt;
+	&lt;/head&gt;	
+	&lt;body&gt;
+	&lt;p&gt;
+	  A new forum post is waiting for your approval.
+	&lt;/p&gt;
+	&lt;table&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Forum:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%forumdisplayname|(user)administrator|(hash)dd1dfb82deb7c9b2e3b197a001a5291d802843e3f0ce9c0bfdd95e91df9d7ca3%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Subject:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%postsubject|(user)administrator|(hash)e56d5792480ad52910a80e58c2b291c828171c7ac0b44710a5359226c3e4aec2%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Posted by:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%TrimSitePrefix(postusername)|(user)administrator|(hash)b0ae51562f7d1a17e88e14c7f874fb3d4c073375d0b0448a6c652333e7b23c96%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Date and time:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%posttime|(user)administrator|(hash)f62620daa9b076c5f0285f62df043c342623be119a9a078b1b0f1f229b640610%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr valign="top"&gt;
+		&lt;td&gt;
+		&lt;strong&gt;Text:&lt;/strong&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+		{%posttext|(user)administrator|(hash)a6b362d6212ce0833b9639c862a1474c2130a4d345367fbf6ccdfb82efac0133%}
+		&lt;/td&gt;
+	  &lt;/tr&gt;
+	&lt;/table&gt;	  
+
+	&lt;p&gt;
+	&lt;a href="{%link|(user)administrator|(hash)3a1cd5192d11737a7dd51e04d3f31fd32d1dfa837d7f9baf3bb13e133a9d4cbc%}"&gt;Click here to view the forum on-line&lt;/a&gt; &amp;nbsp;
+	&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>f1fc231d-d1c4-425c-83d0-dd5197bc4c7b</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:36:01.613+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>A new forum post is waiting for your approval. 
+
+Forum:  {%forumdisplayname|(user)administrator|(hash)dd1dfb82deb7c9b2e3b197a001a5291d802843e3f0ce9c0bfdd95e91df9d7ca3%}  
+Subject:  {%postsubject|(user)administrator|(hash)e56d5792480ad52910a80e58c2b291c828171c7ac0b44710a5359226c3e4aec2%}  
+Posted by:  {%TrimSitePrefix(postusername)|(user)administrator|(hash)b0ae51562f7d1a17e88e14c7f874fb3d4c073375d0b0448a6c652333e7b23c96%}  
+Date and time:  {%posttime|(user)administrator|(hash)f62620daa9b076c5f0285f62df043c342623be119a9a078b1b0f1f229b640610%}  
+Text:  {%posttext|(user)administrator|(hash)a6b362d6212ce0833b9639c862a1474c2130a4d345367fbf6ccdfb82efac0133%}  
+
+Click here to view the forum on-line:
+{%link|(user)administrator|(hash)3a1cd5192d11737a7dd51e04d3f31fd32d1dfa837d7f9baf3bb13e133a9d4cbc%} </EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>forum</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>764</EmailTemplateID>
+      <EmailTemplateName>Forums.SubscribeConfirmation</EmailTemplateName>
+      <EmailTemplateDisplayName>Forums - subscription confirmation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	  &lt;style&gt;
+		BODY, TD
+		{
+		  font-size: 12px; 
+		  font-family: arial
+		}
+	  &lt;/style&gt;
+	&lt;/head&gt;	
+	&lt;body&gt;
+	&lt;p&gt;
+	  You have been successfully subscribed to		
+	&lt;strong&gt;Forum&lt;/strong&gt; {%forumdisplayname%}{%separator%}{%subject%}.		    
+	&lt;p/&gt;
+	&lt;p&gt;
+	&lt;a href="{%link%}"&gt;Click here to view forum on-line&lt;/a&gt; &amp;nbsp;
+        &lt;a href="{%unsubscribelink%}"&gt;Click here to unsubscribe&lt;/a&gt;
+	&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>dc4a0178-3055-4339-bab5-5dc1011b9a41</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-12T19:19:03.98+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have been successfully subscribed to Forum {%forumdisplayname%}{%separator%}{%subject%}. 
+
+Click here to view forum on-line:
+{%link%}
+Click here to unsubscribe:
+{%unsubscribelink%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Forum subscription notification</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>forumsubscribtion</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>765</EmailTemplateID>
+      <EmailTemplateName>Forums.UnsubscribeConfirmation</EmailTemplateName>
+      <EmailTemplateDisplayName>Forums - unsubscription confirmation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	  &lt;style&gt;
+		BODY, TD
+		{
+		  font-size: 12px; 
+		  font-family: arial
+		}
+	  &lt;/style&gt;
+	&lt;/head&gt;	
+	&lt;body&gt;
+	&lt;p&gt;
+	  You have been successfully unsubscribed from		
+	&lt;strong&gt;Forum&lt;/strong&gt; {%forumdisplayname%}{%separator%}{%subject%}.		    
+	&lt;p/&gt;	
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>1d636437-f61c-40dc-8bc1-383c66a1bfc1</EmailTemplateGUID>
+      <EmailTemplateLastModified>2008-12-21T15:48:49.73+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have been successfully unsubscribed from Forum {%forumdisplayname%}{%separator%}{%subject%}. 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Forum unsubscription notification</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>forumsubscribtion</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>745</EmailTemplateID>
+      <EmailTemplateName>Friends.Approve</EmailTemplateName>
+      <EmailTemplateDisplayName>Friends - Friend approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} is now your friend.&lt;/p&gt;
+    &lt;p&gt;Comment: {%Friendship.FriendComment.HTMLEncode()|(user)administrator|(hash)9fb6e4084b11ff40c04757edbf05f5f12246f720e7c9a4cd9eb12f56235356ac%}&lt;/p&gt;
+    &lt;p&gt;Sent: {%Friendship.FriendApprovedWhen|(user)administrator|(hash)97f937065abdc565157539a4d8ad30b070d05383f73997164fcd3501b16aa0bb%}&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>14926c79-639a-414b-b22d-2ca7cea58f2b</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-06T01:37:38.573+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} is now your friend.
+
+Comment: {%Friendship.FriendComment|(user)administrator|(hash)35aafd579b3193998ac5a10dbd97138142bbd85ce6b367335f37d5874940e0b3%}
+
+Sent: {%Friendship.FriendApprovedWhen|(user)administrator|(hash)97f937065abdc565157539a4d8ad30b070d05383f73997164fcd3501b16aa0bb%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} is now your friend</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>friends</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>746</EmailTemplateID>
+      <EmailTemplateName>Friends.Reject</EmailTemplateName>
+      <EmailTemplateDisplayName>Friends - Friend rejection</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} rejected the friendship.&lt;/p&gt;
+    &lt;p&gt;Comment: {%Friendship.FriendComment.HTMLEncode()|(user)administrator|(hash)9fb6e4084b11ff40c04757edbf05f5f12246f720e7c9a4cd9eb12f56235356ac%}&lt;/p&gt;
+    &lt;p&gt;Sent: {%Friendship.FriendRejectedWhen|(user)administrator|(hash)156c79a62de3a69efe5caa50a661963ca9af628cc766fee6049098c8c0504988%}&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>d5d2b5f4-bcbc-4746-a5af-08833dd4c51a</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-06T01:37:22.42+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} has rejected the friendship.
+
+Comment: {%Friendship.FriendComment|(user)administrator|(hash)35aafd579b3193998ac5a10dbd97138142bbd85ce6b367335f37d5874940e0b3%}
+
+Sent: {%Friendship.FriendRejectedWhen|(user)administrator|(hash)156c79a62de3a69efe5caa50a661963ca9af628cc766fee6049098c8c0504988%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} rejected the friendship</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>friends</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>747</EmailTemplateID>
+      <EmailTemplateName>Friends.Request</EmailTemplateName>
+      <EmailTemplateDisplayName>Friends - Friend request</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} wants to be your friend.&lt;/p&gt;
+    &lt;p&gt;Comment: {%Friendship.FriendComment|(user)administrator|(hash)35aafd579b3193998ac5a10dbd97138142bbd85ce6b367335f37d5874940e0b3%}&lt;/p&gt;
+    &lt;p&gt;Sent: {%Friendship.FriendRequestedWhen.HTMLEncode()|(user)administrator|(hash)a616eb2d16692f41cf261de19af12cc6a8d06d804cb5135344602815b566aea7%}&lt;/p&gt;
+    &lt;p&gt;Choose one of the following actions:&lt;/p&gt;    
+    &lt;p&gt;&lt;a href="{%MANAGEMENTURL|(user)administrator|(hash)c64ae4c1e0944b29837b5f5e765bc0b4818e3a165abc39c2fd685d9e8fd400c9%}"&gt;Accept or reject&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="{%PROFILEURL|(user)administrator|(hash)d76fde75600a5758fb51fd90644e5c86640312b83071a8ea41aba17ee66bf4fd%}"&gt;Open user profile&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>6fe616ca-b9d8-4980-90be-9124c2546cde</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-06T01:37:08.023+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} wants to be your friend.
+
+Comment: {%Friendship.FriendComment|(user)administrator|(hash)35aafd579b3193998ac5a10dbd97138142bbd85ce6b367335f37d5874940e0b3%}
+
+Sent: {%Friendship.FriendRequestedWhen|(user)administrator|(hash)6045b6d11199beb1c7e4c10e0c6b825e20ae8e1d4761821849ab725942e1a79a%}
+
+Choose one of the following actions:
+
+[url={%MANAGEMENTURL|(user)administrator|(hash)c64ae4c1e0944b29837b5f5e765bc0b4818e3a165abc39c2fd685d9e8fd400c9%}]Accept or reject[/url]
+
+[url={%PROFILEURL|(user)administrator|(hash)d76fde75600a5758fb51fd90644e5c86640312b83071a8ea41aba17ee66bf4fd%}]Open user profile[/url]</EmailTemplatePlainText>
+      <EmailTemplateSubject>{%FORMATTEDSENDERNAME|(user)administrator|(hash)f47bafdfed3b5e831fc6bb1308aa1753430d41955b3734aa41c3e1b63bae7476%} wants to be your friend</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>friends</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>763</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberAcceptedInvitation</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member accepted invitation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;{%Sender.FullName|(user)administrator|(hash)e467db00ce17eb4e06ea06fa5bd9b16ac74f2b2c72bc85edb4b929b95403672f%}({%TrimSitePrefix(Sender.UserName)|(user)administrator|(hash)7bb3a85cf09be462831a747a54a53bdd2a49dd7ad63cd53af2552b67ac99800d%}) has accepted your invitation to group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.&lt;br /&gt;
+		When: {%GroupMember.MemberJoined|(user)administrator|(hash)99a5495e8e4973499c3431ebd8db98558f3e3815bfe091284ea6504079898f27%}&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>0f68bc2f-bf08-40cf-b4e4-c2550e94f570</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:37:05.997+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{%Sender.FullName|(user)administrator|(hash)e467db00ce17eb4e06ea06fa5bd9b16ac74f2b2c72bc85edb4b929b95403672f%}({%TrimSitePrefix(Sender.UserName)|(user)administrator|(hash)7bb3a85cf09be462831a747a54a53bdd2a49dd7ad63cd53af2552b67ac99800d%}) has accepted your invitation to group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.
+When: {%GroupMember.MemberJoined|(user)administrator|(hash)99a5495e8e4973499c3431ebd8db98558f3e3815bfe091284ea6504079898f27%}
+
+
+Best Regards,
+
+The Community Team
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Invitation to group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}' was accepted</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmemberinvitation</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>758</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberApproved</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member approved</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Dear {%MemberUser.FirstName%},&lt;br /&gt;
+    &lt;br /&gt;
+    you have been approved as a full member of group '{%Group.GroupDisplayName%}'.&lt;/p&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    Best Regards,&lt;br /&gt;
+    &lt;br /&gt;
+    The Community Team
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>d57092d8-28c3-4784-98d2-7d02f4a73a66</EmailTemplateGUID>
+      <EmailTemplateLastModified>2010-11-23T10:28:50.947+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Dear {%MemberUser.FirstName%},
+
+you have been approved as a full member of group '{%Group.GroupDisplayName%}'.
+
+
+Best Regards,
+
+The Community Team
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>761</EmailTemplateID>
+      <EmailTemplateName>Groups.Invitation</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member invitation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;User {%InvitedBy%} invites you to group '{%Group.GroupDisplayName%}'.&lt;br /&gt;
+		With comment "{%Invitation.InvitationComment%}"&lt;br /&gt;&lt;br /&gt;
+		Follow the link below to join the group:&lt;br /&gt;&lt;br /&gt;
+		&lt;a href="{%ACCEPTIONURL%}"&gt;{%ACCEPTIONURL%}&lt;/a&gt;
+		&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,
+		&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;
+
+
+</EmailTemplateText>
+      <EmailTemplateGUID>8909e20f-80b3-4be1-9c47-61000e856784</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-27T20:21:24.503+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>User {%InvitedBy%} invites you to group '{%Group.GroupDisplayName%}'.
+
+With comment "{%Invitation.InvitationComment%}"
+
+Follow the link below to join the group:
+
+[url={%ACCEPTIONURL%}]{%ACCEPTIONURL%}[/url]
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject>Invitation to group "{%Group.GroupDisplayName%}"</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupinvitation</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>753</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberJoin</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member join</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) joined group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>7125b6a1-d72b-4e14-9995-2a4e73b910bc</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:37:38.773+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) joined group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>757</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberJoinedConfirmation</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member joined confirmation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;Dear {%MemberUser.FirstName%},&lt;br /&gt;
+		&lt;br /&gt;
+		welcome to group '{%Group.GroupDisplayName%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,
+		&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>03636c82-1f7f-44e0-9b51-b7a6c705114e</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-27T20:20:25.663+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Dear {%MemberUser.FirstName%},
+
+welcome to group '{%Group.GroupDisplayName%}'.
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>756</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberJoinedWaitingForApproval</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member joined waiting for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;Dear {%MemberUser.FirstName%},&lt;br /&gt;
+		&lt;br /&gt;
+		you are now waiting for approval to group '{%Group.GroupDisplayName%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>4c80e736-d3b4-4288-9d67-bf764634a32e</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-27T20:19:55.76+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Dear {%MemberUser.FirstName%},
+
+you are now waiting for approval to group '{%Group.GroupDisplayName%}'.
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>754</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberLeave</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member leave</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) just left group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>85636277-a9a7-46ba-80f0-50e3fd30bc24</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:38:47+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) just left group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>759</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberRejected</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member rejected</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;Dear {%MemberUser.FirstName%},&lt;br /&gt;
+		&lt;br /&gt;
+		you have been rejected from group '{%Group.GroupDisplayName%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>0d52d7da-4ab4-4342-b52c-a94f14f23ee9</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-27T20:21:48.27+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Dear {%MemberUser.FirstName%},
+
+you have been rejected from group '{%Group.GroupDisplayName%}'.
+
+
+Best Regards,
+
+The Community Team
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>755</EmailTemplateID>
+      <EmailTemplateName>Groups.MemberWaitingForApproval</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Member waiting for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) is waiting for approval into group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.&lt;/p&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Best Regards,&lt;br /&gt;
+		&lt;br /&gt;
+		The Community Team
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>719d4419-0b2d-49db-ba8b-a5e29648d98c</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:39:48.297+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>User {%MemberUser.FullName|(user)administrator|(hash)973de5a5a86d5ed9dba04e42e70f66ccccacc919d52742ca07c976022ef6562c%}({%TrimSitePrefix(MemberUser.UserName)|(user)administrator|(hash)23548d716d81c3f723f92c36b7811d988ac42f32d24e0afbb2543a290c82acd5%}) is waiting for approval into group '{%Group.GroupDisplayName|(user)administrator|(hash)9ee133a4404e1a531b3ec9af7433de0b106a9d36c8ecb799a7cb1610812e3aff%}'.
+
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>781</EmailTemplateID>
+      <EmailTemplateName>Groups.WaitingForApproval</EmailTemplateName>
+      <EmailTemplateDisplayName>Groups - Waiting for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;    
+    Group '{%Group.GroupDisplayName%}' is waiting for your approval.
+    &lt;br /&gt;
+    Best Regards,&lt;br /&gt;
+    &lt;br /&gt;
+    The Community Team
+  &lt;/body&gt;
+&lt;/html&gt;
+</EmailTemplateText>
+      <EmailTemplateGUID>08d21450-4431-46c9-b654-a35b622fad10</EmailTemplateGUID>
+      <EmailTemplateLastModified>2010-11-23T14:20:48.857+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Group '{%Group.GroupDisplayName%}' is waiting for your approval.
+
+Best Regards,
+
+The Community Team</EmailTemplatePlainText>
+      <EmailTemplateSubject>Group '{%Group.GroupDisplayName%}' is waiting for approval</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>groupmember</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>842</EmailTemplateID>
+      <EmailTemplateName>Membership.ChangePasswordRequest</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Change password request</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size:12px; font-family: Arial"&gt;
+    &lt;p&gt;
+       You have submitted a request to change your existing password. Please click &lt;a href="{%ResetPasswordUrl%}"&gt;this link&lt;/a&gt; to generate a new password.
+    &lt;/p&gt;
+    &lt;p&gt;
+       If you want to cancel your request or you did not send request please click &lt;a href="{%CancelUrl%}"&gt;this link&lt;/a&gt; to invalidate the operation.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</EmailTemplateText>
+      <EmailTemplateGUID>c97cec10-ecac-4f15-ab20-99f5008d49cf</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-10-06T13:20:07.557+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have submitted a request to change your existing password. Please go to this link {%ResetPasswordUrl%} to generate a new password.
+
+If you want to cancel your request or you did not send request please go to this link {%CancelUrl%} to invalidate the operation.</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>membershipchangepassword</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>738</EmailTemplateID>
+      <EmailTemplateName>Membership.ChangedPassword</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Changed password</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Your password has been changed.&lt;br /&gt;
+&lt;p&gt;Your user name and new password are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User name:&lt;/strong&gt; {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+&lt;strong&gt;Password:&lt;/strong&gt; {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>97b2f851-0693-40e6-8be1-6edd27d138d4</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:40:30.023+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Your password has been changed.
+
+Your user name and new password are:
+
+User name: {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+Password: {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>password</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>807</EmailTemplateID>
+      <EmailTemplateName>Membership.ExpirationNotification</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Expiration notification</EmailTemplateDisplayName>
+      <EmailTemplateText>The following memberships will expire soon:
+
+{%MembershipsTable.ApplyTransformation("Ecommerce.Transformations.Order_MembershipsTable")|(user)administrator|(hash)b1f81f748b2d8ba2ccb4736fed24fe73b2b6674f6c04480c1c9893e0c802d112%}
+
+&lt;br /&gt;
+
+To renew it, please follow these steps:
+
+&lt;ol&gt;
+&lt;li&gt;In My profile section on My memberships tab click the Buy membership button. You will be redirected to the Buy membership page.&lt;/li&gt;
+&lt;li&gt;Choose the required membership and add it to your shopping cart.&lt;/li&gt;
+&lt;li&gt;Finish your order.&lt;/li&gt;
+&lt;li&gt;Once the order is paid, your membership will be renewed.&lt;/li&gt;
+&lt;/ol&gt;
+
+This is an automatic reminder, please do not respond.&lt;br /&gt;
+Thank you.
+</EmailTemplateText>
+      <EmailTemplateGUID>96db7d3f-e7ca-41eb-926a-9fe92babe634</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-07T17:13:50.453+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>The following memberships will expire soon:
+
+{%MembershipsTable.ApplyTransformation("Ecommerce.Transformations.Order_MembershipsTable")|(user)administrator|(hash)b1f81f748b2d8ba2ccb4736fed24fe73b2b6674f6c04480c1c9893e0c802d112%}
+
+To renew it, please follow these steps:
+
+1) In My profile section on My memberships tab click the Buy membership button. You will be redirected to the Buy membership page.
+2) Choose the required membership and add it to your shopping cart.
+3) Finish your order.
+4) Once the order is paid, your membership will be renewed.
+
+This is an automatic reminder, please do not respond.
+Thank you.</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>membershipexpiration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>162</EmailTemplateID>
+      <EmailTemplateName>forgottenPassword</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Forgotten password</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body style="font-size:12px; font-family: Arial"&gt;
+		&lt;p&gt;
+                 You requested a forgotten password at &lt;a href="{%LogonUrl|(user)administrator|(hash)59e2527de35bc66478f351bb0c1064f85ecef99bf976912e293d7e0d06a7038e%}"&gt;{%LogonUrl|(user)administrator|(hash)59e2527de35bc66478f351bb0c1064f85ecef99bf976912e293d7e0d06a7038e%}&lt;/a&gt;. 
+		&lt;/p&gt;
+		&lt;p&gt;
+		Your user name and new password are:
+		&lt;/p&gt;
+		&lt;p&gt;
+		&lt;strong&gt;User name:&lt;/strong&gt; {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+                &lt;br/&gt;
+                &lt;strong&gt;Password:&lt;/strong&gt; {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}
+		&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>d46985fb-e598-4b35-88e1-32bc8508aff5</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:41:05.52+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You requested a forgotten password at [url={%LogonUrl|(user)administrator|(hash)59e2527de35bc66478f351bb0c1064f85ecef99bf976912e293d7e0d06a7038e%}]{%LogonUrl|(user)administrator|(hash)59e2527de35bc66478f351bb0c1064f85ecef99bf976912e293d7e0d06a7038e%}[/url]. 
+
+Your user name and new password are: 
+
+User name: {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%} 
+Password: {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>forgottenpassword</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>164</EmailTemplateID>
+      <EmailTemplateName>Registration.New</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Notification - New registration</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body style="font-size:12px; font-family: Arial"&gt;
+		&lt;p&gt;
+This is a notification that a new user has just registered:&lt;br /&gt;
+&lt;br /&gt;
+First name: {%firstname|(user)administrator|(hash)998d81dab6b7c37aa5cb71222ca28b587031d87d21d551ece5124d71cd3f0b3b%} &lt;br /&gt;
+&lt;br /&gt;
+Last name: {%lastname|(user)administrator|(hash)3ad2cd3e3f348a3a067a7f0e619e1feaa48311bd86528e7002f1b274a3f7feb2%}&lt;br /&gt;
+&lt;br /&gt;
+E-mail: {%email|(user)administrator|(hash)9f9aec987582acb781e33b9dcb2652019c289ff93253dbfff1ba9230f2032ed6%}&lt;br /&gt;
+&lt;br /&gt;
+User name: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+&lt;br /&gt;
+This e-mail is only for your information. No action is required.
+&lt;br /&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>89e8fed9-3316-435e-8ea6-630e64de1a12</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:42:27.233+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is a notification that a new user has just registered:
+
+First name: {%firstname|(user)administrator|(hash)998d81dab6b7c37aa5cb71222ca28b587031d87d21d551ece5124d71cd3f0b3b%} 
+
+Last name: {%lastname|(user)administrator|(hash)3ad2cd3e3f348a3a067a7f0e619e1feaa48311bd86528e7002f1b274a3f7feb2%}
+
+E-mail: {%email|(user)administrator|(hash)9f9aec987582acb781e33b9dcb2652019c289ff93253dbfff1ba9230f2032ed6%}
+
+User name: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+
+This e-mail is only for your information. No action is required. </EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>registration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>163</EmailTemplateID>
+      <EmailTemplateName>Registration.Approve</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Notification - Waiting for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body style="font-size:12px; font-family: Arial"&gt;
+		&lt;p&gt;
+This is a notification that a new user has just registered and waiting for your approval:
+&lt;br /&gt;
+&lt;br /&gt;
+First name: {%firstname|(user)administrator|(hash)998d81dab6b7c37aa5cb71222ca28b587031d87d21d551ece5124d71cd3f0b3b%} &lt;br /&gt;
+&lt;br /&gt;
+Last name: {%lastname|(user)administrator|(hash)3ad2cd3e3f348a3a067a7f0e619e1feaa48311bd86528e7002f1b274a3f7feb2%}&lt;br /&gt;
+&lt;br /&gt;
+E-mail: {%email|(user)administrator|(hash)9f9aec987582acb781e33b9dcb2652019c289ff93253dbfff1ba9230f2032ed6%}&lt;br /&gt;
+&lt;br /&gt;
+User name: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+&lt;br /&gt;
+Please go to CMS Desk or CMS Site Manager -&gt; Administration -&gt; Users -&gt; Waiting for approval and approve or reject the user.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</EmailTemplateText>
+      <EmailTemplateGUID>8ee2a9d2-0ddd-4ae9-9066-f9edc6261938</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:43:26.937+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is a notification that a new user has just registered and waiting for your approval: 
+
+First name: {%firstname|(user)administrator|(hash)998d81dab6b7c37aa5cb71222ca28b587031d87d21d551ece5124d71cd3f0b3b%} 
+
+Last name: {%lastname|(user)administrator|(hash)3ad2cd3e3f348a3a067a7f0e619e1feaa48311bd86528e7002f1b274a3f7feb2%}
+
+E-mail: {%email|(user)administrator|(hash)9f9aec987582acb781e33b9dcb2652019c289ff93253dbfff1ba9230f2032ed6%}
+
+User name: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+
+Please go to CMS Desk or CMS Site Manager -&gt; Administration -&gt; Users -&gt; Waiting for approval and approve or reject the user.</EmailTemplatePlainText>
+      <EmailTemplateSubject>Registration notification - Waiting for approval</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>registration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>766</EmailTemplateID>
+      <EmailTemplateName>Membership.Registration</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Registration</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		Thank you for registering at our site. You can find your credentials below:&lt;br /&gt;
+		&lt;br /&gt;
+		Username: {%TrimSitePrefix(username)%}&lt;br /&gt;
+		Password: {%password%}&lt;br /&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>dcac774e-5ddb-4645-9704-cdadb8eda10a</EmailTemplateGUID>
+      <EmailTemplateLastModified>2012-02-09T15:57:25.807+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Thank you for registering at our site. You can find your credentials below:
+
+Username: {%TrimSitePrefix(username)%}
+Password: {%password%}</EmailTemplatePlainText>
+      <EmailTemplateSubject>Registration information</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>membershipregistration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>750</EmailTemplateID>
+      <EmailTemplateName>RegistrationUserApproved</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Registration approved</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		Your registration has been approved by administrator. Now you can sign in using your username and password.  &lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="{%homepageurl%}"&gt;Click here to navigate to the web site&lt;/a&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>017c6bf7-16bf-4c65-ac16-03b5fa8ed5b7</EmailTemplateGUID>
+      <EmailTemplateLastModified>2009-01-13T16:55:10.37+01:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Your registration has been approved by administrator. Now you can sign in using your username and password. 
+
+Click to the following link to navigate to the website:
+{%homepageurl%}</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>registrationapproval</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>739</EmailTemplateID>
+      <EmailTemplateName>RegistrationConfirmation</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Registration confirmation</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		Thank you for registering at our site. Please click the link below to complete your registration:  &lt;br /&gt;
+&lt;a href="{%confirmaddress|(user)administrator|(hash)c549f9374a2480bfc11f07d26c3aa47e6cfbb34bd470cf380f0918806960c1cc%}"&gt;{%confirmaddress|(user)administrator|(hash)c549f9374a2480bfc11f07d26c3aa47e6cfbb34bd470cf380f0918806960c1cc%}&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+You can find your credentials below:&lt;br /&gt;
+		Username: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+		Password: {%password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}&lt;br /&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>11e9d672-0fbc-46ae-8f0d-6cf8001578ce</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:45:48.263+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Thank you for registering at our site. Please click the link below to complete your registration:
+{%confirmaddress|(user)administrator|(hash)c549f9374a2480bfc11f07d26c3aa47e6cfbb34bd470cf380f0918806960c1cc%}
+
+You can find your credentials below:
+Username: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+Password: {%password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}
+
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Confirm your registration</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>membershipregistration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>767</EmailTemplateID>
+      <EmailTemplateName>Membership.RegistrationWaitingForApproval</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Registration waiting for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		Thank you for registering at our site&amp;nbsp;{%currentsite.sitename|(user)administrator|(hash)707b696834aa327b3d335291104fec4b95f171ac4ded10f4d2249057bbb7382a%}. Your registration must be approved by administrator.&lt;br /&gt;
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Registration details:&lt;br /&gt;
+		&lt;br /&gt;
+		Username: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+		Password: {%password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}&lt;br /&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>132be2c1-2db6-4c7d-8165-40041f2e4938</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:47:01.713+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Thank you for registering at our site {%currentsite.sitename|(user)administrator|(hash)707b696834aa327b3d335291104fec4b95f171ac4ded10f4d2249057bbb7382a%}. Your registration must be approved by administrator.
+
+
+Registration details:
+
+Username: {%TrimSitePrefix(username)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+Password: {%password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>membershipregistration</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>737</EmailTemplateID>
+      <EmailTemplateName>Membership.ResendPassword</EmailTemplateName>
+      <EmailTemplateDisplayName>Membership - Resend password</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;You have requested the current password information.&lt;/p&gt;
+&lt;p&gt;Your user name and current password are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User name:&lt;/strong&gt; {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}&lt;br /&gt;
+&lt;strong&gt;Password:&lt;/strong&gt; {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>30db61b9-2737-4e8e-90b0-0ec304baffda</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:48:59.713+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have requested the current password information.
+
+Your user name and current password are:
+
+User name: {%TrimSitePrefix(UserName)|(user)administrator|(hash)ae84cc044b37369545eb088351375699fb72d2742101a18cb3cc50597b49e736%}
+Password: {%Password|(user)administrator|(hash)3fa3e7dfc7ed2fd25117e5ac94ee3cc91c4597aa0db425e8e9c5e316b9fc019c%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>password</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>719</EmailTemplateID>
+      <EmailTemplateName>messaging.messagenotification</EmailTemplateName>
+      <EmailTemplateDisplayName>Messaging  - Notification e-mail</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body style="font-size: 12px; font-family: arial"&gt;
+&lt;p&gt;
+Hello {%TrimSitePrefix(Recipient.UserName)|(user)administrator|(hash)518b570d83ce3b3fe52cbc10fe7afdae3db381ff134c438dca6ebd9d955c00a9%},
+&lt;br /&gt;
+you've just recieved new message from user '{%TrimSitePrefix(Sender.UserName)|(user)administrator|(hash)7bb3a85cf09be462831a747a54a53bdd2a49dd7ad63cd53af2552b67ac99800d%}'.
+&lt;br /&gt;
+Original message:
+&lt;br /&gt;
+&lt;hr /&gt;
+&lt;br /&gt;
+{%Message.MessageBody|(resolvebbcode)|(user)administrator|(hash)b7f4eb3df983fa34e867c08038952ef9582cf6cebf335deaeeac6b931d3a2a61%}
+&lt;br/&gt;
+&lt;hr/&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>3d863d80-a3ab-46d8-99c5-1bcd9c2bd570</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:49:41.81+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>Hello {%TrimSitePrefix(Recipient.UserName)|(user)administrator|(hash)518b570d83ce3b3fe52cbc10fe7afdae3db381ff134c438dca6ebd9d955c00a9%}, 
+you've just recieved new message from user '{%TrimSitePrefix(Sender.UserName)|(user)administrator|(hash)7bb3a85cf09be462831a747a54a53bdd2a49dd7ad63cd53af2552b67ac99800d%}'. 
+Original message: 
+
+--------------------------------------------------------------------------------
+
+{%Message.MessageBody|(resolvebbcode)|(user)administrator|(hash)b7f4eb3df983fa34e867c08038952ef9582cf6cebf335deaeeac6b931d3a2a61%} 
+
+--------------------------------------------------------------------------------
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>messaging</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>762</EmailTemplateID>
+      <EmailTemplateName>newsletter.unsubscriptionrequest</EmailTemplateName>
+      <EmailTemplateDisplayName>Newsletters - Unsubscription request</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Newsletter&lt;/title&gt;
+    &lt;meta http-equiv="content-type"
+    content="text/html; charset=UTF-8" /&gt;
+    &lt;style type="text/css"&gt;
+		h1,h2,h3,h4,h5 { 
+			color: #2a537e;
+			font-family: Arial;
+		} 
+		p {
+			font-family: Arial;
+		} 
+		h1 {
+			font-size: 16px;
+			color: #2a537e;
+		}
+		h2 {
+			font-size: 14px;
+		}
+		h3 {
+			font-size: 12px;
+		}
+		a {
+			color: #000000;
+			text-decoration: underline;
+		}
+		img {
+			border: 0;
+			padding:0;
+			margin: 0;
+		}
+		body {
+			font-family: Arial;
+			font-size: 12px;
+		}
+		#page {
+			margin: auto; width: 700px;
+		}
+	&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="page"&gt;
+      &lt;table border="0" cellpadding="0" cellspacing="0" style="width: 696px;"&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;
+              &lt;img alt="Company Logo" src="~/App_Themes/CorporateSite/Images/newsletterLogo.png" /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td style="padding: 20px 0px; text-align: justify;"&gt;
+            &lt;h1&gt;You have requested unsubscription from our newsletter - {%NewsletterDisplayName|(user)administrator|(hash)3d4e9e15e4c0ee6eaaf80bfc00ed81ee7594a4739bf5d94bc8251c7c84426d67%}.&lt;/h1&gt;
+            &lt;br /&gt;If you would like to unsubscribe please use the following link {%UnsubscribeLink%}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td style="border-top: 1px solid rgb(34, 34, 34); padding: 3px 0px;"&gt;
+              &lt;font color="#222222" size="1"&gt;Company, address, state&amp;#160; All rights reserved.&lt;/font&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>0e0cbe1c-7349-426a-9937-dd84a20496c2</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-07T17:20:31.65+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>You have requested unsubscription from our newsletter - {%NewsletterDisplayName|(user)administrator|(hash)3d4e9e15e4c0ee6eaaf80bfc00ed81ee7594a4739bf5d94bc8251c7c84426d67%}.
+
+If you would like to unsubscribe please use the following link {%UnsubscribeLink%} 
+
+Company, address, state  All rights reserved. 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Unsubscription request</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>newsletter</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>787</EmailTemplateID>
+      <EmailTemplateName>ProjectManagement.ChangedTask</EmailTemplateName>
+      <EmailTemplateDisplayName>Project Management - Changed task</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;style type="text/css"&gt;
+    table{      
+      border-collapse:collapse;
+      width : 600px;
+    }
+    td{      
+      border: solid 1px black;
+    }
+    .firstColumn{
+      width:20%;
+    }
+  &lt;/style&gt;
+  &lt;/head&gt;  
+       &lt;body&gt;
+      &lt;table cellspacing="0" cellpadding= "3"   &gt;
+        &lt;tr&gt;
+                 &lt;td class="firstColumn"&gt;
+              {$pm.projecttask.id$}: 
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskID|(user)administrator|(hash)1d1e4fdc178119500935821b0542a2372dc8f0e9c4d331675ed57aeefe04541f%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;  
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.taskname$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.project.projectname$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%Project.ProjectDisplayName|(user)administrator|(hash)98aecd455d968e09b8b6edd3de9b4f477b578fa8d0562bb816f4546617f719d2%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$general.status$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTaskStatus.TaskStatusDisplayName|(user)administrator|(hash)5bfdb636dd99f189d1f3beced37ad52da3eca8fbbfe2348e7ec7835b5a0c51ef%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.owner$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+       {%Owner.FullName|(user)administrator|(hash)e23357f15915b833f56c3b69673621b402c2a3887da4661394a2c128d9ffb249%} ({%TrimSitePrefix(Owner.UserName)|(user)administrator|(hash)303982e4d914e49dcd54a030167883e2dea754b91b9fed81d0dce7e1e13bd6f8%})
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.asignee$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%Assignee.FullName|(user)administrator|(hash)7aa7889ed6069cbdb821ac406ba7a5e536814380ae4585ec79ebf40d62517ee9%} ({%TrimSitePrefix(Assignee.UserName)|(user)administrator|(hash)3816a546893446d9749b295f8639048e6d4a20bb9acf2d6be9578ffcfa74aabc%})
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.project.deadline$}: 
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDeadline|(user)administrator|(hash)c322d6426b3c13d6fe4786d0009c22e816e4a158f02935010439d3f66eb78acc%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$general.Link$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      &lt;a href="{%TaskURL%}"&gt;{%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}&lt;/a&gt;
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.description$}:
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDescription|(encode)false|(user)administrator|(hash)c0f6dc7723fac01dcb5d852edf9ab9db2d38579ef5649812efffb9e34fb67714%} 
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+          &lt;/table&gt;      
+  &lt;/body&gt;
+&lt;/html&gt;
+</EmailTemplateText>
+      <EmailTemplateGUID>2bf93fbb-c906-42c2-ab23-534ead0c36ad</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-10-05T17:04:58.683+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{$pm.projecttask.id$}: {%ProjectTask.ProjectTaskID|(user)administrator|(hash)1d1e4fdc178119500935821b0542a2372dc8f0e9c4d331675ed57aeefe04541f%}
+{$pm.projecttask.taskname$}: {%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}
+{$pm.project.projectname$}: {%Project.ProjectDisplayName|(user)administrator|(hash)98aecd455d968e09b8b6edd3de9b4f477b578fa8d0562bb816f4546617f719d2%}
+{$general.status$}: {%ProjectTaskStatus.TaskStatusDisplayName|(user)administrator|(hash)5bfdb636dd99f189d1f3beced37ad52da3eca8fbbfe2348e7ec7835b5a0c51ef%}
+{$pm.projecttask.owner$}: {%Owner.FullName|(user)administrator|(hash)e23357f15915b833f56c3b69673621b402c2a3887da4661394a2c128d9ffb249%} ({%TrimSitePrefix(Owner.UserName)|(user)administrator|(hash)303982e4d914e49dcd54a030167883e2dea754b91b9fed81d0dce7e1e13bd6f8%})
+{$pm.projecttask.asignee$}: {%Assignee.FullName|(user)administrator|(hash)7aa7889ed6069cbdb821ac406ba7a5e536814380ae4585ec79ebf40d62517ee9%} ({%TrimSitePrefix(Assignee.UserName)|(user)administrator|(hash)3816a546893446d9749b295f8639048e6d4a20bb9acf2d6be9578ffcfa74aabc%})
+{$pm.project.deadline$}: {%ProjectTask.ProjectTaskDeadline|(user)administrator|(hash)c322d6426b3c13d6fe4786d0009c22e816e4a158f02935010439d3f66eb78acc%}
+{$general.Link$}: {%TaskURL%}
+{$pm.projecttask.description$}: {%ProjectTaskDescriptionPlain%} </EmailTemplatePlainText>
+      <EmailTemplateSubject>Project manager notification - task changed</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>projectmanagement</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>788</EmailTemplateID>
+      <EmailTemplateName>ProjectManagement.NewTask</EmailTemplateName>
+      <EmailTemplateDisplayName>Project Management - New task</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;style type="text/css"&gt;
+    table{      
+      border-collapse:collapse;
+      width : 600px;
+    }
+    td{      
+      border: solid 1px black;
+    }
+    .firstColumn{
+      width:20%;
+    }
+  &lt;/style&gt;
+  &lt;/head&gt;  
+       &lt;body&gt;
+      &lt;table cellspacing="0" cellpadding= "3"   &gt;
+        &lt;tr&gt;
+                 &lt;td class="firstColumn"&gt;
+              {$pm.projecttask.id$}: 
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskID|(user)administrator|(hash)1d1e4fdc178119500935821b0542a2372dc8f0e9c4d331675ed57aeefe04541f%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;  
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.taskname$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.project.projectname$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%Project.ProjectDisplayName|(user)administrator|(hash)98aecd455d968e09b8b6edd3de9b4f477b578fa8d0562bb816f4546617f719d2%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$general.status$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTaskStatus.TaskStatusDisplayName|(user)administrator|(hash)5bfdb636dd99f189d1f3beced37ad52da3eca8fbbfe2348e7ec7835b5a0c51ef%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.owner$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+       {%Owner.FullName|(user)administrator|(hash)e23357f15915b833f56c3b69673621b402c2a3887da4661394a2c128d9ffb249%} ({%TrimSitePrefix(Owner.UserName)|(user)administrator|(hash)303982e4d914e49dcd54a030167883e2dea754b91b9fed81d0dce7e1e13bd6f8%})
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.asignee$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%Assignee.FullName|(user)administrator|(hash)7aa7889ed6069cbdb821ac406ba7a5e536814380ae4585ec79ebf40d62517ee9%} ({%TrimSitePrefix(Assignee.UserName)|(user)administrator|(hash)3816a546893446d9749b295f8639048e6d4a20bb9acf2d6be9578ffcfa74aabc%})
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.project.deadline$}: 
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDeadline|(user)administrator|(hash)c322d6426b3c13d6fe4786d0009c22e816e4a158f02935010439d3f66eb78acc%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$general.Link$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      &lt;a href="{%TaskURL|(user)administrator|(hash)60bdefe9971d232f1dd04d8e8b20dbda91ef0e869485b9f84efc82da437a3eac%}"&gt;{%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}&lt;/a&gt;
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.description$}:
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDescription|(encode)false|(user)administrator|(hash)c0f6dc7723fac01dcb5d852edf9ab9db2d38579ef5649812efffb9e34fb67714%} 
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+          &lt;/table&gt;      
+  &lt;/body&gt;
+&lt;/html&gt;
+</EmailTemplateText>
+      <EmailTemplateGUID>aed39df2-ba19-4042-adc7-c9850268f8d7</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:52:25.453+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>{$pm.projecttask.id$}: {%ProjectTask.ProjectTaskID|(user)administrator|(hash)1d1e4fdc178119500935821b0542a2372dc8f0e9c4d331675ed57aeefe04541f%}
+{$pm.projecttask.taskname$}: {%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}
+{$pm.project.projectname$}: {%Project.ProjectDisplayName|(user)administrator|(hash)98aecd455d968e09b8b6edd3de9b4f477b578fa8d0562bb816f4546617f719d2%}
+{$general.status$}: {%ProjectStatus.TaskStatusDisplayName|(user)administrator|(hash)bfefc375bf6cab9d34542e6d3a857b11f01e415ed855e115e94840449538db1c%}
+{$pm.projecttask.owner$}: {%Owner.FullName|(user)administrator|(hash)e23357f15915b833f56c3b69673621b402c2a3887da4661394a2c128d9ffb249%} ({%TrimSitePrefix(Owner.UserName)|(user)administrator|(hash)303982e4d914e49dcd54a030167883e2dea754b91b9fed81d0dce7e1e13bd6f8%})
+{$pm.projecttask.asignee$}: {%Assignee.FullName|(user)administrator|(hash)7aa7889ed6069cbdb821ac406ba7a5e536814380ae4585ec79ebf40d62517ee9%} ({%TrimSitePrefix(Assignee.UserName)|(user)administrator|(hash)3816a546893446d9749b295f8639048e6d4a20bb9acf2d6be9578ffcfa74aabc%})
+{$pm.project.deadline$}: {%ProjectTask.ProjectTaskDeadline|(user)administrator|(hash)c322d6426b3c13d6fe4786d0009c22e816e4a158f02935010439d3f66eb78acc%}
+{$general.Link$}: {%TaskURL|(user)administrator|(hash)60bdefe9971d232f1dd04d8e8b20dbda91ef0e869485b9f84efc82da437a3eac%}
+{$pm.projecttask.description$}: {%ProjectTaskDescriptionPlain|(user)administrator|(hash)7df124fe6b8a3004c2f7cae401d86640a8745988b6a73fc06ff503cd50e9ab03%} </EmailTemplatePlainText>
+      <EmailTemplateSubject>Project manager notification - task created</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>projectmanagement</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>789</EmailTemplateID>
+      <EmailTemplateName>ProjectManagement.OverdueTask</EmailTemplateName>
+      <EmailTemplateDisplayName>Project Management - Overdue task</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;style type="text/css"&gt;
+    table{      
+      border-collapse:collapse;
+      width : 600px;
+    }
+    td{      
+      border: solid 1px black;
+    }
+    .firstColumn{
+      width:20%;
+    }
+  &lt;/style&gt;
+  &lt;/head&gt;  
+       &lt;body&gt;
+  &lt;p&gt;
+    This is an automatically generated task overdue notification. See task details below.
+  &lt;/p&gt;
+      &lt;table cellspacing="0" cellpadding= "3"   &gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.projecttask.taskname$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDisplayName%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+       
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$pm.project.deadline$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      {%ProjectTask.ProjectTaskDeadline%}
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+        &lt;tr&gt;
+                 &lt;td&gt;
+              {$general.Link$}:  
+                 &lt;/td&gt;
+           &lt;td&gt;
+      &lt;a href="{%TaskURL%}"&gt;{%ProjectTask.ProjectTaskDisplayName%}&lt;/a&gt;
+     &lt;/td&gt; 
+              &lt;/tr&gt;
+          &lt;/table&gt;      
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</EmailTemplateText>
+      <EmailTemplateGUID>71e2cb67-4866-4f61-a2b1-daeaf4cb3b6a</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-08-18T14:25:39.13+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatically generated task overdue notification. See task details below.
+
+{$pm.projecttask.taskname$}: {%ProjectTask.ProjectTaskDisplayName%}
+{$pm.project.deadline$}: {%ProjectTask.ProjectTaskDeadline%}
+{$general.Link$}: {%TaskURL%}</EmailTemplatePlainText>
+      <EmailTemplateSubject>Project manager notification - overdue task</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>projectmanagement</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>790</EmailTemplateID>
+      <EmailTemplateName>ProjectManagement.TaskReminder</EmailTemplateName>
+      <EmailTemplateDisplayName>Project Management - Task reminder</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;  
+       &lt;body&gt;
+    &lt;p&gt;
+      This is a reminder message related to task &lt;strong&gt;{%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}&lt;/strong&gt;, sent by {%currentuser.fullname|(user)administrator|(hash)4534e9e346638dd9be14873ba6889899b89e30784965421c82b857da4505e142%} ({%TrimSitePrefix(currentuser.username)|(user)administrator|(hash)e4dd8de0cb817f62c7a2179b15c497e5bfa02387bb9c3745bcad6ac137c79206%}).
+    &lt;/p&gt;
+    &lt;p&gt;
+      {%ReminderMessage|(encode)false|(user)administrator|(hash)b3a985ed76577724b34e74acd2b8c6eb4a03611e65729697730469aa4dba4c8a%}
+    &lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;
+      Click here &lt;a href="{%TaskURL|(user)administrator|(hash)60bdefe9971d232f1dd04d8e8b20dbda91ef0e869485b9f84efc82da437a3eac%}"&gt;{%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}&lt;/a&gt; to open the task.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</EmailTemplateText>
+      <EmailTemplateGUID>23eedb5a-1ae6-4a4a-8a34-139eb2b9c54d</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-05T17:53:17.25+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is a reminder message related to task {%ProjectTask.ProjectTaskDisplayName|(user)administrator|(hash)58a0ea820555c81264cc7982f1cbd14a1311e560afa077d4891cbc3ae7a4de0e%}({%TaskURL|(user)administrator|(hash)60bdefe9971d232f1dd04d8e8b20dbda91ef0e869485b9f84efc82da437a3eac%}), sent by {%currentuser.fullname|(user)administrator|(hash)4534e9e346638dd9be14873ba6889899b89e30784965421c82b857da4505e142%} ({%TrimSitePrefix(currentuser.username)|(user)administrator|(hash)e4dd8de0cb817f62c7a2179b15c497e5bfa02387bb9c3745bcad6ac137c79206%}).
+
+{%ReminderMessagePlain|(user)administrator|(hash)8c36103e505838efd34692108f2b144b56d9ee736e10975b7a63fef1305d7ec2%}
+</EmailTemplatePlainText>
+      <EmailTemplateSubject>Project manager - Reminder</EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>projectmanagement</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>852</EmailTemplateID>
+      <EmailTemplateName>scoring.notification</EmailTemplateName>
+      <EmailTemplateDisplayName>Scoring - Notification e-mail</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS.
+    &lt;/p&gt;
+    &lt;p&gt;
+    Contact {%Contact.ContactFirstName|(user)administrator|(hash)3f518c63e916841549b6e4d2b97ee2fd7c40e0384fc1abf502441356d880d5d6%} {%Contact.ContactLastName|(user)administrator|(hash)087a76c72de870c0b15c9f2ec2772d58b6ad3b6598cb8477cec3cdc3aa36259d%} has reached limit in score '{%Score.ScoreDisplayName|(user)administrator|(hash)09482339456ce3b7320d6ab443a4f23eed958245bba16625e643930d0530404d%}'.
+    &lt;/p&gt;
+    &lt;p&gt;
+    Contact's current score is {%ScoreValue|(user)administrator|(hash)a5d80558851b95f4dfce35c43ea1cfc2887b4b1dd4a3ac314cd3671c562a54d1%}.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>5aea940d-ade5-4419-9f21-4744db45e917</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-02T15:30:53.993+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS.
+
+Contact {%Contact.ContactFirstName|(user)administrator|(hash)3f518c63e916841549b6e4d2b97ee2fd7c40e0384fc1abf502441356d880d5d6%} {%Contact.ContactLastName|(user)administrator|(hash)087a76c72de870c0b15c9f2ec2772d58b6ad3b6598cb8477cec3cdc3aa36259d%} has reached limit in score '{%Score.ScoreDisplayName|(user)administrator|(hash)09482339456ce3b7320d6ab443a4f23eed958245bba16625e643930d0530404d%}'.
+
+Contact's current score is {%ScoreValue|(user)administrator|(hash)a5d80558851b95f4dfce35c43ea1cfc2887b4b1dd4a3ac314cd3671c562a54d1%}.</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>scoring</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>160</EmailTemplateID>
+      <EmailTemplateName>Workflow.Approved</EmailTemplateName>
+      <EmailTemplateDisplayName>Workflow - Document approved</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS. The following document was approved.
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Document:&lt;/strong&gt; &lt;a href="{%DocumentEditUrl%}"&gt;{%documentname%}&lt;/a&gt; {% ifEmpty(DocumentPreviewUrl, "", "(&lt;a href=\"" + DocumentPreviewUrl + "\"&gt;preview&lt;/a&gt;)")|(encode)false%}
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;strong&gt;Approved by:&lt;/strong&gt; {%ApprovedBy%}
+    &lt;br /&gt;
+    &lt;strong&gt;Approved when:&lt;/strong&gt; {%ApprovedWhen%}
+    &lt;br /&gt;
+    &lt;strong&gt;Original step:&lt;/strong&gt; {%originalstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Current step:&lt;/strong&gt; {%currentstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Comment:&lt;/strong&gt;
+    &lt;br /&gt;
+    {%Comment%}
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>5d4c7b49-0a86-457e-b39c-79be2cc48173</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T10:44:54.083+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS. The following document was approved. 
+
+Document: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% ifEmpty(DocumentPreviewUrl, "", "([url=" + DocumentPreviewUrl + "]preview[/url])")|(user)administrator|(hash)67accc8d292516c257ff64b3ff2904914102e302c8b08b8e2c6be15daad7421f%}
+Approved by: {%approvedby%} 
+Approved when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Current step: {%currentstepname%} 
+Comment: 
+{%comment%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>workflow</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>158</EmailTemplateID>
+      <EmailTemplateName>Workflow.Archived</EmailTemplateName>
+      <EmailTemplateDisplayName>Workflow - Document archived</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS. The following document has been archived.&lt;/p&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Document:&lt;/strong&gt; &lt;a href="{%DocumentEditUrl%}"&gt;{%documentname%}&lt;/a&gt; {% ifEmpty(DocumentPreviewUrl, "", "(&lt;a href=\"" + DocumentPreviewUrl + "\"&gt;preview&lt;/a&gt;)")|(encode)false%}
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;strong&gt;Archived by:&lt;/strong&gt; {%approvedby%}
+    &lt;br /&gt;
+    &lt;strong&gt;Archived when:&lt;/strong&gt; {%approvedwhen%}
+    &lt;br /&gt;
+    &lt;strong&gt;Comment:&lt;/strong&gt;
+    &lt;br /&gt;
+    {%comment%}
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>53d086cb-dc0c-4e5a-b48d-77a6b58fd549</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T10:45:11.233+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS. The following document has been archived.
+
+Document: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% ifEmpty(DocumentPreviewUrl, "", "([url=" + DocumentPreviewUrl + "]preview[/url])")|(user)administrator|(hash)67accc8d292516c257ff64b3ff2904914102e302c8b08b8e2c6be15daad7421f%}
+Archived by: {%approvedby%}
+Archived when: {%approvedwhen%}
+Comment: 
+{%comment%}</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>workflow</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>159</EmailTemplateID>
+      <EmailTemplateName>Workflow.Published</EmailTemplateName>
+      <EmailTemplateDisplayName>Workflow - Document published</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS. The following document was published.
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Document:&lt;/strong&gt; &lt;a href="{%DocumentEditUrl%}"&gt;{%documentname%}&lt;/a&gt; {% ifEmpty(DocumentPreviewUrl, "", "(&lt;a href=\"" + DocumentPreviewUrl + "\"&gt;preview&lt;/a&gt;)")|(encode)false%}
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;strong&gt;Last approved by:&lt;/strong&gt; {%approvedby%}
+    &lt;br /&gt;
+    &lt;strong&gt;Last approved when:&lt;/strong&gt; {%approvedwhen%}
+    &lt;br /&gt;
+    &lt;strong&gt;Original step:&lt;/strong&gt; {%originalstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Comment:&lt;/strong&gt;
+    &lt;br /&gt;
+    {%comment%}
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>d2c5a1b0-c434-4427-ab81-22c0ca8f2313</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T10:46:14.863+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS. The following document was published. 
+
+Document: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% ifEmpty(DocumentPreviewUrl, "", "([url=" + DocumentPreviewUrl + "]preview[/url])")|(user)administrator|(hash)67accc8d292516c257ff64b3ff2904914102e302c8b08b8e2c6be15daad7421f%}
+Last approved by: {%approvedby%} 
+Last approved when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Comment: 
+{%comment%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>workflow</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>155</EmailTemplateID>
+      <EmailTemplateName>Workflow.ReadyForApproval</EmailTemplateName>
+      <EmailTemplateDisplayName>Workflow - Document ready for approval</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS. The following document is waiting for your approval. Please sign in to Kentico CMS Desk and approve it.
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Document:&lt;/strong&gt; &lt;a href="{%DocumentEditUrl%}"&gt;{%documentname%}&lt;/a&gt; {% ifEmpty(DocumentPreviewUrl, "", "(&lt;a href=\"" + DocumentPreviewUrl + "\"&gt;preview&lt;/a&gt;)")|(encode)false%}
+    &lt;br /&gt;
+    &lt;strong&gt;Last approved by:&lt;/strong&gt; {%approvedby%}
+    &lt;br /&gt;
+    &lt;strong&gt;Last approved when:&lt;/strong&gt; {%approvedwhen%}
+    &lt;br /&gt;
+    &lt;strong&gt;Original step:&lt;/strong&gt; {%originalstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Current step:&lt;/strong&gt; {%currentstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Comment:&lt;/strong&gt;
+    &lt;br /&gt;
+    {%comment%}
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>cfa7ee6c-4ee1-4594-9760-d07fe8545336</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T10:44:39.857+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS. The following document is waiting for your approval. Please sign in to Kentico CMS Desk and approve it. 
+
+Document: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% ifEmpty(DocumentPreviewUrl, "", "([url=" + DocumentPreviewUrl + "]preview[/url])")|(user)administrator|(hash)67accc8d292516c257ff64b3ff2904914102e302c8b08b8e2c6be15daad7421f%}
+Last approved by: {%approvedby%} 
+Last approved when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Current step: {%currentstepname%} 
+Comment: 
+{%comment%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>workflow</EmailTemplateType>
+    </cms_emailtemplate>
+    <cms_emailtemplate>
+      <EmailTemplateID>156</EmailTemplateID>
+      <EmailTemplateName>Workflow.Rejected</EmailTemplateName>
+      <EmailTemplateDisplayName>Workflow - Document rejected</EmailTemplateDisplayName>
+      <EmailTemplateText>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body style="font-size: 12px; font-family: arial"&gt;
+    &lt;p&gt;
+    This is an automatic notification sent by Kentico CMS. The following document was rejected.
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Document:&lt;/strong&gt; &lt;a href="{%DocumentEditUrl%}"&gt;{%documentname%}&lt;/a&gt; {% ifEmpty(DocumentPreviewUrl, "", "(&lt;a href=\"" + DocumentPreviewUrl + "\"&gt;preview&lt;/a&gt;)")|(encode)false%}
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;strong&gt;Rejected by:&lt;/strong&gt; {%approvedby%}
+    &lt;br /&gt;
+    &lt;strong&gt;Rejected when:&lt;/strong&gt; {%approvedwhen%}
+    &lt;br /&gt;
+    &lt;strong&gt;Original step:&lt;/strong&gt; {%originalstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Current step:&lt;/strong&gt; {%currentstepname%}
+    &lt;br /&gt;
+    &lt;strong&gt;Comment:&lt;/strong&gt;
+    &lt;br /&gt;
+    {%comment%}
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</EmailTemplateText>
+      <EmailTemplateGUID>5b98fd54-1db8-4f57-b802-c7639fe08184</EmailTemplateGUID>
+      <EmailTemplateLastModified>2011-09-22T10:46:43.87+02:00</EmailTemplateLastModified>
+      <EmailTemplatePlainText>This is an automatic notification sent by Kentico CMS. The following document was rejected. 
+
+Document: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% ifEmpty(DocumentPreviewUrl, "", "([url=" + DocumentPreviewUrl + "]preview[/url])")|(user)administrator|(hash)67accc8d292516c257ff64b3ff2904914102e302c8b08b8e2c6be15daad7421f%}
+Rejected by: {%approvedby%} 
+Rejected when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Current step: {%currentstepname%} 
+Comment: 
+{%comment%} 
+</EmailTemplatePlainText>
+      <EmailTemplateSubject></EmailTemplateSubject>
+      <EmailTemplateFrom></EmailTemplateFrom>
+      <EmailTemplateCc></EmailTemplateCc>
+      <EmailTemplateBcc></EmailTemplateBcc>
+      <EmailTemplateType>workflow</EmailTemplateType>
+    </cms_emailtemplate>
+  </NewDataSet>
+</cms_emailtemplate>

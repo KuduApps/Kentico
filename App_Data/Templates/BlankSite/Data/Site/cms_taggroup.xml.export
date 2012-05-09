@@ -1,0 +1,14 @@
+﻿<cms_taggroup version="6.0">
+  <NewDataSet>
+    <cms_taggroup>
+      <TagGroupID>43</TagGroupID>
+      <TagGroupDisplayName>Content</TagGroupDisplayName>
+      <TagGroupName>content</TagGroupName>
+      <TagGroupDescription>Main content group</TagGroupDescription>
+      <TagGroupSiteID>1</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2008-09-18T16:56:13.33+02:00</TagGroupLastModified>
+      <TagGroupGUID>d3f15f9d-5f0e-4587-aefa-1503b3184ba9</TagGroupGUID>
+    </cms_taggroup>
+  </NewDataSet>
+</cms_taggroup>

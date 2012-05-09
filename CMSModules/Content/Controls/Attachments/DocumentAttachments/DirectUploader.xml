@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="AttachmentGUID;AttachmentFormGUID">
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" commandargument="AttachmentGUID" caption="$General.Delete$" icon="Delete.png" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="update" caption="$general.update$" wrap="false" style="text-align: center;" allowsorting="false" cssclass="UniGridActions" />
+    <column source="##ALL##" sort="AttachmentName" externalsourcename="AttachmentName" caption="$general.name$" wrap="false" width="100%" allowsorting="false" />
+    <column source="AttachmentSize" externalsourcename="AttachmentSize" caption="$general.size$" wrap="false" allowsorting="false" />
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+    <key name="ShowDirectPageControl" value="false" />
+    <key name="DisplayPager" value="false" />
+  </pager>
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

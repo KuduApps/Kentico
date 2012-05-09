@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.kentico.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.kentico.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.kentico.com/">
+      <s:element name="GetKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKeyGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="version" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:LicenseKeyTypeEnum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="LicenseKeyTypeEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Main" />
+          <s:enumeration value="DomainAlias" />
+          <s:enumeration value="DevTest" />
+          <s:enumeration value="Staging" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetKeyGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKeyGeneralResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrialKey">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTrialKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrialKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFreeEditionKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domainName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFreeEditionKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFreeEditionKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFreeEditionKeyGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domainName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="version" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFreeEditionKeyGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFreeEditionKeyGeneralResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetKey" />
+  </wsdl:message>
+  <wsdl:message name="GetKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKeyGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKeyGeneral" />
+  </wsdl:message>
+  <wsdl:message name="GetKeyGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKeyGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrialKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrialKey" />
+  </wsdl:message>
+  <wsdl:message name="GetTrialKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrialKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFreeEditionKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetFreeEditionKey" />
+  </wsdl:message>
+  <wsdl:message name="GetFreeEditionKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetFreeEditionKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFreeEditionKeyGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFreeEditionKeyGeneral" />
+  </wsdl:message>
+  <wsdl:message name="GetFreeEditionKeyGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFreeEditionKeyGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:UserExists" />
+  </wsdl:message>
+  <wsdl:message name="UserExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:UserExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CMSLicenseServiceSoap">
+    <wsdl:operation name="GetKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns full/main key based on given serial number</wsdl:documentation>
+      <wsdl:input message="tns:GetKeySoapIn" />
+      <wsdl:output message="tns:GetKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns license key of specified type and version</wsdl:documentation>
+      <wsdl:input message="tns:GetKeyGeneralSoapIn" />
+      <wsdl:output message="tns:GetKeyGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns trial license key for localhost with 30 days expiration</wsdl:documentation>
+      <wsdl:input message="tns:GetTrialKeySoapIn" />
+      <wsdl:output message="tns:GetTrialKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns free edition(version 4.x) license key for given domian</wsdl:documentation>
+      <wsdl:input message="tns:GetFreeEditionKeySoapIn" />
+      <wsdl:output message="tns:GetFreeEditionKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKeyGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns free edition(of specified version) license key for given domian</wsdl:documentation>
+      <wsdl:input message="tns:GetFreeEditionKeyGeneralSoapIn" />
+      <wsdl:output message="tns:GetFreeEditionKeyGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Indicates if user with given username exists</wsdl:documentation>
+      <wsdl:input message="tns:UserExistsSoapIn" />
+      <wsdl:output message="tns:UserExistsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CMSLicenseServiceSoap" type="tns:CMSLicenseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetKey">
+      <soap:operation soapAction="http://www.kentico.com/GetKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyGeneral">
+      <soap:operation soapAction="http://www.kentico.com/GetKeyGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialKey">
+      <soap:operation soapAction="http://www.kentico.com/GetTrialKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKey">
+      <soap:operation soapAction="http://www.kentico.com/GetFreeEditionKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKeyGeneral">
+      <soap:operation soapAction="http://www.kentico.com/GetFreeEditionKeyGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserExists">
+      <soap:operation soapAction="http://www.kentico.com/UserExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CMSLicenseServiceSoap12" type="tns:CMSLicenseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetKey">
+      <soap12:operation soapAction="http://www.kentico.com/GetKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyGeneral">
+      <soap12:operation soapAction="http://www.kentico.com/GetKeyGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialKey">
+      <soap12:operation soapAction="http://www.kentico.com/GetTrialKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKey">
+      <soap12:operation soapAction="http://www.kentico.com/GetFreeEditionKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEditionKeyGeneral">
+      <soap12:operation soapAction="http://www.kentico.com/GetFreeEditionKeyGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserExists">
+      <soap12:operation soapAction="http://www.kentico.com/UserExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CMSLicenseService">
+    <wsdl:port name="CMSLicenseServiceSoap" binding="tns:CMSLicenseServiceSoap">
+      <soap:address location="http://www.kentico.com/CMSLicenseService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CMSLicenseServiceSoap12" binding="tns:CMSLicenseServiceSoap12">
+      <soap12:address location="http://www.kentico.com/CMSLicenseService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

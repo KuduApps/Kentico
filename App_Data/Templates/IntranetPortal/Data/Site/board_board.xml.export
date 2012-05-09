@@ -1,0 +1,52 @@
+﻿<board_board version="6.0">
+  <NewDataSet>
+    <board_board>
+      <BoardID>3977</BoardID>
+      <BoardName>MessageBoardComments_user_2ac5f554-ad44-4311-a967-f6aac8caf979</BoardName>
+      <BoardDisplayName>Comments on Sean Gaines</BoardDisplayName>
+      <BoardDescription></BoardDescription>
+      <BoardOpened>true</BoardOpened>
+      <BoardEnabled>true</BoardEnabled>
+      <BoardAccess>1</BoardAccess>
+      <BoardModerated>false</BoardModerated>
+      <BoardUseCaptcha>false</BoardUseCaptcha>
+      <BoardMessages>1</BoardMessages>
+      <BoardLastModified>2011-06-02T23:17:18.443+02:00</BoardLastModified>
+      <BoardGUID>80047e2c-3e86-40c1-8065-8720fdf5508a</BoardGUID>
+      <BoardDocumentID>43003</BoardDocumentID>
+      <BoardUserID>1031</BoardUserID>
+      <BoardLastMessageTime>2010-11-09T02:13:29.697+01:00</BoardLastMessageTime>
+      <BoardLastMessageUserName>Sharon Evans</BoardLastMessageUserName>
+      <BoardUnsubscriptionURL>~/Special-Pages/Board-Unsubscribe.aspx</BoardUnsubscriptionURL>
+      <BoardRequireEmails>false</BoardRequireEmails>
+      <BoardSiteID>107</BoardSiteID>
+      <BoardEnableSubscriptions>true</BoardEnableSubscriptions>
+      <BoardBaseURL>~/Employees/Profile.aspx</BoardBaseURL>
+      <BoardLogActivity>true</BoardLogActivity>
+    </board_board>
+    <board_board>
+      <BoardID>3978</BoardID>
+      <BoardName>WorkgroupMessageBoard_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6</BoardName>
+      <BoardDisplayName>Workgroup Microsoft Office Upgrade board</BoardDisplayName>
+      <BoardDescription></BoardDescription>
+      <BoardOpened>true</BoardOpened>
+      <BoardEnabled>true</BoardEnabled>
+      <BoardAccess>3</BoardAccess>
+      <BoardModerated>false</BoardModerated>
+      <BoardUseCaptcha>false</BoardUseCaptcha>
+      <BoardMessages>3</BoardMessages>
+      <BoardLastModified>2010-11-08T18:43:45.53+01:00</BoardLastModified>
+      <BoardGUID>e8f2ddb1-e6f7-4712-9f5f-fa6a4f6db569</BoardGUID>
+      <BoardDocumentID>43175</BoardDocumentID>
+      <BoardGroupID>335</BoardGroupID>
+      <BoardLastMessageTime>2010-11-08T19:00:34.343+01:00</BoardLastMessageTime>
+      <BoardLastMessageUserName>Collin Douglas</BoardLastMessageUserName>
+      <BoardUnsubscriptionURL>~/Special-Pages/Board-Unsubscribe.aspx</BoardUnsubscriptionURL>
+      <BoardRequireEmails>false</BoardRequireEmails>
+      <BoardSiteID>107</BoardSiteID>
+      <BoardEnableSubscriptions>true</BoardEnableSubscriptions>
+      <BoardBaseURL>~/Workgroups/Microsoft_Office_Upgrade/Board.aspx</BoardBaseURL>
+      <BoardLogActivity>true</BoardLogActivity>
+    </board_board>
+  </NewDataSet>
+</board_board>

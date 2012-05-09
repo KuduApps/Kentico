@@ -1,0 +1,58 @@
+﻿<boardmessage_wb version="6.0">
+  <NewDataSet>
+    <board_message>
+      <MessageID>3019</MessageID>
+      <MessageUserName>Dan Clayton</MessageUserName>
+      <MessageText>Well Jane,
+
+it looks like it's time to migrate your website to Kentico CMS. You would be surprised by the amount of other features that the CMS offers. With Kentico CMS, you website possibilities are simply unlimited.</MessageText>
+      <MessageEmail>dan.clayton@localhost.local</MessageEmail>
+      <MessageURL>http://www.kentico.com</MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>4000</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageApprovedByUserID>53</MessageApprovedByUserID>
+      <MessageUserID>53</MessageUserID>
+      <MessageUserInfo>&lt;info&gt;&lt;ip&gt;192.168.3.143&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/20100101 Firefox/6.0.2&lt;/agent&gt;&lt;/info&gt;</MessageUserInfo>
+      <MessageInserted>2011-09-19T12:07:13.007+02:00</MessageInserted>
+      <MessageLastModified>2011-09-19T12:08:04.773+02:00</MessageLastModified>
+      <MessageGUID>3634a8c9-a2f2-4780-b277-32d831483671</MessageGUID>
+    </board_message>
+    <board_message>
+      <MessageID>3018</MessageID>
+      <MessageUserName>Jane Bradfords</MessageUserName>
+      <MessageText>Cheers Mickey,
+
+the board does work indeed. I can see your message and I'm just posting a reply. I think that it would be great to have such a message board on my own website. Unfortunately, the CMS that I am using does not have a feature like this :-(</MessageText>
+      <MessageEmail>jane.bradford@localhost.local</MessageEmail>
+      <MessageURL>http://www.kentico.com</MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>4000</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageApprovedByUserID>53</MessageApprovedByUserID>
+      <MessageUserID>53</MessageUserID>
+      <MessageUserInfo>&lt;info&gt;&lt;ip&gt;192.168.3.143&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/20100101 Firefox/6.0.2&lt;/agent&gt;&lt;/info&gt;</MessageUserInfo>
+      <MessageInserted>2011-09-19T11:59:25.883+02:00</MessageInserted>
+      <MessageLastModified>2011-09-19T12:08:38.757+02:00</MessageLastModified>
+      <MessageGUID>b40c98f1-a22f-47dd-9344-43ee61b8e404</MessageGUID>
+    </board_message>
+    <board_message>
+      <MessageID>3017</MessageID>
+      <MessageUserName>Mickey Addison</MessageUserName>
+      <MessageText>Hi,
+
+I'm just trying out the functionality of this message board. I hope that when I post this message, other users will be able to see it and reply to it.</MessageText>
+      <MessageEmail>mickey.addison@localhost.local</MessageEmail>
+      <MessageURL>http://www.kentico.com</MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>4000</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageApprovedByUserID>53</MessageApprovedByUserID>
+      <MessageUserID>53</MessageUserID>
+      <MessageUserInfo>&lt;info&gt;&lt;ip&gt;192.168.3.143&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/20100101 Firefox/6.0.2&lt;/agent&gt;&lt;/info&gt;</MessageUserInfo>
+      <MessageInserted>2011-09-19T11:56:27.767+02:00</MessageInserted>
+      <MessageLastModified>2011-09-19T11:56:27.78+02:00</MessageLastModified>
+      <MessageGUID>009e535f-fe05-4352-a59b-5a2913810aad</MessageGUID>
+    </board_message>
+  </NewDataSet>
+</boardmessage_wb>

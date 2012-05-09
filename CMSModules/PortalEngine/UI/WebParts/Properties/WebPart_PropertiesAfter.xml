@@ -1,0 +1,47 @@
+<form>
+  <category name="Web part container" />
+  <field column="Container" fieldcaption="Web part container" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" columnsize="200" fielddescription="{$documentation.webpartproperties.container$}" publicfield="false" spellcheck="true" guid="5b74cfb7-4e8b-4570-a4cb-c6fa20f2171e">
+    <settings>
+      <controlname>selectcontainer</controlname>
+    </settings>
+  </field>
+  <field column="ContainerTitle" fieldcaption="Container title" visible="true" columntype="text" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="200" fielddescription="{$documentation.webpartproperties.containertitle$}" publicfield="false" spellcheck="true" guid="8249d912-0dd7-49db-9fab-8ccc42548f94" />
+  <field column="ContainerCSSClass" fieldcaption="Container CSS class" visible="true" columntype="text" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="200" fielddescription="{$documentation.webpartproperties.containercssclass$}" publicfield="false" spellcheck="true" guid="8249d912-0dd7-49db-1cab-2aaa42548f94" />
+  <field column="ContainerCustomContent" fieldcaption="Container custom content" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.containercustomcontent$}" publicfield="false" spellcheck="true" guid="80e99300-3501-4942-a554-ca545fda3e5a">
+    <settings>
+      <controlname>largetextarea</controlname>
+    </settings>
+  </field>
+  <field column="ContainerHideOnSubPages" fieldcaption="Hide container on subpages" visible="true" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.containerhideonsub$}" publicfield="false" spellcheck="true" guid="f11c3f83-83c6-4b8e-80ae-d073acdd93fb" />
+  <category name="HTML Envelope" />
+  <field column="ContentBefore" fieldcaption="Content before" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.contentbefore$}" publicfield="false" spellcheck="true" guid="80e99300-3501-4942-a554-ca545fda2c8c">
+    <settings>
+      <controlname>largetextarea</controlname>
+    </settings>
+  </field>
+  <field column="ContentAfter" fieldcaption="Content after" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.contentafter$}" publicfield="false" spellcheck="true" guid="5f2d51db-7b8a-4c1b-94ed-5bf58c5ab6e9">
+    <settings>
+      <controlname>largetextarea</controlname>
+    </settings>
+  </field>
+  <category name="AJAX" />
+  <field column="UseUpdatePanel" fieldcaption="Use update panel" visible="true" defaultvalue="false" columntype="boolean" fieldtype="checkbox" allowempty="false" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.useupdatepanel$}" publicfield="false" spellcheck="true" guid="dd7d576d-5abe-464b-9f25-e74c0ce62886" />
+  <category name="Time zones" />
+  <field column="TimeZoneType" fieldcaption="Time zone" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" columnsize="100" fielddescription="{$documentation.webpartproperties.timezonetype$}" publicfield="false" spellcheck="true" guid="7bc3e789-4365-428f-bf85-9263d53d2941">
+    <settings>
+      <controlname>timezonetypeselector</controlname>
+    </settings>
+  </field>
+  <field column="CustomTimeZone" fieldcaption="Custom time zone" visible="true" columntype="text" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" columnsize="100" fielddescription="{$documentation.webpartproperties.customtimezone$}" publicfield="false" spellcheck="true" guid="0bf63e3a-c748-409f-8972-b5a1ef04e761">
+    <settings>
+      <controlname>timezoneselector</controlname>
+    </settings>
+  </field>
+  <category name="Partial caching" />
+  <field column="PartialCacheMinutes" fieldcaption="Partial cache minutes" visible="true" columntype="integer" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="200" fielddescription="{$documentation.webpartproperties.partialcacheminutes$}" publicfield="false" spellcheck="true" guid="e514e78f-24ca-4596-8718-5f4ea17804c4" />
+  <field column="PartialCacheDependencies" fieldcaption="Partial cache dependencies" visible="true" columntype="longtext" fieldtype="usercontrol" allowempty="true" isPK="false" system="false" fielddescription="{$documentation.webpartproperties.cachedependencies$}" publicfield="false" spellcheck="true" guid="bfe08ac4-c446-480c-b340-df35232eb13e" visibility="none">
+    <settings>
+      <controlname>cachedependencies</controlname>
+    </settings>
+  </field>
+</form>

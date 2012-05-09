@@ -1,0 +1,36 @@
+﻿<forumpost_general_discusion_group_2aa5128b_c576_42ee_a401_975506a23420_group version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>833</PostId>
+      <PostForumID>251</PostForumID>
+      <PostIDPath>/00000833</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Welcome to our forum</PostSubject>
+      <PostUserID>342</PostUserID>
+      <PostUserName>Steevie</PostUserName>
+      <PostUserMail>jack.stevenson@localhost.local</PostUserMail>
+      <PostText>Hi there,
+welcome to the American travelers forum. I hope that this forum will become a source of valuable information for you and that it will be a place to that you will always like to return.
+
+
+</PostText>
+      <PostTime>2009-01-06T20:34:38.053+01:00</PostTime>
+      <PostApprovedByUserID>342</PostApprovedByUserID>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Steevie</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2009-01-06T20:34:38.053+01:00</PostThreadLastPostTime>
+      <PostUserSignature>.:.: Steevie :.:.</PostUserSignature>
+      <PostGUID>4897aa43-fb3f-476e-a896-bc644f5f3c4f</PostGUID>
+      <PostLastModified>2009-01-06T20:34:38.07+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>10</PostViews>
+      <PostInfo></PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Steevie</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2009-01-06T20:34:38.053+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_general_discusion_group_2aa5128b_c576_42ee_a401_975506a23420_group>

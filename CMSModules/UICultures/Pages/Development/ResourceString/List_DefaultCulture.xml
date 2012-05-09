@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="StringKey">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" externalsourcename="editItem" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="StringKey" caption="$Unigrid.Strings.Columns.StringKey$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="DefaultText" externalsourcename="defaulttext" caption="$Unigrid.Strings.Columns.StringEnglish$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="StringIsCustom" externalsourcename="stringiscustom" caption="$uiculture.string.iscustom$" wrap="false">
+      <filter type="bool" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.resourcestringlist"  columns="StringKey, DefaultText, StringIsCustom" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

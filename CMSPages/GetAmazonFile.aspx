@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="CMSPages_GetAmazonFile" CodeFile="GetAmazonFile.aspx.cs" %>

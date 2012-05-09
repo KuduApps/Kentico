@@ -1,0 +1,34 @@
+﻿<cms_taggroup version="6.0">
+  <NewDataSet>
+    <cms_taggroup>
+      <TagGroupID>80</TagGroupID>
+      <TagGroupDisplayName>Blogs</TagGroupDisplayName>
+      <TagGroupName>Blogs</TagGroupName>
+      <TagGroupDescription></TagGroupDescription>
+      <TagGroupSiteID>53</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2008-10-20T18:50:27.27+02:00</TagGroupLastModified>
+      <TagGroupGUID>9619b875-2eb6-4551-a013-029217adf9c4</TagGroupGUID>
+    </cms_taggroup>
+    <cms_taggroup>
+      <TagGroupID>68</TagGroupID>
+      <TagGroupDisplayName>Content</TagGroupDisplayName>
+      <TagGroupName>content</TagGroupName>
+      <TagGroupDescription>Main content group</TagGroupDescription>
+      <TagGroupSiteID>53</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2008-09-02T13:17:26.223+02:00</TagGroupLastModified>
+      <TagGroupGUID>d3f15f9d-5f0e-4587-aefa-1503b3184ba9</TagGroupGUID>
+    </cms_taggroup>
+    <cms_taggroup>
+      <TagGroupID>79</TagGroupID>
+      <TagGroupDisplayName>News</TagGroupDisplayName>
+      <TagGroupName>News</TagGroupName>
+      <TagGroupDescription>News tags</TagGroupDescription>
+      <TagGroupSiteID>53</TagGroupSiteID>
+      <TagGroupIsAdHoc>false</TagGroupIsAdHoc>
+      <TagGroupLastModified>2008-10-16T14:12:45.353+02:00</TagGroupLastModified>
+      <TagGroupGUID>8626661b-70aa-42d5-b9a8-bf0844ee682f</TagGroupGUID>
+    </cms_taggroup>
+  </NewDataSet>
+</cms_taggroup>

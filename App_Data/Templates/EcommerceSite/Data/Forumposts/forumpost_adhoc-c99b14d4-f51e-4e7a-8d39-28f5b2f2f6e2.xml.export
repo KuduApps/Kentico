@@ -1,0 +1,55 @@
+﻿<forumpost_adhoc-c99b14d4-f51e-4e7a-8d39-28f5b2f2f6e2 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>20</PostId>
+      <PostForumID>7</PostForumID>
+      <PostIDPath>/00000020</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Is this camera mountable to tripod?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Jeff</PostUserName>
+      <PostUserMail>jeff@localhost.local</PostUserMail>
+      <PostText>I'm professional photographer and I need to mount my camera to tripod. Is this possible?</PostText>
+      <PostTime>2008-03-05T12:47:38.133+01:00</PostTime>
+      <PostThreadPosts>2</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:06:03.65+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>dc081120-eb70-45d2-b55d-a438f58b685f</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.67+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>2</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:06:03.65+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>21</PostId>
+      <PostForumID>7</PostForumID>
+      <PostParentID>20</PostParentID>
+      <PostIDPath>/00000020/00000021</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Is this camera mountable to tripod?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail>admin@localhost.local</PostUserMail>
+      <PostText>Yes of course. We recomend Manfrotto tripods for this cameras.</PostText>
+      <PostTime>2008-03-05T19:06:03.65+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>47ef1eed-81ea-4a10-8d23-3bea6f3ad196</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.827+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-c99b14d4-f51e-4e7a-8d39-28f5b2f2f6e2>

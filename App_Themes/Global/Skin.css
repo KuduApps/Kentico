@@ -1,0 +1,1564 @@
+/* Dialogs */
+.ContentBody .DialogMainBlock
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ContentBody .DialogContent
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.ContentBody .MediaLibraryContainer .DialogContent
+{
+    text-align: left !important;
+}
+
+.ContentBody .DialogPageBody .PageTitleHeader
+{
+    background: #414a55 url(../Default/Images/Design/Backgrounds/PageTitleHeaderDark.png) repeat-x top left !important;
+    border-bottom: none;
+}
+
+.ContentBody .PageFooterLine
+{
+    border-top: solid 1px #cccccc;
+    background: #dedede url(../Default/Images/Design/Backgrounds/DialogFooterBackground.png) repeat-x top left;
+}
+
+.ContentBody .DialogLeftBlock
+{
+    height: 100%;
+    width: 236px;
+    float: left;
+    overflow: hidden;
+}
+
+.ContentBody .DialogRightBlock
+{
+    height: 100%;
+    margin-left: 243px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ContentBody .Safari .DialogRightBlock, .ContentBody.Opera .DialogRightBlock, .ContentBody.Gecko .DialogRightBlock
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ContentBody .DialogCompleteBlock
+{
+    width: 100%;
+    height: 100%;
+}
+
+.ContentBody .DialogWebContent
+{
+    height: 65px;
+    padding: 10px 10px 0px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+}
+
+.ContentBody .DialogWebProperties
+{
+    border-top: 1px solid #A4B2BC;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.ContentBody .DialogWebPropertiesTiny
+{
+    top: 60px;
+}
+
+.ContentBody .DialogWebUrlMaxBox
+{
+    width: 800px;
+}
+
+.ContentBody .DialogLinkWebProperties
+{
+    border-top: 1px solid #A4B2BC;
+    position: absolute;
+    top: 107px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.ContentBody .DialogProperties
+{
+    background-color: #fff;
+    float: left;
+    height: 296px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10;
+}
+
+.ContentBody .DialogPropertiesFullSize
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ContentBody .DialogPropertiesFullSize input, .ContentBody .DialogProperties input
+{
+    font-size: 11px;
+    height: 16px;
+}
+
+.ContentBody .DialogPropertiesPreview
+{
+    position: absolute;
+    overflow: auto;
+    border: 1px solid #A4B2BC;
+    padding: 5px;
+    display: none;
+}
+
+.ContentBody .DialogItemUrlBox
+{
+    width: 94%;
+    float: left;
+}
+
+.ContentBody .DialogItemUrlRefresh
+{
+    padding: 3px 3px 0px;
+}
+
+.ContentBody .DialogViewContent
+{
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.ContentBody .DialogElementHidden
+{
+    display: none;
+}
+
+.ContentBody .DialogViewContentTop
+{
+    padding: 10px;
+    width: 97%;
+    height: 30px;
+}
+
+.ContentBody .DialogViewContentBottom
+{
+    height: 100px;
+    padding: 0px 10px 10px;
+}
+
+.ContentBody .DialogLabel
+{
+    white-space: nowrap;
+}
+
+/* UniGrid */
+
+.ContentBody .UniGridMain
+{
+    width: 100%;
+}
+
+.ContentBody .UniGridHead
+{
+    text-decoration: none;
+    color: #000000;
+    background-color: #dfdfdf;
+    background: url(../Default/Images/Design/Controls/UniGrid/Header.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+    height: 27px;
+}
+
+.ContentBody.Opera .UniGridGrid td, .ContentBody.Opera .UniGridGrid th, .ContentBody.IE7 .UniGridGrid td, .ContentBody.IE7 .UniGridGrid th, .ContentBody.IE9 .UniGridGrid td, .ContentBody.IE9 .UniGridGrid th, .ContentBody.Gecko .UniGridGrid td, .ContentBody.Gecko .UniGridGrid th
+{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    border-right: none;
+    border-left: none;
+}
+
+.NoIcon
+{
+    border: none !important;
+}
+
+.ContentBody .OddRow, .ContentBody .EvenRow
+{
+    height: 26px;
+}
+
+.ContentBody .OddRow
+{
+    background-color: #f7f7f7;
+}
+
+.ContentBody .UniGridHead
+{
+    background-color: #dfdfdf;
+}
+
+.ContentBody .UniGridHead td, .ContentBody .UniGridHead th
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/HeaderDivider.png) repeat-y top right; 
+    padding: 0px 12px 0px 10px;
+    font-weight: bold;
+    color: #000 !important;
+    text-align: left;
+}
+
+.IE7 .UniGridHead th, .IE7 .UniGridHead td
+{
+    background: #dfdfdf url(../Default/Images/Design/Controls/UniGrid/HeaderLong.png) no-repeat top right !important;
+}
+
+.ContentBody .UniGridHead td a, .ContentBody .UniGridHead th a
+{
+    color: #000 !important;
+}
+
+.ContentBody .UniGridHead th:last-child
+{
+
+}
+
+th.UnigridSelection
+{
+    background-image: none;
+}
+
+.ContentBody.IE7 th.UnigridSelection
+{
+    background-image: url(../Default/Images/Design/Controls/UniGrid/HeaderLong.png);
+}
+
+.ContentBody .UnigridSelection
+{
+    text-align: center !important;
+    padding: 0px 12px 0px 10px !important;
+    border-right: 1px solid #cccccc !important; 
+}
+
+.ContentBody.RTL .UnigridSelection
+{
+    text-align: center !important;
+    padding-right: 10px !important;
+    border-left: 1px solid #cccccc !important; 
+}
+
+.ContentBody .UniGridActions
+{
+    text-align: left !important;
+    padding: 4px 10px 3px 10px !important;
+    border-right: 1px solid #ccc !important;
+    background: none !important;
+}
+
+.ContentBody.RTL .UniGridActions
+{
+    padding: 4px 10px 4px 10px !important;
+    background-image: url(../Default/Images/Design/Controls/UniGrid/HeaderDivider.png);  
+    background-repeat: repeat-y;
+    background-position: top left;
+    text-align: right !important;
+}
+
+.ContentBody .UnigridPagerPage:hover
+{
+    background-image: url(../Default/Images/Design/Controls/UniGrid/Active.png);
+    background-repeat: repeat-x;
+    border: 1px solid #ba782a;
+    background-color: #ffce80;
+}
+
+.ContentBody .UnigridPagerSelectedPage
+{
+    background-image: url(../Default/Images/Design/Controls/UniGrid/Active.png);
+    background-repeat: repeat-x;
+    border: 1px solid #ba782a;
+    background-color: #ffce80;
+}
+
+.ContentBody .UniGridPager
+{
+    text-decoration: none;
+    color: #000000;
+    border-left: solid 1px #cccccc;
+    border-right: none;
+    border-bottom: solid 1px #cccccc;
+    background-image: url(../Default/Images/Design/Controls/UniGrid/Header.png);
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: #dfdfdf; 
+    height: 27px;
+    line-height: 22px;
+    width: 100%;
+}
+
+.ContentBody.RTL .UniGridPager
+{
+    border-right: solid 1px #cccccc;    
+}
+
+
+.ContentBody.IE7 .UniGridPager
+{
+    border-right: solid 1px #cccccc;
+}
+
+.ContentBody .UniGridGrid
+{
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+.ContentBody.IE7 .PermissionMatrix td, .ContentBody.IE9 .PermissionMatrix td, .ContentBody .Safari .PermissionMatrix td, .ContentBody.Opera .PermissionMatrix td, .ContentBody.Opera .PermissionMatrix th, .ContentBody.Gecko .PermissionMatrix td, .ContentBody.Gecko .PermissionMatrix th
+{
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    border-right: none;
+    border-left: none;
+}
+
+.ContentBody .PermissionMatrix .UniGridHead th
+{
+    padding: 0 10px !important;
+}
+
+.ContentBody .MatrixHeader
+{
+    font-weight: bold;
+    padding: 3px 10px 3px 10px !important;
+}
+
+.ContentBody .UnigridActionButton
+{
+    width: 16px;
+    height: 16px;
+}
+
+.ContentBody .ArrowIcon, .ContentBody .FileTypeIcon, .ContentBody .RowContent
+{
+    border: none !important;
+}
+
+/* UniGrid pager */
+
+.ContentBody .UniGridPager th, .ContentBody .UniGridPager td
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/HeaderDivider.png) no-repeat top right;
+    font-weight: bold;
+    border: 0px none !important;
+}
+
+.ContentBody.IE7 .UniGridPager th, .ContentBody.IE7 .UniGridPager td
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/HeaderLong.png) no-repeat top right;
+    padding: 0px;
+}
+
+.ContentBody.RTL .UniGridPager th, .ContentBody.RTL .UniGridPager td
+{
+    background-position: top left;
+}
+
+.ContentBody.IE6 .UniGridPager th
+{
+    color: #313131;
+    background: url(../Default/Images/Design/Controls/UniGrid/Header.png) repeat-x top left;
+    height: 25px;
+}
+
+.ContentBody .UniGridClearPager .UniGridPager th, .ContentBody .UniGridClearPager .UniGridPager td, .ContentBody .UniGridPagerNoSeparator, .ContentBody .UniGridPagerNoSeparator th, .ContentBody .UniGridPagerNoSeparator td
+{
+    background-color: Transparent;
+    background-image: none;
+}
+
+.ContentBody.IE7 .UniGridClearPager .UniGridPager th, .ContentBody.IE7 .UniGridClearPager .UniGridPager td, .ContentBody.IE7 .UniGridPagerNoSeparator, .ContentBody.IE7 .UniGridPagerNoSeparator th, .ContentBody.IE7 .UniGridPagerNoSeparator td
+{
+    background-image: inherit;
+}
+
+.ContentBody .UniGridPagerNoSeparator
+{
+    padding-top: 2px;
+}
+
+
+.ContentBody .UnigridPagerSelectedPage, .ContentBody .UnigridPagerPage
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px 4px;
+    margin: 0px 1px;
+    border: 1px solid transparent;
+}
+
+
+.ContentBody.RTL .UnigridPagerSelectedPage, .ContentBody.RTL .UnigridPagerPage
+{
+    float: right;
+}
+
+.ContentBody .UnigridPagerFirst, .ContentBody .UnigridPagerLast, .ContentBody .UnigridPagerPrev, .ContentBody .UnigridPagerNext, .ContentBody .UnigridPagerPageSize
+{
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin: 2px 5px 0px 3px;
+}
+
+.ContentBody .UnigridPagerDirectPage
+{
+    margin: 3px 5px 0px 3px;
+    padding: 0px 5px;
+}
+
+.ContentBody.IE7 .UnigridPagerFirst, .ContentBody.IE7 .UnigridPagerLast, .ContentBody.IE7 .UnigridPagerPrev, .ContentBody.IE7 .UnigridPagerNext
+{
+    margin: 3px 5px 0px 3px;
+}
+
+.ContentBody.IE7 .UnigridPagerDirectPage, .ContentBody.IE7 .UnigridPagerPageSize, .ContentBody.Gecko3 .UnigridPagerDirectPage
+{
+    margin: 1px 5px 0px 3px;
+}
+
+.ContentBody .UnigridPagerPageSize
+{
+    margin: 3px 5px 0px 3px;
+    float: none;
+}
+
+.ContentBody.RTL .UnigridPagerFirst, .ContentBody.RTL .UnigridPagerLast, .ContentBody.RTL .UnigridPagerPrev, .ContentBody.RTL .UnigridPagerNext, .ContentBody.RTL .UnigridPagerDirectPage, .ContentBody.RTL .UnigridPagerPageSize
+{
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.ContentBody .UnigridPagerFirst
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/First.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerLast
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/Last.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerFirst:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/FirstOver.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerLast:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/LastOver.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerPrev:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/PrevOver.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerNext:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/NextOver.png) no-repeat top left;
+}
+.ContentBody.RTL .UnigridPagerFirst
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/Last.png) no-repeat top left;
+}
+.ContentBody.RTL .UnigridPagerLast
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/First.png) no-repeat top left;
+}
+.ContentBody.RTL .UnigridPagerFirst:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/LastOver.png) no-repeat top left;
+}
+.ContentBody.RTL .UnigridPagerLast:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/FirstOver.png) no-repeat top left;
+}
+.ContentBody.RTL .UnigridPagerPrev:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/NextOver.png) no-repeat top left;
+}
+.ContentBody .UnigridPagerDirectPage, .ContentBody .UnigridPagerPageSize
+{
+    width: auto;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.ContentBody .UnigridPagerPages
+{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+
+.ContentBody .LeftAlign
+{
+    float: left;
+}
+
+/* Image editor */
+.ContentBody .ImageEditorMain
+{
+    border-bottom: 1px solid #999999 !important;
+    border-left: 1px solid #999999 !important;
+}
+
+.ContentBody .ImageEditorMain .MenuHeaderItemSelected
+{
+    border-bottom: 1px solid #999999 !important;
+}
+
+.ContentBody .ImageEditorMain .Divider
+{
+    background-color: #999999 !important;
+}
+
+.ContentBody .ImageEditorFrame
+{
+    border: 1px solid #999999 !important;
+}
+
+.ContentBody .ImageEditorMain .MenuHeaderItem, .ContentBody .ImageEditorMain .MenuHeaderItemSelected
+{
+    text-decoration: none;
+    color: #313131;
+    height: 26px;
+    background: url('../Default/Images/BackgroundImageEditor.png') repeat-x left bottom;
+    border-top: 1px solid #999999 !important;
+}
+
+
+/*#Document library#*/
+/*#Document library/Library#*/
+.ContentBody .DocumentLibrary tr
+{
+    border-top: none;
+}
+
+.Chrome.ContentBody .DocumentLibrary .UniGridHead
+{
+    border-top: 1px solid #ccc;
+}
+
+.ContentBody .DocumentLibrary .Row
+{
+    height: 22px;
+    border: solid 1px transparent;
+}
+
+.ContentBody.Opera .DocumentLibrary .Row
+{
+    height: 20px;
+    border: none;
+}
+
+.ContentBody.IE6 .DocumentLibrary .Row
+{
+/* IE6 Transparent border hack */
+    border: solid 1px pink;    
+    filter: chroma(color=pink);
+}
+
+.ContentBody .DocumentLibrary .SelectedRow, .ContentBody .DocumentLibrary .SelectedRowContext
+{
+    height: 22px;
+    border: solid 1px #95b5cc !important;
+    background-color: #e5f6fe
+}
+
+.ContentBody .DocumentLibrary .SelectedRow td, .ContentBody .DocumentLibrary .SelectedRowContext td
+{
+    background-color: #e5f6fe;
+}
+
+.ContentBody .DocumentLibrary .RowContent
+{
+    width: 100%;
+    text-align: left;
+    padding-left: 3px;
+}
+
+.ContentBody .DocumentLibrary .RowContent .Icon
+{
+    padding: 0;
+}
+
+.ContentBody.RTL .DocumentLibrary .RowContent
+{
+    padding-left: auto;
+    padding-right: 3px;
+    text-align: right;
+}
+
+.ContentBody .DocumentLibrary .FlagIcon
+{
+    padding-right: 2px;
+}
+
+.ContentBody.RTL .DocumentLibrary .FlagIcon
+{
+    padding-right: auto;
+    padding-left: 2px;
+}
+
+.ContentBody .DocumentLibrary .ArrowIcon
+{
+    background: url(../../App_Themes/Default/Images/CMSModules/CMS_DocumentLibrary/Menu.png) center center no-repeat !important;
+    cursor: pointer;
+    padding-left: 14px; 
+}
+
+.ContentBody.RTL .DocumentLibrary .ArrowIcon
+{
+    padding-left: 0px;
+    padding-right: 14px;
+}
+
+.ContentBody .DocumentLibrary .NoIcon
+{
+    padding-left: 14px;   
+}
+
+.ContentBody.RTL .DocumentLibrary .NoIcon
+{
+    padding-left: 0px;
+    padding-right: 14px;
+}
+
+.ContentBody .DocumentLibrary .Row .FileTypeIcon
+{
+    border-left: solid 1px transparent;
+}
+
+.ContentBody.RTL .DocumentLibrary .Row .FileTypeIcon
+{
+    border-left: none;
+    border-right: solid 1px transparent;
+}
+
+.ContentBody .DocumentLibrary .FileTypeIcon
+{
+    padding-left: 2px;
+}
+
+.ContentBody .DocumentLibrary .FileTypeIcon img
+{
+    margin-top: 3px;
+}
+
+.ContentBody.RTL .DocumentLibrary .FileTypeIcon
+{
+    padding-left: auto;
+    padding-right: 2px;
+}
+
+.ContentBody.IE6 .DocumentLibrary .Row .FileTypeIcon
+{
+/* IE6 Transparent border hack */
+    border-left: solid 1px pink;    
+    filter: chroma(color=pink);
+}
+
+.ContentBody .DocumentLibrary .SelectedRow .FileTypeIcon, .ContentBody .DocumentLibrary .SelectedRowContext .FileTypeIcon
+{
+    border-left: solid 1px #95b5cc;
+}
+
+.ContentBody.RTL .DocumentLibrary .SelectedRow .FileTypeIcon, .ContentBody.RTL .DocumentLibrary .SelectedRowContext .FileTypeIcon
+{
+    border-left: none;
+    border-right: solid 1px #95b5cc;
+}
+
+.ContentBody .DocumentLibrary .LibraryPermissions
+{
+    height: 18px;
+    display: inline;
+    font-size: 11px;   
+    vertical-align:top;     
+}
+
+.ContentBody .DocumentLibrary .LibraryPermissions a
+{
+	padding-left: 4px;
+	text-decoration: underline;
+}
+
+.ContentBody .Safari .DocumentLibrary .LibraryPermissions
+{
+	line-height: 18px;
+}
+
+.ContentBody .Safari .DocumentLibrary .LibraryPermissions a
+{
+	position: relative;
+	left: 4px;
+}
+
+.ContentBody .DocumentLibrary .LibraryPermissions img
+{
+    vertical-align: middle;
+}
+
+.ContentBody .Safari .DocumentLibrary .LibraryPermissions img
+{
+	vertical-align: top;
+}
+
+/*#Document library/Popup control#*/
+.ContentBody .DialogPopupContent .EditForm
+{
+    border-style: none;
+}
+
+.ContentBody .DialogPopupBackground
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #888888;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    z-index: 10000;
+}
+
+.ContentBody .DialogPopupContent
+{
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background-color: White;
+    border: solid 1px black;
+   /* padding: 6px;*/
+    z-index: 10001;
+}
+
+
+/*#Document library/General styles#*/
+.ContentBody .RightAlign
+{
+    float: right;
+}
+
+.ContentBody.RTL .RightAlign
+{
+    float: left;
+}
+
+.ContentBody .LeftAlign
+{
+    float: left;
+}
+
+.ContentBody.RTL .LeftAlign
+{
+    float: right;
+}
+
+.ContentBody.IE6 .LeftAlign
+{
+    float: none;
+}
+
+.ContentBody .TextLeft, .ContentBody .DialogBody
+{
+    text-align: left;
+}
+
+.ContentBody.RTL .TextLeft, .ContentBody.RTL .DialogBody
+{
+    text-align: right;
+}
+
+.ContentBody .TextRight/*, .ContentBody .DialogContent*/
+{
+    text-align: right;
+}
+
+.ContentBody.RTL .TextRight, .ContentBody.RTL .DialogContent
+{
+    text-align: left;
+}
+
+.ContentBody .PermissionsListBox
+{
+    margin-top: 5px;
+    width: 276px;
+    height: 252px;    
+}
+
+.ContentBody .TableRowHeader
+{
+    text-align: left;
+    font-weight: bold;
+}
+
+.ContentBody .UniGridGrid .TableCell
+{
+    text-align: center !important;
+}
+
+/*#Document library/Override DesignMode styles #*/
+.ContentBody .DialogPageContent .TextBoxField
+{
+  width: 360px !important;
+}
+
+.ContentBody .DialogPageContent .TextAreaField
+{
+  width: 360px !important;
+  height: 200px !important;
+}
+
+.ContentBody .DialogPageContent .ShortField
+{
+  width: auto !important;
+}
+
+.ContentBody .DialogPageBody .PageTitle
+{
+  color: #fff !important;
+}
+.ContentBody .ModalPopupDialog .DialogPageContent
+{
+  min-height: 80px;
+  min-width: 475px;
+  padding: 10px;
+}
+
+.ContentBody.IE6 .ModalPopupDialog .DialogPageContent
+{
+      height: 80px;
+}
+
+.ContentBody .ModalPopupDialog .EditForm, .ContentBody .ModalPopupDialog .ContentEditMenu
+{
+ /* border: none; */
+}
+
+.ContentBody .ModalPopupDialog {
+    background-color: #FFFFFF;
+    border: 10px solid #d8d8d8;
+    height: 176px;
+    left: 384px;
+    position: fixed;
+    top: 211px;
+    width: 495px;
+    z-index: 9998;
+}
+.ContentBody .DialogPageBody
+{
+    border: 1px solid #9a9a9a !important;
+}
+
+.ContentBody .WidgetTabsPageHeader .TextRight a
+{
+	color: #ffffff;
+}
+
+.ContentBody .PageFooterLine 
+{
+	background: #f6f6f6;
+	border-top: 1px solid #9a9a9a;
+}
+
+.ContentBody .ModalPopupDialog .PageFooterLine {
+    background-color: #f6f6f6 !important;
+    bottom: 0;
+    display: block;
+    padding: 10px;
+}
+
+.ContentBody .ModalPopupDialog .PageFooterLine .Buttons
+{
+    text-align: right;
+}
+
+.ContentBody .PermissionsListBox 
+{
+    height: 252px;
+    margin-top: 5px;
+    width: 276px;
+}
+
+.ContentBody .TableRowHeader 
+{
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+.ContentBody .TableRowHeader span 
+{
+    color: black;
+}
+
+.ContentBody .ModalBackground
+{
+    background-color: #000;
+    filter: alpha(opacity=35) !important;
+    opacity: 0.35;
+}
+.ContentBody .LibraryPermissions a
+{
+    color: #737373;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ContentBody .TableList, .ContentBody .UniGridGrid
+{  
+    margin-top: 5px;
+}
+
+/*#Categories #*/
+
+.ContentBody .DialogTreeAreaSeparator
+{
+    background: url(../Default/Images/Design/Controls/FrameResizer/Horizontal/Resizer.png) repeat-y scroll left top transparent;
+    float: left;
+    height: 100%;
+    width: 7px;    
+}
+
+.ContentBody .TreeMenuPadding, .ContentBody .DialogSiteBlock {
+    background-color: #F2F2F2;
+    background-image: url(../Default/Images/Design/Backgrounds/TreeMenuTopBackground.png);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #8D8D8D;
+}
+
+.ContentBody .TreeMenuContent {
+    padding: 5px;
+}
+
+.ContentBody .MenuSubBox
+{
+    width: 100%;
+}
+
+.ContentBody .Categories .DialogLeftBlock
+{
+    width: 251px;        
+}
+
+.ContentBody .Categories .PageTitleBreadCrumbsPadding {
+    border-bottom: 1px solid #CCCCCC;
+    display: block;
+    height: 15px;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+.ContentBody .PageTitleBreadCrumbs {
+    background: url(../Default/Images/Design/Backgrounds/PageTitleBreadcrumbs.png) repeat-x scroll left bottom #FFFFFF;
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    padding: 0 5px 0 10px;
+}
+
+.ContentBody .BreadTabs.JqueryUITabs .ui-tabs-nav {
+    background-image: url(../Default/Images/Design/Controls/Tabs/BreadTabsPanel.png) !important;
+    background-position: 0 9px;
+    background-repeat: repeat-x;
+    background-color: #fafafa;
+}
+
+.ContentBody .Categories .ui-widget-content, .ContentBody .Categories .ui-widget-header
+{
+    border: none;    
+}
+
+.ContentBody .LightTabs .TabControlSelected, .ContentBody .JqueryUITabs .ui-tabs-selected .JqueryUITabCenter, .ContentBody .JqueryUITabs .JqueryUITabCenter, .ContentBody .WidgetMyMessages .TabsHeader .TabControlSelected,
+.ContentBody .Categories .ui-tabs-nav .ui-tabs-selected.ui-state-hover 
+{
+    color: #000000;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 11px;
+    height: 25px;
+    overflow: hidden;
+    padding: 0 7px;
+    text-decoration: none;
+}
+
+.ContentBody .JqueryUITabs .JqueryUITabLeft, .ContentBody .JqueryUITabs .JqueryUITabRight 
+{
+    background-color: transparent !important;
+    display: block;
+    float: left;
+    height: 24px;
+    width: 0px;
+    font-size: 0;
+}
+
+.ContentBody .Categories .ui-state-default, .ContentBody .Categories .ui-widget-content .ui-state-default, .ContentBody .Categories .ui-widget-header .ui-state-default
+{
+    background: none; 
+    height: 24px;   
+}
+
+.ContentBody .Categories .ui-tabs .ui-tabs-nav
+{
+    height: 26px !important;
+    padding-top: 3px !important;
+}
+
+.ContentBody .Categories .ui-tabs .ui-tabs-nav li a
+{
+    padding: 0 !important;
+    font-weight: normal !important;
+    height: 26px;
+  
+}
+
+.ContentBody .ui-tabs .ui-tabs-nav li
+{
+    margin-right: 2px !important;    
+}
+
+.ContentBody .JqueryUITabs .ui-tabs-nav li
+{
+    line-height: 24px;
+    margin: 0px;       
+}
+
+.ContentBody .Categories .ui-tabs-nav .ui-state-hover
+{
+    background-image: url(../Default/Images/Design/Controls/Tabs/Horizontal/SubTabs/TabMidHover.png) !important;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #e1e1e1;
+    overflow: hidden;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #8d8d8d;
+    height: 24px; 
+}
+
+.ContentBody .Categories .ui-tabs-nav .ui-state-hover.ui-tabs-selected
+{
+    background-image: none !important;
+    background-color: #ffffff;
+    padding: 0;
+    border: 1px solid #8d8d8d;
+ }
+
+.ContentBody .ui-state-default
+{
+    border: 1px solid transparent !important;    
+}
+
+.ContentBody .ui-state-default.ui-tabs-selected, .ContentBody .ui-state-default.ui-state-hover
+{
+    border: 1px solid #8d8d8d !important;
+    border-bottom: none !important;
+    padding-bottom: 0px;  
+}
+
+.ContentBody .Categories .ui-tabs-nav
+{
+    padding-left: 2px !important;    
+}
+
+.ContentBody .ui-tabs .ui-tabs-nav 
+{
+    margin: 0 !important;    
+}
+
+.ContentBody .NewItemImage 
+{
+    margin: 0 4px 1px 0;
+    vertical-align: middle;
+}
+
+.ContentBody .ContentTreeSelectedItem .Name 
+{
+    background: url(../Default/Images/Design/Backgrounds/TreeMenuActiveItem.png) repeat-y scroll right top #FFD899;
+    color: #000000;
+}
+
+.ContentBody .ContentTreeItem .Name 
+{
+    color: #000000;
+    cursor: pointer;
+    margin-left: 1px;
+    padding: 2px 10px 2px 5px;
+}
+
+.ContentBody .Categories .PageTitleHeader 
+{
+    background: url(../Default/Images/Design/Backgrounds/PageTitleHeader.png) repeat-x scroll left top #CDCDCD !important;
+    border-bottom: 1px solid #8D8D8D;
+    display: block;
+    padding: 6px 5px 2px 8px;
+    white-space: nowrap;
+}
+
+.ContentBody .PageTitleImage 
+{
+    height: 24px;
+    padding: 0 5px 5px 0;
+    vertical-align: middle;
+    width: 24px;
+}
+
+.ContentBody .PageTitle 
+{
+    color: #586979 !important;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ContentBody .Categories .InfoLabel
+{
+    padding: 5px;    
+}
+
+.ContentBody .Categories .PageContent 
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 20px 10px 15px;
+}
+
+.ContentBody .Categories .ui-tabs .ui-tabs-panel
+{
+    padding: 0 !important;    
+}
+
+.ContentBody .HeaderSeparator 
+{
+    background-image: url(../Default/Images/Design/Controls/Tabs/Horizontal/SubTabs/Separator.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #8D8D8D;
+    height: 6px !important;
+}
+
+.ContentBody .LocalizablePanel 
+{
+    background-color: #EEEEEE;
+    border-color: #AEAEAE;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    display: inline-block;
+    padding: 1px;
+    position: relative;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.ContentBody .Safari .LocalizablePanel
+{
+    padding-top: 2px;
+    height: 17px;
+    top: 4px;    
+}
+
+.ContentBody.IE7 .LocalizablePanel
+{
+    display: inline;
+    top: 2px;
+    height: 17px;        
+}
+
+.ContentBody.IE8 .LocalizablePanel, .ContentBody.IE9 .LocalizablePanel 
+{
+    top: 2px;
+    height: 17px;        
+}
+
+.ContentBody.Gecko .LocalizablePanel 
+{
+    padding: 1px 1px 2px;
+}
+
+.ContentBody .Safari .LocalizableTop
+{
+    top: 0;    
+} 
+
+.ContentBody .LocalizableTop, .ContentBody.IE7 .LocalizableTop 
+{
+    top: 1px;
+    vertical-align: top;
+}
+
+.ContentBody.IE8 .LocalizableTop, .ContentBody.IE9 .LocalizableTop
+{
+    top: 0;    
+}
+
+.ContentBody .TextAreaField 
+{
+    height: 100px;
+    line-height: 14px;
+    width: 292px;
+}
+
+.ContentBody .Categories .FieldLabel
+{
+    font-weight: normal;
+    color: #000000;        
+}
+
+.ContentBody .UnigridActionButton
+{
+    padding-right: 3px;    
+}
+
+.ContentBody .Categories .UniGridPager
+{
+    border-right: 1px solid #CCCCCC; 
+}
+
+.ContentBody .UniGridHead a
+{
+    text-decoration: none;    
+}
+
+.ContentBody .Categories .TreeTree a
+{
+    font-size: 0;    
+}
+
+.ContentBody .Categories .TreeTree .UniTreeNode
+{
+    font-size: small;    
+}
+
+.ContentBody .Categories .TreeMain
+{
+    padding: 15px 5px 10px 5px;    
+}
+
+.ContentBody .Categories .TreeMenuContent a, .ContentBody .Categories .TreeMenuContent img
+{
+    float: left;    
+}
+
+.ContentBody .Categories .DialogTreeAreaSeparator
+{
+    height: 500px !important;    
+}
+
+.ContentBody .ui-tabs .ui-tabs-nav li.ui-tabs-selected
+{
+    background: #fff !important;
+}
+
+.ContentBody .AttachmentsList .Icon
+{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: -3px;
+    margin-top: 2px;
+}
+
+.ContentBody .AttachmentsList .OddRow .Icon
+{
+    border-right: 5px solid #EDF3FC;
+}
+
+.ContentBody .AttachmentsList .EvenRow .Icon
+{
+    border-right: 5px solid white;
+}
+
+.ContentBody.RTL .AttachmentsList .OddRow .Icon
+{
+    border-left: 5px solid #EDF3FC;
+}
+.ContentBody.RTL .AttachmentsList .EvenRow .Icon
+{
+    border-left: 5px solid white;
+}
+
+
+.ContentBody .DialogFileUploader .InnerDiv
+{
+    background: url('../Default/Images/CMSModules/CMS_Content/Dialogs/addfile.png');
+}
+
+.ContentBody .DialogFileUploader .MouseOver .InnerDiv
+{
+    background: url('../Default/Images/CMSModules/CMS_Content/Dialogs/addfileover.png');
+}
+
+/* Media Library */
+
+.ContentBody .Uploader .Uploader
+{
+    width: 280px;
+}
+
+.ContentBody .BreadTabs .FullTabsRight, .BreadTabs .TabsRight, .BreadTabs .TabsRightDialog
+{
+    background-color: #AFAFAF;
+    background-image: url(../Default/Images/Design/Controls/Tabs/BreadTabsPanel.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 29px;
+    margin: 0 0 0 7px;
+}
+
+.ContentBody .BreadTabs .FullTabsLeft, .BreadTabs .TabsLeft
+{
+    background-image: url(../Default/Images/Design/Controls/Tabs/BreadTabsPanel.png);
+    background-position: left top;
+    background-repeat: repeat-x;
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    width: 7px;
+    border-bottom: solid 1px #8d8d8d;
+}
+
+.ContentBody .DialogMenu
+{
+    border-bottom: solid 1px #8d8d8d;
+    background-repeat: repeat-x;
+    background-image: url(../Default/Images/CMSModules/CMS_Content/Dialogs/menubg.png);
+    background-position: top left;
+    display: block;
+    float: left;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ContentBody .DialogMenu .MenuItemRight
+{
+    width: 102px;
+    height: 36px;
+    margin: 2px 3px;
+    padding: 0px 0px 0px 8px;
+    cursor: pointer;
+    color: #000000;
+    float: left;
+}
+
+.ContentBody .DialogMenu .DialogMenuLeft
+{
+    background-repeat: repeat-x;
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+    width: 236px;
+    float: left;
+    height: 41px;
+    padding: 2px 0px 2px 3px;
+    border-right: 1px solid #8d8d8d;
+}
+
+.ContentBody .DialogMenu .Smaller
+{
+    width: 128px;
+}
+
+.ContentBody .DialogMenu .MenuItemLeft
+{
+    background-image: url(../Default/Images/CMSModules/CMS_Content/Dialogs/addfolder.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 74px;
+    height: 36px;
+    margin: 2px;
+    padding: 0px 0px 0px 36px;
+    color: #000000;
+    float: left;
+    text-align: left;
+}
+
+.ContentBody .DialogMenu .DeleteFolder .MenuItemLeft
+{
+    background-image: url(../Default/Images/CMSModules/CMS_Content/Dialogs/deletefolder.png);
+}
+
+.ContentBody .DialogMenu .MenuItemLeft:hover
+{
+    background-image: url(../Default/Images/CMSModules/CMS_Content/Dialogs/addfolderover.png);
+}
+
+.ContentBody .DialogMenu .DeleteFolder .MenuItemLeft:hover
+{
+    background-image: url(../Default/Images/CMSModules/CMS_Content/Dialogs/deletefolderover.png);
+}
+
+.ContentBody .InnerDiv
+{
+    color: #000000;
+}
+
+.ContentBody .MediaLibraryFolderActions
+{
+    line-height: 20px;
+    height: 20px;
+    padding: 5px 0px 5px 8px;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: #ebebeb;
+    background-image: url(../Default/Images/Design/Backgrounds/MediaLibraryUnderMenu.png);
+}
+
+.ContentBody .DialogMenu .DialogFullScreen
+{
+    width: 175px;
+    height: 41px;
+    padding: 2px;
+    position: absolute;
+    right: 0px;
+    background-image: url(../Default/Images/Design/Backgrounds/MediaLibraryWatermark.png);
+    background-position: 110px 0;
+    background-repeat: no-repeat;
+}
+
+.ContentBody .DialogResizerVLine
+{
+    height: 5px;
+    font-size: 0;
+    border-top: 1px solid #8d8d8d;
+    border-bottom: 1px solid #8d8d8d;
+    background-image: url(../Default/Images/Design/Controls/FrameResizer/Vertical/Resizer.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    width: 100%;
+}
+
+.ContentBody .DialogTileItemShadow
+{
+    width: 222px;
+    height: 74px;
+    float: left;
+    margin: 0px 11px 11px 0px;
+    background-image: url(../Default/Images/Design/Controls/Dialogs/tiles_shadow.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ContentBody .DialogTileItem
+{
+    border: solid 1px #bfbfbf;
+    width: 210px;
+    height: 62px;
+    background-color: #FFF;
+    background-image: url(../Default/Images/Design/Backgrounds/MediaLibraryTile.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.ContentBody .TilesMultipleSelection
+{
+    position: absolute;
+    bottom: 16px;
+    left: 5px;
+}
+
+
+.ContentBody .DialogThumbnailItemShadow
+{
+    width: 182px;
+    height: 148px;
+    margin: 0px 11px 11px 0px;
+    float: left;
+    background-image: url(../Default/Images/Design/Controls/Dialogs/thumbs_shadow.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ContentBody.RTL .DialogThumbnailItemShadow
+{
+    width: 172px;
+}
+
+.ContentBody .ThumbMultipleSelection
+{
+    position: absolute;
+    bottom: 15px;
+    left: 4px;
+}
+
+.ContentBody .DialogThumbnailItem
+{
+    background-image: url(../Default/Images/Design/Backgrounds/MediaLibraryThumbs.png);
+}
+
+.ContentBody .UnigridPagerPrev
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/Prev.png) no-repeat top center;
+}
+.ContentBody .UnigridPagerNext
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/Next.png) no-repeat top center;
+}
+
+.ContentBody .DialogPager .UnigridPagerNext:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/NextOver.png) no-repeat top left;
+}
+
+.ContentBody.RTL .DialogPager .UnigridPagerNext:hover, .DialogPager .UnigridPagerPrev:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/PrevOver.png) no-repeat top left;
+}
+
+.ContentBody.RTL .DialogPager .UnigridPagerPrev:hover
+{
+    background: url(../Default/Images/Design/Controls/UniGrid/NextOver.png) no-repeat top left;
+}
+
+.ContentBody .ui-tabs .ui-tabs-panel
+{
+    border-bottom: 1px solid #8d8d8d;
+}
+
+.ContentBody .JqueryUITabs .JqueryUITabLeft, .JqueryUITabs .JqueryUITabRight
+{
+    display: block;
+    float: left;
+    width: 3px;
+    height: 24px;
+    background-color: transparent !important;
+}

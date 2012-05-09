@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="previous" caption="$Unigrid.Order.Actions.PreviousStatus$" icon="Left.png" />
+    <action name="next" caption="$Unigrid.Order.Actions.NextStatus$" icon="Right.png" />
+  </actions>
+  <columns>
+    <column source="OrderID" caption="$Unigrid.Order.Columns.OrderID$" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="Fullname" caption="$Unigrid.Order.Columns.OrderCustomerFullName$" wrap="false">
+    </column>
+    <column source="CustomerCompany" caption="$Unigrid.Order.Columns.OrderCustomerCompany$" wrap="false">
+    </column>
+    <column source="CustomerEmail" caption="$Unigrid.Order.Columns.OrderCustomerEmail$" wrap="false">
+    </column>
+    <column source="OrderDate" caption="$Unigrid.Order.Columns.OrderDate$" wrap="false">
+    </column>
+    <column source="##ALL##" externalsourcename="Totalprice" caption="$Unigrid.Order.Columns.OrderTotalPrice$" wrap="false" sort="OrderTotalPriceInMainCurrency">
+    </column>
+    <column source="StatusDisplayName" externalsourcename="StatusDisplayName" caption="$Unigrid.Order.Columns.OrderStatusID$" wrap="false">
+    </column>
+    <column source="OrderIsPaid" externalsourcename="#yesno" caption="$Unigrid.Order.Columns.OrderIsPaid$" wrap="false">
+    </column>
+    <column source="OrderSiteID" columnname="OrderSiteID" externalsourcename="#sitename" caption="$general.sitename$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.orderlist" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

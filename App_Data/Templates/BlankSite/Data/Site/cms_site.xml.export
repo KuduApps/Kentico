@@ -1,0 +1,16 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>1</SiteID>
+      <SiteName>BlankSite</SiteName>
+      <SiteDisplayName>Blank site</SiteDisplayName>
+      <SiteDescription>Sample blank web site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.1</SiteDomainName>
+      <SiteDefaultStylesheetID>1</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteGUID>15a7d3b1-449b-4eab-aece-eb3c1f8ac410</SiteGUID>
+      <SiteLastModified>2011-09-09T08:58:54.743+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

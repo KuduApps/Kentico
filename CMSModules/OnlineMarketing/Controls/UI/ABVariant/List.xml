@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ABVariantID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditVariant) {window.EditVariant({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="ABVariantDisplayName" caption="$abtesting.variantname$" wrap="false">
+      <filter type="text" size="200" />
+    </column>
+    <column source="ABVariantPath" caption="$abtesting.abtestpage$" wrap="false" />
+    <column source="ABVariantConversions" caption="$abtesting.variantconversions$" wrap="false" />
+    <column source="ABVariantPath" caption="$abtesting.validitystatus$" externalsourcename="culture" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="om.abvariant" Columns="ABVariantID,ABVariantConversions,ABVariantDisplayName,ABVariantPath"  />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
+

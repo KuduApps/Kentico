@@ -1,0 +1,109 @@
+﻿<pm_project version="6.0">
+  <NewDataSet>
+    <pm_project>
+      <ProjectID>42</ProjectID>
+      <ProjectNodeID>49011</ProjectNodeID>
+      <ProjectDisplayName>Network Upgrade</ProjectDisplayName>
+      <ProjectName>Network_Upgrade_general_5986a4fa-9968-428f-b038-9d13e7680912</ProjectName>
+      <ProjectDescription>Plan for a major upgrade of our network infrastructure.</ProjectDescription>
+      <ProjectOwner>1030</ProjectOwner>
+      <ProjectCreatedByID>1030</ProjectCreatedByID>
+      <ProjectStatusID>3</ProjectStatusID>
+      <ProjectSiteID>107</ProjectSiteID>
+      <ProjectGUID>5b7c9cea-c59a-4378-b2d6-2cd103811c53</ProjectGUID>
+      <ProjectLastModified>2010-11-30T15:31:05.377+01:00</ProjectLastModified>
+      <ProjectAllowOrdering>true</ProjectAllowOrdering>
+      <ProjectAccess>1222</ProjectAccess>
+    </pm_project>
+    <pm_projecttask>
+      <ProjectTaskID>23</ProjectTaskID>
+      <ProjectTaskProjectID>42</ProjectTaskProjectID>
+      <ProjectTaskDisplayName>New Network Design</ProjectTaskDisplayName>
+      <ProjectTaskStatusID>7</ProjectTaskStatusID>
+      <ProjectTaskPriorityID>3</ProjectTaskPriorityID>
+      <ProjectTaskDescription>&lt;br /&gt;</ProjectTaskDescription>
+      <ProjectTaskOwnerID>1030</ProjectTaskOwnerID>
+      <ProjectTaskCreatedByID>53</ProjectTaskCreatedByID>
+      <ProjectTaskAssignedToUserID>1054</ProjectTaskAssignedToUserID>
+      <ProjectTaskProgress>100</ProjectTaskProgress>
+      <ProjectTaskHours>0</ProjectTaskHours>
+      <ProjectTaskGUID>fb3a33c7-ce42-407f-a12e-711682d825e9</ProjectTaskGUID>
+      <ProjectTaskLastModified>2010-11-30T15:30:31.957+01:00</ProjectTaskLastModified>
+      <ProjectTaskProjectOrder>1</ProjectTaskProjectOrder>
+      <ProjectTaskUserOrder>1</ProjectTaskUserOrder>
+      <ProjectTaskIsPrivate>false</ProjectTaskIsPrivate>
+    </pm_projecttask>
+    <pm_projecttask>
+      <ProjectTaskID>24</ProjectTaskID>
+      <ProjectTaskProjectID>42</ProjectTaskProjectID>
+      <ProjectTaskDisplayName>Review of network design</ProjectTaskDisplayName>
+      <ProjectTaskStatusID>3</ProjectTaskStatusID>
+      <ProjectTaskPriorityID>3</ProjectTaskPriorityID>
+      <ProjectTaskDescription>&lt;br /&gt;</ProjectTaskDescription>
+      <ProjectTaskOwnerID>1030</ProjectTaskOwnerID>
+      <ProjectTaskCreatedByID>53</ProjectTaskCreatedByID>
+      <ProjectTaskAssignedToUserID>1047</ProjectTaskAssignedToUserID>
+      <ProjectTaskProgress>30</ProjectTaskProgress>
+      <ProjectTaskHours>0</ProjectTaskHours>
+      <ProjectTaskGUID>ac2309b5-add4-48ff-a452-fe63b27a052f</ProjectTaskGUID>
+      <ProjectTaskLastModified>2010-11-30T15:30:40.413+01:00</ProjectTaskLastModified>
+      <ProjectTaskProjectOrder>2</ProjectTaskProjectOrder>
+      <ProjectTaskUserOrder>1</ProjectTaskUserOrder>
+      <ProjectTaskIsPrivate>false</ProjectTaskIsPrivate>
+    </pm_projecttask>
+    <pm_projecttask>
+      <ProjectTaskID>25</ProjectTaskID>
+      <ProjectTaskProjectID>42</ProjectTaskProjectID>
+      <ProjectTaskDisplayName>RFP preparation</ProjectTaskDisplayName>
+      <ProjectTaskStatusID>3</ProjectTaskStatusID>
+      <ProjectTaskPriorityID>3</ProjectTaskPriorityID>
+      <ProjectTaskDescription>&lt;br /&gt;</ProjectTaskDescription>
+      <ProjectTaskOwnerID>1030</ProjectTaskOwnerID>
+      <ProjectTaskCreatedByID>53</ProjectTaskCreatedByID>
+      <ProjectTaskAssignedToUserID>1030</ProjectTaskAssignedToUserID>
+      <ProjectTaskProgress>50</ProjectTaskProgress>
+      <ProjectTaskHours>0</ProjectTaskHours>
+      <ProjectTaskGUID>41d308ae-19b2-4f78-8e6b-0047415280ce</ProjectTaskGUID>
+      <ProjectTaskLastModified>2010-11-30T15:30:45.933+01:00</ProjectTaskLastModified>
+      <ProjectTaskProjectOrder>3</ProjectTaskProjectOrder>
+      <ProjectTaskUserOrder>1</ProjectTaskUserOrder>
+      <ProjectTaskIsPrivate>false</ProjectTaskIsPrivate>
+    </pm_projecttask>
+    <pm_projecttask>
+      <ProjectTaskID>26</ProjectTaskID>
+      <ProjectTaskProjectID>42</ProjectTaskProjectID>
+      <ProjectTaskDisplayName>Vendor Selection</ProjectTaskDisplayName>
+      <ProjectTaskStatusID>4</ProjectTaskStatusID>
+      <ProjectTaskPriorityID>3</ProjectTaskPriorityID>
+      <ProjectTaskDescription>&lt;br /&gt;</ProjectTaskDescription>
+      <ProjectTaskOwnerID>1030</ProjectTaskOwnerID>
+      <ProjectTaskCreatedByID>53</ProjectTaskCreatedByID>
+      <ProjectTaskAssignedToUserID>1030</ProjectTaskAssignedToUserID>
+      <ProjectTaskProgress>10</ProjectTaskProgress>
+      <ProjectTaskHours>0</ProjectTaskHours>
+      <ProjectTaskGUID>29bb5189-a966-40b7-8a81-b57913f9966c</ProjectTaskGUID>
+      <ProjectTaskLastModified>2010-11-30T15:31:05.373+01:00</ProjectTaskLastModified>
+      <ProjectTaskProjectOrder>4</ProjectTaskProjectOrder>
+      <ProjectTaskUserOrder>2</ProjectTaskUserOrder>
+      <ProjectTaskIsPrivate>false</ProjectTaskIsPrivate>
+    </pm_projecttask>
+    <pm_projecttask>
+      <ProjectTaskID>27</ProjectTaskID>
+      <ProjectTaskProjectID>42</ProjectTaskProjectID>
+      <ProjectTaskDisplayName>Implementation of changes</ProjectTaskDisplayName>
+      <ProjectTaskStatusID>2</ProjectTaskStatusID>
+      <ProjectTaskPriorityID>3</ProjectTaskPriorityID>
+      <ProjectTaskDescription>&lt;br /&gt;</ProjectTaskDescription>
+      <ProjectTaskOwnerID>1030</ProjectTaskOwnerID>
+      <ProjectTaskCreatedByID>53</ProjectTaskCreatedByID>
+      <ProjectTaskAssignedToUserID>1047</ProjectTaskAssignedToUserID>
+      <ProjectTaskProgress>0</ProjectTaskProgress>
+      <ProjectTaskHours>0</ProjectTaskHours>
+      <ProjectTaskGUID>d7e10bd2-4c02-40f8-a59c-7bd2f170475d</ProjectTaskGUID>
+      <ProjectTaskLastModified>2010-10-14T15:35:00.84+02:00</ProjectTaskLastModified>
+      <ProjectTaskProjectOrder>5</ProjectTaskProjectOrder>
+      <ProjectTaskUserOrder>2</ProjectTaskUserOrder>
+      <ProjectTaskIsPrivate>false</ProjectTaskIsPrivate>
+    </pm_projecttask>
+  </NewDataSet>
+</pm_project>

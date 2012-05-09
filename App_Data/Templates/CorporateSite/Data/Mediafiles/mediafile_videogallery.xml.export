@@ -1,0 +1,76 @@
+﻿<mediafile_videogallery version="6.0">
+  <NewDataSet>
+    <media_file>
+      <FileID>83388</FileID>
+      <FileName>blue</FileName>
+      <FileTitle>Logo on Blue Background</FileTitle>
+      <FileDescription>This is a sample video containing Kentico logo on blue background. The video is in Audio Video Interleave (.avi) format.</FileDescription>
+      <FileExtension>.avi</FileExtension>
+      <FileMimeType>video/x-msvideo</FileMimeType>
+      <FilePath>blue.avi</FilePath>
+      <FileSize>550218</FileSize>
+      <FileGUID>9113b307-140c-4e9c-a894-4618db7fbb33</FileGUID>
+      <FileLibraryID>438</FileLibraryID>
+      <FileSiteID>110</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2011-06-15T19:05:51.69+02:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2011-07-20T15:29:49.833+02:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+    <media_file>
+      <FileID>83387</FileID>
+      <FileName>green</FileName>
+      <FileTitle>Logo on Green Background</FileTitle>
+      <FileDescription>This is a sample video displaying scrolling Kentico logo on green background. The video is in Apple QuickTime (.mov) format.</FileDescription>
+      <FileExtension>.mov</FileExtension>
+      <FileMimeType>video/quicktime</FileMimeType>
+      <FilePath>green.mov</FilePath>
+      <FileSize>1012655</FileSize>
+      <FileGUID>98d36487-2c5c-4da0-9396-bfffbb04f556</FileGUID>
+      <FileLibraryID>438</FileLibraryID>
+      <FileSiteID>110</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2011-06-15T19:05:25.263+02:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2011-07-20T15:29:55.487+02:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+    <media_file>
+      <FileID>83389</FileID>
+      <FileName>orange</FileName>
+      <FileTitle>Logo on Orange Background</FileTitle>
+      <FileDescription>This is a sample video displaying scrolling Kentico logo on orange background. The video is in Windows Media Video (.wmv) format.</FileDescription>
+      <FileExtension>.wmv</FileExtension>
+      <FileMimeType>video/x-ms-wmv</FileMimeType>
+      <FilePath>orange.wmv</FilePath>
+      <FileSize>589425</FileSize>
+      <FileGUID>8516bb6d-5a5e-40a2-945f-015d2804f279</FileGUID>
+      <FileLibraryID>438</FileLibraryID>
+      <FileSiteID>110</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2011-06-15T19:05:57.027+02:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2011-07-20T15:30:02.92+02:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+    <media_file>
+      <FileID>86425</FileID>
+      <FileName>yellow</FileName>
+      <FileTitle>Logo on Yellow Background</FileTitle>
+      <FileDescription>This is a sample video displaying scrolling Kentico logo on yellow background. The video is in Flash (.swf) format.</FileDescription>
+      <FileExtension>.swf</FileExtension>
+      <FileMimeType>application/x-shockwave-flash</FileMimeType>
+      <FilePath>yellow.swf</FilePath>
+      <FileSize>59971</FileSize>
+      <FileGUID>6e9cee8e-d237-46a8-a12c-f68833e277f9</FileGUID>
+      <FileLibraryID>438</FileLibraryID>
+      <FileSiteID>110</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2011-09-20T12:33:30.633+02:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2011-09-20T12:39:21.807+02:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+  </NewDataSet>
+</mediafile_videogallery>

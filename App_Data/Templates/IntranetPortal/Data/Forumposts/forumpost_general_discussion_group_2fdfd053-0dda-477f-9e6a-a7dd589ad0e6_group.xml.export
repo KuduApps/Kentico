@@ -1,0 +1,366 @@
+﻿<forumpost_general_discussion_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6_group version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>1384</PostId>
+      <PostForumID>463</PostForumID>
+      <PostIDPath>/00001384</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Licenses for the upgrade</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>Hi,
+
+what particular licenses do we need to purchase? Are we going to do fine with the Standard license for each employee?</PostText>
+      <PostTime>2010-11-08T14:17:49.227+01:00</PostTime>
+      <PostThreadPosts>5</PostThreadPosts>
+      <PostThreadLastPostUserName>BradS</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2010-11-08T14:51:21.267+01:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>d7ed0161-9920-4a83-b429-5ac172a5ea1d</PostGUID>
+      <PostLastModified>2010-11-08T14:17:49.337+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>55</PostViews>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>5</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>BradS</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2010-11-08T14:51:21.267+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1385</PostId>
+      <PostForumID>463</PostForumID>
+      <PostIDPath>/00001385</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>How is the upgrade going?</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>Hi,
+
+please use this thread in case any problems or other significant events occur during the upgrade.</PostText>
+      <PostTime>2010-11-08T14:19:17.323+01:00</PostTime>
+      <PostThreadPosts>5</PostThreadPosts>
+      <PostThreadLastPostUserName>RuthB</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2010-11-08T17:20:31.583+01:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>988b35d5-45a3-49fa-8e8b-c7278070ef23</PostGUID>
+      <PostLastModified>2010-11-08T14:19:17.33+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>49</PostViews>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>5</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>RuthB</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2010-11-08T17:20:31.583+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1386</PostId>
+      <PostForumID>463</PostForumID>
+      <PostIDPath>/00001386</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>'New user manual' request</PostSubject>
+      <PostUserID>1035</PostUserID>
+      <PostUserName>ColinD</PostUserName>
+      <PostUserMail>colind@localhost.local</PostUserMail>
+      <PostText>Guys,
+
+I'm having a bit of trouble getting used to this new Office. Don't you know about some guide for new users, something that would help you learn how the new features can be used, etc.?
+
+I'm not the only one to complain about this, I've heard Rachel had smashed her keyboard against the wall while trying to create a spreadsheet...</PostText>
+      <PostTime>2010-11-08T19:07:28.447+01:00</PostTime>
+      <PostThreadPosts>3</PostThreadPosts>
+      <PostThreadLastPostUserName>BradS</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2010-11-08T19:18:12.437+01:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>77f19f80-42b7-40bf-a450-f444c90dd351</PostGUID>
+      <PostLastModified>2010-11-08T19:07:28.46+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>47</PostViews>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>3</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>BradS</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2010-11-08T19:18:12.437+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1387</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1386</PostParentID>
+      <PostIDPath>/00001386/00001387</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:'New user manual' request</PostSubject>
+      <PostUserID>1054</PostUserID>
+      <PostUserName>RuthB</PostUserName>
+      <PostUserMail>ruthb@localhost.local</PostUserMail>
+      <PostText>Yeah, Sharon's just gone to replace her keyboard with a new one :-D
+
+I think Simon's been talking about such a document, I'll ask him if he could send it to me ...
+
+</PostText>
+      <PostTime>2010-11-08T19:12:43.137+01:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>56037344-698a-4fd2-ae81-4708712803e1</PostGUID>
+      <PostLastModified>2010-11-08T19:19:01.387+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-08T19:19:01.377+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1388</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1386</PostParentID>
+      <PostIDPath>/00001386/00001388</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:'New user manual' request</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>No comments :-)))))
+
+I've uploaded the 'How to Use the New Microsoft Office 2010' document to this workgroup's document library. Please forward it to anyone who's expected to have trouble with adapting to the new version.</PostText>
+      <PostTime>2010-11-08T19:18:12.437+01:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>5a5fd86f-4c93-467a-886a-44bc99039040</PostGUID>
+      <PostLastModified>2010-11-09T16:33:23.303+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-09T16:33:23.277+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1389</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1385</PostParentID>
+      <PostIDPath>/00001385/00001389</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:How is the upgrade going?</PostSubject>
+      <PostUserID>1054</PostUserID>
+      <PostUserName>RuthB</PostUserName>
+      <PostUserMail>ruthb@localhost.local</PostUserMail>
+      <PostText>Just FYI: half of the computers have already been upgraded. If everything goes well, we should be finished by the end of this week.</PostText>
+      <PostTime>2010-11-08T17:20:31.583+01:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>a58fa04d-68de-453b-8894-0f49282bf39f</PostGUID>
+      <PostLastModified>2010-11-09T16:36:03.613+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-09T16:36:03.6+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1390</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1385</PostParentID>
+      <PostIDPath>/00001385/00001390</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:How is the upgrade going?</PostSubject>
+      <PostUserID>1054</PostUserID>
+      <PostUserName>RuthB</PostUserName>
+      <PostUserMail>ruthb@localhost.local</PostUserMail>
+      <PostText>Hi Brad,
+
+I've been upgrading Hector's machine, but no success. His old Windows XP seem totally out of order, he's managed to get tons of spyware in it and the machine is simply not responding the way it should at all.
+
+Each attempt to upgrade the Office suite ends by the machine getting restarted in the middle of the upgrade procedure.
+
+I propose a fresh new install, and possibly also an upgrade to Windows 7. Do you agree?</PostText>
+      <PostTime>2010-11-08T14:59:20.387+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>624501a8-d0e3-4fcc-9bd6-7ace7796feba</PostGUID>
+      <PostLastModified>2010-11-08T14:59:20.4+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1391</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1384</PostParentID>
+      <PostIDPath>/00001384/00001391</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Licenses for the upgrade</PostSubject>
+      <PostUserID>1054</PostUserID>
+      <PostUserName>RuthB</PostUserName>
+      <PostUserMail>ruthb@localhost.local</PostUserMail>
+      <PostText>Hi Brad,
+
+most of the employees will do fine with the Standard license. However, the whole IT department should have Microsoft Access installed on their machines. 
+
+Like this, it makes 25 Standard and 5 Professional licenses.</PostText>
+      <PostTime>2010-11-08T14:43:32.18+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>af2cb231-a7d6-4f23-98e8-32b3d1823ba2</PostGUID>
+      <PostLastModified>2010-11-08T14:43:32.333+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1392</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1391</PostParentID>
+      <PostIDPath>/00001384/00001391/00001392</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Licenses for the upgrade</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>OK then, 
+
+so let's order 25 Standard and 5 Professional licenses.
+
+Colin: Do we have sufficient budget for the purchase?</PostText>
+      <PostTime>2010-11-08T14:45:24.647+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>2aa3eada-a908-4f3d-a8fd-1cdb5e549195</PostGUID>
+      <PostLastModified>2010-11-08T14:51:59.47+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-08T14:51:59.457+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1393</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1390</PostParentID>
+      <PostIDPath>/00001385/00001390/00001393</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:How is the upgrade going?</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>Oh my goodness, 
+
+that's typical of Hector, he will never understand what on-line security is all about ...
+
+As for the fresh install, I do not have any objections. Do as you wish, and surely install Windows 7. We do not want any fresh XP installs anymore on any re-installed machine.
+
+And I got one extra idea: could you please prepare a security-related training for all our staff? Some sort of best practices to follow if you don't want to get your computer to the state that Hector's is currently in...
+
+Could you please do that for me? I would greatly appreciate it and, of course, reflect it in your quarterly evaluation.</PostText>
+      <PostTime>2010-11-08T17:02:45.213+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>ada4e129-4dc1-4a88-bf1f-3b37475ce6ac</PostGUID>
+      <PostLastModified>2010-11-09T16:34:52.16+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-09T16:34:52.15+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1394</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1393</PostParentID>
+      <PostIDPath>/00001385/00001390/00001393/00001394</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:How is the upgrade going?</PostSubject>
+      <PostUserID>1054</PostUserID>
+      <PostUserName>RuthB</PostUserName>
+      <PostUserMail>ruthb@localhost.local</PostUserMail>
+      <PostText>Well,
+
+not that I think that this would have any positive effect on the staff's on-line behavior, but we may give it a try ...
+
+I'll get to it as soon as this actual upgrades are finished.</PostText>
+      <PostTime>2010-11-08T17:19:14.473+01:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>6574706e-fd38-44d8-a59c-62925de3fdd6</PostGUID>
+      <PostLastModified>2010-11-09T16:35:34.953+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-09T16:35:34.943+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1395</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1392</PostParentID>
+      <PostIDPath>/00001384/00001391/00001392/00001395</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Licenses for the upgrade</PostSubject>
+      <PostUserID>1035</PostUserID>
+      <PostUserName>ColinD</PostUserName>
+      <PostUserMail>colind@localhost.local</PostUserMail>
+      <PostText>Hi,
+
+I've consulted this with Mr. Hillman. He approved the investment and we have his full permission to make the order. 
+
+Should I order the licenses right away?</PostText>
+      <PostTime>2010-11-08T14:50:20.197+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>c0f40502-16a6-434c-85f8-de6c5ad63208</PostGUID>
+      <PostLastModified>2010-11-08T20:47:40.3+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-08T20:47:40.28+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>1396</PostId>
+      <PostForumID>463</PostForumID>
+      <PostParentID>1395</PostParentID>
+      <PostIDPath>/00001384/00001391/00001392/00001395/00001396</PostIDPath>
+      <PostLevel>4</PostLevel>
+      <PostSubject>RE:Licenses for the upgrade</PostSubject>
+      <PostUserID>1030</PostUserID>
+      <PostUserName>BradS</PostUserName>
+      <PostUserMail>brads@localhost.local</PostUserMail>
+      <PostText>Yes please, 
+
+and let me know as soon as the license numbers arrive. 
+
+Many thanks Colin!</PostText>
+      <PostTime>2010-11-08T14:51:21.267+01:00</PostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>e25b1e87-6197-47e6-92c5-f081a5ff0cd6</PostGUID>
+      <PostLastModified>2010-11-08T14:52:24.877+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2010-11-08T14:52:24.867+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.145&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_general_discussion_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6_group>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="FormID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="FormDisplayName" caption="$general.displayname$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="FormName" caption="$general.codename$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column width="100%" />
+  </columns>
+  <objecttype name="alternativeform.form" columns="FormID, FormDisplayName, FormName" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

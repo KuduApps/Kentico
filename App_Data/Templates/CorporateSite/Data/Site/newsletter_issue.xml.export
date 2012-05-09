@@ -1,0 +1,31 @@
+﻿<newsletter_issue version="6.0">
+  <NewDataSet>
+    <newsletter_newsletterissue>
+      <IssueID>619</IssueID>
+      <IssueSubject>New Consulting Services</IssueSubject>
+      <IssueText>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;content&gt;
+  &lt;region id="content"&gt;&amp;lt;div class="newsText"&amp;gt;
+	&amp;lt;div class="summary textContent"&amp;gt;
+		&amp;lt;p&amp;gt;
+			We are proud to announce that the range of services we provide was extended by web development consulting. The most experienced and skilled employees from our web development department have been promoted to consultants and are here to help you with your web development projects.&amp;lt;/p&amp;gt;
+	&amp;lt;/div&amp;gt;
+	&amp;lt;div class="text"&amp;gt;
+		&amp;lt;p&amp;gt;
+			With extensive professional background and hundreds of successful projects in their portfolio, our consultants are here to provide valuable advice on your running or forthcoming web development projects. No matter how complicated your projects are or how tight are the upcoming deadlines, you can be sure that we will help you turn them into clear success.&amp;lt;/p&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/region&gt;
+&lt;/content&gt;</IssueText>
+      <IssueUnsubscribed>0</IssueUnsubscribed>
+      <IssueNewsletterID>106</IssueNewsletterID>
+      <IssueTemplateID>196</IssueTemplateID>
+      <IssueSentEmails>1</IssueSentEmails>
+      <IssueMailoutTime>2011-06-20T15:40:13.123+02:00</IssueMailoutTime>
+      <IssueShowInNewsletterArchive>false</IssueShowInNewsletterArchive>
+      <IssueGUID>8c3ec502-1c85-44e9-8336-d7868ef10d97</IssueGUID>
+      <IssueLastModified>2011-06-22T18:39:50.437+02:00</IssueLastModified>
+      <IssueSiteID>110</IssueSiteID>
+    </newsletter_newsletterissue>
+  </NewDataSet>
+</newsletter_issue>

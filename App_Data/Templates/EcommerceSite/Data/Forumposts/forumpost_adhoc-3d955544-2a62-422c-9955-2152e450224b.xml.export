@@ -1,0 +1,79 @@
+﻿<forumpost_adhoc-3d955544-2a62-422c-9955-2152e450224b version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>29</PostId>
+      <PostForumID>10</PostForumID>
+      <PostIDPath>/00000029</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Audio connector</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Mike</PostUserName>
+      <PostUserMail>mike@localhost.local</PostUserMail>
+      <PostText>What type of connector is used for connect headphones?</PostText>
+      <PostTime>2008-03-05T19:17:38.493+01:00</PostTime>
+      <PostThreadPosts>3</PostThreadPosts>
+      <PostThreadLastPostUserName>Mike</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T19:18:43.303+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>2d6c883e-9fbe-49d5-9f8f-c9e94209e42a</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.903+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>3</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Mike</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T19:18:43.303+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>30</PostId>
+      <PostForumID>10</PostForumID>
+      <PostParentID>29</PostParentID>
+      <PostIDPath>/00000029/00000030</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Audio connector</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>There is 3,5mm jack.</PostText>
+      <PostTime>2008-03-05T19:18:02.467+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>888a524e-f7f4-41b1-a09d-f77363339cbe</PostGUID>
+      <PostLastModified>2008-04-24T15:56:31.643+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>31</PostId>
+      <PostForumID>10</PostForumID>
+      <PostParentID>30</PostParentID>
+      <PostIDPath>/00000029/00000030/00000031</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Audio connector</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>Mike</PostUserName>
+      <PostUserMail>mike@localhost.local</PostUserMail>
+      <PostText>That's fine. I can use my own headphones.</PostText>
+      <PostTime>2008-03-05T19:18:43.303+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>b77ccfed-c72a-4c0b-83b3-a2b0bbb13b45</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.92+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-3d955544-2a62-422c-9955-2152e450224b>

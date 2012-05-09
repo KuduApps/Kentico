@@ -1,0 +1,97 @@
+﻿<cms_form version="6.0">
+  <NewDataSet>
+    <cms_form>
+      <FormID>110132</FormID>
+      <FormDisplayName>Working environment survey</FormDisplayName>
+      <FormName>workingenvironment</FormName>
+      <FormEmailAttachUploadedDocs>true</FormEmailAttachUploadedDocs>
+      <FormClassID>2783</FormClassID>
+      <FormItems>0</FormItems>
+      <FormDisplayText>Thank you for your feedback!</FormDisplayText>
+      <FormClearAfterSave>false</FormClearAfterSave>
+      <FormSubmitButtonText></FormSubmitButtonText>
+      <FormSiteID>107</FormSiteID>
+      <FormGUID>ef273dbc-efbb-4204-88f6-8f9866e42b3b</FormGUID>
+      <FormLastModified>2010-11-22T11:10:59.56+01:00</FormLastModified>
+      <FormLogActivity>true</FormLogActivity>
+    </cms_form>
+    <cms_class>
+      <ClassID>2783</ClassID>
+      <ClassDisplayName>Working environment survey</ClassDisplayName>
+      <ClassName>BizForm.workingenvironment</ClassName>
+      <ClassUsesVersioning>false</ClassUsesVersioning>
+      <ClassIsDocumentType>false</ClassIsDocumentType>
+      <ClassIsCoupledClass>true</ClassIsCoupledClass>
+      <ClassXmlSchema>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+  &lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+        &lt;xs:element name="IntranetPortal_WorkingEnvironment"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="workingenvironmentID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" /&gt;
+              &lt;xs:element name="FormInserted" type="xs:dateTime" /&gt;
+              &lt;xs:element name="FormUpdated" type="xs:dateTime" /&gt;
+              &lt;xs:element name="YourName" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="200" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="OfficeSatisfaction"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="500" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="Suggestions" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="2147483647" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:choice&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:unique name="Constraint1" msdata:PrimaryKey="true"&gt;
+      &lt;xs:selector xpath=".//IntranetPortal_WorkingEnvironment" /&gt;
+      &lt;xs:field xpath="workingenvironmentID" /&gt;
+    &lt;/xs:unique&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</ClassXmlSchema>
+      <ClassFormDefinition>&lt;form&gt;&lt;field column="workingenvironmentID" fieldcaption="workingenvironmentID" visible="true" columntype="integer" fieldtype="label" allowempty="false" isPK="true" system="false" publicfield="false" spellcheck="true" guid="7896f51a-984b-45dd-b1ba-90de74f0361f" ismacro="false" /&gt;&lt;field column="FormInserted" fieldcaption="Form inserted" visible="false" columntype="datetime" fieldtype="calendar" allowempty="false" isPK="false" system="true" publicfield="false" spellcheck="true" guid="fdf676b2-ce95-45ec-8280-be3391a3b1e7" ismacro="false" /&gt;&lt;field column="FormUpdated" fieldcaption="Form updated" visible="false" columntype="datetime" fieldtype="calendar" allowempty="false" isPK="false" system="true" publicfield="false" spellcheck="true" guid="abd156b1-1a72-4168-b06e-c1d62d677101" ismacro="false" /&gt;&lt;field column="YourName" fieldcaption="Your name (optional)" visible="true" columntype="text" fieldtype="textbox" allowempty="true" isPK="false" system="false" columnsize="200" publicfield="true" spellcheck="true" guid="eeffe376-d286-44f4-acbc-1be641fa4a54" visibility="none" ismacro="false" /&gt;&lt;field column="OfficeSatisfaction" fieldcaption="How would you rate your office?" visible="true" defaultvalue="Neutral" columntype="text" fieldtype="radiobuttons" allowempty="false" isPK="false" system="false" columnsize="500" publicfield="true" spellcheck="true" guid="8973b939-c647-45e3-8b25-f64caa434725" visibility="none" ismacro="false"&gt;&lt;settings&gt;&lt;repeatdirection&gt;horizontal&lt;/repeatdirection&gt;&lt;options&gt;&lt;item value="I hate it" text="I hate it" /&gt;&lt;item value="It could be better" text="It could be better" /&gt;&lt;item value="Neutral" text="Neutral" /&gt;&lt;item value="I like it" text="I like it" /&gt;&lt;item value="I love it" text="I love it" /&gt;&lt;/options&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field column="Suggestions" fieldcaption="What would you like to improve?" visible="true" columntype="longtext" fieldtype="textarea" allowempty="true" isPK="false" system="false" publicfield="true" spellcheck="true" guid="1a7d1e77-1ef2-4a36-92aa-e448af4c044a" visibility="none" ismacro="false"&gt;&lt;settings&gt;&lt;cols&gt;50&lt;/cols&gt;&lt;rows&gt;5&lt;/rows&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</ClassFormDefinition>
+      <ClassEditingPageUrl></ClassEditingPageUrl>
+      <ClassListPageUrl></ClassListPageUrl>
+      <ClassNodeNameSource></ClassNodeNameSource>
+      <ClassTableName>IntranetPortal_WorkingEnvironment</ClassTableName>
+      <ClassViewPageUrl></ClassViewPageUrl>
+      <ClassPreviewPageUrl></ClassPreviewPageUrl>
+      <ClassFormLayout></ClassFormLayout>
+      <ClassNewPageUrl></ClassNewPageUrl>
+      <ClassShowAsSystemTable>false</ClassShowAsSystemTable>
+      <ClassUsePublishFromTo>false</ClassUsePublishFromTo>
+      <ClassShowTemplateSelection>false</ClassShowTemplateSelection>
+      <ClassSKUMappings></ClassSKUMappings>
+      <ClassIsMenuItemType>false</ClassIsMenuItemType>
+      <ClassNodeAliasSource></ClassNodeAliasSource>
+      <ClassLastModified>2010-11-22T11:10:59.54+01:00</ClassLastModified>
+      <ClassGUID>b2fd1b20-8134-4e48-8f5c-e2b190acd84e</ClassGUID>
+      <ClassCreateSKU>false</ClassCreateSKU>
+      <ClassIsProduct>false</ClassIsProduct>
+      <ClassIsCustomTable>false</ClassIsCustomTable>
+      <ClassShowColumns></ClassShowColumns>
+      <ClassLoadGeneration>0</ClassLoadGeneration>
+      <ClassSearchTitleColumn></ClassSearchTitleColumn>
+      <ClassSearchContentColumn></ClassSearchContentColumn>
+      <ClassSearchImageColumn></ClassSearchImageColumn>
+      <ClassSearchCreationDateColumn></ClassSearchCreationDateColumn>
+      <ClassSearchSettings></ClassSearchSettings>
+    </cms_class>
+  </NewDataSet>
+</cms_form>

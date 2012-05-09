@@ -1,0 +1,18 @@
+﻿<om_contactstatus version="6.0">
+  <NewDataSet>
+    <om_contactstatus>
+      <ContactStatusID>51</ContactStatusID>
+      <ContactStatusName>notinterested</ContactStatusName>
+      <ContactStatusDisplayName>Not interested</ContactStatusDisplayName>
+      <ContactStatusDescription></ContactStatusDescription>
+      <ContactStatusSiteID>110</ContactStatusSiteID>
+    </om_contactstatus>
+    <om_contactstatus>
+      <ContactStatusID>52</ContactStatusID>
+      <ContactStatusName>prospectiveclient</ContactStatusName>
+      <ContactStatusDisplayName>Prospective client</ContactStatusDisplayName>
+      <ContactStatusDescription></ContactStatusDescription>
+      <ContactStatusSiteID>110</ContactStatusSiteID>
+    </om_contactstatus>
+  </NewDataSet>
+</om_contactstatus>

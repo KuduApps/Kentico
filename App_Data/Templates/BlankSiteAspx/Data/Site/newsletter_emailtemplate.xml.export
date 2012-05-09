@@ -1,0 +1,57 @@
+﻿<newsletter_emailtemplate version="6.0">
+  <NewDataSet>
+    <newsletter_emailtemplate>
+      <TemplateID>1</TemplateID>
+      <TemplateDisplayName>Newsletter issue template</TemplateDisplayName>
+      <TemplateName>NewsletterIssueTemplate</TemplateName>
+      <TemplateBody>&lt;p&gt;$$body:700:500$$&lt;/p&gt;
+&lt;p&gt;&lt;font face="Arial"&gt;{%UnsubscribeLink%}&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</TemplateBody>
+      <TemplateSiteID>2</TemplateSiteID>
+      <TemplateHeader>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>I</TemplateType>
+      <TemplateGUID>7edd56c0-31b5-4601-b641-931556e375f6</TemplateGUID>
+      <TemplateLastModified>2008-03-13T09:35:00+01:00</TemplateLastModified>
+    </newsletter_emailtemplate>
+    <newsletter_emailtemplate>
+      <TemplateID>2</TemplateID>
+      <TemplateDisplayName>Subscription confirmation template</TemplateDisplayName>
+      <TemplateName>SubscriptionConfirmationTemplate</TemplateName>
+      <TemplateBody>&lt;font face="Arial"&gt;
+&lt;p&gt;&lt;font face="Arial"&gt;Thank you for subscribing to the newsletter.&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font face="Arial"&gt;{%UnsubscribeLink%}&lt;/font&gt;&lt;/p&gt;
+&lt;/font&gt;</TemplateBody>
+      <TemplateSiteID>2</TemplateSiteID>
+      <TemplateHeader>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>S</TemplateType>
+      <TemplateGUID>852825dd-ed70-4520-938c-c25fe1677eb4</TemplateGUID>
+      <TemplateLastModified>2008-03-13T09:35:00+01:00</TemplateLastModified>
+    </newsletter_emailtemplate>
+    <newsletter_emailtemplate>
+      <TemplateID>3</TemplateID>
+      <TemplateDisplayName>Unsubscription confirmation template</TemplateDisplayName>
+      <TemplateName>UnsubscriptionConfirmationTemplate</TemplateName>
+      <TemplateBody>&lt;p&gt;You've been unsubscribed.&lt;/p&gt;</TemplateBody>
+      <TemplateSiteID>2</TemplateSiteID>
+      <TemplateHeader>&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>U</TemplateType>
+      <TemplateGUID>4a6a2391-e896-44ad-8bbf-b4b5b4ee5106</TemplateGUID>
+      <TemplateLastModified>2008-03-13T09:35:00+01:00</TemplateLastModified>
+    </newsletter_emailtemplate>
+  </NewDataSet>
+</newsletter_emailtemplate>

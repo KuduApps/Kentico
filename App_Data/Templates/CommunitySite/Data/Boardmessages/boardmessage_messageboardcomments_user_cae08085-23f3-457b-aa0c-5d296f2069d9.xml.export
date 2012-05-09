@@ -1,0 +1,20 @@
+﻿<boardmessage_messageboardcomments_user_cae08085-23f3-457b-aa0c-5d296f2069d9 version="6.0">
+  <NewDataSet>
+    <board_message>
+      <MessageID>2149</MessageID>
+      <MessageUserName>Abi</MessageUserName>
+      <MessageText>Hi Turbo, welcome to our group</MessageText>
+      <MessageEmail>abigail.woodwarth@localhost.local</MessageEmail>
+      <MessageURL></MessageURL>
+      <MessageIsSpam>false</MessageIsSpam>
+      <MessageBoardID>3684</MessageBoardID>
+      <MessageApproved>true</MessageApproved>
+      <MessageApprovedByUserID>68</MessageApprovedByUserID>
+      <MessageUserID>68</MessageUserID>
+      <MessageUserInfo></MessageUserInfo>
+      <MessageInserted>2008-12-09T12:53:49.137+01:00</MessageInserted>
+      <MessageLastModified>2008-12-09T12:53:49.2+01:00</MessageLastModified>
+      <MessageGUID>5b3491d2-711b-49c1-8078-6433392b245d</MessageGUID>
+    </board_message>
+  </NewDataSet>
+</boardmessage_messageboardcomments_user_cae08085-23f3-457b-aa0c-5d296f2069d9>

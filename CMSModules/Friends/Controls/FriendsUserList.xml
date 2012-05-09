@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <columns>
+    <column source="##ALL##" sort="UserName" externalsourcename="formattedusername" caption="$general.UserName$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+    <key name="ShowDirectPageControl" value="false" />
+  </pager>
+  <objecttype name="community.friendlist" columns="UserID,UserName,UserNickname,FullName" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

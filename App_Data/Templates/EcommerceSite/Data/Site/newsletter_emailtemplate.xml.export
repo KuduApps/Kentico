@@ -1,0 +1,351 @@
+﻿<newsletter_emailtemplate version="6.0">
+  <NewDataSet>
+    <newsletter_emailtemplate>
+      <TemplateID>182</TemplateID>
+      <TemplateDisplayName>Double opt-in activation template</TemplateDisplayName>
+      <TemplateName>DoubleOptInActivationTemplate</TemplateName>
+      <TemplateBody>&lt;div id="page"&gt;
+&lt;table cellspacing="0" cellpadding="0" border="0" style="width: 696px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img height="120" width="193" src="~/getfile/fe04b346-a321-42eb-9270-dc5b480f5f04/ecommerce_site_logo.aspx?width=193&amp;amp;height=120" alt="Company Newsletter" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="padding: 20px 0px; text-align: justify;"&gt;
+            &lt;h1&gt;You have been registered to a newsletter&lt;/h1&gt;
+            &lt;br /&gt;
+            Thank you for registering for a newsletter. In order to receive the newsletter, you need to confirm your subscription here: &lt;br /&gt;
+            &lt;br /&gt;
+            {%ActivationLink%}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="border-top: 1px solid rgb(34, 34, 34); padding: 3px 0px;"&gt;&lt;font size="1" color="#222222"&gt;Company, address, state&amp;nbsp; All rights reserved.&amp;nbsp; You can unsubscribe here: &lt;/font&gt;&lt;font size="1" color="#222222"&gt;{%UnsubscribeLink%}&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</TemplateBody>
+      <TemplateSiteID>5</TemplateSiteID>
+      <TemplateHeader>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Newsletter&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>D</TemplateType>
+      <TemplateStylesheetText>h1,h2,h3,h4,h5
+{
+  color: #356B99;
+  font-family: Arial;
+}
+
+p
+{
+  font-family: Arial;
+}
+
+h1
+{
+  font-size: 180%;
+  color: #356B99;
+}
+
+h2
+{
+  font-size: 160%;
+}
+
+h3
+{
+  font-size: 130%;
+}
+
+a
+{
+  color: #356B99;
+  text-decoration: underline;
+}
+
+img
+{
+  border: 0;
+  padding:0;
+  margin: 0;
+}
+
+body
+{
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#page
+{
+  margin: auto;
+  width: 700px;
+}</TemplateStylesheetText>
+      <TemplateGUID>3b11350d-027c-477d-8253-e0453c208482</TemplateGUID>
+      <TemplateLastModified>2010-11-03T12:24:01.557+01:00</TemplateLastModified>
+      <TemplateSubject></TemplateSubject>
+    </newsletter_emailtemplate>
+    <newsletter_emailtemplate>
+      <TemplateID>12</TemplateID>
+      <TemplateDisplayName>Newsletter issue</TemplateDisplayName>
+      <TemplateName>NewsletterIssue</TemplateName>
+      <TemplateBody>&lt;div id="page"&gt;
+&lt;table cellspacing="0" cellpadding="0" border="0" style="width: 696px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img height="120" width="193" src="~/getfile/fe04b346-a321-42eb-9270-dc5b480f5f04/ecommerce_site_logo.aspx?width=193&amp;amp;height=120" alt="Company Newsletter" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="text-align: justify; padding: 20px 0px;"&gt;$$content:600:400$$&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="padding: 3px 0px; border-top: 1px solid rgb(34, 34, 34);"&gt;&lt;font size="1" color="#222222"&gt;Company, address, state&amp;nbsp; All rights reserved.&amp;nbsp; You can unsubscribe here: &lt;/font&gt;&lt;font size="1" color="#222222"&gt;{%UnsubscribeLink%}&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</TemplateBody>
+      <TemplateSiteID>5</TemplateSiteID>
+      <TemplateHeader>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Newsletter&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>I</TemplateType>
+      <TemplateStylesheetText>h1,h2,h3,h4,h5
+{
+  color: #356B99;
+  font-family: Arial;
+}
+
+p
+{
+  font-family: Arial;
+}
+
+h1
+{
+  font-size: 180%;
+  color: #356B99;
+}
+
+h2
+{
+  font-size: 160%;
+}
+
+h3
+{
+  font-size: 130%;
+}
+
+a
+{
+  color: #356B99;
+  text-decoration: underline;
+}
+
+img
+{
+  border: 0;
+  padding:0;
+  margin: 0;
+}
+
+body
+{
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#page
+{
+  margin: auto;
+  width: 700px;
+}</TemplateStylesheetText>
+      <TemplateGUID>1f6f0126-29f2-4909-af6a-f6ff793d42b1</TemplateGUID>
+      <TemplateLastModified>2010-11-03T12:24:10.297+01:00</TemplateLastModified>
+    </newsletter_emailtemplate>
+    <newsletter_emailtemplate>
+      <TemplateID>10</TemplateID>
+      <TemplateDisplayName>Subscription</TemplateDisplayName>
+      <TemplateName>Subscription</TemplateName>
+      <TemplateBody>&lt;div id="page"&gt;
+&lt;table cellspacing="0" cellpadding="0" border="0" style="width: 696px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img height="120" width="193" alt="Company Newsletter" src="~/getfile/fe04b346-a321-42eb-9270-dc5b480f5f04/ecommerce_site_logo.aspx?width=193&amp;amp;height=120" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="padding: 20px 0px; text-align: justify;"&gt;
+            &lt;h1&gt;You have been succesfuly subscribed.&lt;/h1&gt;
+            &lt;br /&gt;
+            Thank you for subscribing to the newsletter.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="border-top: 1px solid rgb(34, 34, 34); padding: 3px 0px;"&gt;&lt;font size="1" color="#222222"&gt;Company, address, state&amp;nbsp; All rights reserved.&amp;nbsp; You can unsubscribe here: &lt;/font&gt;&lt;font size="1" color="#222222"&gt;{%UnsubscribeLink%}&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</TemplateBody>
+      <TemplateSiteID>5</TemplateSiteID>
+      <TemplateHeader>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Newsletter&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>S</TemplateType>
+      <TemplateStylesheetText>h1,h2,h3,h4,h5
+{
+  color: #356B99;
+  font-family: Arial;
+}
+
+p
+{
+  font-family: Arial;
+}
+
+h1
+{
+  font-size: 180%;
+  color: #356B99;
+}
+
+h2
+{
+  font-size: 160%;
+}
+
+h3
+{
+  font-size: 130%;
+}
+
+a
+{
+  color: #356B99;
+  text-decoration: underline;
+}
+
+img
+{
+  border: 0;
+  padding:0;
+  margin: 0;
+}
+
+body
+{
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#page
+{
+  margin: auto;
+  width: 700px;
+}</TemplateStylesheetText>
+      <TemplateGUID>3bbd1b2a-438d-4db9-a18a-3659d2b50d9b</TemplateGUID>
+      <TemplateLastModified>2010-11-03T12:24:16.483+01:00</TemplateLastModified>
+      <TemplateSubject></TemplateSubject>
+    </newsletter_emailtemplate>
+    <newsletter_emailtemplate>
+      <TemplateID>11</TemplateID>
+      <TemplateDisplayName>Unsubscription</TemplateDisplayName>
+      <TemplateName>Unsubscription</TemplateName>
+      <TemplateBody>&lt;div id="page"&gt;
+&lt;table cellspacing="0" cellpadding="0" border="0" style="width: 696px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img height="120" width="193" alt="Company Newsletter" src="~/getfile/fe04b346-a321-42eb-9270-dc5b480f5f04/ecommerce_site_logo.aspx?width=193&amp;amp;height=120" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="padding: 20px 0px; text-align: justify;"&gt;You have been unsubscribed.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="border-top: 1px solid rgb(34, 34, 34); padding: 3px 0px;"&gt;&lt;font size="1" color="#222222"&gt;Company, address, state&amp;nbsp; All rights reserved.&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</TemplateBody>
+      <TemplateSiteID>5</TemplateSiteID>
+      <TemplateHeader>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Newsletter&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;</TemplateHeader>
+      <TemplateFooter>&lt;/body&gt;
+&lt;/html&gt;</TemplateFooter>
+      <TemplateType>U</TemplateType>
+      <TemplateStylesheetText>h1,h2,h3,h4,h5
+{
+  color: #356B99;
+  font-family: Arial;
+}
+
+p
+{
+  font-family: Arial;
+}
+
+h1
+{
+  font-size: 180%;
+  color: #356B99;
+}
+
+h2
+{
+  font-size: 160%;
+}
+
+h3
+{
+  font-size: 130%;
+}
+
+a
+{
+  color: #356B99;
+  text-decoration: underline;
+}
+
+img
+{
+  border: 0;
+  padding:0;
+  margin: 0;
+}
+
+body
+{
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#page
+{
+  margin: auto;
+  width: 700px;
+}</TemplateStylesheetText>
+      <TemplateGUID>3d1272a1-7cab-4f04-8ace-8e064bed8ef7</TemplateGUID>
+      <TemplateLastModified>2010-11-03T12:24:24.033+01:00</TemplateLastModified>
+      <TemplateSubject></TemplateSubject>
+    </newsletter_emailtemplate>
+  </NewDataSet>
+</newsletter_emailtemplate>

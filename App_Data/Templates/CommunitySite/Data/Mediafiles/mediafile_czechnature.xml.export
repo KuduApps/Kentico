@@ -1,0 +1,42 @@
+﻿<mediafile_czechnature version="6.0">
+  <NewDataSet>
+    <media_file>
+      <FileID>1788</FileID>
+      <FileName>IM001775</FileName>
+      <FileTitle>River</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>IM001775.JPG</FilePath>
+      <FileSize>27004</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>a665de0c-6338-4267-9748-2cff14f27ad1</FileGUID>
+      <FileLibraryID>136</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-07T17:53:33.487+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-16T16:23:24.47+01:00</FileModifiedWhen>
+    </media_file>
+    <media_file>
+      <FileID>1789</FileID>
+      <FileName>IM002628</FileName>
+      <FileTitle>Nature</FileTitle>
+      <FileDescription>Sample picture description.</FileDescription>
+      <FileExtension>.JPG</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>IM002628.JPG</FilePath>
+      <FileSize>42628</FileSize>
+      <FileImageWidth>500</FileImageWidth>
+      <FileImageHeight>335</FileImageHeight>
+      <FileGUID>65a86522-cee5-4daf-9250-b987e57aa261</FileGUID>
+      <FileLibraryID>136</FileLibraryID>
+      <FileSiteID>53</FileSiteID>
+      <FileCreatedByUserID>53</FileCreatedByUserID>
+      <FileCreatedWhen>2009-01-07T17:53:43.313+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>53</FileModifiedByUserID>
+      <FileModifiedWhen>2009-01-16T16:23:03.767+01:00</FileModifiedWhen>
+    </media_file>
+  </NewDataSet>
+</mediafile_czechnature>

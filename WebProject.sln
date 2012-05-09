@@ -1,0 +1,46 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "KenticoCMS", "..\KenticoCMS", "{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/KenticoCMS"
+		Debug.AspNetCompiler.PhysicalPath = "..\Project\KenticoCMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\KenticoCMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/KenticoCMS"
+		Release.AspNetCompiler.PhysicalPath = "..\Project\KenticoCMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\KenticoCMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1469"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Debug|.NET.Build.0 = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Release|.NET.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Release|.NET.Build.0 = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{420F4FED-2F28-4BE5-8CEA-9A6B9A57558B}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

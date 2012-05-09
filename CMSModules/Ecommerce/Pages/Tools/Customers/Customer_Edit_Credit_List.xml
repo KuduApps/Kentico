@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="EventDate" externalsourcename="eventdate"  caption="$Unigrid.CreditEvent.Columns.EventDate$" wrap="false">
+    </column>
+    <column source="EventName" caption="$Unigrid.CreditEvent.Columns.EventName$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="EventCreditChange" externalsourcename="eventcreditchange" caption="$Unigrid.CreditEvent.Columns.EventCreditChange$" wrap="false">
+    </column>
+    <column source="EventDescription" caption="$Unigrid.CreditEvent.Columns.EventDescription$" wrap="false" localize="true">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.creditevent" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

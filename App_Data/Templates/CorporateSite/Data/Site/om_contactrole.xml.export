@@ -1,0 +1,32 @@
+﻿<om_contactrole version="6.0">
+  <NewDataSet>
+    <om_contactrole>
+      <ContactRoleID>53</ContactRoleID>
+      <ContactRoleName>CEO</ContactRoleName>
+      <ContactRoleDisplayName>CEO</ContactRoleDisplayName>
+      <ContactRoleDescription></ContactRoleDescription>
+      <ContactRoleSiteID>110</ContactRoleSiteID>
+    </om_contactrole>
+    <om_contactrole>
+      <ContactRoleID>54</ContactRoleID>
+      <ContactRoleName>CFO</ContactRoleName>
+      <ContactRoleDisplayName>CFO</ContactRoleDisplayName>
+      <ContactRoleDescription></ContactRoleDescription>
+      <ContactRoleSiteID>110</ContactRoleSiteID>
+    </om_contactrole>
+    <om_contactrole>
+      <ContactRoleID>55</ContactRoleID>
+      <ContactRoleName>decisionmaker</ContactRoleName>
+      <ContactRoleDisplayName>Decision maker</ContactRoleDisplayName>
+      <ContactRoleDescription></ContactRoleDescription>
+      <ContactRoleSiteID>110</ContactRoleSiteID>
+    </om_contactrole>
+    <om_contactrole>
+      <ContactRoleID>56</ContactRoleID>
+      <ContactRoleName>employee</ContactRoleName>
+      <ContactRoleDisplayName>Employee</ContactRoleDisplayName>
+      <ContactRoleDescription></ContactRoleDescription>
+      <ContactRoleSiteID>110</ContactRoleSiteID>
+    </om_contactrole>
+  </NewDataSet>
+</om_contactrole>

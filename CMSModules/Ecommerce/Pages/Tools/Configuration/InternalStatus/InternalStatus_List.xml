@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="InternalStatusDisplayName" caption="$Unigrid.InternalStatus.Columns.InternalStatusDisplayName$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="InternalStatusEnabled" externalsourcename="internalstatusenabled"  caption="$general.enabled$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.internalstatus" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

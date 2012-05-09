@@ -1,0 +1,101 @@
+﻿<forumpost_adhoc-a66112a3-e531-42c9-b6b5-a9d9fb81d872 version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>25</PostId>
+      <PostForumID>9</PostForumID>
+      <PostIDPath>/00000025</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Is this PC silent?</PostSubject>
+      <PostUserName>Frank</PostUserName>
+      <PostUserMail>frank@localhost.local</PostUserMail>
+      <PostText>Hi, I'm interested in buying this PC. Can you tell me how noisy is it (db)?</PostText>
+      <PostTime>2008-03-05T18:52:58.027+01:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>administrator</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-03-05T18:57:59.027+01:00</PostThreadLastPostTime>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>cb8d4db2-9cac-409a-8cc9-91f8f4374999</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.763+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>administrator</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-03-05T18:57:59.027+01:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>26</PostId>
+      <PostForumID>9</PostForumID>
+      <PostParentID>25</PostParentID>
+      <PostIDPath>/00000025/00000026</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Is this PC silent?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>This computer makes noise about 33 db when it's fully loaded and 29 db idle.</PostText>
+      <PostTime>2008-03-05T18:55:02.373+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>624eeb7e-9159-4d55-aa4b-6a63fa3dfeba</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.78+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>27</PostId>
+      <PostForumID>9</PostForumID>
+      <PostParentID>26</PostParentID>
+      <PostIDPath>/00000025/00000026/00000027</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Is this PC silent?</PostSubject>
+      <PostUserName>Frank</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Thanks for reply. Is there a way how to quiet it down even more?</PostText>
+      <PostTime>2008-03-05T18:56:29.567+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>41878277-a2ac-46c5-8c9a-00b7790e75a9</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.797+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>28</PostId>
+      <PostForumID>9</PostForumID>
+      <PostParentID>27</PostParentID>
+      <PostIDPath>/00000025/00000026/00000027/00000028</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Is this PC silent?</PostSubject>
+      <PostUserID>53</PostUserID>
+      <PostUserName>administrator</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Yes, we can install passive cooler by your request.</PostText>
+      <PostTime>2008-03-05T18:57:59.027+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>========================
+Administrator signature
+========================</PostUserSignature>
+      <PostGUID>0a43d4b6-303a-4c39-aaf5-ae5b74bad968</PostGUID>
+      <PostLastModified>2008-03-14T11:30:19.81+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_adhoc-a66112a3-e531-42c9-b6b5-a9d9fb81d872>

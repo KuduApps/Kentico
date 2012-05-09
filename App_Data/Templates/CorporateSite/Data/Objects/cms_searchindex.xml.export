@@ -1,0 +1,111 @@
+﻿<cms_searchindex version="6.0">
+  <NewDataSet>
+    <cms_searchindex>
+      <IndexID>225</IndexID>
+      <IndexName>CorporateSite.CustomTable</IndexName>
+      <IndexDisplayName>Corporate Site - Custom table</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="" DisplayName="Sample table" classnames="customtable.SampleTable" WhereCondition="" id="f0d588f7-a57a-496d-b6cd-cb7974549bc3" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>e78e7b7a-37ce-42c0-a3b6-0586aed2e6e7</IndexGUID>
+      <IndexLastModified>2011-11-28T23:35:15.233+01:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-09-15T07:15:48.377+02:00</IndexLastRebuildTime>
+      <IndexType>cms.customtable</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+      <IndexCustomAnalyzerClassName></IndexCustomAnalyzerClassName>
+      <IndexBatchSize>10</IndexBatchSize>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>223</IndexID>
+      <IndexName>CorporateSite.Default</IndexName>
+      <IndexDisplayName>Corporate Site - Default</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item inclblogcomm="False" type="allowed" inclforums="False" id="f96acd4d-3c5b-4ca9-a486-8fe8d6361b0e" classnames="" path="/%" inclmessagecomm="False" /&gt;&lt;item type="excluded" inclmessagecomm="False" path="/SpecialPages/%" inclforums="False" classnames="" inclblogcomm="False" id="29804c5c-d6b1-492e-8f17-2cde61fb5134" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>d9e6bcd5-dc66-4509-9db8-cb3462f6d59e</IndexGUID>
+      <IndexLastModified>2011-09-29T10:03:37.143+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-09-29T10:03:37.143+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+      <IndexCustomAnalyzerClassName></IndexCustomAnalyzerClassName>
+      <IndexBatchSize>10</IndexBatchSize>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>226</IndexID>
+      <IndexName>CorporateSite.Forums</IndexName>
+      <IndexDisplayName>Corporate Site - Forums</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="allowed" ForumNames="" sitename="CorporateSite" id="b4fbdd5f-4fc6-409a-b184-c5d68a544348" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>7528444f-e077-42d6-b0f1-03ddca9296d1</IndexGUID>
+      <IndexLastModified>2011-09-15T15:57:56.893+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-09-15T15:57:56.89+02:00</IndexLastRebuildTime>
+      <IndexType>forums.forum</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+      <IndexCustomAnalyzerClassName></IndexCustomAnalyzerClassName>
+      <IndexBatchSize>10</IndexBatchSize>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>229</IndexID>
+      <IndexName>CorporateSite.Mobile</IndexName>
+      <IndexDisplayName>Corporate Site - Mobile</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexSettings>&lt;index&gt;&lt;item type="excluded" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="eed3e72d-bd82-42ed-a379-a9e6620f1ec7" path="/Mobile/News/Detail" /&gt;&lt;item type="allowed" inclmessagecomm="False" inclforums="False" classnames="" inclblogcomm="False" id="3a12afb3-8b2d-4d96-bc65-3a7a5dbf6bea" path="/Mobile/%" /&gt;&lt;item type="allowed" inclmessagecomm="False" inclforums="False" classnames="CMS.News" inclblogcomm="False" id="37335cfc-87c9-4ba0-aef6-83dbfa778d50" path="/News/%" /&gt;&lt;item type="excluded" inclmessagecomm="False" path="/Mobile/News/{id}" inclforums="False" classnames="" inclblogcomm="False" id="a1f21638-a3c0-46a3-857e-92f74ddcf655" /&gt;&lt;/index&gt;</IndexSettings>
+      <IndexGUID>f8b83a54-2ed0-4c84-a011-83b1c3cab5c5</IndexGUID>
+      <IndexLastModified>2011-06-30T12:44:44.877+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-06-30T12:44:44.877+02:00</IndexLastRebuildTime>
+      <IndexType>cms.document</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+      <IndexCustomAnalyzerClassName></IndexCustomAnalyzerClassName>
+      <IndexBatchSize>10</IndexBatchSize>
+    </cms_searchindex>
+    <cms_searchindex>
+      <IndexID>224</IndexID>
+      <IndexName>CorporateSite.Users</IndexName>
+      <IndexDisplayName>Corporate Site - Users</IndexDisplayName>
+      <IndexAnalyzerType>standard</IndexAnalyzerType>
+      <IndexIsCommunityGroup>false</IndexIsCommunityGroup>
+      <IndexGUID>20a4305a-a7f6-4973-b936-2ccfc093f78b</IndexGUID>
+      <IndexLastModified>2011-06-01T00:18:57.123+02:00</IndexLastModified>
+      <IndexLastRebuildTime>2011-06-01T00:18:57.12+02:00</IndexLastRebuildTime>
+      <IndexType>cms.user</IndexType>
+      <IndexStopWordsFile></IndexStopWordsFile>
+      <IndexCustomAnalyzerAssemblyName></IndexCustomAnalyzerAssemblyName>
+      <IndexCustomAnalyzerClassName></IndexCustomAnalyzerClassName>
+      <IndexBatchSize>10</IndexBatchSize>
+    </cms_searchindex>
+    <cms_searchindexculture>
+      <IndexID>223</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexculture>
+      <IndexID>229</IndexID>
+      <IndexCultureID>50</IndexCultureID>
+    </cms_searchindexculture>
+    <cms_searchindexsite>
+      <IndexID>223</IndexID>
+      <IndexSiteID>110</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>224</IndexID>
+      <IndexSiteID>110</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>225</IndexID>
+      <IndexSiteID>110</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>226</IndexID>
+      <IndexSiteID>110</IndexSiteID>
+    </cms_searchindexsite>
+    <cms_searchindexsite>
+      <IndexID>229</IndexID>
+      <IndexSiteID>110</IndexSiteID>
+    </cms_searchindexsite>
+  </NewDataSet>
+</cms_searchindex>

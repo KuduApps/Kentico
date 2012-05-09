@@ -1,0 +1,518 @@
+﻿<forumpost_generaldiscussiongroups version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>444</PostId>
+      <PostForumID>113</PostForumID>
+      <PostIDPath>/00000444</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>African travellers</PostSubject>
+      <PostUserID>345</PostUserID>
+      <PostUserName>Turbo</PostUserName>
+      <PostUserMail>noel.turpin@localhost.local</PostUserMail>
+      <PostText>Hi,
+I've just registered to this site and I'm wondering if there are some other travellers who come from Africa. Is anybody like that in here?</PostText>
+      <PostTime>2008-10-25T19:31:30.78+02:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>public</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-11-30T14:21:32.723+01:00</PostThreadLastPostTime>
+      <PostUserSignature>-=T-U-R-B-O=-</PostUserSignature>
+      <PostGUID>f33d49e8-1f2a-47df-aa12-a1ff730c7828</PostGUID>
+      <PostLastModified>2008-10-25T19:31:30.81+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>121</PostViews>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>public</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-11-30T14:21:32.723+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>447</PostId>
+      <PostForumID>113</PostForumID>
+      <PostIDPath>/00000447</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>European travellers</PostSubject>
+      <PostUserID>346</PostUserID>
+      <PostUserName>Nikky</PostUserName>
+      <PostUserMail>nicole.dubois@localhost.local</PostUserMail>
+      <PostText>Hi everybody,
+are there some Europeans around?</PostText>
+      <PostTime>2008-10-25T19:42:54.76+02:00</PostTime>
+      <PostThreadPosts>3</PostThreadPosts>
+      <PostThreadLastPostUserName>Kelly</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T19:51:50.467+02:00</PostThreadLastPostTime>
+      <PostUserSignature>..: N1kky :..</PostUserSignature>
+      <PostGUID>f3388098-d75f-4977-a032-e447af035e2f</PostGUID>
+      <PostLastModified>2008-10-25T19:42:54.76+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>97</PostViews>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>3</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Kelly</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T19:51:50.467+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>450</PostId>
+      <PostForumID>113</PostForumID>
+      <PostIDPath>/00000450</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Asian travellers</PostSubject>
+      <PostUserID>341</PostUserID>
+      <PostUserName>Mia</PostUserName>
+      <PostUserMail>mia.lee@localhost.local</PostUserMail>
+      <PostText>Hi there,
+is there anybody from Asia registered to this site?</PostText>
+      <PostTime>2008-10-25T20:09:39.297+02:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>Mia</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T20:24:45.79+02:00</PostThreadLastPostTime>
+      <PostUserSignature>#-Ma-Ma-Mia-#</PostUserSignature>
+      <PostGUID>8330c58f-91a1-4062-875c-20f835bcd105</PostGUID>
+      <PostLastModified>2008-10-26T11:43:27.277+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>195</PostViews>
+      <PostLastEdit>2008-10-26T11:43:27.277+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Mia</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T20:24:45.79+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>851</PostId>
+      <PostForumID>113</PostForumID>
+      <PostIDPath>/00000851</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Could somebody recommend a backpack?</PostSubject>
+      <PostUserID>341</PostUserID>
+      <PostUserName>Mia</PostUserName>
+      <PostUserMail>mia.lee@localhost.local</PostUserMail>
+      <PostText>Hi there,
+I'm about to buy myself a new backpack, but there are so many kinds of backpacks from so many manufacturers available that I'm quite confused now. 
+Do you know about some that you would recommend? I'd be thankful for any help...</PostText>
+      <PostTime>2009-01-07T14:38:09.43+01:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>David</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2009-01-07T14:50:39.193+01:00</PostThreadLastPostTime>
+      <PostUserSignature>#-Ma-Ma-Mia-#</PostUserSignature>
+      <PostGUID>f7908ba4-4cd1-4c7a-b010-9ad957f8e1ec</PostGUID>
+      <PostLastModified>2009-01-07T14:38:09.477+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>60</PostViews>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>David</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2009-01-07T14:50:39.193+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>856</PostId>
+      <PostForumID>113</PostForumID>
+      <PostIDPath>/00000856</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Hostels in London</PostSubject>
+      <PostUserID>346</PostUserID>
+      <PostUserName>Nikky</PostUserName>
+      <PostUserMail>nicole.dubois@localhost.local</PostUserMail>
+      <PostText>Hi folks,
+does anybody know about some nice but affordable hostel in London? I don't wanna spend a fortune on some bed&amp;amp;breakfast, that's just a waste of money for me, and a bit old fashioned too, by the way...</PostText>
+      <PostTime>2009-01-07T14:58:13.11+01:00</PostTime>
+      <PostThreadPosts>4</PostThreadPosts>
+      <PostThreadLastPostUserName>Jimbo</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2009-01-07T15:13:50.18+01:00</PostThreadLastPostTime>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>66071408-b8b8-4b84-960a-ecd550c21971</PostGUID>
+      <PostLastModified>2009-02-04T17:38:54.123+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>95</PostViews>
+      <PostLastEdit>2009-02-04T17:38:54.11+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>4</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jimbo</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2009-01-07T15:13:50.18+01:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>858</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>856</PostParentID>
+      <PostIDPath>/00000856/00000858</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Hostels in London</PostSubject>
+      <PostUserID>343</PostUserID>
+      <PostUserName>Jimbo</PostUserName>
+      <PostUserMail>james.culligan@localhost.local</PostUserMail>
+      <PostText>Dear young lady,
+don't go to London, you won't like it there. Come to Edinburgh instead, there is much more for ya to see...
+And you don't need to look for a hostel, you can stay at my place if you want ;-)</PostText>
+      <PostTime>2009-01-07T15:06:19.59+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>.. J!mbo . the . Scotchman ..</PostUserSignature>
+      <PostGUID>f639d184-4139-48de-a88d-4412083d5390</PostGUID>
+      <PostLastModified>2009-01-07T15:06:19.603+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>853</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>851</PostParentID>
+      <PostIDPath>/00000851/00000853</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Could somebody recommend a backpack?</PostSubject>
+      <PostUserID>352</PostUserID>
+      <PostUserName>David</PostUserName>
+      <PostUserMail>david.silver@localhost.local</PostUserMail>
+      <PostText>I might know about some good ones. The only thing that matters is the budget. Could you possibly let me know how much you are planning to spend on it?</PostText>
+      <PostTime>2009-01-07T14:43:40.29+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>* * D-a-v-i-d * *</PostUserSignature>
+      <PostGUID>1f38f447-79b4-4c90-a11e-a735a0170701</PostGUID>
+      <PostLastModified>2009-01-07T14:43:40.307+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>451</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>450</PostParentID>
+      <PostIDPath>/00000450/00000451</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Asian travellers</PostSubject>
+      <PostUserID>342</PostUserID>
+      <PostUserName>Steevie</PostUserName>
+      <PostUserMail>jack.stevenson@localhost.local</PostUserMail>
+      <PostText>Hello Mia,
+I don't actually come from Asia, I'm American, but I'm planning a journey to Japan soon, I'd especially like to visit Tokio, so I'd be most thankful for any advice that you could possibly give me...</PostText>
+      <PostTime>2008-10-25T20:14:33.023+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>.:.: Steevie :.:.</PostUserSignature>
+      <PostGUID>7c99ceae-1162-45dd-938b-18085f8ed21e</PostGUID>
+      <PostLastModified>2008-10-26T11:44:08.463+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-10-26T11:44:08.463+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>448</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>447</PostParentID>
+      <PostIDPath>/00000447/00000448</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:European travellers</PostSubject>
+      <PostUserID>343</PostUserID>
+      <PostUserName>Jimbo</PostUserName>
+      <PostUserMail>james.culligan@localhost.local</PostUserMail>
+      <PostText>Aye joung lady,
+I am. I come from Edinburgh, Scotland. If you haven't seen it yet, you should do so for sure. If you climb up Calton Hill and take the marvelous look down at the city centre, you will easily find yourself in the middle ages, as most of the buildings underneath you, dominated by the Edinburgh Castle, are centuries old.</PostText>
+      <PostTime>2008-10-25T19:45:15.133+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>.. J!mbo . the . Scotchman ..</PostUserSignature>
+      <PostGUID>b2851fd1-c1ad-4666-8e80-a2255ee44927</PostGUID>
+      <PostLastModified>2008-10-26T11:58:52.19+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-10-26T11:58:52.19+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>449</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>447</PostParentID>
+      <PostIDPath>/00000447/00000449</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:European travellers</PostSubject>
+      <PostUserID>353</PostUserID>
+      <PostUserName>Kelly</PostUserName>
+      <PostUserMail>kelly.taylor@localhost.local</PostUserMail>
+      <PostText>Cheers Nikky,
+I come from the very heart of Europe, from Czech Republic. When I say this to some foreigners, the following question is always the same: "Are you from Prague?" And the answer is: "No! I come from Brno!" 
+Brno is said to be the biggest village in the Czech Republic, which is a common joke. With a population of almost 400.000, it is the second largest city in our country. And you know what? I would never change it for Prague, because the atmosphere of the two cities is incomparable.</PostText>
+      <PostTime>2008-10-25T19:51:50.467+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>-**- Kelly -**-</PostUserSignature>
+      <PostGUID>61093738-4727-4cd7-bb4b-d86c143eb7e1</PostGUID>
+      <PostLastModified>2008-12-03T10:29:55.54+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-12-03T10:29:55.54+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>445</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>444</PostParentID>
+      <PostIDPath>/00000444/00000445</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:African travellers</PostSubject>
+      <PostUserID>344</PostUserID>
+      <PostUserName>Tessie</PostUserName>
+      <PostUserMail>iman.teshome@localhost.local</PostUserMail>
+      <PostText>Hi Turbo,
+I am. I come from Ethiopia and live in the capital of the country, Addis Ababa. Whereabouts are you from?
+By the way, I like your nick name ;-) What's the etymology behind that?</PostText>
+      <PostTime>2008-10-25T19:34:52.853+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>-=-Tessie-=-</PostUserSignature>
+      <PostGUID>c8626e79-4d4a-4911-a3aa-d8e5ed373555</PostGUID>
+      <PostLastModified>2008-10-25T19:34:52.853+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>452</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>450</PostParentID>
+      <PostIDPath>/00000450/00000452</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Asian travellers</PostSubject>
+      <PostUserID>348</PostUserID>
+      <PostUserName>Guru</PostUserName>
+      <PostUserMail>ratan.gupta@localhost.local</PostUserMail>
+      <PostText>Cheers Mia,
+I am from India, which is a great distance from your country, but it's Asia anyway...</PostText>
+      <PostTime>2008-10-25T20:16:27.287+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>&gt; G - u - r - u &lt;</PostUserSignature>
+      <PostGUID>006e039e-f0f2-4810-8e91-4257d1f82a95</PostGUID>
+      <PostLastModified>2008-10-25T20:16:27.287+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>446</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>445</PostParentID>
+      <PostIDPath>/00000444/00000445/00000446</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:African travellers</PostSubject>
+      <PostUserID>345</PostUserID>
+      <PostUserName>Turbo</PostUserName>
+      <PostUserMail>noel.turpin@localhost.local</PostUserMail>
+      <PostText>Cheers Tess,
+I come from Durban, South Africa. A bit too far away from your city, but I have already visited it and like it a lot. I have some friends there and visit them from time to time, so maybe we could meet on my next visit, couldn't we?
+And to the nick, well, the story is quite simple: my surname is Turpin and at high school, I used to excell at short distance runs, so it's no wonder that my schoolmates started calling me like that:-)</PostText>
+      <PostTime>2008-10-25T19:39:55.017+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>-=T-U-R-B-O=-</PostUserSignature>
+      <PostGUID>a721ab6c-d215-4edf-b815-83ea7c18d37c</PostGUID>
+      <PostLastModified>2008-10-26T12:54:52.213+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-10-26T12:54:52.213+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>453</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>451</PostParentID>
+      <PostIDPath>/00000450/00000451/00000453</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Asian travellers</PostSubject>
+      <PostUserID>341</PostUserID>
+      <PostUserName>Mia</PostUserName>
+      <PostUserMail>mia.lee@localhost.local</PostUserMail>
+      <PostText>Well,
+I don't live in Tokio, I come from Suzuka, which is an interesting place too and you're more than welcome. But as I would definitely recommend you seeing Tokio if you haven't seen it yet, I got an idea. I have a friend Yukohiro down there. I think I should send her an invitation to join this site and so that you can communicate directly. I think she would love the idea of being a tour guide to an American ;-)</PostText>
+      <PostTime>2008-10-25T20:24:45.79+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>#-Ma-Ma-Mia-#</PostUserSignature>
+      <PostGUID>a9fcf85f-d36b-44dc-ab47-a96b60baf8de</PostGUID>
+      <PostLastModified>2008-10-26T11:47:31.863+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2008-10-26T11:47:31.863+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>854</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>853</PostParentID>
+      <PostIDPath>/00000851/00000853/00000854</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Could somebody recommend a backpack?</PostSubject>
+      <PostUserID>341</PostUserID>
+      <PostUserName>Mia</PostUserName>
+      <PostUserMail>mia.lee@localhost.local</PostUserMail>
+      <PostText>Hi Dave,
+I don't wanna spend more than some $100.</PostText>
+      <PostTime>2009-01-07T14:47:03.937+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>#-Ma-Ma-Mia-#</PostUserSignature>
+      <PostGUID>09d7aee7-6b43-4fdb-b969-3260489e6cd2</PostGUID>
+      <PostLastModified>2009-01-07T14:47:04+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>859</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>858</PostParentID>
+      <PostIDPath>/00000856/00000858/00000859</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Hostels in London</PostSubject>
+      <PostUserID>346</PostUserID>
+      <PostUserName>Nikky</PostUserName>
+      <PostUserMail>nicole.dubois@localhost.local</PostUserMail>
+      <PostText>Thanks,
+but the reason why I'm looking for a hostel in London is actually that I'm gonna be waiting for my boyfriend there. He'll be returning from the States and his plane lands at Heathrow...
+But we can come to Edinburgh together some time later and stay at your place if you want...?</PostText>
+      <PostTime>2009-01-07T15:11:33.34+01:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature>..: N1kky :..</PostUserSignature>
+      <PostGUID>36441fee-b5bc-48de-8fb1-3558b15db72a</PostGUID>
+      <PostLastModified>2009-01-07T15:17:20.827+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2009-01-07T15:17:20.827+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>860</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>859</PostParentID>
+      <PostIDPath>/00000856/00000858/00000859/00000860</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Hostels in London</PostSubject>
+      <PostUserID>343</PostUserID>
+      <PostUserName>Jimbo</PostUserName>
+      <PostUserMail>james.culligan@localhost.local</PostUserMail>
+      <PostText>Well,
+ok...well...there is actually not enough room for two guests in my place...</PostText>
+      <PostTime>2009-01-07T15:13:50.18+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>.. J!mbo . the . Scotchman ..</PostUserSignature>
+      <PostGUID>a8c79afe-c046-4929-8526-5120bcda1516</PostGUID>
+      <PostLastModified>2009-01-07T15:18:01.48+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2009-01-07T15:18:01.48+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>855</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>854</PostParentID>
+      <PostIDPath>/00000851/00000853/00000854/00000855</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>RE:Could somebody recommend a backpack?</PostSubject>
+      <PostUserID>352</PostUserID>
+      <PostUserName>David</PostUserName>
+      <PostUserMail>david.silver@localhost.local</PostUserMail>
+      <PostText>Well, that's not a difficult choice then, in this price range, Super-B-Pack 75 is the best. It is big, waterproof, fits well on your back and basically, it is the very best choice in this price range. You can find it on about any web shop selling outdoor equipment.</PostText>
+      <PostTime>2009-01-07T14:50:39.193+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature>* * D-a-v-i-d * *</PostUserSignature>
+      <PostGUID>aaf4492c-cd54-4e0a-9e68-d7bf224fe8af</PostGUID>
+      <PostLastModified>2009-01-07T15:23:44.057+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2009-01-07T15:23:44.043+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20&lt;/agent&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>680</PostId>
+      <PostForumID>113</PostForumID>
+      <PostParentID>446</PostParentID>
+      <PostIDPath>/00000444/00000445/00000446/00000680</PostIDPath>
+      <PostLevel>3</PostLevel>
+      <PostSubject>Australia is the best</PostSubject>
+      <PostUserName>public</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>I live in Australia and I think that it's the best country to live in ;)
+[url=http://en.wikipedia.org/wiki/Australia][img]~/Files/group_australia.aspx[/img][/url]
+
+Kangaroo Jimmy</PostText>
+      <PostTime>2008-11-30T14:21:32.723+01:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>7376601a-070d-4b39-9557-889c0bf146c6</PostGUID>
+      <PostLastModified>2009-01-09T16:22:08.147+01:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostLastEdit>2009-01-09T16:22:08.147+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4 (.NET CLR 3.5.30729)&lt;/agent&gt;&lt;ip&gt;127.0.0.7&lt;/ip&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_generaldiscussiongroups>

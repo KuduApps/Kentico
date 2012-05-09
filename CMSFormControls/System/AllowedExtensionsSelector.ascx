@@ -1,0 +1,8 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="AllowedExtensionsSelector.ascx.cs"
+    Inherits="CMSFormControls_System_AllowedExtensionsSelector" %>
+<cms:LocalizedCheckBox ID="chkInehrit" runat="server" CssClass="CheckBoxMovedLeft"
+    ResourceString="attach.inheritfromsettings" Checked="true" />
+<br />
+<cms:CMSTextBox ID="txtAllowedExtensions" runat="server" CssClass="SmallTextBox" /><br />
+<em>
+    <cms:LocalizedLabel ID="lblExtExample" runat="server" ResourceString="attach.extensionexample" /></em>

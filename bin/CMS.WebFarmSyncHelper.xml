@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.WebFarmSyncHelper</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.WebFarmSyncHelper.DbWebFarmUpdater">
+            <summary>
+            Implementation of web farm updater which uses instead of URl notifications.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.DbWebFarmUpdater.SERVERS_UPDATED">
+            <summary>
+            Cache key in request stock helper which specifies that server were already updated.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.DbWebFarmUpdater.POLL_INTERVAL">
+            <summary>
+            Poll interval for checking new messages, currently set up to 1 second.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.DbWebFarmUpdater.Notify(System.String)">
+            <summary>
+            Notifies other server about new synchronization tasks.
+            </summary>
+            <param name="url">URL .</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.DbWebFarmUpdater.EnsureThread">
+            <summary>
+            Ensures thread which is periodically checking for new tasks.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.DbWebFarmUpdater.RunAsync(System.Security.Principal.WindowsIdentity)">
+            <summary>
+            Runs the task in an asynchronous thread.
+            </summary>
+            <param name="wi">Windows identity</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.DbWebFarmUpdater.CheckNewTasks">
+            <summary>
+            Checks periodically for notification flag and processes web farm tasks if necessary.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.DbWebFarmUpdater.Run">
+            <summary>
+            Runs the action
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.DbWebFarmUpdater.ServerLastUpdated">
+            <summary>
+            Gets or sets when was the current server updated for the last time.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.DbWebFarmUpdater.PollThread">
+            <summary>
+            Gets or sets thread which is periodically checking for new tasks.  
+            </summary>
+        </member>
+        <member name="T:CMS.WebFarmSyncHelper.WebFarmSynchroTask">
+            <summary>
+            Scheduler task, synchronize tasks for all enabled servers.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebFarmSynchroTask.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Execute task.
+            </summary>
+            <param name="task">Task info</param>
+        </member>
+        <member name="T:CMS.WebFarmSyncHelper.WebFarmSyncModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebFarmSyncModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebFarmSyncModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebFarmSyncModule.ClearHashtables(System.Boolean)">
+            <summary>
+            Clears the module hashtables.
+            </summary>
+            <param name="logTasks">If true, web farm tasks are logged</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebFarmSyncModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="T:CMS.WebFarmSyncHelper.WebSyncHelper">
+            <summary>
+            Web sync helper.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.NOTIFY_FILENAME">
+            <summary>
+            File name of the file for web farm server notification
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mScriptTimeout">
+            <summary>
+            Request timeout.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.locker">
+            <summary>
+            Lock object.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mWebFarmReady">
+            <summary>
+            Whether webfarms are ready.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mDeleteMemThread">
+            <summary>
+            Keeps delete memory thread to check whether thread is active.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.windowsIdentity">
+            <summary>
+            Represents a windows user.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.busy">
+            <summary>
+            Indicates whether webfarms module is busy.
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mNotifyPath">
+            <summary>
+            Watcher to notify web farm server to process tasks
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mNotifyWatcher">
+            <summary>
+            Watcher to notify web farm server to process tasks
+            </summary>
+        </member>
+        <member name="F:CMS.WebFarmSyncHelper.WebSyncHelper.mWebFarmApplicationPhysicalPath">
+            <summary>
+            Web application physical path for synchronizing physical files
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.DeleteTask(System.Int32,System.Int32)">
+            <summary>
+            Removes task for specified server.
+            </summary>
+            <param name="serverId">Server ID</param>
+            <param name="taskId">Task ID</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.SetErrorInTask(System.Int32,System.Int32,System.String)">
+            <summary>
+            Sets the error message to the specified task.
+            </summary>
+            <param name="serverId">Server ID</param>
+            <param name="taskId">Task ID</param>
+            <param name="errorMessage">Error message to set</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.GetServerTasks(System.String)">
+            <summary>
+            Returns dataset with tasks to current server.
+            </summary>
+            <param name="serverName">Server name</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.GetTaskBinaryData(System.Int32)">
+            <summary>
+            Returns task binary data.
+            </summary>
+            <param name="taskId">Task ID</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.DeleteMemorySynchronizationTasks">
+            <summary>
+            Deletes memory synchronization web farm tasks.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.DeleteMemorySynchronizationTasksInternal">
+            <summary>
+            Deletes memory synchronization web farm tasks.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.SynchronizeWebFarm">
+            <summary>
+            Synchronize web farm servers. Call web farm updater page for all allowed servers.
+            </summary>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.SynchronizeWebFarm(System.Boolean)">
+            <summary>
+            Synchronize web farm servers. Call web farm updater page for all allowed servers.
+            </summary>
+            <param name="forceSynchronization">If is true synchronization is always executed, otherwise synchronization depends on web famr update key</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.NotifyServer(System.Int32)">
+            <summary>
+            Notifies a web farm server about a new task.
+            </summary>
+            <param name="serverId">The server id</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.NotifyServer(System.String)">
+            <summary>
+            Notifies a web farm server about a new task.
+            </summary>
+            <param name="notificationPath">Notification path in UNC format. Use WebSyncHelperClass.GetNotificationPath(string serverPhysicalPath) method to get default system notification path.</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.CheckLicense">
+            <summary>
+            Check whether webfarms are enabled under current license, if not log exception message.
+            </summary>
+            <returns>Returns null if license ok otherwise string with exception message</returns>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.ProcessTask(System.Guid)">
+            <summary>
+            Processes the specified task and deletes it.
+            </summary>
+            <param name="taskGuid">Task GUID</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.ProcessTask(System.Data.DataRow)">
+            <summary>
+            Processes the specified task.
+            </summary>
+            <param name="dr">DataRow with the task data</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.ProcessTask(CMS.SettingsProvider.WebFarmTaskTypeEnum,System.String,System.String,System.Int32)">
+            <summary>
+            Processes the specified task.
+            </summary>
+            <param name="taskType">Task type</param>
+            <param name="target">Task target</param>
+            <param name="data">Task data</param>
+            <param name="taskId">Task ID</param>
+        </member>
+        <member name="M:CMS.WebFarmSyncHelper.WebSyncHelper.ProcessMyTasks">
+            <summary>
+            Reads all tasks assigned to the current server and processes them. It processes only tasks 
+            for the server with code name stored in the CMSWebFarmServerName web.config variable.
+            </summary>
+        </member>
+        <member name="E:CMS.WebFarmSyncHelper.WebSyncHelper.OnProcessCustomTask">
+            <summary>
+            Custom task event.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.WebFarmApplicationPhysicalPath">
+            <summary>
+            Web application physical path for synchronizing physical files
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.DeleteMemorySynchronizationThread">
+            <summary>
+            Gets the Delete memory synchronization thread object.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.ScriptTimeout">
+            <summary>
+            Gets or sets the script timeout in seconds.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.WebFarmReady">
+            <summary>
+            Returns whether are web farms ready.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.NotifyPath">
+            <summary>
+            Physical path to the watcher folder for web farm server notification.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.NotifyFilePath">
+            <summary>
+            Physical path to the watcher file for web farm server notification.
+            </summary>
+        </member>
+        <member name="P:CMS.WebFarmSyncHelper.WebSyncHelper.NotifyWatcher">
+            <summary>
+            File watcher to notify web farm server to process tasks.
+            </summary>
+        </member>
+        <member name="T:CMS.WebFarmSyncHelper.WebSyncHelper.TaskHandler">
+            <summary>
+            Task handler definition.
+            </summary>
+            <param name="taskType">Task type</param>
+            <param name="target">Task target</param>
+            <param name="data">Task data</param>
+            <param name="taskId">Task ID</param>
+        </member>
+    </members>
+</doc>

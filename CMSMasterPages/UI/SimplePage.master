@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="CMSMasterPages_UI_SimplePage"
+    CodeFile="SimplePage.master.cs" %>
+
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/HeaderActions.ascx" TagName="HeaderActions"
+    TagPrefix="cms" %>
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/PageTitle.ascx" TagName="PageTitle"
+    TagPrefix="cms" %>
+<%@ Register TagPrefix="cms" Namespace="CMS.UIControls" Assembly="CMS.UIControls" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" enableviewstate="false">
+    <title>SimpleMasterPage</title>
+    <asp:Literal ID="ltlHeadElements" runat="server" Visible="false"></asp:Literal>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="<%=mBodyClass%>">
+    <form id="form1" runat="server">
+    <asp:PlaceHolder runat="server" ID="plcManager" />
+    <asp:PlaceHolder runat="server" ID="plcStatus" EnableViewState="false" />
+    <asp:ContentPlaceHolder ID="plcBeforeBody" runat="server" />
+    <asp:Panel ID="pnlBody" runat="server" CssClass="PageBody">
+        <asp:Panel ID="pnlHeader" runat="server" CssClass="PageHeader SimpleHeader" EnableViewState="false">
+            <cms:PageTitle ID="titleElem" ShortID="pt" runat="server" />
+        </asp:Panel>
+        <asp:Panel ID="pnlSiteSelector" runat="server" CssClass="PageHeaderLine SiteHeaderLine" Visible="false">
+            <asp:ContentPlaceHolder runat="server" ID="plcSiteSelector" />
+        </asp:Panel>
+        <asp:Panel ID="pnlAdditionalControls" runat="server" CssClass="PageHeaderLine" Visible="false">
+            <asp:ContentPlaceHolder runat="server" ID="plcControls" />
+        </asp:Panel>
+        <cms:UIPlaceHolder ID="plcActionsPermissions" runat="server">
+            <asp:Panel ID="pnlActions" runat="server" CssClass="PageHeaderLine" EnableViewState="false">
+                <cms:HeaderActions ID="actionsElem" ShortID="a" runat="server" />
+                <asp:ContentPlaceHolder runat="server" ID="plcActions" />
+            </asp:Panel>
+        </cms:UIPlaceHolder>
+        <asp:ContentPlaceHolder ID="plcBeforeContent" runat="server" />
+        <asp:Panel ID="pnlContent" runat="server" CssClass="PageContent">
+            <cms:CMSUpdateProgress ID="up" runat="server" HandlePostback="true" />
+            <asp:PlaceHolder runat="server" ID="plcLabels" />
+            <asp:ContentPlaceHolder ID="plcContent" runat="server" />
+        </asp:Panel>
+    </asp:Panel>
+    </form>
+</body>
+</html>

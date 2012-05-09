@@ -1,0 +1,3677 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.WebAnalytics</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.WebAnalytics.ActivityData">
+            <summary>
+            Container for the activity data
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.ContactID">
+            <summary>
+            Contact ID
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.SiteID">
+            <summary>
+            Site ID
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.Type">
+            <summary>
+            Activity type
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.Title">
+            <summary>
+            Activity title (optional). If null or blank, title is generated automatically using 'TitleData'.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.TitleData">
+            <summary>
+            Additional title data for autogenerating 'Title'. This text is used to create user-friendly 'Title' automaticaly.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.ItemID">
+            <summary>
+            Related item ID
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.URL">
+            <summary>
+            URL of the page where activity occured
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.ItemDetailID">
+            <summary>
+            Related detail item ID
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.NodeID">
+            <summary>
+            Related node ID
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.Value">
+            <summary>
+            Activity value
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.IP">
+            <summary>
+            IP address of the user
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.Campaign">
+            <summary>
+            Campaign under which the activity occured
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.URLReferrer">
+            <summary>
+            URL of previous page
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.Culture">
+            <summary>
+            Document culture
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityData.OtherParams">
+            <summary>
+            Other custom parameters
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityData.GetLogString">
+            <summary>
+            Gets the log string for this activity item
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityData.GetLogString(System.DateTime)">
+            <summary>
+            Gets the log string for this activity item
+            </summary>
+            <param name="time">Time when activity has occurred</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityLogHelper">
+            <summary>
+            Provides functionality for activity logging. 
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogHelper.MINIMAL_NUMBER_OF_PARAMETERS">
+            <summary>
+            Minimal number of parameters in activity record
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.ProcessActivityLogRecord(System.String)">
+            <summary>
+            Processes the log record to DB. Returns ID of created activity.
+            </summary>
+            <param name="line">Log record (line contains activity type, contact ID, site ID, title, item ID, URL, node ID,  item detail ID, value, IP address, campaign name, aditional param1, aditional param2... )</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.ProcessActivityUpdateMerged(System.Int32,System.Int32)">
+            <summary>
+            Updates "ActiveContactID" of logged activities.
+            </summary>
+            <param name="firstActivityId">First activity ID to be processed</param>
+            <param name="lastActivityId">last activity ID to be processed</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.ProcessActivityLogRecords(System.Collections.Generic.List{System.String})">
+            <summary>
+            Processes the log records to DB.
+            </summary>
+            <param name="lines">Log records (each line contains activity type, contact ID, site ID, title, item ID, URL, document ID,  item detail ID, value, IP address, aditional param1, aditional param2... )</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.UpdateContactLastLogon(System.Int32)">
+            <summary>
+            Updates contact last logon timestamp.
+            </summary>
+            <param name="contactId">Contact ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.UpdateContactLastLogon(System.Int32,System.DateTime)">
+            <summary>
+            Updates contact last logon timestamp.
+            </summary>
+            <param name="contactId">Contact ID</param>
+            <param name="timestamp">Timestamp of the last logon</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.GetContactIDByMembership(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Gets contact ID from membership relations.
+            </summary>
+            <param name="relatedId">Related ID </param>
+            <param name="memberType">Member type (user, subscriber, customer)</param>
+            <param name="siteId">Site ID</param>
+            <param name="where">Additional WHERE condition</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.GetContactIDByEmail(System.String,System.Int32)">
+            <summary>
+            Returns contact ID for e-mail address.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.LogFileDownload(System.Int32,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Logs file download.
+            </summary>
+            <param name="contactId">Contact ID (optional)</param>
+            <param name="siteName">Current site name</param>
+            <param name="nodeId">NodeID</param>
+            <param name="alias">Document alias</param>
+            <param name="culture">Document culture</param>
+            <param name="fileName">File name</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityLogHelper.ActivityParamsList">
+            <summary>
+            List for storing additional parameters for activity.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.ActivityParamsList.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogHelper.ActivityParamsList.Add(System.String,System.String)">
+            <summary>
+            Appends parameter and its valu to list.
+            </summary>
+            <param name="key">Key</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogHelper.ActivityParamsList.Count">
+            <summary>
+            Gets the number of parameters.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogHelper.ActivityParamsList.Item(System.String)">
+            <summary>
+            Returns value of particular parameter or null if parameter does not exist.
+            </summary>
+            <param name="key">Key (name of the parameter)</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityLogProcessor">
+            <summary>
+            Activity log processor class.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProcessor.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Executes the logprocessor action.
+            </summary>
+            <param name="task">Task to process</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProcessor.ProcessFinishedLogs">
+            <summary>
+            Gets the log files that are finished (are no longer valid).
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProcessor.ProcessLog(System.String,System.String)">
+            <summary>
+            Processes the whole log file in memory and writes the results to the database.
+            </summary>
+            <param name="fileName">Log file name</param>
+            <param name="codeName">Statistics code name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProcessor.GetCreationTimeFromFileName(System.String)">
+            <summary>
+             Returns creation time from file name.
+            </summary>
+            <param name="fileName">Processed file name</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityLogProvider">
+            <summary>
+            Class providing ActivityLog management.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.ITEM_SEPARATOR">
+            <summary>
+            Item separator constant (used in temporary log file).
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.POLL_ANSWER_SEPARATOR">
+            <summary>
+            Answer IDs separator (in case of multiple answers this character is used as separator)
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.Domains">
+            <summary>
+            Table with domains and true/false values which indicate
+            whether web analytics is allowed for a domain.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.mMemStorage">
+            <summary>
+            Static memory storage for web analytics
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.msLocker">
+            <summary>
+            Memory storage locker
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityLogProvider.mUseMemoryStorage">
+            <summary>
+            Indicates whether memory storage should be used instead of direct file write
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.LogActivity(CMS.WebAnalytics.ActivityData)">
+            <summary>
+            Logs activity (record) to file.
+            </summary>
+            <param name="data">Activity data</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.LogInternalSearchActivity(CMS.TreeEngine.TreeNode,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Logs internal search activity.
+            </summary>
+            <param name="currentDoc">Document</param>
+            <param name="contactId">Contact ID</param>
+            <param name="siteId">Site ID</param>
+            <param name="url">URL</param>
+            <param name="searchKeyword">Search keyword</param>
+            <param name="campaign">Campaign</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.LogLoginRegisterActivity(System.Int32,CMS.SiteProvider.UserInfo,System.String,System.Int32,System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            Log "login" or "register" activity.
+            </summary>
+            <param name="contactId">Contact ID</param>
+            <param name="ui">User info (for currently registered user)</param>
+            <param name="url">URL</param>
+            <param name="nodeId">Node ID</param>
+            <param name="siteName">Site name</param>
+            <param name="isLoginActivity">If true login activity is logged.</param>
+            <param name="campaign">Campaign</param>
+            <param name="culture">Document culture</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.LogRegistrationActivity(System.Int32,CMS.SiteProvider.UserInfo,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Log "registration" activity
+            </summary>
+            <param name="contactId">Contact ID</param>
+            <param name="ui">User info</param>
+            <param name="url">URL</param>
+            <param name="nodeId">Node ID</param>
+            <param name="siteName">Site name</param>
+            <param name="campaign">Campaign</param>
+            <param name="culture">Document culture</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.LogLoginActivity(System.Int32,CMS.SiteProvider.UserInfo,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Log "login" activity
+            </summary>
+            <param name="contactId">Contact ID</param>
+            <param name="ui">User info</param>
+            <param name="url">URL</param>
+            <param name="nodeId">Node ID</param>
+            <param name="siteName">Site name</param>
+            <param name="campaign">Campaign</param>
+            <param name="culture">Document culture</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.GetFriendlyUserName(System.Int32)">
+            <summary>
+            Joins user name consisting of first, middle, last and e-mail address in one string.
+            </summary>
+            <param name="userId">User ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.GetFriendlyUserName(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Joins user name consisting of first, middle, last and e-mail address in one string.
+            </summary>
+            <param name="ui">User info</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.GetFriendlyUserName(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Joins user name consisting of first, middle, last and e-mail address in one string.
+            </summary>
+            <param name="first">First name</param>
+            <param name="middle">Middle name</param>
+            <param name="last">Last name</param>
+            <param name="emailAddress">E-mail address</param>
+            <param name="userName">User name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityLogProvider.IsDomainAllowed(System.String)">
+            <summary>
+            Returns true if online marketing is allowed for specified domain.
+            </summary>
+            <param name="domain">Domain name</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogProvider.UseMemoryStorage">
+            <summary>
+            Gets the value that indicates whether memory storage should be used instead of direct file write
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogProvider.MemStorage">
+            <summary>
+            Gets the memory storage
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogProvider.LogDirectory">
+            <summary>
+            Logs directory.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogProvider.LogImmediatelyToDB">
+            <summary>
+            Indicates if activities should be stored to DB immediately.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityLogProvider.LockingTarget">
+            <summary>
+            Internal locking object used when new entry is appended into the log file
+            or when log file of current minute is processed.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivitySettingsHelper">
+            <summary>
+            Provides comfortable access to settings keys for activities.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.GetBoolValue(System.String,System.String)">
+            <summary>
+            Returns key value (bool).
+            </summary>
+            <param name="siteName">Site name (optional)</param>
+            <param name="keyName">Key name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.GetLoggingEnabled(System.String,System.String,System.String)">
+            <summary>
+            Checks if specified activity logging is enabled.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="keyname">Sttings key name of particular activity (e.g. "CMSCMPageVisits")</param>
+            <param name="activityType">Activity type code name (e.g. PredefinedActivityType.PAGE_VISIT)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.OnlineMarketingEnabled(System.Int32)">
+            <summary>
+            Determines whether on-line marketing modul is activated.
+            </summary>
+            <param name="siteId"></param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.OnlineMarketingEnabled(System.String)">
+            <summary>
+            Determines whether on-line marketing modul is activated.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.IsModuleLoaded">
+            <summary>
+            Determines whether on-line marketing modul is available.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ActivitiesEnabled(System.Int32)">
+            <summary>
+            Returns true if activities logging is enabled.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ActivitiesEnabled(System.String)">
+            <summary>
+            Returns true if activities logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PageVisitsEnabled(System.Int32)">
+            <summary>
+            Returns true if page visits logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PageVisitsEnabled(System.String)">
+            <summary>
+            Returns true if page visits logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.LandingPageEnabled(System.Int32)">
+            <summary>
+            Returns true if landing page logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.LandingPageEnabled(System.String)">
+            <summary>
+            Returns true if landing page logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.UserRegistrationEnabled(System.Int32)">
+            <summary>
+            Returns true if user registration logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.UserRegistrationEnabled(System.String)">
+            <summary>
+            Returns true if user registration logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.UserLoginEnabled(System.Int32)">
+            <summary>
+            Returns true if user login logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.UserLoginEnabled(System.String)">
+            <summary>
+            Returns true if user login logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.JoiningAGroupEnabled(System.Int32)">
+            <summary>
+            Returns true if udating user profile logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.JoiningAGroupEnabled(System.String)">
+            <summary>
+            Returns true if udating user profile logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.LeavingAGroupEnabled(System.Int32)">
+            <summary>
+            Returns true if leaving a group logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.LeavingAGroupEnabled(System.String)">
+            <summary>
+            Returns true if leaving a group logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.CustomerRegistrationEnabled(System.Int32)">
+            <summary>
+            Returns true if customer registration logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.CustomerRegistrationEnabled(System.String)">
+            <summary>
+            Returns true if customer registration logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AddingProductToSCEnabled(System.Int32)">
+            <summary>
+            Returns true if adding product to SC logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AddingProductToSCEnabled(System.String)">
+            <summary>
+            Returns true if adding product to SC logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.RemovingProductFromSCEnabled(System.Int32)">
+            <summary>
+            Returns true if removing product from SC logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.RemovingProductFromSCEnabled(System.String)">
+            <summary>
+            Returns true if removing product from SC logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AddingProductToWLEnabled(System.Int32)">
+            <summary>
+            Returns true if adding product to WL logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AddingProductToWLEnabled(System.String)">
+            <summary>
+            Returns true if adding product to WL logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PurchaseEnabled(System.Int32)">
+            <summary>
+            Returns true if purchase logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PurchaseEnabled(System.String)">
+            <summary>
+            Returns true if purchase logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PurchasedProductEnabled(System.Int32)">
+            <summary>
+            Returns true if "purchased product" logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PurchasedProductEnabled(System.String)">
+            <summary>
+            Returns true if "purchased product" logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.NewsletterSubscribeEnabled(System.Int32)">
+            <summary>
+            Returns true if newsletter subscribe logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.NewsletterSubscribeEnabled(System.String)">
+            <summary>
+            Returns true if newsletter subscribe logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.NewsletterUnsubscribeEnabled(System.Int32)">
+            <summary>
+            Returns true if newsletter unsubscribe logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.NewsletterUnsubscribeEnabled(System.String)">
+            <summary>
+            Returns true if newsletter unsubscribe logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.EmailOpeningEnabled(System.Int32)">
+            <summary>
+            Returns true if email opening logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.EmailOpeningEnabled(System.String)">
+            <summary>
+            Returns true if email opening logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ClickthroughTrackingEnabled(System.Int32)">
+            <summary>
+            Returns true if clickthrough tracking logging is enabled for the given site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ClickthroughTrackingEnabled(System.String)">
+            <summary>
+            Returns true if clickthrough tracking logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.SearchEnabled(System.Int32)">
+            <summary>
+            Returns true if search logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.SearchEnabled(System.String)">
+            <summary>
+            Returns true if search logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ExternalSearchEnabled(System.Int32)">
+            <summary>
+            Returns true if external search logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ExternalSearchEnabled(System.String)">
+            <summary>
+            Returns true if external search logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BlogPostSubscriptionEnabled(System.Int32)">
+            <summary>
+            Returns true if blog post subscription logging is enabled.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BlogPostSubscriptionEnabled(System.String)">
+            <summary>
+            Returns true if blog post comments logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BlogPostCommentsEnabled(System.Int32)">
+            <summary>
+            Returns true if blog post comments logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BlogPostCommentsEnabled(System.String)">
+            <summary>
+            Returns true if blog post comments logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ForumPostSubscriptionEnabled(System.Int32)">
+            <summary>
+            Returns true if forum post subscription logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ForumPostSubscriptionEnabled(System.String)">
+            <summary>
+            Returns true if forum post subscription logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ForumPostsEnabled(System.Int32)">
+            <summary>
+            Returns true if forum post logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ForumPostsEnabled(System.String)">
+            <summary>
+            Returns true if forum post logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.MessageBoardPostsEnabled(System.Int32)">
+            <summary>
+            Returns true if message board post logging is enabled for current site.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.MessageBoardPostsEnabled(System.String)">
+            <summary>
+            Returns true if message board post logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.MessageBoardSubscriptionEnabled(System.Int32)">
+            <summary>
+            Returns true if message board subscription logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.MessageBoardSubscriptionEnabled(System.String)">
+            <summary>
+            Returns true if message board subscription logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AbuseReportEnabled(System.Int32)">
+            <summary>
+            Returns true if abuse report logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.AbuseReportEnabled(System.String)">
+            <summary>
+            Returns true if abuse report subscription logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BizFormSubmissionEnabled(System.Int32)">
+            <summary>
+            Returns true if BizForm submission logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.BizFormSubmissionEnabled(System.String)">
+            <summary>
+            Returns true if BizForm submission logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ContentRatingEnabled(System.Int32)">
+            <summary>
+            Returns true if BizForm submission logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ContentRatingEnabled(System.String)">
+            <summary>
+            Returns true if BizForm submission logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.EventBookingEnabled(System.Int32)">
+            <summary>
+            Returns true if event booking logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.EventBookingEnabled(System.String)">
+            <summary>
+            Returns true if event booking logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PollVotingEnabled(System.Int32)">
+            <summary>
+            Returns true if poll voting  logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.PollVotingEnabled(System.String)">
+            <summary>
+            Returns true if poll voting logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionInsertEnabled(System.Int32)">
+            <summary>
+            Returns true if wiki contribution insert logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionInsertEnabled(System.String)">
+            <summary>
+            Returns true if wiki contribution insert logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionUpdateEnabled(System.Int32)">
+            <summary>
+            Returns true if wiki contribution update logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionUpdateEnabled(System.String)">
+            <summary>
+            Returns true if wiki contribution update logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionDeleteEnabled(System.Int32)">
+            <summary>
+            Returns true if wiki contribution delete logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.WikiContributionDeleteEnabled(System.String)">
+            <summary>
+            Returns true if wiki contribution delete logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.CustomActivitiesEnabled(System.Int32)">
+            <summary>
+            Returns true if custom activities logging is enabled.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.CustomActivitiesEnabled(System.String)">
+            <summary>
+            Returns true if custom activities logging is enabled.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.IPLoggingEnabled(System.Int32)">
+            <summary>
+            Returns true if IP logging is allowed.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.IPLoggingEnabled(System.String)">
+            <summary>
+            Returns true if IP logging is allowed.
+            </summary>
+            <param name="siteName">Site name (or NULL for global setting)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ActivitiesEnabledAndModuleLoaded(System.Int32)">
+            <summary>
+            Returns true if global logging switch for the given site is enabled and online marketing module is loaded.
+            </summary>
+            <param name="siteId">Site ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ActivitiesEnabledAndModuleLoaded(System.String)">
+            <summary>
+            Returns true if global logging switch for the given site is enabled and online marketing module is loaded.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivitySettingsHelper.ActivitiesEnabledForThisUser(CMS.SiteProvider.UserInfo)">
+            <summary>
+            Returns true if logging activity is enabled for given user.
+            </summary>
+            <param name="ui">User info</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityTypeInfo">
+            <summary>
+            ActivityTypeInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ActivityTypeInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ActivityTypeInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new ActivityTypeInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfo.CheckPermissions(CMS.SettingsProvider.PermissionsEnum,System.String,CMS.SettingsProvider.IUserInfo)">
+            <summary>
+            Checks the permissions of the object.
+            </summary>
+            <param name="permission">Permission type</param>
+            <param name="siteName">Name of the site</param>
+            <param name="userInfo">UserInfo object</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeDisplayName">
+            <summary>
+            Gets or sets the display name of the activity type.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeDescription">
+            <summary>
+            Gets or sets the description for the activity.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeIsCustom">
+            <summary>
+            Gets or sets whether the activity is custom.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeName">
+            <summary>
+            Gets or sets the the code name of the activity type.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeID">
+            <summary>
+            Gets or sets the ID of the activity type.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeEnabled">
+            <summary>
+            Gets or sets whether the activity is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeManualCreationAllowed">
+            <summary>
+            Gets or sets whether the activity is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeMainFormControl">
+            <summary>
+            Gets or sets name of form control (selector) for setting ItemID
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ActivityTypeInfo.ActivityTypeDetailFormControl">
+            <summary>
+            Gets or sets name of form control (selector) for setting ItemDetailID
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.ActivityTypeInfoProvider">
+            <summary>
+            Class providing ActivityTypeInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.#ctor">
+            <summary>
+            Constructor using ID and codename Hashtables.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypes(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all activity types matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypes(System.String,System.String)">
+            <summary>
+            Returns dataset of all activity types matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeInfo(System.Int32)">
+            <summary>
+            Returns activity type with specified ID.
+            </summary>
+            <param name="typeId">Activity type ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeInfo(System.String)">
+            <summary>
+            Returns activity type with specified name.
+            </summary>
+            <param name="typeName">Activity type name</param>                
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.SetActivityTypeInfo(CMS.WebAnalytics.ActivityTypeInfo)">
+            <summary>
+            Sets (updates or inserts) specified activity type.
+            </summary>
+            <param name="typeObj">Activity type to be set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.DeleteActivityTypeInfo(CMS.WebAnalytics.ActivityTypeInfo)">
+            <summary>
+            Deletes specified activity type.
+            </summary>
+            <param name="typeObj">Activity type to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.DeleteActivityTypeInfo(System.Int32)">
+            <summary>
+            Deletes activity type with specified ID.
+            </summary>
+            <param name="typeId">Activity type ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeDisplayName(System.String)">
+            <summary>
+            Returns display name of particular activity.
+            </summary>
+            <param name="typeName">Code name of activity type</param>                
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeEnabled(System.String)">
+            <summary>
+            Checks if specified activity type is enabled.
+            </summary>
+            <param name="typeName">Code name of activity type</param>                
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypesInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all activity types matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeInfoInternal(System.Int32)">
+            <summary>
+            Returns activity type with specified ID.
+            </summary>
+            <param name="typeId">Activity type ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.GetActivityTypeInfoInternal(System.String)">
+            <summary>
+            Returns activity type with specified name.
+            </summary>
+            <param name="typeName">Activity type name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.SetActivityTypeInfoInternal(CMS.WebAnalytics.ActivityTypeInfo)">
+            <summary>
+            Sets (updates or inserts) specified activity type.
+            </summary>
+            <param name="typeObj">Activity type to be set</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ActivityTypeInfoProvider.DeleteActivityTypeInfoInternal(CMS.WebAnalytics.ActivityTypeInfo)">
+            <summary>
+            Deletes specified activity type.
+            </summary>
+            <param name="typeObj">Activity type to be deleted</param>        
+        </member>
+        <member name="T:CMS.WebAnalytics.MembershipType">
+            <summary>
+            Membership type constants
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.MembershipType.CMS_USER">
+            <summary>
+            Regular user
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.MembershipType.ECOMMERCE_CUSTOMER">
+            <summary>
+            Ecommerce customer
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.MembershipType.NEWSLETTER_SUBSCRIBER">
+            <summary>
+            Newsletter subscriber
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.AnalyticsHelper">
+            <summary>
+            Analytics helper class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.VISITOR_COOKIE_NAME">
+            <summary>
+            Cookie name
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.MANAGE_WINDOW_WIDTH">
+            <summary>
+            Width of manage data window
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.MANAGE_WINDOW_HEIGHT">
+            <summary>
+            Height of manage data window
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.PARAM_SEMICOLON">
+            <summary>
+            Replacement for the semicolon character used in the url parameter
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.AnalyticsCulture">
+            <summary>
+            Analytics culture.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.siteList">
+            <summary>
+            Hashtable of sorted dictionaries of Arratlists with visitors IP addresses
+            HashTable[ siteName -> { lastTime, ArrayList of Hashtable[IP -> true] } ]
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mIPsRegExpTable">
+            <summary>
+            Hashtable of regular expessions of sites' excluded IPs.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mSlidingIPExpiration">
+            <summary>
+            Indicates if IP should be logged every time for anonymous user.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mEnableAutomaticCampaignCreate">
+            <summary>
+            Indicates whether automatic campaign object is enabled
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.ipLocker">
+            <summary>
+            Locking object for list of IP addresses per site
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mLogAnalytics">
+            <summary>
+            If true, Analytics operations are logged to the file (for debug purposes).
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mDebugAnalytics">
+            <summary>
+            Debug Analytics?
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mDebugAnalyticsLive">
+            <summary>
+            Debug Analytics live?
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mDebugAllAnalytics">
+            <summary>
+            Debug Analytics on all pages?
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mDebugAnalyticsStack">
+            <summary>
+            Debug Analytics stack?
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mAnalyticsLogLength">
+            <summary>
+            Analytics log length (number of requests to log).
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mLogFile">
+            <summary>
+            Logs file path.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsHelper.mLastLogs">
+            <summary>
+            Last requests Analytics logs, contains the arrays of [URL, AnalyticsLog, Time].
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.ExcludedIPs(System.String)">
+            <summary>
+            Returns "Excluded IPs" value from the database.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.ExcludedURLs(System.String)">
+            <summary>
+            Returns "Excluded URLs" value from the database.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.ExcludedFileExtensions(System.String)">
+            <summary>
+            Returns "Excluded file extensions" value from the database.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.ExcludeSearchEngines(System.String)">
+            <summary>
+            Returns "Exclude search engines" value from the database.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.AnalyticsEnabled(System.String)">
+            <summary>
+            Returns true if web analytics is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackPageViewsEnabled(System.String)">
+            <summary>
+            Returns true if page views tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackAggregatedViewsEnabled(System.String)">
+            <summary>
+            Returns true if aggregated views tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackVisitsEnabled(System.String)">
+            <summary>
+            Returns true if visits tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.VisitorsSmartCheckingTime(System.String)">
+            <summary>
+            Returns how long should be visitors' IP addresses stored in memory.
+            Visitors smart checking is disabled if 0 is returned.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackFileDownloadsEnabled(System.String)">
+            <summary>
+            Returns true if file downloads tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackBrowserTypesEnabled(System.String)">
+            <summary>
+            Returns true if browser types tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackCampaignsEnabled(System.String)">
+            <summary>
+            Returns true if campaigns tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackConversionsEnabled(System.String)">
+            <summary>
+            Returns true if conversions tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackInvalidPagesEnabled(System.String)">
+            <summary>
+            Returns true if invalid pages tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackSearchKeywordsEnabled(System.String)">
+            <summary>
+            Returns true if search keywords tracking is enabled for specific site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackLandingPageEnabled(System.String)">
+            <summary>
+            Returns true if landing page tracking is enabled for specific site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackExitPageEnabled(System.String)">
+            <summary>
+            Returns true if exit page tracking is enabled for specific site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackSearchEnginesEnabled(System.String)">
+            <summary>
+            Returns true if search engine tracking is enabled for specific site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackReferralsEnabled(System.String)">
+            <summary>
+            Returns true if referrals tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackCountriesEnabled(System.String)">
+            <summary>
+            Returns true if countries tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackRegisteredUsersEnabled(System.String)">
+            <summary>
+            Returns true if registered users tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackOnSiteKeywords(System.String)">
+            <summary>
+            Returns true if onsite keywords tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackReferringSitesDirect(System.String)">
+            <summary>
+            Returns true if referring sites direct link  tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackReferringSitesLocal(System.String)">
+            <summary>
+            Returns true if referring sites by local links  tracking is enabled for specified site.
+            </summary>
+            <param name="siteName">Site name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackAverageTimeOnPage(System.String)">
+            <summary>
+            Returns true if average time on page tracking is enabled
+            </summary>
+            <param name="siteName">Site name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackReferringSitesReferring(System.String)">
+            <summary>
+            Returns true if referring sites by other domain tracking is enabled for specific site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.GetVisitorStatusIdle(System.String)">
+            <summary>
+            Gets or sets the value in minutes for how long user should be counted as active(1380 minutes by default = 23 hours).
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.GetContextStatus(System.String,System.Boolean@)">
+            <summary>
+            Returns current visitor status
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="idleExpired">Indicates whether idle expired</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TryGetStatusBackwardCompatible(System.Boolean@)">
+            <summary>
+            Tries get status from previous type of cookies
+            </summary>
+            <param name="idleExpired">Indicates whether idle expired</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.CacheItemRemoved(System.String,System.Object,System.Web.Caching.CacheItemRemovedReason)">
+            <summary>
+            Cleans list of ip addresses from site list 
+            </summary>
+            <param name="key">Cache key</param>
+            <param name="value">Cache item value</param>
+            <param name="removedReason">Removed reason</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.SetContextStatus(System.String,CMS.WebAnalytics.VisitorStatusEnum,System.DateTime)">
+            <summary>
+            Sets 
+            </summary>
+            <param name="siteName"></param>
+            <param name="status"></param>
+            <param name="lastActivityDate"></param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IsLoggingEnabled(System.String,System.String)">
+            <summary>
+            Return true if analytics log enabled for given data
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="nodeAliasPath">Node alias path</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IsIPExcluded(System.String,System.String)">
+            <summary>
+            Determines whether IP is excluded or not.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="ip">IP</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.GetQueryStringParameters(System.Data.DataRow)">
+            <summary>
+            Generates reports parameters for query string
+            </summary>
+            <param name="dr">Datarow with report's parameters</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IsURLExcluded(System.String,System.String)">
+            <summary>
+            Determines whether URL is excluded or not.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="relativeUrl">URL</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IsFileExtensionExcluded(System.String,System.String)">
+            <summary>
+            Determines whether extension is excluded or not.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="extension">File extension (with or without '.', e.g. 'txt' or '.txt')</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IsSearchEngineExcluded(System.String)">
+            <summary>
+            Returns true if current request is search engine and should be excluded from the analytics log.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.CampaignTrackingParameter(System.String)">
+            <summary>
+            Returns the campaign tracking URL parameter.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.CurrentCampaign(System.String)">
+            <summary>
+            Returns current request campaign name reference.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.SetCampaign(System.String,System.String,System.String)">
+            <summary>
+            Creates log with current campaign.
+            </summary>
+            <param name="campaign">Campaign name</param>
+            <param name="siteName">Site name</param>
+            <param name="aliasPath">Node alias path for checking if url is excluded from analytics</param>
+            <returns>True if successfully logged</returns>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogRegisteredUser(System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Logs registered user to the statistics.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="ui">UserInfo of registered user - username and userid of user is logged</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogSearchKeywords(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Logs keywords.
+            </summary>
+            <param name="sitename">Site name to log</param>
+            <param name="documentCulture">Document's culture</param>
+            <param name="searchKeywords">Keywords to lock</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of keywords to log</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogAverageTimeOnPage(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Logs average time on page
+            </summary>
+            <param name="siteName">Site name to log</param>
+            <param name="documentCulture">Document's culture</param>
+            <param name="objectName">Object name</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of logged items</param>
+            <param name="seconds">Time spent on given page</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogExitPageCandidate(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Logs exit page candidate
+            </summary>
+            <param name="siteName">Site name to log</param>
+            <param name="documentCulture">Document's culture</param>
+            <param name="objectName">Object name</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of logged items</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogExitPage(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Logs exit page
+            </summary>
+            <param name="siteName">Site name to log</param>
+            <param name="documentCulture">Document's culture</param>
+            <param name="objectName">Object name</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of logged items</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogOnSiteSearchKeywords(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Logs onsite search keywords.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="aliasPath">Node alias path (path with results webpart)</param>
+            <param name="documentCulture">Document's culture code</param>
+            <param name="keywords">Keywords to log</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count to log</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogLandingPage(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Logs landing page.
+            </summary>
+            <param name="sitename">Site name to log</param>
+            <param name="documentCulture">Document's culture</param>
+            <param name="objectName">Object name</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of keywords to log</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogReferringSite(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Track traffic sources (used by search engines, direct url, inner site links..).
+            </summary>
+            <param name="codeName">Type of referring site</param>
+            <param name="siteName">Site name to log</param>
+            <param name="documentCulture">Document culture</param>
+            <param name="objectName">Object name</param>
+            <param name="objectID">Object ID</param>
+            <param name="count">Count of views</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackRegisteredUserConversion(System.String,System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Tracks registered user conversion.
+            </summary>
+            <param name="trackConversionName">Conversion name</param>
+            <param name="siteName">Site name</param>
+            <param name="ui">Registered user</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.TrackRegisteredUserConversion(System.String,System.Double,System.String,CMS.SiteProvider.UserInfo)">
+            <summary>
+            Tracks registered user conversion.
+            </summary>
+            <param name="trackConversionName">Conversion name</param>
+            <param name="conversionCount">Value of tracked conversion</param>
+            <param name="siteName">Site name</param>
+            <param name="ui">User interface</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.GetVisitorStatusByIP(System.String,System.String,System.Boolean@)">
+            <summary>
+            Returns visitor status by IP visit
+            </summary>
+            <param name="ip">IP address</param>
+            <param name="siteName">Site name</param>
+            <param name="idleExpired">Indicates whether idle time expired</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.IPHasVisited(System.String,System.String)">
+            <summary>
+            Returns true if visitor with specific IP has already visited the site
+            or if visitors' smart checking is disabled.
+            </summary>
+            <param name="ip">IP4 address</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogIPVisit(System.String,System.String)">
+            <summary>
+            Logs given IP address to the IP table
+            </summary>
+            <param name="ip">IP address</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogIPVisit(System.String,System.String,System.DateTime)">
+            <summary>
+            Logs given IP address to the IP table
+            </summary>
+            <param name="ip">IP address</param>
+            <param name="siteName">Site name</param>
+            <param name="lastActivityDate">DateTime corresponding to the last activity date</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.EnsureIPTable(System.String)">
+            <summary>
+            Ensures proper number of arraylists in hastable for given site.
+            One arraylist stands for one minute of visitor's smart checking time.
+            </summary>
+            <param name="siteName">Site name</param>
+            <returns>The newest hastable retrieved from minute arraylist</returns>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.ResetDebugSettings">
+            <summary>
+            Sets all the debug settings to null and causes them to be reloaded.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.NewLogTable">
+            <summary>
+            Creates a new table for the analytics log.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogActivityOperation(CMS.WebAnalytics.ActivityData)">
+            <summary>
+            Logs the activity operation. Logs the activity operation to the file and to current request log for debugging.
+            </summary>
+            <param name="data">Activity data</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogAnalyticsOperation(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Logs the analytics operation. Logs the analytics operation to the file and to current request log for debugging.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogToFile(CMS.WebAnalytics.ActivityData)">
+            <summary>
+            Logs the activity to the log file.
+            </summary>
+            <param name="data">Activity data</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.AppendActivityInfo(System.Text.StringBuilder,System.String,System.String)">
+            <summary>
+            Appends given line if not empty
+            </summary>
+            <param name="builder">StringBuilder object</param>
+            <param name="title">Title</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.LogToFile(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Logs the analytics operation to the log file.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsHelper.WriteRequestLog">
+            <summary>
+            Writes the request log to the log file.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.LogAnalytics">
+            <summary>
+            Logs Analytics operations?
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.LogFile">
+            <summary>
+            Logs file.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.RequestLog">
+            <summary>
+            Current request query log.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.DebugAnalytics">
+            <summary>
+            Debug Analytics?
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.DebugAnalyticsLive">
+            <summary>
+            Debug Analytics live?
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.DebugAllAnalytics">
+            <summary>
+            Debug all Analytics, including the UI and preview Analytics.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.DebugAnalyticsStack">
+            <summary>
+            Track stack when debugging Analytics.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.AnalyticsLogLength">
+            <summary>
+            Maximum length of the Analytics log in number of requests.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.CurrentRequestLog">
+            <summary>
+            Current request log.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.DebugCurrentRequest">
+            <summary>
+            Debug current request Analytics access.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.LastLogs">
+            <summary>
+            Last requests Analytics logs, contains the arrays of [URL, AnalyticsLog, Time].
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.CurrentVisitStatus">
+            <summary>
+            Gets or sets the current visit status
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.VisitorStatus">
+            <summary>
+            Returns visitor status.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.EnableAutomaticCampaignCreate">
+            <summary>
+            Gets or sets the value that indicates whether automatic campaign creation is enabled
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.SlidingIPExpiration">
+            <summary>
+            Returns true if IP for anonymous visitor should be logged every time. 
+            Returns false if IP should be logged only once per user visit.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.AnalyticsHelper.Campaign">
+            <summary>
+            Gets or sets the current campaign
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.AnalyticsObjectType">
+            <summary>
+            Analytics object types.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsObjectType.STATISTICS">
+            <summary>
+            Statistics.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsObjectType.CONVERSION">
+            <summary>
+            Conversion.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsObjectType.CAMPAIGN">
+            <summary>
+            Campaign.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.AnalyticsObjectType.CONVERSIONCAMPAIGN">
+            <summary>
+            Conversion campaign.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.AnalyticsObjectType.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.CampaignInfo">
+            <summary>
+            CampaignInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.CampaignInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty CampaignInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new CampaignInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignDisplayName">
+            <summary>
+            Campaign object display name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignID">
+            <summary>
+            Campaign object ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignTotalCost">
+            <summary>
+            Campaign cost.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignSiteID">
+            <summary>
+            Campaign object site ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignDescription">
+            <summary>
+            Campaign object description.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignUseAllConversions">
+            <summary>
+            Indicates whether use with campaign all conversions or only selected ones.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignName">
+            <summary>
+            Campaign object name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignOpenTo">
+            <summary>
+            Campaign open to.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignImpressions">
+            <summary>
+            Campaign imperssions (number of users affected by campaign).
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignOpenFrom">
+            <summary>
+            Campaign open from.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignRules">
+            <summary>
+            Group of crieterias under which campaign will be logged.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGUID">
+            <summary>
+            Campaign object unique identifier.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignLastModified">
+            <summary>
+            Campaign last modification date.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignEnabled">
+            <summary>
+            Indicates whether campaign is enabled.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalVisitorsMin">
+            <summary>
+            Gets or sets the campaign red flag value for number of visitors
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalConversionsMin">
+            <summary>
+            Gets or sets the campaign red flag value for number of conversions
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalValueMin">
+            <summary>
+            Gets or sets the campaign red flag value for total value of conversions
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalPerVisitorMin">
+            <summary>
+            Gets or sets the campaign red flag value for value per visitor
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalVisitors">
+            <summary>
+            Gets or sets the campaign goal value for number of visitors
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalConversions">
+            <summary>
+            Gets or sets the campaign goal value for number of conversions
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalValue">
+            <summary>
+            Gets or sets the campaign goal value for total value of conversions
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalPerVisitor">
+            <summary>
+            Gets or sets the campaign goal value for value per visitor
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalVisitorsPercent">
+            <summary>
+            Gets or sets the value that indicates whether vistors value should be counted as percent value
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalConversionsPercent">
+            <summary>
+            Gets or sets the value that indicates whether conversions value should be counted as percent value
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalValuePercent">
+            <summary>
+            Gets or sets the value that indicates whether value should be counted as percent value
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.CampaignInfo.CampaignGoalPerVisitorPercent">
+            <summary>
+            Gets or sets the value that indicates whether vistor per visitor value should be counted as percent value
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.CampaignInfoProvider">
+            <summary>
+            Class providing CampaignInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaigns(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all campaigns matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaigns(System.String,System.String)">
+            <summary>
+            Returns dataset of all campaigns matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignInfo(System.Int32)">
+            <summary>
+            Returns campaign with specified ID.
+            </summary>
+            <param name="campaignId">Campaign ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignInfo(System.String,System.String)">
+            <summary>
+            Returns campaign with specified name.
+            </summary>
+            <param name="campaignName">Campaign name</param>                
+            <param name="siteName">Site name</param>                
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.SetCampaignInfo(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Sets (updates or inserts) specified campaign.
+            </summary>
+            <param name="campaignObj">Campaign to be set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.DeleteCampaignInfo(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Deletes specified campaign.
+            </summary>
+            <param name="campaignObj">Campaign to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.RemoveAllConversionsFromCampaign(System.Int32)">
+            <summary>
+            Removes all campaign's conversions
+            </summary>
+            <param name="campaignID">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.DeleteCampaignInfo(System.Int32)">
+            <summary>
+            Deletes campaign with specified ID.
+            </summary>
+            <param name="campaignId">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.CampaignIsRunning(System.String,System.String)">
+            <summary>
+            Returns true if campaign is enabled and is valid for current date time
+            </summary>
+            <param name="campaignName">Campaign name</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.CampaignIsRunning(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Returns true if campaign is enabled and is valid for current date time
+            </summary>
+            <param name="campaignInfo">Campaign info object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaigns(System.String,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Returns dataset of all campaigns for specified site matching the specified parameters.
+            </summary>       
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+            <param name="siteId">Site ID</param>        		
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.RenameCampaignStatistics(System.String,System.String,System.Int32)">
+            <summary>
+            Renames campaign statistics data when changed code name
+            </summary>
+            <param name="oldName">Old code name</param>
+            <param name="newName">New code name</param>
+            <param name="siteID">Campaign site ID </param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignsInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all campaigns matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignInfoInternal(System.Int32)">
+            <summary>
+            Returns campaign with specified ID.
+            </summary>
+            <param name="campaignId">Campaign ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignInfoInternal(System.String,System.String)">
+            <summary>
+            Returns campaign with specified name.
+            </summary>
+            <param name="campaignName">Campaign name</param>                
+            <param name="siteName">Site name</param>         
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.SetCampaignInfoInternal(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Sets (updates or inserts) specified campaign.
+            </summary>
+            <param name="campaignObj">Campaign to be set</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.DeleteCampaignInfoInternal(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Deletes specified campaign.
+            </summary>
+            <param name="campaignObj">Campaign to be deleted</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.CampaignIsRunningInternal(System.String,System.String)">
+            <summary>
+            Returns true if campaign is enabled and is valid for current date time
+            </summary>
+            <param name="campaignName">Campaign name</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.CampaignIsRunningInternal(CMS.WebAnalytics.CampaignInfo)">
+            <summary>
+            Returns true if campaign is enabled and is valid for current date time
+            </summary>
+            <param name="campaignInfo">Campaign info object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.GetCampaignsInternal(System.String,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Returns dataset of all campaigns for specified site matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+            <param name="siteId">Site ID</param> 
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.RemoveAllConversionsFromCampaignInternal(System.Int32)">
+            <summary>
+            Removes all conversions which belong to campaign
+            </summary>
+            <param name="campaignID">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.CampaignInfoProvider.#ctor">
+            <summary>
+            Constructor using ID and codename Hashtables.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.ConversionCampaignInfo">
+            <summary>
+            ConversionCampaignInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ConversionCampaignInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ConversionCampaignInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new ConversionCampaignInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionCampaignInfo.CampaignID">
+            <summary>
+            Campaign object ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionCampaignInfo.ConversionID">
+            <summary>
+            Conversion object ID.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.ConversionCampaignInfoProvider">
+            <summary>
+            Class providing ConversionCampaignInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.GetConversionCampaigns(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all relationships between conversions and campaigns matching the specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.GetConversionCampaigns(System.String,System.String)">
+            <summary>
+            Returns dataset of all relationships between conversions and campaigns matching the specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.GetConversionCampaignInfo(System.Int32,System.Int32)">
+            <summary>
+            Returns relationship between specified conversion and campaign.
+            </summary>
+            <param name="conversionId">Conversion ID</param>
+            <param name="campaignId">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.SetConversionCampaignInfo(CMS.WebAnalytics.ConversionCampaignInfo)">
+            <summary>
+            Sets relationship between specified conversion and campaign.
+            </summary>
+            <param name="infoObj">Conversion-campaign relationship to be set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.DeleteConversionCampaignInfo(CMS.WebAnalytics.ConversionCampaignInfo)">
+            <summary>
+            Deletes relationship between specified conversion and campaign.
+            </summary>
+            <param name="infoObj">Conversion-campaign relationship to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.AddConversionToCampaign(System.Int32,System.Int32)">
+            <summary>
+            Sets relationship between specified conversion and campaign.
+            </summary>	
+            <param name="conversionId">Conversion ID</param>
+            <param name="campaignId">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.RemoveConversionFromCampaign(System.Int32,System.Int32)">
+            <summary>
+            Deletes relationship between specified conversion and campaign.
+            </summary>
+            <param name="conversionId">Conversion ID</param>
+            <param name="campaignId">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.GetConversionCampaignsInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all relationships between conversions and campaigns matching the specified criteria.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.GetConversionCampaignInfoInternal(System.Int32,System.Int32)">
+            <summary>
+            Returns relationship between specified conversion and campaign.
+            </summary>
+            <param name="conversionId">Conversion ID</param>
+            <param name="campaignId">Campaign ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.SetConversionCampaignInfoInternal(CMS.WebAnalytics.ConversionCampaignInfo)">
+            <summary>
+            Sets relationship between specified conversion and campaign.
+            </summary>
+            <param name="infoObj">Conversion-campaign relationship to be set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionCampaignInfoProvider.DeleteConversionCampaignInfoInternal(CMS.WebAnalytics.ConversionCampaignInfo)">
+            <summary>
+            Deletes relationship between specified conversion and campaign.
+            </summary>
+            <param name="infoObj">Conversion-campaign relationship to be deleted</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.ConversionInfo">
+            <summary>
+            ConversionInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.ConversionInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty ConversionInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new ConversionInfo object from the given DataRow.
+            </summary>
+            <param name="dr">DataRow with the object data</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionGUID">
+            <summary>
+            Conversion object unique identifier.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionDescription">
+            <summary>
+            Conversion object description.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionID">
+            <summary>
+            Conversion object ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionSiteID">
+            <summary>
+            Conversion object site ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionLastModified">
+            <summary>
+            Date and time when the conversion object was last modified.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionName">
+            <summary>
+            Conversion object code name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.ConversionInfo.ConversionDisplayName">
+            <summary>
+            Conversion object display name.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.ConversionInfoProvider">
+            <summary>
+            Class providing ConversionInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversions(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all conversions matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversions(System.String,System.String)">
+            <summary>
+            Returns dataset of all conversions matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversionInfo(System.Int32)">
+            <summary>
+            Returns conversion with specified ID.
+            </summary>
+            <param name="conversionId">Conversion ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversionInfo(System.String,System.String)">
+            <summary>
+            Returns conversion with specified name.
+            </summary>
+            <param name="conversionName">Conversion name</param>        
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.SetConversionInfo(CMS.WebAnalytics.ConversionInfo)">
+            <summary>
+            Sets (updates or inserts) specified conversion.
+            </summary>
+            <param name="conversionObj">Conversion to be set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.DeleteConversionInfo(CMS.WebAnalytics.ConversionInfo)">
+            <summary>
+            Deletes specified conversion.
+            </summary>
+            <param name="conversionObj">Conversion to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.DeleteConversionInfo(System.Int32)">
+            <summary>
+            Deletes conversion with specified ID.
+            </summary>
+            <param name="conversionId">Conversion ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.RenameConversionStatistics(System.String,System.String,System.Int32)">
+            <summary>
+            Renames conversion statistics data when changed code name
+            </summary>
+            <param name="oldName">Old code name</param>
+            <param name="newName">New code name</param>
+            <param name="siteID">Conversion site ID </param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversionsInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Returns dataset of all conversions matching the specified parameters.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by expression</param>
+            <param name="topN">Number of records to be selected</param>        
+            <param name="columns">Columns to be selected</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversionInfoInternal(System.Int32)">
+            <summary>
+            Returns conversion with specified ID.
+            </summary>
+            <param name="conversionId">Conversion ID</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.GetConversionInfoInternal(System.String,System.String)">
+            <summary>
+            Returns conversion with specified name.
+            </summary>
+            <param name="conversionName">Conversion name</param>  
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.SetConversionInfoInternal(CMS.WebAnalytics.ConversionInfo)">
+            <summary>
+            Sets (updates or inserts) specified conversion.
+            </summary>
+            <param name="conversionObj">Conversion to be set</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.DeleteConversionInfoInternal(CMS.WebAnalytics.ConversionInfo)">
+            <summary>
+            Deletes specified conversion.
+            </summary>
+            <param name="conversionObj">Conversion to be deleted</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.ConversionInfoProvider.#ctor">
+            <summary>
+            Constructor using ID and codename Hashtables.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.PredefinedActivityType">
+            <summary>
+            Predefined activity types constants.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PAGE_VISIT">
+            <summary>
+            Code name for page visits activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.LANDING_PAGE">
+            <summary>
+            Code name for landing page activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.USER_LOGIN">
+            <summary>
+            Code name for user login activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.REGISTRATION">
+            <summary>
+            Code name for user registration activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.JOIN_GROUP">
+            <summary>
+            Code name for join group activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.LEAVE_GROUP">
+            <summary>
+            Code name for leave group activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PRODUCT_ADDED_TO_SHOPPINGCART">
+            <summary>
+            Code name for product added to shopping cart activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PRODUCT_REMOVED_FROM_SHOPPINGCART">
+            <summary>
+            Code name for product removed from shopping cart activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PRODUCT_ADDED_TO_WISHLIST">
+            <summary>
+            Code name for product added to wishlist activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PURCHASE">
+            <summary>
+            Code name for purchase activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.PURCHASEDPRODUCT">
+            <summary>
+            Code name for purchased product activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.CUSTOMER_REGISTRATION">
+            <summary>
+            Code name for customer registration activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.NEWSLETTER_SUBSCRIBING">
+            <summary>
+            Code name for newsletter subscribing activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.NEWSLETTER_UNSUBSCRIBING">
+            <summary>
+            Code name for newsletter unsubscribing activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.NEWSLETTER_OPEN">
+            <summary>
+            Code name for newsletter open activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.NEWSLETTER_CLICKTHROUGH">
+            <summary>
+            Code name for newsletter clickthrough activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.EXTERNAL_SEARCH">
+            <summary>
+            Code name for external search activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.INTERNAL_SEARCH">
+            <summary>
+            Code name for internal search activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.BLOG_COMMENT">
+            <summary>
+            Code name for blog comment activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.FORUM_POST">
+            <summary>
+            Code name for forum post activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.MESSAGE_BOARD_COMMENT">
+            <summary>
+            Code name for message board comment activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.ABUSE_REPORT">
+            <summary>
+            Code name for abuse report activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.RATING">
+            <summary>
+            Code name for rating activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.EVENT_BOOKING">
+            <summary>
+            Code name for event booking activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.POLL_VOTING">
+            <summary>
+            Code name for poll voting activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.BIZFORM_SUBMIT">
+            <summary>
+            Code name for bizform submit activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.USER_CONTRIB_INSERT">
+            <summary>
+            Code name for insert user contribution activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.USER_CONTRIB_UPDATE">
+            <summary>
+            Code name for update user contribution activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.USER_CONTRIB_DELETE">
+            <summary>
+            Code name for delete user contribution activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.SUBSCRIPTION_MESSAGE_BOARD">
+            <summary>
+            Code name for message board subscription activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.SUBSCRIPTION_FORUM_POST">
+            <summary>
+            Code name for forum subscription activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.SUBSCRIPTION_BLOG_POST">
+            <summary>
+            Code name for blog post subscription activity.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.PredefinedActivityType.CUSTOM_ACTIVITY">
+            <summary>
+            Code name for custom activity activity.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.RemoveAnalyticsData">
+            <summary>
+            RemoveAnalyticsData class.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.RemoveAnalyticsData.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Executes the remove analytics task.
+            </summary>
+            <param name="task">Task to process</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.VisitorStatusCode">
+            <summary>
+            Visitor status code.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.Unknown">
+            <summary>
+            Unknown status.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.UnknownString">
+            <summary>
+            Unknown status as string.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.FirstVisit">
+            <summary>
+            First user visit.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.FirstVisitString">
+            <summary>
+            First user visit as string.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.MoreVisits">
+            <summary>
+            More user visits.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusCode.MoreVisitsString">
+            <summary>
+            More user visits as string.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.VisitorStatusCode.ToEnum(System.Int32)">
+            <summary>
+            Returns the enumeration representation of the Visitor status.
+            </summary>
+            <param name="code">Status code</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.VisitorStatusCode.FromEnum(CMS.WebAnalytics.VisitorStatusEnum)">
+            <summary>
+            Returns the visitor status code from the enumeration value.
+            </summary>
+            <param name="value">Value to convert</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.VisitorStatusCode.FromEnumString(CMS.WebAnalytics.VisitorStatusEnum)">
+            <summary>
+            Returns the visitor status code from the enumeration value.
+            </summary>
+            <param name="value">Value to convert</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.VisitorStatusEnum">
+            <summary>
+            Visitor status.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusEnum.Unknown">
+            <summary>
+            Unknown status.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusEnum.FirstVisit">
+            <summary>
+            First visit of the web site.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.VisitorStatusEnum.MoreVisits">
+            <summary>
+            More visits.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.UserPage">
+            <summary>
+            Class providing information about last visited page.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.UserPage.TimeStamp">
+            <summary>
+            Last request timestamp.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.UserPage.LastPageNodeAliasPath">
+            <summary>
+            Gets or sets the last page node alias path.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.UserPage.LastPageNodeID">
+            <summary>
+            Gets or sets the last page node ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.UserPage.LastPageCulture">
+            <summary>
+            Gets or sets the last page culture.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.UserPage.LastPageSiteName">
+            <summary>
+            Gets or sets the last page site name.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.WebAnalyticsModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.WebAnalyticsModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.WebAnalyticsModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.WebAnalyticsModule.GetObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the object created from the given DataRow.
+            </summary>
+            <param name="objectRow">Object DataRow</param>
+            <param name="objectType">Object type</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitLogProcessor">
+            <summary>
+            HitLogProcessor class.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.Execute(CMS.Scheduler.TaskInfo)">
+            <summary>
+            Executes the logprocessor action.
+            </summary>
+            <param name="task">Task to process</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ProcessExitPages">
+            <summary>
+            Creates log. files for expired exit page candidates
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ProcessFinishedLogs">
+            <summary>
+            Gets the log files that are finished (are no longer valid).
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ProcessLog(System.String)">
+            <summary>
+            Processes the whole log file in memory and writes the results to the database.
+            </summary>
+            <param name="fileName">Log file name</param>        
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ProcessLog(System.String,System.String)">
+            <summary>
+            Processes the whole log file in memory and writes the results to the database.
+            </summary>
+            <param name="fileName">Log file name</param>
+            <param name="codeName">Statistics code name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ProcessLogRecord(System.String,System.String,System.Int32,System.Double,System.DateTime)">
+            <summary>
+            Processes the log record to DB.
+            </summary>
+            <param name="codeName">Log code name</param>
+            <param name="key">Log key 'siteName;culture;objectName;objectID'</param>
+            <param name="hits">Hits coutn</param>
+            <param name="logTime">Log creation time</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.ConversionExists(System.String,System.String)">
+            <summary>
+            Return false if conversion does not exists
+            </summary>
+            <param name="conversionName">Conversion name</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.GetCreationTimeFromFileName(System.String)">
+            <summary>
+             Returns creation time from file name.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProcessor.RemoveMachineName(System.String)">
+            <summary>
+            Removes machine name from file name.
+            </summary>
+            <param name="fileName">File name.</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitLogProvider">
+            <summary>
+            HitLogProvider class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.PAGE_VIEWS">
+            <summary>
+            Page views code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.AGGREGATED_VIEWS">
+            <summary>
+            Aggregated page views code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.VISITORS_FIRST">
+            <summary>
+            First visitors code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.VISITORS_RETURNING">
+            <summary>
+            Returning visitors code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.FILE_DOWNLOADS">
+            <summary>
+            File downloads code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.PAGE_NOT_FOUND">
+            <summary>
+            Page not found code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.URL_REFERRALS">
+            <summary>
+            URL referrals code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.CONVERSIONS">
+            <summary>
+            Conversions code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.CAMPAIGNS">
+            <summary>
+            Campaigns code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.BROWSER_TYPE">
+            <summary>
+            Browser type code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.COUNTRIES">
+            <summary>
+            IP to country conversion code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.REGISTEREDUSER">
+            <summary>
+            Registered user code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.LANDINGPAGE">
+            <summary>
+            Landing page code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.EXITPAGECANDIDATE">
+            <summary>
+            Exit page candidate code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.EXITPAGE">
+            <summary>
+            Exit page code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.AVGTIMEONPAGE">
+            <summary>
+            Avg. time on page code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.REFERRINGSITE">
+            <summary>
+            Referring sites code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.SEARCHKEYWORD">
+            <summary>
+            Search keywords code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.ONSITESEARCHKEYWORD">
+            <summary>
+            On-site search keywords code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.OPERATINGSYSTEM">
+            <summary>
+            Operating system code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.SCREENCOLOR">
+            <summary>
+            Screen color code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.SCREENRESOLUTION">
+            <summary>
+            Screen resolution code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.FLASH">
+            <summary>
+            Flash code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.SILVERLIGHT">
+            <summary>
+            Silverlight code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.JAVA">
+            <summary>
+            Java code name.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.SEMICOLONDELIMITER">
+            <summary>
+            Constant used for loging semicolons 
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.mMemStorage">
+            <summary>
+            Static memory storage for web analytics
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.msLocker">
+            <summary>
+            Memory storage locker
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.Domains">
+            <summary>
+            Table with domains and true/false values which indicate
+            whether web analytics is allowed for a domain.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.mLogDirectory">
+            <summary>
+            Logs directory.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.mLockingTarget">
+            <summary>
+            Private locking object used when new entry is appended into the log file.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.locker">
+            <summary>
+            User pages locker.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitLogProvider.mUseMemoryStorage">
+            <summary>
+            Indicates whether memory storage should be used instead of direct file write
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogHit(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Writes the hit log to the file.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogHit(System.String,System.String,System.String,System.String,System.Int32,System.Double)">
+            <summary>
+            Writes the hit log to the file.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogHit(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Writes the hit log to the file.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogHit(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Writes the hit log to the file.
+            </summary>
+            <param name="codeName">Statistics codename</param>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogConversions(System.String,System.String,System.String,System.Int32,System.Double)">
+            <summary>
+            Writes the hit log to the file for all available conversions.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>        
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogConversions(System.String,System.String,System.String,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Writes the hit log to the file for all available conversions.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+            <param name="value">Hit value</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.IsDomainAllowed(System.String)">
+            <summary>
+            Returns true if webanalytics is allowed for specified domain.
+            </summary>
+            <param name="domain">Domain name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitLogProvider.LogTestConversion(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Writes the hit log to the file for A/B test conversions.
+            </summary>        
+            <param name="siteName">Site name</param>
+            <param name="culture">Site culture code</param>
+            <param name="objectName">Object name</param>
+            <param name="objectId">Object ID</param>
+            <param name="count">Hit count</param>
+            <param name="value">Hit value</param>        
+        </member>
+        <member name="P:CMS.WebAnalytics.HitLogProvider.UseMemoryStorage">
+            <summary>
+            Gets the value that indicates whether memory storage should be used instead of direct file write
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitLogProvider.MemStorage">
+            <summary>
+            Gets the memory storage
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitLogProvider.LogDirectory">
+            <summary>
+            Logs directory.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.MemoryStorage">
+            <summary>
+            Memory storage class provides a funcionality to keep analytics records in memory during log phase
+            insted of immediate disk write. 
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.MemoryStorage.AppendAllText(System.String,System.String,System.DateTime)">
+            <summary>
+            Appends the string value to the specific virtual file and directory
+            </summary>
+            <param name="value">Value to store</param>
+            <param name="fileName">File name</param>
+            <param name="dirDate">Directory date</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.MemoryStorage.GetDirectory(System.DateTime)">
+            <summary>
+            Returns virtual directory for specified name
+            </summary>
+            <param name="dirname">Directory name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.MemoryStorage.CacheItemRemoved(System.String,System.Object,System.Web.Caching.CacheItemRemovedReason)">
+            <summary>
+            Callback function from cache re
+            </summary>
+            <param name="key">Cache key</param>
+            <param name="value">Cache value</param>
+            <param name="removedReason">Removed reason</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.MemoryStorage.#ctor(System.String,System.String)">
+            <summary>
+            Constructor to initialize storage
+            </summary>
+            <param name="providerName">Sets the provider name</param>
+            <param name="dirPath">Path to the physical directory</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.MemoryStorage.StorageName">
+            <summary>
+            Gets or sets the storage name
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.MemoryStorage.DirectoryPath">
+            <summary>
+            Physical directory path
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.VirtualDirectory">
+            <summary>
+            Virtual directory class stores directories and their virual files
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.VirtualDirectory.SaveAllFiles">
+            <summary>
+            Saves all files in directory to the file system
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.VirtualDirectory.AppendAllText(System.String,System.String)">
+            <summary>
+            Appends  specified content to the file
+            </summary>
+            <param name="filename">File name</param>
+            <param name="content">String content</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.VirtualDirectory.GetFile(System.String)">
+            <summary>
+            Returns stream writer representing specific file 
+            </summary>
+            <param name="filename">File name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.VirtualDirectory.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="dirPath">Physical directory path</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.VirtualDirectory.DirectoryPath">
+            <summary>
+            Physical directory path
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitsInfo">
+            <summary>
+            HitsInfo data container class.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.HitsIntervalEnumString(CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Converts enum to database name.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.HitsIntervalEnumTableName(CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Converts enum to table name.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.#ctor">
+            <summary>
+            Constructor - Creates new object of HitsInfo with the year granularity
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.#ctor(CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Constructor - Creates new object of HitsInfo based on the enum.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.#ctor(System.Data.DataRow,CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Constructor - Creates a new HitsInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfo.LoadTime(System.DateTime)">
+            <summary>
+            Sets the Hits start time and end time to the interval matching the given time.
+            If interval changed, clears the ID of the object.
+            </summary>
+            <param name="time">Time</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitsInfo.HitsID">
+            <summary>
+            Hits ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitsInfo.HitsStatisticsID">
+            <summary>
+            Hits statistics ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitsInfo.HitsStartTime">
+            <summary>
+            Hits start time.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitsInfo.HitsEndTime">
+            <summary>
+            Hits end time.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.HitsInfo.HitsCount">
+            <summary>
+            Hits count.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitsInfoProvider">
+            <summary>
+            Class providing HitsInfo management.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetHitsInfo(System.Int32,CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Returns the HitsInfo structure for the specified hits.
+            </summary>
+            <param name="hitsId">Hits id</param>
+            <param name="interval">Hits interval enumerator</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetHitsInfo(System.DateTime,System.Int32,CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Returns the HitsInfo structure for the specified time.
+            </summary>
+            <param name="time">Time</param>
+            <param name="statisticsId">Statistics ID</param>
+            <param name="interval">Hits interval enumerator</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetAllHitsInfo(System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String,System.DateTime)">
+            <summary>
+            Returns all HitsInfo records for the specified time.
+            <param name="siteId">Site ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeName">Statistics type (pageviews, downloads...)</param>
+            <param name="time">Time</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetAllHitsInfo(System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String[],System.DateTime)">
+            <summary>
+            Returns all HitsInfo records for the specified time and categories.
+            <param name="siteId">Site ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeNames">Statistics type (pageviews, downloads...)</param>
+            <param name="time">Time</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetAllHitsInfoBetween(System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Returns all HitsInfo records for the specified time.
+            <param name="siteId">Site ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeName">Statistics type (pageviews, downloads...)</param>
+            <param name="startTime">Start date</param>
+            <param name="endTime">End date</param>
+            <param name="columns">Columns</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetAllHitsInfoBetween(System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String[],System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Returns all HitsInfo records for the specified time and categories.
+            <param name="siteId">Site ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeNames">Statistics type (pageviews, downloads...)</param>
+            <param name="startTime">Start date</param>
+            <param name="endTime">End date</param>
+            <param name="columns">Columns</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetObjectHitsInfo(System.Int32,System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Returns all HitsInfo records for the specified object.
+            <param name="siteId">Site ID</param>
+            <param name="objectId">Object ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeName">Statistics type (pageviews, downloads...)</param>
+            <param name="timeBegin">Start of time interval (e.g. 01/01/2008)</param>
+            <param name="timeEnd">End of time interval (e.q. 12/31/2008)</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.GetObjectHitCount(System.Int32,System.Int32,CMS.WebAnalytics.HitsIntervalEnum,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Returns all HitsInfo records for the specified object.
+            <param name="siteId">Site ID</param>
+            <param name="objectId">Object ID</param>
+            <param name="interval">Hits interval (hour, day, week, year)</param>
+            <param name="codeName">Statistics type (pageviews, downloads...)</param>
+            <param name="timeBegin">Start of time interval (e.g. 01/01/2008)</param>
+            <param name="timeEnd">End of time interval (e.q. 12/31/2008)</param>
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.SetHitsInfo(CMS.WebAnalytics.HitsInfo)">
+            <summary>
+            Sets (updates or inserts) specified hits.
+            </summary>
+            <param name="hits">Hits to set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.DeleteHitsInfo(CMS.WebAnalytics.HitsInfo)">
+            <summary>
+            Deletes specified hits.
+            </summary>
+            <param name="hits">HitsInfo object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsInfoProvider.DeleteHitsInfos(System.String,System.Int32,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            Deletes all hits between starting and ending date.
+            </summary>
+            <param name="statisticsCodeName">Stat code name (pageviews, downloads...)</param>
+            <param name="siteId">Site</param>
+            <param name="fromDate">Starting date</param>
+            <param name="toDate">Ending date</param>
+            <param name="week1start">Start of the first week</param>
+            <param name="week1end">End of the first week</param>
+            <param name="week2start">Start of the last week</param>
+            <param name="week2end">End of the last week</param>
+            <param name="month1start">Start of the first month</param>
+            <param name="month1end">End of the first month</param>
+            <param name="month2start">Start of the last month</param>
+            <param name="month2end">End of the last month</param>
+            <param name="year1start">Start of the first year</param>
+            <param name="year1end">End of the first year</param>
+            <param name="year2start">Start of the last year</param>
+            <param name="year2end">End of the last year</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitsIntervalEnum">
+            <summary>
+            Hits interval type enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitsIntervalEnum.Year">
+            <summary>
+            Year interval.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitsIntervalEnum.Month">
+            <summary>
+            Month interval.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitsIntervalEnum.Week">
+            <summary>
+            Week interval.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitsIntervalEnum.Day">
+            <summary>
+            Day interval.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.HitsIntervalEnum.Hour">
+            <summary>
+            Hour interval.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.HitsIntervalEnumFunctions">
+            <summary>
+            Class to provider safe conversion.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsIntervalEnumFunctions.StringToHitsConversion(System.String)">
+            <summary>
+            Converts string to HitsIntervalEnum.
+            </summary>
+            <param name="value">Value to convert</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.HitsIntervalEnumFunctions.HitsConversionToString(CMS.WebAnalytics.HitsIntervalEnum)">
+            <summary>
+            Converts HitsIntervalEnum to string.
+            </summary>
+            <param name="value">Value to convert</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.IPRange">
+            <summary>
+            Class representing IP range designated for country.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRange.beginIp">
+            <summary>
+            First IP of the IP range converted to long number.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRange.toIp">
+            <summary>
+            Last IP of the IP range converted to long number.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRange.lookForIP">
+            <summary>
+            Look-up IP converted to long number.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRange.country">
+            <summary>
+            Country object of the IP range.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRange.coutryDictionary">
+            <summary>
+            Structure of the country objects.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRange.#ctor(System.Int64)">
+            <summary>
+            Constructor for creation of IP range for look-up purposes.
+            </summary>
+            <param name="lookForIP">IP converted to long number</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRange.#ctor(System.Int64,System.Int64,System.String,System.String,System.String)">
+            <summary>
+            Constructor for creating standard IP range.
+            </summary>
+            <param name="beginIp">First IP of the range</param>
+            <param name="toIp">Last IP of the range</param>
+            <param name="code">Two-character country code based on ISO 3166</param>
+            <param name="code2">Three-character country code based on ISO 3166</param>
+            <param name="countryName">Country name based on ISO 3166</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRange.CompareTo(CMS.WebAnalytics.IPRange)">
+            <summary>
+            Special comparator. If specified range has lookForIP set and this IP belongs to the range of this object,
+            then it is considered equal and therefore wished IPRange is found.
+            </summary>        
+            <param name="lookUpRange">IPRange with lookForIp set</param>
+            <returns>0 if lookUpRange belongs to range, 1 if lookUpRange IP is lower than beginning IP of range, -1 otherwise</returns>
+        </member>
+        <member name="T:CMS.WebAnalytics.IPRangeCountry">
+            <summary>
+            Class representing country of IP range.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRangeCountry.code">
+            <summary>
+            Two-character country code based on ISO 3166.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRangeCountry.code2">
+            <summary>
+            Three-character country code based on ISO 3166.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IPRangeCountry.countryName">
+            <summary>
+            Country name based on ISO 3166.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRangeCountry.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="countryName">Country name based on ISO 3166</param>
+            <param name="code">Two-character country code based on ISO 3166</param>
+            <param name="code2">Three-character country code based on ISO 3166</param>
+        </member>
+        <member name="T:CMS.WebAnalytics.IPRangeCountryComparer">
+            <summary>
+            Comparer for IPRangeCountry.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRangeCountryComparer.Equals(CMS.WebAnalytics.IPRangeCountry,CMS.WebAnalytics.IPRangeCountry)">
+            <summary>
+            Returns true if two IPRangeCountry objects are equal.
+            </summary>
+            <param name="x">IPRangeCountry object</param>
+            <param name="y">IPRangeCountry object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.IPRangeCountryComparer.GetHashCode(CMS.WebAnalytics.IPRangeCountry)">
+            <summary>
+            Returns hash code as concatenated string.
+            </summary>
+            <param name="country"></param>
+        </member>
+        <member name="T:CMS.WebAnalytics.IP2CountryHelper">
+            <summary>
+            Provides IP4 address to country name conversion.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IP2CountryHelper.ip2CountryRanges">
+            <summary>
+            List with IP ranges and its designated country.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IP2CountryHelper.lockObj">
+            <summary>
+            Object for context locking.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.IP2CountryHelper.ipCountry2CMSCountry">
+            <summary>
+            Translation table with IP countries as key and CMS countries as value.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.IP2CountryHelper.GetCountryByIp(System.String)">
+            <summary>
+            Finds country name by IP4 address.
+            </summary>
+            <param name="dottedQuadIp">IP4 address</param>
+            <returns>Country name</returns>
+        </member>
+        <member name="M:CMS.WebAnalytics.IP2CountryHelper.GetCMSCountryByIp(System.String)">
+            <summary>
+            Finds country code name by IP4 address.
+            </summary>
+            <param name="dottedQuadIp">IP4 address</param>
+            <returns>Country code name compatible with countries in CMS_Country table</returns>
+        </member>
+        <member name="M:CMS.WebAnalytics.IP2CountryHelper.IPToLong(System.Net.IPAddress)">
+            <summary>
+            Converts IP4 address to long number.
+            </summary>
+            <param name="addr">IP4 address</param>
+            <returns>A x (256*256*256) + B x (256*256) + C x 256 + D, where IP4 = A.B.C.D</returns>
+        </member>
+        <member name="M:CMS.WebAnalytics.IP2CountryHelper.LoadIPRanges">
+            <summary>
+            Decompresses zip archive and directly created list of IP rage objects.
+            </summary>        
+        </member>
+        <member name="M:CMS.WebAnalytics.IP2CountryHelper.LoadCountryTable">
+            <summary>
+            Decompresses zip archive and creates country conversion table.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.IP2CountryHelper.IPRanges">
+            <summary>
+            List with IP ranges and its designated country.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.IP2CountryHelper.IPCountry2CMSCountryTable">
+            <summary>
+            Translation table with IP countries as key and CMS countries as value.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.StatisticsInfo">
+            <summary>
+            StatisticsInfo data container class.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.StatisticsInfo.TYPEINFO">
+            <summary>
+            Type information.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfo.DeleteObject">
+            <summary>
+            Deletes the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfo.SetObject">
+            <summary>
+            Updates the object using appropriate provider.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfo.#ctor">
+            <summary>
+            Constructor - Creates an empty StatisticsInfo object.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfo.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor - Creates a new StatisticsInfo object from the given DataRow.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsID">
+            <summary>
+            Statistics ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsCode">
+            <summary>
+            Statistics code.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsSiteID">
+            <summary>
+            Statistics site ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsObjectName">
+            <summary>
+            Statistics object name.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsObjectID">
+            <summary>
+            Statistics object ID.
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfo.StatisticsObjectCulture">
+            <summary>
+            Statistics object culture.
+            </summary>
+        </member>
+        <member name="T:CMS.WebAnalytics.StatisticsInfoProvider">
+            <summary>
+            Class providing StatisticsInfo management.
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.StatisticsInfoProvider.generatorLock">
+            <summary>
+            Generator lock
+            </summary>
+        </member>
+        <member name="F:CMS.WebAnalytics.StatisticsInfoProvider.deleterLock">
+            <summary>
+            Deleter lock
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatisticsInfo(System.Int32)">
+            <summary>
+            Returns the StatisticsInfo structure for the specified statistics.
+            </summary>
+            <param name="statisticsId">Statistics id</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetCodeNames">
+            <summary>
+            Retrieves all statistic code names.
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatisticsBoundaries(System.String)">
+            <summary>
+            Returns max a min datetime for given statistics
+            </summary>
+            <param name="where">Where condition (contains statisticscode for query)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetCodeNames(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Retrieves statistic code names under give condition.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+            <param name="topN">Top N rows</param>
+            <param name="columns">Returned columns</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatistics(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Retrieves statistic data under given condition.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+            <param name="topN">Top N rows</param>
+            <param name="columns">Returned columns</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.SetStatisticsInfo(CMS.WebAnalytics.StatisticsInfo)">
+            <summary>
+            Sets (updates or inserts) specified statistics.
+            </summary>
+            <param name="statistics">Statistics to set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.DeleteStatisticsInfo(CMS.WebAnalytics.StatisticsInfo)">
+            <summary>
+            Deletes specified statistics.
+            </summary>
+            <param name="statisticsObj">Statistics object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.DeleteStatisticsInfo(System.Int32)">
+            <summary>
+            Deletes specified statistics.
+            </summary>
+            <param name="statisticsId">Statistics id</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.DeleteStatisticsInfo(System.String)">
+            <summary>
+            Deletes all statistics with specified code name.
+            </summary>
+            <param name="statisticsCode">Statistics code name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GenerateSampleData(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Generates samlpe analytics data. Returns true if sample data generator was started
+            </summary>
+            <param name="from">From</param>
+            <param name="to">To</param>
+            <param name="siteId">Site ID</param>
+            <param name="codeName">Statistic codename</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GenerateData">
+            <summary>
+            Generates analytics data
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.RemoveAnalyticsData(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Removes analytics data for specified parameters
+            </summary>
+            <param name="from">From date</param>
+            <param name="to">To date</param>
+            <param name="siteId">Site id. If is 0, data from all sites are removed</param>
+            <param name="where">Where condition, if no all data to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.RemoveAnalyticsDataAsync(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Removes analytics data for specified parameters
+            </summary>
+            <param name="from">From date</param>
+            <param name="to">To date</param>
+            <param name="siteId">Site id. If is 0, data from all sites are removed</param>
+            <param name="where">Where condition, if no all data to be deleted</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.RemoveAnalyticsDataAsync">
+            <summary>
+            Async function for removing analytics data
+            </summary>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatisticsInfoInternal(System.Int32)">
+            <summary>
+            Returns the StatisticsInfo structure for the specified statistics.
+            </summary>
+            <param name="statisticsId">Statistics id</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetCodeNamesInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Retrieves statistic code names under give condition.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+            <param name="topN">Top N rows</param>
+            <param name="columns">Returned columns</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatisticsInternal(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Retrieves statistic data under given condition.
+            </summary>
+            <param name="where">Where condition</param>
+            <param name="orderBy">Order by</param>
+            <param name="topN">Top N rows</param>
+            <param name="columns">Returned columns</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.GetStatisticsBoundariesInternal(System.String)">
+            <summary>
+            Returns max a min datetime for given statistics
+            </summary>
+            <param name="where">Where condition (contains statisticscode for query)</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.SetStatisticsInfoInternal(CMS.WebAnalytics.StatisticsInfo)">
+            <summary>
+            Sets (updates or inserts) specified statistics.
+            </summary>
+            <param name="statistics">Statistics to set</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.DeleteStatisticsInfoInternal(CMS.WebAnalytics.StatisticsInfo)">
+            <summary>
+            Deletes specified statistics.
+            </summary>
+            <param name="statisticsObj">Statistics object</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.DeleteStatisticsInfoInternal(System.String)">
+            <summary>
+            Deletes all statistics with specified code name.
+            </summary>
+            <param name="statisticsCode">Statistics code name</param>
+        </member>
+        <member name="M:CMS.WebAnalytics.StatisticsInfoProvider.RemoveAnalyticsDataInternal(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Removes analytics data for specified parameters
+            </summary>
+            <param name="from">From date</param>
+            <param name="to">To date</param>
+            <param name="siteId">Site id. If is 0, data from all sites are removed</param>
+            <param name="where">Where condition, if no all data to be deleted</param>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.DataGeneratorIsRunning">
+            <summary>
+            Gets the value that indicates whether data generation is running
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.DataDeleterIsRunning">
+            <summary>
+            Indicates whether data deleter is running
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.From">
+            <summary>
+            Gets or sets the From date time for analytics generator
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.To">
+            <summary>
+            Gets or sets the To date time for analytics generator
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.StatisticCodeName">
+            <summary>
+            Gets or sets the sattistic codename for analytics generator
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.SiteID">
+            <summary>
+            Gets or sets the site id for analytics generator 
+            </summary>
+        </member>
+        <member name="P:CMS.WebAnalytics.StatisticsInfoProvider.Where">
+            <summary>
+            Gets or sets the where condition for analytics delete
+            </summary>
+        </member>
+    </members>
+</doc>

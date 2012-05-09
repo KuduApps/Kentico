@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.URLRewritingEngine</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.URLRewritingEngine.BaseDocumentConstraint">
+            <summary>
+            Base class for the document constraints
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mSiteName">
+            <summary>
+            Site name for the current handler.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mAliasPath">
+            <summary>
+            Alias path for the current handler
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mNodeId">
+            <summary>
+            Node ID for the current handler
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mCulture">
+            <summary>
+            Culture for the current handler
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mUrlPath">
+            <summary>
+            Url path
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.BaseDocumentConstraint.mSwitchToRouteCulture">
+            <summary>
+            If true (default), the routing behaves the same way as URL path = switches the current culture to the route culture
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.BaseDocumentConstraint.#ctor(System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="siteName">Site name for matching of the requests</param>
+            <param name="aliasPath">Alias path of the matching document</param>
+            <param name="nodeId">Node ID of the matching document</param>
+            <param name="culture">Culture of the matching document</param>
+            <param name="urlPath">URL path with the pattern</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.BaseDocumentConstraint.NotMatched">
+            <summary>
+            Handles the processed operations when the constraint is not matched
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.BaseDocumentConstraint.PreProcess(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.ViewModeOnDemand,System.String@,System.String@,CMS.GlobalHelper.ExcludedSystemEnum@)">
+            <summary>
+            Preprocesses the constraint, matches the site name and culture, and attempts to send output from cache
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="viewMode">View mode</param>
+            <param name="culture">Returns the culture to be used</param>
+            <param name="excludedEnum">Returns the exclusion status</param>
+            <param name="relativePath">Returns the relative path of the request</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.BaseDocumentConstraint.CheckCulture(System.String@)">
+            <summary>
+            Validates the culture of the request against the constraint
+            </summary>
+            <param name="culture">Outputs the culture to be used</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.BaseDocumentConstraint.CheckSite(CMS.SiteProvider.SiteNameOnDemand)">
+            <summary>
+            Validates current site against the constraint
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.BaseDocumentConstraint.SwitchToRouteCulture">
+            <summary>
+            If true (default), the routing behaves the same way as URL path = switches the current culture to the route culture
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSControllerFactory">
+            <summary>
+            Controller factory with additional functionality for MVC controllers to provide site separation
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.CMSControllerFactory.instance">
+            <summary>
+            Instance of the controller factory
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSControllerFactory.GetSingleControllerType(System.Web.Routing.RequestContext,System.String)">
+            <summary>
+            Gets the type of a single controller, returns null if no valid controller found or ambiguous
+            </summary>
+            <param name="context">Execution context</param>
+            <param name="controllerName">Controller name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSControllerFactory.GetAnyControllerType(System.Web.Routing.RequestContext,System.String)">
+            <summary>
+            Gets the type of a controller, returns null if no valid controller found. Throws an exception if multiple controllers were found
+            </summary>
+            <param name="context">Execution context</param>
+            <param name="controllerName">Controller name</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSMvcDocumentConstraint">
+            <summary>
+            Constraint to check the context of a document in the web site.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcDocumentConstraint.#ctor(System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="siteName">Site name for matching of the requests</param>
+            <param name="aliasPath">Alias path of the matching document</param>
+            <param name="nodeId">Node ID of the matching document</param>
+            <param name="culture">Culture of the matching document</param>
+            <param name="urlPath">URL path with the pattern</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcDocumentConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)">
+            <summary>
+            Returns true if the route matches the context.
+            </summary>
+            <param name="httpContext">Http context</param>
+            <param name="route">Route</param>
+            <param name="parameterName">Name of the parameter</param>
+            <param name="values">Values of the route</param>
+            <param name="routeDirection">Direction of the route</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcDocumentConstraint.ProcessValues(System.Web.HttpContextBase,System.Web.Routing.Route,System.Web.Routing.RouteValueDictionary)">
+            <summary>
+            Processes the request values, controller and view
+            </summary>
+            <param name="httpContext">HTTP context</param>
+            <param name="route">Route</param>
+            <param name="values">Route values</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSController">
+            <summary>
+            CMS override of the default controller class
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSController.RedirectToAction(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>
+            Overrides the default action redirect to use proper route
+            </summary>
+            <param name="actionName">Action name</param>
+            <param name="controllerName">Controller name</param>
+            <param name="routeValues">Route values</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSRoute">
+            <summary>
+            CMS override of the default route class
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSRoute.#ctor(System.String,System.String,System.Web.Routing.IRouteHandler)">
+            <summary>
+            Creates a new route
+            </summary>
+            <param name="name">Route name</param>
+            <param name="pattern">Route pattern</param>
+            <param name="handler">Route handler</param>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.CMSRoute.Name">
+            <summary>
+            Route name
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSMvcHandler">
+            <summary>
+            Handler for the MVC routes for URL rewriter.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.CMSMvcHandler.mRoutes">
+            <summary>
+            Table of the registered routes [siteName] -> [List of RouteBase]
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.CMSMvcHandler.mRoutesByDocuments">
+            <summary>
+            Table of the registeres routes by the document [nodeId] -> [List of RouteBase]
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.CMSMvcHandler.routeLock">
+            <summary>
+            Route lock.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.DropAllRoutes">
+            <summary>
+            Drops all the registered routes.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.DropRoutes(System.String)">
+            <summary>
+            Drops the routes for the given web site.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.EnsureRoutes(System.String)">
+            <summary>
+            Ensures that the routes are registered for the given site.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RegisterRoutes(System.String)">
+            <summary>
+            Registers the MVC routes for the given site.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RegisterDocumentRoutes(System.String,System.String,System.Collections.Generic.List{System.Web.Routing.RouteBase})">
+            <summary>
+            Registers the routes of the documents matching the given where condition
+            </summary>
+            <param name="where">Where condition for the documents</param>
+            <param name="siteName">Site name</param>
+            <param name="routes">List of routes to collect the registered routes</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RegisterAliasRoutes(System.String,System.String,System.Collections.Generic.List{System.Web.Routing.RouteBase})">
+            <summary>
+            Registers the routes of the aliases matching the given where condition
+            </summary>
+            <param name="where">Where condition for the aliases</param>
+            <param name="siteName">Site name</param>
+            <param name="routes">List of routes to collect the registered routes</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RegisterRoute(System.String,System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Registers the given route
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="aliasPath">Alias path</param>
+            <param name="urlPath">URL path</param>
+            <param name="nodeId">Node ID</param>
+            <param name="culture">Document culture</param>
+            <param name="alias">If true, the route comes from document alias</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.DropRoutes(System.Int32,System.String)">
+            <summary>
+            Drops the routes for the given document from the routing table
+            </summary>
+            <param name="nodeId">Node ID</param>
+            <param name="culture">Document culture</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.DropAliasRoutes(System.Int32)">
+            <summary>
+            Drops the routes for the given document from the routing table
+            </summary>
+            <param name="nodeId">Node ID</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RefreshRoutes(CMS.TreeEngine.TreeNode)">
+            <summary>
+            Refreshes the routes for particular document
+            </summary>
+            <param name="node">Document node</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.RefreshAliasRoutes(System.Int32,System.String)">
+            <summary>
+            Refreshes the routes for particular document aliases
+            </summary>
+            <param name="nodeId">Node ID</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.GetRoutingPattern(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>
+            Gets the URL pattern from wildcard URL path and places the default values into the defaults name-value collection
+            </summary>
+            <param name="urlPath">URL path to analyze</param>
+            <param name="defaults">If set, returns the default values of the wildcards</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSMvcHandler.ParseWildcardElement(System.Text.RegularExpressions.Match,System.Web.Routing.RouteValueDictionary)">
+            <summary>
+            Parses single wildcard element and extracts its value to the defaults collection. Returns the element without the default value
+            
+            Handles following scenarios:
+            
+            {name} - No changes, standard wilcard without default value
+            {name;value} - Outputs the value as the hard part of the URL, value is also added to the defaults
+            {?name;value} - Makes optional parameter wildcard with value added to defaults
+            </summary>
+            <param name="m">Element match</param>
+            <param name="defaults">If set, returns the default values of the wildcards</param>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.CMSMvcHandler.UseDefaultValuesInPattern">
+            <summary>
+            If true, the default values of pattern elements are used in the pattern
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSDocumentRouteHandler">
+            <summary>
+            Route handler for the portal pages
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSDocumentRouteHandler.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSDocumentRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)">
+            <summary>
+            Gets the Http handler
+            </summary>
+            <param name="requestContext">Request context</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSViewEngine">
+            <summary>
+            View engine to provide site separation on MVC
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.CMSViewEngine.Instance">
+            <summary>
+            Singleton instance of the view engine
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSViewEngine.RegisterViewEngine">
+            <summary>
+            Initializes the view engine
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)">
+            <summary>
+            Finds the partial view for the given parameters
+            </summary>
+            <param name="controllerContext">Controller context</param>
+            <param name="partialViewName">View name</param>        
+            <param name="useCache">If true, the cache is used to evaluate the result</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)">
+            <summary>
+            Finds the view for the given parameters
+            </summary>
+            <param name="controllerContext">Controller context</param>
+            <param name="viewName">View name</param>
+            <param name="masterName">Master name</param>
+            <param name="useCache">If true, the cache is used to evaluate the result</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSViewEngine.GetPath(System.Web.Mvc.ControllerContext,System.String,System.Boolean,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Gets the path for the view
+            </summary>
+            <param name="controllerContext">Controller context</param>
+            <param name="viewName">View name</param>
+            <param name="useCache">If true, the cache is used</param>
+            <param name="paths">Outputs the paths that were searched</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.CMSRouteDocumentConstraint">
+            <summary>
+            Constraint to check the context of a document in the web site.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSRouteDocumentConstraint.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="siteName">Site name for matching of the requests</param>
+            <param name="aliasPath">Alias path of the matching document</param>
+            <param name="nodeId">Node ID of the matching document</param>
+            <param name="culture">Culture of the matching document</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.CMSRouteDocumentConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)">
+            <summary>
+            Returns true if the route matches the context.
+            </summary>
+            <param name="httpContext">Http context</param>
+            <param name="route">Route</param>
+            <param name="parameterName">Name of the parameter</param>
+            <param name="values">Values of the route</param>
+            <param name="routeDirection">Direction of the route</param>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.PageLocationEnum">
+            <summary>
+            Page location enumeration.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.PageLocationEnum.None">
+            <summary>
+            None location.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.PageLocationEnum.All">
+            <summary>
+            All (any location).
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.PageLocationEnum.SecuredAreas">
+            <summary>
+            Only secured areas.
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.URLRewriter">
+            <summary>
+            URLRewriter class.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.PREFIX_GETATTACHMENT">
+            <summary>
+            GetAttachment prefix.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.PREFIX_CMS_GETATTACHMENT">
+            <summary>
+            GetAttachment prefix for CMS pages (pages which require authentication).
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.PREFIX_GETFILE">
+            <summary>
+            GetFile prefix.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.PREFIX_CMS_GETFILE">
+            <summary>
+            GetFile prefix for CMS pages (pages which require authentication).
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.PREFIX_CMS_GETDOC">
+            <summary>
+            GetDoc prefix for CMS pages (pages which require authentication).
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mUseLiveURLForEditing">
+            <summary>
+            If true, the editing and preview mode uses the same URL as the live site
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mPortalTemplatePage">
+            <summary>
+            Page used as the portal template base page
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.CacheItemPriority">
+            <summary>
+            Cache item priority.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mGetAttachmentPrefixes">
+            <summary>
+            Prefixes for the available permanent attachment URLs.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mGetFilePrefixes">
+            <summary>
+            Prefixes for the available permanent getfile URLs.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mGoogleSiteMapURL">
+            <summary>
+            Google site map URL.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mEncodeNodeAliasPath">
+            <summary>
+            Indictaes whether node alias path should be encoded for RewritePath method.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mHandleTrailingSlashForGetFile">
+            <summary>
+            Indicates whether traling slash should be removed for internal processing.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mRedirectLangParameterToPrefix">
+            <summary>
+            Indicates whether culture parameter should be redirected to the culture prefix if 
+            culture prefix is enabled for current site
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mRedirectURLToPathPrefix">
+            <summary>
+            Indicates whether URL without path prefix should be redirected to the corespondent URL
+            with path prefix
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mUseRedirectForDefaultPage">
+            <summary>
+            Indicates whether default.aspx page should be redirected to the main url if it is required.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mWildcardQueryMapping">
+            <summary>
+            Wildcard query mapping setting. Possible values: join replaceexisting keepexisting.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mProcessTrailingSlashForFile">
+            <summary>
+            Indicates whether trailing slash sholud be processed for files.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.URLRewriter.mFixRewriteRedirect">
+            <summary>
+            If true, the URL rewriting process attempts to fix the redirect that some module did with wrong URL by another redirect with the original URL. Set true when using cookieless mode. Default is false.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.HandleVirtualContext(System.String@)">
+            <summary>
+            Handles the virtual context prefixes in the URL
+            </summary>
+            <param name="relativePath">Current relative path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.PerformPlannedRedirect">
+            <summary>
+            Performs the redirect that was previously planned by URL rewriter
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RegisterPlannedRedirect(System.String)">
+            <summary>
+            Registers planned redirection to an URL for time when the full request context is available
+            </summary>
+            <param name="url">URL to redirect</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.HandleRewriteRedirect">
+            <summary>
+            Handles the rewrite redirect of the request
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RewriteUrl(System.String,CMS.GlobalHelper.ExcludedSystemEnum,CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.ViewModeOnDemand)">
+            <summary>
+            Applies rewriting to actual URL.
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="excludedEnum">Excluded page status</param>
+            <param name="siteName">Site name</param>
+            <param name="viewMode">View mode</param>
+            <returns>Returns how current URL was processed</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ProcessABTest(System.String,CMS.PortalEngine.ViewModeEnum,CMS.PortalEngine.PageInfo,CMS.URLRewritingEngine.UrlRewritingAction,System.String,System.String)">
+            <summary>
+            Returns current page info with dependance on ab test settings
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="viewMode">View mode</param>
+            <param name="pageInfo">Original page info</param>
+            <param name="action">Url rewriting action</param>
+            <param name="query">Query string</param>
+            <param name="filename">Filename path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ProcessWildcardParameters(CMS.URLRewritingEngine.UrlRewritingAction,System.String,System.String@,CMS.PortalEngine.PageInfo)">
+            <summary>
+            Processes the wildcard parameters
+            </summary>
+            <param name="action">Current rewriting action</param>
+            <param name="wildcardQueryString">Wildcard querystring</param>
+            <param name="query">Current querystring</param>
+            <param name="pageInfo">Page info</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ProcessAnalytics(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Process analytics records (visitors, campaigns, conversions)
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="nodeAliasPath">Node alias path</param>
+            <param name="aliasCamp">Document alias campaign</param>
+            <param name="docCamp">Document campaign</param>
+            <param name="convName">Conversion name</param>
+            <param name="convValue">Conversion value</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ProcessRewritingResult(CMS.GlobalHelper.URLRewritingResultEnum,CMS.GlobalHelper.ExcludedSystemEnum,CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.ViewModeOnDemand,System.String)">
+            <summary>
+            Processes the result of URL rewriting and handlers appropriate actions
+            </summary>
+            <param name="status">Resulting status from the URL rewriter</param>
+            <param name="excludedEnum">Excluded page status</param>
+            <param name="siteName">Site name</param>
+            <param name="viewMode">View mode</param>
+            <param name="relativePath">Relative path of the request</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.PageNotFound">
+            <summary>
+            Returns the page not found error or redirects to the page not found page
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.PageNotFound(CMS.SiteProvider.SiteNameOnDemand,System.Boolean)">
+            <summary>
+            Returns the page not found error or redirects to the page not found page
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="alwaysRedirect">If true, the request is always redirected, not just rewritten</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.NotPage(System.Boolean)">
+            <summary>
+            Sets up the request as not page request.
+            </summary>
+            <param name="disableDebug">If true, the debug is disabled for this request</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToPageNotFound(CMS.SiteProvider.SiteNameOnDemand,System.Boolean)">
+            <summary>
+            Redirects the user to page not found URL.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="alwaysRedirect">If true, the request is always redirected, not just rewritten</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RewriteREST(System.String,System.String)">
+            <summary>
+            Handles the rewriting for REST service.
+            </summary>
+            <param name="relativePath">Relative URL</param>
+            <param name="domain">Domain of the request</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.DomainRedirect(CMS.SiteProvider.SiteNameOnDemand,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Ensures redirect domain if is required and the offline mode handling.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="action">Rewriting action</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ProcessRewritingAction(CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Processes the given rewriting action.
+            </summary>
+            <param name="action">Action to process</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.ValidateCulture(System.String,CMS.GlobalHelper.PreferredCultureOnDemand,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Validates the culture value.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="culture">Culture to validate</param>
+            <param name="action">Rewriting action</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.SetUrlCulturePrefix(System.String)">
+            <summary>
+            Sets the culture code or alias to the culture prefix.
+            </summary>
+            <param name="cultureCode">Culture code</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.AutomaticallySelectedCulture">
+            <summary>
+            Automaticaly select content culture code.
+            </summary>
+            <returns>Return culture code</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.IsHandler(System.String)">
+            <summary>
+            Checks if page is error handler.
+            </summary>
+            <param name="relativePath">Relative path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetHandledUrl(System.String)">
+            <summary>
+            Returns the url handled by handler404 page.
+            </summary>
+            <param name="url">Raw url</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetRelativePathFromUrl(System.String)">
+            <summary>
+            Returns relative path from url.
+            Example: http://www.domain.com/mypage.aspx => /mypage.aspx
+            </summary>
+            <param name="url">URL</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetEditingUrl(CMS.TreeEngine.TreeNode)">
+            <summary>
+            Gets the preview page URL
+            </summary>
+            <param name="node">Document node</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckLicense(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Check if license for actual Url is valid.
+            </summary>
+            <param name="url">URL to check</param>
+            <param name="domain">Current domain without www</param>
+            <param name="action">Rewriting action to store the result</param>
+            <returns>Returns true if the path was rewritten (license invalid)</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckLicense(System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Check if license for actual Url is valid.
+            </summary>
+            <param name="url">URL to check</param>
+            <param name="action">Rewriting action to store the result</param>
+            <returns>Returns true if the path was rewritten (license invalid)</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.SetLanguage(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Sets language.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="culture">Culture code</param>
+            <param name="action">Rewriting action</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.SetLanguage(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction,System.Boolean)">
+            <summary>
+            Sets language.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="culture">Culture code</param>
+            <param name="action">Rewriting action</param>
+            <param name="setCookie">Set the culture to a cookie as well</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckCase(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.PageInfo,CMS.PortalEngine.PageInfoSource,System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction,System.String,System.String)">
+            <summary>
+            Redirects the page to its main URL.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pageInfo">Page info</param>
+            <param name="pageInfoSource">Page info source</param>
+            <param name="originalPath">Original path</param>
+            <param name="originalQuery">Original query string</param>
+            <param name="action">Rewriting action</param>
+            <param name="wildcardQuery">Wildcard query string</param>
+            <param name="documentAliasUrlPath">Document alias url path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.HandleTrailingSlash(CMS.SiteProvider.SiteNameOnDemand,System.String@,System.String@,System.String,System.String)">
+            <summary>
+            Handles the trailing slash within given relative path.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="relativePath">Relative path</param>
+            <param name="url">URL</param>
+            <param name="actualExt">Current extension</param>
+            <param name="query">Query string</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectAliasesToMainURL(System.String)">
+            <summary>
+            If true, aliases of the document (URLPath, DocumentAlias) are redirected to the main document URL (only if not wildcard).
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectURLToLangPrefix(System.String)">
+            <summary>
+            If true, URLs without language prefix will be redirected to the correspondent page with lang prefix.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectURLToPathPrefix">
+            <summary>
+            If true, URLs without path prefix will be redirected to the correspondent page with path prefix.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToMainExtension(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.PageInfoSource,System.String,CMS.URLRewritingEngine.UrlRewritingAction,System.Boolean)">
+            <summary>
+            Redirects document to its URL with main extension if current extension isn't main.
+            </summary>
+            <param name="siteName">Current site name</param>
+            <param name="pageInfoSource">Page info source</param>
+            <param name="originalQuery">Original querystring</param>
+            <param name="action">UrlRewriting action</param>
+            <param name="fileExtension">Indicates whether should be used files extension</param>
+            <returns>Returns true if document was redirected</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToMainUrl(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.PageInfo,CMS.PortalEngine.PageInfoSource,System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction,CMS.GlobalHelper.PreferredCultureOnDemand)">
+            <summary>
+            Redirects the page to its main URL.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pageInfo">Page info</param>
+            <param name="pageInfoSource">Page info source</param>
+            <param name="wildCardQueryString">Wildcard query string</param>
+            <param name="originalQuery">Original query string</param>
+            <param name="action">Rewriting action</param>
+            <param name="culture">Preferred culture</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToLangPrefix(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.PageInfo,System.String,CMS.URLRewritingEngine.UrlRewritingAction,System.Nullable{System.Boolean},CMS.GlobalHelper.PreferredCultureOnDemand)">
+            <summary>
+            Redirects the page to the URL with language prefix.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pageInfo">Page info</param>
+            <param name="originalQuery">Original query</param>
+            <param name="action">Action</param>
+            <param name="culturePrefixPresent">Indicates whether culture prefix is defined in the current URL</param>
+            <param name="culture">Preferred culture</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToPathPrefix(CMS.SiteProvider.SiteNameOnDemand,CMS.PortalEngine.PageInfo,System.String,CMS.URLRewritingEngine.UrlRewritingAction,System.Boolean,CMS.GlobalHelper.PreferredCultureOnDemand)">
+            <summary>
+            Redirects the page to the URL with pah prefix.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pageInfo">Page info</param>
+            <param name="originalQuery">Original query</param>
+            <param name="action">Action</param>
+            <param name="pathPrefixPresent">Indicates whether path prefix is present in current URL</param>
+            <param name="culture">Preferred culture</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToMainUrl(CMS.PortalEngine.PageInfo,System.String,CMS.URLRewritingEngine.UrlRewritingAction,CMS.GlobalHelper.PreferredCultureOnDemand)">
+            <summary>
+            Redirects the page to its main URL.
+            </summary>
+            <param name="pageInfo">Page info</param>
+            <param name="originalQuery">Original query string</param>
+            <param name="action">Rewriting action</param>
+            <param name="culture">Preferred culture</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.DocumentRedirect(CMS.PortalEngine.PageInfo,System.String,CMS.URLRewritingEngine.UrlRewritingAction,CMS.PortalEngine.ViewModeEnum,System.String)">
+            <summary>
+            Redirect to url if is defined DocumentMenuRedirectUrl.
+            </summary>
+            <param name="pi">Page info</param>
+            <param name="query">Original request query</param>
+            <param name="action">Rewrtiting action</param>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+            <returns>Returns true if the page was redirected</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GoogleSitemap(System.String)">
+            <summary>
+            Processes the Google site map rewriting.
+            </summary>
+            <param name="relativePath">Relative path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.IsGetFilePage(System.String)">
+            <summary>
+            Returns true if the page is a GetFile page.
+            </summary>
+            <param name="relativePath">Relative path</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetAttachment(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link if GetDoc path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetAttachment(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /getattachment/GUID/ to  ..../getfile.aspx?guid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetFile(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link if GetFile path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetFile(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /getfile/GUID/ to  ..../getfile.aspx?nodeguid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetMetaFile(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link if GetMetaFile path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetMetaFile(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /getmetafile/GUID/ to  ..../getmetafile.aspx?guid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetMediaFile(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link if GetMediaFile path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetMediaFile(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /getmedia/GUID/ to  ..../getmediafile.aspx?guid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetProduct(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link if GetProduct path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetProduct(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /getproduct/GUID/ to  ..../getproduct.aspx?guid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckGetProductFile(System.String@,System.Boolean)">
+            <summary>
+            Checks if the link is GetProductFile path.
+            </summary>
+            <param name="path">Path to check</param>
+            <param name="removePrefix">Remove the prefix if match</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetProductFile(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path is starting with /getproductfile/GUID/ to  .../GetProductFile.aspx?token=GUID...
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Returns true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.GetTrackback(System.String,System.String,CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Rewrite path when path started with /trackback/GUID/ to  ..../trackback.aspx?guid=GUID....
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="query">Query</param>
+            <param name="action">Rewriting action</param>
+            <returns>Return true if path is rewritten</returns>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.SetViewMode(CMS.URLRewritingEngine.UrlRewritingAction)">
+            <summary>
+            Sets the viewmode if viewmode parameter present in current request parameters.
+            </summary>
+            <param name="action">Rewriting action</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.PageNotFoundForNonPublished(System.String)">
+            <summary>
+            Returns true if the non published documents should return page not found result.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckPagePermissions(System.String)">
+            <summary>
+            Gets the location where permissions of the page should be checked.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.AccessDeniedPageURL(System.String)">
+            <summary>
+            Gets the URL of the page where the user should be redirected when not permitted to read the document.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RedirectToAccessDenied(System.String)">
+            <summary>
+            Redirects the user to the access denied page.
+            </summary>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckSecured(System.String,CMS.PortalEngine.ViewModeEnum)">
+            <summary>
+            Redirects to the logon page if user is not authenticated.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="viewMode">View mode</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckSecuredAreas(System.String,CMS.PortalEngine.PageInfo,System.Boolean,CMS.PortalEngine.ViewModeEnum)">
+            <summary>
+            Redirect to logon page if actual page requires authentication.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pi">PageInfo</param>
+            <param name="excludeSystem">If true, the system pages are excluded from evaluation</param>
+            <param name="viewMode">View mode</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckSecuredAreas(System.String,System.Boolean,CMS.PortalEngine.ViewModeEnum)">
+            <summary>
+            Redirect to logon page if the user is not authenticated.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="excludeSystem">If true, the system pages are excluded from evaluation</param>
+            <param name="viewMode">View mode</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.CheckPermissions(System.String,CMS.PortalEngine.PageInfo,System.Boolean)">
+            <summary>
+            Redirect to logon page if actual page requires authentication.
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="pi">PageInfo</param>
+            <param name="excludeSystem">If true, the system pages are excluded from evaluation</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RequestSecurePage(CMS.PortalEngine.PageInfo,System.Boolean,CMS.PortalEngine.ViewModeEnum,System.String)">
+            <summary>
+            Redirect to https:// if page require it
+            </summary>
+            <param name="pi">PageInfo</param>
+            <param name="excludeSystem">If true, the system pages are excluded from evaluation</param>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.RequestSecurePage(System.Boolean,System.Int32,CMS.PortalEngine.ViewModeEnum,System.String)">
+            <summary>
+            Redirect to  https:// or to http:// if page require it
+            </summary>
+            <param name="excludeSystem">If true, the system pages are excluded from evaluation</param>
+            <param name="requireSSLValue">Require SSL value</param>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewriter.SendOutputFromCache(System.String,CMS.GlobalHelper.ExcludedSystemEnum,CMS.PortalEngine.ViewModeOnDemand,CMS.SiteProvider.SiteNameOnDemand)">
+            <summary>
+            Attempts to send the output of the page from the cache.
+            </summary>
+            <param name="relativePath">Relative path</param>
+            <param name="excludedEnum">Excluded page status</param>
+            <param name="viewMode">View mode</param>
+            <param name="siteName">Site name</param>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.FixRewriteRedirect">
+            <summary>
+            If true, the URL rewriting process attempts to fix the redirect that some module did with wrong URL by another redirect with the original URL. Set true when using cookieless mode. Default is false.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.PortalTemplatePage">
+            <summary>
+            Page used as the portal template base page
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.WildcardQueryMapping">
+            <summary>
+            Gets the wildcard query mapping setting. Possible values: join replaceexisting keepexisting.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.UseRedirectForDefaultPage">
+            <summary>
+            Gets the value that indicates whether default page should be redirected to the main URL.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.RedirectLangParameterToPrefix">
+            <summary>
+            Gets the value that indicates whether url with lang prefix should be redirected to the 
+            culture prefix if culture prefix is enabled for current site
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.HandleTrailingSlashForGetFile">
+            <summary>
+            Gets the value that indictaes whether traling slash should be removed for internal processing.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.ProcessTrailingSlashForFile">
+            <summary>
+            Gets the value that indictaes whether traling slash should be processed for files.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.EncodeNodeAliasPath">
+            <summary>
+            Gets the value that indictaes whether node alias path should be encoded for RewritePath method.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.ClearOutputCacheOnPostback">
+            <summary>
+            If true, output cache is cleared on postback.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.CurrentRelativePath">
+            <summary>
+            Current page relative path. e.g. "~/Home.aspx" has relative path "/Home.aspx"
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.CurrentURL">
+            <summary>
+            Returns the current request URL.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.RawUrl">
+            <summary>
+            Current request RawUrl.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.CurrentStatus">
+            <summary>
+            Returns current request URL rewriting status.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.CurrentOutputCache">
+            <summary>
+            Current otput cache minutes.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.GetAttachmentPrefixes">
+            <summary>
+            Prefixes for the available permanent attachment URLs.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.GetFilePrefixes">
+            <summary>
+            Prefixes for the available permanent getfile URLs.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.GoogleSiteMapURL">
+            <summary>
+            Google sitemap URL.
+            </summary>
+        </member>
+        <member name="P:CMS.URLRewritingEngine.URLRewriter.UseLiveURLForEditing">
+            <summary>
+            If true, the editing and preview mode uses the same URL as the live site
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.UrlRewritingAction">
+            <summary>
+            URL rewriting action storage for caching.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.Status">
+            <summary>
+            Rewriting result.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.SetLanguage">
+            <summary>
+            Sets language.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.SetCampaign">
+            <summary>
+            Sets campaign.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.RewritePath">
+            <summary>
+            Rewriting page path.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.RewriteQuery">
+            <summary>
+            Rewriting page query.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.RebasePath">
+            <summary>
+            Rebase client path.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.RedirectURL">
+            <summary>
+            Redirection URL.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.SiteName">
+            <summary>
+            Site name.
+            </summary>
+        </member>
+        <member name="F:CMS.URLRewritingEngine.UrlRewritingAction.PermanentRedirect">
+            <summary>
+            Use permanent redirection.
+            </summary>
+        </member>
+        <member name="T:CMS.URLRewritingEngine.URLRewritingModule">
+            <summary>
+            Module registration.
+            </summary>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewritingModule.#ctor(CMS.SettingsProvider.ModuleInfo)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info">Module info</param>
+        </member>
+        <member name="M:CMS.URLRewritingEngine.URLRewritingModule.ProcessCommand(System.String,System.Object[])">
+            <summary>
+            Processes the specified command.
+            </summary>
+            <param name="commandName">Command name</param>
+            <param name="parameters">Command parameters</param>
+        </member>
+    </members>
+</doc>

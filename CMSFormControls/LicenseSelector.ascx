@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSFormControls_LicenseSelector" CodeFile="LicenseSelector.ascx.cs" %>
+<asp:CheckBoxList ID="chckLicenses" runat="server" RepeatDirection="Vertical" />

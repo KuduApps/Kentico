@@ -1,0 +1,36 @@
+﻿<forumpost_groupsannouncements version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>441</PostId>
+      <PostForumID>111</PostForumID>
+      <PostIDPath>/00000441</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Welcome to the Groups forum</PostSubject>
+      <PostUserID>350</PostUserID>
+      <PostUserName>Jenny</PostUserName>
+      <PostUserMail>jane.oakley@localhost.local</PostUserMail>
+      <PostText>Hello,
+welcome to the Back-packer forums. If you are one of those who like travelling in spite of being on a tight budget, this is the right place for you. Not only students, but also others who like the romantic feeling of travelling with everything you need packed in one piece of luggage on your back, being abed at hostels, hitch-hiking, etc. are more that welcome to join the discussion.</PostText>
+      <PostTime>2008-10-25T17:51:40.913+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostThreadLastPostUserName>Jenny</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-10-25T17:51:40.913+02:00</PostThreadLastPostTime>
+      <PostUserSignature>+ + J3nny + +</PostUserSignature>
+      <PostGUID>696c691d-6898-4da6-b772-9681afa0509a</PostGUID>
+      <PostLastModified>2010-09-23T16:07:37.65+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostIsAnswer>0</PostIsAnswer>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>37</PostViews>
+      <PostLastEdit>2009-01-07T12:04:42.397+01:00</PostLastEdit>
+      <PostInfo>&lt;info&gt;&lt;ip&gt;192.168.3.99&lt;/ip&gt;&lt;agent&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3&lt;/agent&gt;&lt;/info&gt;</PostInfo>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Jenny</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-10-25T17:51:40.913+02:00</PostThreadLastPostTimeAbsolute>
+      <PostQuestionSolved>false</PostQuestionSolved>
+      <PostIsNotAnswer>0</PostIsNotAnswer>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_groupsannouncements>

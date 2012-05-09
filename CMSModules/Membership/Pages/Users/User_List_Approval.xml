@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="UserID">
+    <action name="approve" caption="$General.Approve$" icon="Approve.png" />
+    <action name="reject" caption="$General.Reject$" icon="Reject.png" onclick="OpenReject({0}); return false;" />
+  </actions>
+  <columns>
+    <column source="UserName" externalsourcename="formattedusername" caption="$general.username$" wrap="false">
+    </column>
+    <column source="FullName" caption="$general.fullname$" wrap="false">
+    </column>
+    <column source="Email" caption="$Unigrid.UserList.Columns.Email$" wrap="false">
+    </column>
+    <column source="UserNickName" caption="$Unigrid.UserList.Columns.UserNickName$" wrap="false">
+    </column>
+    <column source="UserCreated" caption="$Unigrid.UserList.Columns.UserCreated$" wrap="false">
+    </column>
+    <column source="UserEnabled" externalsourcename="UserEnabled" caption="$general.enabled$" wrap="false">
+    </column>
+  </columns>
+  <objecttype name="cms.userlist" />
+  <options>
+    <key name="ShowSelection" value="true" />
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

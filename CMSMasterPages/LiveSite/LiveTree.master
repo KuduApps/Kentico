@@ -1,0 +1,35 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="CMSMasterPages_LiveSite_LiveTree" CodeFile="LiveTree.master.cs" %>
+
+<%@ Register Src="~/CMSAdminControls/UI/PageElements/FrameResizer.ascx" TagName="FrameResizer" TagPrefix="cms" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" enableviewstate="false">
+    <title>LeftTreeMenuMasterPage</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="TreeBody <%=mBodyClass%>">
+    <form id="form1" runat="server">
+    <asp:PlaceHolder runat="server" ID="plcManager" />    
+    <cms:FrameResizer ID="frmResizer" runat="server" MinSize="6,*" FramesetName="colsFrameset" />
+    <asp:ContentPlaceholder ID="plcMenu" runat="server" />
+    <asp:Panel runat="server" ID="pnlBody" CssClass="ContentTree">
+        <asp:Panel runat="server" ID="pnlBorder" CssClass="TreeBorder" EnableViewState="false">
+            &nbsp;
+        </asp:Panel>
+        <div class="TreeArea">
+            <asp:PlaceHolder runat="server" ID="plcStatus" EnableViewState="false" />
+            <div class="TreeAreaTree">
+                <asp:ContentPlaceholder ID="plcTree" runat="server" />
+            </div>
+        </div>
+    </asp:Panel>
+    </form>
+</body>
+</html>

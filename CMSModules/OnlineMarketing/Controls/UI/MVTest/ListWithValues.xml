@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="MVTestID">
+    <action name="edit" caption="$general.edit$" icon="edit.png" onclick="if (window.EditMvtest) {window.EditMvtest({0}); return false;}" />
+    <action name="delete" caption="$general.delete$" icon="delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="MVTestDisplayName" caption="$mvtest.testName$" wrap="false" width="100%">
+      <filter type="text" size="100" />
+    </column>
+    <column source="MVTestPage" caption="$mvtest.testPage$" wrap="false">
+      <filter type="text" size="450" />
+    </column>
+    <column source="MVTestConversions" caption="$mvtest.testConversions$" wrap="false" />
+    <column source="HitsValue" caption="$mvtest.totalconversionvalue$" wrap="false" />
+    <column source="MVTestOpenFrom" caption="$mvtest.testStart$" wrap="false" />
+    <column source="MVTestOpenTo" caption="$mvtest.testEnd$" wrap="false" />
+    <column source="MVTestCulture" caption="$mvtest.testCulture$" wrap="false" />
+    <column source="MVTestID" caption="$mvtest.status$" wrap="false" externalsourcename="MVTestStatus"  />
+  </columns>
+  <objecttype name="om.mvtestlist" columns="MVTestDisplayName,MVTestID,MVTestCulture,MVTestPage,MVTestOpenFrom,MVTestOpenTo,MVTestEnabled,MVTestConversions,MVTestSiteID,HitsValue" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

@@ -1,0 +1,367 @@
+﻿.LineErrorLabel
+{
+	color: #ff0000;
+	text-align: left;
+}
+
+.ShoppingCartMiniPreviewArea Table
+{
+	margin-left:auto;
+}
+
+/* Overall */
+.HiddenButton
+{
+	display: none;
+}
+.ContentButton
+{
+	width: 100px;
+}
+
+.ErrorLabel
+{
+	color: #ff0000;
+	display: block;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.DropDownField
+{
+	width: 285px;
+}
+
+.TextboxField, .TextBoxField
+{
+	width: 280px;
+}
+
+.TextLeft
+{
+	text-align: left !important;
+}
+
+.RTL .TextLeft
+{
+	text-align: right !important;
+}
+
+.TextRight
+{
+	text-align: right !important;
+}
+
+.RTL .TextRight
+{
+	text-align: left !important;
+}
+
+/* Addresses */
+.BlockContent
+{
+	padding: 5px;
+}
+
+.BlockTitle
+{
+	font-size: 13px;
+	font-weight: bold;
+	display:block;
+}
+
+
+/* Shopping cart */
+.AddressPreview
+{
+	padding: 0px 5px 5px 5px;	
+	height: 100%;
+}
+
+.AddressPreviewLabel
+{
+	color: #000000;
+	display: block;
+}
+
+.DiscountCouponPanel
+{
+	float:left;
+}
+
+.PricePanel
+{
+	float:right;
+}
+
+.CartStepInnerPanel
+{
+	margin: 10px;
+}
+
+.CartStepPanel
+{
+	padding-bottom:10px;
+}
+
+.CartStepPanel  fieldset
+{
+	border: 1px solid #000;
+	background-color: #F2F2F2;
+}
+
+.CartStepPanel legend
+{
+	/*background-color: #000;*/
+	margin-right: 4px;
+	color: #E36C26;	
+	padding: 5px;	
+	font-weight: bold;
+	font-family:Arial;
+	font-size: 12px;
+}
+
+.AddressTitle
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.SmallTextLabel
+{
+	font-size: 10px;
+}
+
+.ShoppingCartIcon
+{
+    vertical-align: middle;
+}
+
+.UnitsTextBox
+{
+	width: 50px;
+}
+
+.ButtonSendPassword
+{
+	width: 115px;
+}
+
+.LongButton
+{
+	width: 160px;
+}
+
+.ItemsNotAvailable
+{
+	color: Red;
+}
+
+.InvoiceCompanyAddressTitle
+{
+	display:block;
+	font-weight: bold;
+}
+
+.PaymentGatewayDataContainer
+{	
+}
+
+.PaymentFormSeparator
+{
+	height: 10px;	
+}
+
+.InfoLabel
+{
+	color: #000000;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.AddressPreviewWithTwoColumns td
+{
+	width: 46%;
+}
+
+.AddressPreviewWithThreeColumns td
+{
+	width: 29%;
+}
+
+/* Prodcut price detail */
+
+.PriceDetailSummaryTable
+{
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	color: #000000;
+	width: 100%;	
+}
+
+.PriceDetailSummaryTable th
+{
+	border: 1px solid #000000;
+	border-collapse: collapse;	
+	background-color: #d8d8d8;
+	font-weight: bold;		
+}
+
+.PriceDetailSummaryTable td
+{
+	border: 1px solid #000000;
+	border-collapse: collapse;	
+}
+
+.PriceDetailSubtotalTable
+{
+	border: 1px solid #000000;	
+	border-collapse: collapse;
+	width:100%;	
+	margin-bottom: 20px;	
+}
+
+.IE6 .PriceDetailSubtotalTable, .IE7 .PriceDetailSubtotalTable
+{
+	margin-top: -1px; /* only in Internet Explorer */	
+}
+
+.PriceDetailSubtotalTable tr
+{
+	border: 1px solid #000000;	
+	border-collapse: collapse;
+}
+.PriceDetailSubtotalTable td
+{
+	border-top: 1px solid #000000;	
+	border-collapse: collapse;
+}
+
+.PriceDetailSubtotalTable th
+{
+	background-color: #d8d8d8;
+	font-weight: bold;	
+}
+
+.PriceDetailSubtotal
+{
+	background-color:#fde9d9;
+	color: #000000;
+}
+
+.PriceDetailHeader td
+{
+	background-color: #333333;
+	color:#ffffff;	
+	font-weight: bold;	
+}
+
+.ProductPriceDetailTitle
+{
+	font-weight:bold;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-bottom: 1px solid #000000;
+}
+
+.ProductPriceDetailLink a, .ProductPriceDetailLink a selected
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* Shopping cart */
+
+.CartStepTable
+{
+	border: 1px solid #000000;
+}
+
+.CartStepTable th
+{
+	background-color: #333333;
+	color: #ffffff;	
+	font-family:Arial;
+	font-size: 11px;
+}
+
+.CartStepHeader
+{
+	background-color: #333333;
+	color: #ffffff;	
+	padding: 5px;	
+	font-weight: bold;
+	font-family:Arial;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.CartStepBody
+{
+	background-color: #f2f2f2;	
+}
+
+.CartContentTable
+{
+	width:100%;
+}
+
+.CartContentTable td
+{
+	border: 1px solid #dddddd;		
+	background-color: #ffffff;
+	padding: 4px;
+}
+
+.CartContentTable th
+{
+	border: 1px solid #dddddd;	
+	font-family:Arial;
+	font-size: 11px;	
+}
+
+.ShoppingCartStepImage
+{
+    border: none;
+	margin-top: 10px;
+	padding:0px;
+	vertical-align: middle;
+}
+
+.ShoppingCartStepSeparator
+{
+    border: none;
+    margin-top: 10px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+
+/* Shopping cart item selector */
+
+.AddToShoppingCartTextBox
+{
+	width:25px;
+}
+
+
+.AddToShoppingCartLink
+{
+	background-image: url('Images/ShoppingCart/AddToCart.gif');
+	background-position: left -2px;
+	background-repeat: no-repeat;
+	padding-left: 18px;	
+	color: #000000;
+	text-decoration: underline;
+}
+
+.AddToShoppingCartButton
+{
+	width:80px;
+}
+
+.AddToShoppingCartImageButton
+{	
+}

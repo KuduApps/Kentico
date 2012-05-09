@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="WebPartLayoutID">
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" onclick="EditLayout({0}); return false;" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="WebPartLayoutDisplayName" caption="$general.name$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="cms.WebPartLayout" columns="WebPartLayoutID, WebPartLayoutDisplayName" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

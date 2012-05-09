@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions parameters="ReportID" width="90px" >
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$abuse.delete.confirmation$" />
+    <action name="solve" caption="$abuse.marksolve$" icon="Approve.png" />
+    <action name="reject" caption="$general.markreject$" icon="Reject.png" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="title" sort="ReportTitle"  caption="$general.title$" wrap="false" >
+      <tooltip source="ReportComment" />
+    </column>
+    <column source="ReportWhen" caption="$abuse.when$" wrap="false" width="160px" />
+    <column source="ReportStatus" externalsourcename="status"  caption="$abuse.status$" wrap="false" width="60px" />
+  </columns>
+  <objecttype name="CMS.AbuseReport" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

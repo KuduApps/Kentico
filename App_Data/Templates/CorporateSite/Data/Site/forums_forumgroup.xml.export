@@ -1,0 +1,50 @@
+﻿<forums_forumgroup version="6.0">
+  <NewDataSet>
+    <forums_forumgroup>
+      <GroupID>635</GroupID>
+      <GroupSiteID>110</GroupSiteID>
+      <GroupName>AdHocForumGroup</GroupName>
+      <GroupDisplayName>AdHoc forum group</GroupDisplayName>
+      <GroupOrder>1</GroupOrder>
+      <GroupDescription></GroupDescription>
+      <GroupGUID>93f90871-427f-482e-9991-5f59bd15cdc2</GroupGUID>
+      <GroupLastModified>2011-09-09T17:15:20.053+02:00</GroupLastModified>
+      <GroupBaseUrl></GroupBaseUrl>
+      <GroupUnsubscriptionUrl></GroupUnsubscriptionUrl>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>0</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+    <forums_forumgroup>
+      <GroupID>623</GroupID>
+      <GroupSiteID>110</GroupSiteID>
+      <GroupName>SiteForums</GroupName>
+      <GroupDisplayName>Site forums</GroupDisplayName>
+      <GroupOrder>2</GroupOrder>
+      <GroupDescription>Site forums</GroupDescription>
+      <GroupGUID>b523ccd3-acf7-4da0-80c1-7869e41fa7df</GroupGUID>
+      <GroupLastModified>2011-09-09T17:15:53.383+02:00</GroupLastModified>
+      <GroupAuthorEdit>false</GroupAuthorEdit>
+      <GroupAuthorDelete>false</GroupAuthorDelete>
+      <GroupType>1</GroupType>
+      <GroupIsAnswerLimit>5</GroupIsAnswerLimit>
+      <GroupImageMaxSideSize>400</GroupImageMaxSideSize>
+      <GroupDisplayEmails>false</GroupDisplayEmails>
+      <GroupRequireEmail>false</GroupRequireEmail>
+      <GroupHTMLEditor>false</GroupHTMLEditor>
+      <GroupUseCAPTCHA>false</GroupUseCAPTCHA>
+      <GroupAttachmentMaxFileSize>0</GroupAttachmentMaxFileSize>
+      <GroupDiscussionActions>4</GroupDiscussionActions>
+      <GroupLogActivity>true</GroupLogActivity>
+    </forums_forumgroup>
+  </NewDataSet>
+</forums_forumgroup>

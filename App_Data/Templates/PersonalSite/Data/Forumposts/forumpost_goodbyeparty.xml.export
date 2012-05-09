@@ -1,0 +1,135 @@
+﻿<forumpost_goodbyeparty version="6.0">
+  <NewDataSet>
+    <forums_forumpost>
+      <PostId>42</PostId>
+      <PostForumID>16</PostForumID>
+      <PostIDPath>/00000042</PostIDPath>
+      <PostLevel>0</PostLevel>
+      <PostSubject>Throwing a goodbye party</PostSubject>
+      <PostUserID>68</PostUserID>
+      <PostUserName>Abi</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Together with PJ, we're leaving next week for Europe. Therefore, we're having a goodbye party this Sunday. Any suggestion where should it be?</PostText>
+      <PostTime>2008-05-26T10:43:12.703+02:00</PostTime>
+      <PostThreadPosts>6</PostThreadPosts>
+      <PostThreadLastPostUserName>Abi</PostThreadLastPostUserName>
+      <PostThreadLastPostTime>2008-05-28T15:57:25.69+02:00</PostThreadLastPostTime>
+      <PostUserSignature>-= A B 1 =-</PostUserSignature>
+      <PostGUID>e650be74-aa06-406e-9c2f-9441cb9b644f</PostGUID>
+      <PostLastModified>2008-05-26T10:43:12.703+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostViews>46</PostViews>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>6</PostThreadPostsAbsolute>
+      <PostThreadLastPostUserNameAbsolute>Abi</PostThreadLastPostUserNameAbsolute>
+      <PostThreadLastPostTimeAbsolute>2008-05-28T15:57:25.69+02:00</PostThreadLastPostTimeAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>43</PostId>
+      <PostForumID>16</PostForumID>
+      <PostParentID>42</PostParentID>
+      <PostIDPath>/00000042/00000043</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Throwing a goodbye party</PostSubject>
+      <PostUserName>Kate</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>How about your place, Abi? It's shame we didn't have any pool party in a while. </PostText>
+      <PostTime>2008-05-27T12:45:54.113+02:00</PostTime>
+      <PostThreadPosts>1</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>204ecc18-8e98-4d0c-a17d-32b91849769d</PostGUID>
+      <PostLastModified>2008-05-27T12:45:54.113+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>1</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>44</PostId>
+      <PostForumID>16</PostForumID>
+      <PostParentID>42</PostParentID>
+      <PostIDPath>/00000042/00000044</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Throwing a goodbye party</PostSubject>
+      <PostUserName>Josh</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>I think virtually any place on the 4th Avenue should do it.</PostText>
+      <PostTime>2008-05-28T13:49:21.547+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>9c86e2f4-9c76-4e25-93de-9140615c32d8</PostGUID>
+      <PostLastModified>2008-05-28T13:49:21.547+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>45</PostId>
+      <PostForumID>16</PostForumID>
+      <PostParentID>42</PostParentID>
+      <PostIDPath>/00000042/00000045</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Throwing a goodbye party</PostSubject>
+      <PostUserName>Ivy</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>How about Melonnie's? They have great coctails.</PostText>
+      <PostTime>2008-05-28T13:56:38.127+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>44471e24-c29d-4bdf-842f-396bd102d0ef</PostGUID>
+      <PostLastModified>2008-05-28T13:56:38.127+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>46</PostId>
+      <PostForumID>16</PostForumID>
+      <PostParentID>42</PostParentID>
+      <PostIDPath>/00000042/00000046</PostIDPath>
+      <PostLevel>1</PostLevel>
+      <PostSubject>RE:Throwing a goodbye party</PostSubject>
+      <PostUserName>Abi</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Mellonie's sounds nice. Let's do it there, then.</PostText>
+      <PostTime>2008-05-28T15:57:25.69+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>4ebb615f-b7e8-47f2-99bf-1ab4f0c9b6ff</PostGUID>
+      <PostLastModified>2008-05-28T15:57:25.69+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+    <forums_forumpost>
+      <PostId>47</PostId>
+      <PostForumID>16</PostForumID>
+      <PostParentID>43</PostParentID>
+      <PostIDPath>/00000042/00000043/00000047</PostIDPath>
+      <PostLevel>2</PostLevel>
+      <PostSubject>RE:Throwing a goodbye party</PostSubject>
+      <PostUserName>Abi</PostUserName>
+      <PostUserMail></PostUserMail>
+      <PostText>Hey, my grandparents are visiting this weekend. And I'm kind of concern it might be little to much for them. I'd rather meet somewhere downtown.</PostText>
+      <PostTime>2008-05-27T14:48:32.173+02:00</PostTime>
+      <PostThreadPosts>0</PostThreadPosts>
+      <PostUserSignature></PostUserSignature>
+      <PostGUID>12ff217e-ec83-4439-8698-dc4c74bd326d</PostGUID>
+      <PostLastModified>2008-05-27T14:48:32.173+02:00</PostLastModified>
+      <PostApproved>true</PostApproved>
+      <PostStickOrder>0</PostStickOrder>
+      <PostAttachmentCount>0</PostAttachmentCount>
+      <PostType>0</PostType>
+      <PostThreadPostsAbsolute>0</PostThreadPostsAbsolute>
+    </forums_forumpost>
+  </NewDataSet>
+</forumpost_goodbyeparty>

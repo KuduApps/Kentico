@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" externalsourcename="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$general.confirmdelete$" />
+  </actions>
+  <columns>
+    <column source="ShippingCostMinWeight" externalsourcename="ShippingCostMinWeight" caption="$com.ui.shippingcost.edit_minweight$" wrap="false">
+      <filter type="text" />
+    </column>
+    <column source="ShippingCostValue" externalsourcename="ShippingCostValue" caption="$com.ui.shippingcost.edit_cost$" wrap="false" />
+    <column width="100%" />
+  </columns>
+  <objecttype name="ecommerce.shippingcost" columns="ShippingCostID, ShippingCostMinWeight, ShippingCostValue" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

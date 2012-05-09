@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+    <action name="execute" caption="$Unigrid.Task.Actions.Execute$" icon="Run.png" />
+    <action name="useexternalservice" externalsourcename="useexternalservice" caption="$scheduledtask.useservicewarning$" icon="Warning.png" />
+  </actions>
+  <columns>
+    <column source="TaskDisplayName" caption="$Unigrid.Task.Columns.TaskName$" wrap="false" localize="true" />
+    <column source="TaskLastRunTime" caption="$Unigrid.Task.Columns.TaskLastRunTime$" wrap="false" />
+    <column source="TaskNextRunTime" caption="$Unigrid.Task.Columns.TaskNextRunTime$" wrap="false" />
+    <column source="TaskLastResult" caption="$Unigrid.Task.Columns.TaskLastResult$" istext="true" width="100%" />
+    <column source="TaskServerName" caption="$Unigrid.Task.Columns.TaskServerName$" wrap="false" />
+    <column source="TaskExecutions" externalsourcename="taskexecutions" caption="$Unigrid.Task.Columns.TaskExecutions$" wrap="false" />
+  </columns>
+  <objecttype name="cms.ScheduledTask" Columns="TaskID, TaskDisplayName, TaskLastRunTime, TaskNextRunTime, TaskLastResult, TaskServerNasme, TaskExecutions, TaskUseExternalService, TaskEnabled, TaskInterval" />
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

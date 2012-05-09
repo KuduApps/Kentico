@@ -1,0 +1,39 @@
+﻿<om_abtest version="6.0">
+  <NewDataSet>
+    <om_abtest>
+      <ABTestID>361</ABTestID>
+      <ABTestName>SampleABTest</ABTestName>
+      <ABTestDescription>This is a sample ab test</ABTestDescription>
+      <ABTestOriginalPage>/Examples/On-line-marketing/Optimization/A-B-test</ABTestOriginalPage>
+      <ABTestEnabled>false</ABTestEnabled>
+      <ABTestSiteID>110</ABTestSiteID>
+      <ABTestMaxConversions>0</ABTestMaxConversions>
+      <ABTestGUID>65ad383a-e42d-4c9a-b098-378250c71ae5</ABTestGUID>
+      <ABTestLastModified>2011-08-31T15:32:10.063+02:00</ABTestLastModified>
+      <ABTestTargetConversionType>Total</ABTestTargetConversionType>
+      <ABTestDisplayName>Sample AB Test</ABTestDisplayName>
+    </om_abtest>
+    <om_abvariant>
+      <ABVariantID>320</ABVariantID>
+      <ABVariantDisplayName>Sample AB Test variant</ABVariantDisplayName>
+      <ABVariantName>SampleABTest</ABVariantName>
+      <ABVariantTestID>361</ABVariantTestID>
+      <ABVariantPath>/Examples/On-line-marketing/Optimization/A-B-test</ABVariantPath>
+      <ABVariantConversions>0</ABVariantConversions>
+      <ABVariantGUID>0dbade73-c115-4500-9ff9-1db5a65a57f7</ABVariantGUID>
+      <ABVariantLastModified>2011-08-31T15:32:10.127+02:00</ABVariantLastModified>
+      <ABVariantSiteID>110</ABVariantSiteID>
+    </om_abvariant>
+    <om_abvariant>
+      <ABVariantID>321</ABVariantID>
+      <ABVariantDisplayName>AB Test Variant Page</ABVariantDisplayName>
+      <ABVariantName>AB_Test_Variant_Page</ABVariantName>
+      <ABVariantTestID>361</ABVariantTestID>
+      <ABVariantPath>/Examples/On-line-marketing/Optimization/A-B-test/AB-Test-Variant-Page</ABVariantPath>
+      <ABVariantConversions>0</ABVariantConversions>
+      <ABVariantGUID>248d068d-9beb-474b-8d2c-3914e10c8bb3</ABVariantGUID>
+      <ABVariantLastModified>2011-08-31T15:34:02.187+02:00</ABVariantLastModified>
+      <ABVariantSiteID>110</ABVariantSiteID>
+    </om_abvariant>
+  </NewDataSet>
+</om_abtest>

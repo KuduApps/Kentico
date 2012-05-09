@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="select" externalsourcename="select" caption="$dialogs.list.actions.select$" icon="next.png" />
+    <action name="selectsubdocs" externalsourcename="selectsubdocs" caption="$dialogs.list.actions.showsubdocuments$" icon="subdocument.png" />
+    <action name="view" externalsourcename="view" caption="$dialogs.list.actions.view$" icon="View.png" />
+    <action name="edit" externalsourcename="edit" caption="$General.Edit$" icon="Edit.png" />
+  </actions>
+  <columns>
+    <column source="##ALL##" externalsourcename="webdavedit" caption="$general.update$" wrap="false" style="text-align: center;" columnname="webdav" />
+    <column source="##ALL##" externalsourcename="name" caption="$general.name$" width="100%" wrap="false" sort="DocumentName" />
+    <column source="##ALL##" externalsourcename="type" caption="$general.type$" wrap="false" sort="ClassDisplayName" />
+    <column source="##ALL##" externalsourcename="size" caption="$general.size$" wrap="false"  sort="AttachmentSize" />
+    <column source="DocumentModifiedWhen" externalsourcename="documentmodifiedwhen" caption="$general.modified$" wrap="false">
+      <tooltip source="DocumentModifiedWhen" externalsourcename="documentmodifiedwhentooltip" />
+    </column>
+  </columns>
+  <pager>
+    <key name="ShowFirstLastButtons" value="false" />
+    <key name="ShowDirectPageControl" value="false" />
+    <key name="DefaultPageSize" value="10" />
+    <key name="PageSizeOptions" value="10,25,50,100,##ALL##" />
+  </pager>
+  <options>
+    <key name="DisplayFilter" value="false" />
+  </options>
+</grid>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="edit" caption="$General.Edit$" icon="Edit.png" />
+    <action name="delete" caption="$General.Delete$" icon="Delete.png" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <columns>
+    <column source="ExchangeTableDisplayName" caption="$general.name$" wrap="false" localize="true">
+      <filter type="text" />
+    </column>
+    <column source="ExchangeTableValidFrom" caption="$Unigrid.ExchangeTable.Columns.ExchangeTableValidFrom$" wrap="false">
+    </column>
+    <column source="ExchangeTableValidTo" caption="$Unigrid.ExchangeTable.Columns.ExchangeTableValidTo$" wrap="false">
+    </column>
+    <column width="100%"></column>
+  </columns>
+  <objecttype name="ecommerce.exchangetable" />
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>

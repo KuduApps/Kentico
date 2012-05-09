@@ -1,0 +1,17 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>53</SiteID>
+      <SiteName>CommunitySite</SiteName>
+      <SiteDisplayName>Community site</SiteDisplayName>
+      <SiteDescription>Community starter site</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.7</SiteDomainName>
+      <SiteDefaultStylesheetID>14</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteDefaultEditorStylesheet>14</SiteDefaultEditorStylesheet>
+      <SiteGUID>7dcda044-a517-4bdc-9902-9dc7c0823cce</SiteGUID>
+      <SiteLastModified>2010-10-13T11:16:58.05+02:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

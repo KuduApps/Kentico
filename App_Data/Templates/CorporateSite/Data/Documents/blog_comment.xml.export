@@ -1,0 +1,56 @@
+﻿<blog_comment version="6.0">
+  <NewDataSet>
+    <blog_comment>
+      <CommentID>622</CommentID>
+      <CommentUserName>Andrew Jones</CommentUserName>
+      <CommentUserID>649</CommentUserID>
+      <CommentUrl></CommentUrl>
+      <CommentText>Hello Paul, yes, I strongly recommend giving it a try. If you already have experience with Kentico CMS, it will be a piece of cake for you to set it up. It has loads of Intranet-specific features out of the box. And with the endless customization possibilities the CMS provides, any functionality that you can imagine is achievable.</CommentText>
+      <CommentApprovedByUserID>1030</CommentApprovedByUserID>
+      <CommentPostDocumentID>46415</CommentPostDocumentID>
+      <CommentDate>2011-06-29T21:04:40.893+02:00</CommentDate>
+      <CommentIsSpam>false</CommentIsSpam>
+      <CommentApproved>true</CommentApproved>
+      <CommentIsTrackBack>false</CommentIsTrackBack>
+      <CommentEmail>andy@localhost.local</CommentEmail>
+    </blog_comment>
+    <blog_comment>
+      <CommentID>621</CommentID>
+      <CommentUserName>Paul Woods</CommentUserName>
+      <CommentUrl></CommentUrl>
+      <CommentText>Hi Andrew, great to know about the Intranet Solution by Kentico. I knew they were producing a brilliant CMS, but I didn't realize it could be used for intranet purposes. I'll definitely try it out and see if it suits our purposes. We are planning to update our intranet soon as the one we've got now is just terrible and not sufficient anymore.</CommentText>
+      <CommentPostDocumentID>46415</CommentPostDocumentID>
+      <CommentDate>2011-06-29T21:04:08.493+02:00</CommentDate>
+      <CommentIsSpam>false</CommentIsSpam>
+      <CommentApproved>true</CommentApproved>
+      <CommentIsTrackBack>false</CommentIsTrackBack>
+      <CommentEmail>paul.woods@localhost.local</CommentEmail>
+    </blog_comment>
+    <blog_comment>
+      <CommentID>623</CommentID>
+      <CommentUserName>Jonathan Walker</CommentUserName>
+      <CommentUrl></CommentUrl>
+      <CommentText>Hi Andrew, let's leave work aside for a while. I'm curious about how you liked London as a city in general. Did you go sightseeing and stuff, or did you just spend all time busy in the office?</CommentText>
+      <CommentPostDocumentID>46388</CommentPostDocumentID>
+      <CommentDate>2011-06-29T21:06:41.267+02:00</CommentDate>
+      <CommentIsSpam>false</CommentIsSpam>
+      <CommentApproved>true</CommentApproved>
+      <CommentIsTrackBack>false</CommentIsTrackBack>
+      <CommentEmail>jonathan.walker@localhost.local</CommentEmail>
+    </blog_comment>
+    <blog_comment>
+      <CommentID>624</CommentID>
+      <CommentUserName>Andrew Jones</CommentUserName>
+      <CommentUserID>649</CommentUserID>
+      <CommentUrl></CommentUrl>
+      <CommentText>Hi Jonathan, I really enjoyed my stay in London. Even though I spent most of the time in the office, I found some time to explore the city and I really loved it. There is so much history everywhere around, buildings that are hundreds of years old, something that you don't come across in NY. The magnificent atmosphere must enthrall anyone who visits the city.</CommentText>
+      <CommentApprovedByUserID>1030</CommentApprovedByUserID>
+      <CommentPostDocumentID>46388</CommentPostDocumentID>
+      <CommentDate>2011-06-29T21:09:40.39+02:00</CommentDate>
+      <CommentIsSpam>false</CommentIsSpam>
+      <CommentApproved>true</CommentApproved>
+      <CommentIsTrackBack>false</CommentIsTrackBack>
+      <CommentEmail>andy@localhost.local</CommentEmail>
+    </blog_comment>
+  </NewDataSet>
+</blog_comment>

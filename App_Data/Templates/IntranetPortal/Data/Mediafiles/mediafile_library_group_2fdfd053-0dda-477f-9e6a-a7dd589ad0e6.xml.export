@@ -1,0 +1,44 @@
+﻿<mediafile_library_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6 version="6.0">
+  <NewDataSet>
+    <media_file>
+      <FileID>79961</FileID>
+      <FileName>msoffice</FileName>
+      <FileTitle>msoffice</FileTitle>
+      <FileDescription></FileDescription>
+      <FileExtension>.jpg</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>Microsoft Office graphics/msoffice.jpg</FilePath>
+      <FileSize>13335</FileSize>
+      <FileImageWidth>178</FileImageWidth>
+      <FileImageHeight>178</FileImageHeight>
+      <FileGUID>e073df16-bcf0-4059-bfe4-7748f947571e</FileGUID>
+      <FileLibraryID>409</FileLibraryID>
+      <FileSiteID>107</FileSiteID>
+      <FileCreatedByUserID>65</FileCreatedByUserID>
+      <FileCreatedWhen>2011-01-13T19:36:01.873+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>1030</FileModifiedByUserID>
+      <FileModifiedWhen>2010-11-09T14:31:32.173+01:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+    <media_file>
+      <FileID>79962</FileID>
+      <FileName>msoffice_col</FileName>
+      <FileTitle>msoffice_col</FileTitle>
+      <FileDescription></FileDescription>
+      <FileExtension>.jpg</FileExtension>
+      <FileMimeType>image/jpeg</FileMimeType>
+      <FilePath>Microsoft Office graphics/msoffice_col.jpg</FilePath>
+      <FileSize>14493</FileSize>
+      <FileImageWidth>178</FileImageWidth>
+      <FileImageHeight>178</FileImageHeight>
+      <FileGUID>dfd2597a-1009-4e3b-ad87-21d84257a9e5</FileGUID>
+      <FileLibraryID>409</FileLibraryID>
+      <FileSiteID>107</FileSiteID>
+      <FileCreatedByUserID>65</FileCreatedByUserID>
+      <FileCreatedWhen>2011-01-13T19:36:02.677+01:00</FileCreatedWhen>
+      <FileModifiedByUserID>1030</FileModifiedByUserID>
+      <FileModifiedWhen>2010-11-09T14:31:25.31+01:00</FileModifiedWhen>
+      <FileCustomData></FileCustomData>
+    </media_file>
+  </NewDataSet>
+</mediafile_library_group_2fdfd053-0dda-477f-9e6a-a7dd589ad0e6>

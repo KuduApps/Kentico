@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_CommunityServices_Facebook_FacebookLikeBox" CodeFile="~/CMSWebParts/CommunityServices/Facebook/FacebookLikeBox.ascx.cs" %>
+<asp:Literal runat="server" ID="ltlLikeBox" EnableViewState="false" />

@@ -1,0 +1,22 @@
+﻿<newsletter_newsletter version="6.0">
+  <NewDataSet>
+    <newsletter_newsletter>
+      <NewsletterID>4</NewsletterID>
+      <NewsletterDisplayName>Newsletter info</NewsletterDisplayName>
+      <NewsletterName>NewsletterInfo</NewsletterName>
+      <NewsletterType>T</NewsletterType>
+      <NewsletterSubscriptionTemplateID>10</NewsletterSubscriptionTemplateID>
+      <NewsletterUnsubscriptionTemplateID>11</NewsletterUnsubscriptionTemplateID>
+      <NewsletterSenderName>Administrator</NewsletterSenderName>
+      <NewsletterSenderEmail>admin@yourdomain.com</NewsletterSenderEmail>
+      <NewsletterTemplateID>12</NewsletterTemplateID>
+      <NewsletterSiteID>5</NewsletterSiteID>
+      <NewsletterGUID>96a7f333-47e3-4a57-945b-ce4f99909603</NewsletterGUID>
+      <NewsletterUnsubscribeUrl>~/SpecialPages/Unsubscribe.aspx</NewsletterUnsubscribeUrl>
+      <NewsletterBaseUrl></NewsletterBaseUrl>
+      <NewsletterLastModified>2008-04-10T14:02:50.143+02:00</NewsletterLastModified>
+      <NewsletterOptInTemplateID>0</NewsletterOptInTemplateID>
+      <NewsletterLogActivity>true</NewsletterLogActivity>
+    </newsletter_newsletter>
+  </NewDataSet>
+</newsletter_newsletter>

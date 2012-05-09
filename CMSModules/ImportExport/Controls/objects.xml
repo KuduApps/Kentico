@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root expand="true" group="##OBJECTS##" active="true">
+	<node group="##SITE##" site="true" expand="true" main="true">
+		<node objectType="cms.document" />
+		<node group="##TOOLS##">
+      <node objectType="cms.form" />
+      <node group="##FORUMS##" module="CMS.Forums">
+        <node objectType="forums.forumgroup" />
+        <node objectType="forums.forum" />
+      </node>
+      <node objectType="community.group" module="CMS.Community" />
+      <node objectType="media.library" module="CMS.MediaLibrary" />
+      <node objectType="board.board" module="CMS.MessageBoards" />
+      <node group="##NEWSLETTER##" module="CMS.Newsletter">
+				<node objectType="newsletter.newsletter" />
+				<node objectType="newsletter.issue" />
+        <node group="##SUBSCRIBERS##">
+          <node objectType="newsletter.subscriber" />
+          <node objectType="newsletter.usersubscriber" />
+          <node objectType="newsletter.rolesubscriber" />
+        </node>
+        <node objectType="newsletter.emailtemplate" />
+			</node>
+      <node objectType="polls.poll" module="CMS.Polls" />
+      <node group="##PROJECTMANAGEMENT##" module="CMS.ProjectManagement">
+        <node objectType="pm.project" />
+      </node>
+      <node objectType="staging.server" module="CMS.Staging" />
+    </node>
+		<node group="##ADMINISTRATION##">
+      <node objectType="cms.bannedip" />
+      <node objectType="cms.category" />
+      <node objectType="cms.emailtemplate" />
+      <node objectType="cms.membership" />
+      <node objectType="cms.role" />
+      <node objectType="cms.scheduledtask" />      
+    </node>
+		<node objectType="cms.settingskey" />
+		<node group="##DEVELOPMENT##">
+			<node group="##NOTIFICATION##" module="CMS.Notifications">
+				<node objectType="notification.template" />
+			</node>
+			<node objectType="cms.pagetemplate" />
+			<node objectType="cms.taggroup" />
+		</node>
+		<node group="##ECOMMERCE##" module="CMS.Ecommerce">
+      <node objectType="ecommerce.currency" />
+      <node objectType="ecommerce.customer" />
+      <node objectType="ecommerce.department" />
+      <node objectType="ecommerce.discountcoupon" />
+      <node objectType="ecommerce.discountlevel" />
+      <node objectType="ecommerce.exchangetable" />
+      <node objectType="ecommerce.internalstatus" />
+      <node objectType="ecommerce.manufacturer" />
+      <node objectType="ecommerce.optioncategory" />
+      <node objectType="ecommerce.order" />
+      <node objectType="ecommerce.orderstatus" />
+      <node objectType="ecommerce.paymentoption" />
+      <node objectType="ecommerce.publicstatus" />
+      <node objectType="ecommerce.shippingoption" />
+      <node objectType="ecommerce.sku" />
+      <node objectType="ecommerce.supplier" />
+      <node objectType="ecommerce.taxclass" />
+    </node>
+    <node group="##ONLINEMARKETING##" module="CMS.OnlineMarketing">
+      <node objectType="om.abtest" />
+      <node objectType="om.mvtest" />
+      <node objectType="om.contactgroup" />
+      <node objectType="om.score" />
+      <node group="##CONFIGURATION##">
+        <node objectType="om.accountstatus" />
+        <node objectType="om.contactstatus" />
+        <node objectType="om.contactrole" />
+      </node>
+    </node>
+    <node group="##WEBANALYTICS##" module="CMS.WebAnalytics">
+      <node objectType="analytics.campaign" />
+      <node objectType="analytics.conversion" />
+    </node>
+	</node>
+	<node group="##GLOBAL##" site="false" expand="true" main="true">
+		<node group="##TOOLS##">
+			<node objectType="polls.poll" module="CMS.Polls" />
+			<node group="##REPORTING##" module="CMS.Reporting">
+				<node objectType="reporting.report" />
+				<node objectType="reporting.savedreport" />
+			</node>
+      <node group="##PROJECTMANAGEMENT##" module="CMS.ProjectManagement">
+        <node objectType="pm.projectstatus" />
+        <node objectType="pm.projecttaskstatus" />
+        <node objectType="pm.projecttaskpriority" />
+      </node>
+    </node>
+		<node group="##ADMINISTRATION##">
+			<node objectType="cms.avatar" />
+			<node objectType="cms.badge" />
+      <node objectType="badwords.word" />
+      <node objectType="cms.bannedip" />
+      <node objectType="cms.category" />
+      <node objectType="cms.emailtemplate" />
+      <node objectType="integration.connector" />
+      <node objectType="cms.membership" />
+      <node objectType="cms.role" />
+      <node objectType="cms.scheduledtask" />
+      <node objectType="cms.searchindex" />
+      <node objectType="cms.smtpserver" />
+      <node objectType="cms.user" />      
+      <node objectType="cms.webfarmserver" />
+    </node>
+		<node objectType="cms.settingskey" />
+		<node group="##DEVELOPMENT##">
+			<node objectType="cms.cssstylesheet" />
+			<node objectType="cms.country" />
+			<node objectType="cms.culture" />
+			<node objectType="cms.customtable" />
+			<node objectType="cms.documenttype" />
+			<node objectType="cms.formusercontrol" />
+			<node objectType="cms.inlinecontrol" />
+			<node objectType="cms.resource" />
+			<node group="##NOTIFICATION##" module="CMS.Notifications">
+				<node objectType="notification.gateway" />
+				<node objectType="notification.template" />
+			</node>
+			<node objectType="cms.layout" />
+ 			<node objectType="cms.pagetemplate" />
+			<node objectType="cms.relationshipname" />
+      <node objectType="cms.searchengine" />
+      <node objectType="cms.systemtable" />
+			<node objectType="cms.timezone" />
+			<node group="##UICULTURE##">
+				<node objectType="cms.uiculture" />
+				<node objectType="cms.resourcestring" />
+			</node>
+			<node objectType="cms.webpartcontainer" />
+      <node objectType="cms.webpart" />
+      <node objectType="cms.widget" />
+      <node objectType="cms.workflow" />
+		</node>
+		<node objectType="cms.licensekey" />
+    <node group="##ONLINEMARKETING##" module="CMS.OnlineMarketing">
+      <node objectType="om.activitytype" />
+      <node objectType="om.contactgroup" />
+      <node group="##CONFIGURATION##">
+        <node objectType="om.accountstatus" />
+        <node objectType="om.contactstatus" />
+        <node objectType="om.contactrole" />
+      </node>
+    </node>
+    <node group="##ECOMMERCE##" module="CMS.Ecommerce">
+      <node objectType="ecommerce.currency" />
+      <node objectType="ecommerce.customer" />
+      <node objectType="ecommerce.department" />
+      <node objectType="ecommerce.discountcoupon" />
+      <node objectType="ecommerce.discountlevel" />
+      <node objectType="ecommerce.exchangetable" />
+      <node objectType="ecommerce.internalstatus" />
+      <node objectType="ecommerce.manufacturer" />
+      <node objectType="ecommerce.optioncategory" />
+      <node objectType="ecommerce.orderstatus" />
+      <node objectType="ecommerce.paymentoption" />
+      <node objectType="ecommerce.publicstatus" />
+      <node objectType="ecommerce.shippingoption" />
+      <node objectType="ecommerce.sku" />
+      <node objectType="ecommerce.supplier" />
+      <node objectType="ecommerce.taxclass" />
+		</node>
+  </node>
+</root>

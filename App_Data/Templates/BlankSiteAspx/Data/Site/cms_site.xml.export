@@ -1,0 +1,16 @@
+﻿<cms_site version="6.0">
+  <NewDataSet>
+    <cms_site>
+      <SiteID>2</SiteID>
+      <SiteName>BlankSiteASPX</SiteName>
+      <SiteDisplayName>Blank site ASPX</SiteDisplayName>
+      <SiteDescription>Blank web site using ASPX templates</SiteDescription>
+      <SiteStatus>RUNNING</SiteStatus>
+      <SiteDomainName>127.0.0.2</SiteDomainName>
+      <SiteDefaultStylesheetID>1</SiteDefaultStylesheetID>
+      <SiteDefaultVisitorCulture></SiteDefaultVisitorCulture>
+      <SiteGUID>b8bc066b-d7e3-40f7-9217-a01fe6981291</SiteGUID>
+      <SiteLastModified>2008-12-11T16:11:41.317+01:00</SiteLastModified>
+    </cms_site>
+  </NewDataSet>
+</cms_site>

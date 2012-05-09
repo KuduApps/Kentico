@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="CMSModules_Ecommerce_Pages_Tools_Configuration_Departments_Department_Header" Theme="Default" MasterPageFile="~/CMSMasterPages/UI/TabsHeader.master" CodeFile="Department_Header.aspx.cs" %>
